@@ -13,22 +13,53 @@
 
 ?> This is currently the **recommended mod installer**.
 
-Monke Mod Manager is a mod installer that will install custom mods into Gorilla Tag automatically, and can be re-run in order to update the mods.  
+Monke Mod Manager is a mod installer that will install custom mods into Gorilla Tag automatically, and can be re-run in order to update the mods. Monke Mod Manager also notifies you of any updates upon launch by opening the latest release's page if available.  
 Download Monke Mod Manager from [**Steven's GitHub**](https://github.com/DeadlyKitten/MonkeModManager/releases/latest/download/MonkeModManager.exe).
+
+> Note: If Windows alerts you that the file is unsafe, choose to keep it anyway. This is a false-positive.
 
 ![Preview](/docs/files/mmmpreview.png)
 
-## Instructions
+## Install Instructions
 
 After you've downloaded Monke Mod Manager, double-click the executable to run it.
+By default, Monke Mod Manager should automatically fill in your Gorilla Tag installation folder.  
 
-By default, Monke Mod Manager should automatically fill in your Gorilla Tag folder path.  
-The default path is: `C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag`.  
+?> If you installed Gorilla Tag to a seperate drive or path, Monke Mod Manager will prompt you to put it in.  
+Go to the [**Install Folder**](#install-folder) section to find your installation folder.
 
-?> If you installed Gorilla Tag to a seperate path, be sure to select it with the `..` button on the right.  
-**The path might be in this location.** Replace the drive letter `F` with the drive your game is installed on.  
-`F:\SteamLibrary\steamapps\common\Gorilla Tag`
-
-Next, you may select any mods that are listed. BepInEx is the modloader for Gorilla Tag and cannot be unchecked. To update a mod, simply select the installed mod again.
+Next, you may select any mods that are listed. BepInEx is the modloader for Gorilla Tag and cannot be unchecked. To update a mod, simply select the installed mod again. If you would like to get more information on a mod, double-click it to open its GitHub page.
 
 After you select the mods you would like to install/update, hit the Install/Update button to begin the process. When the status monitor in the bottom left says "**Install complete!**", you're good to go!
+
+## Install Folder
+
+### Default Location
+
+If you installed your game on your main drive, this should be your installation Folder.
+`C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag`
+
+### Other Locations
+
+**The folder might be in this location.** Replace the drive letter `F` with the drive your game is installed on.  
+`F:\SteamLibrary\steamapps\common\Gorilla Tag`
+
+## Manual Installation
+A mod installer is the recommended way to install mods. See the section [above](#installers). If you have patched the game and just need to install mods that are not available in the installer, skip to step 4.
+
+### Install BepInEx
+
+1. Download [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest). You will want to get `BepinEx_x64_VERSION.zip`, with `VERSION` being the version number.
+2. Extract the contents of the BepInEx .zip file to the [install folder](#install-folder) of your Gorilla Tag installation.  
+![BepInEx Folder Preview](/docs/files/bepinexfolder.png)
+3. Run Gorilla Tag once to complete installation.
+
+### Install Mods
+
+4. Download the mod(s) you wish to install, whether it be from GitHub, the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) **#pc-mod-releases** channel, or other sources. **Make sure to download any dependencies required by the mod.**  
+![Plugins Folder Preview](/docs/files/pluginsfolder.png)
+5. Some mods have installation instructions, some don't. Generally you can just drag and drop the zip contents into your Gorilla Tag install folder, and the files should go into the corresponding folders. If you have a .dll file, you'll usually want to put it in `BepInEx/plugins`.
+
+## Uninstalling Mods
+
+Either remove the mod's .dll or folder from the `BepInEx/plugins` folder, which is located in your Gorilla Tag install folder.
