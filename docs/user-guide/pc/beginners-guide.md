@@ -1,5 +1,5 @@
 # PC Beginner's Guide
-
+---
 >
 > This guide only applies to the PC version of Gorilla Tag.  
 > If you're using a Quest, please check back later.

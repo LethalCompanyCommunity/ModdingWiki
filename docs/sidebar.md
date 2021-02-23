@@ -7,5 +7,5 @@
 - **Links**
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/burritosoftware/GorillaTag-Modding-Guide)
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/b2MhDBAzTv)
-- [![PayPal](https://icongr.am/simple/paypal.svg?color=808080&size=16)Donate]()
+- [Donate](donations)
 - [About](about)
