@@ -1,21 +1,9 @@
-# Choose The CFW You Want
+# Choose Your Guide
 ---
-?> Before starting, make sure to update your Wii U console to the latest firmware (5.5.4 for European consoles, 5.5.3 for all other regions) if you haven't already.
 
-There are two main custom firmwares: Haxchi/Coldboot Haxchi (usually abbreviated as "CBHC"), as well as Mocha.
+## PC Modding
 
-Haxchi/CBHC are both injected into a paid DS Virtual Console game. Haxchi will need to be manually started off the Wii U Menu to boot custom firmware, while CBHC will boot custom firmware automatically while the system is booting up. Mocha is accessed through the browser exploit or the Indexiine method, which makes it the only free custom firmware.
-
-The custom firmware you decide to use is ultimately **your** preference. There is no right or wrong custom firmware to go with, so it is recommended that you feel free to pick the one that sounds the best for your needs!
-
-## Haxchi
-
-- Requires a legitimately installed, paid DS Virtual Console game from the eShop.
-- Can be used to launch CFW directly from the Wii U Menu.
-- Needs to be re-launched from the Wii U Menu every reboot to enable custom firmware.
-- Its functionality can be extended by installing Coldboot Haxchi (CBHC) to a Haxchi installation.
-
-### [**Continue with Haxchi**](haxchi/ds-vc-choice) {docsify-ignore}
+### [**Soon**](haxchi/ds-vc-choice) {docsify-ignore}
 
 ## CBHC
 
