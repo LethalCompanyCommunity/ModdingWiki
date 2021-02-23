@@ -1,5 +1,6 @@
-# Wii U Hacks Guide
+# Gorilla Tag Modding Guide
 
-Nintendo Wii U homebrew guide written by staff members of the [Nintendo Homebrew Discord server.](https://discord.gg/C29hYvh)
+Get up and running with modifications to Gorilla Tag to enhance your experience.  
+Reject humanity, return to monke.
 
-[The guide can be found here!](https://wiiu.hacks.guide/)
+[The guide can be found here!](https://gorillatagmodding.burrito.software)

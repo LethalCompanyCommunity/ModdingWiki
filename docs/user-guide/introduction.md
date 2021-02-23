@@ -1,13 +1,12 @@
-# Wii U Hacks Guide
+# Gorilla Tag Modding Guide
 ---
-A guide collaboration between Nintendo Homebrew's Helpers and Staff, from stock to CBHC custom firmware.
+Get up and running with modifications to Gorilla Tag to enhance your experience.  
+Reject humanity, return to monke.
 
 ?> **Discord Help**
-For live support with this guide please visit us in **#wiiu-assistance** on the [Nintendo Homebrew Discord](https://discord.gg/C29hYvh) and ask, in English, for assistance. Please read **#faq-wiiu**, as well as our [Frequently Asked Questions](faq) page beforehand to see if your question has already been answered.
+For live support with this guide please visit us in **#installation-help** on the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) and ask, in English, for assistance. Please read our [Frequently Asked Questions](faq) page beforehand to see if your question has already been answered.
 
-> If you appreciate this guide, we accept [donations](donations).
-
-> For complete guides to homebrew and custom firmware for other devices, check out [hacks.guide](https://hacks.guide).  
+> This guide is a fork of [wiiu.hacks.guide](https://wiiuhacks.guide).  
 
 ### Homebrew
 
