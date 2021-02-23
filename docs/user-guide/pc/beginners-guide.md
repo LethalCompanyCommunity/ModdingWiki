@@ -28,7 +28,7 @@ By default, Monke Mod Manager should automatically fill in your Gorilla Tag inst
 ?> If you installed Gorilla Tag to a seperate drive or path, Monke Mod Manager will prompt you to put it in.  
 Go to the [**Install Folder**](#install-folder) section to find your installation folder.
 
-Next, you may select any mods that are listed. BepInEx is the modloader for Gorilla Tag and cannot be unchecked. To update a mod, simply select the installed mod again. If you would like to get more information on a mod, double-click it to open its GitHub page.
+Next, you may select any mods that are listed. BepInEx is the modloader for Gorilla Tag and cannot be unchecked. To update a mod, simply select the installed mod again. If you would like to get more information on a mod, double-click it to open its GitHub page. b
 
 After you select the mods you would like to install/update, hit the Install/Update button to begin the process. When the status monitor in the bottom left says "**Install complete!**", you're good to go!
 
@@ -36,13 +36,20 @@ After you select the mods you would like to install/update, hit the Install/Upda
 
 ### Default Location
 
-If you installed your game on your main drive, this should be your installation Folder.
+If you installed your game on your main drive, this should be your installation folder.
 `C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag`
 
 ### Other Locations
 
-**The folder might be in this location.** Replace the drive letter `F` with the drive your game is installed on.  
-`F:\SteamLibrary\steamapps\common\Gorilla Tag`
+If you installed your game in a different location, follow these instructions to find your installation folder.
+
+1. Open Steam and right-click on Gorilla Tag. Then, go to `Manage > Browse local files`.  
+
+![Right-click Menu Preview](/docs/files/localfilescontext.png)
+
+2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.  
+
+![Copy Folder Path Preview](/docs/files/copyfolderpath.png)
 
 ## Manual Installation
 A mod installer is the recommended way to install mods. See the section [above](#installers). If you have patched the game and just need to install mods that are not available in the installer, skip to step 4.
@@ -51,13 +58,17 @@ A mod installer is the recommended way to install mods. See the section [above](
 
 1. Download [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest). You will want to get `BepinEx_x64_VERSION.zip`, with `VERSION` being the version number.
 2. Extract the contents of the BepInEx .zip file to the [install folder](#install-folder) of your Gorilla Tag installation.  
+
 ![BepInEx Folder Preview](/docs/files/bepinexfolder.png)
+
 3. Run Gorilla Tag once to complete installation.
 
 ### Install Mods
 
 4. Download the mod(s) you wish to install, whether it be from GitHub, the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) **#pc-mod-releases** channel, or other sources. **Make sure to download any dependencies required by the mod.**  
+
 ![Plugins Folder Preview](/docs/files/pluginsfolder.png)
+
 5. Some mods have installation instructions, some don't. Generally you can just drag and drop the zip contents into your Gorilla Tag install folder, and the files should go into the corresponding folders. If you have a .dll file, you'll usually want to put it in `BepInEx/plugins`.
 
 ## Uninstalling Mods
