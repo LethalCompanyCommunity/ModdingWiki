@@ -53,11 +53,12 @@
             // PLUGINS
             // -----------------------------------------------------------------
             executeScript: true,
-//            search: {
-//                depth      : 3,
-//                noData     : 'No results!',
-//                placeholder: 'Search...'
-//           },
+            search: {
+                maxAge     : 300000,
+                depth      : 3,
+                noData     : 'No results!',
+                placeholder: 'Search...'
+            },
             themeable    : {
                 readyTransition : true,
                 responsiveTables: true
@@ -75,7 +76,7 @@
     <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
-<!--    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>    -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
 </body>
