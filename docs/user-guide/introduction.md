@@ -9,7 +9,8 @@ For live support with this guide please visit us in **#installation-help** on th
 ### What can you do with mods? {docsify-ignore}
 
 While modding Gorilla Tag is at its early stage, you can:
-- Customize your gorilla with custom materials, infected materials, and hats using [*Gorilla Cosmetics*](https://github.com/legoandmars/GorillaCosmetics)
+- Customize your gorilla with custom materials, infected materials, and hats with [*Gorilla Cosmetics*](https://github.com/legoandmars/GorillaCosmetics)
+- Fly, power jump, and float in anti-gravity with [*Super Monke*](https://github.com/jeydevv/Super-Monke)
 - Make your jumps huge with *Space Monke* (available in the GorillaTag Modding Discord)
 
 More mods will be developed as time progresses, and will be published in the **Downloads** category on the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv).
