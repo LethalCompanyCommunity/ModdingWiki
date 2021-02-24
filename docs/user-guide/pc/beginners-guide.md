@@ -25,7 +25,7 @@ Download Monke Mod Manager from [**Steven's GitHub**](https://github.com/DeadlyK
 After you've downloaded Monke Mod Manager, double-click the executable to run it.
 By default, Monke Mod Manager should automatically fill in your Gorilla Tag installation folder.  
 
-?> If you installed Gorilla Tag to a seperate drive or path, Monke Mod Manager will prompt you to put it in.  
+?> If you installed Gorilla Tag to a seperate drive or path, Monke Mod Manager will prompt you to select `Gorilla Tag.exe` from your installation folder.
 Go to the [**Install Folder**](#install-folder) section to find your installation folder.
 
 Next, you may select any mods that are listed. BepInEx is the modloader for Gorilla Tag and cannot be unchecked. To update a mod, simply select the installed mod again. If you would like to get more information on a mod, double-click it to open its GitHub page. b
