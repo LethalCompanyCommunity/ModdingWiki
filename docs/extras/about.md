@@ -4,7 +4,7 @@ This guide was mainly written by [Burrito](https://twitter.com/BurritoSOFTWARE),
 
 > **Credits**
 >
-> **Burrito, Steven, Bobbie, NH Discord Staff (original guide creators)**
+> **Burrito, Steven, Bobbie, Nintendo Homebrew Discord Staff (original guide creators)**
 >
 > Thank you to [everyone else](https://github.com/burritosoftware/GorillaTag-Modding-Guide/graphs/contributors) that contributed to the guide on GitHub.
 
