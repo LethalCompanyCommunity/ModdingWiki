@@ -1,6 +1,6 @@
 # About This Guide
 ---
-This guide was mainly written by [Burrito](https://twitter.com/BurritoSOFTWARE), with assistance and advice from the modders at the [**GorillaTag Modding Discord**](https://discord.gg/b2MhDBAzTv).
+This guide was mainly written by [Burrito](https://twitter.com/BurritoSOFTWARE), with assistance and advice from the modders at the [**GorillaTag Modding Discord**](https://discord.gg/b2MhDBAzTv). The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
 
 > **Credits**
 >
