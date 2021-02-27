@@ -248,8 +248,8 @@ var Link = function () {
     }
     this.chapter = findChapter(element);
     this.hyperlink = findHyperlink(element);
-
-		let badsites = ["introduction", "pc-guide", "faq", "donations", "about"]
+/** THIS IS WHERE YOU PUT THE NO NAV BUTTONS PAGES */
+		let badsites = ["pc-guide", "quest-guide", "faq", "donations", "about"]
 		let currentpage = window.location.href
 		let lastItem = currentpage.split('/').pop()
 		if (badsites.includes(lastItem)){
