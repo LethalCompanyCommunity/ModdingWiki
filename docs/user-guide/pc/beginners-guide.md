@@ -2,7 +2,7 @@
 ---
 >
 > This guide only applies to the PC version of Gorilla Tag.  
-> If you're using a Quest (without Link), go to the [**Quest Modding**](quest-guide) guide.
+> If you're using a Quest (without Link), stay tuned!
 
 ## Installers
 
