@@ -7,6 +7,10 @@
 
 ## Installation
 
+!> **Before you install QuestPatcher, you need to install Java if you don't have it already.** Download Java for your platform [here](https://www.java.com/en/download/).
+
+> These instructions are for **Windows** only at the moment. If you want to try a macOS or Linux build of QuestPatcher, you can find them [here as .zip files](https://github.com/Lauriethefish/QuestPatcher/releases/latest).
+
 Currently the only recommended way to install mods is **QuestPatcher**. Download **QuestPatcher** from [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest). Select the **Assets** dropdown and download the .exe file named `windows-installer.exe`. Double-click the executable to begin installing, and follow the instructions.
 
 > Note: If Windows alerts you that the file is unsafe/at risk, choose to keep/run anyway. This is a false-positive.
