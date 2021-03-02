@@ -1,11 +1,15 @@
 - **User Guide**
-- [Introduction](introduction)
+- [Introduction](/)
+- [Choose Your Platform](choose-guide)
 - **PC Modding**
 - [Beginner's Guide](pc-guide)
+- **Quest Modding**
+- [Beginner's Guide](quest-guide)
 - **Extras**
 - [Frequently Asked Questions](faq)
 - **Links**
-- [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/burritosoftware/GorillaTag-Modding-Guide)
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/b2MhDBAzTv)
-- [Donate](donations)
+- [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/burritosoftware/GorillaTag-Modding-Guide)
+- [![PayPal](https://icongr.am/simple/paypal.svg?color=808080&size=16)Tips](https://streamelements.com/burritosoft/tip)
+- [![GoatCounter](https://icongr.am/fontawesome/group.svg?color=808080&size=16)Analytics](https://burrito.goatcounter.com/)
 - [About](about)

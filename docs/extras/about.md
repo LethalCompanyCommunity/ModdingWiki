@@ -4,11 +4,11 @@ This guide is mainly written by [Burrito](https://twitter.com/BurritoSOFTWARE), 
 
 > **Credits**
 >
-> **Burrito, Steven, Bobbie, Nintendo Homebrew Discord Staff (original guide creators)**
+> **Burrito, Steven, Bobbie, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)**
 >
 > Thank you to [everyone else](https://github.com/burritosoftware/GorillaTag-Modding-Guide/graphs/contributors) that contributed to the guide on GitHub.
 
-?> [You can find this guide on GitHub](https://github.com/burritosoftware/GorillaTag-Modding-Guide), It is licensed under the [ISC License](https://github.com/burritosoftware/GorillaTag-Modding-Guide/blob/master/LICENSE.md).
+?> [You can find this guide on GitHub](https://github.com/burritosoftware/GorillaTag-Modding-Guide). It is licensed under the [ISC License](https://github.com/burritosoftware/GorillaTag-Modding-Guide/blob/master/LICENSE.md).
 
 >
 > **Developer / Tool Credits**

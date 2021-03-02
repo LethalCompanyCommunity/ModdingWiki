@@ -2,7 +2,7 @@
 ---
 >
 > This guide only applies to the PC version of Gorilla Tag.  
-> If you're using a Quest (without Link), stay tuned!
+> If you're using a Quest (without Link), go to the [**Quest Modding**](quest-guide) guide.
 
 ## Installers
 
@@ -29,7 +29,7 @@ Go to the [**Install Folder**](#install-folder) section to find your installatio
 
 Next, you may select any mods that are listed. BepInEx is the modloader for Gorilla Tag and cannot be unchecked. To update a mod, simply select the installed mod again. If you would like to get more information on a mod, click on it then hit the *View Mod Info* button.
 
-After you select the mods you would like to install/update, hit the *Install/Update* button to begin the process. When the status monitor in the bottom left says "**Install complete!**", you're almost there! 
+After you select the mods you would like to install/update, hit the *Install/Update* button to begin the process. When the status monitor in the bottom left says "*Install complete!*", you're almost there! 
 
 If it's your first time modding (or starting with a clean install), you'll need to launch Gorilla Tag once and close it to initialize BepInEx. **You may not see any mods load the first time you launch Gorilla Tag after modding, this is normal.**  
 After that, re-launch Gorilla Tag and if everything went well, your mods will now load into the game. Congratulations!
