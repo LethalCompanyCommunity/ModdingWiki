@@ -13,3 +13,7 @@
 - [![PayPal](https://icongr.am/simple/paypal.svg?color=808080&size=16)Tips](https://streamelements.com/burritosoft/tip)
 - [![GoatCounter](https://icongr.am/fontawesome/group.svg?color=808080&size=16)Analytics](https://burrito.goatcounter.com/)
 - [About](about)
+- **Statistics**
+- ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/burritosoftware/GorillaTag-Modding-Guide)
+- ![GitHub last updated](https://img.shields.io/github/last-commit/burritosoftware/GorillaTag-Modding-Guide?label=last%20updated)
+- ![Dark blockchain status](https://img.shields.io/badge/dark%20blockchain-enabled-red)
