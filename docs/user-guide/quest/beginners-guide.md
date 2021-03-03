@@ -7,7 +7,7 @@
 
 ## Installation
 
-!> **Before you install QuestPatcher, you need to install Java if you don't have it already.** Download Java for your platform [here](https://www.java.com/en/download/).
+!> **Before you install QuestPatcher, you need to install Java if you don't have it already, or you will get a warning message.** Download Java for your platform [here](https://www.java.com/en/download/).
 
 > These instructions are for **Windows** only at the moment. If you want to try a macOS or Linux build of QuestPatcher, you can find them [here as .zip files](https://github.com/Lauriethefish/QuestPatcher/releases/latest).
 
@@ -26,7 +26,7 @@ By default, QuestPatcher should automatically detect your Gorilla Tag app.
 
 ![Gorilla Tag detected](/docs/files/questpatcherinstalled.png)
 
-?> If you get a red message in QuestPatcher saying "*App with specified ID could not be found*", check that your Quest is plugged in, and you have Gorilla Tag installed from SideQuest.
+?> If you get a red message in QuestPatcher saying "*Please plug in your Quest and then restart QuestPatcher*" or "*App with specified ID could not be found*", check that your Quest is plugged in, and you have Gorilla Tag installed from SideQuest.
 
 Hit the *Patch my app!* button to begin patching Gorilla Tag. You'll see the log window showing the progress.
 
