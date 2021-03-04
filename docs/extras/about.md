@@ -17,9 +17,9 @@ This guide is mainly written by [Burrito](https://twitter.com/BurritoSOFTWARE), 
 >
 > - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
 >
-> - **Lauriethefish** for [QuestPatcher](https://github.com/Lauriethefish/QuestPatcher)
+> - **Lauriethefish** for [QuestPatcher](https://github.com/Lauriethefish/QuestPatcher).
 >
-> - **Sc2ad** for [QuestLoader](https://github.com/sc2ad/QuestLoader/)
+> - **Sc2ad** for [QuestLoader](https://github.com/sc2ad/QuestLoader/).
 >
 > - **Another Axiom** for [Gorilla Tag](https://store.steampowered.com/app/1533390/Gorilla_Tag/).
 >
