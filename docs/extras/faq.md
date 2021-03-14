@@ -29,7 +29,7 @@ From the developer:
 
 ### Where can I get Gorilla Tag? {docsify-ignore}
 
-You can download Gorilla Tag **for free** from Steam or SideQuest.
+You can download Gorilla Tag **for free** from Steam or Oculus App Lab.
 
 > ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](https://store.steampowered.com/app/1533390/Gorilla_Tag/)&nbsp;[**Download on Steam**](https://store.steampowered.com/app/1533390/Gorilla_Tag/) {docsify-ignore}
-> ### [![Oculus Logo](https://icongr.am/simple/oculus.svg?color=A9A9A9&size=18.72)](https://sidequestvr.com/app/2157/gorilla-tag)&nbsp;[**Download on SideQuest**](https://sidequestvr.com/app/2157/gorilla-tag) {docsify-ignore}
+> ### [![Oculus Logo](https://icongr.am/simple/oculus.svg?color=A9A9A9&size=18.72)](https://sidequestvr.com/app/2157/gorilla-tag)&nbsp;[**Download on Oculus App Lab**](https://www.oculus.com/experiences/quest/4979055762136823) {docsify-ignore}

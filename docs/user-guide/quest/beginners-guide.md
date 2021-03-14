@@ -26,7 +26,7 @@ By default, QuestPatcher should automatically detect your Gorilla Tag app.
 
 ![Gorilla Tag detected](/docs/files/questpatcherinstalled.png)
 
-?> If you get a red message in QuestPatcher saying "*Please plug in your Quest and then restart QuestPatcher*" or "*App with specified ID could not be found*", check that your Quest is plugged in, and you have Gorilla Tag installed from SideQuest.
+?> If you get a red message in QuestPatcher saying "*Please plug in your Quest and then restart QuestPatcher*" or "*App with specified ID could not be found*", check that your Quest is plugged in, and you have Gorilla Tag installed from [Oculus App Lab](https://www.oculus.com/experiences/quest/4979055762136823/).
 
 Hit the *Patch my app!* button to begin patching Gorilla Tag. You'll see the log window showing the progress.
 
@@ -56,7 +56,9 @@ Select the *Uninstall mod* button within the mod management screen to uninstall 
 
 ## Managing Cosmetics
 
-> **Make sure you have the Gorilla Cosmetics mod installed and you have run the game once with it installed first before following these instructions.**
+!> **Make sure you have the Gorilla Cosmetics mod installed and you have run the game once with it installed first before following these instructions.**  
+>
+> You will also need [**SideQuest**](https://sidequestvr.com/setup-howto).
 
 Open SideQuest, and connect your Quest, then click the folder icon at the top. Then, navigate to `sdcard/ModData/com.AnotherAxiom.GorillaTag/Mods/GorillaCosmetics`.
 
