@@ -15,6 +15,7 @@ As long as you are using mods **only in private lobbies**, you won't be cheating
 For mods outside of Monke Mod Manager, download them, whether it be from GitHub, the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) **#pc-mod-releases** channel, or other sources. **Make sure to download any dependencies required by the mod.**
 
 **For Quest:** You can download the mod(s) you wish to install from GitHub, the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) **#quest-mod-releases** channel, or other sources. **Dependencies should auto-download in QuestPatcher, but if they do not, make sure to download them.**
+
 ## Game Questions
 
 ### What is Gorilla Tag? {docsify-ignore}
