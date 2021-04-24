@@ -10,7 +10,8 @@ For live support with this guide please visit us in **#installation-help** on th
 
 ### What can you do with mods?
 
-While modding Gorilla Tag is at its early stage, you can:
+You can:
+- Play custom maps with [*Monke Map Loader*](https://monkemaphub.com/)
 - Customize your gorilla with custom materials, infected materials, and hats with [*Gorilla Cosmetics*](https://github.com/legoandmars/GorillaCosmetics)
 - Add various modes like "Super Monke", "Tag Gun", and "Speed Boost" with [*Monke Mod Menu*](https://github.com/jeydevv/MonkeModMenu)
 - Jump high with [*Space Monke*](https://github.com/legoandmars/SpaceMonke)

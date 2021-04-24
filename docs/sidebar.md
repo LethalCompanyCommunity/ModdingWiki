@@ -3,8 +3,10 @@
 - [Choose Your Platform](choose-guide)
 - **PC Modding**
 - [Beginner's Guide](pc-guide)
+- [Custom Maps](pc-maploading)
 - **Quest Modding**
 - [Beginner's Guide](quest-guide)
+- [Custom Maps](quest-maploading)
 - **Extras**
 - [Frequently Asked Questions](faq)
 - **Links**
