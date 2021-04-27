@@ -76,3 +76,7 @@ A mod installer is the recommended way to install mods. See the section [above](
 ## Uninstalling Mods
 
 Either remove the mod's .dll or folder from the `BepInEx/plugins` folder, which is located in your Gorilla Tag install folder.
+
+## Installing Maps
+
+> Check out the [**PC Custom Maps Guide**](pc-maploading) for info on custom maps, installation, and where to new new maps.

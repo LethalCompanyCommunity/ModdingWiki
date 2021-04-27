@@ -9,13 +9,15 @@
 
 !> **Before you install QuestPatcher, you need to install Java if you don't have it already, or you will get a warning message.** Download Java for your platform [here](https://www.java.com/en/download/).
 
-> These instructions are for **Windows** only at the moment. If you want to try a Linux build of QuestPatcher, you can find it [here as a .zip file](https://github.com/Lauriethefish/QuestPatcher/releases/latest).
+> These instructions are for **Windows** only at the moment. If you want to try a Linux build of QuestPatcher, you can find it [here as a .zip file](https://github.com/Lauriethefish/QuestPatcher/releases/latest).  
+> Note: If Windows alerts you that the file is unsafe/at risk, choose to keep/run anyway. This is a false-positive.
 
 Currently the only recommended way to install mods is **QuestPatcher**. Download **QuestPatcher** from [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest). Select the **Assets** dropdown and download the .exe file named `windows-installer.exe`. Double-click the executable to begin installing, and follow the instructions.
 
-> Note: If Windows alerts you that the file is unsafe/at risk, choose to keep/run anyway. This is a false-positive.
 
 ![Preview](/docs/files/questpatcherprocessing.png)
+
+!> If you haven't modded a game or sideloaded apps to your headset before, you'll need to get **SideQuest** in addition to QuestPatcher. [**Follow this link**](https://sidequestvr.com/setup-howto) to learn how to set it up. After you've finished, you should have setup your Quest with developer mode on, and SideQuest showing a green status indicator at the top left when it is plugged in.
 
 ## Install Instructions
 
@@ -50,15 +52,29 @@ After opening the .qmods you wish to install, they should appear in the mod mana
 
 ![Manage mods screen](/docs/files/questpatcherexamples.png)
 
+Afterwards, launch Gorilla Tag and you should see your mods in game.
+
 ### Uninstalling Mods
 
 Select the *Uninstall mod* button within the mod management screen to uninstall that mod.
 
+## Restore App Prompt
+
+?> "Uh oh, I just modded Gorilla Tag on my Quest and I got a prompt like below, **will I get banned?**"  
+
+> ![Restore App prompt](/docs/files/restoreapp.png)  
+>
+> The restore app prompt is mostly **directed towards those cheating in the game**, and there are likely to be **no repercussions** from just modding the game. In addition, *the developer is okay with fair modding*, so you shouldn't be banned for simply adding mods to your game.  
+>
+> Simply click "**Open App**" to bypass this warning.
+
+## Installing Maps
+
+> Check out the [**Quest Custom Maps Guide**](quest-maploading) for info on custom maps, installation, and where to new new maps.
+
 ## Managing Cosmetics
 
 !> **Make sure you have the Gorilla Cosmetics mod installed and you have run the game once with it installed first before following these instructions.**  
->
-> You will also need [**SideQuest**](https://sidequestvr.com/setup-howto).
 
 Open SideQuest, and connect your Quest, then click the folder icon at the top. Then, navigate to `sdcard/ModData/com.AnotherAxiom.GorillaTag/Mods/GorillaCosmetics`.
 
