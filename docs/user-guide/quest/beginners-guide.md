@@ -23,6 +23,8 @@ Currently the only recommended way to install mods is **QuestPatcher**. Download
 
 ?> **Plug in your Quest to your computer** ***first*** **before running QuestPatcher.**
 
+!> **Do NOT close QuestPatcher while it is downloading "platform-tools" if you don't have them already.**
+
 After you've downloaded and installed QuestPatcher, open it.
 By default, QuestPatcher should automatically detect your Gorilla Tag app.
 
@@ -32,7 +34,7 @@ By default, QuestPatcher should automatically detect your Gorilla Tag app.
 
 Hit the *Patch my app!* button to begin patching Gorilla Tag. You'll see the log window showing the progress.
 
-!> **Do NOT unplug the Quest from the computer while QuestPatcher is patching Gorilla Tag.**
+!> **Do NOT unplug the Quest from the computer or clouse QuestPatcher while you're patching Gorilla Tag.** Patching may take some time, please be patient.
 
 ![QuestPatcher patching the app](/docs/files/questpatcherprocessing.png)
 
