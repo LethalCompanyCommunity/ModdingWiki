@@ -27,7 +27,7 @@ Currently the only recommended way to install mods is **QuestPatcher**. Download
 !> QuestPatcher should automatically download Java. If you're on an older version of macOS, Java might be detected as already installed when it isn't. If you are having trouble patching, manually download Java [here](https://www.java.com/en/).
 
 1. Select the assets dropdown on GitHub, and click `QuestPatcher-mac.dmg`, then wait for the download to finish.
-2. Open your downloads folder, and double click `QuestPatcher-mac.dmg`.
+2. Open your Downloads folder, and double click `QuestPatcher-mac.dmg`.
 3. Drag the QuestPatcher application into the Applications folder.
 4. Close the DMG window, right click QuestPatcher on your desktop and click `Eject "QuestPatcher"`.
 5. Open your Applications folder and right click QuestPatcher. **__Make sure you hold control__**, then click open (You will only have to do this the first time).
