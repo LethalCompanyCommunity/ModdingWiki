@@ -35,7 +35,10 @@ This is a **false positive**, just press `More info` then `Run anyway`.
 3. Drag the QuestPatcher application into the Applications folder.
 4. Close the DMG window, right click QuestPatcher on your desktop and click `Eject "QuestPatcher"`.
 5. Open your Applications folder and right click QuestPatcher. **__Make sure you hold control__**, then click open (You will only have to do this the first time).
-6. In the unrecognized developer that comes up, click `Open`.
+6. In the unrecognized developer that comes up (see below), click `Open`.
+
+![Unverified app pop-up](/docs/files/questpatchermacunverified.png)
+
 
 ### Linux
 
