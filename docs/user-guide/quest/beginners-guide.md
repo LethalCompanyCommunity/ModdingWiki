@@ -16,7 +16,11 @@ Currently the only recommended way to install mods is **QuestPatcher**. Download
 
 1. Select the assets dropdown on GitHub, and click `QuestPatcher-windows.exe`, then wait for the download to finish.
 2. Open your downloads folder, and double click the installer.
-3. It's possible that windows will prevent you from opening the installer, as it is from an unknown source. Just press `More Info` and `Run Anyway`.
+3. It's possible that a prompt like this will open when running QuestPatcher.
+This is a **false positive**, just press `More info` then `Run anyway`.
+
+![Smartscreen pop-up](/docs/files/questpatchersmartscreen.png)
+
 4. Select `Install for all users` or `Install for me only` and press `Yes` if an admin prompt comes up.
 5. Accept the license agreement, press next, press next again, then press install.
 6. Wait until the install finishes, then press next, and then finish to open QuestPatcher.
