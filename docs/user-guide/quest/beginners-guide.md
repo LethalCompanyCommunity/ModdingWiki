@@ -110,7 +110,7 @@ If you want to delete a mod, click the `Delete` mod next to the mod.
 
 ## Installing Maps
 
-> Check out the [**Quest Custom Maps Guide**](quest-maploading) for info on custom maps, installation, and where to new new maps.
+> Check out the [**Quest Custom Maps Guide**](quest-maploading) for info on custom maps, installation, and where to get new maps.
 
 ## Managing Cosmetics & Other Items
 
