@@ -3,6 +3,9 @@
 >
 > This guide only applies to the PC version of Gorilla Tag.  
 > If you're using a Quest (without Link), go to the [**Quest Modding**](quest-guide) guide.
+>
+
+<div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="pc-mod-guide"></div>
 
 ## Installers
 
@@ -80,3 +83,7 @@ Either remove the mod's .dll or folder from the `BepInEx/plugins` folder, which 
 ## Installing Maps
 
 > Check out the [**PC Custom Maps Guide**](pc-maploading) for info on custom maps, installation, and where to new new maps.
+
+---
+
+> If you appreciated this guide, you can [send a tip](https://streamelements.com/burritosoft/tip) or [sponsor the main writer](https://github.com/sponsors/burritosoftware).

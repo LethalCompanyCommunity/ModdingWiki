@@ -109,6 +109,7 @@
                         || '_' + Math.random().toString(36).substr(2, 9); // UID
 
                     handleSwitch(dataHref, dataTitle);
+                    window.console.log(window.changeAdStyle());
                     evt.preventDefault();
                 }
             });

@@ -17,8 +17,7 @@
     <link rel="icon" href="docs/assets/img/favicon.ico">
 
     <!-- GoatCounter Analytics-->
-    <script data-goatcounter="https://burrito.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+    <script data-goatcounter="https://burrito.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="docs/assets/css/dark.css" title="Dark">
@@ -26,6 +25,9 @@
 
     <!-- Alternate Stylesheets -->
     <link rel="stylesheet alternate" href="docs/assets/css/light.css" title="Light">
+
+    <!-- EthicalAds -->
+    <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 </head>
 
 <body>
@@ -81,9 +83,10 @@
             tabs: {
                 persist    : true,
                 sync       : true
-            }
+            },
         };
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="docs/assets/js/main.js"></script>
     <script src="docs/assets/js/docsify-pagination.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -94,5 +97,63 @@
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+    <script>
+        window.changeAdStyle=function(){
+            // Huuuuge block of code to change ad style to the right style, hope this could get smaller in the future
+            var sessionStorageKey = 'activeStylesheetHref';
+            var themeState = sessionStorage.getItem(sessionStorageKey);
+            ethAdDiv = document.querySelector('[data-ea-publisher]');
+            if (themeState == "docs/assets/css/dark.css") {
+            try {
+                ethAdDiv.className = ethAdDiv.className.replace( / dark/, '' )
+            } catch {}
+            try {
+                ethAdDiv.className = ethAdDiv.className.replace( / light/, '' )
+            } catch {}
+            ethAdDiv.className += " dark";
+            return "[EthicalAds Manager] Theme set to Dark.";
+            } else if (themeState == "docs/assets/css/light.css") {
+            try {
+                ethAdDiv.className = ethAdDiv.className.replace( / dark/, '' )
+            } catch {}
+            try {
+               ethAdDiv.className = ethAdDiv.className.replace( / light/, '' )
+                } catch {}
+            ethAdDiv.className += " light";
+            return "[EthicalAds Manager] Theme set to Light.";        
+            } else {
+                try {
+                ethAdDiv.className = ethAdDiv.className.replace( / dark/, '' )
+                } catch {}
+                try {
+                ethAdDiv.className = ethAdDiv.className.replace( / light/, '' )
+                } catch {}
+                ethAdDiv.className += " dark";
+                return "[EthicalAds Manager] Theme set to Default.";
+            }
+        };
+    </script>
+    <script>
+        function loadAds(hook, vm) {
+        hook.doneEach(function() {
+            $(document).ready(() => {
+                console.log("[EthicalAds Manager] Attempting to load ad...");
+                try {
+                ethicalads.load();
+                console.log("[EthicalAds Manager] Ad loaded successfully! :D")
+                console.log(window.changeAdStyle());
+            } catch(e) {
+                if (e instanceof ReferenceError) {
+                    console.log("[EthicalAds Manager] Adblocker detected: showing alt message :)")
+                    div = document.querySelector('[data-ea-publisher]');
+                    div.innerHTML = '<blockquote class="tip"><b>Hey there!</b> 👋 It seems like you have an adblocker.<br>Now, I\'m all in for adblocking, and I hate ads myself. The guide currently serves <b>EthicalAds</b>, which are ads that do not track you and maintain privacy. (unlike Facebook heh)<br><br>I know practically every big buck site says this, but turning off your adblocker helps support me. I don\'t try to spy on people, I just want to be able to cover the costs of running this guide for you! :D<br>(Alternatively, you can support me on <a href="https://github.com/sponsors/burritosoftware"><b>GitHub Sponsors</b></a> monthly.)';
+                }
+                console.log(e);
+            }
+            });
+        });
+    }
+    $docsify.plugins = [].concat(loadAds, $docsify.plugins);
+    </script>
 </body>
 </html>

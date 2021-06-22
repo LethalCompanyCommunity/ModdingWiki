@@ -3,10 +3,10 @@
 Get up and running with modifications to Gorilla Tag to enhance your experience.  
 Reject humanity, return to monke.
 
+<div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="introduction"></div>
+
 ?> **Discord Help**
 For live support with this guide please visit us in **#installation-help** on the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) and ask, in English, for assistance. Please read our [Frequently Asked Questions](faq) page beforehand to see if your question has already been answered.
-
-> If you appreciate this guide, [the main writer accepts tips](https://streamelements.com/burritosoft/tip).
 
 ### What can you do with mods?
 

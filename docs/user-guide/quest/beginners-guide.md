@@ -5,6 +5,8 @@
 > If you're using a SteamVR headset or a Quest **with Link**, go to the [**PC Modding**](pc-guide) guide.
 >
 
+<div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-guide"></div>
+
 ## Installing QuestPatcher
 
 Currently the only recommended way to install mods is **QuestPatcher**. Download **QuestPatcher** from [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest).
@@ -122,3 +124,7 @@ Use the drop-down to select the file type you want to manage.
 **Cosmetics can be installed by dragging and dropping them into the grey area, or by clicking the Browse button.**
 
 ![QuestPatcher Cosmetics Menu](/docs/files/questpatcherotheritems.png)
+
+---
+
+> If you appreciated this guide, you can [send a tip](https://streamelements.com/burritosoft/tip) or [sponsor the main writer](https://github.com/sponsors/burritosoftware).
