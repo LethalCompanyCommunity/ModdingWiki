@@ -8,7 +8,9 @@ This guide is mainly written by [Burrito](https://twitter.com/BurritoSOFTWARE), 
 >
 > Thank you to [everyone else](https://github.com/burritosoftware/GorillaTag-Modding-Guide/graphs/contributors) that contributed to the guide on GitHub.
 
-?> [You can find this guide on GitHub](https://github.com/burritosoftware/GorillaTag-Modding-Guide). It is licensed under the [ISC License](https://github.com/burritosoftware/GorillaTag-Modding-Guide/blob/master/LICENSE.md).
+?> **Open Source and Privacy**  
+[This guide is open source on GitHub](https://github.com/burritosoftware/GorillaTag-Modding-Guide). It is licensed under the [ISC License](https://github.com/burritosoftware/GorillaTag-Modding-Guide/blob/master/LICENSE.md).  
+Analytics are powered by [GoatCounter](https://burrito.goatcounter.com/), and the site is monetized by [EthicalAds](https://ethicalads.io), both of which **do not track or collect personal data** and are open source.
 
 >
 > **Developer / Tool Credits**
