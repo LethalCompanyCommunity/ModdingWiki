@@ -8,9 +8,9 @@
 
 ## Updating Gorilla Tag
 
-> Updating Gorilla Tag will *wipe your settings and items*, like name, colors, queue, cosmetics, etc. You can easily re-add these settings through the computer in the treehouse again.
+> Updating Gorilla Tag will *wipe your settings*, like name, colors, queue, etc. You can easily re-add these settings through the computer in the treehouse again.
 
-Gorilla Tag while modded **cannot be updated through the Update dialog or the Store**. To update Gorilla Tag with mods, you will need to uninstall Gorilla Tag, reinstall the latest version, mod it with QuestPatcher, and then restore your mods and items. While it might sound long, it shouldn't be too bad.
+Gorilla Tag while modded **cannot be updated through the Update dialog or the Store**. To update Gorilla Tag with mods, you will need to uninstall Gorilla Tag, reinstall the latest version, mod it with QuestPatcher, and then restore your mods. While it might sound long, it shouldn't be too bad.
 
 ### Uninstalling Gorilla Tag {docsify-ignore}
 
@@ -26,7 +26,7 @@ At this point, you should **open the Oculus Store** on your headset, search for 
 
 ### Modding Gorilla Tag {docsify-ignore}
 
-After Gorilla Tag has finished downloading, re-follow the [**Quest Modding**](quest-guide) guide to repatch your game. Then, **reinstall your mods/cosmetics and other items.**
+After Gorilla Tag has finished downloading, re-follow the [**Quest Modding**](quest-guide) guide to repatch your game. Then, **reinstall your mods.**
 
 !> Before updating mods, you should check the source to see if they have updated or confirmed the mod to work on the latest version.
 
