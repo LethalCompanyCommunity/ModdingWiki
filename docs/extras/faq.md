@@ -5,9 +5,7 @@
 
 ### Isn't modding the game cheating? {docsify-ignore}
 
-As long as you are using mods **only in private lobbies**, you won't be cheating. If you are using them in public lobbies, you are subject to reports/bans.
-
-?> **Most mods automatically disable joining public lobbies, but please be careful.**
+!> The use of mods that interfere with gameplay inside public lobbies is forbidden by the developers and can result in a ban. Please keep mods contained to private lobbies. **Most gameplay-changing mods automatically disable joining public lobbies, but please be careful.**
 
 ### Where can I get mods? {docsify-ignore}
 
