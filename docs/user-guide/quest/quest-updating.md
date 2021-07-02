@@ -28,7 +28,7 @@ At this point, you should **open the Oculus Store** on your headset, search for 
 
 After Gorilla Tag has finished downloading, re-follow the [**Quest Modding**](quest-guide) guide to repatch your game. Then, **reinstall your mods.**
 
-!> Before updating mods, you should check the source to see if they have updated or confirmed the mod to work on the latest version.
+!> Before reinstalling mods, you should check the source to see if they have updated or confirmed the mod to work on the latest version.
 
 ---
 
