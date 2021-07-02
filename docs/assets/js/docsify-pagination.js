@@ -269,7 +269,7 @@ var Link = function () {
  * 
  * 
 */
-		let badsites = ["pc-guide", "quest-guide", "faq", "tips", "about"]
+		let badsites = ["pc-guide", "quest-guide", "pc-maploading", "quest-maploading", "pc-updating", "quest-updating", "faq", "tips", "about"]
 		let currentpage = window.location.href
 		let lastItem = currentpage.split('/').pop()
 		if (badsites.includes(lastItem)){

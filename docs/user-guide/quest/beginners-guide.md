@@ -102,6 +102,9 @@ Once the mod is installed, you should see it in the Mods section of QuestPatcher
 
 **You can now open your game, and use your mods!**
 
+?> If you see this screen when launching Gorilla Tag, just click **Open App**. Do not click Restore, this will restore your game back to vanilla and may cause issues with your installation.  
+![Restore App](/docs/files/restoreapp.png)
+
 ### Uninstalling Mods
 
 Mods can be toggled by clicking the switch next to the mod.
@@ -109,10 +112,6 @@ Disabling a mod makes the mod act like it is uninstalled, but you can always ena
 
 
 If you want to delete a mod, click the `Delete` mod next to the mod.
-
-## Installing Maps
-
-> Check out the [**Quest Custom Maps Guide**](quest-maploading) for info on custom maps, installation, and where to get new maps.
 
 ## Managing Cosmetics & Other Items
 
@@ -124,6 +123,14 @@ Use the drop-down to select the file type you want to manage.
 **Cosmetics can be installed by dragging and dropping them into the grey area, or by clicking the Browse button.**
 
 ![QuestPatcher Cosmetics Menu](/docs/files/questpatcherotheritems.png)
+
+## Installing Maps {docsify-ignore}
+
+> Check out the [**Quest Custom Maps Guide**](quest-maploading) for info on custom maps, installation, and where to get new maps.
+
+## Updating Mods {docsify-ignore}
+
+> Check out the [**Quest Mod Updating Guide**](quest-updating) for info on updating Gorilla Tag with mods installed.
 
 ---
 

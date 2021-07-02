@@ -9,7 +9,7 @@
 
 ## Installers
 
-### Monke Mod Manager
+### Monke Mod Manager {docsify-ignore}
 
 ![Monke Mod Manager logo](/docs/files/mmmlogo.png)
 
@@ -80,9 +80,13 @@ A mod installer is the recommended way to install mods. See the section [above](
 
 Either remove the mod's .dll or folder from the `BepInEx/plugins` folder, which is located in your Gorilla Tag install folder.
 
-## Installing Maps
+## Installing Maps {docsify-ignore}
 
 > Check out the [**PC Custom Maps Guide**](pc-maploading) for info on custom maps, installation, and where to new new maps.
+
+## Updating Mods {docsify-ignore}
+
+> Check out the [**PC Mod Updating Guide**](pc-updating) for info on updating Gorilla Tag with mods installed.
 
 ---
 
