@@ -18,7 +18,7 @@ Gorilla Tag while modded **cannot be updated through the Update dialog or the St
 
 1. Plug in your Quest into your computer, open QuestPatcher, and go to the **Tools & Options** menu on the left.
 2. Click the red **Uninstall App** button, then click **Uninstall App** again. QuestPatcher will close. 
-![Uninstall App](/docs/files/uninstallapp.png)
+![Uninstall App](../docs/files/uninstallapp.png)
 
 ### Reinstalling Gorilla Tag {docsify-ignore}
 

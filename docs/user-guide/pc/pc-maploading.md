@@ -17,12 +17,12 @@ If you don't know where your Gorilla Tag folder is, there's instructions on how 
 
 **Not sure where to download more custom maps?** Head to [monkemaphub.com](https://monkemaphub.com), where you can find all released maps for the map loader. Click the logo below to head there!
 
-> [![Monke Map Hub logo](/docs/files/MMHLOGO.png)](https://monkemaphub.com)
+> [![Monke Map Hub logo](../docs/files/MMHLOGO.png)](https://monkemaphub.com)
 
 ## Loading Maps
 In game, head to the computer and use the arrow keys to select **Monke Map Loader**, then press enter. Press enter again to skip the splash screen, then use the arrow keys to select a map from the list of your currently installed custom maps. You should see an orb with a spinning preview of the map, similar to the one found below.
 
-![Orb Preview](/docs/files/orb.png)
+![Orb Preview](../docs/files/orb.png)
 
 You can press enter on a map to see more details. If you'd like to load it, press enter one more time and wait for the "Map loaded!" confirmation. After that, hop in the teleporter! Monke!
 

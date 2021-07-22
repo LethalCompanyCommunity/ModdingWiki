@@ -21,7 +21,7 @@ Currently the only recommended way to install mods is **QuestPatcher**. Download
 3. It's possible that a prompt like this will open when running QuestPatcher.
 This is a **false positive**, just press `More info` then `Run anyway`.
 
-![Smartscreen pop-up](/docs/files/questpatchersmartscreen.png)
+![Smartscreen pop-up](../docs/files/questpatchersmartscreen.png)
 
 4. Select `Install for all users` or `Install for me only` and press `Yes` if an admin prompt comes up.
 5. Accept the license agreement, press next, press next again, then press install.
@@ -39,7 +39,7 @@ This is a **false positive**, just press `More info` then `Run anyway`.
 5. Open your Applications folder and right click QuestPatcher. **__Make sure you hold control__**, then click open (You will only have to do this the first time).
 6. In the unrecognized developer that comes up (see below), click `Open`.
 
-![Unverified app pop-up](/docs/files/questpatchermacunverified.png)
+![Unverified app pop-up](../docs/files/questpatchermacunverified.png)
 
 
 ### Linux
@@ -60,7 +60,7 @@ This is a **false positive**, just press `More info` then `Run anyway`.
 When you first open QuestPatcher, you will be greeted by a loading screen like below.
 There will be a few short progress bars while QuestPatcher downloads important files. (`Downloading openjre` and `Downloading platform-tools`).
 
-![QuestPatcher Loading](/docs/files/questpatcherloading.png)
+![QuestPatcher Loading](../docs/files/questpatcherloading.png)
 
 > If you get a prompt saying `Quest Not Connected`, make sure that your quest is plugged in, and you have set up developer mode as per the [SideQuest installation instructions](https://sidequestvr.com/setup-howto). 
 >
@@ -69,7 +69,7 @@ There will be a few short progress bars while QuestPatcher downloads important f
 
 After about 30 seconds (although it could take longer than five minutes depending on your internet connection), QuestPatcher will finish loading and you will be greeted with a screen like below.
 
-![QuestPatcher Ready To Patch](/docs/files/questpatcherpatch.png)
+![QuestPatcher Ready To Patch](../docs/files/questpatcherpatch.png)
 
 **To start patching, just click the `Patch my App!` button.**
 
@@ -84,7 +84,7 @@ Once QuestPatcher is done, you will be brought to this screen.
 
 > Next time you open QuestPatcher, you will be brought directly to this screen as your game is already patched.
 
-![Patching Completed](/docs/files/questpatcherpatched.png)
+![Patching Completed](../docs/files/questpatcherpatched.png)
 
 ### Installing Mods
 
@@ -93,17 +93,17 @@ To get mods, you first need to download a `.qmod` file of the mod you want. You 
 !> Do not download .DLL files - they are PC mods, which cannot be used on the quest version of Gorilla Tag.
 
 To install a mod, click the browse button in the `Mod Management` section of QuestPatcher and select the mods you want. Finally, click `Open` to install the mods.
-![Selecting a mod in QuestPatcher](/docs/files/questpatcherselectmod.png)
+![Selecting a mod in QuestPatcher](../docs/files/questpatcherselectmod.png)
 
 !> Installing a mod may download other mods that the mod needs to work. Do not uninstall these!
 
 Once the mod is installed, you should see it in the Mods section of QuestPatcher.
-![Mods Installed](/docs/files/questpatcherinstalledmods.png)
+![Mods Installed](../docs/files/questpatcherinstalledmods.png)
 
 **You can now open your game, and use your mods!**
 
 ?> If you see this screen when launching Gorilla Tag, just click **Open App**. Do not click Restore, this will restore your game back to vanilla and may cause issues with your installation.  
-![Restore App](/docs/files/restoreapp.png)
+![Restore App](../docs/files/restoreapp.png)
 
 ### Uninstalling Mods
 
@@ -122,7 +122,7 @@ Use the drop-down to select the file type you want to manage.
 
 **Cosmetics can be installed by dragging and dropping them into the grey area, or by clicking the Browse button.**
 
-![QuestPatcher Cosmetics Menu](/docs/files/questpatcherotheritems.png)
+![QuestPatcher Cosmetics Menu](../docs/files/questpatcherotheritems.png)
 
 ## Installing Maps {docsify-ignore}
 
