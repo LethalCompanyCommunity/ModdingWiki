@@ -1,7 +1,7 @@
-- **User Guide**
-- [Introduction](./)
-- [Choose Your Platform](choose-guide)
-- **PC Modding**
+- **Matey Guide**
+- [Here Be The Start Of It All](./)
+- [Pick Yer Platform](choose-guide)
+- **PC Moddin'**
 - [Beginner's Guide](pc-guide)
 - [Updating Mods](pc-updating)
 - [Custom Maps](pc-maploading)
