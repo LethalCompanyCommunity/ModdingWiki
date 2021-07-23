@@ -1,4 +1,4 @@
-# Quest Custom Maps Installation
+# Instalación de mapas personalizados para Quest
 ---
 >
 > This guide only applies to the Quest version of Gorilla Tag. If you're using a SteamVR headset or a Quest **with Link**, go to the [**PC Custom Maps Installation**](pc-maploading) guide.
