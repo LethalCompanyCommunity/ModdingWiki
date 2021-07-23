@@ -14,7 +14,7 @@
 - **Links**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/b2MhDBAzTv)
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/burritosoftware/GorillaTag-Modding-Guide)
-- [![Translate](https://icongr.am/material/translate.svg?color=808080&size=16)Translate](https://crwd.in/gorilla-tag-modding-guide)
+- [![Translate](https://icongr.am/material/translate.svg?color=808080&size=16)Translate](https://crowdin.com/project/gorilla-tag-modding-guide)
 - [![PayPal](https://icongr.am/simple/paypal.svg?color=808080&size=16)Tips](https://streamelements.com/burritosoft/tip)
 - [![GoatCounter](https://icongr.am/fontawesome/group.svg?color=808080&size=16)Analytics](https://burrito.goatcounter.com/)
 - [About](about)
