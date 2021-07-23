@@ -2,7 +2,7 @@
 - [Here Be The Start Of It All](./)
 - [Pick Yer Platform](choose-guide)
 - **PC Moddin'**
-- [Scallywag's Guide](pc-guide)
+- [Newbie's Words](pc-guide)
 - [Updatin' Mods](pc-updating)
 - [Custom Seas](pc-maploading)
 - **Quest Moddin'**
