@@ -1,7 +1,7 @@
-# Gorilla Tag Modding Guide {docsify-ignore-all}
+Poradnik modowania gry Gorilla Tag {docsify-ignore-all}
 ---
-Get up and running with modifications to Gorilla Tag to enhance your experience.  
-Reject humanity, return to monke.
+Zacznij modyfikować grę Gorilla Tag aby zwiększyć swoje wrażenia.  
+Odrzuć człowieczeństwo, powróć do małpy.
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="introduction"></div>
 
