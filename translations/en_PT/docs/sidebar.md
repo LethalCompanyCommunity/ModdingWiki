@@ -4,9 +4,9 @@
 - **PC Moddin'**
 - [Scallywag's Guide](pc-guide)
 - [Updatin' Mods](pc-updating)
-- [Custom Maps](pc-maploading)
-- **Quest Modding**
-- [Beginner's Guide](quest-guide)
+- [Custom Seas](pc-maploading)
+- **Quest Moddin'**
+- [Newbie's words](quest-guide)
 - [Updatin' Mods](quest-updating)
 - [Custom Maps](quest-maploading)
 - **Extras**
