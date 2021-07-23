@@ -14,9 +14,9 @@
 - **Connexions**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/b2MhDBAzTv)
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/burritosoftware/GorillaTag-Modding-Guide)
-- [![Traduction](https://icongr.am/material/translate.svg?color=808080&size=16)Traduire](https://crowdin.com/project/gorilla-tag-modding-guide)
+- [![Traduction](https://icongr.am/material/translate.svg?color=808080&size=16)Traduction](https://crowdin.com/project/gorilla-tag-modding-guide)
 - [![PayPal](https://icongr.am/simple/paypal.svg?color=808080&size=16)Conseils](https://streamelements.com/burritosoft/tip)
-- [![Goatcounter](https://icongr.am/fontawesome/group.svg?color=808080&size=16)Analytics](https://burrito.goatcounter.com/)
+- [![GoatCounter](https://icongr.am/fontawesome/group.svg?color=808080&size=16)Audience](https://burrito.goatcounter.com/)
 - [À propos](../about)
 - **Statistiques**
 - ![Visites de la page](https://img.shields.io/badge/dynamic/json?label=visits&query=count_unique&color=blueviolet&url=https%3A%2F%2Fburrito.goatcounter.com%2Fcounter%2FTOTAL.json)
