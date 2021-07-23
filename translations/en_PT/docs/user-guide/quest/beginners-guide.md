@@ -1,19 +1,19 @@
 # Quest Beginner's Guide
 ---
 >
-> This guide only applies to the Quest version of Gorilla Tag. If you're using a SteamVR headset or a Quest **with Link**, go to the [**PC Modding**](pc-guide) guide.
+> Ahoy! These texts apply only to the Quest version of Gorilla Tag. Shall ye use a SteamVR ship or a Quest **with tether**,  sail to the [**PC Modding**](pc-guide) guide.
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-guide"></div>
 
-## Installing QuestPatcher
+## Loading QuestPatcher
 
-Currently the only recommended way to install mods is **QuestPatcher**. Download **QuestPatcher** from [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest).
+Now, the one and only way to recive the booty is **QuestPatcher**. Download **QuestPatcher** from [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest).
 
 ### Windows
 
-> The only version of Windows officially supported is Windows 10. Other versions might work, but we cannot guarantee full functionality.
+> Argh! The only version of Windows I support be Windows 10! Any other version may work, but hear ye, me crew and I can't say for sure.
 
-1. Select the assets dropdown on GitHub, and click `QuestPatcher-windows.exe`, then wait for the download to finish.
+1. Steal the loot from the assets dropdown on GitHub, and snatch `QuestPatcher-windows.exe`, the ye shall wait for the sip to be loaded.
 2. Open your downloads folder, and double click the installer.
 3. It's possible that a prompt like this will open when running QuestPatcher. This is a **false positive**, just press `More info` then `Run anyway`.
 
