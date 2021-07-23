@@ -1,5 +1,5 @@
 - **User Guide**
-- [Introduction](.)
+- [Introduction](./)
 - [Choose Your Platform](choose-guide)
 - **PC Modding**
 - [Beginner's Guide](pc-guide)
