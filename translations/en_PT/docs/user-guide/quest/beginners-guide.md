@@ -1,20 +1,20 @@
 # Setting Sail For Landlubbers (Quest)
 ---
 >
-> Ahoy! These texts apply only to the Quest version of Gorilla Tag. Shall ye use a SteamVR ship or a Quest **with tether**,  sail to the [**PC Modding**](pc-guide) guide.
+> Ahoy! These texts apply only to the Quest version of Gorilla Tag. Shall ye use a SteamVR ship or a Quest **with a Link tether**, sail to the [**PC Modding**](pc-guide) guide.
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-guide"></div>
 
 ## Loading QuestPatcher
 
-Now, the one and only way to recive the booty is **QuestPatcher**. Download **QuestPatcher** from [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest).
+Now, the one and only way to recieve the booty is **QuestPatcher**. Download **QuestPatcher** from [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest).
 
 ### Windows
 
 > Argh! The only version of Windows I support be Windows 10! Any other version may work, but hear ye, me crew and I can't guarantee.
 
 1. Steal the loot from the assets dropdown on GitHub, and snatch `QuestPatcher-windows.exe`, then ye shall wait for the ship to be loaded.
-2. Open ye downloads chest, then double click the installer.
+2. Open ye Downloads chest, then double click the installer.
 3. Let be be known, It's likely something like this shall open while ye trying to run QuestPatcher. Avast ye, this is a **false positive**, just press `More info` then `Run anyway`.
 
 ![Smartscreen pop-up](../docs/files/questpatchersmartscreen.png)
@@ -26,12 +26,12 @@ Now, the one and only way to recive the booty is **QuestPatcher**. Download **Qu
 
 ### macOS
 
-!> QuestPatcher shall automatically load Java onto ye ship. Although if ye using one of an older version of macOS, Java may just be detected as already loaded when it isn't. Shall ye run into an enemy while patching, manually load Java onto your ship [here](https://www.java.com/en/).
+!> QuestPatcher shall automatically load Java onto ye ship. Although if ye using one of an older version of macOS, Java may just be detected as already on board when it ain't. Shall ye run into an enemy while patching, manually load Java onto your ship [here](https://www.java.com/en/).
 
 1. Steal the loot from the assets dropdown on GitHub, and snatch `QuestPatcher-mac.dmg`, then ye shall wait for ye ship to be loaded.
 2. Open ye downloads chest, then double click `QuestPatcher-mac.dmg`.
 3. Move the QuestPatcher loot into ye Applications chest.
-4. Pillage ye DMG window, right click uestPatcher on ye desktop and click `Eject "QuestPatcher"`.
+4. Pillage ye DMG window, right click QuestPatcher on ye desktop and click `Eject "QuestPatcher"`.
 5. Open ye Applications chest, then right click QuestPatcher. **__Make sure ye hold control__**, then click open (Ye must only do this the first time).
 6. Shall the unrecognized developer window come up (look below), click `Open`.
 
@@ -42,7 +42,7 @@ Now, the one and only way to recive the booty is **QuestPatcher**. Download **Qu
 
 > QuestPatcher is compiled for [Ubuntu](https://ubuntu.com/) Linux. Other Linux ships may work, but ye may enounter enemy ships.
 
-!> These instructions be more complicated than Mac and Windows shall be (nerd), and it be recommended ye know yer way around a terminal.
+!> These instructions be more complicated than Mac and Windows shall be, and it be recommended ye know yer way around a terminal.
 
 1. Steal the loot from the assets dropdown on GitHub, and snatch `QuestPatcher-ubuntu.zip`, then ye shall wait for the ship to be loaded.
 2. Extract the ZIP file using Archive Manager.
@@ -58,7 +58,7 @@ Shall ye first open QuestPatcher, ye shall be greeted by a loading screen like b
 
 > Shall ye be prompted with `Quest Not Connected`, make sure ye quest is plugged in, and ye have set up developer mode as per the [SideQuest installation instructions](https://sidequestvr.com/setup-howto). 
 > 
-> If ye recive a prompt prompting ye with `App Not Installed`, make sure ye have installed Gorilla T from Oculus App Lab [here](https://www.oculus.com/experiences/quest/4979055762136823/).
+> If ye recive a prompt prompting ye with `App Not Installed`, make sure ye have installed Gorilla Tag from Oculus App Lab [here](https://www.oculus.com/experiences/quest/4979055762136823/).
 
 
 After about 30 seconds (it may take longer if ye internet sucks), QuestPatcher shall finish loading and ye shall be greeted with a screen like below.
@@ -93,7 +93,7 @@ Once the mod is installed, ye shall see it in the Mods chest of QuestPatcher.![M
 
 **Ye may now set sail, and use yer mods!**
 
-?> shall ye see this screen when setting sail, just click **Open App**. Do not click Restore, this will restore ye game back to vanilla and may cause issues with ye installation.  
+?> If shall ye see this screen when setting sail, just click **Open App**. Do not click Restore, this will restore ye game back to vanilla and may cause issues with ye installation.  
 ![Restore App](../docs/files/restoreapp.png)
 
 ### Uninstalling Mods
@@ -123,4 +123,4 @@ Shall ye seek ye installed cosmetics and maps, click the `Cosmetics & Other Item
 
 ---
 
-> If you appreciated this guide, you can [send a tip](https://streamelements.com/burritosoft/tip) or [sponsor the main writer](https://github.com/sponsors/burritosoftware). I cannot properly express how painful this was to write -the translator
+> If you appreciated this guide, you can [send a tip](https://streamelements.com/burritosoft/tip) or [sponsor the main writer](https://github.com/sponsors/burritosoftware).
