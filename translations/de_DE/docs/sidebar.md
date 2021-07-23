@@ -1,6 +1,6 @@
-- **User Guide**
-- [Introduction](./)
-- [Choose Your Platform](choose-guide)
+- **Benutzeranleitung**
+- [Einführung](./)
+- [Wähle deine Platform aus](choose-guide)
 - **PC Modding**
 - [Beginner's Guide](pc-guide)
 - [Updating Mods](pc-updating)
