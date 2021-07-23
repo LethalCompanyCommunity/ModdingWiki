@@ -1,15 +1,15 @@
-# Gorilla Tag Modding Guide {docsify-ignore-all}
+Guide de Modding pour Gorilla Tag {docsify ignore}
 ---
-Get up and running with modifications to Gorilla Tag to enhance your experience.  
+Démarrez votre course avec les modifications apportées à Gorilla Tag pour améliorer votre expérience.  
 Reject humanity, return to monke.
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="introduction"></div>
 
-?> **Discord Help** For live support with this guide please visit us in **#installation-help** on the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) and ask, in English, for assistance. Please read our [Frequently Asked Questions](faq) page beforehand to see if your question has already been answered.
+?> **Aide Discord** Pour une assistance en direct avec ce guide, veuillez nous rendre visite dans **#installation-help** sur [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) et demandez-nous, en anglais, pour obtenir de l'aide. Veuillez lire à l'avance notre page [Foire aux questions](faq) pour voir si votre question a déjà reçu une réponse.
 
-### What can you do with mods?
+### Que pouvez-vous faire avec les mods ?
 
-You can:
+Vous pouvez:
 - Play custom maps with [*Monke Map Loader*](https://monkemaphub.com/)
 - Customize your gorilla with custom materials, infected materials, and hats with [*Gorilla Cosmetics*](https://github.com/legoandmars/GorillaCosmetics)
 - Jump high with [*Space Monke*](https://github.com/legoandmars/SpaceMonke)
