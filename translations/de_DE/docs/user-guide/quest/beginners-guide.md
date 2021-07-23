@@ -1,20 +1,20 @@
-# Quest Beginner's Guide
+# Quest Beginner Anleitung
 ---
 >
-> This guide only applies to the Quest version of Gorilla Tag. If you're using a SteamVR headset or a Quest **with Link**, go to the [**PC Modding**](pc-guide) guide.
+> Diese Anleitung ist für die Quest Version von Gorilla Tag. Wenn du SteamVR benutzt oder eine Quest **mit Link**, gehe zur [**PC Modifizierung**](pc-guide) Anleitung.
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-guide"></div>
 
-## Installing QuestPatcher
+## QuestPatcher Installieren
 
-Currently the only recommended way to install mods is **QuestPatcher**. Download **QuestPatcher** from [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest).
+Zur Zeit ist die Empfohlenne methode mods mit **QuestPatcher** zu Installieren. Lade **QuestPatcher** auf [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest) herunter.
 
 ### Windows
 
-> The only version of Windows officially supported is Windows 10. Other versions might work, but we cannot guarantee full functionality.
+> Die einzige version ist mit Windows 10 supported. Andere Versionen könnten funktionieren, aber wir können nicht volle Funktion garantieren.
 
 1. Select the assets dropdown on GitHub, and click `QuestPatcher-windows.exe`, then wait for the download to finish.
-2. Open your downloads folder, and double click the installer.
+2. Öffne deine download ordner und doppel klick den installer an.
 3. It's possible that a prompt like this will open when running QuestPatcher. This is a **false positive**, just press `More info` then `Run anyway`.
 
 ![Smartscreen pop-up](../docs/files/questpatchersmartscreen.png)
