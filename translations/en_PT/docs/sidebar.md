@@ -6,7 +6,7 @@
 - [Updatin' Mods](pc-updating)
 - [Custom Seas](pc-maploading)
 - **Quest Moddin'**
-- [Newbie's words](quest-guide)
+- [Newbie's Words](quest-guide)
 - [Updatin' Mods](quest-updating)
 - [Custom Maps](quest-maploading)
 - **Extras**
