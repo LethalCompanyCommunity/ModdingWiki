@@ -1,8 +1,8 @@
 - **User Guide**
 - [Introduction](./)
-- [Choose Your Platform](choose-guide)
-- **PC Modding**
-- [Beginner's Guide](pc-guide)
+- [Choisissez votre plateforme](choose-guide)
+- **Modding PC**
+- [Guide du débutant](pc-guide)
 - [Updating Mods](pc-updating)
 - [Custom Maps](pc-maploading)
 - **Quest Modding**
