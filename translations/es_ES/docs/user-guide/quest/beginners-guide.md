@@ -123,4 +123,4 @@ Para ver tus cosmeticos y mapas, haz clic en el tab de `Cosmetics & Other items`
 
 ---
 
-> Si te gusto esta guia, puedes [mandar una propina](https://streamelements.com/burritosoft/tip) o [patrocinar el escritor principal](https://github.com/sponsors/burritosoftware).
+> Si te gusto esta guia, puedes [enviar una propina](https://streamelements.com/burritosoft/tip) o [patrocinar el escritor principal](https://github.com/sponsors/burritosoftware).
