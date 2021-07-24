@@ -1,7 +1,7 @@
-# Quest Custom Maps Installation
+# Installation des cartes personnalisées sur Quest
 ---
 >
-> This guide only applies to the Quest version of Gorilla Tag. Si vous utilisez un casque SteamVR ou un Quest **avec link**, allez au guide [**Mise à jour du mod PC**](pc-maploading).
+> Ce guide ne s'applique qu'à la version Quest de Gorilla Tag. Si vous utilisez un casque SteamVR ou un Quest **avec link**, allez au guide [**Mise à jour du mod PC**](pc-maploading).
 
 ?> `les fichiers .gtmap` sont compatibles entre PC et Quest, afin que vous puissiez jouer avec vos amis, sur n'importe quelle plateforme !
 
@@ -14,15 +14,15 @@ Une fois que votre jeu a été moddé et que Monke Map Loader est installé, vou
 
 **Vous ne savez pas où télécharger plus de cartes personnalisées ?** Allez sur [monkemaphub. om](https://monkemaphub.com), où vous pouvez trouver toutes les cartes publiées pour le chargeur de cartes. Cliquez sur le logo ci-dessous pour vous y rendre !
 
-> [![Monke Map Hub logo](../docs/files/MMHLOGO.png)](https://monkemaphub.com)
+> [![Logo de Monke Map Hub](../docs/files/MMHLOGO.png)](https://monkemaphub.com)
 
-## Chargement des Maps
-In game, head to the computer and press enter to skip the Banana OS splash screen. Use the arrow keys to select **Map Loader**, then press enter. Then, use the arrow keys to select a map from the list of your currently installed custom maps. You should see an orb with a spinning preview of the map, similar to the one found below.
+## Chargement des Cartes
+En jeu, allez à l'ordinateur et appuyez sur Entrée pour sauter l'écran de démarrage de Banana OS. Utilisez les flèches pour sélectionner **Map Loader**, puis appuyez sur Entrée. Ensuite, utilisez les touches fléchées pour sélectionner une carte dans la liste des cartes personnalisées actuellement installées. Vous devriez voir un orbe avec un aperçu de la carte, similaire à celui trouvé ci-dessous.
 
-![Orb Preview](../docs/files/orb.png)
+![Aperçu des orbes](../docs/files/orb.png)
 
-You can press enter on a map to see more details. If you'd like to load it, press enter one more time and wait for the "MAP LOADED" confirmation. After that, hop in the teleporter! Monke!
+Vous pouvez appuyer sur Entrée sur une carte pour voir plus de détails. Si vous voulez la charger, appuyez sur entrer une fois de plus et attendez la confirmation "MAP LOADED". Après ça, sautez dans le téléporteur! Singe!
 
-## Public Lobbies & Custom Maps
+## Lobbies publics & Cartes personnalisées
 
-?> Although you're normally not supposed to use mods in public matches, the Monke Map Loader implements a special solution that make it OK to do. When you select a custom map and join a public match by going through the teleporter, you're actually joining a private match that matchmakes you with other people playing that map. It's only possible to join these matches if you have the Monke Map Loader installed, so joining public matches is not only fine, but recommended.
+?> Même si vous n'êtes normalement pas censé utiliser des mods dans les matchs publics, le chargeur de cartes Monke implémente une solution spéciale qui le rend OK pour faire. Lorsque vous sélectionnez une carte personnalisée et rejoignez un match public en passant par le téléporteur, vous rejoignez en fait un match privé qui vous fait correspondre avec d'autres personnes jouant à cette carte. Il n'est possible de rejoindre ces matchs que si vous avez installé Monke Map Loader. Il est donc recommandé de rejoindre les matchs publics.
