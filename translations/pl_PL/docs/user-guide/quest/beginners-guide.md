@@ -1,32 +1,32 @@
-# Quest Beginner Anleitung
+# Quest Beginner's Guide
 ---
 >
-> Diese Anleitung ist für die Quest Version von Gorilla Tag. Wenn du SteamVR benutzt oder eine Quest **mit Link**, gehe zur [**PC Modifizierung**](pc-guide) Anleitung.
+> This guide only applies to the Quest version of Gorilla Tag. If you're using a SteamVR headset or a Quest **with Link**, go to the [**PC Modding**](pc-guide) guide.
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-guide"></div>
 
-## QuestPatcher Installieren
+## Installing QuestPatcher
 
-Zur Zeit ist die Empfohlenne methode mods mit **QuestPatcher** zu Installieren. Lade **QuestPatcher** auf [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest) herunter.
+Currently the only recommended way to install mods is **QuestPatcher**. Download **QuestPatcher** from [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest).
 
 ### Windows
 
-> Die einzige version ist mit Windows 10 supported. Andere Versionen könnten funktionieren, aber wir können nicht volle Funktion garantieren.
+> The only version of Windows officially supported is Windows 10. Other versions might work, but we cannot guarantee full functionality.
 
 1. Select the assets dropdown on GitHub, and click `QuestPatcher-windows.exe`, then wait for the download to finish.
-2. Öffne deine download ordner und doppel klick den installer an.
+2. Open your downloads folder, and double click the installer.
 3. It's possible that a prompt like this will open when running QuestPatcher. This is a **false positive**, just press `More info` then `Run anyway`.
 
 ![Smartscreen pop-up](../docs/files/questpatchersmartscreen.png)
 
-4. Wähle `Installiere für alle Benutzer` oder `Installiere nur für mich` aus und drücke `Ja` wenn ein Admin Prompt aufkommen sollte.
-5. Akzeptiere die Lizenzvereinbarung, drücke next zwei mal und dann Install.
-6. Warte bis die Installierung fertig ist und drücke dann next, und dann finish um QuestPatcher zu Öffnen.
+4. Select `Install for all users` or `Install for me only` and press `Yes` if an admin prompt comes up.
+5. Accept the license agreement, press next, press next again, then press install.
+6. Wait until the install finishes, then press next, and then finish to open QuestPatcher.
 
 
 ### macOS
 
-!> QuestPatcher sollte automatisch Java Installieren. If you're on an older version of macOS, Java might be detected as already installed when it isn't. If you are having trouble patching, manually download Java [here](https://www.java.com/en/).
+!> QuestPatcher should automatically download Java. If you're on an older version of macOS, Java might be detected as already installed when it isn't. If you are having trouble patching, manually download Java [here](https://www.java.com/en/).
 
 1. Select the assets dropdown on GitHub, and click `QuestPatcher-mac.dmg`, then wait for the download to finish.
 2. Open your Downloads folder, and double click `QuestPatcher-mac.dmg`.

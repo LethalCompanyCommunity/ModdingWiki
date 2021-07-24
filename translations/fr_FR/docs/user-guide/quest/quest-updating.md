@@ -1,33 +1,33 @@
-# Quest Mod Updating
+# Mise à jour des mods sur Quest
 ---
 >
-> This guide only applies to the Quest version of Gorilla Tag. If you're using a SteamVR headset or a Quest **with Link**, go to the [**PC Mod Updating**](pc-updating) guide.
+> Ce guide ne s'applique qu'à la version Quest de Gorilla Tag. Si vous utilisez un casque SteamVR ou un Quest **avec lien**, allez au guide [**Mise à jour du mod PC**](pc-updating).
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-updating"></div>
 
-## Updating Gorilla Tag
+## Mise à jour de Gorilla Tag
 
-> Updating Gorilla Tag will *wipe your settings*, like name, colors, queue, etc. You can easily re-add these settings through the computer in the treehouse again.
+> Mettre à jour le tag Gorilla *effacera vos paramètres*, comme le nom, les couleurs, la file d'attente, etc. Vous pouvez facilement réajouter ces paramètres par le biais de l'ordinateur a l'interieur de l'arbre.
 
-Gorilla Tag while modded **cannot be updated through the Update dialog or the Store**. To update Gorilla Tag with mods, you will need to uninstall Gorilla Tag, reinstall the latest version, mod it with QuestPatcher, and then restore your mods. While it might sound long, it shouldn't be too bad.
+Gorilla Tag en étant Moddé **ne peut pas être mis à jour via la boîte de dialogue de mise à jour ou la boutique**. Pour mettre à jour Gorilla Tag avec des mods, vous devrez désinstaller Gorilla Tag, réinstallez la dernière version, modifiez-la avec QuestPatcher, puis restaurez vos mods. Bien que cela puisse paraître long, cela ne devrait pas trop l'être .
 
-### Uninstalling Gorilla Tag {docsify-ignore}
+### Désinstallation de Gorilla Tag {docsify-ignore}
 
-!> **It's important to uninstall Gorilla Tag via QuestPatcher.** Uninstalling a modded game through Oculus Home may cause the game to get stuck uninstalling.
+!> **Il est important de désinstaller Gorilla Tag via QuestPatcher.** La désinstallation d'un jeu moddé par Oculus Home peut entraîner la désinstallation du jeu.
 
-1. Plug in your Quest into your computer, open QuestPatcher, and go to the **Tools & Options** menu on the left.
-2. Click the red **Uninstall App** button, then click **Uninstall App** again. QuestPatcher will close. ![Uninstall App](../docs/files/uninstallapp.png)
+1. Branchez votre Quest sur votre ordinateur, ouvrez QuestPatcher et allez dans le menu **Outils & Options** à gauche.
+2. Cliquez sur le bouton rouge **Désinstaller l'application** , puis cliquez sur **Désinstaller l'appli** à nouveau. QuestPatcher fermera. ![Désinstaller l'application](../docs/files/uninstallapp.png)
 
-### Reinstalling Gorilla Tag {docsify-ignore}
+### Réinstaller Gorilla Tag {docsify-ignore}
 
-At this point, you should **open the Oculus Store** on your headset, search for `Gorilla Tag`, then go to the details and click **Download**. Wait for it to finish downloading and installing before continuing to the next step.
+À ce stade, vous devrez **ouvrir la boutique Oculus** sur votre casque recherchez `Gorilla Tag`, puis allez dans les détails et cliquez sur **Télécharger**. Attendez qu'il termine le téléchargement et l'installation avant de passer à l'étape suivante.
 
-### Modding Gorilla Tag {docsify-ignore}
+### Modding de Gorilla Tag {docsify-ignore}
 
-After Gorilla Tag has finished downloading, re-follow the [**Quest Modding**](quest-guide) guide to repatch your game. Then, **reinstall your mods.**
+Une fois que Gorilla Tag a fini de télécharger, suivez à nouveau le guide de [**Modding sur Quest**](quest-guide) pour repatcher votre jeu. Ensuite, **réinstallez vos mods.**
 
-!> Before reinstalling mods, you should check the source to see if they have updated or confirmed the mod to work on the latest version.
+!> Avant de réinstaller les mods, vous devriez vérifier les sources pour voir si elles ont mis à jour ou confirmé le mod pour fonctionner sur la dernière version.
 
 ---
 
-> If you appreciated this guide, you can [send a tip](https://streamelements.com/burritosoft/tip) or [sponsor the main writer](https://github.com/sponsors/burritosoftware).
+> Si vous avez apprécié ce guide, vous pouvez [envoyer un conseil](https://streamelements.com/burritosoft/tip) ou [parrainer l'écrivain principal](https://github.com/sponsors/burritosoftware).
