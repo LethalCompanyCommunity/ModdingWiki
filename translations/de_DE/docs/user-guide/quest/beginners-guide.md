@@ -15,7 +15,7 @@ Zur Zeit ist die Empfohlenne methode mods mit **QuestPatcher** zu Installieren. 
 
 1. Select the assets dropdown on GitHub, and click `QuestPatcher-windows.exe`, then wait for the download to finish.
 2. Öffne deine download ordner und doppel klick den installer an.
-3. It's possible that a prompt like this will open when running QuestPatcher. This is a **false positive**, just press `More info` then `Run anyway`.
+3. Es kann sein das ein prompt genau wie bei der installation von QuestPatcher auftauhen könnte wenn du es zum ersten mal öffnest. This is a **false positive**, just press `More info` then `Run anyway`.
 
 ![Smartscreen pop-up](../docs/files/questpatchersmartscreen.png)
 
@@ -26,7 +26,7 @@ Zur Zeit ist die Empfohlenne methode mods mit **QuestPatcher** zu Installieren. 
 
 ### macOS
 
-!> QuestPatcher sollte automatisch Java Installieren. If you're on an older version of macOS, Java might be detected as already installed when it isn't. If you are having trouble patching, manually download Java [here](https://www.java.com/en/).
+!> QuestPatcher sollte automatisch Java Installieren. Wenn du eine alte version von macOS benutzt, wird Java als schon installiert detektiert obwohl es nicht installiert ist. If you are having trouble patching, manually download Java [here](https://www.java.com/en/).
 
 1. Select the assets dropdown on GitHub, and click `QuestPatcher-mac.dmg`, then wait for the download to finish.
 2. Open your Downloads folder, and double click `QuestPatcher-mac.dmg`.
