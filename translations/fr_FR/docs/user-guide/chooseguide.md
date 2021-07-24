@@ -13,7 +13,7 @@ Les casques compatibles comprennent :
 - HTC Vive/Vive Pro/Vive Pro Eye/Cosmos
 - Oculus Rift/Rift S
 - Casques Windows Mixed Reality
-- Oculus Quest/Quest 2 using [**Oculus Link**](https://support.oculus.com/444256562873335/)
+- Oculus Quest/Quest 2 via [**Oculus Link**](https://support.oculus.com/444256562873335/)
 
 > ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Continuer avec le Modding sur PC**](pc-guide)
 
