@@ -32,7 +32,7 @@ Zur Zeit ist die Empfohlenne methode mods mit **QuestPatcher** zu Installieren. 
 2. Öffne deine download ordner und doppel klick `QuestPatcher-mac.dmg` an.
 3. Ziehe den QuestPatcher applikation in den Download ordner.
 4. Schließe das Fenster, rechts klick QuestPatcher auf dein desktop und klicke `Eject "QuestPatcher"`.
-5. Öffne dein Downloads ordner und doppel klick QuestPatcher an. **__Make sure you hold control__**, then click open (You will only have to do this the first time).
+5. Öffne dein Downloads ordner und doppel klick QuestPatcher an. **__Stelle Sicher das du Control haltest__**, dann drücke open (Du musst das nur bei der ersten Öffnung machen).
 6. In the unrecognized developer that comes up (see below), click `Open`.
 
 ![Unverified app pop-up](../docs/files/questpatchermacunverified.png)
