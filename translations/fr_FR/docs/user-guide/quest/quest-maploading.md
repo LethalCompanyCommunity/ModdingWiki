@@ -1,22 +1,22 @@
 # Quest Custom Maps Installation
 ---
 >
-> This guide only applies to the Quest version of Gorilla Tag. If you're using a SteamVR headset or a Quest **with Link**, go to the [**PC Custom Maps Installation**](pc-maploading) guide.
+> This guide only applies to the Quest version of Gorilla Tag. Si vous utilisez un casque SteamVR ou un Quest **avec link**, allez au guide [**Mise à jour du mod PC**](pc-maploading).
 
-?> `.gtmap` files are cross compatible between PC and Quest, so you can crossplay with your friends, on any platform!
+?> `les fichiers .gtmap` sont compatibles entre PC et Quest, afin que vous puissiez jouer avec vos amis, sur n'importe quelle plateforme !
 
-## Installing Maps
-?> **Don't have a modded game?** Check out the guide to mod Gorilla Tag for Quest and install QuestPatcher [here](quest-guide)!
+## Installation de cartes
+?> **Vous n'avez pas de partie moddée?** Consultez le guide de mod du tag Gorilla pour la quête et installez QuestPatcher [ici](quest-guide)!
 
-!> **Make sure to install the Monke Map Loader mod!** You can download it from [**RedBrumbler's GitHub**](https://github.com/RedBrumbler/MonkeMapLoader/releases/latest).
+!> **Assurez-vous d'installer le mod Monke Map Loader !** Vous pouvez le télécharger à partir de [**GitHub de RedBrumbler**](https://github.com/RedBrumbler/MonkeMapLoader/releases/latest).
 
-Once you have your game modded and Monke Map Loader installed, you can install custom maps (`.gtmap` files) by dragging and dropping them directly into QuestPatcher with your Quest plugged in.
+Une fois que votre jeu a été moddé et que Monke Map Loader est installé, vous pouvez installer des cartes personnalisées (`. tmap` fichiers) en les glissant et en les déposant directement dans QuestPatcher avec votre Quest branchée.
 
-**Not sure where to download more custom maps?** Head to [monkemaphub.com](https://monkemaphub.com), where you can find all released maps for the map loader. Click the logo below to head there!
+**Vous ne savez pas où télécharger plus de cartes personnalisées ?** Allez sur [monkemaphub. om](https://monkemaphub.com), où vous pouvez trouver toutes les cartes publiées pour le chargeur de cartes. Cliquez sur le logo ci-dessous pour vous y rendre !
 
 > [![Monke Map Hub logo](../docs/files/MMHLOGO.png)](https://monkemaphub.com)
 
-## Loading Maps
+## Chargement des Maps
 In game, head to the computer and press enter to skip the Banana OS splash screen. Use the arrow keys to select **Map Loader**, then press enter. Then, use the arrow keys to select a map from the list of your currently installed custom maps. You should see an orb with a spinning preview of the map, similar to the one found below.
 
 ![Orb Preview](../docs/files/orb.png)
