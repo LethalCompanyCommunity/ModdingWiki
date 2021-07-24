@@ -1,28 +1,28 @@
-# Choose Your Platform {docsify-ignore-all}
+# Elige tu plataforma {docsify-ignore-all}
 ---
 
-Gorilla Tag is available for both PC and Oculus Quest. Since the modding scene is different for both platforms, the beginners guide is split into [**PC Modding**](pc-guide) and [**Quest Modding**](quest-guide).
+Gorilla Tag esta disponible para PC y Oculus Quest. Dado que la escena de modding es diferente para ambas plataformas, la guía de principiantes se divide en [**PC Modding**](pc-guide) y [**Quest Modding**](quest-guide).
 
-## ![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=24)&nbsp;PC Modding
+## ![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=24)&nbsp;Modding en PC
 
-If you are using SteamVR, follow our [**PC Modding**](pc-guide) guide.
+Si estás usando SteamVR, sigue nuestra guía [**PC Modding**](pc-guide).
 
-Applicable hardware includes:
+El hardware aplicable incluye:
 
 - Valve Index
 - HTC Vive/Vive Pro/Vive Pro Eye/Cosmos
 - Oculus Rift/Rift S
-- Windows Mixed Reality headsets
-- Oculus Quest/Quest 2 using [**Oculus Link**](https://support.oculus.com/444256562873335/)
+- Auriculares de Realidad Mixta de Windows
+- Oculus Quest/Quest 2 usando [**Oculus link**](https://support.oculus.com/444256562873335/)
 
-> ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Continue with PC Modding**](pc-guide)
+> ### [![Página de steam](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Continuar con PC Modding**](pc-guide)
 
-## ![Oculus Logo](https://icongr.am/simple/oculus.svg?color=A9A9A9&size=24)&nbsp;Quest Modding
+## ![Oculus Logo](https://icongr.am/simple/oculus.svg?color=A9A9A9&size=24)&nbsp;Modding en Quest
 
-If you are using the Oculus Quest version of the game, follow our [**Quest Modding**](quest-guide) guide.
+Si estas usando la versión Quest del juego, sigue nuestra guia de [**Modding en Quest**](quest-guide).
 
-Applicable hardware includes:
+El hardware aplicable incluye:
 
 - Oculus Quest/Quest 2
 
-> ### [![Oculus Logo](https://icongr.am/simple/oculus.svg?color=A9A9A9&size=18.72)]()&nbsp;[**Continue with Quest Modding**](quest-guide)
+> ### [![Logo de Oculus](https://icongr.am/simple/oculus.svg?color=A9A9A9&size=18.72)]()&nbsp;[**Continuar con modding en Quest**](quest-guide)
