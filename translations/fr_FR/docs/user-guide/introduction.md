@@ -1,4 +1,4 @@
-Guide de Modding pour Gorilla Tag {docsify-ignore-all}
+# Guide de Modding pour Gorilla Tag {docsify-ignore-all}
 ---
 Démarrez votre course avec les modifications apportées à Gorilla Tag pour améliorer votre expérience.  
 Reject humanity, return to monke.
