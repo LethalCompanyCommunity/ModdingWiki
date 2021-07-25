@@ -67,21 +67,21 @@ Nach etwa 30 Sekunden (obwohl es je nach Internetverbindung länger als fünf Mi
 
 **Um mit dem Patch zu beginnen, klicke einfach auf den `Patch meine App!` knopf.**
 
-> It may take 1-15 minutes to patch your app (roughly) You need to make sure that your internet stays online during this time.
+> Es kann 1-15 Minuten dauern, um deine App zu patchen (ungefähr) Du musst sicherstellen, dass dein Internet während dieser Zeit online bleibt.
 
 !> Schließe QuestPatcher nicht, während du die App patchst.
 
 ## Mods verwalten
 
-Once QuestPatcher is done, you will be brought to this screen.
+Sobald QuestPatcher fertig ist, wirst du zu diesen Bildschirm gebracht.
 
-> Next time you open QuestPatcher, you will be brought directly to this screen as your game is already patched.
+> Beim der nächsten Öffnung von QuestPatcher wirst du direkt auf diesen Bildschirm gebracht, da dein Spiel bereits gepatcht ist.
 
 ![Patching Completed](../docs/files/questpatcherpatched.png)
 
-### Installing Mods
+### Mods installieren
 
-To get mods, you first need to download a `.qmod` file of the mod you want. You can find mods in the `#quest-mod-releases` channel of the [Gorilla Tag modding discord](https://discord.gg/b2MhDBAzTv).
+Um Mods zu erhalten, musst du zuerst eine `.qmod` Datei der Mod herunterladen die du möchtest. Du kannst Mods im `#quest-mod-release` Kanal der [Gorilla Tag modding discord](https://discord.gg/b2MhDBAzTv) finden.
 
 !> Do not download .DLL files - they are PC mods, which cannot be used on the quest version of Gorilla Tag.
 
