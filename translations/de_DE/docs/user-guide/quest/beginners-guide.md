@@ -33,30 +33,30 @@ Zur Zeit ist die Empfohlenne methode mods mit **QuestPatcher** zu Installieren. 
 3. Ziehe den QuestPatcher applikation in den Download ordner.
 4. Schließe das Fenster, rechts klick QuestPatcher auf dein desktop und klicke `Eject "QuestPatcher"`.
 5. Öffne dein Downloads ordner und doppel klick QuestPatcher an. **__Stelle Sicher das du Control haltest__**, dann drücke open (Du musst das nur bei der ersten Öffnung machen).
-6. In the unrecognized developer that comes up (see below), click `Open`.
+6. Klicke im unbekannten Entwickler, der aufkommt (siehe unten), auf `Öffnen`.
 
 ![Unverified app pop-up](../docs/files/questpatchermacunverified.png)
 
 
 ### Linux
 
-> QuestPatcher is compiled for [Ubuntu](https://ubuntu.com/) Linux. Other Linux distributions may work, but you may encounter issues.
+> QuestPatcher ist für [Ubuntu](https://ubuntu.com/) Linux kompiliert. Andere Linux-Distributionen könnten funktionieren, aber du könntest Probleme bekommen.
 
-!> These instructions are more complicated than Mac and Windows, and it is recommended that you know your way around a terminal.
+> Diese Anweisungen sind komplizierter als Mac und Windows, und es wird empfohlen, dass du den Weg durch ein Terminal kennst.
 
-1. Select the assets dropdown on GitHub, and click `QuestPatcher-ubuntu.zip`, then wait for the download to finish.
-2. Extract the ZIP file using Archive Manager.
-3. Enter the extracted folder, right click, then press `Open in Terminal`.
-4. Type in `chmod +x QuestPatcher` and press enter.
-5. If all goes well, type in `./QuestPatcher` and QuestPatcher will load.
+1. Wähle die Asset Dropdown Liste auf GitHub und drücke `QuestPatcher-ubuntu.zip` und warte bis der Download fertig ist.
+2. Extrahiere die ZIP-Datei mit Hilfe des Archiv-Managers.
+3. Geben den extrahierten Ordner ein, rechts klicke und drücke `Öffnen im Terminal`.
+4. Gebe `chmod +x QuestPatcher` ein und drück auf Enter.
+5. Wenn alles gut geht, tippe `./QuestPatcher` ein und QuestPatcher wird geladen.
 
-## Patching
+## Patchen
 
-When you first open QuestPatcher, you will be greeted by a loading screen like below. There will be a few short progress bars while QuestPatcher downloads important files. (`Downloading openjre` and `Downloading platform-tools`).
+Wenn du QuestPatcher zum ersten Mal öffnest, wirst du von einem Ladebildschirm wie unten begrüßt. Es wird ein paar kurze Fortschrittsbalken geben, während QuestPatcher wichtige Dateien herunterlädt. (`Lade openjre` und `Lade Plattform-Tools herunter`).
 
 ![QuestPatcher Loading](../docs/files/questpatcherloading.png)
 
-> If you get a prompt saying `Quest Not Connected`, make sure that your quest is plugged in, and you have set up developer mode as per the [SideQuest installation instructions](https://sidequestvr.com/setup-howto). 
+> Wenn du eine Eingabeaufforderung erhältst, in der `Quest nicht verbunden ist` steht, stelle sicher, dass deine Quest verbunden ist, und das du gemäß der [SideQuest Installationsanleitung](https://sidequestvr.com/setup-howto) den Entwicklermodus eingerichtet hast. 
 > 
 > If you get a prompt saying `App Not Installed`, make sure that you have installed Gorilla Tag from Oculus App Lab [here](https://www.oculus.com/experiences/quest/4979055762136823/).
 
