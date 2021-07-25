@@ -58,20 +58,20 @@ Wenn du QuestPatcher zum ersten Mal öffnest, wirst du von einem Ladebildschirm 
 
 > Wenn du eine Eingabeaufforderung erhältst, in der `Quest nicht verbunden ist` steht, stelle sicher, dass deine Quest verbunden ist, und das du gemäß der [SideQuest Installationsanleitung](https://sidequestvr.com/setup-howto) den Entwicklermodus eingerichtet hast. 
 > 
-> If you get a prompt saying `App Not Installed`, make sure that you have installed Gorilla Tag from Oculus App Lab [here](https://www.oculus.com/experiences/quest/4979055762136823/).
+> Wenn Sie eine Eingabeaufforderung erhalten solltest wo steht `App nicht installiert`, stelle sicher, dass du Gorilla Tag vom Oculus App Lab [hier](https://www.oculus.com/experiences/quest/4979055762136823/) installiert hast.
 
 
-After about 30 seconds (although it could take longer than five minutes depending on your internet connection), QuestPatcher will finish loading and you will be greeted with a screen like below.
+Nach etwa 30 Sekunden (obwohl es je nach Internetverbindung länger als fünf Minuten dauern kann), QuestPatcher wird das Laden beendet und du wirst wie unten mit einem Bildschirm begrüßt.
 
 ![QuestPatcher Ready To Patch](../docs/files/questpatcherpatch.png)
 
-**To start patching, just click the `Patch my App!` button.**
+**Um mit dem Patch zu beginnen, klicke einfach auf den `Patch meine App!` knopf.**
 
 > It may take 1-15 minutes to patch your app (roughly) You need to make sure that your internet stays online during this time.
 
-!> Do not close QuestPatcher while it is patching your app.
+!> Schließe QuestPatcher nicht, während du die App patchst.
 
-## Managing Mods
+## Mods verwalten
 
 Once QuestPatcher is done, you will be brought to this screen.
 
