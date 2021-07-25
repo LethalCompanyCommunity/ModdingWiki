@@ -13,7 +13,7 @@ El hardware aplicable incluye:
 - HTC Vive/Vive Pro/Vive Pro Eye/Cosmos
 - Oculus Rift/Rift S
 - Auriculares de Realidad Mixta de Windows
-- Oculus Quest/Quest 2 usando [**Oculus link**](https://support.oculus.com/444256562873335/)
+- Oculus Quest/Quest 2 usando [**Oculus Link**](https://support.oculus.com/444256562873335/)
 
 > ### [![Página de steam](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Continuar con PC Modding**](pc-guide)
 
