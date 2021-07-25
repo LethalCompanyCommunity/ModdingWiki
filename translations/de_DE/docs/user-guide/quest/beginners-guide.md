@@ -13,9 +13,9 @@ Zur Zeit ist die Empfohlenne methode mods mit **QuestPatcher** zu Installieren. 
 
 > Die einzige version ist mit Windows 10 supported. Andere Versionen könnten funktionieren, aber wir können nicht volle Funktion garantieren.
 
-1. Select the assets dropdown on GitHub, and click `QuestPatcher-windows.exe`, then wait for the download to finish.
+1. Wähle die Asset Dropdown Liste auf GitHub und drücke `QuestPatcher-windows.exe` und warte bis der Download fertig ist.
 2. Öffne deine download ordner und doppel klick den installer an.
-3. It's possible that a prompt like this will open when running QuestPatcher. This is a **false positive**, just press `More info` then `Run anyway`.
+3. Es kann sein das ein prompt genau wie bei der installation von QuestPatcher auftauhen könnte wenn du es zum ersten mal öffnest. Dies ist eine **falsche postive**, drücke einfach `Mehr info` dann `Trotzdem Rennen`.
 
 ![Smartscreen pop-up](../docs/files/questpatchersmartscreen.png)
 
@@ -26,13 +26,13 @@ Zur Zeit ist die Empfohlenne methode mods mit **QuestPatcher** zu Installieren. 
 
 ### macOS
 
-!> QuestPatcher sollte automatisch Java Installieren. If you're on an older version of macOS, Java might be detected as already installed when it isn't. If you are having trouble patching, manually download Java [here](https://www.java.com/en/).
+!> QuestPatcher sollte automatisch Java Installieren. Wenn du eine alte version von macOS benutzt, wird Java als schon installiert detektiert obwohl es nicht installiert ist. Wenn du Probleme hast zu patchen, installiere Java [hier](https://www.java.com/en/) manuel.
 
-1. Select the assets dropdown on GitHub, and click `QuestPatcher-mac.dmg`, then wait for the download to finish.
-2. Open your Downloads folder, and double click `QuestPatcher-mac.dmg`.
-3. Drag the QuestPatcher application into the Applications folder.
-4. Close the DMG window, right click QuestPatcher on your desktop and click `Eject "QuestPatcher"`.
-5. Open your Applications folder and right click QuestPatcher. **__Make sure you hold control__**, then click open (You will only have to do this the first time).
+1. Wähle die Asset Dropdown Liste auf GitHub und drücke `QuestPatcher-mac.dmg` und warte bis der Download fertig ist.
+2. Öffne deine download ordner und doppel klick `QuestPatcher-mac.dmg` an.
+3. Ziehe den QuestPatcher applikation in den Download ordner.
+4. Schließe das Fenster, rechts klick QuestPatcher auf dein desktop und klicke `Eject "QuestPatcher"`.
+5. Öffne dein Downloads ordner und doppel klick QuestPatcher an. **__Stelle Sicher das du Control haltest__**, dann drücke open (Du musst das nur bei der ersten Öffnung machen).
 6. In the unrecognized developer that comes up (see below), click `Open`.
 
 ![Unverified app pop-up](../docs/files/questpatchermacunverified.png)

@@ -1,24 +1,24 @@
-- **User Guide**
-- [Introduction](./)
-- [Choose Your Platform](choose-guide)
-- **PC Modding**
-- [Beginner's Guide](pc-guide)
-- [Updating Mods](pc-updating)
-- [Custom Maps](pc-maploading)
-- **Quest Modding**
-- [Beginner's Guide](quest-guide)
-- [Updating Mods](quest-updating)
-- [Custom Maps](quest-maploading)
+- **Guía del usuario**
+- [Introducción](./)
+- [Elige tu plataforma](choose-guide)
+- **Modding en PC**
+- [Guía para principiantes](pc-guide)
+- [Actualizando Mods](pc-updating)
+- [Mapas Personalizados](pc-maploading)
+- **Modding en Quest**
+- [Guía para principiantes](quest-guide)
+- [Actualizando Mods](quest-updating)
+- [Mapas Personalizados](quest-maploading)
 - **Extras**
-- [Frequently Asked Questions](../faq)
-- **Links**
+- [Preguntas frecuentes](../faq)
+- **Enlaces**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/b2MhDBAzTv)
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/burritosoftware/GorillaTag-Modding-Guide)
-- [![Translate](https://icongr.am/material/translate.svg?color=808080&size=16)Translate](https://crowdin.com/project/gorilla-tag-modding-guide)
-- [![PayPal](https://icongr.am/simple/paypal.svg?color=808080&size=16)Tips](https://streamelements.com/burritosoft/tip)
-- [![GoatCounter](https://icongr.am/fontawesome/group.svg?color=808080&size=16)Analytics](https://burrito.goatcounter.com/)
-- [About](../about)
-- **Statistics**
+- [![Traducir](https://icongr.am/material/translate.svg?color=808080&size=16)Traducir](https://crowdin.com/project/gorilla-tag-modding-guide)
+- [![PayPal](https://icongr.am/simple/paypal.svg?color=808080&size=16)Propinas](https://streamelements.com/burritosoft/tip)
+- [![GoatCounter](https://icongr.am/fontawesome/group.svg?color=808080&size=16)Analíticas](https://burrito.goatcounter.com/)
+- [Acerca de](../about)
+- **Estadísticas**
 - ![Page visits](https://img.shields.io/badge/dynamic/json?label=visits&query=count_unique&color=blueviolet&url=https%3A%2F%2Fburrito.goatcounter.com%2Fcounter%2FTOTAL.json)
 - ![GitHub last updated](https://img.shields.io/github/last-commit/burritosoftware/GorillaTag-Modding-Guide?label=last%20updated)
 - ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/burritosoftware/GorillaTag-Modding-Guide)
