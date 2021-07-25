@@ -79,9 +79,9 @@ Cuando QuestPatcher termine, serás llevado a esta pantalla.
 
 ![Parche Completado](../docs/files/questpatcherpatched.png)
 
-### Instalar mods
+### Instalar Mods
 
-Para obtener mods, primero necesitas descargar un archivo `.qmod` del mod que desee. Puedes encontrar mods en el canal `#quest-mod-releases` del discord [Gorilla Tag Modding](https://discord.gg/b2MhDBAzTv).
+Para obtener mods, primero necesitas descargar un archivo `.qmod` del mod que desee. Puedes encontrar mods en el canal `#quest-mod-releases` del Discord [Gorilla Tag Modding](https://discord.gg/b2MhDBAzTv).
 
 !> No descargue archivos .DLL - son mods dedicados para PC, que no pueden ser usados en la versión Quest de Gorilla Tag.
 
@@ -93,7 +93,7 @@ Una vez el mod este instalado, lo deberías poder ver en la sección de Mods de 
 
 **¡Ahora puedes abrir tu juego y usar tus mods!**
 
-?> si ves esta pantalla cuando inicias Gorilla Tag, presiona clic **Abrir Aplicación**. No haga clic en Restaurar, esto restaurará su juego a la versión original y puede causar problemas con su instalación.  
+?> Si ves esta pantalla cuando inicias Gorilla Tag, presiona clic **Abrir Aplicación**. No haga clic en Restaurar, esto restaurará su juego a la versión original y puede causar problemas con su instalación.  
 ![Restaurar App](../docs/files/restoreapp.png)
 
 ### Desinstalando Mods
