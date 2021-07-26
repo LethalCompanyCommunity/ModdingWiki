@@ -107,20 +107,20 @@ Wenn du eine Mod löschen möchtest, klicke auf den `Löschen` Mod neben der Mod
 
 !> Um Kosmetiks zu verwenden, musst du das Gorilla Cosmetics Mod installieren. Andernfalls werden sie nicht im Spiel erscheinen.
 
-To view your installed cosmetics and maps, click the `Cosmetics & Other Items` tab of QuestPatcher. Use the drop-down to select the file type you want to manage.
+Um Ihre installierten Kosmetiks und Karten anzusehen, klicke auf `Kosmetiks & Weitere Artikel` des QuestPatchers. Verwenden das Dropdown-Menü, um den Dateityp auszuwählen, dendu verwalten möchtest.
 
-**Cosmetics can be installed by dragging and dropping them into the grey area, or by clicking the Browse button.**
+**Kosmetiks können durch Ziehen und Ablegen in die Grauezone oder durch Klicken auf die Schaltfläche Durchsuchen installiert werden.**
 
 ![QuestPatcher Kosmetikmenü](../docs/files/questpatcherotheritems.png)
 
-## Installing Maps {docsify-ignore}
+## Installiere Karten {docsify-ignore}
 
-> Check out the [**Quest Custom Maps Guide**](quest-maploading) for info on custom maps, installation, and where to get new maps.
+> Schaue dir den [**Quest Custom Maps Guide**](quest-maploading) an für Informationen zu benutzerdefinierten Karten, Installation und wo neue Karten zu erhalten sind.
 
-## Updating Mods {docsify-ignore}
+## Aktualisiere Mods {docsify-ignore}
 
-> Check out the [**Quest Mod Updating Guide**](quest-updating) for info on updating Gorilla Tag with mods installed.
+> Schauen dir den [**Quest Mod Updating Guide**](quest-updating) an, um mehr über die Aktualisierung des Gorilla Tags mit installierten Mods zu erfahren.
 
 ---
 
-> If you appreciated this guide, you can [send a tip](https://streamelements.com/burritosoft/tip) or [sponsor the main writer](https://github.com/sponsors/burritosoftware).
+> Wenn dir diese Anleitung gefallen hat, kannst du [einen Tipp](https://streamelements.com/burritosoft/tip) oder [Ein Sponsor zum Hauptautor](https://github.com/sponsors/burritosoftware) senden.
