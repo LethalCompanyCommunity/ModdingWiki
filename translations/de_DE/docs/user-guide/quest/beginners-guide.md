@@ -7,14 +7,14 @@
 
 ## QuestPatcher Installieren
 
-Zur Zeit ist die Empfohlenne methode mods mit **QuestPatcher** zu Installieren. Lade **QuestPatcher** auf [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest) herunter.
+Zur Zeit ist die empfohlene Methode Mods zu installieren durch **QuestPatcher**. Lade **QuestPatcher** auf [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest) herunter.
 
 ### Windows
 
-> Die einzige version ist mit Windows 10 supported. Andere Versionen könnten funktionieren, aber wir können nicht volle Funktion garantieren.
+> Nur Windows 10 wird offiziell unterstützt. Andere Versionen könnten funktionieren, aber wir können nicht volle Funktion garantieren.
 
 1. Wähle die Asset Dropdown Liste auf GitHub und drücke `QuestPatcher-windows.exe` und warte bis der Download fertig ist.
-2. Öffne deine download ordner und doppel klick den installer an.
+2. Öffne deine Download Ordner und doppelklicke den Installer an.
 3. Es kann sein das ein prompt genau wie bei der installation von QuestPatcher auftauhen könnte wenn du es zum ersten mal öffnest. Dies ist eine **falsche postive**, drücke einfach `Mehr info` dann `Trotzdem Rennen`.
 
 ![Smartscreen-Pop-up](../docs/files/questpatchersmartscreen.png)
