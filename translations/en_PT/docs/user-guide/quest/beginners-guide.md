@@ -101,7 +101,7 @@ Once the mod is installed, ye shall see it in the Mods chest of QuestPatcher.![M
 Mods can be toggled by clicking the switch next to the mod. Disabling a mod makes the mod act as if it is uninstalled, but not to worry, ye can always enable it once more.
 
 
-Shall ye seek to pillage a mod, click the `Delete` mod next to the mod.
+If you want to delete a mod, click the `Delete` button next to the mod.
 
 ## Managing Cosmetics & Other Items
 
