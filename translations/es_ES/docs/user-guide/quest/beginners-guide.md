@@ -101,7 +101,7 @@ Una vez el mod este instalado, lo deberías poder ver en la sección de Mods de 
 Los mods pueden ser cambiados haciendo clic en el botón junto al mod. Deshabilitar un mod hace que el mod actúe como si estuviera desinstalado, pero siempre puedes activarlo de nuevo.
 
 
-Si quieres eliminar un mod, haz clic en `Delete` junto al mod.
+If you want to delete a mod, click the `Delete` button next to the mod.
 
 ## Gestionando Cosméticos & Otros Artículos
 
