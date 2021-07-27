@@ -85,7 +85,7 @@ Um Mods zu erhalten, musst du zuerst eine `.qmod` Datei der Mod herunterladen di
 
 > Lade keine .DLL-Dateien herunter - diese sind PC-Mods, die nicht auf der Quest Version von Gorilla Tag verwendet werden können.
 
-Um ein Mod zu installieren, klicke auf den Durchsuchen Knopf in der `Mod-Verwaltung` von QuestPatcher und wähle die Mods aus, die du möchtest. Schließlich, klicke auf `Öffnen` um die Mods zu installieren. ![Wähle eine Mod im QuestPatcher aus](../docs/files/questpatcherselectmod.png)
+Um ein Mod zu installieren, klicke auf den Durchsuchen Knopf in der `Mod-Verwaltung` von QuestPatcher und wähle die Mods aus, die du möchtest. Schließlich, klicke auf `Öffnen` um die Mods zu installieren. ![Mods in QuestPatcher auswählen](../docs/files/questpatcherselectmod.png)
 
 !> Das installieren einer Mod kann downloads von anderen Mods starten, die die Mod, die du installieren möchtest benötigt. Deinstalliere diese nicht!
 
@@ -101,7 +101,7 @@ Sobald die Mod installiert ist, solltest du es im Mods Bereich von QuestPatchers
 Mods können an- und ausgeschaltet werden, indem du auf den Schalter neben der Mod klickst. Deaktivierung einer mod wird dargestellt als wäre es deinstalliert worden, aber du kannst es Immer wieder einschalten wenn du möchtest.
 
 
-If you want to delete a mod, click the `Delete` button next to the mod.
+Wenn du eine Mod löschen möchtest, klicke auf den `Delete mod` Knopf neben der Mod.
 
 ## Verwaltung der Kosmetiks & Anderen Dingen
 
@@ -113,14 +113,14 @@ Um Ihre installierten Kosmetiks und Karten anzusehen, klicke auf `Cosmetics & Ot
 
 ![QuestPatcher Kosmetikmenü](../docs/files/questpatcherotheritems.png)
 
-## Installiere Karten {docsify-ignore}
+## Maps installieren {docsify-ignore}
 
-> Schaue dir den [**Quest Custom Maps Guide**](quest-maploading) an für Informationen zu benutzerdefinierten Karten, Installation und wo neue Karten zu erhalten sind.
+> Schaue dir das [**Quest Custom Maps Guide**](quest-maploading) an für Informationen zu benutzerdefinierten Karten, Installation und wo neue Karten zu erhalten sind.
 
-## Aktualisiere Mods {docsify-ignore}
+## Mods aktualisieren {docsify-ignore}
 
-> Schauen dir den [**Quest Mod Updating Guide**](quest-updating) an, um mehr über die Aktualisierung des Gorilla Tags mit installierten Mods zu erfahren.
+> Schauen dir den [**Quest Mod Updating Guide**](quest-updating) an, um mehr über die Aktualisierung von Gorilla Tags mit installierten Mods zu erfahren.
 
 ---
 
-> Wenn dir diese Anleitung gefallen hat, kannst du [einen Tipp](https://streamelements.com/burritosoft/tip) oder [Ein Sponsor zum Hauptautor](https://github.com/sponsors/burritosoftware) senden.
+> Wenn dir diese Anleitung gefallen hat, kannst du [einen Tipp](https://streamelements.com/burritosoft/tip) oder [Den Hauptautor eine spende senden](https://github.com/sponsors/burritosoftware).
