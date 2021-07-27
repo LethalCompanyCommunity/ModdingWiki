@@ -1,126 +1,126 @@
-# Quest Beginner's Guide
+# Guía de Principiantes Para Quest
 ---
 >
-> This guide only applies to the Quest version of Gorilla Tag. If you're using a SteamVR headset or a Quest **with Link**, go to the [**PC Modding**](pc-guide) guide.
+> Esta guía solo aplica para la versión Quest de Gorilla Tag. Si estás usando un dispositivo SteamVR o un Quest **con Link**, ve a la guía [**Modding con PC**](pc-guide).
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-guide"></div>
 
-## Installing QuestPatcher
+## Instalar QuestPatcher
 
-Currently the only recommended way to install mods is **QuestPatcher**. Download **QuestPatcher** from [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest).
+Actualmente la única forma recomendada de instalar mods es **QuestPatcher**. Descarga **QuestPatcher** de [Lauriethefish GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest).
 
 ### Windows
 
-> The only version of Windows officially supported is Windows 10. Other versions might work, but we cannot guarantee full functionality.
+> La única versión de Windows oficialmente soportada es Windows 10. Otras versiones pueden funcionar, pero no podemos garantizar una funcionalidad o facilidad completa.
 
-1. Select the assets dropdown on GitHub, and click `QuestPatcher-windows.exe`, then wait for the download to finish.
-2. Open your downloads folder, and double click the installer.
-3. It's possible that a prompt like this will open when running QuestPatcher. This is a **false positive**, just press `More info` then `Run anyway`.
+1. Seleccione los activos desplegables en GitHub, y haga clic en `QuestPatcher-windows.exe`, luego espere a que la descarga termine.
+2. Abra la carpeta de descargas y haga doble clic en el instalador.
+3. Es posible que se abra un aviso como este cuando se este ejecutando QuestPatcher. Esto es un **falso positivo**, solo pulsa `más información` y luego `Ejecutar de todos modos`.
 
-![Smartscreen pop-up](../docs/files/questpatchersmartscreen.png)
+![Pop-up de pantalla inteligente](../docs/files/questpatchersmartscreen.png)
 
-4. Select `Install for all users` or `Install for me only` and press `Yes` if an admin prompt comes up.
-5. Accept the license agreement, press next, press next again, then press install.
-6. Wait until the install finishes, then press next, and then finish to open QuestPatcher.
+4. Seleccione `Instalar para todos los usuarios` o `Instalar para mí sólo` y presione `Sí` si aparece un aviso de admin.
+5. Acepte el acuerdo de licencia, presione siguiente, siguiente de nuevo, y presione instalar.
+6. Espere a que la instalación termine, luego presione siguiente, y por ultimo presione termine para abrir QuestPatcher.
 
 
 ### macOS
 
-!> QuestPatcher should automatically download Java. If you're on an older version of macOS, Java might be detected as already installed when it isn't. If you are having trouble patching, manually download Java [here](https://www.java.com/en/).
+!> QuestPatcher debería instalar Java automáticamente. Si estás en una versión anterior de macOS, es posible que se detecte que Java ya está instalado cuando no lo está. Si tiene problemas para parchear, puede descargar manualmente Java [aquí](https://www.java.com/en/).
 
-1. Select the assets dropdown on GitHub, and click `QuestPatcher-mac.dmg`, then wait for the download to finish.
-2. Open your Downloads folder, and double click `QuestPatcher-mac.dmg`.
-3. Drag the QuestPatcher application into the Applications folder.
-4. Close the DMG window, right click QuestPatcher on your desktop and click `Eject "QuestPatcher"`.
-5. Open your Applications folder and right click QuestPatcher. **__Make sure you hold control__**, then click open (You will only have to do this the first time).
-6. In the unrecognized developer that comes up (see below), click `Open`.
+1. Seleccione la lista de activos desplegable en GitHub, y haga clic en `QuestPatcher-mac.dmg`, luego espere a que termine la descarga.
+2. Abre tu carpeta de descargas y haz doble clic en `QuestPatcher-mac.dmg`.
+3. Arrastre la aplicación de QuestPatcher a la carpeta de aplicaciones.
+4. Cierre la ventana DMG, haga clic derecho en QuestPatcher en tu escritorio y haz clic en `Ejecutar "QuestPatcher"`.
+5. Abre tu carpeta de aplicaciones y haz clic derecho en QuestPatcher. **__Asegúrate de mantener la tecla de control__**, luego haga clic en abrir (Solo tendrás que hacerlo la primera vez).
+6. En el desarrollador no reconocido que aparece (ver abajo), haga clic en `Abrir`.
 
-![Unverified app pop-up](../docs/files/questpatchermacunverified.png)
+![Pop-up de aplicación no verificada](../docs/files/questpatchermacunverified.png)
 
 
 ### Linux
 
-> QuestPatcher is compiled for [Ubuntu](https://ubuntu.com/) Linux. Other Linux distributions may work, but you may encounter issues.
+> QuestPatcher fue compilado únicamente para [Ubuntu](https://ubuntu.com/) Linux. Otras versiones de Linux pueden funcionar, pero podrías encontrar varios problemas.
 
-!> These instructions are more complicated than Mac and Windows, and it is recommended that you know your way around a terminal.
+!> Estas instrucciones son ms complicadas que las de Mac y Windows, se recomienda que sepas tu camino por un terminal.
 
-1. Select the assets dropdown on GitHub, and click `QuestPatcher-ubuntu.zip`, then wait for the download to finish.
-2. Extract the ZIP file using Archive Manager.
-3. Enter the extracted folder, right click, then press `Open in Terminal`.
-4. Type in `chmod +x QuestPatcher` and press enter.
-5. If all goes well, type in `./QuestPatcher` and QuestPatcher will load.
+1. Seleccione la lista de activos desplegables en GitHub, y haga clic en `QuestPatcher-ubuntu.zip`, despues espere a que termine la descarga.
+2. Extraer el archivo ZIP usando el Administrador de Archivos.
+3. Introduzca la carpeta extraída, haga clic derecho y presione `Abrir en Terminal`.
+4. Escriba `chmod +x QuestPatcher` y presione Entrar.
+5. Si todo sale bien, escriba `./QuestPatcher` y se cargara QuestPatcher.
 
-## Patching
+## Parcheando
 
-When you first open QuestPatcher, you will be greeted by a loading screen like below. There will be a few short progress bars while QuestPatcher downloads important files. (`Downloading openjre` and `Downloading platform-tools`).
+Cuando abras por primera vez QuestPatcher, serás recibido por una pantalla de carga como la siguiente. Habrán algunas barras de progreso breves mientras QuestPatcher descarga unos archivos importantes. (`Descargando openjre` y `Descargando plataform-tools`).
 
-![QuestPatcher Loading](../docs/files/questpatcherloading.png)
+![Carga de QuestPatcher](../docs/files/questpatcherloading.png)
 
-> If you get a prompt saying `Quest Not Connected`, make sure that your quest is plugged in, and you have set up developer mode as per the [SideQuest installation instructions](https://sidequestvr.com/setup-howto). 
+> Si recibes un mensaje diciendo `Quest Not Connected`, asegúrate de que tu Quest está conectado, y que has configurado el modo de desarrollador según las [instrucciones de instalación de SideQuest](https://sidequestvr.com/setup-howto). 
 > 
-> If you get a prompt saying `App Not Installed`, make sure that you have installed Gorilla Tag from Oculus App Lab [here](https://www.oculus.com/experiences/quest/4979055762136823/).
+> Si recibes un mensaje diciendo `App Not Installed`, Asegúrese de que ha instalado Gorilla Tag desde Oculus App Lab [aquí](https://www.oculus.com/experiences/quest/4979055762136823/).
 
 
-After about 30 seconds (although it could take longer than five minutes depending on your internet connection), QuestPatcher will finish loading and you will be greeted with a screen like below.
+Después de 30 segundos (puede tardar más de cinco minutos dependiendo de su conexión a Internet), QuestPatcher terminará de cargarse y serás recibido con una pantalla como la siguiente.
 
-![QuestPatcher Ready To Patch](../docs/files/questpatcherpatch.png)
+![QuestPatcher listo para parchear](../docs/files/questpatcherpatch.png)
 
-**To start patching, just click the `Patch my App!` button.**
+**Para empezar a parchear, solo haz clic en el botón de `Patch my App!`.**
 
-> It may take 1-15 minutes to patch your app (roughly) You need to make sure that your internet stays online during this time.
+> Puede tardar 1-15 minutos en emparejar tu aplicación (aproximadamente) Necesitas asegurarte de que tu Internet permanezca en línea durante esto.
 
-!> Do not close QuestPatcher while it is patching your app.
+!> No cierres QuestPatcher mientras parchea tu aplicación.
 
-## Managing Mods
+## Manejo de Mods
 
-Once QuestPatcher is done, you will be brought to this screen.
+Cuando QuestPatcher termine, serás llevado a esta pantalla.
 
-> Next time you open QuestPatcher, you will be brought directly to this screen as your game is already patched.
+> La próxima vez que abras QuestPatcher, serás llevado directamente a esta pantalla ya que tu juego ya está parcheado.
 
-![Patching Completed](../docs/files/questpatcherpatched.png)
+![Parche Completado](../docs/files/questpatcherpatched.png)
 
-### Installing Mods
+### Instalar mods
 
-To get mods, you first need to download a `.qmod` file of the mod you want. You can find mods in the `#quest-mod-releases` channel of the [Gorilla Tag modding discord](https://discord.gg/b2MhDBAzTv).
+Para obtener mods, primero necesitas descargar un archivo `.qmod` del mod que desee. Puedes encontrar mods en el canal `#quest-mod-releases` del discord [Gorilla Tag Modding](https://discord.gg/b2MhDBAzTv).
 
-!> Do not download .DLL files - they are PC mods, which cannot be used on the quest version of Gorilla Tag.
+!> No descargue archivos .DLL - son mods dedicados para PC, que no pueden ser usados en la versión Quest de Gorilla Tag.
 
-To install a mod, click the browse button in the `Mod Management` section of QuestPatcher and select the mods you want. Finally, click `Open` to install the mods. ![Selecting a mod in QuestPatcher](../docs/files/questpatcherselectmod.png)
+Para instalar un mod, haz clic en el botón de navegación de la sección `Mod Management` en QuestPatcher y selecciona los mods que quieres. Finalmente, haga clic en `Open` para instalar los mods. ![Seleccionar un mod en QuestPatcher](../docs/files/questpatcherselectmod.png)
 
-!> Installing a mod may download other mods that the mod needs to work. Do not uninstall these!
+!> Instalar un mod puede descargar otros mods que el mod principal necesita para funcionar. ¡No desinstales estos!
 
-Once the mod is installed, you should see it in the Mods section of QuestPatcher. ![Mods Installed](../docs/files/questpatcherinstalledmods.png)
+Una vez el mod este instalado, lo deberías poder ver en la sección de Mods de Questpatcher. ![Mods instalados](../docs/files/questpatcherinstalledmods.png)
 
-**You can now open your game, and use your mods!**
+**¡Ahora puedes abrir tu juego y usar tus mods!**
 
-?> If you see this screen when launching Gorilla Tag, just click **Open App**. Do not click Restore, this will restore your game back to vanilla and may cause issues with your installation.  
-![Restore App](../docs/files/restoreapp.png)
+?> si ves esta pantalla cuando inicias Gorilla Tag, presiona clic **Abrir Aplicación**. No haga clic en Restaurar, esto restaurará su juego a la versión original y puede causar problemas con su instalación.  
+![Restaurar App](../docs/files/restoreapp.png)
 
-### Uninstalling Mods
+### Desinstalando Mods
 
-Mods can be toggled by clicking the switch next to the mod. Disabling a mod makes the mod act like it is uninstalled, but you can always enable it again.
+Los mods pueden ser cambiados haciendo clic en el botón junto al mod. Deshabilitar un mod hace que el mod actúe como si estuviera desinstalado, pero siempre puedes activarlo de nuevo.
 
 
-If you want to delete a mod, click the `Delete` mod next to the mod.
+Si quieres eliminar un mod, haz clic en `Delete` junto al mod.
 
-## Managing Cosmetics & Other Items
+## Gestionando Cosméticos & Otros Artículos
 
-!> To use cosmetics, you need to install the Gorilla Cosmetics mod. Otherwise they will not show up in-game.
+!> Para usar cosméticos, necesitas instalar el mod de Gorilla Cosmetics. De lo contrario, no aparecerán en el juego.
 
-To view your installed cosmetics and maps, click the `Cosmetics & Other Items` tab of QuestPatcher. Use the drop-down to select the file type you want to manage.
+Para ver tus cosmeticos y mapas, haz clic en el tab de `Cosmetics & Other items` de QuestPatcher. Utilice el menú desplegable para seleccionar el tipo de archivo que desea gestionar.
 
-**Cosmetics can be installed by dragging and dropping them into the grey area, or by clicking the Browse button.**
+**Cosméticos pueden ser instalados arrastrándolos y soltándolos en el área gris, o haciendo clic en el botón de Navegar.**
 
-![QuestPatcher Cosmetics Menu](../docs/files/questpatcherotheritems.png)
+![Menú de Cosméticos de QuestPatcher](../docs/files/questpatcherotheritems.png)
 
-## Installing Maps {docsify-ignore}
+## Instalar Mapas {docsify-ignore}
 
-> Check out the [**Quest Custom Maps Guide**](quest-maploading) for info on custom maps, installation, and where to get new maps.
+> Échale un vistazo a la [**Guía de mapas personalizados**](quest-maploading) para obtener información sobre mapas personalizados, instalación y dónde obtener nuevos mapas.
 
-## Updating Mods {docsify-ignore}
+## Actualizar Mods {docsify-ignore}
 
-> Check out the [**Quest Mod Updating Guide**](quest-updating) for info on updating Gorilla Tag with mods installed.
+> Échale un vistazo a la [**Guía de actualización de Mods de Quest**](quest-updating) para obtener información sobre cómo actualizar Gorilla Tag con mods instalados.
 
 ---
 
-> If you appreciated this guide, you can [send a tip](https://streamelements.com/burritosoft/tip) or [sponsor the main writer](https://github.com/sponsors/burritosoftware).
+> Si te gusto esta guia, puedes [enviar una propina](https://streamelements.com/burritosoft/tip) o [patrocinar el escritor principal](https://github.com/sponsors/burritosoftware).

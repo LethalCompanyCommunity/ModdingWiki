@@ -1,25 +1,25 @@
-- **User Guide**
+- **Manuel**
 - [Introduction](./)
-- [Choose Your Platform](choose-guide)
-- **PC Modding**
-- [Beginner's Guide](pc-guide)
-- [Updating Mods](pc-updating)
-- [Custom Maps](pc-maploading)
-- **Quest Modding**
-- [Beginner's Guide](quest-guide)
-- [Updating Mods](quest-updating)
-- [Custom Maps](quest-maploading)
-- **Extras**
-- [Frequently Asked Questions](faq)
-- **Links**
+- [Choisissez votre plateforme](choose-guide)
+- **Modding PC**
+- [Guide du débutant](pc-guide)
+- [Mise à jour des modificateurs](pc-updating)
+- [Carte personnalisée](pc-maploading)
+- **Modding sur Quest**
+- [Guide du débutant](quest-guide)
+- [Mise à jour des modules](quest-updating)
+- [Cartes personnalisées](quest-maploading)
+- **Suppléments**
+- [Questions fréquemment posées](../faq)
+- **Connexions**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/b2MhDBAzTv)
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/burritosoftware/GorillaTag-Modding-Guide)
-- [![Translate](https://icongr.am/material/translate.svg?color=808080&size=16)Translate](https://crowdin.com/project/gorilla-tag-modding-guide)
-- [![PayPal](https://icongr.am/simple/paypal.svg?color=808080&size=16)Tips](https://streamelements.com/burritosoft/tip)
-- [![GoatCounter](https://icongr.am/fontawesome/group.svg?color=808080&size=16)Analytics](https://burrito.goatcounter.com/)
-- [About](about)
-- **Statistics**
-- ![Page visits](https://img.shields.io/badge/dynamic/json?label=visits&query=count_unique&color=blueviolet&url=https%3A%2F%2Fburrito.goatcounter.com%2Fcounter%2FTOTAL.json)
-- ![GitHub last updated](https://img.shields.io/github/last-commit/burritosoftware/GorillaTag-Modding-Guide?label=last%20updated)
-- ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/burritosoftware/GorillaTag-Modding-Guide)
-- ![Dark blockchain status](https://img.shields.io/badge/dark%20blockchain-enabled-red)
+- [![Traduction](https://icongr.am/material/translate.svg?color=808080&size=16)Traduction](https://crowdin.com/project/gorilla-tag-modding-guide)
+- [![PayPal](https://icongr.am/simple/paypal.svg?color=808080&size=16)Conseils](https://streamelements.com/burritosoft/tip)
+- [![GoatCounter](https://icongr.am/fontawesome/group.svg?color=808080&size=16)Audience](https://burrito.goatcounter.com/)
+- [À propos](../about)
+- **Statistiques**
+- ![Visites de la page](https://img.shields.io/badge/dynamic/json?label=visits&query=count_unique&color=blueviolet&url=https%3A%2F%2Fburrito.goatcounter.com%2Fcounter%2FTOTAL.json)
+- ![Derrière mise à jour de GitHub](https://img.shields.io/github/last-commit/burritosoftware/GorillaTag-Modding-Guide?label=last%20updated)
+- ![Activité de GitHub commit](https://img.shields.io/github/commit-activity/m/burritosoftware/GorillaTag-Modding-Guide)
+- ![Statut de blockchain](https://img.shields.io/badge/dark%20blockchain-enabled-red)

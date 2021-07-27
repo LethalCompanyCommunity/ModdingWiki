@@ -1,4 +1,4 @@
-# Guía de Principiantes Para PC
+# PC Beginner's Guide
 ---
 >
 > This guide only applies to the PC version of Gorilla Tag.  
