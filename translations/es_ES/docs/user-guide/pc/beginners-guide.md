@@ -1,8 +1,8 @@
-# Guía de Principiantes Para PC
+# Guía de Principiantes Para Pc
 ---
 >
-> This guide only applies to the PC version of Gorilla Tag.  
-> If you're using a Quest (without Link), go to the [**Quest Modding**](quest-guide) guide.
+> Esta guía sólo aplica a la versión de PC de Gorilla Tag.  
+> Si estás usando un Quest (sin Link), ve a la guía [**Modding en Quest**](quest-guide).
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="pc-mod-guide"></div>
 
