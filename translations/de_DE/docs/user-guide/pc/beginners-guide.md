@@ -2,7 +2,7 @@
 ---
 >
 > Diese Anleitung gilt nur für die PC-Version von Gorilla Tag.  
-> Wenn du eine Quest verwenden (ohne Link), gehen zur [**Quest Modding**](quest-guide) Anleitung.
+> Wenn du eine Quest verwenden solltest (ohne Link), gehe zur [**Quest Modding**](quest-guide) Anleitung.
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="pc-mod-guide"></div>
 
@@ -14,7 +14,7 @@
 
 ?> Dies ist derzeit der **empfohlenste Mod-Installer**.
 
-Monke Mod Manager is a mod installer that will install custom mods into Gorilla Tag automatically, and can be re-run in order to update the mods. Monke Mod Manager also notifies you of any updates upon launch by opening the latest release's page if available.  
+Monke Mod Manager ist ein Mod-Installer, der benutzerdefinierte Modifizierungen in Gorilla Tag automatisch installiert, und kann erneut ausgeführt werden, um diese Mods zu aktualisieren. Monke Mod Manager also notifies you of any updates upon launch by opening the latest release's page if available.  
 Download Monke Mod Manager from [**Steven's GitHub**](https://github.com/DeadlyKitten/MonkeModManager/releases/latest). Select the **Assets** dropdown and download the .exe file named `MonkeModManager.exe`.
 
 > Note: If Windows alerts you that the file is unsafe/at risk, choose to keep/run anyway. This is a false-positive.
