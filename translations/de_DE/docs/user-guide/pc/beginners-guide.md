@@ -21,9 +21,9 @@ Lade den Monke Mod Manager von [**Steven's GitHub**](https://github.com/DeadlyKi
 
 ![Preview](../docs/files/mmmpreview.png)
 
-## Install Instructions
+## Installationsanleitung
 
-After you've downloaded Monke Mod Manager, double-click the executable to run it. By default, Monke Mod Manager should automatically fill in your Gorilla Tag installation folder.
+Nachdem du Monke Mod Manager heruntergeladen hast, doppelklicke auf die ausführbare Datei, um es auszuführen. By default, Monke Mod Manager should automatically fill in your Gorilla Tag installation folder.
 
 ?> If you installed Gorilla Tag to a seperate drive or path, Monke Mod Manager will prompt you to select `Gorilla Tag.exe` from your installation folder. Go to the [**Install Folder**](#install-folder) section to find your installation folder.
 
