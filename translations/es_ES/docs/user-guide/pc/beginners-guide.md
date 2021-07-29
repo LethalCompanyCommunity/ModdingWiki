@@ -6,30 +6,30 @@
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="pc-mod-guide"></div>
 
-## Installers
+## Instaladores
 
 ### Monke Mod Manager {docsify-ignore}
 
 ![Monke Mod Manager logo](../docs/files/mmmlogo.png)
 
-?> This is currently the **recommended mod installer**.
+?> actualmente, este es el **instalador de mods recomendado**.
 
-Monke Mod Manager is a mod installer that will install custom mods into Gorilla Tag automatically, and can be re-run in order to update the mods. Monke Mod Manager also notifies you of any updates upon launch by opening the latest release's page if available.  
-Download Monke Mod Manager from [**Steven's GitHub**](https://github.com/DeadlyKitten/MonkeModManager/releases/latest). Select the **Assets** dropdown and download the .exe file named `MonkeModManager.exe`.
+Monke Mod Manager es un instalador de mods que instalará mods personalizados en Gorilla Tag automáticamente, y se puede volver a ejecutar para actualizar los mods. Monke Mod Manager también le avisa de cualquier actualización abriendo la página de la última versión si está disponible.  
+Descarga Monke Mod Manager desde [**Steven's GitHub**](https://github.com/DeadlyKitten/MonkeModManager/releases/latest). Seleccione el menú de **activos** desplegable y descargue el archivo .exe llamado `MonkeModManager.exe`.
 
-> Note: If Windows alerts you that the file is unsafe/at risk, choose to keep/run anyway. This is a false-positive.
+> Nota: Si Windows le avisa de que el archivo es inseguro/en riesgo, elija guardar/ejecutar de todos modos. Esto es un falso positivo.
 
 ![Preview](../docs/files/mmmpreview.png)
 
-## Install Instructions
+## Instrucciones de instalación
 
-After you've downloaded Monke Mod Manager, double-click the executable to run it. By default, Monke Mod Manager should automatically fill in your Gorilla Tag installation folder.
+Después de haber descargado Monke Mod Manager, haga doble clic en el ejecutable para ejecutarlo. Por defecto, Monke Mod Manager debe rellenar automáticamente su carpeta de instalación de Gorilla Tag.
 
-?> If you installed Gorilla Tag to a seperate drive or path, Monke Mod Manager will prompt you to select `Gorilla Tag.exe` from your installation folder. Go to the [**Install Folder**](#install-folder) section to find your installation folder.
+?> Si instaló Gorilla Tag en un drive o ruta separada, Monke Mod Manager le pedirá que seleccione `Gorilla Tag.exe` de su carpeta de instalación. Vaya a la sección [**Install Folder**](#install-folder) para encontrar su carpeta de instalación.
 
-Next, you may select any mods that are listed. BepInEx is the modloader for Gorilla Tag and cannot be unchecked. To update a mod, simply select the installed mod again. If you would like to get more information on a mod, click on it then hit the *View Mod Info* button.
+A continuación, puede seleccionar cualquier mod que aparezca en la lista. BepInEx es el modloader para Gorilla Tag y no puede ser desmarcado. Para actualizar un mod, simplemente seleccione el mod instalado de nuevo. Si quieres obtener más información sobre un mod, haz clic en él y pulsa el botón *View Mod Info*.
 
-After you select the mods you would like to install/update, hit the *Install/Update* button to begin the process. When the status monitor in the bottom left says "*Install complete!*", you're almost there!
+Después de seleccionar los mods que desea instalar/actualizar, presione el botón *Install/Update* para iniciar el proceso. Cuando el monitor de estado en la parte inferior izquierda dice "*Install complete!*", ¡ya casi está!
 
 If it's your first time modding (or starting with a clean install), you'll need to launch Gorilla Tag once and close it to initialize BepInEx. **You may not see any mods load the first time you launch Gorilla Tag after modding, this is normal.**  
 After that, re-launch Gorilla Tag and if everything went well, your mods will now load into the game. Congratulations!
