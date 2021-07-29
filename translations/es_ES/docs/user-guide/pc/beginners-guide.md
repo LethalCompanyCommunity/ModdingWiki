@@ -29,14 +29,14 @@ Después de haber descargado Monke Mod Manager, haga doble clic en el ejecutable
 
 A continuación, puede seleccionar cualquier mod que aparezca en la lista. BepInEx es el modloader para Gorilla Tag y no puede ser desmarcado. Para actualizar un mod, simplemente seleccione el mod instalado de nuevo. Si quieres obtener más información sobre un mod, haz clic en él y pulsa el botón *View Mod Info*.
 
-Después de seleccionar los mods que desea instalar/actualizar, presione el botón *Install/Update* para iniciar el proceso. Cuando el monitor de estado en la parte inferior izquierda dice "*Install complete!*", ¡ya casi está!
+Después de seleccionar los mods que desea instalar/actualizar, presione el botón *Install/Update* para iniciar el proceso. Cuando el monitor de estado en la parte inferior izquierda dice "*Instalación completada!*", ¡ya casi está!
 
-If it's your first time modding (or starting with a clean install), you'll need to launch Gorilla Tag once and close it to initialize BepInEx. **You may not see any mods load the first time you launch Gorilla Tag after modding, this is normal.**  
-After that, re-launch Gorilla Tag and if everything went well, your mods will now load into the game. Congratulations!
+Si es su primera vez modificando Gorilla Tag (o comenzando con una instalación limpia), necesitará iniciar Gorilla Tag una vez y cerrarlo para inicializar BepInEx. **puede que no se vea ninguna carga de mods la primera vez que inicias Gorilla Tag después de modificarlo, esto es normal.**  
+Después de eso, vuelve a lanzar Gorilla Tag y si todo salió bien, tus mods se cargarán en el juego. ¡Felicidades!
 
-## Install Folder
+## Carpeta de instalación
 
-### Default Location
+### Ubicación predeterminada
 
 If you installed your game on your main drive, this should be your installation folder. `C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag`
 
