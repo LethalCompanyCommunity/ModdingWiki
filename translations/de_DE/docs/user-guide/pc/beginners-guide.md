@@ -44,11 +44,11 @@ Wenn du dein Spiel auf deinen Hauptlaufwerk installiert hast, sollte dies dein I
 
 Wenn du dein Spiel an einem anderen Ort installiert hast, folge diesen Anweisungen, um Ihren Installationsordner zu finden.
 
-1. Open Steam and right-click on Gorilla Tag. Then, go to `Manage > Browse local files`.
+1. Öffne Steam und klicke mit der rechten Maustaste den Gorilla Tag. Gehen dann zu `Verwalten von > Lokale Dateien durchsuchen`.
 
 ![Right-click Menu Preview](../docs/files/localfilescontext.png)
 
-2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
+2. Klicke oben auf die Adressleiste, um den Pfad deines Installationsordner auszuwählen. Hit `CTRL`+`C` to copy this to your clipboard.
 
 ![Copy Folder Path Preview](../docs/files/copyfolderpath.png)
 
