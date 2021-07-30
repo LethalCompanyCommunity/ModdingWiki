@@ -25,13 +25,13 @@ Lade den Monke Mod Manager von [**Steven's GitHub**](https://github.com/DeadlyKi
 
 Nachdem du Monke Mod Manager heruntergeladen hast, doppelklicke auf die ausführbare Datei, um es auszuführen. Standardmäßig sollte Monke Mod Manager automatisch den Installationsordner für Gorilla Tag ausfüllen.
 
-?> Wenn du Gorilla Tag auf einem separaten Laufwerk oder Pfad installiert hast, fordert dich Monke Mod Manager auf, `Gorilla Tag.exe` aus deinen Installationsverzeichnis auszuwählen. Gehe zum [**Ordner installieren**](#install-folder) Abschnitt um deinen Installationsordner zu finden.
+?> Wenn du Gorilla Tag auf einem separaten Laufwerk oder Pfad installiert hast, fordert dich Monke Mod Manager auf, `Gorilla Tag.exe` aus deinen Installationsverzeichnis auszuwählen. Gehe zum [**Installations Ordner**](#install-folder) Abschnitt um deinen Installationsordner zu finden.
 
 Als nächstes kannst du alle Mods auswählen, die aufgelistet sind. BepInEx ist der Modloader für Gorilla Tag und kann nicht deaktiviert werden. Um eine Mod zu aktualisieren, wähle einfach erneut die installierte Mod aus. Wenn du mehr Informationen zu einer Mod erhalten möchtest, klicke auf es und drücke den *Mod Info anzeigen* Knopf.
 
-Nachdem du die Mods ausgewählt hast, die du installieren / aktualisieren möchtest, klicke auf *Installieren/Aktualisieren* um den Prozess zu starten. Wenn der Statusmonitor unten links sagt "*Installation abgeschlossen!*", bist du fast da!
+Nachdem du die Mods ausgewählt hast, die du installieren / aktualisieren möchtest, klicke auf *Installieren/Aktualisieren* um den Prozess zu starten. Wenn der Statusmonitor unten links sagt "*Installation abgeschlossen!*", bist du fast fertig!
 
-Wenn du es zum ersten mal Modden tuhst (oder mit einer sauberen Installation beginnst), musst du Gorilla Tag einmal starten und schließen, um BepInEx zu initialisieren. **You may not see any mods load the first time you launch Gorilla Tag after modding, this is normal.**  
+Wenn du es zum ersten mal Moddest (oder mit einer sauberen Installation beginnst), musst du Gorilla Tag einmal starten und schließen, um BepInEx zu initialisieren. **You may not see any mods load the first time you launch Gorilla Tag after modding, this is normal.**  
 After that, re-launch Gorilla Tag and if everything went well, your mods will now load into the game. Congratulations!
 
 ## Install Folder
