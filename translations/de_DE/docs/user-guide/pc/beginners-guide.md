@@ -31,18 +31,18 @@ Als nächstes kannst du alle Mods auswählen, die aufgelistet sind. BepInEx ist 
 
 Nachdem du die Mods ausgewählt hast, die du installieren / aktualisieren möchtest, klicke auf *Installieren/Aktualisieren* um den Prozess zu starten. Wenn der Statusmonitor unten links sagt "*Installation abgeschlossen!*", bist du fast fertig!
 
-Wenn du es zum ersten mal Moddest (oder mit einer sauberen Installation beginnst), musst du Gorilla Tag einmal starten und schließen, um BepInEx zu initialisieren. **You may not see any mods load the first time you launch Gorilla Tag after modding, this is normal.**  
-After that, re-launch Gorilla Tag and if everything went well, your mods will now load into the game. Congratulations!
+Wenn du es zum ersten mal Moddest (oder mit einer sauberen Installation beginnst), musst du Gorilla Tag einmal starten und schließen, um BepInEx zu initialisieren. **Du wiest villeicht keine Mods das erste Mal laden, wenn du den Gorilla Tag nach dem Modding startest, das ist normal.**  
+Danach starte Gorilla Tag erneut und wenn alles gut gelaufen ist, werden deine Mods nun ins Spiel geladen. Glückwunsch!
 
-## Install Folder
+## Installationspfad
 
-### Default Location
+### Standard-standort
 
-If you installed your game on your main drive, this should be your installation folder. `C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag`
+Wenn du dein Spiel auf deinen Hauptlaufwerk installiert hast, sollte dies dein Installationsordner sein. `C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag`
 
-### Other Locations
+### Andere Installationspfade
 
-If you installed your game in a different location, follow these instructions to find your installation folder.
+Wenn du dein Spiel an einem anderen Ort installiert hast, folge diesen Anweisungen, um Ihren Installationsordner zu finden.
 
 1. Open Steam and right-click on Gorilla Tag. Then, go to `Manage > Browse local files`.
 
