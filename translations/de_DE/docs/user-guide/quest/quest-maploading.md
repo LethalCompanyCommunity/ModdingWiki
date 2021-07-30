@@ -1,16 +1,16 @@
-# Quest Custom Maps Installation
+# Installation benutzerdefinierter Karten für Quest
 ---
 >
-> This guide only applies to the Quest version of Gorilla Tag. If you're using a SteamVR headset or a Quest **with Link**, go to the [**PC Custom Maps Installation**](pc-maploading) guide.
+> Diese Anleitung ist für die Quest Version von Gorilla Tag. Wenn du SteamVR benutzt oder eine Quest **mit Link**, gehe zur [**PC Custom Maps Installation**](pc-maploading) Anleitung.
 
-?> `.gtmap` files are cross compatible between PC and Quest, so you can crossplay with your friends, on any platform!
+?> `.gtmap` Dateien sind kreuz kompatibel zwischen PC und Quest, so kannst du mit deinen Freunden auf jeder Plattform spielen!
 
-## Installing Maps
-?> **Don't have a modded game?** Check out the guide to mod Gorilla Tag for Quest and install QuestPatcher [here](quest-guide)!
+## Karten installieren
+?> **Hast du kein modifiziertes Spiel?** Schau dir die Anleitung an um Gorilla Tag zu modden und installiere QuestPatcher [hier](quest-guide)!
 
-!> **Make sure to install the Monke Map Loader mod!** You can download it from [**RedBrumbler's GitHub**](https://github.com/RedBrumbler/MonkeMapLoader/releases/latest).
+!> **Stellen sicher, dass du die Monke Map Loader Mod installiert hast!** du kannst es von [**RedBrumbler's GitHub**](https://github.com/RedBrumbler/MonkeMapLoader/releases/latest) herunterladen.
 
-Once you have your game modded and Monke Map Loader installed, you can install custom maps (`.gtmap` files) by dragging and dropping them directly into QuestPatcher with your Quest plugged in.
+Sobald du dein Spiel moddest und Monke Map Loader installiert hast, kannst du benutzerdefinierte Karten installieren (`.gtmap` Dateien) durch Ziehen und Ablegen direkt in QuestPatcher mit deiner Quest verbunden.
 
 **Not sure where to download more custom maps?** Head to [monkemaphub.com](https://monkemaphub.com), where you can find all released maps for the map loader. Click the logo below to head there!
 
