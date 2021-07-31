@@ -12,7 +12,7 @@ Standardmäßig aktualisiert Steam automatisch Gorilla Tag, und deine Mods sollt
 
 ## Mods aktualisieren
 
-### Monke Mod Manager Logo
+### Monke Mod Manager
 
 Du kannst alle Mods aktualisieren, die über den Monke Mod Manager installiert sind.
 
