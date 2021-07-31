@@ -31,7 +31,7 @@ Als nächstes kannst du alle Mods auswählen, die aufgelistet sind. BepInEx ist 
 
 Nachdem du die Mods ausgewählt hast, die du installieren / aktualisieren möchtest, klicke auf *Installieren/Aktualisieren* um den Prozess zu starten. Wenn der Statusmonitor unten links sagt "*Installation abgeschlossen!*", bist du fast fertig!
 
-Wenn du es zum ersten mal Moddest (oder mit einer sauberen Installation beginnst), musst du Gorilla Tag einmal starten und schließen, um BepInEx zu initialisieren. **Du wirst villeicht keine Mods das erste Mal laden können, wenn du Gorilla Tag nach dem Modding startest, das ist normal.**  
+Wenn du es zum ersten mal Moddest (oder mit einer sauberen Installation beginnst), musst du Gorilla Tag einmal starten und schließen, um BepInEx zu initialisieren. **Du wirst das erste Mal vielleicht keine Mods sehen, wenn du Gorilla Tag nach dem Modding startest. Dies ist normal.**  
 Danach starte Gorilla Tag erneut und wenn alles gut gelaufen ist, werden deine Mods nun ins Spiel geladen. Glückwunsch!
 
 ## Installationspfad
@@ -42,9 +42,9 @@ Wenn du dein Spiel auf deinen Hauptlaufwerk installiert hast, sollte dies dein I
 
 ### Andere Installationspfade
 
-Wenn du dein Spiel an einem anderen Ort installiert hast, folge diesen Anweisungen, um Ihren Installationsordner zu finden.
+Wenn du dein Spiel an einem anderen Ort installiert hast, folge diesen Anweisungen, um dessen Installationsordner zu finden.
 
-1. Öffne Steam und klicke mit der rechten Maustaste den Gorilla Tag. Gehen dann zu `Verwalten von > Lokale Dateien durchsuchen`.
+1. Öffne Steam und klicke mit der rechten Maustaste den Gorilla Tag. Gehen dann zu `Verwalten > Lokale Dateien durchsuchen`.
 
 ![Vorschau des Rechtsklick Menüs](../docs/files/localfilescontext.png)
 
@@ -57,7 +57,7 @@ Ein Mod-Installer ist die empfohlene Methode, um Mods zu installieren. Siehe den
 
 ### BepInEx Installieren
 
-1. Lade [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) herunter. Du willst `BepinEx_x64_VERSION.zip`, mit `VERSION` als die Versionsnummer erhalten.
+1. Lade [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) herunter. Du willst `BepinEx_x64_VERSION.zip`, mit `VERSION` als die Versionsnummer herunterladen.
 2. Extrahieren den Inhalt der BepInEx .zip Datei in den [Installationsordner](#install-folder) deiner Gorilla Tag-Installation.
 
 ![BepInEx-Ordnervorschau](../docs/files/bepinexfolder.png)
@@ -74,7 +74,7 @@ Ein Mod-Installer ist die empfohlene Methode, um Mods zu installieren. Siehe den
 
 ## Mods Deinstallieren
 
-Entwder Entferne den mods .dll oder den ordner `BepInEx/plugins` der in deinen Gorilla Tag Installationsordner sein sollte.
+Entweder Entferne den mods .dll oder den Ordner `BepInEx/plugins` der in deinen Gorilla Tag Installationsordner sein sollte.
 
 ## Maps installieren {docsify-ignore}
 
