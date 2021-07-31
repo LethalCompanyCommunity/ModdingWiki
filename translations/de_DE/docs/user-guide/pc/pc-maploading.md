@@ -24,8 +24,8 @@ Im Spiel gehe zum Computer und verwende die Pfeiltasten, um **Monke Map Loader**
 
 ![Orb Vorschau](../docs/files/orb.png)
 
-Du kannst die Eingabetaste auf der Karte drücken, um mehr Details zu sehen. If you'd like to load it, press enter one more time and wait for the "Map loaded!" confirmation. After that, hop in the teleporter! Monke!
+Du kannst die Eingabetaste auf der Karte drücken, um mehr Details zu sehen. Wenn du es laden möchtest, drücke noch einmal eingeben und warte auf die Bestätigung "Map Loaded". Danach springe in den Teleporter! Monke!
 
-## Public Lobbies & Custom Maps
+## Öffentliche Lobbies & Benutzerdefinierte Karten
 
-?> Although you're normally not supposed to use mods in public matches, the Monke Map Loader implements a special solution that make it OK to do. When you select a custom map and join a public match by going through the teleporter, you're actually joining a private match that matchmakes you with other people playing that map. It's only possible to join these matches if you have the Monke Map Loader installed, so joining public matches is not only fine, but recommended.
+?> Obwohl du normalerweise keine Mods in öffentlichen Spielen verwenden solltest, Der Monke Map Loader implementiert eine spezielle Lösung, die es in Ordnung macht. Wenn du eine benutzerdefinierte Karte auswählst und durch den Teleporter an einem öffentlichen Match teilnimmst du bist tatsächlich einem privaten Match beigetreten, das dich mit anderen Leuten auf dieser Karte trifft. Es ist nur möglich, diese matches beizutreten, wenn Sie den Monke Map Loader installiert haben, daher ist das Beitreten öffentlicher Treffer nicht nur in Ordnung, sondern auch empfohlen.
