@@ -23,7 +23,7 @@ Es gibt *viel mehr Mods* zu entdecken, und du findest diese in der Kategorie **D
 
 Das Modding des Spiels ist von den Entwicklern von Gorilla Tag erlaubt, aber bedenke Folgendes:
 
-!> Die Verwendung von Modifikationen, die in öffentliche Lobbys eingreifen, ist von den Entwicklern verboten und kann zu einem ban führen. Bitte halte Mods in privaten Lobbys enthalten. **Die meisten Spiel-Wechsel-Mods deaktivieren sich bei den Beitritt zu öffentlichen Lobbys automatisch, aber bitte seie vorsichtig.**
+!> Die Verwendung von Modifikationen, die in öffentliche Lobbys eingreifen, ist von den Entwicklern verboten und kann zu einem Bann führen. Bitte halte Mods in privaten Lobbys enthalten. **Die meisten Spiel-Wechsel-Mods deaktivieren sich bei den Beitritt zu öffentlichen Lobbys automatisch, aber bitte seie vorsichtig.**
 
 ### Endziel
 
