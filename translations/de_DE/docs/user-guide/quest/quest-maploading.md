@@ -12,12 +12,12 @@
 
 Sobald du dein Spiel moddest und Monke Map Loader installiert hast, kannst du benutzerdefinierte Karten installieren (`.gtmap` Dateien) durch Ziehen und Ablegen direkt in QuestPatcher mit deiner Quest verbunden.
 
-**Nicht sicher, wo du weitere benutzerdefinierte Karten herunterladen kannst?** Gehen zu [Monkemapub.com](https://monkemaphub.com), wo du alle freigegebenen Karten für den Kartenlader findest. Klicke auf das Logo unten, um dort zu gehen!
+**Nicht sicher, wo du weitere benutzerdefinierte Karten herunterladen kannst?** Gehen zu [Monkemaphub.com](https://monkemaphub.com), wo du alle freigegebenen Karten für den Kartenlader findest. Klicke auf das Logo unten, um dort zu gehen!
 
 > [![Monke Map Hub Logo](../docs/files/MMHLOGO.png)](https://monkemaphub.com)
 
 ## Karten Laden
-Im Spiel gehe zum Computer und drücke Enter um den Banana OS Startbildschirm zu überspringen. Benutzen die Pfeiltasten, um **Map Loader**auszuwählen und dann Enter drücken. Verwenden dann die Pfeiltasten, um eine Karte aus der Liste der aktuell installierten benutzerdefinierten Karten auszuwählen. Du solltest einen Orb mit einer Spinnvorschau der Karte sehen, ähnlich der Karte, die du unten findest.
+Im Spiel gehe zum Computer und drücke Enter um den Banana OS Startbildschirm zu überspringen. Benutzen die Pfeiltasten, um **Map Loader**auszuwählen und dann Enter drücken. Verwenden dann die Pfeiltasten, um eine Karte aus der Liste der aktuell installierten benutzerdefinierten Karten auszuwählen. Du solltest einen Orb mit einer drehenden Vorschau der Karte sehen, ähnlich der Karte, die du unten findest.
 
 ![Orb Vorschau](../docs/files/orb.png)
 
