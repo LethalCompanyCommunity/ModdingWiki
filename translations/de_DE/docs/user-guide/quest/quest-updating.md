@@ -9,14 +9,14 @@
 
 > Das Aktualisieren von Gorilla Tag *löscht Ihre Einstellungen*, wie Name, Farben, Warteschlange, etc. Du kannst diese Einstellungen einfach wieder über den Computer im Baumhaus hinzufügen.
 
-Beim modifizierten Gorilla Tag **kann nicht im Update-Dialog oder im Store** aktualisiert werden. Um Gorilla Tag mit Mods zu aktualisieren, musst du Gorilla Tag deinstallieren Installieren die neueste Version, mod es mit QuestPatcher und stelle dann deine Mods wieder her. Es mag zwar lange klingen, aber es sollte nicht zu lange brauchen.
+Beim modifizierten Gorilla Tag **kann nicht im Update-Dialog oder im Store** aktualisiert werden. Um Gorilla Tag mit Mods zu aktualisieren, musst du Gorilla Tag deinstallieren Installieren die neueste Version, modde es mit QuestPatcher und stelle dann deine Mods wieder her. Es mag zwar lange klingen, aber es sollte nicht zu lange brauchen.
 
 ### Gorilla Tag Deinstallieren {docsify-ignore}
 
 !> **Es ist wichtig, Gorilla Tag über QuestPatcher zu deinstallieren.** Die Deinstallation eines modifizierten Spiels durch Oculus Home kann dazu führen, dass das Spiel nicht installiert wird.
 
-1. Schließe deine Quest an deinen Computer an, öffne QuestPatcher und gehe zu **Tools & Optionen** Menü das links ist.
-2. Klicke auf die rote Schaltfläche **App deinstallieren** und klicke erneut auf **App deinstallieren**. QuestPatcher wird geschlossen. ![App deinstallieren](../docs/files/uninstallapp.png)
+1. Schließe deine Quest an deinen Computer an, öffne QuestPatcher und gehe zu **Tools & Options** im Menü das links ist.
+2. Klicke auf die rote Schaltfläche **Uninstall App** und klicke erneut auf **Uninstall App**. QuestPatcher wird geschlossen. ![App deinstallieren](../docs/files/uninstallapp.png)
 
 ### Gorilla Tag Erneut Installieren {docsify-ignore}
 
