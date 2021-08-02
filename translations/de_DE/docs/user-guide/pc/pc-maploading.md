@@ -15,7 +15,7 @@ Sobald du Monke Map Loader installiert hast, kannst du benutzerdefinierte Karten
 
 Wenn du nicht weißt, wo sich dein Gorilla Tag Ordner befindet, gibt es Anweisungen, wie du es [hier finden kannst](pc-guide#install-folder).
 
-**Nicht sicher, wo du weitere benutzerdefinierte Karten herunterladen kannst?** Gehe zu [Monkemapub.com](https://monkemaphub.com), wo du alle freigegebenen Karten für den Kartenlader findest. Klicke auf das Logo unten, um dort zu hin zu gehen!
+**Nicht sicher, wo du weitere benutzerdefinierte Karten herunterladen kannst?** Gehe zu [monkemaphub.com](https://monkemaphub.com), wo du alle freigegebenen Karten für den Kartenlader findest. Klicke auf das Logo unten, um dort zu hin zu gehen!
 
 > [![Monke Map Hub Logo](../docs/files/MMHLOGO.png)](https://monkemaphub.com)
 
