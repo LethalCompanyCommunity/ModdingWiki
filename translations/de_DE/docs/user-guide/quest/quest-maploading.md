@@ -12,7 +12,7 @@
 
 Sobald du dein Spiel moddest und Monke Map Loader installiert hast, kannst du benutzerdefinierte Karten installieren (`.gtmap` Dateien) durch Ziehen und Ablegen direkt in QuestPatcher mit deiner Quest verbunden.
 
-**Nicht sicher, wo du weitere benutzerdefinierte Karten herunterladen kannst?** Gehen zu [Monkemaphub.com](https://monkemaphub.com), wo du alle freigegebenen Karten für den Kartenlader findest. Klicke auf das Logo unten, um dort zu gehen!
+**Nicht sicher, wo du weitere benutzerdefinierte Karten herunterladen kannst?** Gehen zu [monkemaphub.com](https://monkemaphub.com), wo du alle freigegebenen Karten für den Kartenlader findest. Klicke auf das Logo unten, um dort zu gehen!
 
 > [![Monke Map Hub Logo](../docs/files/MMHLOGO.png)](https://monkemaphub.com)
 
