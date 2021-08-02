@@ -1,28 +1,28 @@
-# Quest Custom Maps Installation
+# Installation benutzerdefinierter Karten für Quest
 ---
 >
-> This guide only applies to the Quest version of Gorilla Tag. If you're using a SteamVR headset or a Quest **with Link**, go to the [**PC Custom Maps Installation**](pc-maploading) guide.
+> Diese Anleitung ist für die Quest Version von Gorilla Tag. Wenn du SteamVR benutzt oder eine Quest **mit Link**, gehe zur [**PC Custom Maps Installation**](pc-maploading) Anleitung.
 
-?> `.gtmap` files are cross compatible between PC and Quest, so you can crossplay with your friends, on any platform!
+?> `.gtmap` Dateien sind kreuz kompatibel zwischen PC und Quest, so kannst du mit deinen Freunden auf jeder Plattform spielen!
 
-## Installing Maps
-?> **Don't have a modded game?** Check out the guide to mod Gorilla Tag for Quest and install QuestPatcher [here](quest-guide)!
+## Karten installieren
+?> **Hast du kein modifiziertes Spiel?** Schau dir die Anleitung an um Gorilla Tag zu modden und installiere QuestPatcher [hier](quest-guide)!
 
-!> **Make sure to install the Monke Map Loader mod!** You can download it from [**RedBrumbler's GitHub**](https://github.com/RedBrumbler/MonkeMapLoader/releases/latest).
+!> **Stellen sicher, dass du die Monke Map Loader Mod installiert hast!** du kannst es von [**RedBrumbler's GitHub**](https://github.com/RedBrumbler/MonkeMapLoader/releases/latest) herunterladen.
 
-Once you have your game modded and Monke Map Loader installed, you can install custom maps (`.gtmap` files) by dragging and dropping them directly into QuestPatcher with your Quest plugged in.
+Sobald du dein Spiel moddest und Monke Map Loader installiert hast, kannst du benutzerdefinierte Karten installieren (`.gtmap` Dateien) durch Ziehen und Ablegen direkt in QuestPatcher mit deiner Quest verbunden.
 
-**Not sure where to download more custom maps?** Head to [monkemaphub.com](https://monkemaphub.com), where you can find all released maps for the map loader. Click the logo below to head there!
+**Nicht sicher, wo du weitere benutzerdefinierte Karten herunterladen kannst?** Gehen zu [Monkemaphub.com](https://monkemaphub.com), wo du alle freigegebenen Karten für den Kartenlader findest. Klicke auf das Logo unten, um dort zu gehen!
 
-> [![Monke Map Hub logo](../docs/files/MMHLOGO.png)](https://monkemaphub.com)
+> [![Monke Map Hub Logo](../docs/files/MMHLOGO.png)](https://monkemaphub.com)
 
-## Loading Maps
-In game, head to the computer and press enter to skip the Banana OS splash screen. Use the arrow keys to select **Map Loader**, then press enter. Then, use the arrow keys to select a map from the list of your currently installed custom maps. You should see an orb with a spinning preview of the map, similar to the one found below.
+## Karten Laden
+Im Spiel gehe zum Computer und drücke Enter um den Banana OS Startbildschirm zu überspringen. Benutzen die Pfeiltasten, um **Map Loader**auszuwählen und dann Enter drücken. Verwenden dann die Pfeiltasten, um eine Karte aus der Liste der aktuell installierten benutzerdefinierten Karten auszuwählen. Du solltest einen Orb mit einer drehenden Vorschau der Karte sehen, ähnlich der Karte, die du unten findest.
 
-![Orb Preview](../docs/files/orb.png)
+![Orb Vorschau](../docs/files/orb.png)
 
-You can press enter on a map to see more details. If you'd like to load it, press enter one more time and wait for the "MAP LOADED" confirmation. After that, hop in the teleporter! Monke!
+Du kannst die Eingabetaste auf der Karte drücken, um mehr Details zu sehen. Wenn du es laden möchtest, drücke noch einmal eingeben und warte auf die Bestätigung "MAP LOADED". Danach springe in den Teleporter! Monke!
 
-## Public Lobbies & Custom Maps
+## Öffentliche Lobbies & Benutzerdefinierte Karten
 
-?> Although you're normally not supposed to use mods in public matches, the Monke Map Loader implements a special solution that make it OK to do. When you select a custom map and join a public match by going through the teleporter, you're actually joining a private match that matchmakes you with other people playing that map. It's only possible to join these matches if you have the Monke Map Loader installed, so joining public matches is not only fine, but recommended.
+?> Obwohl du normalerweise keine Mods in öffentlichen Spielen verwenden solltest, Der Monke Map Loader implementiert eine spezielle Lösung, die es in Ordnung macht. Wenn du eine benutzerdefinierte Karte auswählst und durch den Teleporter an einem öffentlichen Match teilnimmst du bist tatsächlich einem privaten Match beigetreten, das dich mit anderen Leuten auf dieser Karte trifft. Es ist nur möglich, diese matches beizutreten, wenn Sie den Monke Map Loader installiert haben, daher ist das Beitreten öffentlicher Treffer nicht nur in Ordnung, sondern auch empfohlen.

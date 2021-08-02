@@ -5,7 +5,7 @@
 - [Beginner Anleitung](pc-guide)
 - [Mods aktualisieren](pc-updating)
 - [Benutzerdefinierte karten](pc-maploading)
-- **Quest Modifizierung**
+- **Quest Modding**
 - [Beginner Anleitung](quest-guide)
 - [Mods aktualisieren](quest-updating)
 - [Benutzerdefinierte Karten](quest-maploading)
@@ -17,7 +17,7 @@
 - [![Übersetzen](https://icongr.am/material/translate.svg?color=808080&size=16)Übersetzen](https://crowdin.com/project/gorilla-tag-modding-guide)
 - [![PayPal](https://icongr.am/simple/paypal.svg?color=808080&size=16)Hinweise](https://streamelements.com/burritosoft/tip)
 - [![GoatCounter](https://icongr.am/fontawesome/group.svg?color=808080&size=16)Analysen](https://burrito.goatcounter.com/)
-- [Info](../about)
+- [Über uns](../about)
 - **Statistiken**
 - ![Page visits](https://img.shields.io/badge/dynamic/json?label=visits&query=count_unique&color=blueviolet&url=https%3A%2F%2Fburrito.goatcounter.com%2Fcounter%2FTOTAL.json)
 - ![GitHub last updated](https://img.shields.io/github/last-commit/burritosoftware/GorillaTag-Modding-Guide?label=last%20updated)

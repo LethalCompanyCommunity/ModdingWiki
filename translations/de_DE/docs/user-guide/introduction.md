@@ -1,36 +1,36 @@
 # Gorilla Tag Modding Guide {docsify-ignore-all}
 ---
-Get up and running with modifications to Gorilla Tag to enhance your experience.  
-Reject humanity, return to monke.
+Starte mit Modifikationen an Gorilla Tag und verbessere deine Erfahrung.  
+"Reject humanity, return to monke".
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="introduction"></div>
 
-?> **Discord Help** For live support with this guide please visit us in **#installation-help** on the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) and ask, in English, for assistance. Please read our [Frequently Asked Questions](faq) page beforehand to see if your question has already been answered.
+?> **Discord Hilfe** Für Live-Unterstützung mit dieser Anleitung besuche uns bitte unter **#installation-help** auf dem [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) und frage, auf Englisch, um Hilfe. Bitte lese dir unsere [Häufig gestellte Fragen](faq) im Voraus, um zu sehen, ob deineFrage bereits beantwortet wurde.
 
-### What can you do with mods?
+### Was kann man mit mods machen?
 
-You can:
-- Play custom maps with [*Monke Map Loader*](https://monkemaphub.com/)
-- Customize your gorilla with custom materials, infected materials, and hats with [*Gorilla Cosmetics*](https://github.com/legoandmars/GorillaCosmetics)
-- Jump high with [*Space Monke*](https://github.com/legoandmars/SpaceMonke)
-- Change the look of the sky with [*MonkeSkies*](https://github.com/Raemien/MonkeSkies)
-- Dash where you look with [*DashMonke*](https://github.com/TrueTamashii/DashMonke)
-- Enhance the gorilla computer, see your currently loaded mods, change monitor POV, and more with [*Computer Interface*](https://github.com/ToniMacaroni/ComputerInterface)
+Du kannst:
+- Benutzerdefinierte Karten mit [*Monke Map Loader*](https://monkemaphub.com/) spielen
+- Dein gorilla mit benutzerdefinierten materialien, infizierten materialien und hüte mit [*Gorilla Cosmetics*](https://github.com/legoandmars/GorillaCosmetics) Anpassen
+- Hoch springen mit [*Space Monke*](https://github.com/legoandmars/SpaceMonke)
+- Das Aussehen des Himmels mit [*MonkeSkies*](https://github.com/Raemien/MonkeSkies) ändern
+- Dashen wo du siehst mit [*DashMonke*](https://github.com/TrueTamashii/DashMonke)
+- Verbessere den Gorilla-Computer, sehe deine aktuell geladenen Mods, ändere den Monitor POV und mehr mit [*Computer Interface*](https://github.com/ToniMacaroni/ComputerInterface)
 
-There are *many more mods* to discover, and you'll find them in the **Downloads** category on the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv).
+Es gibt *viel mehr Mods* zu entdecken, und du findest diese in der Kategorie **Downloads** auf dem [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv).
 
-### Is modding the game safe?
+### Ist das Modifizieren des Spiels sicher?
 
-Modding the game is allowed by the developers of Gorilla Tag, however keep in mind the following:
+Das Modding des Spiels ist von den Entwicklern von Gorilla Tag erlaubt, aber bedenke Folgendes:
 
-!> The use of mods that interfere with gameplay inside public lobbies is forbidden by the developers and can result in a ban. Please keep mods contained to private lobbies. **Most gameplay-changing mods automatically disable joining public lobbies, but please be careful.**
+!> Die Verwendung von Modifikationen, die in öffentliche Lobbys eingreifen, ist von den Entwicklern verboten und kann zu einem Bann führen. Bitte halte Mods in privaten Lobbys enthalten. **Die meisten Spiel-Wechsel-Mods deaktivieren sich bei den Beitritt zu öffentlichen Lobbys automatisch, aber bitte seie vorsichtig.**
 
-### End Goal
+### Endziel
 
-This guide has the end goal of taking a completely unmodified Gorilla Tag installation from vanilla to modded with BepInEx (PC) or QuestLoader (Quest).
+Diese Anleitung hat das Endziel, eine komplett unveränderte Gorilla Tag Installation von Vanilla bis zu Modifiziert mit BepInEx (PC) oder QuestLoader (Quest).
 
 ---
 >
-> ### Get started by choosing the platform you want to mod!
+> ### Beginnen mit der Wahl der Plattform, die du modden willst!
 > 
-> Press the Next button at the bottom right.
+> Drücke die Schaltfläche Weiter unten rechts.

@@ -1,36 +1,36 @@
-# PC Mod Updating
+# PC Mod Aktualisierung
 ---
 >
-> This guide only applies to the PC version of Gorilla Tag.  
-> If you're using a Quest (without Link), go to the [**Quest Mod Updating**](quest-updating) guide.
+> Diese Anleitung gilt nur für die PC-Version von Gorilla Tag.  
+> Wenn du eine Quest verwenden solltest (ohne Link), gehe zur [**Quest Mod Updating**](quest-updating) Anleitung.
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="pc-mod-updating"></div>
 
-## Updating Gorilla Tag
+## Gorilla Tag aktualisieren
 
-By default, Steam automatically updates Gorilla Tag, and your mods should be compatible. In the case that mods don't load, or if your game crashes, check the [**GorillaTag Modding Discord**](https://discord.gg/b2MhDBAzTv)'s `#announcements` channel for further information, and update any outdated mods by downloading a new version if one exists.
+Standardmäßig aktualisiert Steam automatisch Gorilla Tag, und deine Mods sollten kompatibel sein. Falls Mods nicht geladen werden, oder wenn dein Spiel abstürzt, prüfe den [**GorillaTag Modding Discord**](https://discord.gg/b2MhDBAzTv)'s `#Ankündigungen` Kanal für weitere Informationen und aktualisiere veraltete Mods, indem du eine neue Version herunterladest, falls diese vorhanden ist.
 
-## Updating Mods
+## Mods aktualisieren
 
 ### Monke Mod Manager
 
-You can update any mods that are installed via the Monke Mod Manager easily.
+Du kannst alle Mods aktualisieren, die über den Monke Mod Manager installiert sind.
 
-![Preview](../docs/files/mmmpreview.png)
+![Vorschau](../docs/files/mmmpreview.png)
 
-To update a mod, simply select any installed mods, and hit the *Install/Update* button to begin the process. When the status monitor in the bottom left says "*Install complete!*", you should be good to go!
+Um ein Mod zu aktualisieren, wähle einfach alle installierten Mods aus und klicke auf *Installieren/Update*, um den Prozess zu starten. Wenn der Statusmonitor unten links sagt "*Installation abgeschlossen!*", solltest du wieder startklar sein!
 
-### Manual Installation
+### Manuelle Installation
 
-!> Before manually updating mods, you should check the source to see if they have updated or confirmed the mod to work on the latest version.
+!> Bevor du Mods manuell aktualisierst, solltest du die Quelle überprüfen, ob die Mod aktualisiert oder bestätigt haben, das es an der neuesten Version funktioniert.
 
-1. Download the mod(s) you wish to update, whether it be from GitHub, the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) **#pc-mod-releases** channel, or other sources. **Make sure to download any dependencies required by the mod.**
+1. Lade die Mod(s) herunter, die du updaten möchtest, egal ob von GitHub, die [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) **#pc-mod-releases** Kanal oder andere Quellen. **Stell sicher, dass du alle Abhängigkeiten herunterlädst, die von der Mod benötigt wird.**
 
-![Plugins Folder Preview](../docs/files/pluginsfolder.png)
+![Plugin-Ordnervorschau](../docs/files/pluginsfolder.png)
 
-2. Some mods have installation instructions, some don't. Generally you can just drag and drop the zip contents into your Gorilla Tag install folder, and the files should go into the corresponding folders. If you have a .dll file, you'll usually want to put it in `BepInEx/plugins`. **Make sure to replace any files, if asked.**
+2. Einige Mods haben Installationsanweisungen, andere nicht. In der Regel kann man einfach die Zip-Datei im Gorilla Tag Installationsordner ziehen und entpacken. Die Dateien werden dann in die entsprechenden Ordner entpackt. Wenn du eine .dll-Datei hast, sollten diese normalerweise in `BepInEx/Plugins` abgelegt werden. **Stelle sicher, dass du alle Dateien ersetzt, falls gefragt.**
 
 
 ---
 
-> If you appreciated this guide, you can [send a tip](https://streamelements.com/burritosoft/tip) or [sponsor the main writer](https://github.com/sponsors/burritosoftware).
+> Wenn dir diese Anleitung gefallen hat, kannst du [einen Tipp](https://streamelements.com/burritosoft/tip) oder [Den Hauptautor eine spende senden](https://github.com/sponsors/burritosoftware).
