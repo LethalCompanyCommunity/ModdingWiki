@@ -1,34 +1,34 @@
-# PC Mod Updating
+# Mise à jour des mods PC
 ---
 >
-> This guide only applies to the PC version of Gorilla Tag.  
-> If you're using a Quest (without Link), go to the [**Quest Mod Updating**](quest-updating) guide.
+> Ce guide ne s'applique qu'à la version PC de Gorilla Tag.  
+> Si vous utilisez un Quest (sans link), aller au guide de mise à jour des mods Quest [****](quest-updating).
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="pc-mod-updating"></div>
 
-## Updating Gorilla Tag
+## Mettre à jour Gorilla Tag
 
-By default, Steam automatically updates Gorilla Tag, and your mods should be compatible. In the case that mods don't load, or if your game crashes, check the [**GorillaTag Modding Discord**](https://discord.gg/b2MhDBAzTv)'s `#announcements` channel for further information, and update any outdated mods by downloading a new version if one exists.
+Par défaut, Steam met à jour automatiquement Gorilla Tag, et vos mods devraient être compatibles. Dans le cas où les mods ne se chargeraient pas, ou si votre jeu plante, consultez le canal [**GorillaTag Modding Discord**](https://discord.gg/b2MhDBAzTv)de `#annonces` </code> pour plus d'informations, et mettre à jour tous les mods obsolètes en téléchargeant une nouvelle version si elle existe.
 
-## Updating Mods
+## Mettre à jour les Mods
 
 ### Monke Mod Manager
 
-You can update any mods that are installed via the Monke Mod Manager easily.
+Vous pouvez mettre à jour tous les mods qui sont installés via Monke Mod Manager facilement.
 
 ![Preview](../docs/files/mmmpreview.png)
 
-To update a mod, simply select any installed mods, and hit the *Install/Update* button to begin the process. When the status monitor in the bottom left says "*Install complete!*", you should be good to go!
+Pour mettre à jour un mod, il suffit de sélectionner n'importe quel mod installé, et de cliquer sur le bouton *Install/Update* pour démarrer le processus. Quand le moniteur d'état en bas à gauche dit "*Installation terminée !*", vous devriez être prêt !
 
-### Manual Installation
+### Installation manuelle
 
-!> Before manually updating mods, you should check the source to see if they have updated or confirmed the mod to work on the latest version.
+!> Avant de réinstaller les mods, vous devriez vérifier les sources pour voir si elles ont mis à jour ou confirmé le mod pour fonctionner sur la dernière version.
 
-1. Download the mod(s) you wish to update, whether it be from GitHub, the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) **#pc-mod-releases** channel, or other sources. **Make sure to download any dependencies required by the mod.**
+1. Téléchargez le(s) mod(s) que vous souhaitez mettre à jour, que ce soit depuis GitHub, le canal [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) **#pc-mod-releases** ou d'autres sources. **Assurez-vous de télécharger toutes les dépendances requises pour chaque mod.**
 
 ![Plugins Folder Preview](../docs/files/pluginsfolder.png)
 
-2. Some mods have installation instructions, some don't. Generally you can just drag and drop the zip contents into your Gorilla Tag install folder, and the files should go into the corresponding folders. If you have a .dll file, you'll usually want to put it in `BepInEx/plugins`. **Make sure to replace any files, if asked.**
+2. Certains mods ont des instructions d'installation précises, certains non. Généralement, il suffit de glisser-déposer le contenu du zip dans le dossier d'installation du jeu, et les fichiers doivent aller dans les dossiers correspondant. Si vous avez un fichier .dll, vous devrez généralement le mettre dans `BepInEx/plugins`. **Make sure to replace any files, if asked.**
 
 
 ---
