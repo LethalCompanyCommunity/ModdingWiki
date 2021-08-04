@@ -101,7 +101,7 @@ Une fois le mod installé, vous devriez le voir dans la section Mods de QuestPat
 Les mods peuvent être basculés en cliquant sur le bouton à côté du mod. La désactivation d'un mod fait que le mod agit comme s'il était désinstallé, mais vous pouvez toujours l'activer à nouveau.
 
 
-If you want to delete a mod, click the `Delete` button next to the mod.
+Si vous voulez supprimer un mod, cliquez sur le bouton `Supprimer` à côté du mod.
 
 ## Gestion des cosmétiques & autres objets
 
