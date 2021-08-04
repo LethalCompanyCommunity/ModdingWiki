@@ -1,89 +1,89 @@
-# PC Beginner's Guide
+# Guide du débutant
 ---
 >
-> This guide only applies to the PC version of Gorilla Tag.  
-> If you're using a Quest (without Link), go to the [**Quest Modding**](quest-guide) guide.
+> Ce guide ne s'applique qu'à la version PC de Gorilla Tag.  
+> Si vous utilisez un Quest (sans link), aller au guide de mise à jour des mods Quest [****](quest-guide).
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="pc-mod-guide"></div>
 
-## Installers
+## Installeurs
 
 ### Monke Mod Manager {docsify-ignore}
 
 ![Monke Mod Manager logo](../docs/files/mmmlogo.png)
 
-?> This is currently the **recommended mod installer**.
+?> Ceci est actuellement l'installateur de mods **recommandé**.
 
-Monke Mod Manager is a mod installer that will install custom mods into Gorilla Tag automatically, and can be re-run in order to update the mods. Monke Mod Manager also notifies you of any updates upon launch by opening the latest release's page if available.  
-Download Monke Mod Manager from [**Steven's GitHub**](https://github.com/DeadlyKitten/MonkeModManager/releases/latest). Select the **Assets** dropdown and download the .exe file named `MonkeModManager.exe`.
+Monke Mod Manager est un installateur de mods qui installera automatiquement des mods personnalisés dans le tag Gorilla, et peut être ré-exécuté afin de mettre à jour les mods. Monke Mod Manager vous informe également de toutes les mises à jour au lancement en ouvrant la page de la dernière version si disponible.  
+Téléchargez Monke Mod Manager sur le [**GitHub de Steven**](https://github.com/DeadlyKitten/MonkeModManager/releases/latest). Sélectionnez le menu déroulant **Assets** et téléchargez le fichier .exe nommé `MonkeModManager.exe`.
 
-> Note: If Windows alerts you that the file is unsafe/at risk, choose to keep/run anyway. This is a false-positive.
+> Note : Si Windows vous avertit que le fichier est dangereux ou risqué, choisissez de conserver/exécuter quand même. C'est un faux positif.
 
 ![Preview](../docs/files/mmmpreview.png)
 
-## Install Instructions
+## Instructions d'installation
 
-After you've downloaded Monke Mod Manager, double-click the executable to run it. By default, Monke Mod Manager should automatically fill in your Gorilla Tag installation folder.
+Après avoir téléchargé Monke Mod Manager, double-cliquez sur l'exécutable pour l'exécuter. Par défaut, Monke Mod Manager doit remplir automatiquement le dossier d'installation de votre Tag Gorilla.
 
-?> If you installed Gorilla Tag to a seperate drive or path, Monke Mod Manager will prompt you to select `Gorilla Tag.exe` from your installation folder. Go to the [**Install Folder**](#install-folder) section to find your installation folder.
+?> Si vous avez installé la balise Gorilla sur un lecteur ou un chemin séparés, Monke Mod Manager vous demandera de sélectionner `Gorilla Tag.exe` depuis votre dossier d'installation. Allez à la section [**Installer le dossier**](#install-folder) pour trouver votre dossier d'installation.
 
-Next, you may select any mods that are listed. BepInEx is the modloader for Gorilla Tag and cannot be unchecked. To update a mod, simply select the installed mod again. If you would like to get more information on a mod, click on it then hit the *View Mod Info* button.
+Ensuite, vous pouvez sélectionner tous les mods qui sont listés. BepInEx est le chargeur de modules pour la balise Gorilla et ne peut pas être décoché. Pour mettre à jour un mod, il suffit de sélectionner à nouveau le mod installé. Si vous souhaitez obtenir plus d'informations sur un mod, cliquez dessus puis cliquez sur le bouton *Voir les infos de mod*.
 
-After you select the mods you would like to install/update, hit the *Install/Update* button to begin the process. When the status monitor in the bottom left says "*Install complete!*", you're almost there!
+Après avoir sélectionné les mods que vous souhaitez installer/mettre à jour, cliquez sur le bouton *Install/Update* pour démarrer le processus. Quand le moniteur d'état en bas à gauche dit "*Installation terminée !*", vous devriez être prêt !
 
-If it's your first time modding (or starting with a clean install), you'll need to launch Gorilla Tag once and close it to initialize BepInEx. **You may not see any mods load the first time you launch Gorilla Tag after modding, this is normal.**  
-After that, re-launch Gorilla Tag and if everything went well, your mods will now load into the game. Congratulations!
+Si c'est votre premier modding (ou à commencer par une installation propre), vous devrez lancer Gorilla Tag une fois et le fermer pour initialiser BepInEx. **Vous ne pouvez pas voir de mods charger la première fois que vous lancez Gorilla Tag après un modding, c'est normal.**  
+Après cela, relancez le Gorilla Tag et si tout s'est bien passé, vos mods se chargeront maintenant dans le jeu. Félicitations !
 
-## Install Folder
+## Dossier d'installation
 
-### Default Location
+### Emplacement par défaut
 
-If you installed your game on your main drive, this should be your installation folder. `C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag`
+Si vous avez installé votre jeu sur votre disque principal, ce devrait être votre dossier d'installation. `C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag`
 
-### Other Locations
+### Autres emplacements
 
-If you installed your game in a different location, follow these instructions to find your installation folder.
+Si vous avez installé votre jeu à un autre endroit, suivez ces instructions pour trouver votre dossier d'installation.
 
-1. Open Steam and right-click on Gorilla Tag. Then, go to `Manage > Browse local files`.
+1. Ouvrez Steam et cliquez avec le bouton droit sur l'étiquette Gorilla. Ensuite, allez à `Gérer > Parcourir les fichiers locaux`.
 
 ![Right-click Menu Preview](../docs/files/localfilescontext.png)
 
-2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
+2. Cliquez sur la barre d'adresse en haut pour sélectionner le chemin du dossier d'installation. Appuyez sur `CTRL`+`C` pour copier ceci dans votre presse-papiers.
 
 ![Copy Folder Path Preview](../docs/files/copyfolderpath.png)
 
-## Manual Installation
-A mod installer is the recommended way to install mods. See the section [above](#installers). If you have patched the game and just need to install mods that are not available in the installer, skip to step 4.
+## Installation manuelle
+Un installateur de mods est recommandé pour installer des mods. Lisez la section [ci-dessus](#installateurs). Si vous avez patché le jeu et avez juste besoin d'installer les mods qui ne sont pas disponibles dans l'installateur, passez à l'étape 4.
 
-### Install BepInEx
+### Installez BepInEx
 
-1. Download [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest). You will want to get `BepinEx_x64_VERSION.zip`, with `VERSION` being the version number.
-2. Extract the contents of the BepInEx .zip file to the [install folder](#install-folder) of your Gorilla Tag installation.
+1. Télécharger [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest). Vous obtiendrez `BepinEx_x64_VERSION.zip`, avec `VERSION` le numéro de version.
+2. Extrayez le contenu du fichier .zip BepInEx dans le dossier [install](#install-folder) de votre installation de la balise Gorilla.
 
 ![BepInEx Folder Preview](../docs/files/bepinexfolder.png)
 
-3. Run Gorilla Tag once to complete installation.
+3. Exécutez Gorilla Tag une fois pour terminer l'installation.
 
-### Install Mods
+### Installer les mods
 
-4. Download the mod(s) you wish to install, whether it be from GitHub, the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) **#pc-mod-releases** channel, or other sources. **Make sure to download any dependencies required by the mod.**
+4. Téléchargez le(s) mod(s) que vous souhaitez mettre à jour, que ce soit depuis GitHub, le canal [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) **#pc-mod-releases** ou d'autres sources. **Assurez-vous de télécharger toutes les dépendances requises pour chaque mod.**
 
 ![Plugins Folder Preview](../docs/files/pluginsfolder.png)
 
-5. Some mods have installation instructions, some don't. Generally you can just drag and drop the zip contents into your Gorilla Tag install folder, and the files should go into the corresponding folders. If you have a .dll file, you'll usually want to put it in `BepInEx/plugins`.
+5. Certains mods ont des instructions d'installation précises, certains non. Généralement, il suffit de glisser-déposer le contenu du zip dans le dossier d'installation du jeu, et les fichiers doivent aller dans les dossiers correspondant. Si vous avez un fichier .dll, vous devrez généralement le mettre dans `BepInEx/plugins`.
 
-## Uninstalling Mods
+## Désinstaller les Mods
 
-Either remove the mod's .dll or folder from the `BepInEx/plugins` folder, which is located in your Gorilla Tag install folder.
+Supprimez le fichier .dll du mod ou le dossier `BepInEx/plugins` qui se trouve dans le dossier d'installation de votre Tag Gorilla.
 
-## Installing Maps {docsify-ignore}
+## Installation des cartes {docsify-ignore}
 
-> Check out the [**PC Custom Maps Guide**](pc-maploading) for info on custom maps, installation, and where to new new maps.
+> Consultez le Guide [**Guide des Cartes Personnalisée Quest**](pc-maploading) pour plus d'informations sur les cartes personnalisées, l'installation et où trouver de nouvelles cartes.
 
-## Updating Mods {docsify-ignore}
+## Mise à jour des mods {docsify-ignore}
 
-> Check out the [**PC Mod Updating Guide**](pc-updating) for info on updating Gorilla Tag with mods installed.
+> Consultez le [**Guide de Mise à Jour des Mods de Quest**](pc-updating) pour plus d'informations sur la mise à jour de Gorilla Tag avec des mods installés.
 
 ---
 
-> If you appreciated this guide, you can [send a tip](https://streamelements.com/burritosoft/tip) or [sponsor the main writer](https://github.com/sponsors/burritosoftware).
+> Si vous avez apprécié ce guide, vous pouvez [envoyer un conseil](https://streamelements.com/burritosoft/tip) ou [parrainer l'écrivain principal](https://github.com/sponsors/burritosoftware).
