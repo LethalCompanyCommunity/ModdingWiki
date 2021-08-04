@@ -28,9 +28,9 @@ Pour mettre à jour un mod, il suffit de sélectionner n'importe quel mod instal
 
 ![Plugins Folder Preview](../docs/files/pluginsfolder.png)
 
-2. Certains mods ont des instructions d'installation précises, certains non. Généralement, il suffit de glisser-déposer le contenu du zip dans le dossier d'installation du jeu, et les fichiers doivent aller dans les dossiers correspondant. Si vous avez un fichier .dll, vous devrez généralement le mettre dans `BepInEx/plugins`. **Make sure to replace any files, if asked.**
+2. Certains mods ont des instructions d'installation précises, certains non. Généralement, il suffit de glisser-déposer le contenu du zip dans le dossier d'installation du jeu, et les fichiers doivent aller dans les dossiers correspondant. Si vous avez un fichier .dll, vous devrez généralement le mettre dans `BepInEx/plugins`. **Assurez-vous de remplacer tous les fichiers, si demandé.**
 
 
 ---
 
-> If you appreciated this guide, you can [send a tip](https://streamelements.com/burritosoft/tip) or [sponsor the main writer](https://github.com/sponsors/burritosoftware).
+> Si vous avez apprécié ce guide, vous pouvez [envoyer un conseil](https://streamelements.com/burritosoft/tip) ou [parrainer l'écrivain principal](https://github.com/sponsors/burritosoftware).
