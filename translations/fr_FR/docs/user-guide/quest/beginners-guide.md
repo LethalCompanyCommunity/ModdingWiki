@@ -83,7 +83,7 @@ Une fois que QuestPatcher est terminé, vous serez amené à cet écran.
 
 Pour obtenir des mods, vous devez d'abord télécharger un fichier `.qmod` du mod que vous voulez. Vous pouvez trouver des mods dans le canal `#quest-mod-releases` de la [discord de modding de Tag Gorilla](https://discord.gg/b2MhDBAzTv).
 
-!> Ne téléchargez pas les fichiers .DLL - ce sont des mods PC, qui ne peuvent pas être utilisés sur la version de quête du Tag Gorilla.
+!> Ne téléchargez pas les fichiers .DLL - ce sont des mods PC, qui ne peuvent pas être utilisés sur la version Quest de Gorilla Tag.
 
 Pour installer un mod, cliquez sur le bouton de navigation dans la section `Mod Management` de QuestPatcher et sélectionnez les mods que vous voulez. Enfin, cliquez sur `Open` pour installer les mods. ![Selecting a mod in QuestPatcher](../docs/files/questpatcherselectmod.png)
 
