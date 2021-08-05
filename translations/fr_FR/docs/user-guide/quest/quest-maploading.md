@@ -10,9 +10,9 @@
 
 !> **Assurez-vous d'installer le mod Monke Map Loader !** Vous pouvez le télécharger à partir de [**GitHub de RedBrumbler**](https://github.com/RedBrumbler/MonkeMapLoader/releases/latest).
 
-Une fois que votre jeu a été moddé et que Monke Map Loader est installé, vous pouvez installer des cartes personnalisées (`. tmap` fichiers) en les glissant et en les déposant directement dans QuestPatcher avec votre Quest branchée.
+Une fois que votre jeu a été moddé et que Monke Map Loader est installé, vous pouvez installer des cartes personnalisées (fichiers `.gtmap`) en les glissant et en les déposant directement dans QuestPatcher avec votre Quest branchée.
 
-**Vous ne savez pas où télécharger plus de cartes personnalisées ?** Allez sur [monkemaphub. om](https://monkemaphub.com), où vous pouvez trouver toutes les cartes publiées pour le chargeur de cartes. Cliquez sur le logo ci-dessous pour vous y rendre !
+**Vous ne savez pas où télécharger plus de cartes personnalisées ?** Allez sur [monkemaphub.com](https://monkemaphub.com), où vous pouvez trouver toutes les cartes publiées pour le chargeur de cartes. Cliquez sur le logo ci-dessous pour vous y rendre !
 
 > [![Logo de Monke Map Hub](../docs/files/MMHLOGO.png)](https://monkemaphub.com)
 
