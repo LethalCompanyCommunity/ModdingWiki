@@ -8,7 +8,7 @@
 
 ## Mettre à jour Gorilla Tag
 
-Par défaut, Steam met à jour automatiquement Gorilla Tag, et vos mods devraient être compatibles. Dans le cas où les mods ne se chargeraient pas, ou si votre jeu plante, consultez le canal [**GorillaTag Modding Discord**](https://discord.gg/b2MhDBAzTv)de `#annonces` </code> pour plus d'informations, et mettre à jour tous les mods obsolètes en téléchargeant une nouvelle version si elle existe.
+Par défaut, Steam met à jour automatiquement Gorilla Tag, et vos mods devraient être compatibles. Dans le cas où les mods ne se chargeraient pas, ou si votre jeu plante, consultez le canal [**GorillaTag Modding Discord**](https://discord.gg/b2MhDBAzTv) de `#annonces` </code> pour plus d'informations, et mettre à jour tous les mods obsolètes en téléchargeant une nouvelle version si elle existe.
 
 ## Mettre à jour les Mods
 
@@ -18,7 +18,7 @@ Vous pouvez mettre à jour tous les mods qui sont installés via Monke Mod Manag
 
 ![Preview](../docs/files/mmmpreview.png)
 
-Pour mettre à jour un mod, il suffit de sélectionner n'importe quel mod installé, et de cliquer sur le bouton *Install/Update* pour démarrer le processus. Quand le moniteur d'état en bas à gauche dit "*Installation terminée !*", vous devriez être prêt !
+Pour mettre à jour un mod, il suffit de sélectionner n'importe quel mod installé, et de cliquer sur le bouton *Install/Update* pour démarrer le processus. Quand le moniteur d'état en bas à gauche dit "*Install complete!*", vous devriez être prêt !
 
 ### Installation manuelle
 
