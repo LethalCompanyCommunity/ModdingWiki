@@ -5,7 +5,7 @@
   - [English](/)
 <!---  - [Español](/es_ES/) -->
   - [Deutsch](/de_DE/)
-<!---  - [Français](/fr_FR/) -->
+  - [Français](/fr_FR/)
 <!---  - [日本語](/ja_JP/) -->
 <!---  - [简体中文](/zh_CN/) -->
 <!---  - [Dansk](/da_DK/) -->
