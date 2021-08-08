@@ -1,7 +1,7 @@
 # Mise à jour des mods sur Quest
 ---
 >
-> Ce guide ne s'applique qu'à la version Quest de Gorilla Tag. Si vous utilisez un casque SteamVR ou un Quest **avec lien**, allez au guide [**Mise à jour du mod PC**](pc-updating).
+> Ce guide ne s'applique qu'à la version Quest de Gorilla Tag. Si vous utilisez un casque SteamVR ou un Quest **avec link**, allez au guide [**Mise à jour du mod PC**](pc-updating).
 
 <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-updating"></div>
 
@@ -15,8 +15,8 @@ Gorilla Tag en étant Moddé **ne peut pas être mis à jour via la boîte de di
 
 !> **Il est important de désinstaller Gorilla Tag via QuestPatcher.** La désinstallation d'un jeu moddé par Oculus Home peut entraîner la désinstallation du jeu.
 
-1. Branchez votre Quest sur votre ordinateur, ouvrez QuestPatcher et allez dans le menu **Outils & Options** à gauche.
-2. Cliquez sur le bouton rouge **Désinstaller l'application** , puis cliquez sur **Désinstaller l'appli** à nouveau. QuestPatcher fermera. ![Désinstaller l'application](../docs/files/uninstallapp.png)
+1. Branchez votre Quest sur votre ordinateur, ouvrez QuestPatcher et allez dans le menu **Tools & Options** à gauche.
+2. Cliquez sur le bouton rouge **Uninstall App** , puis cliquez sur **Uninstall App** à nouveau. QuestPatcher fermera. ![Désinstaller l'application](../docs/files/uninstallapp.png)
 
 ### Réinstaller Gorilla Tag {docsify-ignore}
 

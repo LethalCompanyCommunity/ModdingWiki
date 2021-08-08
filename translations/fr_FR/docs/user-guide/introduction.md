@@ -10,7 +10,7 @@ Reject humanity, return to monke.
 ### Que pouvez-vous faire avec les mods ?
 
 Vous pouvez:
-- Jouer des sur cartes personnalisées avec le chargeur de cartes [*Monke*](https://monkemaphub.com/)
+- Jouer des sur cartes personnalisées [*MonkeMapLoader*](https://monkemaphub.com/)
 - Personnalisez votre gorille avec des matériaux personnalisés, des matériaux infectés et des chapeaux avec [*Gorilla Cosmetics*](https://github.com/legoandmars/GorillaCosmetics)
 - Sautez haut avec [Space Monke**](https://github. com/legoandmars/Space Monke)
 - Changez l'apparence du ciel avec [*MonkeSkies*](https://github.com/Raemien/MonkeSkies)
@@ -23,11 +23,11 @@ Il y a *beaucoup plus de mods* à découvrir, et vous les trouverez dans la cat�
 
 Le modding du jeu est autorisée par les développeurs de Gorilla Tag, cependant gardez à l'esprit ce qui suit :
 
-!> L'utilisation de mods qui interfèrent avec le jeu dans les parties publiques est interdite par les développeurs et peut entraîner un ban. Veuillez garder les mods contenus dans les lobbies privés. **La plupart des mods changeants de gameplay désactivent automatiquement la connexion aux lobbies publics, mais soyez prudent.**
+!> L'utilisation de mods qui interfèrent avec le jeu dans les parties publiques est interdite par les développeurs et peut entraîner un ban. Veuillez garder les mods contenus dans les lobbies privés. **La plupart des mods changeants le gameplay désactivent automatiquement la connexion aux lobbies publics, mais soyez prudent.**
 
 ### Objectif final
 
-Ce guide a pour but final de prendre une installation de Gorilla Tag complètement non modifiée de vanilla à moddée avec BepInEx (PC) ou QuestLoader (Quest).
+Ce guide a pour but final de faire de l'installation de Gorilla Tag complètement non modifiée de vanilla à moddée avec BepInEx (PC) ou QuestLoader (Quest).
 
 ---
 >
