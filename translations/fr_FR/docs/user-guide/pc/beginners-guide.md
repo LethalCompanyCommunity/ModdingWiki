@@ -78,7 +78,7 @@ Supprimez le fichier .dll du mod ou le dossier `BepInEx/plugins` qui se trouve d
 
 ## Installation des cartes {docsify-ignore}
 
-> Consultez le Guide [**Guide des Cartes Personnalisée Quest**](pc-maploading) pour plus d'informations sur les cartes personnalisées, l'installation et où trouver de nouvelles cartes.
+> Consultez le [**Guide des Cartes Personnalisée Quest**](pc-maploading) pour plus d'informations sur les cartes personnalisées, l'installation et où trouver de nouvelles cartes.
 
 ## Mise à jour des mods {docsify-ignore}
 
