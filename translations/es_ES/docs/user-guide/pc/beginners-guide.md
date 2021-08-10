@@ -38,26 +38,26 @@ Después de eso, vuelve a lanzar Gorilla Tag y si todo salió bien, tus mods se 
 
 ### Ubicación predeterminada
 
-If you installed your game on your main drive, this should be your installation folder. `C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag`
+Si has instalado tu juego en tu drive principal, esta debería ser tu carpeta de instalación. `C:\Archivos de programa (x86)\Steam\steamapps\common\Gorilla Tag`
 
-### Other Locations
+### Otras Ubicaciones
 
-If you installed your game in a different location, follow these instructions to find your installation folder.
+Si has instalado tu juego en una ubicación diferente, sigue estas instrucciones para encontrar la carpeta de instalación.
 
-1. Open Steam and right-click on Gorilla Tag. Then, go to `Manage > Browse local files`.
+1. Abra Steam y haga clic derecho en Gorilla Tag. Luego, ve a `Administrar > Ver archivos locales`.
 
 ![Right-click Menu Preview](../docs/files/localfilescontext.png)
 
-2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
+2. Haga clic en la barra de direcciones en la parte superior para seleccionar la ruta de la carpeta de instalación. Pulsa `CTRL`+`C` para copiar esto al portapapeles.
 
 ![Copy Folder Path Preview](../docs/files/copyfolderpath.png)
 
-## Manual Installation
-A mod installer is the recommended way to install mods. See the section [above](#installers). If you have patched the game and just need to install mods that are not available in the installer, skip to step 4.
+## Instalación manual
+Un instalador de mod es la forma recomendada de instalar mods. Mira la sección [arriba](#installers). Si has parcheado el juego y sólo necesitas instalar mods que no están disponibles en el instalador, salta al paso 4.
 
 ### Install BepInEx
 
-1. Download [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest). You will want to get `BepinEx_x64_VERSION.zip`, with `VERSION` being the version number.
+1. Descarga [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest). Querrás obtener `BepinEx_x64_VERSION.zip`, con `VERSION` siendo el número de versión.
 2. Extract the contents of the BepInEx .zip file to the [install folder](#install-folder) of your Gorilla Tag installation.
 
 ![BepInEx Folder Preview](../docs/files/bepinexfolder.png)
