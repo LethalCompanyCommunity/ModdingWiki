@@ -3,7 +3,7 @@
 >
 > Esta guía solo aplica para la versión Quest de Gorilla Tag. Si estás usando un dispositivo SteamVR o un Quest **con Link**, ve a la guía [**Modding con PC**](pc-guide).
 
-<div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-guide"></div>
+<!-- <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-guide"></div> -->
 
 ## Instalar QuestPatcher
 
