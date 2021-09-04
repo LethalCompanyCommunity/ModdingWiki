@@ -4,7 +4,7 @@
 > This guide only applies to the Quest version of Gorilla Tag.
 > If you're using a SteamVR headset or a Quest **with Link**, go to the [**PC Mod Updating**](pc-updating) guide.
 
-<div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-updating"></div>
+<!-- <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-updating"></div> -->
 
 ## Updating Gorilla Tag
 
