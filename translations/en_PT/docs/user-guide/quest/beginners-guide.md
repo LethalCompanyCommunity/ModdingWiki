@@ -3,7 +3,7 @@
 >
 > Ahoy! These texts apply only to the Quest version of Gorilla Tag. Shall ye use a SteamVR ship or a Quest **with a Link tether**, sail to the [**PC Modding**](pc-guide) guide.
 
-<div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-guide"></div>
+<!-- <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-guide"></div> -->
 
 ## Loading QuestPatcher
 
