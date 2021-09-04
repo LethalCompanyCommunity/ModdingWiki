@@ -3,7 +3,7 @@
 Empieza a trabajar con modificaciones en Gorilla Tag para mejorar tu experiencia.  
 Rechaza la humanidad, vuelve al mono.
 
-<div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="introduction"></div>
+<!-- <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="introduction"></div> -->
 
 ?> **Ayuda de Discord** Para soporte en vivo con esta guía puede visitarnos en **#installtion-help** en el discord [Gorilla Tag Modding](https://discord.gg/b2MhDBAzTv) y pregunta, en ingles, por asistencia. Por favor, lea nuestra pagina de [preguntas mas frecuentes](faq) de antemano para ver si tu pregunta ya ha sido respondida.
 

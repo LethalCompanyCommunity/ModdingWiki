@@ -4,7 +4,7 @@
 > This guide only applies to the PC version of Gorilla Tag.  
 > If you're using a Quest (without Link), go to the [**Quest Modding**](quest-guide) guide.
 
-<div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="pc-mod-guide"></div>
+<!-- <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="pc-mod-guide"></div> -->
 
 ## Installers
 

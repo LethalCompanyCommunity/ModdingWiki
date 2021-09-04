@@ -3,7 +3,7 @@
 Starte mit Modifikationen an Gorilla Tag und verbessere deine Erfahrung.  
 "Reject humanity, return to monke".
 
-<div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="introduction"></div>
+<!-- <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="introduction"></div> -->
 
 ?> **Discord Hilfe** Für Live-Unterstützung mit dieser Anleitung besuche uns bitte unter **#installation-help** auf dem [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) und frage, auf Englisch, um Hilfe. Bitte lese dir unsere [Häufig gestellte Fragen](faq) im Voraus, um zu sehen, ob deineFrage bereits beantwortet wurde.
 

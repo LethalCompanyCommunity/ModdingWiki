@@ -3,7 +3,7 @@
 Zacznij modyfikować grę Gorilla Tag aby zwiększyć swoje wrażenia.  
 Odrzuć człowieczeństwo, powróć do małpy.
 
-<div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="introduction"></div>
+<!-- <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="introduction"></div> -->
 
 ?> **Pomoc na Discordzie** Aby uzyskać wsparcie przy tym poradniku możesz odwiedzić nas na kanale **#installation-help** na serwerze [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) i zapytać, po angielsku, o pomoc. Proszę, przeczytaj najpierw [Najczęściej zadawane pytania (FAQ)](faq), aby zobaczyć czy nie ma tam już odpowiedzi na Twoje pytanie.
 

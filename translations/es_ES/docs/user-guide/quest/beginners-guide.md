@@ -3,7 +3,7 @@
 >
 > Esta guía solo aplica para la versión Quest de Gorilla Tag. Si estás usando un dispositivo SteamVR o un Quest **con Link**, ve a la guía [**Modding con PC**](pc-guide).
 
-<div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-guide"></div>
+<!-- <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-guide"></div> -->
 
 ## Instalar QuestPatcher
 
@@ -101,7 +101,7 @@ Una vez el mod este instalado, lo deberías poder ver en la sección de Mods de 
 Los mods pueden ser cambiados haciendo clic en el botón junto al mod. Deshabilitar un mod hace que el mod actúe como si estuviera desinstalado, pero siempre puedes activarlo de nuevo.
 
 
-If you want to delete a mod, click the `Delete` button next to the mod.
+Si quieres eliminar un mod, haz clic en `Delete` junto al mod.
 
 ## Gestionando Cosméticos & Otros Artículos
 

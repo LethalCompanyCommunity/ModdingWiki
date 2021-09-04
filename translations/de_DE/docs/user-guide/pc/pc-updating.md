@@ -4,7 +4,7 @@
 > Diese Anleitung gilt nur für die PC-Version von Gorilla Tag.  
 > Wenn du eine Quest verwenden solltest (ohne Link), gehe zur [**Quest Mod Updating**](quest-updating) Anleitung.
 
-<div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="pc-mod-updating"></div>
+<!-- <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="pc-mod-updating"></div> -->
 
 ## Gorilla Tag aktualisieren
 

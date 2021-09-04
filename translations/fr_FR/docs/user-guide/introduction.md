@@ -3,7 +3,7 @@
 Démarrez votre course avec les modifications apportées à Gorilla Tag pour améliorer votre expérience.  
 Reject humanity, return to monke.
 
-<div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="introduction"></div>
+<!-- <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="introduction"></div> -->
 
 ?> **Aide Discord** Pour une assistance en direct avec ce guide, veuillez nous rendre visite dans **#installation-help** sur [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) et demandez-nous, en anglais, pour obtenir de l'aide. Veuillez lire à l'avance notre page [Foire aux questions](faq) pour voir si votre question a déjà reçu une réponse.
 
