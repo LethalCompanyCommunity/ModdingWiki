@@ -298,5 +298,17 @@
     }
     $docsify.plugins = [].concat(loadAds, $docsify.plugins);
     </script> -->
+    <!-- <script>
+        function loadAds(hook, vm) {
+        hook.doneEach(function() {
+            $(document).ready(() => {
+                console.log("[Google Ads Docsify] Attempting to load ad...");
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                console.log("[Google Ads Docsify] Ad should be loaded successfully! :D")
+            });
+        });
+    }
+    $docsify.plugins = [].concat(loadAds, $docsify.plugins);
+    </script> -->
 </body>
 </html>
