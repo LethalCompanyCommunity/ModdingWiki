@@ -5,24 +5,31 @@
 > Si vous utilisez un Quest (sans link), aller au guide de mise à jour des mods Quest [****](quest-updating).
 
 <!-- <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="pc-mod-updating"></div> -->
+<!-- Guide Page Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1545654854838298"
+     data-ad-slot="8114351325"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 
 ## Mettre à jour Gorilla Tag
 
-Par défaut, Steam met à jour automatiquement Gorilla Tag, et vos mods devraient être compatibles. Dans le cas où les mods ne se chargeraient pas, ou si votre jeu plante, consultez le canal [**GorillaTag Modding Discord**](https://discord.gg/b2MhDBAzTv) de `#annonces` </code> pour plus d'informations, et mettre à jour tous les mods obsolètes en téléchargeant une nouvelle version si elle existe.
+By default, Steam automatically updates Gorilla Tag, and your mods should be compatible. In the case that mods don't load, or if your game crashes, check the [**GorillaTag Modding Discord**](https://discord.gg/b2MhDBAzTv)'s `#announcements` channel for further information, and update any outdated mods by downloading a new version if one exists.
 
 ## Mettre à jour les Mods
 
 ### Monke Mod Manager
 
-Vous pouvez mettre à jour tous les mods qui sont installés via Monke Mod Manager facilement.
+You can update any mods that are installed via the Monke Mod Manager easily.
 
 ![Preview](../docs/files/mmmpreview.png)
 
-Pour mettre à jour un mod, il suffit de sélectionner n'importe quel mod installé, et de cliquer sur le bouton *Install/Update* pour démarrer le processus. Quand le moniteur d'état en bas à gauche dit "*Install complete!*", vous devriez être prêt !
+To update a mod, simply select any installed mods, and hit the *Install/Update* button to begin the process. When the status monitor in the bottom left says "*Install complete!*", you should be good to go!
 
 ### Installation manuelle
 
-!> Avant de réinstaller les mods, vous devriez vérifier les sources pour voir si elles ont mis à jour ou confirmé le mod pour fonctionner sur la dernière version.
+!> Before manually updating mods, you should check the source to see if they have updated or confirmed the mod to work on the latest version.
 
 1. Téléchargez le(s) mod(s) que vous souhaitez mettre à jour, que ce soit depuis GitHub, le canal [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) **#pc-mod-releases** ou d'autres sources. **Assurez-vous de télécharger toutes les dépendances requises pour chaque mod.**
 
