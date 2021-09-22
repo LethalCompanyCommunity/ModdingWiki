@@ -302,9 +302,24 @@
         function loadAds(hook, vm) {
         hook.doneEach(function() {
             $(document).ready(() => {
-                console.log("[Google Ads Docsify] Attempting to load ad...");
-                (adsbygoogle = window.adsbygoogle || []).push({});
-                console.log("[Google Ads Docsify] Ad should be loaded successfully! :D")
+                adslot = document.querySelector('.adsbygoogle');
+                if (adslot) {
+                    console.log("[Google Ads Docsify] Ad found, attempting to fill ad...");
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    setTimeout(function(){ 
+                        adunfilled = document.querySelector('ins[data-ad-status="filled"]');
+                        if (adunfilled) {
+                            console.log("[Google Ads Docsify] Ad should be filled!")
+                        } else {
+                            console.log("[Google Ads Docsify] Ad not filled, showing alt message.")
+                            admessage = document.createElement('div');
+                            admessage.innerHTML = '<blockquote class="tip"><strong>Hey there!</strong> 👋 It seems like you have an adblocker.<br>Now, I\'m all in for adblocking, and I hate ads myself. The guide currently serves <b>Google Ads</b>, so I totally understand why you have an adblocker.<br><br>If you want to turn off your adblocker, thanks a lot! If you don\'t want to turn off your adblocker, please consider sponsoring me on <a href="https://github.com/sponsors/burritosoftware"><b>GitHub Sponsors</b></a> monthly. Either way you go, I hope you can help to cover the costs, and that you\'ll have fun. Monke! :D</blockquote>';
+                            adslot.parentNode.replaceChild(admessage, adslot)
+                        }
+                    }, 1500);
+                } else {
+                    console.log("[Google Ads Docsify] No ads found to fill.")
+                }
             });
         });
     }

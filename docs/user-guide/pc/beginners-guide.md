@@ -12,7 +12,6 @@
      data-ad-client="ca-pub-1545654854838298"
      data-ad-slot="8114351325"
      data-ad-format="auto"
-     data-adtest="on"
      data-full-width-responsive="true"></ins>
 
 ## Installers
