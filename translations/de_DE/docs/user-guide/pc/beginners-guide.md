@@ -5,62 +5,69 @@
 > Wenn du eine Quest verwenden solltest (ohne Link), gehe zur [**Quest Modding**](quest-guide) Anleitung.
 
 <!-- <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="pc-mod-guide"></div> -->
+<!-- Guide Page Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1545654854838298"
+     data-ad-slot="8114351325"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 
 ## Installierungen
 
 ### Monke Mod Manager {docsify-ignore}
 
-![Monke Mod Manager Logo](../docs/files/mmmlogo.png)
+![Monke Mod Manager logo](../docs/files/mmmlogo.png)
 
-?> Dies ist derzeit der **empfohlene Mod-Installer**.
+?> This is currently the **recommended mod installer**.
 
-Monke Mod Manager ist ein Mod-Installer, der benutzerdefinierte Mods in Gorilla Tag automatisch installiert, und kann erneut ausgeführt werden, um diese Mods zu aktualisieren. Monke Mod Manager informiert dich auch über alle Aktualisierungen beim Start durch das Öffnen der neuesten Versionsseite, wenn eine verfügbar ist.  
-Lade den Monke Mod Manager von [**Steven's GitHub**](https://github.com/DeadlyKitten/MonkeModManager/releases/latest) herunter. Wählen die **Assets** aus und lade die .exe Datei mit dem Namen `MonkeModManager.exe` herunter.
+Monke Mod Manager is a mod installer that will install custom mods into Gorilla Tag automatically, and can be re-run in order to update the mods. Monke Mod Manager also notifies you of any updates upon launch by opening the latest release's page if available.  
+Download Monke Mod Manager from [**Steven's GitHub**](https://github.com/DeadlyKitten/MonkeModManager/releases/latest). Select the **Assets** dropdown and download the .exe file named `MonkeModManager.exe`.
 
 > Notiz: Wenn Windows dich warnt, dass die Datei unsicher oder gefährlich ist, wählen trotzdem zu behalten oder auszuführen aus. Dies ist eine falsche Positive.
 
-![Vorschau](../docs/files/mmmpreview.png)
+![Preview](../docs/files/mmmpreview.png)
 
 ## Installationsanleitung
 
-Nachdem du Monke Mod Manager heruntergeladen hast, doppelklicke auf die ausführbare Datei, um es auszuführen. Standardmäßig sollte Monke Mod Manager automatisch den Installationsordner für Gorilla Tag ausfüllen.
+After you've downloaded Monke Mod Manager, double-click the executable to run it. By default, Monke Mod Manager should automatically fill in your Gorilla Tag installation folder.
 
-?> Wenn du Gorilla Tag auf einem separaten Laufwerk oder Pfad installiert hast, fordert dich Monke Mod Manager auf, `Gorilla Tag.exe` aus deinen Installationsverzeichnis auszuwählen. Gehe zum [**Installations Ordner**](#install-folder) Abschnitt um deinen Installationsordner zu finden.
+?> If you installed Gorilla Tag to a seperate drive or path, Monke Mod Manager will prompt you to select `Gorilla Tag.exe` from your installation folder. Go to the [**Install Folder**](#install-folder) section to find your installation folder.
 
-Als nächstes kannst du alle Mods auswählen, die aufgelistet sind. BepInEx ist der Modloader für Gorilla Tag und kann nicht deaktiviert werden. Um eine Mod zu aktualisieren, wähle einfach erneut die installierte Mod aus. Wenn du mehr Informationen zu einer Mod erhalten möchtest, klicke auf es und drücke den *Mod Info anzeigen* Knopf.
+Next, you may select any mods that are listed. BepInEx is the modloader for Gorilla Tag and cannot be unchecked. To update a mod, simply select the installed mod again. If you would like to get more information on a mod, click on it then hit the *View Mod Info* button.
 
-Nachdem du die Mods ausgewählt hast, die du installieren / aktualisieren möchtest, klicke auf *Installieren/Aktualisieren* um den Prozess zu starten. Wenn der Statusmonitor unten links sagt "*Installation abgeschlossen!*", bist du fast fertig!
+After you select the mods you would like to install/update, hit the *Install/Update* button to begin the process. When the status monitor in the bottom left says "*Install complete!*", you're almost there!
 
-Wenn du es zum ersten mal Moddest (oder mit einer sauberen Installation beginnst), musst du Gorilla Tag einmal starten und schließen, um BepInEx zu initialisieren. **Du wirst das erste Mal vielleicht keine Mods sehen, wenn du Gorilla Tag nach dem Modding startest. Dies ist normal.**  
-Danach starte Gorilla Tag erneut und wenn alles gut gelaufen ist, werden deine Mods nun ins Spiel geladen. Glückwunsch!
+If it's your first time modding (or starting with a clean install), you'll need to launch Gorilla Tag once and close it to initialize BepInEx. **You may not see any mods load the first time you launch Gorilla Tag after modding, this is normal.**  
+After that, re-launch Gorilla Tag and if everything went well, your mods will now load into the game. Congratulations!
 
 ## Installationspfad
 
 ### Standard-standort
 
-Wenn du dein Spiel auf deinen Hauptlaufwerk installiert hast, sollte dies dein Installationsordner sein. `C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag`
+If you installed your game on your main drive, this should be your installation folder. `C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag`
 
 ### Andere Installationspfade
 
-Wenn du dein Spiel an einem anderen Ort installiert hast, folge diesen Anweisungen, um dessen Installationsordner zu finden.
+If you installed your game in a different location, follow these instructions to find your installation folder.
 
 1. Öffne Steam und klicke mit der rechten Maustaste den Gorilla Tag. Gehen dann zu `Verwalten > Lokale Dateien durchsuchen`.
 
-![Vorschau des Rechtsklick Menüs](../docs/files/localfilescontext.png)
+![Right-click Menu Preview](../docs/files/localfilescontext.png)
 
 2. Klicke oben auf die Adressleiste, um den Pfad deines Installationsordner auszuwählen. Drücke `STRG`+`C` um dies in die Zwischenablage zu kopieren.
 
-![Ordnerpfadkopieren Vorschau](../docs/files/copyfolderpath.png)
+![Copy Folder Path Preview](../docs/files/copyfolderpath.png)
 
 ## Manuelle Installation
-Ein Mod-Installer ist die empfohlene Methode, um Mods zu installieren. Siehe den Abschnitt [oben](#installers). Solltest du das Spiel gepatched haben und Plugins installiert werden müssen, die nicht im Mod Installer sind, springe zu Schritt 4.
+A mod installer is the recommended way to install mods. See the section [above](#installers). If you have patched the game and just need to install mods that are not available in the installer, skip to step 4.
 
 ### BepInEx Installieren
 
 1. Lade [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) herunter. Du willst `BepinEx_x64_VERSION.zip`, mit `VERSION` als die Versionsnummer herunterladen.
 2. Extrahieren den Inhalt der BepInEx .zip Datei in den [Installationsordner](#install-folder) deiner Gorilla Tag-Installation.
 
-![BepInEx-Ordnervorschau](../docs/files/bepinexfolder.png)
+![BepInEx Folder Preview](../docs/files/bepinexfolder.png)
 
 3. Führe Gorilla Tag einmal aus, um die Installation abzuschließen.
 
@@ -68,13 +75,13 @@ Ein Mod-Installer ist die empfohlene Methode, um Mods zu installieren. Siehe den
 
 4. Lade die Mod(s) herunter, die du installieren möchtest, egal ob von GitHub, die [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) **#pc-mod-releases** Kanal oder andere Quellen. **Stell sicher, dass du alle Abhängigkeiten herunterlädst, die von der Mod benötigt wird.**
 
-![Plugin-Ordnervorschau](../docs/files/pluginsfolder.png)
+![Plugins Folder Preview](../docs/files/pluginsfolder.png)
 
 5. Einige Mods haben Installationsanweisungen, andere nicht. In der Regel kann man einfach die ZIP-Datei im Gorilla Tag Installationsordner ziehen und entpacken. Die Dateien werden dann in die entsprechenden Ordner entpackt. Wenn du eine .dll-Datei hast, sollten diese normalerweise in `BepInEx/Plugins` abgelegt werden.
 
 ## Mods Deinstallieren
 
-Entweder Entferne den mods .dll oder den Ordner `BepInEx/plugins` der in deinen Gorilla Tag Installationsordner sein sollte.
+Either remove the mod's .dll or folder from the `BepInEx/plugins` folder, which is located in your Gorilla Tag install folder.
 
 ## Maps installieren {docsify-ignore}
 
