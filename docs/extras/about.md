@@ -29,4 +29,4 @@ This guide is mainly written by [Burrito](https://twitter.com/BurritoSOFTWARE), 
 
 ?> **Open Source and Privacy**  
 [This guide is open source on GitHub](https://github.com/burritosoftware/GorillaTag-Modding-Guide). It is licensed under the [ISC License](https://github.com/burritosoftware/GorillaTag-Modding-Guide/blob/master/LICENSE.md).  
-Analytics are powered by [GoatCounter](https://burrito.goatcounter.com/), and the site is monetized by [EthicalAds](https://ethicalads.io), both of which **do not track or collect personal data** and are open source.
+Analytics are powered by [GoatCounter](https://burrito.goatcounter.com/), and the site is monetized by [Google Ads](https://www.google.com/adsense). GoatCounter doesn't track or sell information. Google Ads uses cookies to serve ads based on your web activity, and if you'd like to opt-out, you can visit [Google's settings](https://www.google.com/settings/ads). Google Ads also partners with third-party ad networks, so if you want to opt-out of personalization of ads for those, you can visit [this page](http://www.aboutads.info/choices/). Thank you for your understanding!
