@@ -4,10 +4,17 @@
 > Ahoy! These texts apply only to the Quest version of Gorilla Tag. Shall ye use a SteamVR ship or a Quest **with a Link tether**, sail to the [**PC Modding**](pc-guide) guide.
 
 <!-- <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="quest-mod-guide"></div> -->
+<!-- Guide Page Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1545654854838298"
+     data-ad-slot="8114351325"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 
 ## Loading QuestPatcher
 
-Now, the one and only way to recieve the booty is **QuestPatcher**. Download **QuestPatcher** from [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest).
+Currently the only recommended way to install mods is **QuestPatcher**. Download **QuestPatcher** from [Lauriethefish's GitHub](https://github.com/Lauriethefish/QuestPatcher/releases/latest).
 
 ### Windows
 
@@ -26,7 +33,7 @@ Now, the one and only way to recieve the booty is **QuestPatcher**. Download **Q
 
 ### macOS
 
-!> QuestPatcher shall automatically load Java onto ye ship. Although if ye using one of an older version of macOS, Java may just be detected as already on board when it ain't. Shall ye run into an enemy while patching, manually load Java onto your ship [here](https://www.java.com/en/).
+!> QuestPatcher should automatically download Java. If you're on an older version of macOS, Java might be detected as already installed when it isn't. If you are having trouble patching, manually download Java [here](https://www.java.com/en/).
 
 1. Steal the loot from the assets dropdown on GitHub, and snatch `QuestPatcher-mac.dmg`, then ye shall wait for ye ship to be loaded.
 2. Open ye downloads chest, then double click `QuestPatcher-mac.dmg`.
@@ -42,7 +49,7 @@ Now, the one and only way to recieve the booty is **QuestPatcher**. Download **Q
 
 > QuestPatcher is compiled for [Ubuntu](https://ubuntu.com/) Linux. Other Linux ships may work, but ye may enounter enemy ships.
 
-!> These instructions be more complicated than Mac and Windows shall be, and it be recommended ye know yer way around a terminal.
+!> These instructions are more complicated than Mac and Windows, and it is recommended that you know your way around a terminal.
 
 1. Steal the loot from the assets dropdown on GitHub, and snatch `QuestPatcher-ubuntu.zip`, then ye shall wait for the ship to be loaded.
 2. Extract the ZIP file using Archive Manager.
@@ -52,7 +59,7 @@ Now, the one and only way to recieve the booty is **QuestPatcher**. Download **Q
 
 ## Patching
 
-Shall ye first open QuestPatcher, ye shall be greeted by a loading screen like below. Let there be a few short progress bars as QuestPatcher loads the important chests into yer ship. (`Downloading openjre` and `Downloading platform-tools`).
+When you first open QuestPatcher, you will be greeted by a loading screen like below. There will be a few short progress bars while QuestPatcher downloads important files. (`Downloading openjre` and `Downloading platform-tools`).
 
 ![QuestPatcher Loading](../docs/files/questpatcherloading.png)
 
@@ -61,7 +68,7 @@ Shall ye first open QuestPatcher, ye shall be greeted by a loading screen like b
 > If ye recive a prompt prompting ye with `App Not Installed`, make sure ye have installed Gorilla Tag from Oculus App Lab [here](https://www.oculus.com/experiences/quest/4979055762136823/).
 
 
-After about 30 seconds (it may take longer if ye internet sucks), QuestPatcher shall finish loading and ye shall be greeted with a screen like below.
+After about 30 seconds (although it could take longer than five minutes depending on your internet connection), QuestPatcher will finish loading and you will be greeted with a screen like below.
 
 ![QuestPatcher Ready To Patch](../docs/files/questpatcherpatch.png)
 
@@ -73,7 +80,7 @@ After about 30 seconds (it may take longer if ye internet sucks), QuestPatcher s
 
 ## Managing Mods
 
-Once QuestPatcher is done, ye shall be brought upon this screen.
+Once QuestPatcher is done, you will be brought to this screen.
 
 > Next time ye open QuestPatcher, ye shall be brought directly onto this screen as your game is already patched.
 
@@ -81,33 +88,33 @@ Once QuestPatcher is done, ye shall be brought upon this screen.
 
 ### Installing Mods
 
-Shall ye seek to get mods, see must first download a `.qmod` treasure of the mod ye wish. You can find mods in the `#quest-mod-releases` channel of the [Gorilla Tag modding discord](https://discord.gg/b2MhDBAzTv).
+To get mods, you first need to download a `.qmod` file of the mod you want. You can find mods in the `#quest-mod-releases` channel of the [Gorilla Tag modding discord](https://discord.gg/b2MhDBAzTv).
 
 !> Do not download .DLL files - they are PC mods, which cannot be used on the quest version of Gorilla Tag.
 
-To install a mod, click the browse button in the `Mod Management` chest of QuestPatcher and select the mods ye wish. Finally, click `Open` to install the mods. ![Selecting a mod in QuestPatcher](../docs/files/questpatcherselectmod.png)
+To install a mod, click the browse button in the `Mod Management` section of QuestPatcher and select the mods you want. Finally, click `Open` to install the mods. ![Selecting a mod in QuestPatcher](../docs/files/questpatcherselectmod.png)
 
-!> Installing a mod may download other mods that the mod needs to work. Ye shant remove these!
+!> Installing a mod may download other mods that the mod needs to work. Do not uninstall these!
 
-Once the mod is installed, ye shall see it in the Mods chest of QuestPatcher.![Mods Installed](../docs/files/questpatcherinstalledmods.png)
+Once the mod is installed, you should see it in the Mods section of QuestPatcher. ![Mods Installed](../docs/files/questpatcherinstalledmods.png)
 
-**Ye may now set sail, and use yer mods!**
+**You can now open your game, and use your mods!**
 
-?> If shall ye see this screen when setting sail, just click **Open App**. Do not click Restore, this will restore ye game back to vanilla and may cause issues with ye installation.  
+?> If you see this screen when launching Gorilla Tag, just click **Open App**. Do not click Restore, this will restore your game back to vanilla and may cause issues with your installation.  
 ![Restore App](../docs/files/restoreapp.png)
 
 ### Uninstalling Mods
 
-Mods can be toggled by clicking the switch next to the mod. Disabling a mod makes the mod act as if it is uninstalled, but not to worry, ye can always enable it once more.
+Mods can be toggled by clicking the switch next to the mod. Disabling a mod makes the mod act like it is uninstalled, but you can always enable it again.
 
 
 If you want to delete a mod, click the `Delete` button next to the mod.
 
 ## Managing Cosmetics & Other Items
 
-!> Shall ye seek cosmetics, ye must load the Gorilla Cosmetics mod onto ye ship. Otherwise, they may not show up while out on the water.
+!> To use cosmetics, you need to install the Gorilla Cosmetics mod. Otherwise they will not show up in-game.
 
-Shall ye seek ye installed cosmetics and maps, click the `Cosmetics & Other Items` tab of QuestPatcher. Use the drop-down to select the treasure type ye wish to manage.
+To view your installed cosmetics and maps, click the `Cosmetics & Other Items` tab of QuestPatcher. Use the drop-down to select the file type you want to manage.
 
 **Cosmetics can be installed by dragging and dropping them into the grey area, or by clicking the Browse button.**
 
