@@ -4,12 +4,19 @@ Starte mit Modifikationen an Gorilla Tag und verbessere deine Erfahrung.
 "Reject humanity, return to monke".
 
 <!-- <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="introduction"></div> -->
+<!-- Guide Page Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1545654854838298"
+     data-ad-slot="8114351325"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 
-?> **Discord Hilfe** Für Live-Unterstützung mit dieser Anleitung besuche uns bitte unter **#installation-help** auf dem [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) und frage, auf Englisch, um Hilfe. Bitte lese dir unsere [Häufig gestellte Fragen](faq) im Voraus, um zu sehen, ob deineFrage bereits beantwortet wurde.
+?> **Discord Help** For live support with this guide please visit us in **#installation-help** on the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) and ask, in English, for assistance. Please read our [Frequently Asked Questions](faq) page beforehand to see if your question has already been answered.
 
 ### Was kann man mit mods machen?
 
-Du kannst:
+You can:
 - Benutzerdefinierte Karten mit [*Monke Map Loader*](https://monkemaphub.com/) spielen
 - Dein gorilla mit benutzerdefinierten materialien, infizierten materialien und hüte mit [*Gorilla Cosmetics*](https://github.com/legoandmars/GorillaCosmetics) Anpassen
 - Hoch springen mit [*Space Monke*](https://github.com/legoandmars/SpaceMonke)
@@ -17,17 +24,17 @@ Du kannst:
 - Dashen wo du siehst mit [*DashMonke*](https://github.com/TrueTamashii/DashMonke)
 - Verbessere den Gorilla-Computer, sehe deine aktuell geladenen Mods, ändere den Monitor POV und mehr mit [*Computer Interface*](https://github.com/ToniMacaroni/ComputerInterface)
 
-Es gibt *viel mehr Mods* zu entdecken, und du findest diese in der Kategorie **Downloads** auf dem [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv).
+There are *many more mods* to discover, and you'll find them in the **Downloads** category on the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv).
 
 ### Ist das Modifizieren des Spiels sicher?
 
-Das Modding des Spiels ist von den Entwicklern von Gorilla Tag erlaubt, aber bedenke Folgendes:
+Modding the game is allowed by the developers of Gorilla Tag, however keep in mind the following:
 
-!> Die Verwendung von Modifikationen, die in öffentliche Lobbys eingreifen, ist von den Entwicklern verboten und kann zu einem Bann führen. Bitte halte Mods in privaten Lobbys enthalten. **Die meisten Spiel-Wechsel-Mods deaktivieren sich bei den Beitritt zu öffentlichen Lobbys automatisch, aber bitte seie vorsichtig.**
+!> The use of mods that interfere with gameplay inside public lobbies is forbidden by the developers and can result in a ban. Please keep mods contained to private lobbies. **Most gameplay-changing mods automatically disable joining public lobbies, but please be careful.**
 
 ### Endziel
 
-Diese Anleitung hat das Endziel, eine komplett unveränderte Gorilla Tag Installation von Vanilla bis zu Modifiziert mit BepInEx (PC) oder QuestLoader (Quest).
+This guide has the end goal of taking a completely unmodified Gorilla Tag installation from vanilla to modded with BepInEx (PC) or QuestLoader (Quest).
 
 ---
 >
