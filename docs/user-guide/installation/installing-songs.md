@@ -24,4 +24,4 @@ If you'd like a more compact list, TheGlitched64 has created [a spreadsheet cont
 
 ### Creating Custom Songs {docsify-ignore}
 
-> Check out the [**Charting guide**](charting) for info on creating your own custom songs.
+> Check out the [**Charting guide**](creating-charts) for info on creating your own custom charts.

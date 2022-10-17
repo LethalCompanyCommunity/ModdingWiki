@@ -3,6 +3,10 @@
 - **Modding**
 - [Installing Mods](installing-mods)
 - [Installing Songs](installing-songs)
+- **Charting**
+- [Creating Charts](creating-charts)
+- [Chart Backgrounds](chart-backgrounds)
+- [Misc Charting Info](misc-charting-info)
 - **Extras**
 - [Frequently Asked Questions](../faq)
 - **Links**
