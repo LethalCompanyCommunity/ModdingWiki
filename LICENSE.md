@@ -1,5 +1,6 @@
 ISC License
 
+Copyright (c) 2022, Bobbie
 Copyright (c) 2021, BurritoSOFTWARE
 
 Permission to use, copy, modify, and/or distribute this software for any
