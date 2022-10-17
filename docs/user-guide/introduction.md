@@ -1,18 +1,16 @@
-# Gorilla Tag Modding Guide {docsify-ignore-all}
+# Trombone Champ Modding Guide {docsify-ignore-all}
 ---
-Get up and running with modifications to Gorilla Tag to enhance your experience.  
-Reject humanity, return to monke.
+Trombone Champ is a silly rhythm game by Holy Wow studios, [available on Steam](https://store.steampowered.com/app/1059990/Trombone_Champ/).
 
-Check us out on Twitter [@gorillatagmods](https://twitter.com/gorillatagmods).
+This wiki serves as a source of documentation and tutorials for various unofficial mods created to enhance your tromboning experience.
+> ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Installing Mods**](installing-mods)
 
-<!-- <div class="horizontal bordered" data-ea-publisher="gorillatagmodding-burrito-software" data-ea-type="image" data-ea-manual="true" id="introduction"></div> -->
-<!-- Guide Page Ad -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1545654854838298"
-     data-ad-slot="8114351325"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
+> ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Installing Custom Songs**](installing-mods)
+
+> ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Creating Custom Songs**](pc-guide)
+
+> ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Creating Mods**](pc-guide)
+
 
 ?> **Discord Help**
 For live support with this guide please visit us in **#installation-help** on the [GorillaTag Modding Discord](https://discord.gg/b2MhDBAzTv) and ask, in English, for assistance. Please read our [Frequently Asked Questions](faq) page beforehand to see if your question has already been answered.
