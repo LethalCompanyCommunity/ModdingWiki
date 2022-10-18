@@ -17,7 +17,7 @@ This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with ass
 >
 
 ?> **Open Source and Privacy**  
-[This guide is open source on GitHub](https://github.com/burritosoftware/GorillaTag-Modding-Guide). It is licensed under the [ISC License](https://github.com/burritosoftware/GorillaTag-Modding-Guide/blob/master/LICENSE.md).  
+[This guide is open source on GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). It is licensed under the [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).  
 
 ?> **Disclaimer:**
 This product is an unofficial fanwork not affiliated with Trombone Champ or Holy Wow Studios and is not endorsed or otherwise sponsored by Holy Wow Studios.
