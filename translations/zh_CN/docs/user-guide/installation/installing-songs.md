@@ -1,27 +1,27 @@
-# Installing Songs
+# 安装自制谱面
 ---
-?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
+?> 如果需要视频教学, 可参考VorgunTheBeta 的[mod安装与自制曲目导入指南](https://youtu.be/pSwNSGx-P5c).
 
-!> **IMPORTANT:** Make sure you've followed the [mod installation guide](installing-mods) to install BepInEx and TrombLoader before continuing!
+！> **注意：** 请确保您已经按照 [mod安装指南](installing-mods) 安装BepInEx 和 TrombLoader，然后再继续！
 
-## Finding Songs
+## 搜索自制谱面
 
-Custom songs can be found in the `#custom-charts` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
+自制谱面可以在 [Trombone ChampModing Discord](https://discord.gg/KVzKRsbetJ) 的 `#custom-charts` 频道中找到。
 
-If you'd like a more compact list, TheGlitched64 has created [a spreadsheet containing information on every custom chart](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing).
+如果你喜欢更紧凑的列表, TheGlitched64 已创建了一个[汇总目前所有自制谱面信息的电子表格](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing) 。
 
-## Installation
+## 安装
 
-1. Download the custom song - it will generally be some kind of archive file, usually ending in `.zip`.
+1. 下载自制谱面。通常情况下是一个压缩包，以`.zip`等压缩包格式作为文件名结尾。
 
-2. Extract the contents of the archive file directly into the `BepInEx/CustomSongs` folder that got created when you first ran the game with TrombLoader installed.
+2. 解压压缩包的内容并直接放入`BepInEx/CustomSongs` 文件夹中。这个文件夹会在你安装了TrombLoader并第一次运行游戏之后自动创建。
 
-![BepInEx Extraction Preview](../docs/files/customsongextract.png)
+![BeepInEx 解压缩预览](../docs/files/customsongextract.png)
 
-3. Double check that the song is just in one folder instead of nested in multiple - in this example, all the song's files should be located in `BepinEx/CustomSongs/BakaMitai/`.
+3. 请确认自制谱面的全部文件只在一个文件夹中，而不是嵌套在多个文件夹中—— 举一个例子， 所有的文件都应该位于 `BepinEx/CustomSongs/BakaMitai`文件夹内。
 
-![Correct Extraction Preview](../docs/files/customsongcorrect.png)
+![正确解压缩预览](../docs/files/customsongcorrect.png)
 
-### Creating Custom Songs {docsify-ignore}
+### 制作自制谱面 {docsify-ignore}
 
-> Check out the [**Charting guide**](creating-charts) for info on creating your own custom charts.
+> 请参考[**Charting guide**](creating-charts) 来获取制作自制谱面的信息。

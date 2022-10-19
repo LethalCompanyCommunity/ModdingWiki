@@ -1,50 +1,50 @@
-# Installing Mods
+# 安装mod
 ---
 
-?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
+?> 如果需要视频教学, 可参考VorgunTheBeta 的[mod安装与自制曲目导入指南](https://youtu.be/pSwNSGx-P5c).
 
-## Finding Install Location
-1. Open Steam and right-click on Trombone Champ. Then, go to `Manage > Browse local files`.
+## 寻找安装位置
+1. 打开Steam并右键点击Trombone Champ。 在右键菜单中选择 `管理 > 浏览本地文件`。
 
-![Right-click Menu Preview](../docs/files/localfilescontext.png)
+![右键菜单预览](../docs/files/localfilescontext.png)
 
-2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
+2. 在弹出的文件浏览界面中点击顶部地址栏并选中文件夹路径。 点击`CTRL`+`C`将这个路径复制到剪贴板。
 
-![Copy Folder Path Preview](../docs/files/copyfolderpath.png)
+![复制文件夹路径预览](../docs/files/copyfolderpath.png)
 
-## Installing BepInEx
+## 安装BepInEx
 
-1. Download [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) into your TromboneChamp folder. You will want to get `BepinEx_x64_VERSION.zip`, with `VERSION` being the version number.
-2. Extract the contents of the BepInEx .zip file directly into the [install folder](##finding-install-location) of your Trombone Champ installation.
+1. 下载[BepInEx](https://github.com/BepInEx/BepInEx/releases/latest)到你的TromboneChamp文件夹。 选择 `BepinEx_x64_VERSION.zip`，其中`VERSION`为版本号。
+2. 直接解压压缩包内的文件并放入Trombone Champ的 [文件夹](##finding-install-location)。
 
-![BepInEx Extraction Preview](../docs/files/bepinexextract.png)
+![BeepInEx 解压缩预览](../docs/files/bepinexextract.png)
 
-!> Please ensure that you've downloaded the `x64` version of BepInEx. the `unix` and `x86` versions will cause your game to not function properly.
+!> 请确认你下载的BepInEx为 `x64`版本， `unix` 与`x86`版本会导致你的游戏无法正常运行。
 
-!> **IMPORTANT:** Extract BepInEx *directly* into your game's folder as shown in the image above. If you've done it correctly, your game's folder should look like the below image.
+!> **注意:** 如上图所示将 BepInEx *直接*解压 到你的游戏安装文件夹， 如果操作正确，你的游戏安装文件夹会与下图相同。
 
-![Finished BepinEx Install](../docs/files/finishedbepinex.png)
+![BepinEx 安装完成](../docs/files/finishedbepinex.png)
 
-3. Run Trombone Champ once to complete installation.
+3. 运行一次Trombone Champ来完成安装。
 
-## Installation
+## 安装mod
 
-With BepInEx installed, you can start downloading specific mods - a full list is available in the `#mod-releases` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
+BepInEx安装完成之后，你就可以开始下载一些特定的mod了。[Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ)的`#mod-releases`频道有一份mod清单可供参考。
 
-As you likely want to install custom songs, this section will use [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest) as an example.
+考虑到你大概率想要安装自制谱面，本节将以 [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest)作为例子。
 
-1. Navigate to your [game's install folder](###finding-install-location), the `BepInEx` folder, then the `plugins` folder.
+1. 打开你的[游戏安装文件夹](###finding-install-location)，再打开 `BepInEx`文件夹，然后进入`plugins` 文件夹。
 
-2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
+2. 点击顶部地址栏并选中文件夹路径， 点击`CTRL`+`C` 将这个路径复制到剪贴板。
 
-![Copy Folder Path Preview](../docs/files/copyfolderpathplugins.png)
+![复制文件夹路径预览](../docs/files/copyfolderpathplugins.png)
 
-3. Download the mod's .dll file into the copied folder.
+3. 下载mod的 .dll 文件到复制的文件夹。
 
-![Plugins Folder Preview](../docs/files/pluginswithtrombloader.png)
+![Plugins文件夹预览](../docs/files/pluginswithtrombloader.png)
 
-4. Run Trombone Champ once to initialize necessary files for that mod.
+4. 运行一次Trombone Champ 来初始化该模组的必要文件。
 
-### Installing Custom Songs {docsify-ignore}
+### 安装自制谱面 {docsify-ignore}
 
-> Check out the [**Custom Songs guide**](installing-songs) for info on installing custom songs.
+> 参考[**Custom Songs guide**](installing-songs) 以获取安装自制谱面的信息。
