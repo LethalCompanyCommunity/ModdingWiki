@@ -10,20 +10,20 @@
 
 2. Klicke oben auf die Adressleiste, um den Pfad deines Installationsordners auszuwählen. Drücke `STRG`+`C`, um diesen Pfad in die Zwischenablage zu kopieren.
 
-![Copy Folder Path Preview](../docs/files/copyfolderpath.png)
+![Ordnerpfad kopieren Vorschau](../docs/files/copyfolderpath.png)
 
 ## BepInEx installieren
 
 1. Lade [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) in deinen TromboneChamp-Ordner herunter. Du solltest `BepinEx_x64_VERSION.zip` erhalten, mit `VERSION` als Versionsnummer.
 2. Extrahiere den Inhalt der BepInEx.zip Datei direkt in den [Installationsordner](##finding-install-location) deiner Trombone Champ Installation.
 
-![BepInEx Extraction Preview](../docs/files/bepinexextract.png)
+![BepInEx extrahieren Vorschau](../docs/files/bepinexextract.png)
 
 > Bitte stelle sicher, dass die `x64` Version von BepInEx heruntergeladen ist. Die `Unix` und `x86` Versionen führen dazu, dass das Spiel nicht richtig funktioniert.
 
 !> **WICHTIG:** Extrahiere BepInEx *direkt* in den Ordner Ihres Spiels, wie im obrigen Bild gezeigt. Wenn Sie alles richtig gemacht haben, sollte der Ordner Ihres Spiels wie das unten stehende Bild aussehen.
 
-![Finished BepinEx Install](../docs/files/finishedbepinex.png)
+![Abgeschlossene BepInEx Installation](../docs/files/finishedbepinex.png)
 
 3. Starte Trombone Champ, um die Installation abzuschließen.
 
@@ -37,11 +37,11 @@ Da du wahrscheinlich eigene Songs installieren möchtest, wird dieser Abschnitt 
 
 2. Klicke oben auf die Adressleiste, um den Pfad deines Installationsordners auszuwählen. Drücke `STRG`+`C`, um diesen Pfad in die Zwischenablage zu kopieren.
 
-![Copy Folder Path Preview](../docs/files/copyfolderpathplugins.png)
+![Ordnerpfad kopieren Vorschau](../docs/files/copyfolderpathplugins.png)
 
 3. Lade die .dll Datei des Mods in den kopierten Ordner herunter.
 
-![Plugins Folder Preview](../docs/files/pluginswithtrombloader.png)
+![Vorschau des Plugin-Ordners](../docs/files/pluginswithtrombloader.png)
 
 4. Starte Trombone Champ, um die notwendigen Dateien zu initialisieren.
 
