@@ -16,28 +16,28 @@ Om overeen te komen met het spel moeten midi notities 48 tot 72 binnen het berei
 
 ### Normale Noten
 
-Normale noten worden gemaakt in de midi editor en hetzelfde uit in-game. Make sure to leave a gap in time between notes!
+Normale noten worden gemaakt in de midi editor en hetzelfde uit in-game. Zorg ervoor dat je een tijdsperiode tussen notities laat!
 
-### Slide Notes
+### Schuif Noten
 
-Slides are created by overlapping notes in time. For a pair of overlapping notes, the slide goes from the start of the first note to the start of the second. The overlapping part of the first note is discarded. See this image for an example:
+Schuif noten worden gemaakt door overlappende noten in tijd. Voor een paar overlappende noten, gaat de schuif van het begin van de eerste noot naar het begin van de tweede. Het overlappende deel van de eerste noot is verwijderd. Bekijk deze afbeelding voor een voorbeeld:
 
 ![Slide Note Example](../docs/files/slide1.png)
 
-If a note ends but the next note starts at the exact same time, they will be connected. This allows you to adjust where the curve of a slide starts. Here's an example of multiple slides connected together:
+Als een noot eindigt, maar de volgende noot begint op hetzelfde moment, worden ze aangesloten. Hiermee kun je aanpassen waar de bocht van een schuif begint. Hier is een voorbeeld van meerdere schuif noten die met elkaar verbonden zijn:
 
-(note: The first straight section is a separate note from the curved section. Its end time is the same as the next one's start time.)
+(Let op: het eerste rechte gedeelte is een aparte noot uit het gebogen gedeelte. De eindtijd is gelijk aan de begintijd van de volgende.)
 
 ![Multiple Slide Note Example](../docs/files/slide2.png)
 
-## Converting Midi to Map File
+## Midi omzetten naar map bestand
 
-1. Go to <https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest> and click `Midi2TromboneChamp.exe` to download it.
+1. Ga naar <https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest> en klik op `Midi2TromboneChamp.exe` om het te downloaden.
 
-2. Run it. In the file selector it opens, select your midi file. Click Open.
+2. Start de programma. In de bestandskiezer opent het en selecteert het je midi bestand. Klik Open.
 
-3. Fill out the fields:
- - `Song Name` is the full name of the song, shown in the info when you select it in-game .
+3. Vul de velden in:
+ - `Song Name` is de volledige naam van het liedje, weergegeven in de info wanneer je het in het spel selecteert.
  - `Short Name` is shown while scrolling through the song list. Text gets smaller when the name is long so I'm not sure if there's a maximum length.
  - `Folder Name` is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
  - `Year` is the year the song was created.
