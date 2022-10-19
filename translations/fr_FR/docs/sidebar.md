@@ -1,14 +1,14 @@
-- **User Guide**
+- **Guide de l'utilisateur**
 - [Introduction](./)
 - **Modding**
-- [Installing Mods](installing-mods)
-- [Installing Songs](installing-songs)
+- [Installer des mods](installing-mods)
+- [Installer des chansons](installing-songs)
 - **Charting**
-- [Creating Charts](creating-charts)
-- [Chart Backgrounds](chart-backgrounds)
-- [Misc Charting Info](misc-charting-info)
+- [Créer des charts](creating-charts)
+- [Arrière-plans de charts](chart-backgrounds)
+- [Infos diverses de charting](misc-charting-info)
 - **Extras**
-- [Frequently Asked Questions](../faq)
-- **Links**
+- [Foire aux questions](../faq)
+- **Liens**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
-- [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)<!-- - \[![Translate\](https://icongr.am/material/translate.svg?color=808080&size=16)Translate](https://crowdin.com/project/gorilla-tag-modding-guide) -->- [About](../about)
+- [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)<!-- - \[![Translate\](https://icongr.am/material/translate.svg?color=808080&size=16)Translate](https://crowdin.com/project/gorilla-tag-modding-guide) -->- [À propos](../about)
