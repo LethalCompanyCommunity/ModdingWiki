@@ -1,27 +1,27 @@
-# Installing Songs
+# Mappen Installeren
 ---
-?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
+?> Als je liever en video-tutorial wil hebben, heeft VorgunTheBeta een [video](https://youtu.be/pSwNSGx-P5c) waarin word uitgelegd hoe mods en aangepaste mappen te installeren. Opmerking: de video is alleen maar in het Engels.
 
-!> **IMPORTANT:** Make sure you've followed the [mod installation guide](installing-mods) to install BepInEx and TrombLoader before continuing!
+!> **LET OP:** Zorg ervoor dat u de [mod installatiehandleiding heeft gevolgd](installing-mods) om BepInEx en Trombloader te installeren voordat u doorgaat!
 
-## Finding Songs
+## Mappen Vinden
 
-Custom songs can be found in the `#custom-charts` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
+Aangepaste nummers zijn te vinden in het `#custom-charts` kanaal in het [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
 
-If you'd like a more compact list, TheGlitched64 has created [a spreadsheet containing information on every custom chart](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing).
+Als je liever een meer compacte lijst wilt gebruiken, TheGlitched64 heeft [een spreadsheet](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing) gemaakt met de informatie over elke aangepaste map.
 
-## Installation
+## Map Installatie
 
-1. Download the custom song - it will generally be some kind of archive file, usually ending in `.zip`.
+1. Download de aangepaste map - dit zal meestal een soort van archiefbestand zijn, meestal eindigen in `.zip`.
 
-2. Extract the contents of the archive file directly into the `BepInEx/CustomSongs` folder that got created when you first ran the game with TrombLoader installed.
+2. Pak de inhoud van het archief bestand rechtstreeks uit in de `BepInEx/CustomSongs` map die gemaakt is toen je het spel met TrombLoader geïnstalleerd had.
 
-![BepInEx Extraction Preview](../docs/files/customsongextract.png)
+![BepInEx Extractie Voorbeeld](../docs/files/customsongextract.png)
 
-3. Double check that the song is just in one folder instead of nested in multiple - in this example, all the song's files should be located in `BepinEx/CustomSongs/BakaMitai/`.
+3. Let op dat het nummer slechts in één map ligt in plaats van in meerdere mappen - in dit voorbeeld alle bestanden van het nummer moeten in `BepinEx/CustomSongs/BakaMitai/` zijn.
 
-![Correct Extraction Preview](../docs/files/customsongcorrect.png)
+![Correct Extractie Voorbeeld](../docs/files/customsongcorrect.png)
 
-### Creating Custom Songs {docsify-ignore}
+### Aangepaste Mappen Maken {docsify-ignore}
 
-> Check out the [**Charting guide**](creating-charts) for info on creating your own custom charts.
+> Bekijk de [**Map Maken Gids**](creating-charts) voor informatie om hoe je je eigen aangepaste map kan maken.
