@@ -1,5 +1,5 @@
-- **User Guide**
-- [Introduction](./)
+- **Guía de Usuario**
+- [Introducción](./)
 - **Modding**
 - [Installing Mods](installing-mods)
 - [Installing Songs](installing-songs)
