@@ -22,13 +22,13 @@ Notas normales son creadas en el editor midi y se ven igualmente en el juego. ¡
 
 Deslizas se crean al solapar notas en un tiempo. Para un par de notas solapadas, el deslizo va desde el principio de la primera nota hasta el principio de la segunda. La parte solapada de la primera nota se descarta. Vea esta imagen para un ejemplo:
 
-![Slide Note Example](../docs/files/slide1.png)
+![Ejemplo de nota deslizada](../docs/files/slide1.png)
 
 Si una nota acaba pero la siguiente nota empieza al mismo tiempo, estan serán conectadas. Esto te permite ajustar donde empieza la curva del desliz. Aquí hay un ejemplo de varias deslizas conectadas:
 
 (nota: La primera sección recta es una nota separada de la sección curvada. Su tiempo de acabado es el mismo que el comienzo de la siguiente.)
 
-![Multiple Slide Note Example](../docs/files/slide2.png)
+![Ejemplo de múltiples notas deslizadas](../docs/files/slide2.png)
 
 ## Convirtiendo Midi a Archivo de Mapa
 
@@ -44,15 +44,15 @@ Si una nota acaba pero la siguiente nota empieza al mismo tiempo, estan serán c
  - `Author` es el compositor de la canción.
  - `Difficulty` es el número de estrellas de dificultad que aparecen en la información de la canción.
  - `Note Spacing` afecta cómo de rápido se desplaza el nivel, en combinación con BPM.
- - `Song Endpoint` is the beat on which the song ends. It is automatically calculated, but you can adjust it to change when the level end screen appears.
- - `Beats per Bar` determines how far apart the "beat lines" are.
+ - `Song Endpoint` es el pulso en el que acaba la canción. Se calcula automáticamente, pero puedes ajustarlo para cambiar cuando aparece la pantalla del final de nivel.
+ - `Beats per Bar` determina lo alejadas que están las "líneas de pulsos".
 
-4. Hit OK. In the file selector it opens, create a folder with the same name as you entered in the `Folder Name` field, and save the file as `song.tmb` inside that folder.
+4. Pulsa OK. En el selector de archivo que abre, crea una carpeta con el mismo nombre al que has puesto en el campo `Folder Name`, y guarda el archivo como `song.tmb` en esa carpeta.
 
-5. Your music track should be a .ogg file. At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file `song.ogg`.
+5. Tu pista de música debería ser un archivo .ogg. En el momento de escritura, la duración de la canción debe ser más larga que el Song Endpoint, o la canción se atascará sin acabar nunca. Puedes usar software como Audacity para insertar silencio al principio de la pista que alinearla con el midi. Nombra al archivo `song.ogg`.
 
-6. Move the ogg file into the same folder as `song.tmb`.
+6. Mueve el archivo ogg a la misma carpeta que `song.tmb`.
 
-7. Follow the [Custom Song Installation instructions](installing-songs) to test it.
+7. Sigue las [Instrucciones de Instalación de Canciones Personalizadas](installing-songs) para probarlo.
 
-8. [Add a background!](chart-backgrounds)
+8. [¡Añade un fondo!](chart-backgrounds)
