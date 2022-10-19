@@ -1,13 +1,13 @@
-# Chart Backgrounds
+# Fondo de Mapa
 ---
 
-Backgrounds are an important feature of a chart, and there's a few different types (in order of complexity):
+Los fondos son una característica importante de un mapa, y hay unos diferentes tipos (en orden de complejidad):
 
 ### .png
 
-If you want a simple, easy background, this is what's recommended.
+Si quieres un fondo simple y fácil, esto se recomienda.
 
-Simply put a `1920x1080` image named `bg.png` in your song's folder.
+Simplemente pon una imagen`1920x1080` llamada`bg.png` en la carpeta de tu canción.
 
 You can use non-`1920x1080` images, but it might behave weirdly, as unity sprite scale is based on image resolution.
 
