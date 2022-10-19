@@ -1,15 +1,15 @@
 # Trombone Champ Modding Guide {docsify-ignore-all}
 ---
-Trombone Champ is a silly rhythm game by Holy Wow studios, [available on Steam](https://store.steampowered.com/app/1059990/Trombone_Champ/).
+Trombone Champ is en rare ritme spel van Holy Wow studios, [verkrijgbaar op Steam](https://store.steampowered.com/app/1059990/Trombone_Champ/).
 
-This wiki serves as a source of documentation and tutorials for various unofficial mods created to enhance your tromboning experience.
+Deze wiki dient als een bron van documentatie en tutorials voor verschillende onofficiële mods gemaakt om je tromboning ervaring te verbeteren.
 
-?> **Discord Help** For live support with this guide please visit us in **#modding-support** on the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ) and ask for assistance. Please read our [Frequently Asked Questions](faq) page beforehand to see if your question has already been answered.
+?> **Discord Help** Voor snelle ondersteuning met deze gids, bezoek ons in **#modding-support** op de [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ) en vraag om hulp. Lees onze [veelgestelde vragen](faq) pagina vooraf om te zien of je vraag al is beantwoord.
 
-> ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Installing Mods**](installing-mods)
+> ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Mods Installeren**](installing-mods)
 > 
-> ### [![Apple Music Logo](https://icongr.am/simple/applemusic.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Installing Custom Songs**](installing-songs)
+> ### [![Apple Music Logo](https://icongr.am/simple/applemusic.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Aangepaste Mappen Installeren**](installing-songs)
 > 
-> ### [![Musicbrainz Logo](https://icongr.am/simple/musicbrainz.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Creating Custom Songs**](creating-charts)
+> ### [![Musicbrainz Logo](https://icongr.am/simple/musicbrainz.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Eigen Mappen maken**](creating-charts)
 > 
 ><!-- > ### \[![Steam Logo\](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;\[**Creating Mods**\](pc-guide) -->
