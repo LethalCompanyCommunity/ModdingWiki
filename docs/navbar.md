@@ -3,7 +3,7 @@
   - <a href="#" data-link-title="Light">Light</a>
 - ![Languages](https://icongr.am/material/translate.svg?color=A9A9A9&size=37)
   - [English](/)
-<!---  - [Español](/es_ES/) -->
+  - [Español](/es_ES/)
 <!---  - [Deutsch](/de_DE/) -->
 <!---  - [Français](/fr_FR/) -->
 <!---  - [日本語](/ja_JP/) -->
