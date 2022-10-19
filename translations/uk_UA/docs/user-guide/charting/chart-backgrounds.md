@@ -1,19 +1,19 @@
-# Chart Backgrounds
+# Фони чартів
 ---
 
-Backgrounds are an important feature of a chart, and there's a few different types (in order of complexity):
+Фони — важлива частина чарту, їх є пару типів (у порядку складності):
 
 ### .png
 
-If you want a simple, easy background, this is what's recommended.
+Якщо ви хочете простий, легкий фон — це найкращий вибір.
 
-Simply put a `1920x1080` image named `bg.png` in your song's folder.
+Просто покладіть зображення з назвою `bg.png` та роздільною здатністю `1920x1080` у папку пісні.
 
-You can use non-`1920x1080` images, but it might behave weirdly, as unity sprite scale is based on image resolution.
+Використовувати розширення `1920x1080` не обов'язково, проте воно може поводитися дивно, оскільки масштабування спрайтів Unity базується на основі роздільної здатності зображення.
 
 ### .mp4
 
-If you want a slightly more interesting background, a music video background, or want to prerender a moving background, you can also use a video!
+Якщо ви хочете трохи цікавіший фон, наприклад музичний кліп, або просто фон який рухається — ви також можете використовувати відео!
 
 Simply put an mp4 named `bg.mp4` in your song's folder.
 
