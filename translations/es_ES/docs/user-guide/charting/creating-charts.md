@@ -1,4 +1,4 @@
-# Creating Charts
+# Creando Mapas
 ---
 
 ?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
