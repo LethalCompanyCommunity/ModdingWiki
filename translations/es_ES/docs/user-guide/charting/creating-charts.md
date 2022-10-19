@@ -1,22 +1,22 @@
 # Creando Mapas
 ---
 
-?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
+?> Si prefieres tutoriales en video, NyxTheShield tiene [un archivo de stream](https://www.youtube.com/watch?v=ig27SlJveGs) que explica cada paso del proceso de mapeado en detalle.
 
-## Basics
-Charts are made by creating a midi file and running them through [Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp).
+## Básicos
+Mapas se hacen creando un archivo y ejecutándolo a través de [Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp).
 
-Some free, verified to work midi editors include:
+Algunos editores midi gratis, verificados que funcionan incluyen:
 - [LMMS](https://lmms.io/)
-- [FL Studio (trial)](https://www.image-line.com/fl-studio-download/)
+- [FL Studio (prueba)](https://www.image-line.com/fl-studio-download/)
 
-?> The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using [flp2midi](https://github.com/Kaydax/flp2midi).
+?> La versión de prueba de FL Studio no te permite exportar MIDI, pero puede evitarlo guardando el archivo de proyecto y usando [flp2midi](https://github.com/Kaydax/flp2midi).
 
-Midi notes should be in the range 48 to 72 to match the game. Any notes outside this range will just become 48 or 72.
+Notas Midi deben estar en el rango de 48 a 72 para concidir con el juego. Cualquier nota fuera de este rango cambiará a 48 o 72.
 
-### Normal Notes
+### Notas Normales
 
-Normal notes are created in the midi editor and look the same in-game. Make sure to leave a gap in time between notes!
+Notas normales son creadas en el editor midi y se ven igualmente en el juego. ¡Asegúrate de dejar un tiempo de espacio entre notas!
 
 ### Slide Notes
 
