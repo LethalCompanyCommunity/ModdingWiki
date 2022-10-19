@@ -10,9 +10,9 @@ Some free, verified to work midi editors include:
 - [LMMS](https://lmms.io/)
 - [FL Studio(试用版）](https://www.image-line.com/fl-studio-download/)
 
-?> The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using [flp2midi](https://github.com/Kaydax/flp2midi).
+?> 试用版的 FL Studio 不允许您导出 MIDI 格式的文件，但你可以通过保存项目文件并使用 [flp2midi](https://github.com/Kaydax/flp2midi) 来解决这个问题。
 
-Midi notes should be in the range 48 to 72 to match the game. Any notes outside this range will just become 48 or 72.
+Midi文件中的每一个音符都应该在48至72的区间之内以匹配游戏内长号所能吹奏出的范围。 低于48或高于72的音符都会被视作48或72。
 
 ### Normal Notes
 
