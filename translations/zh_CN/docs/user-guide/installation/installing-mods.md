@@ -17,7 +17,7 @@
 1. 下载[BepInEx](https://github.com/BepInEx/BepInEx/releases/latest)到你的TromboneChamp文件夹。 选择 `BepinEx_x64_VERSION.zip`，其中`VERSION`为版本号。
 2. 直接解压压缩包内的文件并放入Trombone Champ的 [文件夹](##finding-install-location)。
 
-![BeepInEx 解压缩预览](../docs/files/bepinexextract.png)
+![BepInEx 解压缩预览](../docs/files/bepinexextract.png)
 
 !> 请确认你下载的BepInEx为 `x64`版本， `unix` 与`x86`版本会导致你的游戏无法正常运行。
 
