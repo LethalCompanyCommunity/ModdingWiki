@@ -2,14 +2,14 @@
 ---
 Trombone Champ es un juego de ritmo tonto por estudio Holy Wow, [disponible en Steam](https://store.steampowered.com/app/1059990/Trombone_Champ/).
 
-This wiki serves as a source of documentation and tutorials for various unofficial mods created to enhance your tromboning experience.
+Esta wiki sirve como una fuente de documentación y tutoriales para varios mods no oficiales para mejorar tu experiencia de trombonear.
 
-?> **Discord Help** For live support with this guide please visit us in **#modding-support** on the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ) and ask for assistance. Please read our [Frequently Asked Questions](faq) page beforehand to see if your question has already been answered.
+?> **Ayuda de Discord** Para soporte en directo con esta guía por favor visítanos en **#modding-support** en el [Discord de Mods de Trombone Champ](https://discord.gg/KVzKRsbetJ) y pregunta por asistencia. Por favor lea nuestra página de [Preguntas Frecuentes](faq) previamente para ver si tu pregunta ya ha sido respondida.
 
-> ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Installing Mods**](installing-mods)
+> ### [![Logo de Steam](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Instalando Mods**](installing-mods)
 > 
-> ### [![Apple Music Logo](https://icongr.am/simple/applemusic.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Installing Custom Songs**](installing-songs)
+> ### [![Logo de Apple Music](https://icongr.am/simple/applemusic.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Instalando Canciones Personalizadas**](installing-songs)
 > 
-> ### [![Musicbrainz Logo](https://icongr.am/simple/musicbrainz.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Creating Custom Songs**](creating-charts)
+> ### [![Logo de Musicbrainz](https://icongr.am/simple/musicbrainz.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Creando Canciones Personalizadas**](creating-charts)
 > 
 ><!-- > ### \[![Steam Logo\](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;\[**Creating Mods**\](pc-guide) -->
