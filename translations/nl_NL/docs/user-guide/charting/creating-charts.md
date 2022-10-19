@@ -1,22 +1,22 @@
-# Creating Charts
+# Map Maken
 ---
 
-?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
+?> Als je liever en video-tutorial wil hebben, heeft NyxTheShield een [en stream-archief](https://www.youtube.com/watch?v=ig27SlJveGs) waarin word uitgelegd elke stap van de map proces in detail. Opmerking: de video is alleen maar in het Engels.
 
-## Basics
-Charts are made by creating a midi file and running them through [Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp).
+## Basiskennis
+Mappen zijn gemaakt door en midi bestand te maken en door [Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp) te voeren.
 
-Some free, verified to work midi editors include:
+Sommige gratis, geverifieerd werkende midi editors omvatten:
 - [LMMS](https://lmms.io/)
-- [FL Studio (trial)](https://www.image-line.com/fl-studio-download/)
+- [FL Studio (proef)](https://www.image-line.com/fl-studio-download/)
 
-?> The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using [flp2midi](https://github.com/Kaydax/flp2midi).
+?> De proefversie van FL Studio laat je niet MIDI te exporteren, maar je kunt dit omzeilen door het projectbestand op te slaan en [flp2midi](https://github.com/Kaydax/flp2midi) te gebruiken.
 
-Midi notes should be in the range 48 to 72 to match the game. Any notes outside this range will just become 48 or 72.
+Om overeen te komen met het spel moeten midi notities 48 tot 72 binnen het bereik liggen. Alle notities buiten dit bereik zullen 48 of 72 worden.
 
-### Normal Notes
+### Normale Noten
 
-Normal notes are created in the midi editor and look the same in-game. Make sure to leave a gap in time between notes!
+Normale noten worden gemaakt in de midi editor en hetzelfde uit in-game. Make sure to leave a gap in time between notes!
 
 ### Slide Notes
 
