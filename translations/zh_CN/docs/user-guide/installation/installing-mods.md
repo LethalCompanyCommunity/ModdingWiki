@@ -1,10 +1,10 @@
 # Installing Mods
 ---
 
-?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
+?> 如果需要视频教学, 可参考VorgunTheBeta 的[mod安装与自制曲目导入指南](https://youtu.be/pSwNSGx-P5c).
 
-## Finding Install Location
-1. Open Steam and right-click on Trombone Champ. Then, go to `Manage > Browse local files`.
+## 寻找安装位置
+1. 打开Steam并右键点击Trombone Champ。 Then, go to `Manage > Browse local files`.
 
 ![Right-click Menu Preview](../docs/files/localfilescontext.png)
 
