@@ -18,32 +18,32 @@ Notas Midi deben estar en el rango de 48 a 72 para concidir con el juego. Cualqu
 
 Notas normales son creadas en el editor midi y se ven igualmente en el juego. ¡Asegúrate de dejar un tiempo de espacio entre notas!
 
-### Slide Notes
+### Notas Deslizadas
 
-Slides are created by overlapping notes in time. For a pair of overlapping notes, the slide goes from the start of the first note to the start of the second. The overlapping part of the first note is discarded. See this image for an example:
+Deslizas se crean al solapar notas en un tiempo. Para un par de notas solapadas, el deslizo va desde el principio de la primera nota hasta el principio de la segunda. La parte solapada de la primera nota se descarta. Vea esta imagen para un ejemplo:
 
 ![Slide Note Example](../docs/files/slide1.png)
 
-If a note ends but the next note starts at the exact same time, they will be connected. This allows you to adjust where the curve of a slide starts. Here's an example of multiple slides connected together:
+Si una nota acaba pero la siguiente nota empieza al mismo tiempo, estan serán conectadas. Esto te permite ajustar donde empieza la curva del desliz. Aquí hay un ejemplo de varias deslizas conectadas:
 
-(note: The first straight section is a separate note from the curved section. Its end time is the same as the next one's start time.)
+(nota: La primera sección recta es una nota separada de la sección curvada. Su tiempo de acabado es el mismo que el comienzo de la siguiente.)
 
 ![Multiple Slide Note Example](../docs/files/slide2.png)
 
-## Converting Midi to Map File
+## Convirtiendo Midi a Archivo de Mapa
 
-1. Go to <https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest> and click `Midi2TromboneChamp.exe` to download it.
+1. Ve a <https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest> y haz clic en `Midi2TromboneChamp.exe` para descargarlo.
 
-2. Run it. In the file selector it opens, select your midi file. Click Open.
+2. Ejecútalo. En el selector de archivo que abre, selecciona tu archivo midi. Haz clic en Abrir.
 
-3. Fill out the fields:
- - `Song Name` is the full name of the song, shown in the info when you select it in-game .
- - `Short Name` is shown while scrolling through the song list. Text gets smaller when the name is long so I'm not sure if there's a maximum length.
- - `Folder Name` is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
- - `Year` is the year the song was created.
- - `Author` is the composer of the song.
- - `Difficulty` is the number of difficulty stars that appear on the song's info.
- - `Note Spacing` affects how fast the level scrolls, in combination with BPM.
+3. Rellena los campos:
+ - `Song Name` es el nombre completo de la canción, que se muestra en la información cuando la seleccionas en el juego.
+ - `Short Name` se muestra mientras te desplazas por la lista de canciones. El texto se hace más pequeño cuando el nombre es largo por lo que no estoy seguro de si hay una longitud máxima.
+ - `Folder Name` es el nombre de la carpeta en la que vas a poner tu archivo de mapa y canción. P. ej. Si pones en Folder Name mi mapa, la ruta será BepInEx/CustomSongs/mi mapa/song.tmb.
+ - `Year` es el año en que se creó la canción.
+ - `Author` es el compositor de la canción.
+ - `Difficulty` es el número de estrellas de dificultad que aparecen en la información de la canción.
+ - `Note Spacing` afecta cómo de rápido se desplaza el nivel, en combinación con BPM.
  - `Song Endpoint` is the beat on which the song ends. It is automatically calculated, but you can adjust it to change when the level end screen appears.
  - `Beats per Bar` determines how far apart the "beat lines" are.
 
