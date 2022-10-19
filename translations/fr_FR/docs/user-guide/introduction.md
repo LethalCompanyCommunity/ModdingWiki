@@ -1,4 +1,4 @@
-# Trombone Champ Modding Guide {docsify-ignore-all}
+# Guide de modding de Trombone Champ {docsify-ignore-all}
 ---
 Trombone Champ is a silly rhythm game by Holy Wow studios, [available on Steam](https://store.steampowered.com/app/1059990/Trombone_Champ/).
 
