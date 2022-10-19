@@ -1,14 +1,14 @@
-# Creating Charts
+# 长号冠军写谱教程
 ---
 
 ?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
 
 ## Basics
-Charts are made by creating a midi file and running them through [Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp).
+自制谱是用[Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp)从midi文件转码成自制谱文件的
 
 Some free, verified to work midi editors include:
 - [LMMS](https://lmms.io/)
-- [FL Studio (trial)](https://www.image-line.com/fl-studio-download/)
+- [FL Studio(试用版）](https://www.image-line.com/fl-studio-download/)
 
 ?> The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using [flp2midi](https://github.com/Kaydax/flp2midi).
 
