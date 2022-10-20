@@ -10,7 +10,7 @@ Alguns editores midi gratuitos que devem funcionar incluem:
 - [LMMS](https://lmms.io/)
 - [FL Studio (avaliação)](https://www.image-line.com/fl-studio-download/)
 
-?> A edição de avaliação do FL Studio não te permite exportar arquivos MIDI, mas você pode solucionar isto salvando o projeto e em seguida usar o [flp2midi](https://github.com/Kaydax/flp2midi).
+?> A edição de avaliação do FL Studio não permite exportar arquivos MIDI, mas você pode solucionar isso salvando o projeto e em seguida usar o [flp2midi](https://github.com/Kaydax/flp2midi).
 
 As notas Midi devem estar entre a 48 e 72 para se igualar as possíveis no jogo. Quaisquer notas fora deste alcance vão se tornar notas entre a 48 e 72.
 
