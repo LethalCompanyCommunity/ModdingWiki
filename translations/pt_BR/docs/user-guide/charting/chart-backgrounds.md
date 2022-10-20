@@ -1,23 +1,23 @@
-# Chart Backgrounds
+# Plano de fundo para charts
 ---
 
-Backgrounds are an important feature of a chart, and there's a few different types (in order of complexity):
+Planos de fundo são uma característica importante de um chart, e existem alguns tipos diferentes deles (em ordem de complexidade):
 
 ### .png
 
-If you want a simple, easy background, this is what's recommended.
+Se quer um fundo simples e fácil de se fazer, esse é o recomendado.
 
-Simply put a `1920x1080` image named `bg.png` in your song's folder.
+Simplesmente ponha uma imagem `1920x1080` chamada `bg.png` na pasta de sua música.
 
-You can use non-`1920x1080` images, but it might behave weirdly, as unity sprite scale is based on image resolution.
+Você pode usar imagens que não tem a resolução de `1920x1080`, mas elas talvez se comportem de forma estranha, já que a escala de um sprite na Unity é baseada na resolução da imagem.
 
 ### .mp4
 
-If you want a slightly more interesting background, a music video background, or want to prerender a moving background, you can also use a video!
+Se quiser um plano de fundo um pouco mais interessante, um clipe musical, ou quer pré-renderizar um fundo se movendo, você pode usar um vídeo!
 
-Simply put an mp4 named `bg.mp4` in your song's folder.
+Basta por um arquivo .mp4 com o nome `bg.mp4` na pasta de sua música.
 
-You can use any resolution of video, but **please** try to keep the size reasonable - aim for under 50MB. If your video's size is too high, you can always lower the resolution in your favorite video editor.
+Você pode usar qualquer resolução de vídeo, mas **por favor** tente deixar o tamanho do arquivo razoável — busque ter um arquivo abaixo de 50 MB. Se o tamanho do seu arquivo for muito alto, você pode tentar abaixar a resolução do vídeo no seu editor de escolha.
 
 ### .trombackground
 
