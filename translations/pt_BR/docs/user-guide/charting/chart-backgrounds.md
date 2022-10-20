@@ -5,7 +5,7 @@ Planos de fundo são uma característica importante de um chart, e existem algun
 
 ### .png
 
-Se quer um fundo simples e fácil de se fazer, esse é o recomendado.
+Se quiser um fundo simples e fácil de se fazer, esse é o recomendado.
 
 Simplesmente ponha uma imagem `1920x1080` chamada `bg.png` na pasta de sua música.
 
@@ -21,8 +21,8 @@ Você pode usar qualquer resolução de vídeo, mas **por favor** tente deixar o
 
 ### .trombackground
 
-If you want a background that'll blow people away, want to use events, or want to have full creative control of how your chart looks, it's highly recommended to use a `.trombackground` file.
+Se quiser fazer um plano de fundo que vai deixar a gurizada de queixo caído, quer usar eventos, ou quer ter controle total de seu chart, recomendamos criar um arquivo `.trombackground`.
 
-This will give you the full power of the Unity Editor, and the amount of things you can do is significantly higher than either of the other methods.
+Isto lhe dará todo o poder do editor Unity, e a quantidade de coisas que você pode fazer é maior que qualquer outro método.
 
-The instructions are currently found in a detailed readme on the Unity Project GitHub: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
+As instruções são atualmente encontradas num detalhado readme no GitHub do projeto Unity: <https://github.com/legoandmars/TrombLoaderBackgroundProject/> (Somente em inglês no momento.)
