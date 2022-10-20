@@ -1,16 +1,16 @@
-# Creating Charts
+# Criando Charts
 ---
 
-?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
+?> Se preferir, NyxTheShield tem uma [transmissão arquivada](https://www.youtube.com/watch?v=ig27SlJveGs) que explica o processo de charting por completo e em detalhes.
 
-## Basics
-Charts are made by creating a midi file and running them through [Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp).
+## Os básicos
+Charts são feitos a partir de arquivos midi, passando pelo programa [Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp).
 
-Some free, verified to work midi editors include:
+Alguns editores midi gratuitos que devem funcionar incluem:
 - [LMMS](https://lmms.io/)
-- [FL Studio (trial)](https://www.image-line.com/fl-studio-download/)
+- [FL Studio (avaliação)](https://www.image-line.com/fl-studio-download/)
 
-?> The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using [flp2midi](https://github.com/Kaydax/flp2midi).
+?> A edição de avaliação do FL Studio não te permite exportar arquivos MIDI, mas você pode solucionar isto salvando o projeto e em seguida usar o [flp2midi](https://github.com/Kaydax/flp2midi).
 
 Midi notes should be in the range 48 to 72 to match the game. Any notes outside this range will just become 48 or 72.
 
