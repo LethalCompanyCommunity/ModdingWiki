@@ -12,47 +12,47 @@ Alguns editores midi gratuitos que devem funcionar incluem:
 
 ?> A edição de avaliação do FL Studio não te permite exportar arquivos MIDI, mas você pode solucionar isto salvando o projeto e em seguida usar o [flp2midi](https://github.com/Kaydax/flp2midi).
 
-Midi notes should be in the range 48 to 72 to match the game. Any notes outside this range will just become 48 or 72.
+As notas Midi devem estar entre a 48 e 72 para se igualar as possíveis no jogo. Quaisquer notas fora deste alcance vão se tornar notas entre a 48 e 72.
 
-### Normal Notes
+### Notas comuns
 
-Normal notes are created in the midi editor and look the same in-game. Make sure to leave a gap in time between notes!
+Notas comuns são criadas no editor midi e tem a mesma aparência no jogo. Lembre-se de deixar uma lacuna no tempo entre as notas!
 
-### Slide Notes
+### Notas deslizantes
 
-Slides are created by overlapping notes in time. For a pair of overlapping notes, the slide goes from the start of the first note to the start of the second. The overlapping part of the first note is discarded. See this image for an example:
+Notas deslizantes são criadas sobrepondo outras notas no tempo. Para um par de notas sobrepostas, o deslize vai do começo da primeira nota até o começo da segunda. A parte sobreposta da primeira nota é descartada. Veja esta imagem para um exemplo:
 
-![Slide Note Example](../docs/files/slide1.png)
+![Exemplo de notas deslizantes](../docs/files/slide1.png)
 
-If a note ends but the next note starts at the exact same time, they will be connected. This allows you to adjust where the curve of a slide starts. Here's an example of multiple slides connected together:
+Se uma nota acaba e outra começa imediatamente, elas estarão conectadas. Isso permite você ajustar onde a curva de um deslize começa. Aqui está um exemplo de vários deslizes conectados simultaneamente:
 
-(note: The first straight section is a separate note from the curved section. Its end time is the same as the next one's start time.)
+(nota: A primeira seção reta é uma nota separada da seção curvada. O seu fim é igual à batida onde a próxima nota começa.)
 
-![Multiple Slide Note Example](../docs/files/slide2.png)
+![Exemplo de várias notas deslizantes](../docs/files/slide2.png)
 
-## Converting Midi to Map File
+## Convertendo Midi ao arquivo de mapa
 
-1. Go to <https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest> and click `Midi2TromboneChamp.exe` to download it.
+1. Vá para <https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest> e clique em `Midi2TromboneChamp.exe` para baixar o arquivo.
 
-2. Run it. In the file selector it opens, select your midi file. Click Open.
+2. Execute-o. No seletor de arquivos que foi aberto, selecione seu arquivo midi. Clique em Abrir.
 
-3. Fill out the fields:
- - `Song Name` is the full name of the song, shown in the info when you select it in-game .
- - `Short Name` is shown while scrolling through the song list. Text gets smaller when the name is long so I'm not sure if there's a maximum length.
- - `Folder Name` is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
- - `Year` is the year the song was created.
- - `Author` is the composer of the song.
- - `Difficulty` is the number of difficulty stars that appear on the song's info.
- - `Note Spacing` affects how fast the level scrolls, in combination with BPM.
- - `Song Endpoint` is the beat on which the song ends. It is automatically calculated, but you can adjust it to change when the level end screen appears.
- - `Beats per Bar` determines how far apart the "beat lines" are.
+3. Preencha os campos:
+ - `Song Name` é o nome completo da música, mostrado nas informações da música quando selecionada.
+ - `Short Name` é mostrado enquanto navega pela çista de músicas. O texto fica menor dependendo do tamanho do nome, mas não se sabe se tem um limite para tal.
+ - `Folder Name` é o nome da pasta em que foi colocado a música e o chart. Ex. Se você definiu o nome da pasta como banana, seu chart vai estar localizado em BepInEx/CustomSongs/banana/song.tmb.
+ - `Year` é o ano em que a música foi criada.
+ - `Author` é o compositor da música.
+ - `Difficulty` é o número de estrelas que aparece na informação de dificuldade.
+ - `Note Spacing` afeta a velocidade de rolagem, em combinação com o BPM.
+ - `Song Endpoint` é a batida em que a música termina. Ela é calculada automaticamente, mas você pode ajustá-la manualmente para mudar quando o nível acaba.
+ - `Beats per Bar` determina o quão distantes estão as "linhas de batida".
 
-4. Hit OK. In the file selector it opens, create a folder with the same name as you entered in the `Folder Name` field, and save the file as `song.tmb` inside that folder.
+4. Aperte em OK. No seletor de arquivos que será aberto, crie uma pasta de mesmo nome do `Folder Name`, e salve o arquivo como `song.tmb` na pasta.
 
-5. Your music track should be a .ogg file. At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file `song.ogg`.
+5. A sua faixa de música deve ser um arquivo .ogg. No momento da escrita, a duração da faixa deve ser maior que o fim do chart, ou a música fica travada e nunca acaba. Você pode usar programas como o Audacity para inserir silêncio no início da faixa para alinhar o midi. O nome do arquivo deve ser `song.ogg`.
 
-6. Move the ogg file into the same folder as `song.tmb`.
+6. Mova o arquivo para a mesma pasta em que se encontra o `song.tmb`.
 
-7. Follow the [Custom Song Installation instructions](installing-songs) to test it.
+7. Siga a [guia de instalação de músicas personalizadas](installing-songs) para testá-la.
 
-8. [Add a background!](chart-backgrounds)
+8. [Adicione um plano de fundo!](chart-backgrounds)
