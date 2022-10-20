@@ -38,10 +38,10 @@ Als een noot eindigt, maar de volgende noot begint op hetzelfde moment, worden z
 
 3. Vul de velden in:
  - `Song Name` is de volledige naam van het liedje, weergegeven in de info wanneer je het in het spel selecteert.
- - `Short Name` is shown while scrolling through the song list. Text gets smaller when the name is long so I'm not sure if there's a maximum length.
- - `Folder Name` is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
- - `Year` is the year the song was created.
- - `Author` is the composer of the song.
+ - `Short Name` wordt weergeven tijdens het scrollen door de songlijst. Deze text wordt kleiner de langer de naam is, dus ik weet niet of er een maximale lengte is.
+ - `Folder Name` is de naam van de map waarin je de map en nummerbestand wilt plaatsen. Bijv. Als je de mapnaam op mijn map zet, zal het pad van uw map BepInEx/CustomSongs/mijn map/song.tmb.
+ - `Year` is de jaar dat de nummer is gemaakt.
+ - `Author` is de artiest van het nummer.
  - `Difficulty` is the number of difficulty stars that appear on the song's info.
  - `Note Spacing` affects how fast the level scrolls, in combination with BPM.
  - `Song Endpoint` is the beat on which the song ends. It is automatically calculated, but you can adjust it to change when the level end screen appears.
