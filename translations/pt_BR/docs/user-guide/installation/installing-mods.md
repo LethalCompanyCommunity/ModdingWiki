@@ -14,7 +14,7 @@
 
 ## Instalando o BepInEx
 
-1. Baixe o [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) e ponha na pasta do Trombone Champ. Queremos ter o arquivo `BepinEx_x64_VERSÃO.zip`, sendo `VERSÃO` o número da versão do arquivo.
+1. Baixe o [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) e ponha o arquivo na pasta do Trombone Champ. Queremos ter o arquivo `BepinEx_x64_VERSÃO.zip`, sendo `VERSÃO` o número da versão do arquivo.
 2. Extraia o conteúdo do BepInEx.zip diretamente para a [pasta de instalação](##finding-install-location) do Trombone Champ.
 
 ![Preview da extração do BepInEx](../docs/files/bepinexextract.png)
@@ -43,7 +43,7 @@ Como você provavelmente quer instalar músicas personalizadas, esta seção ir�
 
 ![Preview da pasta de plugins](../docs/files/pluginswithtrombloader.png)
 
-4. Abra o Trombone Champ uma vez só, inicializando os arquivos necessários para o mod funcionar.
+4. Abra o Trombone Champ uma vez só, assim inicializando os arquivos necessários para o mod funcionar.
 
 ### Instalando músicas personalizadas {docsify-ignore}
 
