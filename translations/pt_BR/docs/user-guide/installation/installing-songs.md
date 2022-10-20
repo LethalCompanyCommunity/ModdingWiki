@@ -16,12 +16,12 @@ Se quiser uma lista mais curta, TheGlitched64 criou uma [planilha contendo infor
 
 2. Extraia o conteúdo do arquivo diretamente para a pasta `BepInEx/CustomSongs` que é criada quando se inicia o jogo pela primeira vez com o TrombLoader instalado.
 
-![BepInEx Extraction Preview](../docs/files/customsongextract.png)
+![Preview de extração do BepInEx](../docs/files/customsongextract.png)
 
 3. Confira se a música está contida em uma só pasta em vez de várias — neste exemplo, todos os arquivos da música devem estar localizados em `BepinEx/CustomSongs/BakaMitai/`.
 
-![Correct Extraction Preview](../docs/files/customsongcorrect.png)
+![Preview de extração correta](../docs/files/customsongcorrect.png)
 
-### Creating Custom Songs {docsify-ignore}
+### Criando charts personalizados {docsify-ignore}
 
-> Check out the [**Charting guide**](creating-charts) for info on creating your own custom charts.
+> Dê uma olhada na nossa [**guia de charting**](creating-charts) para descobrir como criar músicas personalizadas.
