@@ -1,31 +1,31 @@
-# Misc Charting Info
+# Diversen Map Informatie
 ---
 
-## Note Color
-If you want to change your note color, you can do that! Open up your `song.tmb` file in your favorite text editor, and add `note_color_start` and `note_color_end` arrays to the end.
+## Noot Kleur
+Als je de kleur van de noot wilt veranderen, kun je dat doen! Open je `song.tmb` bestand in je favoriete teksteditor en voeg `note_color_start` en `note_color_end` arrays aan het einde toe.
 ```
 ... "timesig": 2, "tempo": 100, "UNK1": 0} 
-// Before ^
+// Voor ^
 ... "timesig": 2, "tempo": 100, "UNK1": 0, "note_color_start": [0.0, 0.0, 0.0], "note_color_end": [1.0, 1.0, 1.0]}
-// After ^
+// Na ^
 ```
-The color format is RGB1, the example above starts with black and turns into white. To convert to this format, use a color picker such as <https://rgbacolorpicker.com/> and get the RGB values of the colors you want. Let's say I want to use a nice deep purple that's `rgb(84, 14, 50)`. To use this, divide everything by `255` and put it in the array.
+Het kleurenformaat is RGB1, het voorbeeld hierboven begint met zwart en verandert in wit. Om naar dit formaat te converteren, gebruik een kleurkiezer zoals <https://rgbacolorpicker.com/> en krijg de RGB waarden van de kleuren die u wilt. Laten we zeggen dat ik een mooi diep paars wil gebruiken dat `rgb(84, 14, 50)`. Om dit te gebruiken, deel alles door `255` en stop het in de array.
 ```
 ... "timesig": 2, "tempo": 100, "UNK1": 0, "note_color_start": [0.329411765, 0.0549019608, 0.196078431], "note_color_end": [0.329411765, 0.0549019608, 0.196078431]}
 ```
-Now the notes will both end and start with that deep purple color!
+Nu zullen de noten zowel eindigen als beginnen met die diepe paarse kleur!
 
 
-## Other .trombackground Info
+## Andere .trombackground Info
 
-### Render Over Tromboner
-If you're making a `.trombackground`, you can render OVER the tromboner by setting your Camera's depth to 1
+### Render over Tromboner
+Als je een `.trombackground`maakt, kun je de tromboner OVER renderen door de diepte van je camera op 1 in te stellen
 
-### Add Tromboner In Scene
-If you're making a `.trombackground` and want to move around the player, add the `Prefabs/Tromboner` prefab to your background.
+### Tromboner in scène toevoegen
+Als je een `.trombackground` maakt en door de speler wilt bewegen, voeg je de `Prefabs/Tromboner` prefab toe aan je achtergrond.
 
-Once the game is loaded, it'll be replaced with an exact clone of the player.
+Zodra het spel is geladen zal het worden vervangen door een exacte kloon van de speler.
 
-You can also change the player model & trombone skin if you don't want it to look exactly like the player.
+Je kunt ook het spelersmodel & trombone skin veranderen als je niet wilt dat het er precies zo uit ziet als de speler.
 
-(Use in conjunction with the depth render tip above to completely change how the tromboner is rendered!)
+(Gebruik in combinatie met de hoogte renderen punt hierboven om het totaal te veranderen hoe de tromboner wordt gerenderd!)
