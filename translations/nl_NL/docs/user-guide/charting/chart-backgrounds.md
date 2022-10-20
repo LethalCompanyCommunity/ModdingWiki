@@ -1,28 +1,28 @@
-# Chart Backgrounds
+# Map Achtergrond
 ---
 
-Backgrounds are an important feature of a chart, and there's a few different types (in order of complexity):
+Achtergronden zijn een belangrijke functie van een grafiek, en er zijn een paar verschillende types (in volgorde van complexiteit):
 
 ### .png
 
-If you want a simple, easy background, this is what's recommended.
+Als u een eenvoudige, eenvoudige achtergrond wilt, wordt dit aanbevolen.
 
-Simply put a `1920x1080` image named `bg.png` in your song's folder.
+Plaats gewoon een `1920x1080` afbeelding genaamd `bg.png` in je songmap.
 
-You can use non-`1920x1080` images, but it might behave weirdly, as unity sprite scale is based on image resolution.
+Je kunt non-`1920x1080` afbeeldingen gebruiken, maar het zou vreemd kunnen handelen, omdat eenheid sprite schaal is gebaseerd op afbeeldingsresolutie.
 
 ### .mp4
 
-If you want a slightly more interesting background, a music video background, or want to prerender a moving background, you can also use a video!
+Als u een iets interessantere achtergrond wilt, een muziek video-achtergrond of een bewegende achtergrond wilt promoten, kunt u ook een video gebruiken!
 
-Simply put an mp4 named `bg.mp4` in your song's folder.
+Plaats gewoon een mp4 genaamd `bg.mp4` in de map van je nummer.
 
-You can use any resolution of video, but **please** try to keep the size reasonable - aim for under 50MB. If your video's size is too high, you can always lower the resolution in your favorite video editor.
+Je kunt elke resolutie van video gebruiken, maar **probeer alstublieft** de grootte redelijk te houden - doel voor minder dan 50 MB. Als de grootte van je video's te hoog is, kun je de resolutie in je favoriete video-editor altijd verlagen.
 
 ### .trombackground
 
-If you want a background that'll blow people away, want to use events, or want to have full creative control of how your chart looks, it's highly recommended to use a `.trombackground` file.
+Als je een achtergrond wilt die mensen blaast, wil je evenementen gebruiken of wil een volledige creatieve controle hebben over hoe je grafiek eruit ziet, het is sterk aanbevolen om een `.trombackground` bestand.
 
-This will give you the full power of the Unity Editor, and the amount of things you can do is significantly higher than either of the other methods.
+Dit geeft je volledige kracht van de Unity Editor, en de hoeveelheid dingen die je kunt doen is beduidend hoger dan een van de andere methoden.
 
-The instructions are currently found in a detailed readme on the Unity Project GitHub: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
+De instructies zijn momenteel gevonden in een gedetailleerde readme op Unity Project GitHub: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
