@@ -1,13 +1,13 @@
-# Chart Backgrounds
+# Chart Hintergründe
 ---
 
-Backgrounds are an important feature of a chart, and there's a few different types (in order of complexity):
+Hintergründe sind ein wichtiges Merkmal eines Charts, und es gibt mehrere Typen (sortiert nach Komplexität):
 
 ### .png
 
-If you want a simple, easy background, this is what's recommended.
+Wenn du einen einfachen, simplen Hintergrund willst, wird dies empfohlen.
 
-Simply put a `1920x1080` image named `bg.png` in your song's folder.
+Lege einfach ein `1920x1080` Bild mit dem Namen `bg.png` in den Ordner deines Songs.
 
 You can use non-`1920x1080` images, but it might behave weirdly, as unity sprite scale is based on image resolution.
 
