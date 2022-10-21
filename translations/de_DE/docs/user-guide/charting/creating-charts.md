@@ -22,13 +22,13 @@ Normale Noten werden im Midi Editor erstellt und sehen im Spiel gleich aus. Acht
 
 "Slides" werden erstellt, wenn man Noten überlappt. Bei einem Paar überlappender Noten geht der "Slide" vom Anfang der ersten Note zum Anfang der zweiten Note. Der überlappende Teil der ersten Note wird verworfen. Siehe dir dieses Bild für ein Beispiel an:
 
-![Slide Note Example](../docs/files/slide1.png)
+!["Slide" Note Beispiel](../docs/files/slide1.png)
 
 Wenn eine Note genau da endet, wo die nächste Note beginnt, werden sie verbunden. So können Sie anpassen, wo die Kurve eines "Slides" beginnt. Hier ist ein Beispiel bei dem mehrere "Slides" verbunden sind:
 
 (Anmerkung: Der erste gerade Abschnitt ist eine eigene Note separat vom gebogenen Abschnitt. Diese endet genau da, wo die nächste beginnt.)
 
-![Multiple Slide Note Example](../docs/files/slide2.png)
+![Mehrere "Slide" Noten Beispiel](../docs/files/slide2.png)
 
 ## Midi zum Chart konvertieren
 
@@ -49,10 +49,10 @@ Wenn eine Note genau da endet, wo die nächste Note beginnt, werden sie verbunde
 
 4. Drücke OK. In der Dateiauswahl, die sich automatisch öffnet, erstelle einen Ordner mit dem Namen den du im Feld `Folder Name` eingegeben hast und speichere die Datei als `song.tmb` in diesem Ordner.
 
-5. Dein Chart sollte eine .ogg Datei sein. Im Moment muss die Dauer des Lieds länger sein als der "Song Endpoint", sonst wird der Song blockiert und hört niemals auf. Du kannst Programme wie Audacity benutzen, um Stille an den Anfang des Lieds zu setzen, sodass es gleichzeitig mit der Midi anfängt. Name the file `song.ogg`.
+5. Dein Chart sollte eine .ogg Datei sein. Im Moment muss die Dauer des Lieds länger sein als der "Song Endpoint", sonst wird der Song blockiert und hört niemals auf. Du kannst Programme wie Audacity benutzen, um Stille an den Anfang des Lieds zu setzen, sodass es gleichzeitig mit der Midi anfängt. Nenne die Datei `song.ogg`.
 
-6. Move the ogg file into the same folder as `song.tmb`.
+6. Setze die.ogg Datei in den gleichen Ordner wie `song.tmb`.
 
-7. Follow the [Custom Song Installation instructions](installing-songs) to test it.
+7. Folge der [Anleitung zum Erstellen eigener Songs](installing-songs) um deinen Song zu testen.
 
-8. [Add a background!](chart-backgrounds)
+8. [Hintergrund hinzufügen!](chart-backgrounds)
