@@ -3,8 +3,8 @@
 
 ?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
 
-## Finding Install Location
-1. Open Steam and right-click on Trombone Champ. Then, go to `Manage > Browse local files`.
+## Trouver l'emplacement d'installation
+1. Ouvrez Steam et faites un clic droit sur Trombone Champ. Then, go to `Manage > Browse local files`.
 
 ![Right-click Menu Preview](../docs/files/localfilescontext.png)
 
