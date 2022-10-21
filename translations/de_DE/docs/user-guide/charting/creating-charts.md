@@ -49,7 +49,7 @@ Wenn eine Note genau da endet, wo die nächste Note beginnt, werden sie verbunde
 
 4. Drücke OK. In der Dateiauswahl, die sich automatisch öffnet, erstelle einen Ordner mit dem Namen den du im Feld `Folder Name` eingegeben hast und speichere die Datei als `song.tmb` in diesem Ordner.
 
-5. Dein Chart sollte eine .ogg Datei sein. At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file `song.ogg`.
+5. Dein Chart sollte eine .ogg Datei sein. Im Moment muss die Dauer des Lieds länger sein als der "Song Endpoint", sonst wird der Song blockiert und hört niemals auf. Du kannst Programme wie Audacity benutzen, um Stille an den Anfang des Lieds zu setzen, sodass es gleichzeitig mit der Midi anfängt. Name the file `song.ogg`.
 
 6. Move the ogg file into the same folder as `song.tmb`.
 
