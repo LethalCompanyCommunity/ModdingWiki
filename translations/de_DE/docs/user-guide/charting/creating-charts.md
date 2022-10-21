@@ -1,30 +1,30 @@
-# Creating Charts
+# Charts erstellen
 ---
 
-?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
+?> Wenn du Video-Tutorials bevorzugst, hat NyxTheShield [ein Stream-Archiv](https://www.youtube.com/watch?v=ig27SlJveGs) dass jeden Schritt dieses Prozesses genau erklärt.
 
-## Basics
-Charts are made by creating a midi file and running them through [Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp).
+## Grundlagen
+Charts werden erschaffen, wenn man eine midi Datei erstellt und sie mit dem Programm [Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp) konvertiert.
 
-Some free, verified to work midi editors include:
+Einige kostenlose, überprüfte Midi-Editoren beinhalten:
 - [LMMS](https://lmms.io/)
-- [FL Studio (trial)](https://www.image-line.com/fl-studio-download/)
+- [FL Studio (kostenloser Test)](https://www.image-line.com/fl-studio-download/)
 
-?> The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using [flp2midi](https://github.com/Kaydax/flp2midi).
+?> Die Testversion von FL Studio erlaubt dir nicht MIDI zu exportieren, allerdings kann man dies umgehen, indem Sie die Projektdatei speichern und [flp2midi](https://github.com/Kaydax/flp2midi) verwenden.
 
-Midi notes should be in the range 48 to 72 to match the game. Any notes outside this range will just become 48 or 72.
+Midi Noten sollten zwischen 48 und 72 sein um mit dem Spiel übereinzustimmen. Alle Noten außerhalb dieses Bereichs werden einfach zu 48 oder 72.
 
-### Normal Notes
+### Normale Noten
 
-Normal notes are created in the midi editor and look the same in-game. Make sure to leave a gap in time between notes!
+Normale Noten werden im Midi Editor erstellt und sehen im Spiel gleich aus. Achte darauf, immer einen kleinen Abstand zwischen den Noten zu lassen!
 
-### Slide Notes
+### "Slide" Noten
 
-Slides are created by overlapping notes in time. For a pair of overlapping notes, the slide goes from the start of the first note to the start of the second. The overlapping part of the first note is discarded. See this image for an example:
+"Slides" werden erstellt, wenn man Noten überlappt. Bei einem Paar überlappender Noten geht der "Slide" vom Anfang der ersten Note zum Anfang der zweiten Note. Der überlappende Teil der ersten Note wird verworfen. Siehe dir dieses Bild für ein Beispiel an:
 
 ![Slide Note Example](../docs/files/slide1.png)
 
-If a note ends but the next note starts at the exact same time, they will be connected. This allows you to adjust where the curve of a slide starts. Here's an example of multiple slides connected together:
+Wenn eine Note genau da endet, wo die nächste Note beginnt, werden sie verbunden. So können Sie anpassen, wo die Kurve eines "Slides" beginnt. Hier ist ein Beispiel bei dem mehrere "Slides" verbunden sind:
 
 (note: The first straight section is a separate note from the curved section. Its end time is the same as the next one's start time.)
 
