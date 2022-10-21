@@ -26,30 +26,30 @@ Normale Noten werden im Midi Editor erstellt und sehen im Spiel gleich aus. Acht
 
 Wenn eine Note genau da endet, wo die nächste Note beginnt, werden sie verbunden. So können Sie anpassen, wo die Kurve eines "Slides" beginnt. Hier ist ein Beispiel bei dem mehrere "Slides" verbunden sind:
 
-(note: The first straight section is a separate note from the curved section. Its end time is the same as the next one's start time.)
+(Anmerkung: Der erste gerade Abschnitt ist eine eigene Note separat vom gebogenen Abschnitt. Diese endet genau da, wo die nächste beginnt.)
 
 ![Multiple Slide Note Example](../docs/files/slide2.png)
 
-## Converting Midi to Map File
+## Midi zum Chart konvertieren
 
-1. Go to <https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest> and click `Midi2TromboneChamp.exe` to download it.
+1. Gehe zu <https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest> und klicke `Midi2TromboneChamp.exe`, um es herunterzuladen.
 
-2. Run it. In the file selector it opens, select your midi file. Click Open.
+2. Starte es. In der Datei-Auswahl die sich öffnet, wähle deine Midi-Datei. Klick auf öffnen.
 
-3. Fill out the fields:
- - `Song Name` is the full name of the song, shown in the info when you select it in-game .
- - `Short Name` is shown while scrolling through the song list. Text gets smaller when the name is long so I'm not sure if there's a maximum length.
- - `Folder Name` is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
- - `Year` is the year the song was created.
- - `Author` is the composer of the song.
- - `Difficulty` is the number of difficulty stars that appear on the song's info.
- - `Note Spacing` affects how fast the level scrolls, in combination with BPM.
- - `Song Endpoint` is the beat on which the song ends. It is automatically calculated, but you can adjust it to change when the level end screen appears.
- - `Beats per Bar` determines how far apart the "beat lines" are.
+3. Füllen Sie die Felder aus:
+ - `Song Name` ist der vollständige Name des Songs, der in der Info angezeigt wird, wenn du ihn im Spiel auswählst.
+ - `Short Name` wird beim Scrollen durch die Songliste angezeigt. Text wird kleiner, wenn der Name lang ist, deswegen bin ich mir nicht sicher, ob es eine maximale Länge gibt.
+ - `Folder Name` ist der Name des Ordners, in den du deine Chart- und Songdatei einfügen wirst. Z.B. Wenn du "Folder Name" auf "my map" setzt, wird der Kartenpfad BepInEx/CustomSongs/my map/song.tmb sein.
+ - `Year` ist das Jahr, in dem das Lied erstellt wurde.
+ - `Author` ist der Komponist des Songs.
+ - `Difficulty` ist die Anzahl der Schwierigkeitssterne, die in den Informationen des Songs erscheinen.
+ - `Note Spacing` kontrolliert zusammen mit BPM, wie schnell der Level scrollt.
+ - `Song Endpoint` ist die Nummer des Schlags, an dem der Song endet. Diese Nummer wird automatisch berechnet, allerdings kannst du sie ändern, um zu kontrollieren, wann der Level endet und der Endbildschirm erscheint.
+ - `Beats per Bar` bestimmt den Abstand zwischen den "beat lines".
 
-4. Hit OK. In the file selector it opens, create a folder with the same name as you entered in the `Folder Name` field, and save the file as `song.tmb` inside that folder.
+4. Drücke OK. In der Dateiauswahl, die sich automatisch öffnet, erstelle einen Ordner mit dem Namen den du im Feld `Folder Name` eingegeben hast und speichere die Datei als `song.tmb` in diesem Ordner.
 
-5. Your music track should be a .ogg file. At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file `song.ogg`.
+5. Dein Chart sollte eine .ogg Datei sein. At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file `song.ogg`.
 
 6. Move the ogg file into the same folder as `song.tmb`.
 
