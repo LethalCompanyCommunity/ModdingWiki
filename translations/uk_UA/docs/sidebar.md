@@ -1,0 +1,16 @@
+- **Посібник користувача**
+- [Введення](./)
+- **Модування**
+- [Встановлення модів](installing-mods)
+- [Встановлення пісень](installing-songs)
+- **Чартинг**
+- [Створення чартів](creating-charts)
+- [Фон чартів](chart-backgrounds)
+- [Додаткова інформація по чартингу](misc-charting-info)
+- **Додатково**
+- [Найчастіші питання](../faq)
+- **Посилання**
+- [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
+- [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)
+- [![Переклад](https://icongr.am/material/translate.svg?color=808080&size=16)Переклад](https://crowdin.com/project/trombone-champ-modding-wiki)
+- [Про](../about)

@@ -11,4 +11,6 @@
 - [Veelgestelde vragen (FAQ's)](../faq)
 - **Koppelingen**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
-- [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)<!-- - \[![Translate\](https://icongr.am/material/translate.svg?color=808080&size=16)Translate](https://crowdin.com/project/gorilla-tag-modding-guide) -->- [Info](../about)
+- [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)[![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)](https://github.com/tc-mods/TromboneChampModdingWiki)
+- [![Vertaal](https://icongr.am/material/translate.svg?color=808080&size=16)Vertaal](https://crowdin.com/project/trombone-champ-modding-wiki)
+- [Info](../about)

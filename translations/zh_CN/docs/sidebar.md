@@ -1,14 +1,16 @@
-- **User Guide**
-- [Introduction](./)
-- **Modding**
-- [Installing Mods](installing-mods)
-- [Installing Songs](installing-songs)
-- **Charting**
-- [Creating Charts](creating-charts)
-- [Chart Backgrounds](chart-backgrounds)
-- [Misc Charting Info](misc-charting-info)
-- **Extras**
-- [Frequently Asked Questions](../faq)
-- **Links**
+- **用户指南**
+- [首页](./)
+- **模组板块**
+- [安装模组](installing-mods)
+- [安装自制谱](installing-songs)
+- **自制谱板块**
+- [创作自制谱](creating-charts)
+- [自制谱背景](chart-backgrounds)
+- [其他自制谱信息](misc-charting-info)
+- **其他**
+- [常见问题](../faq)
+- **链接**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
-- [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)<!-- - \[![Translate\](https://icongr.am/material/translate.svg?color=808080&size=16)Translate](https://crowdin.com/project/gorilla-tag-modding-guide) -->- [About](../about)
+- [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)
+- [![翻译](https://icongr.am/material/translate.svg?color=808080&size=16)翻译](https://crowdin.com/project/trombone-champ-modding-wiki)
+- [关于我们](../about)

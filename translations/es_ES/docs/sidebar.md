@@ -11,4 +11,6 @@
 - [Preguntas Frecuentes](../faq)
 - **Enlaces**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
-- [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)<!-- - \[![Translate\](https://icongr.am/material/translate.svg?color=808080&size=16)Translate](https://crowdin.com/project/gorilla-tag-modding-guide) -->- [Acerca](../about)
+- [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)[![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)](https://github.com/tc-mods/TromboneChampModdingWiki)
+- [![Traducir](https://icongr.am/material/translate.svg?color=808080&size=16)Traducir](https://crowdin.com/project/trombone-champ-modding-wiki)
+- [Acerca](../about)
