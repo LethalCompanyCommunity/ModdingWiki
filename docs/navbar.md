@@ -4,12 +4,13 @@
 - ![Languages](https://icongr.am/material/translate.svg?color=A9A9A9&size=37)
   - [English](/)
   - [Español](/es_ES/)
+  - [Português (Brasil)](/pt_BR/)
+  - [Nederlands](/nl_NL/)
 <!---  - [Deutsch](/de_DE/) -->
 <!---  - [Français](/fr_FR/) -->
 <!---  - [日本語](/ja_JP/) -->
 <!---  - [简体中文](/zh_CN/) -->
 <!---  - [Dansk](/da_DK/) -->
-<!---  - [Nederlands](/nl_NL/) -->
 <!---  - [Norsk](/no_NO/) -->
 <!---  - [Polskie](/pl_PL/) -->
 <!---  - [Svenska](/sv_SE/) -->
