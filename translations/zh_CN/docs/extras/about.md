@@ -1,20 +1,36 @@
-# About This Guide
+# 关于本指南
 ---
-This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+本指南主要由 [Bobbie](https://twitter.com/VRBobbie)编写，并得到其他作家和维基的帮助和建议。 本指南受到 [bsmg.wiki](https://bsmg.wiki) 的启发。
 
-> ## Credits
+> ## 名单
 > 
-> ### Writers
+> ### 作者
 > 
-> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)**
+> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (原指南创作者)**
 > 
-> --- Thank you to [everyone else](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
+> --- 感谢[各位](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) 在Github上对本指南的帮助。
 >
-> ## Developer / Tool Credits
+> ## 开发应用/工具名单
 > 
 > - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
+>
+> ## 翻译名单
+> 
+> **中文 (简体)：** Derek37, SilverFoxV933
+> 
+> **荷兰语：** VorgunTheBeta
+> 
+> **法语：** MrKegg, H3ITO
+> 
+> **德语:** King Dice
+> 
+> **葡萄牙语(巴西)：** NekoDinner
+> 
+> **西班牙语：** dakar665, BrookeAFK
+> 
+> **乌克兰语:** sw1ft
 
-?> **Open Source and Privacy**  
-[This guide is open source on GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). It is licensed under the [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
+?> **开源与隐私**  
+[本指南在 GitHub上是开源的。](https://github.com/tc-mods/TromboneChampModdingWiki)  它是在 [ISC 许可证](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md) 下被授权的。
 
-?> **Disclaimer:** This product is an unofficial fanwork not affiliated with Trombone Champ or Holy Wow Studios and is not endorsed or otherwise sponsored by Holy Wow Studios.
+?> **免责声明：** 本指南是不属于Trombone Champ或Holy Wow Studios的非官方粉丝作品，没有得到Holy Wow Studios的推荐或以其他方式被赞助。
