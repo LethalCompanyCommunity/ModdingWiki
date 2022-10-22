@@ -1,44 +1,44 @@
-Ex :
+# Création de partitions
 ---
 
 ?> Si vous préférez un tutoriel vidéo, NyxTheShield a [une archive de stream](https://www.youtube.com/watch?v=ig27SlJveGs) qui explique chaque étape du processus de charting en détail.
 
 ## Les bases
-### Midi Editor/DAW
-Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
+### Éditeur MIDI/station audionumérique
+Les partitions sont faites par créer un fichier MIDI qui est ensuite passé à travers un [convertisseur MIDI](#converting-midi-to-map-file).
 
-Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Les notes MIDI devraient être entre 48 à 72 pour correspondre au jeu. <br> **NOTE :** Les éditeurs différents utilisent des valeurs différentes sur le piano pour cette gamme.
 
 Quelques éditeurs MIDI gratuits et fonctionnels incluent :
-- [Reaper](https://www.reaper.fm/download.php)* (Range: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (Range: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: C4-C6)
+- [Reaper](https://www.reaper.fm/download.php)* (Gamme : C3-C5)
+- [LMMS](https://lmms.io/download#windows) (Gamme : C3-C5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Gamme : C4-C6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Gamme : C4-C6)
 
-<sub>*Full software is not free, but has a free trial that works for charting.</sub><br> <sub>**Exports notes into MIDI track 2 by default, which makes it incompatible with Midi2TromboneChamp by default.</sub><br> <sub>†The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
+<sub>*Le programme complet n'est pas gratuit, mais a un essai gratuit qui fonctionne pour créer des partitions.</sub><br> <sub>**Exporte les notes à la piste MIDI 2 par défaut, qui le rend incompatible avec Midi2TromboneChamp par défaut.</sub><br> <sub>†L'essai gratuit de FL Studio ne vous permet pas d'exporter MIDI, mais vous pouvez contourner cela en sauvegardant le fichier du projet et en utilisant <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
 
 <h4 spaces-before="0">
-  Reaper Project
+  Projet Reaper
 </h4>
 
 <p spaces-before="0">
-  If you're not sure which editor to use, Reaper is recommended as there's a custom Trombone Champ project file that comes with:
+  Si vous n'êtes pas sûr lequel éditeur à utiliser, Reaper est recommandé, car il y a un fichier de projet personnalisé pour Trombone Champ qui comprend :
 </p>
 
 <ul>
   <li>
-    A basic explanation on how to use the controls of Reaper (in English)
+    Une explication de base sur la manière d'utiliser les commandes de Reaper (en anglais)
   </li>
   <li>
-    Preconfigured settings
+    Paramètres préconfigurés
   </li>
   <li>
-    Example MIDI
+    Exemple MIDI
   </li>
 </ul>
 
 <p spaces-before="0">
-  The project can be <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">downloaded here</a>.
+  Le projet peut être <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">téléchargé ici</a>.
 </p>
 
 <h3 spaces-before="0">
@@ -78,7 +78,7 @@ Quelques éditeurs MIDI gratuits et fonctionnels incluent :
 </h2>
 
 <p spaces-before="0">
-  ?> There are two Midi converters available besides Midi2TromboneChamp! <br>Since they're still in beta, <strong x-id="1">they may have bugs</strong>, so this guide is still written for Midi2TromboneChamp. <br>The process for these new converters is similar enough that this guide should still be usable. <br>If you want to try a more up-to-date conversion program, feel free to give a new converter a try: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - a unity-based sequel to Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - a web-based alternative with new features.
+  ?> Il y a deux convertisseurs MIDI disponibles en plus de Midi2TromboneChamp! <br>Puisqu'ils sont encore en version bêta. <strong x-id="1">ils peuvent avoir des bugs </strong>, donc ce guide est encore écrit pour Midi2TromboneChamp. <br>Le processus pour ces nouveaux convertisseurs est assez similaire que ce guide devrait suffire. <br>Si vous voulez essayer un convertisseur plus à jour, n'hésitez pas à donner une chance à un des convertisseurs nouveaux <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Version Unity)</a> - un successeur à Midi2TromboneChamp basée sur Unity. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Convertisseur de partition de Trombone Champ</a> - une application web alternative avec de nouvelles fonctionnalités.
 </p>
 
 <ol start="1">
