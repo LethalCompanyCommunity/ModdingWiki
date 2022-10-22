@@ -4,15 +4,28 @@
 ?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
 
 ## Basics
-Charts are made by creating a midi file and running them through [Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp).
+### Midi Editor/DAW
+Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
+
+Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
 
 Some free, verified to work midi editors include:
-- [LMMS](https://lmms.io/)
-- [FL Studio (trial)](https://www.image-line.com/fl-studio-download/)
+- [Reaper](https://www.reaper.fm/download.php)* (Range: C3-C5)
+- [LMMS](https://lmms.io/download#windows) (Range: C3-C5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: C4-C6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: C4-C6)
 
-?> The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using [flp2midi](https://github.com/Kaydax/flp2midi).
+<sub>*Full software is not free, but has a free trial that works for charting.</sub><br>
+<sub>**Exports notes into MIDI track 2 by default, which makes it incompatible with Midi2TromboneChamp by default.</sub><br>
+<sub>†The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using [flp2midi](https://github.com/Kaydax/flp2midi/releases/latest).
 
-Midi notes should be in the range 48 to 72 to match the game. Any notes outside this range will just become 48 or 72.
+#### Reaper Project
+If you're not sure which editor to use, Reaper is recommended as there's a custom Trombone Champ project file that comes with:
+- A basic explanation on how to use the controls of Reaper (in English)
+- Preconfigured settings
+- Example MIDI
+
+The project can be [downloaded here](https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip).
 
 ### Normal Notes
 
@@ -31,6 +44,13 @@ If a note ends but the next note starts at the exact same time, they will be con
 ![Multiple Slide Note Example](../docs/files/slide2.png)
 
 ## Converting Midi to Map File
+
+?> There are two Midi converters available besides Midi2TromboneChamp!
+<br>Since they're still in beta, **they may have bugs**, so this guide is still written for Midi2TromboneChamp.
+<br>The process for these new converters is similar enough that this guide should still be usable.
+<br>If you want to try a more up-to-date conversion program, feel free to give a new converter a try:
+<br><br>[Midi2TromboneChamp (Unity Version)](https://nyxtheshield.github.io/Midi2TromboneChamp/) - a unity-based sequel to Midi2TromboneChamp.
+<br>[Trombone Champ Chart Converter](https://rshieldsprojects.github.io/projects/tccc/) - a web-based alternative with new features.
 
 1. Go to <https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest> and click `Midi2TromboneChamp.exe` to download it.
 
