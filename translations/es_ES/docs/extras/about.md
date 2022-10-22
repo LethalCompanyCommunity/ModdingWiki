@@ -1,18 +1,34 @@
-# About This Guide
+# Sobre esta guía
 ---
 This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
 
-> ## Credits
+> ## Créditos
 > 
-> ### Writers
+> ### Escritores
 > 
-> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)**
+> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Personal de Nintendo Homebrew Discord (creadores de la guía original)**
 > 
 > --- Thank you to [everyone else](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
 >
 > ## Developer / Tool Credits
 > 
-> - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
+> - **Contribuidores de BepInEx** para [BepInEx](https://github.com/BepInEx/BepInEx).
+>
+> ## Créditos de traducción
+> 
+> **Chino (simplificado):** Derek37, SilverFoxV933
+> 
+> **Neerlandés:** VorgunTheBeta
+> 
+> **Francés:** MrKegg, H3ITO
+> 
+> **Alemán:** King Dice
+> 
+> **Portugués (brasileño):** NekoDinner
+> 
+> **Español:** dakar665, BrookeAFK
+> 
+> **Ucraniano:** sw1ft
 
 ?> **Open Source and Privacy**  
 [This guide is open source on GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). It is licensed under the [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
