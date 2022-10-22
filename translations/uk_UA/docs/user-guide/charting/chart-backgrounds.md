@@ -15,14 +15,14 @@
 
 Якщо ви хочете трохи цікавіший фон, наприклад музичний кліп, або просто фон який рухається — ви також можете використовувати відео!
 
-Simply put an mp4 named `bg.mp4` in your song's folder.
+Просто покладіть файл формату .mp4 з назвою `bg.mp4` у папку пісні.
 
-You can use any resolution of video, but **please** try to keep the size reasonable - aim for under 50MB. If your video's size is too high, you can always lower the resolution in your favorite video editor.
+Ви можете використовувати будь-яку роздільну здатність відео, але **будь ласка**, старайтеся використовувати розмір в межах розумного — менше 50MB. Якщо розмір вашого відео занадто високий, ви завжди можете зменшити розмір відео у відеоредакторі вашого вибору.
 
 ### .trombackground
 
-If you want a background that'll blow people away, want to use events, or want to have full creative control of how your chart looks, it's highly recommended to use a `.trombackground` file.
+Якщо ви хочете фон який здивує людей, хочете використовувати події, або хочете повний креативний контроль над тим як виглядає ваш чарт — дуже рекомендовано використовувати файл `.trombackground`.
 
-This will give you the full power of the Unity Editor, and the amount of things you can do is significantly higher than either of the other methods.
+Це дасть вам повну силу Редактора Unity та більшу кількість речей які ви можете зробити в порівнянні з попередніми методами.
 
 The instructions are currently found in a detailed readme on the Unity Project GitHub: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
