@@ -5,40 +5,40 @@
 
 ## Grundlagen
 ### Midi Editor/DAW
-Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
+Charts werden erschaffen, wenn man eine midi Datei erstellt und sie mit dem Programm [Midi2TromboneChamp](#converting-midi-to-map-file) konvertiert.
 
-Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Midi Noten sollten in der Reichweite von 48 bis 72 sein, um mit dem Spiel übereinzustimmen.<br>**HINWEIS:** Verschiedene Editoren verwenden für diesen Bereich unterschiedliche Werte auf dem Klavier.
 
 Einige kostenlose, überprüfte Midi-Editoren beinhalten:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (Range: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: C4-C6)
+- [Reaper](https://www.reaper.fm/download.php)* (Reichweite: C3-C5)
+- [LMMS](https://lmms.io/download#windows) (Reichweite: C3-C5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Reichweite: C4-C6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Reichweite: C4-C6)
 
-<sub>*Full software is not free, but has a free trial that works for charting.</sub><br> <sub>**Exports notes into MIDI track 2 by default, which makes it incompatible with Midi2TromboneChamp by default.</sub><br> <sub>†The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
+<sub>*Die vollständige Software ist nicht kostenlos, hat aber eine kostenlose Testversion.</sub><br> <sub>**Exportiert Noten normalerweise in der zweiten MIDI Spur, was es standardmäßig inkompatibel mit Midi2TromboneChamp macht.</sub><br> <sub>†Die Testversion von FL Studio erlaubt den Export von MIDI nicht aber Sie können dies umgehen, indem Sie die Projektdatei speichern und <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a> verwenden.</p>
 
 <h4 spaces-before="0">
-  Reaper Project
+  Reaper Projekt
 </h4>
 
 <p spaces-before="0">
-  If you're not sure which editor to use, Reaper is recommended as there's a custom Trombone Champ project file that comes with:
+  Wenn du dir nicht sicher bist, welchen Editor du verwendet möchtest, wird Reaper empfohlen, da es eine benutzerdefinierte Trombone Champ Projektdatei gibt, die folgendes beinhaltet:
 </p>
 
 <ul>
   <li>
-    A basic explanation on how to use the controls of Reaper (in English)
+    Eine grundlegende Erklärung zur Verwendung der Steuerelemente von Reaper (in Englisch)
   </li>
   <li>
-    Preconfigured settings
+    Vorkonfigurierte Einstellungen
   </li>
   <li>
-    Example MIDI
+    MIDI Beispiele
   </li>
 </ul>
 
 <p spaces-before="0">
-  The project can be <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">downloaded here</a>.
+  Das Projekt kann <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">hier heruntergeladen werden</a>.
 </p>
 
 <h3 spaces-before="0">
@@ -78,7 +78,7 @@ Einige kostenlose, überprüfte Midi-Editoren beinhalten:
 </h2>
 
 <p spaces-before="0">
-  ?> There are two Midi converters available besides Midi2TromboneChamp! <br>Since they're still in beta, <strong x-id="1">they may have bugs</strong>, so this guide is still written for Midi2TromboneChamp. <br>The process for these new converters is similar enough that this guide should still be usable. <br>If you want to try a more up-to-date conversion program, feel free to give a new converter a try: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - a unity-based sequel to Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - a web-based alternative with new features.
+  ?> Es sind neben Midi2TromboneChamps noch zwei andere Midi Konverter verfügbar! <br>Da sie immer noch in der Beta sind, <strong x-id="1">können Bugs auftreten</strong>, deswegen ist diese Anleitung noch für Midi2TromboneChamp. <br>Der Prozess für diese neuen Konverter ist so ähnlich, dass diese Anleitung trotzdem anwendbar sein sollte. <br>Wenn du ein aktuelleres Konvertierungsprogramm testen möchtest, probiere einen der neuen Konverter aus: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - ein auf Unity basierender Nachfolger von Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - eine webbasierte Alternative mit neuen Features.
 </p>
 
 <ol start="1">
