@@ -4,7 +4,7 @@ Trombone Champ est un drôle de jeu de rythme développé par Holy Wow studios, 
 
 Ce wiki sert comme source de documentation et de tutoriels pour divers mods non officiels créés afin d'améliorer votre expérience de trombonage.
 
-?> **Aide Discord** Pour de l'aide en direct avec ce guide, veuillez s'il-vous-plaît nous visiter dans **#modding-support** sur le Discord [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ) et demandez de l'aide. Veuillez s'il-vous-plaît lire notre [Foire aux questions](faq) au préalable pour voir si la réponse à votre question y est déjà.
+?> **Aide Discord** Pour de l'aide en direct avec ce guide, veuillez s'il-vous-plaît nous visiter dans **#modding-support** sur le Discord [Serveur de Modding Trombone Champ](https://discord.gg/KVzKRsbetJ) et demandez de l'aide. Veuillez s'il-vous-plaît lire notre [Foire aux questions](faq) au préalable pour voir si la réponse à votre question y est déjà.
 
 > ### [![Logo Steam](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Installer des mods**](installing-mods)
 > 
