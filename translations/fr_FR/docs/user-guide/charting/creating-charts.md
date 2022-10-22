@@ -1,58 +1,58 @@
-# Creating Charts
+Ex :
 ---
 
-?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
+?> Si vous préférez un tutoriel vidéo, NyxTheShield a [une archive de stream](https://www.youtube.com/watch?v=ig27SlJveGs) qui explique chaque étape du processus de charting en détail.
 
-## Basics
-Charts are made by creating a midi file and running them through [Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp).
+## Les bases
+Les charts sont faites en créant un fichier MIDI et en les ouvrant avec [Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp).
 
-Some free, verified to work midi editors include:
+Quelques éditeurs MIDI gratuits et fonctionnels incluent :
 - [LMMS](https://lmms.io/)
-- [FL Studio (trial)](https://www.image-line.com/fl-studio-download/)
+- [FL Studio (essai gratuit)](https://www.image-line.com/fl-studio-download/)
 
-?> The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using [flp2midi](https://github.com/Kaydax/flp2midi).
+?> La version d'essai de FL Studio ne permet pas l'exportation MIDI, mais vous pouvez contourner cela en sauvegardant le fichier de projet et en utilisant [flp2midi](https://github.com/Kaydax/flp2midi).
 
-Midi notes should be in the range 48 to 72 to match the game. Any notes outside this range will just become 48 or 72.
+Les notes MIDI devraient être entre 48 et 72 pour correspondre au jeu. Toutes les notes hors de ces nombres deviendront simplement 48 ou 72.
 
-### Normal Notes
+### Notes normales
 
-Normal notes are created in the midi editor and look the same in-game. Make sure to leave a gap in time between notes!
+Les notes normales sont créées à partir de l'éditeur MIDI et ont la même apparence en jeu. Assurez-vous de laisser un espace entre les notes!
 
-### Slide Notes
+### Notes glissées
 
-Slides are created by overlapping notes in time. For a pair of overlapping notes, the slide goes from the start of the first note to the start of the second. The overlapping part of the first note is discarded. See this image for an example:
+Les notes glissées sont créées en superposant des notes dans le temps. Pour une paire de notes superposées, la glissée va du début de la première note jusqu'au début de la deuxième. La partie superposée de la première note est éliminée. Voir cette image pour un exemple :
 
-![Slide Note Example](../docs/files/slide1.png)
+![Exemple de note glissée](../docs/files/slide1.png)
 
-If a note ends but the next note starts at the exact same time, they will be connected. This allows you to adjust where the curve of a slide starts. Here's an example of multiple slides connected together:
+Si une note finit et que la prochaine commence exactement au même moment, elles seront connectées. Cela vous permet d'ajuster où la courbe d'une glissée commence. Voici un exemple de plusieurs glissées reliées ensemble :
 
-(note: The first straight section is a separate note from the curved section. Its end time is the same as the next one's start time.)
+(note : la première section droite est une note séparée de la section courbe. Son temps de fin est le même que le temps de début de la prochaine.)
 
-![Multiple Slide Note Example](../docs/files/slide2.png)
+![Exemple de plusieurs notes glissées](../docs/files/slide2.png)
 
-## Converting Midi to Map File
+## Convertir de MIDI vers fichier map
 
-1. Go to <https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest> and click `Midi2TromboneChamp.exe` to download it.
+1. Allez à <https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest> et cliquez sur `Midi2TromboneChamp.exe` pour le télécharger.
 
-2. Run it. In the file selector it opens, select your midi file. Click Open.
+2. Lancez-le. Dans le sélecteur de fichier qu'il ouvre, sélectionnez votre fichier MIDI. Cliquez sur ouvrir.
 
-3. Fill out the fields:
- - `Song Name` is the full name of the song, shown in the info when you select it in-game .
- - `Short Name` is shown while scrolling through the song list. Text gets smaller when the name is long so I'm not sure if there's a maximum length.
- - `Folder Name` is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
- - `Year` is the year the song was created.
- - `Author` is the composer of the song.
- - `Difficulty` is the number of difficulty stars that appear on the song's info.
- - `Note Spacing` affects how fast the level scrolls, in combination with BPM.
- - `Song Endpoint` is the beat on which the song ends. It is automatically calculated, but you can adjust it to change when the level end screen appears.
- - `Beats per Bar` determines how far apart the "beat lines" are.
+3. Remplissez les champs :
+ - `Nom de chanson` est le nom complet de la chanson, affiché dans l'info lorsque vous la sélectionnez en jeu.
+ - `Nom court` est affiché en naviguant la liste de chansons. Le texte devient de plus en plus petit lorsque le nom est long, alors je ne sais pas s'il y a une longueur maximale.
+ - `Nom de dossier` est le nom du dossier dans lequel vous mettrez votre map et votre fichier de chanson. Ex : Si vous définissez « Nom du dossier» comme « ma map», votre chemin de map sera BepInEx/CustomSongs/ma map/song.tmb.
+ - `Année` est l'année de création de la chanson.
+ - `Auteur` est le compositeur de la chanson.
+ - `Difficulté` est le nombre d'étoiles de difficulté qui apparait dans l'info de la chanson.
+ - `Espacement des notes` affecte la vitesse de défilement du niveau, en combinaison avec le BPM (tempo).
+ - `Fin de la chanson` est le temps où la chanson finit. Elle est calculée automatiquement, mais vous pouvez l'ajuster pour changer quand l'écran de fin de niveau apparait.
+ - `Rythmes par mesure` détermine la distance entre les « barres de rythme ».
 
-4. Hit OK. In the file selector it opens, create a folder with the same name as you entered in the `Folder Name` field, and save the file as `song.tmb` inside that folder.
+4. Appuyez sur OK. Dans le sélecteur de fichier qui s'ouvre, créez un dossier avec le même nom que vous avez écrit dans le champ `Nom de dossier`, et sauvegardez-le comme `song.tmb` à l'intérieur de ce dossier.
 
-5. Your music track should be a .ogg file. At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file `song.ogg`.
+5. Votre piste de musique devrait être un fichier .ogg. À l'heure où j'écris, la durée de la piste doit être plus longue que la Fin de la chanson, sinon la chanson restera coincée et ne finira jamais. Vous pouvez utiliser un programme comme Audacity afin d'insérer un silence au début de la piste pour l'aligner avec le fichier MIDI. Nommez le fichier de chanson `song.ogg`.
 
-6. Move the ogg file into the same folder as `song.tmb`.
+6. Déplacez le fichier ogg dans le même dossier que `song.tmb`.
 
-7. Follow the [Custom Song Installation instructions](installing-songs) to test it.
+7. Suivez les [instructions d'installation de chansons personnalisées](installing-songs) pour le tester.
 
-8. [Add a background!](chart-backgrounds)
+8. [Ajoutez un arrière-plan!](chart-backgrounds)

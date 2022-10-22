@@ -1,28 +1,28 @@
-# Chart Backgrounds
+# Chart Hintergründe
 ---
 
-Backgrounds are an important feature of a chart, and there's a few different types (in order of complexity):
+Hintergründe sind ein wichtiges Merkmal eines Charts, und es gibt mehrere Typen (sortiert nach Komplexität):
 
 ### .png
 
-If you want a simple, easy background, this is what's recommended.
+Wenn du einen einfachen, simplen Hintergrund willst, wird dies empfohlen.
 
-Simply put a `1920x1080` image named `bg.png` in your song's folder.
+Lege einfach ein `1920x1080` Bild mit dem Namen `bg.png` in den Ordner deines Songs.
 
-You can use non-`1920x1080` images, but it might behave weirdly, as unity sprite scale is based on image resolution.
+Du kannst Bilder mit anderen Auflösungen verwenden, aber es könnte sich seltsam verhalten, da die "sprite scale" in Unity auf der Bildauflösung basiert.
 
 ### .mp4
 
-If you want a slightly more interesting background, a music video background, or want to prerender a moving background, you can also use a video!
+Wenn du einen etwas interessanteren Hintergrund, wie einen Musikvideo oder einen bereits gerenderten bewegten Hintergrund möchtest, kannst du auch ein Video verwenden!
 
-Simply put an mp4 named `bg.mp4` in your song's folder.
+Lege einfach ein mp4 mit dem Namen `bg.mp4` in den Ordner deines Songs.
 
-You can use any resolution of video, but **please** try to keep the size reasonable - aim for under 50MB. If your video's size is too high, you can always lower the resolution in your favorite video editor.
+Du kannst jede Videoauflösung verwenden, aber **bitte** versuche die Größe vernünftig zu halten - wenn möglich unter 50MB. Wenn dein Video zu groß ist, kannst du die Auflösung in deinem bevorzugten Video-Editor immer reduzieren.
 
 ### .trombackground
 
-If you want a background that'll blow people away, want to use events, or want to have full creative control of how your chart looks, it's highly recommended to use a `.trombackground` file.
+Wenn du einen Hintergrund willst, der Leute überrascht, Events verwendet oder du die volle kreative Kontrolle über das Aussehen deines Charts haben willst, ist es sehr empfehlenswert, eine `.trombackground` Datei zu verwenden.
 
-This will give you the full power of the Unity Editor, and the amount of things you can do is significantly higher than either of the other methods.
+Dies gibt dir die volle Kraft des Unity-Editors, und die Anzahl an Möglichkeiten ist deutlich höher als bei den anderen Methoden.
 
-The instructions are currently found in a detailed readme on the Unity Project GitHub: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
+Die Anweisungen finden Sie derzeit in einem detaillierten Readme in dem Unity Project GitHub: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>

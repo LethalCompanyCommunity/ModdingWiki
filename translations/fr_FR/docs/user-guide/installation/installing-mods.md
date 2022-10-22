@@ -1,50 +1,50 @@
-# Installing Mods
+# Installer des mods
 ---
 
-?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
+?> Si vous préférez des tutoriels vidéo, VorgunTheBeta a [une vidéo expliquant comment installer des mods et des chansons personnalisées](https://youtu.be/pSwNSGx-P5c).
 
-## Finding Install Location
-1. Open Steam and right-click on Trombone Champ. Then, go to `Manage > Browse local files`.
+## Trouver l'emplacement d'installation
+1. Ouvrez Steam et faites un clic droit sur Trombone Champ. Ensuite, allez sur `Gérer > Parcourir les fichiers locaux`.
 
-![Right-click Menu Preview](../docs/files/localfilescontext.png)
+![Clic droit sur Aperçu du Menu](../docs/files/localfilescontext.png)
 
-2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
+2. Cliquez sur la barre d'adresse en haut pour sélectionner le chemin de votre dossier d'installation. Faites` CTRL`+`C` pour copier cela dans votre presse-papiers.
 
-![Copy Folder Path Preview](../docs/files/copyfolderpath.png)
+![Copier l'aperçu du chemin du dossier](../docs/files/copyfolderpath.png)
 
-## Installing BepInEx
+## Installer BepInEx
 
-1. Download [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) into your TromboneChamp folder. You will want to get `BepinEx_x64_VERSION.zip`, with `VERSION` being the version number.
-2. Extract the contents of the BepInEx .zip file directly into the [install folder](##finding-install-location) of your Trombone Champ installation.
+1. Téléchargez [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) dans votre dossier TromboneChamp. Vous voudrez obtenir `BepinEx_x64_VERSION.zip`, avec `VERSION` étant le numéro de version.
+2. Extrayez le contenu du fichier BepInEx.zip directement dans le [dossier d'installation](##finding-install-location) de votre installation de Champ Trombone.
 
-![BepInEx Extraction Preview](../docs/files/bepinexextract.png)
+![Aperçu d'extraction de BepInEx](../docs/files/bepinexextract.png)
 
-!> Please ensure that you've downloaded the `x64` version of BepInEx. the `unix` and `x86` versions will cause your game to not function properly.
+!> Veuillez vous assurer que vous avez téléchargé la version `x64` de BepInEx. les versions `unix` et `x86` provoqueront un mauvais fonctionnement de votre jeu.
 
-!> **IMPORTANT:** Extract BepInEx *directly* into your game's folder as shown in the image above. If you've done it correctly, your game's folder should look like the below image.
+!> **IMPORTANT :** Extrayez BepInEx *directement* dans le dossier de votre jeu comme indiqué dans l'image ci-dessus. Si vous avez fait cela correctement, le dossier de votre jeu devrait ressembler à l'image ci-dessous.
 
-![Finished BepinEx Install](../docs/files/finishedbepinex.png)
+![Installation terminée de BepinEx](../docs/files/finishedbepinex.png)
 
-3. Run Trombone Champ once to complete installation.
+3. Lancez Trombone Champ une fois pour terminer l'installation.
 
 ## Installation
 
-With BepInEx installed, you can start downloading specific mods - a full list is available in the `#mod-releases` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
+Avec BepInEx installé, vous pouvez commencer à télécharger des mods spécifiques - une liste complète est disponible dans le canal `#mod-releases` dans le [Serveur de modding de Trombone Champ](https://discord.gg/KVzKRsbetJ).
 
-As you likely want to install custom songs, this section will use [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest) as an example.
+Comme vous voulez probablement installer des chansons personnalisées, cette section utilisera [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest) comme exemple.
 
-1. Navigate to your [game's install folder](###finding-install-location), the `BepInEx` folder, then the `plugins` folder.
+1. Naviguez vers le dossier d'installation de votre [jeu](###finding-install-location), le dossier `BepInEx` , puis le dossier `plugins`.
 
-2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
+2. Cliquez sur la barre d'adresse en haut pour sélectionner le chemin de votre dossier d'installation. Faites` CTRL`+`C` pour copier cela dans votre presse-papiers.
 
-![Copy Folder Path Preview](../docs/files/copyfolderpathplugins.png)
+![Copier l'aperçu du chemin du dossier](../docs/files/copyfolderpathplugins.png)
 
-3. Download the mod's .dll file into the copied folder.
+3. Téléchargez le fichier .dll du mod dans le dossier copié.
 
-![Plugins Folder Preview](../docs/files/pluginswithtrombloader.png)
+![Aperçu du dossier des plugins](../docs/files/pluginswithtrombloader.png)
 
-4. Run Trombone Champ once to initialize necessary files for that mod.
+4. Lancez Trombone Champ une fois afin d'initialiser les fichiers nécessaires pour ce mod.
 
-### Installing Custom Songs {docsify-ignore}
+### Installation des chansons personnalisées {docsify-ignore}
 
-> Check out the [**Custom Songs guide**](installing-songs) for info on installing custom songs.
+> Consultez le guide des chansons personnalisées [****](installing-songs) pour plus d'informations sur l'installation de chansons personnalisées.

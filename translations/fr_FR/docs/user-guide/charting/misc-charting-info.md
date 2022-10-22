@@ -1,31 +1,31 @@
-# Misc Charting Info
+# Infos diverses de charting
 ---
 
-## Note Color
-If you want to change your note color, you can do that! Open up your `song.tmb` file in your favorite text editor, and add `note_color_start` and `note_color_end` arrays to the end.
+## Couleur de note
+Si vous voulez changer la couleur de votre note, vous pouvez le faire! Ouvrez votre fichier `song.tmb` dans votre éditeur de texte préféré et ajoutez des matrices `note_color_start` et `note_color_end` à la fin.
 ```
 ... "timesig": 2, "tempo": 100, "UNK1": 0} 
-// Before ^
+// Avant ^
 ... "timesig": 2, "tempo": 100, "UNK1": 0, "note_color_start": [0.0, 0.0, 0.0], "note_color_end": [1.0, 1.0, 1.0]}
-// After ^
+// Après ^
 ```
-The color format is RGB1, the example above starts with black and turns into white. To convert to this format, use a color picker such as <https://rgbacolorpicker.com/> and get the RGB values of the colors you want. Let's say I want to use a nice deep purple that's `rgb(84, 14, 50)`. To use this, divide everything by `255` and put it in the array.
+Le format de couleur est RGB1. L'example ci-haut commence en noir et finit en blanc. Pour convertir vers ce format, utilisez un sélecteur de couleur comme <https://rgbacolorpicker.com/> et prenez les valeurs RGB des couleurs que vous souhaitez. Disons que l'on veut utiliser un beau pourpre foncé qui est `rgb(84, 14, 50)`. Pour utiliser ceci, divisez tout par `255` et mettez le résultat dans la matrice.
 ```
 ... "timesig": 2, "tempo": 100, "UNK1": 0, "note_color_start": [0.329411765, 0.0549019608, 0.196078431], "note_color_end": [0.329411765, 0.0549019608, 0.196078431]}
 ```
-Now the notes will both end and start with that deep purple color!
+Maintenant, les notes finissent et commencent avec ce beau pourpre foncé!
 
 
-## Other .trombackground Info
+## Autre info de .trombackground
 
-### Render Over Tromboner
-If you're making a `.trombackground`, you can render OVER the tromboner by setting your Camera's depth to 1
+### Rendu par-dessus le tromboniste
+Si vous faites un `.trombackground`, vous pouvez faire le rendu PAR-DESSUS le tromboniste en réglant la profondeur de la caméra à 1
 
-### Add Tromboner In Scene
-If you're making a `.trombackground` and want to move around the player, add the `Prefabs/Tromboner` prefab to your background.
+### Ajouter le tromboniste à la scène
+Si vous faites un `.trombackground` et vous voulez déplacer le joueur, ajoutez le prefab `Prefabs/Tromboner` à votre arrière-plan.
 
-Once the game is loaded, it'll be replaced with an exact clone of the player.
+Une fois le jeu chargé, il sera remplacé avec un clone parfait du joueur.
 
-You can also change the player model & trombone skin if you don't want it to look exactly like the player.
+Vous pouvez aussi changer le modèle du joueur et l'apparence du trombone si vous ne voulez pas qu'il soit identique au joueur.
 
-(Use in conjunction with the depth render tip above to completely change how the tromboner is rendered!)
+(Utilisez en conjonction avec l'astuce de rendu en profondeur ci-dessus afin de complètement changer l'apparence du tromboniste!)
