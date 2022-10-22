@@ -6,8 +6,8 @@
   - [Español](/es_ES/)
   - [Português (Brasil)](/pt_BR/)
   - [Nederlands](/nl_NL/)
-<!---  - [Deutsch](/de_DE/) -->
-<!---  - [Français](/fr_FR/) -->
+  - [Deutsch](/de_DE/)
+  - [Français](/fr_FR/)
 <!---  - [日本語](/ja_JP/) -->
 <!---  - [简体中文](/zh_CN/) -->
 <!---  - [Dansk](/da_DK/) -->
