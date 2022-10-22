@@ -1,6 +1,6 @@
-# Frequently Asked Questions
+# Foire aux questions
 ---
 
-## Baboon?
+## Babouin ?
 
 🐒
