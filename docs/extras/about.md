@@ -16,6 +16,24 @@ This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with ass
 > - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
 >
 
+>
+> ## Translation Credits
+>
+> **Chinese (Simplified):** Derek37, SilverFoxV933
+>
+> **Dutch:** VorgunTheBeta
+>
+> **French:** MrKegg, H3ITO
+>
+> **German:** King Dice
+>
+> **Portuguese (Brazilian):** NekoDinner
+>
+> **Spanish:** dakar665, BrookeAFK
+>
+> **Ukranian:** sw1ft
+>
+
 ?> **Open Source and Privacy**  
 [This guide is open source on GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). It is licensed under the [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).  
 
