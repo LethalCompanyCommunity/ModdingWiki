@@ -4,55 +4,158 @@
 ?> Wenn du Video-Tutorials bevorzugst, hat NyxTheShield [ein Stream-Archiv](https://www.youtube.com/watch?v=ig27SlJveGs) dass jeden Schritt dieses Prozesses genau erklärt.
 
 ## Grundlagen
-Charts werden erschaffen, wenn man eine midi Datei erstellt und sie mit dem Programm [Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp) konvertiert.
+### Midi Editor/DAW
+Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
+
+Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
 
 Einige kostenlose, überprüfte Midi-Editoren beinhalten:
-- [LMMS](https://lmms.io/)
-- [FL Studio (kostenloser Test)](https://www.image-line.com/fl-studio-download/)
+- [Reaper](https://www.reaper.fm/download.php)* (Range: C3-C5)
+- [LMMS](https://lmms.io/download#windows) (Range: C3-C5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: C4-C6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: C4-C6)
 
-?> Die Testversion von FL Studio erlaubt dir nicht MIDI zu exportieren, allerdings kann man dies umgehen, indem Sie die Projektdatei speichern und [flp2midi](https://github.com/Kaydax/flp2midi) verwenden.
+<sub>*Full software is not free, but has a free trial that works for charting.</sub><br> <sub>**Exports notes into MIDI track 2 by default, which makes it incompatible with Midi2TromboneChamp by default.</sub><br> <sub>†The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
 
-Midi Noten sollten zwischen 48 und 72 sein um mit dem Spiel übereinzustimmen. Alle Noten außerhalb dieses Bereichs werden einfach zu 48 oder 72.
+<h4 spaces-before="0">
+  Reaper Project
+</h4>
 
-### Normale Noten
+<p spaces-before="0">
+  If you're not sure which editor to use, Reaper is recommended as there's a custom Trombone Champ project file that comes with:
+</p>
 
-Normale Noten werden im Midi Editor erstellt und sehen im Spiel gleich aus. Achte darauf, immer einen kleinen Abstand zwischen den Noten zu lassen!
+<ul>
+  <li>
+    A basic explanation on how to use the controls of Reaper (in English)
+  </li>
+  <li>
+    Preconfigured settings
+  </li>
+  <li>
+    Example MIDI
+  </li>
+</ul>
 
-### "Slide" Noten
+<p spaces-before="0">
+  The project can be <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">downloaded here</a>.
+</p>
 
-"Slides" werden erstellt, wenn man Noten überlappt. Bei einem Paar überlappender Noten geht der "Slide" vom Anfang der ersten Note zum Anfang der zweiten Note. Der überlappende Teil der ersten Note wird verworfen. Siehe dir dieses Bild für ein Beispiel an:
+<h3 spaces-before="0">
+  Normale Noten
+</h3>
 
-!["Slide" Note Beispiel](../docs/files/slide1.png)
+<p spaces-before="0">
+  Normale Noten werden im Midi Editor erstellt und sehen im Spiel gleich aus. Achte darauf, immer einen kleinen Abstand zwischen den Noten zu lassen!
+</p>
 
-Wenn eine Note genau da endet, wo die nächste Note beginnt, werden sie verbunden. So können Sie anpassen, wo die Kurve eines "Slides" beginnt. Hier ist ein Beispiel bei dem mehrere "Slides" verbunden sind:
+<h3 spaces-before="0">
+  "Slide" Noten
+</h3>
 
-(Anmerkung: Der erste gerade Abschnitt ist eine eigene Note separat vom gebogenen Abschnitt. Diese endet genau da, wo die nächste beginnt.)
+<p spaces-before="0">
+  "Slides" werden erstellt, wenn man Noten überlappt. Bei einem Paar überlappender Noten geht der "Slide" vom Anfang der ersten Note zum Anfang der zweiten Note. Der überlappende Teil der ersten Note wird verworfen. Siehe dir dieses Bild für ein Beispiel an:
+</p>
 
-![Mehrere "Slide" Noten Beispiel](../docs/files/slide2.png)
+<p spaces-before="0">
+  <img src="../docs/files/slide1.png" alt="&quot;Slide&quot; Note Beispiel" />
+</p>
 
-## Midi zum Chart konvertieren
+<p spaces-before="0">
+  Wenn eine Note genau da endet, wo die nächste Note beginnt, werden sie verbunden. So können Sie anpassen, wo die Kurve eines "Slides" beginnt. Hier ist ein Beispiel bei dem mehrere "Slides" verbunden sind:
+</p>
 
-1. Gehe zu <https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest> und klicke `Midi2TromboneChamp.exe`, um es herunterzuladen.
+<p spaces-before="0">
+  (Anmerkung: Der erste gerade Abschnitt ist eine eigene Note separat vom gebogenen Abschnitt. Diese endet genau da, wo die nächste beginnt.)
+</p>
 
-2. Starte es. In der Datei-Auswahl die sich öffnet, wähle deine Midi-Datei. Klick auf öffnen.
+<p spaces-before="0">
+  <img src="../docs/files/slide2.png" alt="Mehrere &quot;Slide&quot; Noten Beispiel" />
+</p>
 
-3. Füllen Sie die Felder aus:
- - `Song Name` ist der vollständige Name des Songs, der in der Info angezeigt wird, wenn du ihn im Spiel auswählst.
- - `Short Name` wird beim Scrollen durch die Songliste angezeigt. Text wird kleiner, wenn der Name lang ist, deswegen bin ich mir nicht sicher, ob es eine maximale Länge gibt.
- - `Folder Name` ist der Name des Ordners, in den du deine Chart- und Songdatei einfügen wirst. Z.B. Wenn du "Folder Name" auf "my map" setzt, wird der Kartenpfad BepInEx/CustomSongs/my map/song.tmb sein.
- - `Year` ist das Jahr, in dem das Lied erstellt wurde.
- - `Author` ist der Komponist des Songs.
- - `Difficulty` ist die Anzahl der Schwierigkeitssterne, die in den Informationen des Songs erscheinen.
- - `Note Spacing` kontrolliert zusammen mit BPM, wie schnell der Level scrollt.
- - `Song Endpoint` ist die Nummer des Schlags, an dem der Song endet. Diese Nummer wird automatisch berechnet, allerdings kannst du sie ändern, um zu kontrollieren, wann der Level endet und der Endbildschirm erscheint.
- - `Beats per Bar` bestimmt den Abstand zwischen den "beat lines".
+<h2 spaces-before="0">
+  Midi zum Chart konvertieren
+</h2>
 
-4. Drücke OK. In der Dateiauswahl, die sich automatisch öffnet, erstelle einen Ordner mit dem Namen den du im Feld `Folder Name` eingegeben hast und speichere die Datei als `song.tmb` in diesem Ordner.
+<p spaces-before="0">
+  ?> There are two Midi converters available besides Midi2TromboneChamp! <br>Since they're still in beta, <strong x-id="1">they may have bugs</strong>, so this guide is still written for Midi2TromboneChamp. <br>The process for these new converters is similar enough that this guide should still be usable. <br>If you want to try a more up-to-date conversion program, feel free to give a new converter a try: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - a unity-based sequel to Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - a web-based alternative with new features.
+</p>
 
-5. Dein Chart sollte eine .ogg Datei sein. Im Moment muss die Dauer des Lieds länger sein als der "Song Endpoint", sonst wird der Song blockiert und hört niemals auf. Du kannst Programme wie Audacity benutzen, um Stille an den Anfang des Lieds zu setzen, sodass es gleichzeitig mit der Midi anfängt. Nenne die Datei `song.ogg`.
-
-6. Setze die.ogg Datei in den gleichen Ordner wie `song.tmb`.
-
-7. Folge der [Anleitung zum Erstellen eigener Songs](installing-songs) um deinen Song zu testen.
-
-8. [Hintergrund hinzufügen!](chart-backgrounds)
+<ol start="1">
+  <li>
+    <p spaces-before="0">
+      Gehe zu <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> und klicke <code>Midi2TromboneChamp.exe</code>, um es herunterzuladen.
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      Starte es. In der Datei-Auswahl die sich öffnet, wähle deine Midi-Datei. Klick auf öffnen.
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      Füllen Sie die Felder aus:
+    </p>
+    <ul>
+      <li>
+        <code>Song Name</code> ist der vollständige Name des Songs, der in der Info angezeigt wird, wenn du ihn im Spiel auswählst.
+      </li>
+      <li>
+        <code>Short Name</code> wird beim Scrollen durch die Songliste angezeigt. Text wird kleiner, wenn der Name lang ist, deswegen bin ich mir nicht sicher, ob es eine maximale Länge gibt.
+      </li>
+      <li>
+        <code>Folder Name</code> ist der Name des Ordners, in den du deine Chart- und Songdatei einfügen wirst. Z.B. Wenn du "Folder Name" auf "my map" setzt, wird der Kartenpfad BepInEx/CustomSongs/my map/song.tmb sein.
+      </li>
+      <li>
+        <code>Year</code> ist das Jahr, in dem das Lied erstellt wurde.
+      </li>
+      <li>
+        <code>Author</code> ist der Komponist des Songs.
+      </li>
+      <li>
+        <code>Difficulty</code> ist die Anzahl der Schwierigkeitssterne, die in den Informationen des Songs erscheinen.
+      </li>
+      <li>
+        <code>Note Spacing</code> kontrolliert zusammen mit BPM, wie schnell der Level scrollt.
+      </li>
+      <li>
+        <code>Song Endpoint</code> ist die Nummer des Schlags, an dem der Song endet. Diese Nummer wird automatisch berechnet, allerdings kannst du sie ändern, um zu kontrollieren, wann der Level endet und der Endbildschirm erscheint.
+      </li>
+      <li>
+        <code>Beats per Bar</code> bestimmt den Abstand zwischen den "beat lines".
+      </li>
+    </ul>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      Drücke OK. In der Dateiauswahl, die sich automatisch öffnet, erstelle einen Ordner mit dem Namen den du im Feld <code>Folder Name</code> eingegeben hast und speichere die Datei als <code>song.tmb</code> in diesem Ordner.
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      Dein Chart sollte eine .ogg Datei sein. Im Moment muss die Dauer des Lieds länger sein als der "Song Endpoint", sonst wird der Song blockiert und hört niemals auf. Du kannst Programme wie Audacity benutzen, um Stille an den Anfang des Lieds zu setzen, sodass es gleichzeitig mit der Midi anfängt. Nenne die Datei <code>song.ogg</code>.
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      Setze die.ogg Datei in den gleichen Ordner wie <code>song.tmb</code>.
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      Folge der <a href="installing-songs">Anleitung zum Erstellen eigener Songs</a> um deinen Song zu testen.
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      <a href="chart-backgrounds">Hintergrund hinzufügen!</a>
+    </p>
+  </li>
+</ol>
