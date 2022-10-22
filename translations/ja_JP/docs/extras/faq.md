@@ -1,0 +1,6 @@
+# Frequently Asked Questions
+---
+
+## Baboon?
+
+🐒
