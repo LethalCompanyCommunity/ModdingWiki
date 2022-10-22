@@ -1,56 +1,56 @@
 # Creating Charts
 ---
 
-?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
+?> Якщо ви надаєте перевагу відеопосібникам — NyxTheShield має [архів стріму](https://www.youtube.com/watch?v=ig27SlJveGs) де детально пояснюється кожен крок процесу чартування.
 
-## Basics
-### Midi Editor/DAW
-Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
+## Основи
+### Midi-редактор/DAW
+Чарти зроблені шляхом створення midi файлу та їх конвертування через [MIDI конвертор](#converting-midi-to-map-file).
 
-Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Ноти у Midi файлі мають бути в діапазоні від 48 до 72 для сходження з грою.<br>**ПРИМІТКА:** Різні редактори використовують різні значення на фортепіано для цього діапазону.
 
-Some free, verified to work midi editors include:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (Range: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: C4-C6)
+Деякі безкоштовні та перевірені Midi-редактори:
+- [Reaper](https://www.reaper.fm/download.php)* (Діапазон: C3-C5)
+- [LMMS](https://lmms.io/download#windows) (Діапазон: C3-C5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Діапазон: C4-C6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Діапазон: C4-C6)
 
-<sub>*Full software is not free, but has a free trial that works for charting.</sub><br> <sub>**Exports notes into MIDI track 2 by default, which makes it incompatible with Midi2TromboneChamp by default.</sub><br> <sub>†The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
+<sub>*Повна версія — не безкоштовна, але має безкоштовну пробну версію яка зійде для чартингу.</sub><br> <sub>**Експортує ноти у 2-ий трек MIDI за замовчуванням, що робить його несумісним з Midi2TromboneChamp.</sub><br> <sub>†Пробна версія FL Studio не дозволяє вам експортувати MIDI, але це можна обійти якщо зберегти проєкт та використати <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
 
 <h4 spaces-before="0">
   Reaper Project
 </h4>
 
 <p spaces-before="0">
-  If you're not sure which editor to use, Reaper is recommended as there's a custom Trombone Champ project file that comes with:
+  Якщо ви не впевнені з яким редактором працювати — рекомендується використати Reaper, тому, що є користувацький файл-проєкт Trombone Champ в якому включено:
 </p>
 
 <ul>
   <li>
-    A basic explanation on how to use the controls of Reaper (in English)
+    Основне пояснення як використовувати Reaper (англ.)
   </li>
   <li>
-    Preconfigured settings
+    Попередньо налаштовані параметри
   </li>
   <li>
-    Example MIDI
+    MIDI-приклад
   </li>
 </ul>
 
 <p spaces-before="0">
-  The project can be <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">downloaded here</a>.
+  Проєкт можна завантажити <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">тут</a>.
 </p>
 
 <h3 spaces-before="0">
-  Normal Notes
+  Звичайні ноти
 </h3>
 
 <p spaces-before="0">
-  Normal notes are created in the midi editor and look the same in-game. Make sure to leave a gap in time between notes!
+  Звичайні ноти створені у Midi-редакторі які виглядають однаково в грі. Переконайтеся, що ви залишаєте проміжок часу між нотами!
 </p>
 
 <h3 spaces-before="0">
-  Slide Notes
+  Слайд-ноти
 </h3>
 
 <p spaces-before="0">
