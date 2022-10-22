@@ -25,4 +25,4 @@
 
 Це дасть вам повну силу Редактора Unity та більшу кількість речей які ви можете зробити в порівнянні з попередніми методами.
 
-The instructions are currently found in a detailed readme on the Unity Project GitHub: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
+На даний час інструкції знаходяться в детальному readme в Unity-проєкті на GitHub: <https://github.com/legoandmars/TrombLoaderBackgroundProject/> (англ.)
