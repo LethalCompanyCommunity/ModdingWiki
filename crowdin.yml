@@ -1,7 +1,6 @@
 files:
   - source: /docs/**/*.md
     ignore:
-      - /**/extras
       - /**/navbar.md
       - /**/assets/
       - /**/files/
