@@ -39,7 +39,7 @@ Si une note finit et que la prochaine commence exactement au même moment, elles
 3. Remplissez les champs :
  - `Nom de chanson` est le nom complet de la chanson, affiché dans l'info lorsque vous la sélectionnez en jeu.
  - `Nom court` est affiché en naviguant la liste de chansons. Le texte devient de plus en plus petit lorsque le nom est long, alors je ne sais pas s'il y a une longueur maximale.
- - `Nom de fichier` est le nom du fichier dans lequel vous mettrez votre map et votre fichier de chanson. Ex : Si vous définissez « Nom du fichier » comme « ma map», votre chemin de map sera BepInEx/CustomSongs/ma map/song.tmb.
+ - `Nom de dossier` est le nom du dossier dans lequel vous mettrez votre map et votre fichier de chanson. Ex : Si vous définissez « Nom du dossier» comme « ma map», votre chemin de map sera BepInEx/CustomSongs/ma map/song.tmb.
  - `Année` est l'année de création de la chanson.
  - `Auteur` est le compositeur de la chanson.
  - `Difficulté` est le nombre d'étoiles de difficulté qui apparait dans l'info de la chanson.
@@ -47,12 +47,12 @@ Si une note finit et que la prochaine commence exactement au même moment, elles
  - `Fin de la chanson` est le temps où la chanson finit. Elle est calculée automatiquement, mais vous pouvez l'ajuster pour changer quand l'écran de fin de niveau apparait.
  - `Rythmes par mesure` détermine la distance entre les « barres de rythme ».
 
-4. Appuyez sur OK. Dans le sélecteur de fichier qui s'ouvre, créez un fichier avec le même nom que vous avez écrit dans le champ `Nom de fichier`, et sauvegardez-le comme `song.tmb` à l'intérieur de ce fichier.
+4. Appuyez sur OK. Dans le sélecteur de fichier qui s'ouvre, créez un dossier avec le même nom que vous avez écrit dans le champ `Nom de dossier`, et sauvegardez-le comme `song.tmb` à l'intérieur de ce dossier.
 
-5. Votre piste de musique devrait être un fichier .ogg. À l'heure où j'écris, la durée de la piste doit être plus longue que le Point de fin de la chanson, sinon la chanson restera coincée et ne finira jamais. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file `song.ogg`.
+5. Votre piste de musique devrait être un fichier .ogg. À l'heure où j'écris, la durée de la piste doit être plus longue que la Fin de la chanson, sinon la chanson restera coincée et ne finira jamais. Vous pouvez utiliser un programme comme Audacity afin d'insérer un silence au début de la piste pour l'aligner avec le fichier MIDI. Nommez le fichier de chanson `song.ogg`.
 
-6. Move the ogg file into the same folder as `song.tmb`.
+6. Déplacez le fichier ogg dans le même dossier que `song.tmb`.
 
-7. Follow the [Custom Song Installation instructions](installing-songs) to test it.
+7. Suivez les [instructions d'installation de chansons personnalisées](installing-songs) pour le tester.
 
-8. [Add a background!](chart-backgrounds)
+8. [Ajoutez un arrière-plan!](chart-backgrounds)
