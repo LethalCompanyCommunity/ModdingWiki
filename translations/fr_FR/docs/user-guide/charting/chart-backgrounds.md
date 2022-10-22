@@ -1,28 +1,28 @@
-# Chart Backgrounds
+# Arrière-plans des chansons personnalisées
 ---
 
-Backgrounds are an important feature of a chart, and there's a few different types (in order of complexity):
+Les arrières-plans sont une fonctionnalité importante des charts, et il y en a quelques types différents (en ordre de complexité):
 
 ### .png
 
-If you want a simple, easy background, this is what's recommended.
+Si vous voulez un arrière-plan simple et facile, c'est ce qui est recommandé.
 
-Simply put a `1920x1080` image named `bg.png` in your song's folder.
+Mettez simplement une image `1920x1080` nommée `bg.png` dans le dossier de votre chanson.
 
-You can use non-`1920x1080` images, but it might behave weirdly, as unity sprite scale is based on image resolution.
+Vous pouvez utiliser des images non `1920x1080` mais cela pourrait se comporter bizarrement, car l'échelle du sprite Unity est basée sur la résolution de l'image.
 
 ### .mp4
 
-If you want a slightly more interesting background, a music video background, or want to prerender a moving background, you can also use a video!
+Si vous voulez un arrière-plan un peu plus intéressant, un fond vidéo de musique, ou si vous préférer un arrière-plan en mouvement, vous pouvez également utiliser une vidéo !
 
-Simply put an mp4 named `bg.mp4` in your song's folder.
+Mettez simplement un mp4 nommé `bg.mp4` dans le dossier de votre chanson.
 
-You can use any resolution of video, but **please** try to keep the size reasonable - aim for under 50MB. If your video's size is too high, you can always lower the resolution in your favorite video editor.
+Vous pouvez utiliser n'importe quelle résolution de vidéo, mais **s'il vous plaît** essayez de garder la taille raisonnable - visez pour moins de 50 Mo. Si la taille de votre vidéo est trop élevée, vous pouvez toujours réduire la résolution dans votre éditeur de vidéo favori.
 
 ### .trombackground
 
-If you want a background that'll blow people away, want to use events, or want to have full creative control of how your chart looks, it's highly recommended to use a `.trombackground` file.
+Si vous voulez un arrière-plan qui va époustoufler les gens, utiliser des événements, ou souhaitez avoir un contrôle créatif complet de l'apparence de votre chanson personnalisée, il est fortement recommandé d'utiliser un fichier ` .trombackground`.
 
-This will give you the full power of the Unity Editor, and the amount of things you can do is significantly higher than either of the other methods.
+Cela vous donnera toute la puissance de l'éditeur Unity, et la quantité de choses que vous pouvez faire est beaucoup plus élevée que l'une des autres méthodes.
 
-The instructions are currently found in a detailed readme on the Unity Project GitHub: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
+Les instructions se trouvent actuellement dans un lisezmoi détaillé sur GitHub du projet Unity : <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
