@@ -1,4 +1,4 @@
-# Chart Backgrounds
+# マップの背景
 ---
 
 Backgrounds are an important feature of a chart, and there's a few different types (in order of complexity):
