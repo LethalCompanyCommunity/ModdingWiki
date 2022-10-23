@@ -8,17 +8,17 @@
 
 Custom songs can be found in the `#custom-charts` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
 
-If you'd like a more compact list, TheGlitched64 has created [a spreadsheet containing information on every custom chart](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing).
+Se prefirisci una lista più compatta, TheGlitched64 ha creato [una spreadsheet che contiene le informazioni di tutte le canzoni](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing).
 
 ## Installation
 
-1. Download the custom song - it will generally be some kind of archive file, usually ending in `.zip`.
+1. Scaricare canzoni customizzate - generalmente è una cartella `.zip`.
 
-2. Extract the contents of the archive file directly into the `BepInEx/CustomSongs` folder that got created when you first ran the game with TrombLoader installed.
+2. Estrai il contenuto del file direttamente nella cartella `BepInEx/CustomSongs` che viene creata quando avvii il gioco con TrombLoader installato.
 
 ![BepInEx Extraction Preview](../docs/files/customsongextract.png)
 
-3. Double check that the song is just in one folder instead of nested in multiple - in this example, all the song's files should be located in `BepinEx/CustomSongs/BakaMitai/`.
+3. Controlla attentamente che la canzone sia solo in una cartella e non in multiple - in questo esempio, tutti i file della canzone dovrebbero essere messi in `BepinEx/CustomSongs/BakaMitai/`.
 
 ![Correct Extraction Preview](../docs/files/customsongcorrect.png)
 
