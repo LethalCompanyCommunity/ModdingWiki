@@ -22,6 +22,6 @@ If you'd like a more compact list, TheGlitched64 has created [a spreadsheet cont
 
 ![Correct Extraction Preview](../docs/files/customsongcorrect.png)
 
-### Creating Custom Songs {docsify-ignore}
+### Creazione di brani personalizzati {docsify-ignore}
 
-> Check out the [**Charting guide**](creating-charts) for info on creating your own custom charts.
+> Dai un'occhiata alla [**Charting guide**](creating-charts) per informazioni utili su come creare la tua canzone personalizzata.
