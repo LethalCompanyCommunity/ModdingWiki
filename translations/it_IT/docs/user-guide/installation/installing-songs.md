@@ -1,12 +1,12 @@
 # Installing Songs
 ---
-?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
+?> Se prefirisci i video tutorial, VorgunTheBeta ha [fatto un video che spiega come installare le mod e brani custom](https://youtu.be/pSwNSGx-P5c).
 
-!> **IMPORTANT:** Make sure you've followed the [mod installation guide](installing-mods) to install BepInEx and TrombLoader before continuing!
+!> **IMPORTANTE:** Assicurati di aver seguito la [guida per l'installazione delle mod](installing-mods) per installare BepInEx e TrombLoader prima di continuare!
 
-## Finding Songs
+## Trovare i Brani
 
-Custom songs can be found in the `#custom-charts` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
+I brani custom possono essere trovati nel canale `#custom-charts` nel [Modding Discord di Trombone Champ](https://discord.gg/KVzKRsbetJ).
 
 Se prefirisci una lista più compatta, TheGlitched64 ha creato [una spreadsheet che contiene le informazioni di tutte le canzoni](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing).
 
