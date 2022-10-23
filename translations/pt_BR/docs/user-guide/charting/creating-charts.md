@@ -4,8 +4,8 @@
 ?> Se preferir, NyxTheShield tem uma [transmissão arquivada](https://www.youtube.com/watch?v=ig27SlJveGs) que explica o processo de charting por completo e em detalhes.
 
 ## Os básicos
-### Midi Editor/DAW
-Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
+### Editores MIDI/DAW
+Charts são feitos a partir de um arquivo midi, que em sequência passam por um [conversor MIDI](#converting-midi-to-map-file).
 
 Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
 
