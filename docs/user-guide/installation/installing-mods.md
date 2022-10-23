@@ -51,7 +51,9 @@ As you likely want to install custom songs, this section will use [TrombLoader](
 
 The process of installing BepInEx is largely the same as on Windows listed above, however there are some extra things to be aware of first:
 
- - Steam Deck users will need to switch to Desktop Mode by holding down the power button and selecting `Desktop Mode` from the menu.
+ - To follow the guide, Steam Deck users will need to switch to Desktop Mode by holding down the power button and selecting `Desktop Mode` from the menu.
+
+ - Steam Deck users will need to install the game to the internal storage, as BepInEx will not load from the microSD card.
 
  - As stated earlier, you will still need to install the `x64` Windows version of BepInEx, not the `unix` version, as Trombone Champ is still a Windows application running under Proton.
  
