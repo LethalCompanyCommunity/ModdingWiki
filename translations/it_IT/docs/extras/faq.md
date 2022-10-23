@@ -1,6 +1,6 @@
-# Frequently Asked Questions
+# Domande Più Frequenti
 ---
 
-## Baboon?
+## Babbuino?
 
 🐒
