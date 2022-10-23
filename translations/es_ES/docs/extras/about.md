@@ -10,7 +10,7 @@ This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with ass
 > 
 > --- Thank you to [everyone else](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
 >
-> ## Developer / Tool Credits
+> ## Creditos de Desarrollador / Herramienta
 > 
 > - **Contribuidores de BepInEx** para [BepInEx](https://github.com/BepInEx/BepInEx).
 >
