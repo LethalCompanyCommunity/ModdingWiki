@@ -35,16 +35,16 @@ As you likely want to install custom songs, this section will use [TrombLoader](
 
 1. Navigate to your [game's install folder](###finding-install-location), the `BepInEx` folder, then the `plugins` folder.
 
-2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
+2. Clicca la barra in alto per selezionare il percorso della tua cartella di installazione. Hit `CTRL`+`C` to copy this to your clipboard.
 
 ![Copy Folder Path Preview](../docs/files/copyfolderpathplugins.png)
 
-3. Download the mod's .dll file into the copied folder.
+3. Scarica il fine .dll della mod nella cartella copiata.
 
 ![Plugins Folder Preview](../docs/files/pluginswithtrombloader.png)
 
-4. Run Trombone Champ once to initialize necessary files for that mod.
+4. Avvia Trombone Champ per creare file necessari per questa mod.
 
 ### Installing Custom Songs {docsify-ignore}
 
-> Check out the [**Custom Songs guide**](installing-songs) for info on installing custom songs.
+> Controlla la [**Custom Songs guide**](installing-songs) per informazioni su come aggiungere canzoni custom.
