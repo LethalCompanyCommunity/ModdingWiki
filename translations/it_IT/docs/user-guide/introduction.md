@@ -1,15 +1,15 @@
-# Trombone Champ Modding Guide {docsify-ignore-all}
+# Guida al Modding di Trombone Champ {docsify-ignore-all}
 ---
-Trombone Champ is a silly rhythm game by Holy Wow studios, [available on Steam](https://store.steampowered.com/app/1059990/Trombone_Champ/).
+Trombone Champ è un gioco musicale ridicolo sviluppato da Holy Wow Studios, [disponibile su Steam](https://store.steampowered.com/app/1059990/Trombone_Champ/).
 
-This wiki serves as a source of documentation and tutorials for various unofficial mods created to enhance your tromboning experience.
+Questa wiki serve come fonte di documentazione e tutorial su svariate mods non ufficiale create per migliorare la tua esperienza di gioco.
 
-?> **Discord Help** For live support with this guide please visit us in **#modding-support** on the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ) and ask for assistance. Please read our [Frequently Asked Questions](faq) page beforehand to see if your question has already been answered.
+?> **Aiuto su Discord** Per un supporto in tempo reale di questa guida visita il **#modding-support** nel [Modding Discord di Trombone Champ](https://discord.gg/KVzKRsbetJ) e chiedi assistenza. Si prega di leggere la pagina delle [Domande frequenti](faq) per accertarsi che la tua domanda ha già avuto una risposta.
 
-> ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Installing Mods**](installing-mods)
+> ### [![Logo Di Steam](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Installazione delle Mods**](installing-mods)
 > 
-> ### [![Apple Music Logo](https://icongr.am/simple/applemusic.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Installing Custom Songs**](installing-songs)
+> ### [![Logo Di Apple Music](https://icongr.am/simple/applemusic.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Installazione dei Brani**](installing-songs)
 > 
-> ### [![Musicbrainz Logo](https://icongr.am/simple/musicbrainz.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Creating Custom Songs**](creating-charts)
+> ### [![Musicbrainz Logo](https://icongr.am/simple/musicbrainz.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Creazione dei Brani**](creating-charts)
 > 
 ><!-- > ### \[![Steam Logo\](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;\[**Creating Mods**\](pc-guide) -->
