@@ -55,8 +55,11 @@ The process of installing BepInEx is largely the same as on Windows listed above
 
  - As stated earlier, you will still need to install the `x64` Windows version of BepInEx, not the `unix` version, as Trombone Champ is still a Windows application running under Proton.
  
- - Save and log files are stored in your Steam folder within Proton's compatibility folders. On Steam Deck this can be found at:
+ - Save and log files are stored in your Steam folder within Proton's compatibility folders. 
+ 
+    - On Steam Deck this can be found at:
   `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
+    - On other Linux flavors you can run `locate -r /Holy Wow$` from the terminal if you're unsure of where your Steam folder is.
 
 You will also need to add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your game's launch options. To do this, right click the game in Steam and click `Properties`. Unlike on Windows, Proton won't load BepInEx's files unless specifically instructed to here.
 
