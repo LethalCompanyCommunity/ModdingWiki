@@ -1,60 +1,60 @@
-# Creating Charts
+# Creare le Charts
 ---
 
-?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
+?> Se preferisci i video tutorial, NyxTheShield possiede [un archivio di stream](https://www.youtube.com/watch?v=ig27SlJveGs) dove spiega nel dettaglio ogni passo del processo di "charting".
 
-## Basics
-### Midi Editor/DAW
+## Le basi
+### Editor Midi/DAW
 Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
 
-Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Le note midi dovrebbero essere nell'intervallo da 48 a 72 per abbinarsi al gioco. <br>**NOTA BENE:** Editor diversi usano valori diversi per il piano in questo intervallo.
 
-Some free, verified to work midi editors include:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (Range: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: C4-C6)
+Alcuni editor midi gratuiti, il cui funzionamento è verificato, sono:
+- [Reaper](https://www.reaper.fm/download.php)* (Intervallo: C3-C5)
+- [LMMS](https://lmms.io/download#windows) (Intervallo: C3-C5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Intervallo: C4-C6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Intervallo: C4-C6)
 
-<sub>*Full software is not free, but has a free trial that works for charting.</sub><br> <sub>**Exports notes into MIDI track 2 by default, which makes it incompatible with Midi2TromboneChamp by default.</sub><br> <sub>†The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
+<sub>*La verione completa del software non è gratutia, tuttavia ha una versione di prova gratuita cheè adatta per creare le chart.</sub><br> <sub>**Esporta le note sulla traccia 2 MIDI di default, rendendosi incompatibile con Midi2TromboneChamp.</sub><br> <sub>†La versione di prova di FL Studio non permette di esportare file MIDI, ma puoi aggirare l'ostacolo salvandoil file del progetto e usando <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
 
 <h4 spaces-before="0">
-  Reaper Project
+  Progetto su Reaper
 </h4>
 
 <p spaces-before="0">
-  If you're not sure which editor to use, Reaper is recommended as there's a custom Trombone Champ project file that comes with:
+  Se non sai quale editor usare, si raccomanda Reaper in quanto ha un file progetto personalizzato per Trombone Champ che fornisce:
 </p>
 
 <ul>
   <li>
-    A basic explanation on how to use the controls of Reaper (in English)
+    Una spiegazione basilare su come usare i comandi di Reaper (in Inglese)
   </li>
   <li>
-    Preconfigured settings
+    Impostazioni preconfigurate
   </li>
   <li>
-    Example MIDI
+    MIDI esempio
   </li>
 </ul>
 
 <p spaces-before="0">
-  The project can be <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">downloaded here</a>.
+  Il progetto si può <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">scaricare qui</a>.
 </p>
 
 <h3 spaces-before="0">
-  Normal Notes
+  Note normali
 </h3>
 
 <p spaces-before="0">
-  Normal notes are created in the midi editor and look the same in-game. Make sure to leave a gap in time between notes!
+  Le note normali vengono create nell'editor midi e sono così come si vedono in gioco. Assicurati di lasciare uno spazio temporale tra le note!
 </p>
 
 <h3 spaces-before="0">
-  Slide Notes
+  Glissando (Note "Slide")
 </h3>
 
 <p spaces-before="0">
-  Slides are created by overlapping notes in time. For a pair of overlapping notes, the slide goes from the start of the first note to the start of the second. The overlapping part of the first note is discarded. See this image for an example:
+  Il glissando si crea sovrapponendo diverse note nel tempo. Per una coppia di note sovrapposte, il glissando va dall'inizio della prima nota all'inizio della seconda. La parte della prima nota che si sovrappone viene scartata. Si veda la figura per un esempio:
 </p>
 
 <p spaces-before="0">
