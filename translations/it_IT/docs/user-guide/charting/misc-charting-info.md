@@ -9,23 +9,23 @@ Se vuoi cambiare il colore delle note, puoi farlo! Apri il file `song.tmb` con i
 ... "timesig": 2, "tempo": 100, "UNK1": 0, "note_color_start": [0.0, 0.0, 0.0], "note_color_end": [1.0, 1.0, 1.0]}
 // Dopo^
 ```
-Il formato del colore è RGB1, l'esempio di sopra comincia con il nero e finisce col bianco. To convert to this format, use a color picker such as <https://rgbacolorpicker.com/> and get the RGB values of the colors you want. Let's say I want to use a nice deep purple that's `rgb(84, 14, 50)`. To use this, divide everything by `255` and put it in the array.
+Il formato del colore è RGB1, l'esempio di sopra comincia con il nero e finisce col bianco. Per convertire in questo formato, usa un selezionatore di colore tipo <https://rgbacolorpicker.com/> e ottieni i valori RGB dei colori che desideri. Supponiamo di voler utilizzare un bel viola intenso che sia `rgb(84, 14, 50)`. Per usarlo, dividi tutto per `255` e inseriscilo nell'array.
 ```
 ... "timesig": 2, "tempo": 100, "UNK1": 0, "note_color_start": [0.329411765, 0.0549019608, 0.196078431], "note_color_end": [0.329411765, 0.0549019608, 0.196078431]}
 ```
-Now the notes will both end and start with that deep purple color!
+Ora le note inizieranno e finiranno con quel colore viola intenso!
 
 
-## Other .trombackground Info
+## Altre informazioni su .trombackground
 
-### Render Over Tromboner
-If you're making a `.trombackground`, you can render OVER the tromboner by setting your Camera's depth to 1
+### Renderizzare sul Trombonista
+Se stai creando un `.trombackground`, puoi renderizzare SUL trombonista impostando la profondità della telecamera (Camera's depth) ad 1
 
-### Add Tromboner In Scene
-If you're making a `.trombackground` and want to move around the player, add the `Prefabs/Tromboner` prefab to your background.
+### Aggiungi il Trombonista in scena
+Se stai creando un `.trombackground` e vuoi far muovere in giro il musicista, aggiungi la prefab `Prefabs/Tromboner` al tuo sfondo.
 
-Once the game is loaded, it'll be replaced with an exact clone of the player.
+Una volta caricato il gioco, verrà sostituito con un clone esatto del giocatore.
 
-You can also change the player model & trombone skin if you don't want it to look exactly like the player.
+È anche possibile cambiare il modello del giocatore & la skin del trombone se non si vuole che sia esattamente come il musicista.
 
-(Use in conjunction with the depth render tip above to completely change how the tromboner is rendered!)
+(Usare in combinazione con il suggerimento sul rendering della profondità di cui sopra per cambiare completamente il modo in cui il trombonista viene renderizzato)
