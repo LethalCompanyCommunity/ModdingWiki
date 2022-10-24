@@ -1,60 +1,60 @@
 # 长号冠军写谱教程
 ---
 
-?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
+?> 如果您喜欢视频教程，NyxTheShield的 [直播回放](https://www.youtube.com/watch?v=ig27SlJveGs) 会详细解释自制谱过程的每一步。
 
-## Basics
+## 基础
 ### Midi Editor/DAW
-Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
+自制谱的制作需要创建Midi文件并使用[MIDI转换器](#converting-midi-to-map-file)进行转换。
 
-Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Midi文件中的音符应该在48到72的范围内以匹配游戏。<br>**注意：**该范围在不同的编辑器上会使用不同的钢琴琴键范围。
 
-Some free, verified to work midi editors include:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (Range: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: C4-C6)
+一些免费可用的Midi编辑器包括：
+- [Reaper](https://www.reaper.fm/download.php)* (对应琴键范围: C3-C5)
+- [LMMS](https://lmms.io/download#windows) (对应琴键范围: C3-C5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (对应琴键范围: C4-C6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (对应琴键范围: C4-C6)
 
-<sub>*Full software is not free, but has a free trial that works for charting.</sub><br> <sub>**Exports notes into MIDI track 2 by default, which makes it incompatible with Midi2TromboneChamp by default.</sub><br> <sub>†The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
+<sub>*完整版的软件并非免费，但只使用试用版依然可以完成谱面的制作。</sub><br> <sub>**默认情况下会导出到 Midi 轨道2，会导致无法使用Midi2TromboneChamp。</sub><br> <sub>†FL Studio的试用版无法直接输出Midi文件, 但你可以通过保存项目文件并使用 <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>来解决这个问题.</p>
 
 <h4 spaces-before="0">
-  Reaper Project
+  Reaper 项目文件
 </h4>
 
 <p spaces-before="0">
-  If you're not sure which editor to use, Reaper is recommended as there's a custom Trombone Champ project file that comes with:
+  如果您不确定使用哪个编辑器，推荐尝试Reaper。有一个使用Reaper制作的Trombone Champ自制文件示例，其中包括：
 </p>
 
 <ul>
   <li>
-    A basic explanation on how to use the controls of Reaper (in English)
+    关于如何使用Reaper的基础教程（英文）
   </li>
   <li>
-    Preconfigured settings
+    预设设置
   </li>
   <li>
-    Example MIDI
+    示例MIDI文件
   </li>
 </ul>
 
 <p spaces-before="0">
-  The project can be <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">downloaded here</a>.
+  这个项目可以在 <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">这里</a>下载。
 </p>
 
 <h3 spaces-before="0">
-  Normal Notes
+  普通note
 </h3>
 
 <p spaces-before="0">
-  Normal notes are created in the midi editor and look the same in-game. Make sure to leave a gap in time between notes!
+  普通的直线note可以直接在Midi编辑器中创建，并且在游戏中看起来是一样的。 请务必在note之间保留足够时间的空隙！
 </p>
 
 <h3 spaces-before="0">
-  Slide Notes
+  滑动note
 </h3>
 
 <p spaces-before="0">
-  Slides are created by overlapping notes in time. For a pair of overlapping notes, the slide goes from the start of the first note to the start of the second. The overlapping part of the first note is discarded. See this image for an example:
+  滑动note是由时间重叠Midi音符的方式创建的。 For a pair of overlapping notes, the slide goes from the start of the first note to the start of the second. The overlapping part of the first note is discarded. See this image for an example:
 </p>
 
 <p spaces-before="0">
