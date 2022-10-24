@@ -5,7 +5,7 @@
 
 ## Le basi
 ### Editor Midi/DAW
-Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
+Le charts vengono realizzate creando un file midi e facendolo processare da un [convertitore MIDI](#converting-midi-to-map-file).
 
 Le note midi dovrebbero essere nell'intervallo da 48 a 72 per abbinarsi al gioco. <br>**NOTA BENE:** Editor diversi usano valori diversi per il piano in questo intervallo.
 
@@ -58,104 +58,104 @@ Alcuni editor midi gratuiti, il cui funzionamento è verificato, sono:
 </p>
 
 <p spaces-before="0">
-  <img src="../docs/files/slide1.png" alt="Slide Note Example" />
+  <img src="../docs/files/slide1.png" alt="Esempio di Glissando (&quot;Nota Slide&quot;)" />
 </p>
 
 <p spaces-before="0">
-  If a note ends but the next note starts at the exact same time, they will be connected. This allows you to adjust where the curve of a slide starts. Here's an example of multiple slides connected together:
+  Se una nota finisce ma la nota successiva comincia esattamente nello stesso momento, verranno collegate. In questo modo si può modificare dove comincia la curva di un glissando. Ecco un esempio di diversi glissandi collegati insieme:
 </p>
 
 <p spaces-before="0">
-  (note: The first straight section is a separate note from the curved section. Its end time is the same as the next one's start time.)
+  (Nota bene: La prima sezione dritta è una nota separata dalla sezione ricurva. Il momento in cui si conclude è lo stesso al quale comincia la nota successiva.)
 </p>
 
 <p spaces-before="0">
-  <img src="../docs/files/slide2.png" alt="Multiple Slide Note Example" />
+  <img src="../docs/files/slide2.png" alt="Esempio di Glissando multiplo" />
 </p>
 
 <h2 spaces-before="0">
-  Converting Midi to Map File
+  Convertire file Midi in file Map
 </h2>
 
 <p spaces-before="0">
-  ?> There are two Midi converters available besides Midi2TromboneChamp! <br>Since they're still in beta, <strong x-id="1">they may have bugs</strong>, so this guide is still written for Midi2TromboneChamp. <br>The process for these new converters is similar enough that this guide should still be usable. <br>If you want to try a more up-to-date conversion program, feel free to give a new converter a try: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - a unity-based sequel to Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - a web-based alternative with new features.
+  ?> Sono disponibili due convertitori Midi oltre a Midi2TromboneChamp! <br>Poiché sono ancora in versione beta, <strong x-id="1">potrebbero contenere dei bug</strong>, perciò questa guida al momento copre solo Midi2TromboneChamp. <br> Le procedure per questi nuovi convertitori sono abbastanza simili, per cui questa guida dovrebbe essere ancora utilizzabile. <br>Se vuoi provare un programma più recente, sentiti libero di provare un nuovo convertitore: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - il successore su base Unity di Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - alternativa web-based con nuove funzionalità.
 </p>
 
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Go to <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
+      Vai su <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> e clicca <code>Midi2TromboneChamp.exe</code> per scaricarlo.
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Run it. In the file selector it opens, select your midi file. Click Open.
+      Esegui il programma. Nella finestra che si apre, seleziona il tuo file midi. Clicca su "Open".
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Fill out the fields:
+      Compila i campi:
     </p>
     <ul>
       <li>
-        <code>Song Name</code> is the full name of the song, shown in the info when you select it in-game .
+        <code>Song Name</code> è il nome completo della canzone, mostrato nelle info quando la selezioni all'interno del gioco.
       </li>
       <li>
-        <code>Short Name</code> is shown while scrolling through the song list. Text gets smaller when the name is long so I'm not sure if there's a maximum length.
+        <code>Short Name</code> è il nome mostrato quando si scorre la lista delle canzoni. Il testo diventa più piccolo quando il nome è lungo, quindi non è sicuro se esiste una lunghezza massima.
       </li>
       <li>
-        <code>Folder Name</code> is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
+        <code>Folder Name</code> è il nome della cartella in cui metterai il file map e il file della canzone. Per esempio: Se inserisci "la mia map" in Folder Name, il percorso per il tuo file map sarà BepInEx/CustomSongs/la mia map/song.tmb.
       </li>
       <li>
-        <code>Year</code> is the year the song was created.
+        <code>Year</code> è l'anno in cui è stata scritta la canzone.
       </li>
       <li>
-        <code>Author</code> is the composer of the song.
+        <code>Author</code> è il compositore della canzone.
       </li>
       <li>
-        <code>Difficulty</code> is the number of difficulty stars that appear on the song's info.
+        <code>Difficulty</code> è il numero di stellette-difficoltà che compaiono nella sezione info della canzone.
       </li>
       <li>
-        <code>Note Spacing</code> affects how fast the level scrolls, in combination with BPM.
+        <code>Note Spacing</code> determina la velocità con cui scorre il livello, in combinazione con BPM.
       </li>
       <li>
-        <code>Song Endpoint</code> is the beat on which the song ends. It is automatically calculated, but you can adjust it to change when the level end screen appears.
+        <code>Song Endpoint</code> è la battuta in cui termina la canzone. Viene calcolata automaticamente, ma puoi regolarla per cambiare quando appare la schermata finale del livello.
       </li>
       <li>
-        <code>Beats per Bar</code> determines how far apart the "beat lines" are.
+        <code>Beats per Bar</code> determina quanto sono distanti le "linee delle battute".
       </li>
     </ul>
   </li>
   
   <li>
     <p spaces-before="0">
-      Hit OK. In the file selector it opens, create a folder with the same name as you entered in the <code>Folder Name</code> field, and save the file as <code>song.tmb</code> inside that folder.
+      Premi OK. Nella finestra che si apre, crea una cartella con lo stesso nome inserito nel campo <code>Folder Name</code>, e salva il file come <code>song.tmb</code> all'interno della stessa cartella.
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Your music track should be a .ogg file. At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file <code>song.ogg</code>.
+      La tua traccia musicale dovrebbe essere un file .ogg. Al momento della stesura di questa guida, la durata della traccia deve essere più lunga del 'Song Endpoint' selezionato, o la canzone si bloccherà e non finirà più. Puoi usare programmi tipo Audacity per inserire del silenzio all'inizio della traccia per allinearlo con il midi. Rinomina il file <code>song.ogg</code>.
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Move the ogg file into the same folder as <code>song.tmb</code>.
+      Sposta il file.ogg. nella stessa cartella in cui è presente <code>song.tmb</code>.
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Follow the <a href="installing-songs">Custom Song Installation instructions</a> to test it.
+      Segui le <a href="installing-songs">Istruzioni per Installare una Canzone Personalizzata</a> per effettuare un test.
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      <a href="chart-backgrounds">Add a background!</a>
+      <a href="chart-backgrounds">Aggiungi uno sfondo!</a>
     </p>
   </li>
 </ol>
