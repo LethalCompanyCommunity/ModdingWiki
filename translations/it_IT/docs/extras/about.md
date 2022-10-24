@@ -1,4 +1,4 @@
-# Riguardo alla Guida
+# Informazioni sulla guida
 ---
 Questa guida è scritta principalmente da [Bobbie](https://twitter.com/VRBobbie), con l'assistenza e i consigli di altri autori e wiki. Questa guida è stata ispirata da [bsmg.wiki](https://bsmg.wiki).
 
@@ -33,4 +33,4 @@ Questa guida è scritta principalmente da [Bobbie](https://twitter.com/VRBobbie)
 ?> **Open Source e Privacy**  
 [Questa guida è open source su GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). È concesso sotto la licenza di [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
 
-?> **Disclaimer:** Questo prodotto è un fanwork non ufficiale e non è affiliato ne a Trombone Champ o Holy Wow Studios, difatti non è approvato o sponsorizzato da quest'ultimo.
+?> **Disclaimer:** Questo prodotto è un'opera non ufficiale creata dai fan e non è affiliato con Trombone Champ o Holy Wow Studios e non è approvato o altrimenti sponsorizzato da Holy Wow Studios.
