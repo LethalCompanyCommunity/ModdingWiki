@@ -54,108 +54,108 @@ Midi文件中的音符应该在48到72的范围内以匹配游戏。<br>**注意
 </h3>
 
 <p spaces-before="0">
-  滑动note是由时间重叠Midi音符的方式创建的。 For a pair of overlapping notes, the slide goes from the start of the first note to the start of the second. The overlapping part of the first note is discarded. See this image for an example:
+  滑动note是由时间重叠Midi音符的方式创建的。 对于两个时间上有重叠的Midi音符，滑动note会从第一个音符的开头滑至第二个音符的开头。 其中第一个Midi音符的重叠部分会被丢弃。 示例请看此图：
 </p>
 
 <p spaces-before="0">
-  <img src="../docs/files/slide1.png" alt="Slide Note Example" />
+  <img src="../docs/files/slide1.png" alt="滑动note示例" />
 </p>
 
 <p spaces-before="0">
-  If a note ends but the next note starts at the exact same time, they will be connected. This allows you to adjust where the curve of a slide starts. Here's an example of multiple slides connected together:
+  如果一个音符结束，但下一个音符正好同时开始，两个音符将会被连接。 由此您可以调整一个长滑动note中滑动部分的开始位置。 下面是多个滑动Note连接的示例：
 </p>
 
 <p spaces-before="0">
-  (note: The first straight section is a separate note from the curved section. Its end time is the same as the next one's start time.)
+  （注：第一个直线note与后方的曲线部分是分开的， 它的结束时间与下一个音符的开始时间相同。)
 </p>
 
 <p spaces-before="0">
-  <img src="../docs/files/slide2.png" alt="Multiple Slide Note Example" />
+  <img src="../docs/files/slide2.png" alt="长滑动note示例" />
 </p>
 
 <h2 spaces-before="0">
-  Converting Midi to Map File
+  转换Midi文件为谱面文件
 </h2>
 
 <p spaces-before="0">
-  ?> There are two Midi converters available besides Midi2TromboneChamp! <br>Since they're still in beta, <strong x-id="1">they may have bugs</strong>, so this guide is still written for Midi2TromboneChamp. <br>The process for these new converters is similar enough that this guide should still be usable. <br>If you want to try a more up-to-date conversion program, feel free to give a new converter a try: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - a unity-based sequel to Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - a web-based alternative with new features.
+  ?> 除了Midi2TromboneChamp以外，还有两个Midi转换器可用！ <br>由于仍然处于测试阶段， <strong x-id="1">它们可能有 bug</strong>，因此本指南仍然是为 Midi2TromboneChamp编写的。 <br>这些新转换器的使用流程足够相似，本指南仍然可以使用。 <br>如果您想尝试这些更新的转换程序，请看这里： <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp(Unity 版本)</a> - 一个使用Unity编写的Midi2TromboneChamp。 <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chapt Converter</a> - 一个有新功能的网页版转换器。
 </p>
 
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Go to <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
+      前往 <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/leases/leases/latest</a> 并点击 <code>Midi2TromboneChamp.exe</code> 进行下载。
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Run it. In the file selector it opens, select your midi file. Click Open.
+      运行它。 在打开的文件选择其中选择你的Midi文件。 点击Open。
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Fill out the fields:
+      填写谱面信息：
     </p>
     <ul>
       <li>
-        <code>Song Name</code> is the full name of the song, shown in the info when you select it in-game .
+        <code>Song Name</code> 是歌曲的全名，当您在游戏中选择这个谱面时，这一条会显示在左上角。
       </li>
       <li>
-        <code>Short Name</code> is shown while scrolling through the song list. Text gets smaller when the name is long so I'm not sure if there's a maximum length.
+        <code>Short Name</code> 该内容会显示在曲目滚动列表中. 名称过长时文本字号会相应变小，所以无法确定是否存在长度上限。
       </li>
       <li>
-        <code>Folder Name</code> is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
+        <code>Folder Name</code> 是您用来存储谱面和歌曲文件的文件夹的名称。 举例： 如果您将文件夹名称设置为“我的自制谱”，您的自制谱路径将是 BepInEx/CustomSongs/我的自制谱/song.tmb。
       </li>
       <li>
-        <code>Year</code> is the year the song was created.
+        <code>Year</code>是曲目的创作年份。
       </li>
       <li>
-        <code>Author</code> is the composer of the song.
+        <code>Author</code> 是乐曲的作者。
       </li>
       <li>
-        <code>Difficulty</code> is the number of difficulty stars that appear on the song's info.
+        <code>Difficulty</code> 是歌曲信息上出现的难度星级。
       </li>
       <li>
-        <code>Note Spacing</code> affects how fast the level scrolls, in combination with BPM.
+        <code>Note Spacing</code> 影响游戏内note的移动速度，通常与BPM对应.
       </li>
       <li>
-        <code>Song Endpoint</code> is the beat on which the song ends. It is automatically calculated, but you can adjust it to change when the level end screen appears.
+        <code>Song Endpoint</code> 是曲目结束时的节奏点。 这个值通常由软件自动计算，但是你可以调整这个数值来改变结算界面的出现时机。
       </li>
       <li>
-        <code>Beats per Bar</code> determines how far apart the "beat lines" are.
+        <code>Beats per Bar</code> 决定游玩谱面时屏幕上显示的节拍线之间的距离。
       </li>
     </ul>
   </li>
   
   <li>
     <p spaces-before="0">
-      Hit OK. In the file selector it opens, create a folder with the same name as you entered in the <code>Folder Name</code> field, and save the file as <code>song.tmb</code> inside that folder.
+      点击OK。 在出现的文件选择器中，创建一个与您输入的 <code>Folder Name</code> 字段相同的文件夹，并将文件命名为 <code>song.tmb</code>后放入文件夹中 。
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Your music track should be a .ogg file. At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file <code>song.ogg</code>.
+      您的音乐应该是一个 .ogg 文件。 在填写谱面信息时，曲目的持续时间必须长于Song Endpoint中填写的时间点，否则谱面会卡住并永远无法结束。 您可以使用像Audacity这样的软件在音轨开始时插入一定时长的空白来将它与midi文件匹配。 将文件命名为<code>song.ogg</code>。
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Move the ogg file into the same folder as <code>song.tmb</code>.
+      移动ogg文件到与<code>song.tmb</code>相同的文件夹。
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Follow the <a href="installing-songs">Custom Song Installation instructions</a> to test it.
+      按照 <a href="installing-songs">自制谱面安装说明</a> 来测试你的自制谱。
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      <a href="chart-backgrounds">Add a background!</a>
+      <a href="chart-backgrounds">添加背景！</a>
     </p>
   </li>
 </ol>
