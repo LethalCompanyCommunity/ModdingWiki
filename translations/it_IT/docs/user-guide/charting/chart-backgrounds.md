@@ -7,7 +7,7 @@ Gli sfondi sono una caratteristica importante di una chart e ne esistono diversi
 
 Consigliato per chi vuole uno sfondo semplice e facile da realizzare.
 
-Basta inserire un'immagine con risoluzione `1920x1080` e rinominarlo `bg.png` nella cartella della canzone.
+Basta inserire un'immagine con risoluzione `1920x1080` e rinominarlo `bg.png` nella cartella del brano.
 
 Si possono usare immagini con risoluzione diversa da -`1920x1080`, ma potrebbe generare comportamenti strani poiché la scala degli sprite di unity si basa sulla risoluzione dell'immagine.
 
