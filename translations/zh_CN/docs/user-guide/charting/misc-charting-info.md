@@ -19,13 +19,13 @@
 ## 其他 .trombackground 信息
 
 ### 覆盖Tromboner
-如果你制作了一个 `.trombackground`, 你可以通过将你的摄像头深度设置为 1 来覆盖掉游戏原本的Tromboner（画面右侧的人物）。
+如果您制作了一个 `.trombackground`, 你可以通过将你的摄像头深度设置为 1 来覆盖掉游戏原本的Tromboner（画面右侧的人物）。
 
 ### 在场景中添加Tromboner
-If you're making a `.trombackground` and want to move around the player, add the `Prefabs/Tromboner` prefab to your background.
+如果您正在制作一个 `.trombackground` 并且想要一个可自由移动的Tromboner，请添加 `Prefabs/Tromboner` 预设到您的背景。
 
-Once the game is loaded, it'll be replaced with an exact clone of the player.
+游戏加载之后，这个预设会被替换为您选择的Tromboner形象。
 
-You can also change the player model & trombone skin if you don't want it to look exactly like the player.
+如果你想进一步修改自己的形象，您也可以更改玩家模型 & 长号皮肤。
 
-(Use in conjunction with the depth render tip above to completely change how the tromboner is rendered!)
+(结合上面的提示来，您可以完全改变Tromboner的渲染方式!)
