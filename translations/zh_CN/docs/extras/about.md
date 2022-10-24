@@ -12,7 +12,7 @@
 >
 > ## 开发应用/工具名单
 > 
-> - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
+> - 由**BepInEx 的开发者们** 提供的 [BepInEx](https://github.com/BepInEx/BepInEx).
 >
 > ## 翻译名单
 > 
