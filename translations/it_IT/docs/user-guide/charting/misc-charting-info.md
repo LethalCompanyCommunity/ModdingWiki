@@ -1,15 +1,15 @@
-# Misc Charting Info
+# Informazioni varie sul Charting
 ---
 
-## Note Color
-If you want to change your note color, you can do that! Open up your `song.tmb` file in your favorite text editor, and add `note_color_start` and `note_color_end` arrays to the end.
+## Colore delle note
+Se vuoi cambiare il colore delle note, puoi farlo! Apri il file `song.tmb` con il tuo editor di testo preferito, e aggiungi gli array `note_color_start` e `note_color_end` alla fine.
 ```
 ... "timesig": 2, "tempo": 100, "UNK1": 0} 
-// Before ^
+// Prima^
 ... "timesig": 2, "tempo": 100, "UNK1": 0, "note_color_start": [0.0, 0.0, 0.0], "note_color_end": [1.0, 1.0, 1.0]}
-// After ^
+// Dopo^
 ```
-The color format is RGB1, the example above starts with black and turns into white. To convert to this format, use a color picker such as <https://rgbacolorpicker.com/> and get the RGB values of the colors you want. Let's say I want to use a nice deep purple that's `rgb(84, 14, 50)`. To use this, divide everything by `255` and put it in the array.
+Il formato del colore è RGB1, l'esempio di sopra comincia con il nero e finisce col bianco. To convert to this format, use a color picker such as <https://rgbacolorpicker.com/> and get the RGB values of the colors you want. Let's say I want to use a nice deep purple that's `rgb(84, 14, 50)`. To use this, divide everything by `255` and put it in the array.
 ```
 ... "timesig": 2, "tempo": 100, "UNK1": 0, "note_color_start": [0.329411765, 0.0549019608, 0.196078431], "note_color_end": [0.329411765, 0.0549019608, 0.196078431]}
 ```
