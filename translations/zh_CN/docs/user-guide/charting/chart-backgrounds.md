@@ -23,6 +23,6 @@
 
 如果您想要一个能令人瞠目结舌的背景，想要使用事件，或想要完全地创造性地控制您的自制谱面外观，强烈建议您使用 `.trombackground` 文件。
 
-This will give you the full power of the Unity Editor, and the amount of things you can do is significantly higher than either of the other methods.
+这个格式允许您使用Unity Editor的全部功能。您的编辑自由度会远远高于其他任何一种背景形式。
 
-The instructions are currently found in a detailed readme on the Unity Project GitHub: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
+目前在Unity Project GitHub有一个详细的指南：<https://github.com/legoandmars/TrombLoaderBackgroundProject/>
