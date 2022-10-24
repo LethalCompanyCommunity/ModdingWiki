@@ -100,22 +100,22 @@ Alcuni editor midi gratuiti, il cui funzionamento è verificato, sono:
     </p>
     <ul>
       <li>
-        <code>Song Name</code> è il nome completo della canzone, mostrato nelle info quando la selezioni all'interno del gioco.
+        <code>Song Name</code> è il nome completo del brano, mostrato nelle info quando la selezioni all'interno del gioco.
       </li>
       <li>
-        <code>Short Name</code> è il nome mostrato quando si scorre la lista delle canzoni. Il testo diventa più piccolo quando il nome è lungo, quindi non è sicuro se esiste una lunghezza massima.
+        <code>Short Name</code> è il nome mostrato quando si scorre la lista dei brani. Il testo diventa più piccolo quando il nome è lungo, quindi non è sicuro se esiste una lunghezza massima.
       </li>
       <li>
-        <code>Folder Name</code> è il nome della cartella in cui metterai il file map e il file della canzone. Per esempio: Se inserisci "la mia map" in Folder Name, il percorso per il tuo file map sarà BepInEx/CustomSongs/la mia map/song.tmb.
+        <code>Folder Name</code> è il nome della cartella in cui metterai il file map e il file del brano. Per esempio: Se inserisci "la mia map" in Folder Name, il percorso per il tuo file map sarà BepInEx/CustomSongs/la mia map/song.tmb.
       </li>
       <li>
-        <code>Year</code> è l'anno in cui è stata scritta la canzone.
+        <code>Year</code> è l'anno in cui è stata scritto il brano.
       </li>
       <li>
-        <code>Author</code> è il compositore della canzone.
+        <code>Author</code> è il compositore del brano.
       </li>
       <li>
-        <code>Difficulty</code> è il numero di stellette-difficoltà che compaiono nella sezione info della canzone.
+        <code>Difficulty</code> è il numero di stellette-difficoltà che compaiono nella sezione info del brano.
       </li>
       <li>
         <code>Note Spacing</code> determina la velocità con cui scorre il livello, in combinazione con BPM.
