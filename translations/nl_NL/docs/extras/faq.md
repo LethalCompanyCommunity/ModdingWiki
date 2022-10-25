@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+# Veelgestelde vragen (FAQ's)
 ---
 
 ## Baboon?
