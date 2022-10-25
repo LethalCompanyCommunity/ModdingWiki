@@ -1,36 +1,36 @@
-# About This Guide
+# Over deze handleiding
 ---
-This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+Deze handleiding is voornamelijk geschreven door [Bobbie](https://twitter.com/VRBobbie), met hulp en advies van verschillende andere schrijvers en wikis. De handleiding werd geïnspireerd door [bsmg.wiki](https://bsmg.wiki).
 
 > ## Credits
 > 
-> ### Writers
+> ### Schrijvers
 > 
-> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)**
+> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staf (oorspronkelijke handleidingscreators)**
 > 
-> --- Thank you to [everyone else](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
+> --- Bedankt aan [alle andere](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) die hebben bijgedragen aan de handleiding op GitHub.
 >
-> ## Developer / Tool Credits
+> ## Ontwikkelaar / Tool Credits
 > 
-> - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
+> - **BepInEx Contributors** voor [BepInEx](https://github.com/BepInEx/BepInEx).
 >
-> ## Translation Credits
+> ## Vertaling Credits
 > 
-> **Chinese (Simplified):** Derek37, SilverFoxV933
+> **Chinees (Vereenvoudigd):** Derek37, SilverFoxV933
 > 
-> **Dutch:** VorgunTheBeta
+> **Nederlands:** VorgunTheBeta
 > 
-> **French:** MrKegg, H3ITO
+> **Frans:** MrKegg, H3ITO
 > 
-> **German:** King Dice
+> **Duits:** King Dice
 > 
-> **Portuguese (Brazilian):** NekoDinner
+> **Portugees (Braziliaan):** NekoDinner
 > 
-> **Spanish:** dakar665, BrookeAFK
+> **Spaans:** dakar665, BrookeAFK
 > 
 > **Ukranian:** sw1ft
 
-?> **Open Source and Privacy**  
-[This guide is open source on GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). It is licensed under the [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
+?> **Open Source en Privacy**  
+[Deze handleiding is open source op GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). Het is gelicenseerd onder de [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
 
-?> **Disclaimer:** This product is an unofficial fanwork not affiliated with Trombone Champ or Holy Wow Studios and is not endorsed or otherwise sponsored by Holy Wow Studios.
+?> **Disclaimer:** Dit product is een officieuze fanwork die niet is aangesloten bij Trombone Champ of Holy Wow Studios en niet wordt goedgekeurd of anderszins gesponsord door Holy Wow Studios.
