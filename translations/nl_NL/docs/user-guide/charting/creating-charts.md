@@ -78,7 +78,7 @@ Sommige gratis, geverifieerd werkende midi editors omvatten:
 </h2>
 
 <p spaces-before="0">
-  ?> Er zijn twee Midi converters beschikbaar, naast Midi2TromboneChamp! <br>Omdat ze nog in beta zijn, <strong x-id="1">hebben ze misschien bugs</strong>, dus deze handleiding is nog steeds geschreven voor Midi2TromboneChamp. <br>Het proces voor deze nieuwe converters is gelijk aan dat deze handleiding nog steeds bruikbaar moet zijn. <br>Als u een recenter conversieprogramma wilt proberen, voel je vrij om een nieuwe converter een poging te doen: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - een op eenheden gebaseerde opvolging van Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - a web-based alternative with new features.
+  ?> Er zijn twee Midi converters beschikbaar, naast Midi2TromboneChamp! <br>Omdat ze nog in beta zijn, <strong x-id="1">hebben ze misschien bugs</strong>, dus deze handleiding is nog steeds geschreven voor Midi2TromboneChamp. <br>Het proces voor deze nieuwe converters is gelijk aan dat deze handleiding nog steeds bruikbaar moet zijn. <br>Als u een recenter conversieprogramma wilt proberen, voel je vrij om een nieuwe converter een poging te doen: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - een op eenheden gebaseerde opvolging van Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Converter</a> - een webgebaseerd alternatief met nieuwe functies.
 </p>
 
 <ol start="1">
