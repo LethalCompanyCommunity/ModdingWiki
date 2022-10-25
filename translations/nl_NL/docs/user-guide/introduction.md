@@ -1,6 +1,6 @@
 # Trombone Champ Modding Guide {docsify-ignore-all}
 ---
-Trombone Champ is een dwaze ritmespel van Holy Wow studios, [verkrijgbaar op Steam](https://store.steampowered.com/app/1059990/Trombone_Champ/).
+Trombone Champ is een dwaas ritmespel van Holy Wow studios, [verkrijgbaar op Steam](https://store.steampowered.com/app/1059990/Trombone_Champ/).
 
 Deze wiki dient als een bron van documentatie en tutorials voor verschillende onofficiële mods gemaakt om je tromboning ervaring te verbeteren.
 
