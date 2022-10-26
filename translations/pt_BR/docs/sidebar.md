@@ -8,9 +8,9 @@
 - [Plano de fundo para charts](chart-backgrounds)
 - [Informações diversas sobre charts](misc-charting-info)
 - **Extras**
-- [Perguntas frequentes (FAQ's)](../faq)
+- [Perguntas frequentes (FAQ's)](faq)
 - **Links**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)
 - [![Traduzir](https://icongr.am/material/translate.svg?color=808080&size=16)Traduzir](https://crowdin.com/project/trombone-champ-modding-wiki)
-- [Sobre](../about)
+- [Sobre](about)

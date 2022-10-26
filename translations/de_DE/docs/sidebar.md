@@ -8,9 +8,9 @@
 - [Chart Hintergründe](chart-backgrounds)
 - [Sonstige Informationen](misc-charting-info)
 - **Extras**
-- [Häufig gestellte Fragen](../faq)
+- [Häufig gestellte Fragen](faq)
 - **Links**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
-- [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)[![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)](https://github.com/tc-mods/TromboneChampModdingWiki)
+- [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)
 - [![Übersetzen](https://icongr.am/material/translate.svg?color=808080&size=16)Übersetzen](https://crowdin.com/project/trombone-champ-modding-wiki)
-- [Über uns](../about)
+- [Über uns](about)

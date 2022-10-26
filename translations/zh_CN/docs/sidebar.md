@@ -8,9 +8,9 @@
 - [自制谱背景](chart-backgrounds)
 - [其他自制谱信息](misc-charting-info)
 - **其他**
-- [常见问题](../faq)
+- [常见问题](faq)
 - **链接**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)
 - [![翻译](https://icongr.am/material/translate.svg?color=808080&size=16)翻译](https://crowdin.com/project/trombone-champ-modding-wiki)
-- [关于我们](../about)
+- [关于我们](about)

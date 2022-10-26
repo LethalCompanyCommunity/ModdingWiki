@@ -8,8 +8,9 @@
   - [Nederlands](/nl_NL/)
   - [Deutsch](/de_DE/)
   - [Français](/fr_FR/)
+  - [简体中文](/zh_CN/)
+  - [Italiano](/it_IT/)
 <!---  - [日本語](/ja_JP/) -->
-<!---  - [简体中文](/zh_CN/) -->
 <!---  - [Dansk](/da_DK/) -->
 <!---  - [Norsk](/no_NO/) -->
 <!---  - [Polskie](/pl_PL/) -->
