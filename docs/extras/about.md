@@ -23,15 +23,15 @@ This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with ass
 >
 > **Dutch:** VorgunTheBeta
 >
-> **French:** MrKegg, H3ITO
+> **French:** MrKegg, H3ITO, slaw
 >
-> **German:** King Dice
+> **German:** KlosRadieschen
 >
 > **Portuguese (Brazilian):** NekoDinner
 >
 > **Spanish:** dakar665, BrookeAFK
 >
-> **Ukranian:** sw1ft
+> **Ukrainian:** sw1ft
 >
 
 ?> **Open Source and Privacy**  

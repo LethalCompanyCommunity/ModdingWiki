@@ -47,7 +47,9 @@ As you likely want to install custom songs, this section will use [TrombLoader](
 
 4. Run Trombone Champ once to initialize necessary files for that mod.
 
-## Linux/Steam Deck Specific Tips
+## Linux/Steam Deck Tips
+<details closed>
+<summary>Expand</summary>
 
 The process of installing BepInEx is largely the same as on Windows listed above, however there are some extra things to be aware of first:
 
@@ -76,7 +78,8 @@ Some custom songs will include videos for their backgrounds, and the default Pro
 We recommend following [this guide created by GamingOnLinux](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) for instructions on how to use ProtonUp-Qt and install `GE-Proton`.
 
 !> Even with GE-Proton, you may still experience some issues with video playback depending on your setup.
+</details>
 
-### Installing Custom Songs {docsify-ignore}
+## Installing Custom Songs {docsify-ignore}
 
 > Check out the [**Custom Songs guide**](installing-songs) for info on installing custom songs.
