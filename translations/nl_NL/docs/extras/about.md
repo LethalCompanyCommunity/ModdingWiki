@@ -24,6 +24,8 @@ Deze handleiding is voornamelijk geschreven door [Bobbie](https://twitter.com/VR
 > 
 > **German:** KlosRadieschen
 > 
+> **Italian:** Palleuomo, gardaviolenta
+> 
 > **Portugees (Braziliaan):** NekoDinner
 > 
 > **Spaans:** dakar665, BrookeAFK
