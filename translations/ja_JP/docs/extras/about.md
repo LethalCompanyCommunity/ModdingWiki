@@ -24,6 +24,8 @@
 > 
 > **German:** KlosRadieschen
 > 
+> **Italian:** Palleuomo, gardaviolenta
+> 
 > **ポルトガル語 (ブラジル語):** NekoDinner
 > 
 > **スペイン語:** dakar665, BrookeAFK
