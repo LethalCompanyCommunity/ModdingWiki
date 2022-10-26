@@ -1,36 +1,36 @@
-# About This Guide
+# このガイドについて
 ---
-This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+当ガイドの主な内容は[Bobbie](https://twitter.com/VRBobbie)によって書かれており、他のライターやWikiからの助言、ご支援を得て運営しております。 このガイドは[bsmg.wiki](https://bsmg.wiki)に触発されたのがキッカケになっています。
 
-> ## Credits
+> ## クレジット情報
 > 
-> ### Writers
+> ### ライター
 > 
-> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)**
+> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (ベースとなったガイド作成者の方々)**
 > 
-> --- Thank you to [everyone else](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
+> その他、GitHubにてガイド作成に貢献してくださった[皆様](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors)、誠にありがとうございます。
 >
-> ## Developer / Tool Credits
+> ## 開発元 / ツール名
 > 
 > - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
 >
-> ## Translation Credits
+> ## 翻訳者
 > 
-> **Chinese (Simplified):** Derek37, SilverFoxV933
+> **中国語 (簡体字):** Derek37, SilverFoxV933
 > 
-> **Dutch:** VorgunTheBeta
+> **オランダ語:** VorgunTheBeta
 > 
-> **French:** MrKegg, H3ITO
+> **フランス語:** MrKegg, H3ITO
 > 
-> **German:** King Dice
+> **ドイツ語:** King Dice
 > 
-> **Portuguese (Brazilian):** NekoDinner
+> **ポルトガル語 (ブラジル語):** NekoDinner
 > 
-> **Spanish:** dakar665, BrookeAFK
+> **スペイン語:** dakar665, BrookeAFK
 > 
-> **Ukranian:** sw1ft
+> **ウクライナ語:** sw1ft
 
-?> **Open Source and Privacy**  
-[This guide is open source on GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). It is licensed under the [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
+?> **オープンソースとプライバシー**  
+[当ガイドはGitHubにてオープンソース化されています](https://github.com/tc-mods/TromboneChampModdingWiki). こちらは[ISCライセンス](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md)に基づいた上でライセンスされています。
 
-?> **Disclaimer:** This product is an unofficial fanwork not affiliated with Trombone Champ or Holy Wow Studios and is not endorsed or otherwise sponsored by Holy Wow Studios.
+?> **免責事項:** 本製品は、Trombone ChampもしくはHoly Wow Studiosとは無関係の非公式ファンワークであり、Holy Wow Studiosによる許可やその他のスポンサーシップを受けたものではありません。
