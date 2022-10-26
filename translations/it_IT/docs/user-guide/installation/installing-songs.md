@@ -1,27 +1,27 @@
-# Installing Songs
+#Installare dei Brani
 ---
-?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
+?> Se preferisci i video tutorial, VorgunTheBeta ha [fatto un video che spiega come installare le mod e brani personalizzati](https://youtu.be/pSwNSGx-P5c).
 
-!> **IMPORTANT:** Make sure you've followed the [mod installation guide](installing-mods) to install BepInEx and TrombLoader before continuing!
+!> **IMPORTANTE:** Assicurati di aver seguito la [guida per l'installazione delle mod](installing-mods) per installare BepInEx e TrombLoader prima di continuare!
 
-## Finding Songs
+## Trovare i Brani
 
-Custom songs can be found in the `#custom-charts` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
+I brani personalizzati possono essere trovati nel canale `#custom-charts` nel [Discord "Trombone Champ Modding" ](https://discord.gg/KVzKRsbetJ).
 
-If you'd like a more compact list, TheGlitched64 has created [a spreadsheet containing information on every custom chart](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing).
+Se prefirisci una lista più compatta, TheGlitched64 ha creato [un foglio di calcolo che contiene le informazioni di tutti i brani personalizzati](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing).
 
-## Installation
+## Installazione
 
-1. Download the custom song - it will generally be some kind of archive file, usually ending in `.zip`.
+1. Scaricare il brano personalizzato - normalmente sarà un qualche tipo di file archivio, di solito con estensione `.zip`.
 
-2. Extract the contents of the archive file directly into the `BepInEx/CustomSongs` folder that got created when you first ran the game with TrombLoader installed.
+2. Estrai il contenuto dell'archivio direttamente nella cartella `BepInEx/CustomSongs` che viene creata la prima volta che avvii il gioco con TrombLoader installato.
 
-![BepInEx Extraction Preview](../docs/files/customsongextract.png)
+![Ateprima Estrazione BepInEx](../docs/files/customsongextract.png)
 
-3. Double check that the song is just in one folder instead of nested in multiple - in this example, all the song's files should be located in `BepinEx/CustomSongs/BakaMitai/`.
+3. Controllate che il brano si trovi in una sola cartella invece che in più cartelle: in questo esempio, tutti i file del brano dovrebbero trovarsi in `BepinEx/CustomSongs/BakaMitai/`.
 
-![Correct Extraction Preview](../docs/files/customsongcorrect.png)
+![Anteprima Estrazione corretta](../docs/files/customsongcorrect.png)
 
-### Creating Custom Songs {docsify-ignore}
+### Creare Brani Personalizzati {docsify-ignore}
 
-> Check out the [**Charting guide**](creating-charts) for info on creating your own custom charts.
+> Dai un'occhiata alla [**Guida al Charting**](creating-charts) per informazioni utili su come creare il tuo brano personalizzato.

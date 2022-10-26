@@ -1,16 +1,16 @@
-- **User Guide**
-- [Introduction](./)
+- **Guida per l'utente**
+- [Introduzione](./)
 - **Modding**
-- [Installing Mods](installing-mods)
-- [Installing Songs](installing-songs)
+- [Installare le Mod](installing-mods)
+- [Installare i Brani](installing-songs)
 - **Charting**
-- [Creating Charts](creating-charts)
-- [Chart Backgrounds](chart-backgrounds)
-- [Misc Charting Info](misc-charting-info)
-- **Extras**
-- [Frequently Asked Questions](../faq)
-- **Links**
+- [Creare le Charts](creating-charts)
+- [Sfondi delle Charts](chart-backgrounds)
+- [Informazioni Varie sul Charting](misc-charting-info)
+- **Extra**
+- [Domande Frequenti](../faq)
+- **Collegamenti Utili**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)
-- [![Translate](https://icongr.am/material/translate.svg?color=808080&size=16)Translate](https://crowdin.com/project/trombone-champ-modding-wiki)
-- [About](../about)
+- [![Traduci](https://icongr.am/material/translate.svg?color=808080&size=16)Traduci](https://crowdin.com/project/trombone-champ-modding-wiki)
+- [Su questa Guida](../about)

@@ -1,6 +1,6 @@
 # Trombone Champ Modding Guide {docsify-ignore-all}
 ---
-Trombone Champ is en rare ritme spel van Holy Wow studios, [verkrijgbaar op Steam](https://store.steampowered.com/app/1059990/Trombone_Champ/).
+Trombone Champ is een dwaas ritmespel van Holy Wow studios, [verkrijgbaar op Steam](https://store.steampowered.com/app/1059990/Trombone_Champ/).
 
 Deze wiki dient als een bron van documentatie en tutorials voor verschillende onofficiële mods gemaakt om je tromboning ervaring te verbeteren.
 
@@ -8,8 +8,8 @@ Deze wiki dient als een bron van documentatie en tutorials voor verschillende on
 
 > ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Mods Installeren**](installing-mods)
 > 
-> ### [![Apple Music Logo](https://icongr.am/simple/applemusic.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Aangepaste Mappen Installeren**](installing-songs)
+> ### [![Apple Music Logo](https://icongr.am/simple/applemusic.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Zelfgemaakte Maps Installeren**](installing-songs)
 > 
-> ### [![Musicbrainz Logo](https://icongr.am/simple/musicbrainz.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Eigen Mappen maken**](creating-charts)
+> ### [![Musicbrainz Logo](https://icongr.am/simple/musicbrainz.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Zelf Maps maken**](creating-charts)
 > 
 ><!-- > ### \[![Steam Logo\](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;\[**Creating Mods**\](pc-guide) -->

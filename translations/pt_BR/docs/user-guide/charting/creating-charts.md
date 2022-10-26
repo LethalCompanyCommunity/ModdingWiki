@@ -4,55 +4,158 @@
 ?> Se preferir, NyxTheShield tem uma [transmissão arquivada](https://www.youtube.com/watch?v=ig27SlJveGs) que explica o processo de charting por completo e em detalhes.
 
 ## Os básicos
-Charts são feitos a partir de arquivos midi, passando pelo programa [Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp).
+### Editores MIDI/DAW
+Charts são feitos a partir de um arquivo midi, que em sequência passam por um [conversor MIDI](#converting-midi-to-map-file).
+
+As nots midi devem estar na região 48 a 72 para se igualarem as possíveis no jogo.<br>**NOTA:** Nem todos os editores usam as mesmas oitavas para essa região.
 
 Alguns editores midi gratuitos que devem funcionar incluem:
-- [LMMS](https://lmms.io/)
-- [FL Studio (avaliação)](https://www.image-line.com/fl-studio-download/)
+- [Reaper](https://www.reaper.fm/download.php)* (Oitavas: C3-C5)
+- [LMMS](https://lmms.io/download#windows) (Oitavas: C3-C5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Oitavas: C4-C6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Oitavas C4-C6)
 
-?> A edição de avaliação do FL Studio não permite exportar arquivos MIDI, mas você pode solucionar isso salvando o projeto e em seguida usar o [flp2midi](https://github.com/Kaydax/flp2midi).
+<sub>*O software é pago, mas tem uma vesão de avaliação que funciona para criar charts.</sub><br> <sub>**As notas exportadas ficam no canal 2 por padrão, o que as fazem incompatíveis com o Midi2TromboneChamp sem modifica-lás.</sub><br> <sub>†A versão de avaliação do FL Studio não permite exportar aquivos midi, mas é possível resolver isso usando o <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
 
-As notas Midi devem estar entre a 48 e 72 para se igualar as possíveis no jogo. Quaisquer notas fora deste alcance vão se tornar notas entre a 48 e 72.
+<h4 spaces-before="0">
+  Projeto Reaper
+</h4>
 
-### Notas comuns
+<p spaces-before="0">
+  Se não sabe qual editor usar, o Reaper é recomendado, já que existe um projeto customizado para o Trombone Champ que inclui:
+</p>
 
-Notas comuns são criadas no editor midi e tem a mesma aparência no jogo. Lembre-se de deixar uma lacuna no tempo entre as notas!
+<ul>
+  <li>
+    Uma explicação básica de como se usa o Reaper (em inglês)
+  </li>
+  <li>
+    Configurações pré-definidas
+  </li>
+  <li>
+    Exemplos de arquivos MIDI
+  </li>
+</ul>
 
-### Notas deslizantes
+<p spaces-before="0">
+  O projeto pode ser <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">baixado aqui</a>.
+</p>
 
-Notas deslizantes são criadas sobrepondo outras notas no tempo. Para um par de notas sobrepostas, o deslize vai do começo da primeira nota até o começo da segunda. A parte sobreposta da primeira nota é descartada. Veja esta imagem para um exemplo:
+<h3 spaces-before="0">
+  Notas comuns
+</h3>
 
-![Exemplo de notas deslizantes](../docs/files/slide1.png)
+<p spaces-before="0">
+  Notas comuns são criadas no editor midi e tem a mesma aparência no jogo. Lembre-se de deixar uma lacuna no tempo entre as notas!
+</p>
 
-Se uma nota acaba e outra começa imediatamente, elas estarão conectadas. Isso permite você ajustar onde a curva de um deslize começa. Aqui está um exemplo de vários deslizes conectados simultaneamente:
+<h3 spaces-before="0">
+  Notas deslizantes
+</h3>
 
-(nota: A primeira seção reta é uma nota separada da seção curvada. O seu fim é igual à batida onde a próxima nota começa.)
+<p spaces-before="0">
+  Notas deslizantes são criadas sobrepondo outras notas no tempo. Para um par de notas sobrepostas, o deslize vai do começo da primeira nota até o começo da segunda. A parte sobreposta da primeira nota é descartada. Veja esta imagem para um exemplo:
+</p>
 
-![Exemplo de várias notas deslizantes](../docs/files/slide2.png)
+<p spaces-before="0">
+  <img src="../docs/files/slide1.png" alt="Exemplo de notas deslizantes" />
+</p>
 
-## Convertendo Midi ao arquivo de mapa
+<p spaces-before="0">
+  Se uma nota acaba e outra começa imediatamente, elas estarão conectadas. Isso permite você ajustar onde a curva de um deslize começa. Aqui está um exemplo de vários deslizes conectados simultaneamente:
+</p>
 
-1. Vá para <https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest> e clique em `Midi2TromboneChamp.exe` para baixar o arquivo.
+<p spaces-before="0">
+  (nota: A primeira seção reta é uma nota separada da seção curvada. O seu fim é igual à batida onde a próxima nota começa.)
+</p>
 
-2. Execute-o. No seletor de arquivos que foi aberto, selecione seu arquivo midi. Clique em Abrir.
+<p spaces-before="0">
+  <img src="../docs/files/slide2.png" alt="Exemplo de várias notas deslizantes" />
+</p>
 
-3. Preencha os campos:
- - `Song Name` é o nome completo da música, mostrado nas informações da música quando selecionada.
- - `Short Name` é mostrado enquanto navega pela çista de músicas. O texto fica menor dependendo do tamanho do nome, mas não se sabe se tem um limite para tal.
- - `Folder Name` é o nome da pasta em que foi colocado a música e o chart. Ex. Se você definiu o nome da pasta como banana, seu chart vai estar localizado em BepInEx/CustomSongs/banana/song.tmb.
- - `Year` é o ano em que a música foi criada.
- - `Author` é o compositor da música.
- - `Difficulty` é o número de estrelas que aparece na informação de dificuldade.
- - `Note Spacing` afeta a velocidade de rolagem, em combinação com o BPM.
- - `Song Endpoint` é a batida em que a música termina. Ela é calculada automaticamente, mas você pode ajustá-la manualmente para mudar quando o nível acaba.
- - `Beats per Bar` determina o quão distantes estão as "linhas de batida".
+<h2 spaces-before="0">
+  Convertendo Midi ao arquivo de mapa
+</h2>
 
-4. Aperte em OK. No seletor de arquivos que será aberto, crie uma pasta de mesmo nome do `Folder Name`, e salve o arquivo como `song.tmb` na pasta.
+<p spaces-before="0">
+  ?> Existem dois conversores Midi disponíveis além do Midi2TromboneChamp! <br>Já que eles ainda estão em versão beta, <strong x-id="1">eles podem ter bugs</strong>, então este guia ainda é escrito para o Midi2TromboneChamp. <br>O processo para esses novos conversores é semelhante o suficiente, então este guia ainda é utilizável. <br>Se quiser um conversor mais atualizado, sinta-se à vontade para utilizar os seguintes: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Versão Unity)</a> — Uma versão nova em Unity do Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> — Uma versão alternativa na web com novos recursos.
+</p>
 
-5. A sua faixa de música deve ser um arquivo .ogg. No momento da escrita, a duração da faixa deve ser maior que o fim do chart, ou a música fica travada e nunca acaba. Você pode usar programas como o Audacity para inserir silêncio no início da faixa para alinhar o midi. O nome do arquivo deve ser `song.ogg`.
-
-6. Mova o arquivo para a mesma pasta em que se encontra o `song.tmb`.
-
-7. Siga a [guia de instalação de músicas personalizadas](installing-songs) para testá-la.
-
-8. [Adicione um plano de fundo!](chart-backgrounds)
+<ol start="1">
+  <li>
+    <p spaces-before="0">
+      Vá para <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> e clique em <code>Midi2TromboneChamp.exe</code> para baixar o arquivo.
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      Execute-o. No seletor de arquivos que foi aberto, selecione seu arquivo midi. Clique em Abrir.
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      Preencha os campos:
+    </p>
+    <ul>
+      <li>
+        <code>Song Name</code> é o nome completo da música, mostrado nas informações da música quando selecionada.
+      </li>
+      <li>
+        <code>Short Name</code> é mostrado enquanto navega pela çista de músicas. O texto fica menor dependendo do tamanho do nome, mas não se sabe se tem um limite para tal.
+      </li>
+      <li>
+        <code>Folder Name</code> é o nome da pasta em que foi colocado a música e o chart. Ex. Se você definiu o nome da pasta como banana, seu chart vai estar localizado em BepInEx/CustomSongs/banana/song.tmb.
+      </li>
+      <li>
+        <code>Year</code> é o ano em que a música foi criada.
+      </li>
+      <li>
+        <code>Author</code> é o compositor da música.
+      </li>
+      <li>
+        <code>Difficulty</code> é o número de estrelas que aparece na informação de dificuldade.
+      </li>
+      <li>
+        <code>Note Spacing</code> afeta a velocidade de rolagem, em combinação com o BPM.
+      </li>
+      <li>
+        <code>Song Endpoint</code> é a batida em que a música termina. Ela é calculada automaticamente, mas você pode ajustá-la manualmente para mudar quando o nível acaba.
+      </li>
+      <li>
+        <code>Beats per Bar</code> determina o quão distantes estão as "linhas de batida".
+      </li>
+    </ul>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      Aperte em OK. No seletor de arquivos que será aberto, crie uma pasta de mesmo nome do <code>Folder Name</code>, e salve o arquivo como <code>song.tmb</code> na pasta.
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      A sua faixa de música deve ser um arquivo .ogg. No momento da escrita, a duração da faixa deve ser maior que o fim do chart, ou a música fica travada e nunca acaba. Você pode usar programas como o Audacity para inserir silêncio no início da faixa para alinhar o midi. O nome do arquivo deve ser <code>song.ogg</code>.
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      Mova o arquivo para a mesma pasta em que se encontra o <code>song.tmb</code>.
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      Siga a <a href="installing-songs">guia de instalação de músicas personalizadas</a> para testá-la.
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      <a href="chart-backgrounds">Adicione um plano de fundo!</a>
+    </p>
+  </li>
+</ol>

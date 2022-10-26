@@ -1,58 +1,161 @@
 # 长号冠军写谱教程
 ---
 
-?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
+?> 如果您喜欢视频教程，NyxTheShield的 [直播回放](https://www.youtube.com/watch?v=ig27SlJveGs) 会详细解释自制谱过程的每一步。
 
-## Basics
-自制谱是用[Midi2TromboneChamp](https://github.com/NyxTheShield/Midi2TromboneChamp)从midi文件转码成自制谱文件的
+## 基础
+### Midi Editor/DAW
+自制谱的制作需要创建Midi文件并使用[MIDI转换器](#converting-midi-to-map-file)进行转换。
 
-Some free, verified to work midi editors include:
-- [LMMS](https://lmms.io/)
-- [FL Studio(试用版）](https://www.image-line.com/fl-studio-download/)
+Midi文件中的音符应该在48到72的范围内以匹配游戏。<br>**注意：**该范围在不同的编辑器上会使用不同的钢琴琴键范围。
 
-?> 试用版的 FL Studio 不允许您导出 MIDI 格式的文件，但你可以通过保存项目文件并使用 [flp2midi](https://github.com/Kaydax/flp2midi) 来解决这个问题。
+一些免费可用的Midi编辑器包括：
+- [Reaper](https://www.reaper.fm/download.php)* (对应琴键范围: C3-C5)
+- [LMMS](https://lmms.io/download#windows) (对应琴键范围: C3-C5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (对应琴键范围: C4-C6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (对应琴键范围: C4-C6)
 
-Midi文件中的每一个音符都应该在48至72的区间之内以匹配游戏内长号所能吹奏出的范围。 低于48或高于72的音符都会被视作48或72。
+<sub>*完整版的软件并非免费，但只使用试用版依然可以完成谱面的制作。</sub><br> <sub>**默认情况下会导出到 Midi 轨道2，会导致无法使用Midi2TromboneChamp。</sub><br> <sub>†FL Studio的试用版无法直接输出Midi文件, 但你可以通过保存项目文件并使用 <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>来解决这个问题.</p>
 
-### Normal Notes
+<h4 spaces-before="0">
+  Reaper 项目文件
+</h4>
 
-Normal notes are created in the midi editor and look the same in-game. Make sure to leave a gap in time between notes!
+<p spaces-before="0">
+  如果您不确定使用哪个编辑器，推荐尝试Reaper。有一个使用Reaper制作的Trombone Champ自制文件示例，其中包括：
+</p>
 
-### Slide Notes
+<ul>
+  <li>
+    关于如何使用Reaper的基础教程（英文）
+  </li>
+  <li>
+    预设设置
+  </li>
+  <li>
+    示例MIDI文件
+  </li>
+</ul>
 
-Slides are created by overlapping notes in time. For a pair of overlapping notes, the slide goes from the start of the first note to the start of the second. The overlapping part of the first note is discarded. See this image for an example:
+<p spaces-before="0">
+  这个项目可以在 <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">这里</a>下载。
+</p>
 
-![Slide Note Example](../docs/files/slide1.png)
+<h3 spaces-before="0">
+  普通note
+</h3>
 
-If a note ends but the next note starts at the exact same time, they will be connected. This allows you to adjust where the curve of a slide starts. Here's an example of multiple slides connected together:
+<p spaces-before="0">
+  普通的直线note可以直接在Midi编辑器中创建，并且在游戏中看起来是一样的。 请务必在note之间保留足够时间的空隙！
+</p>
 
-(note: The first straight section is a separate note from the curved section. Its end time is the same as the next one's start time.)
+<h3 spaces-before="0">
+  滑动note
+</h3>
 
-![Multiple Slide Note Example](../docs/files/slide2.png)
+<p spaces-before="0">
+  滑动note是由时间重叠Midi音符的方式创建的。 对于两个时间上有重叠的Midi音符，滑动note会从第一个音符的开头滑至第二个音符的开头。 其中第一个Midi音符的重叠部分会被丢弃。 示例请看此图：
+</p>
 
-## Converting Midi to Map File
+<p spaces-before="0">
+  <img src="../docs/files/slide1.png" alt="滑动note示例" />
+</p>
 
-1. Go to <https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest> and click `Midi2TromboneChamp.exe` to download it.
+<p spaces-before="0">
+  如果一个音符结束，但下一个音符正好同时开始，两个音符将会被连接。 由此您可以调整一个长滑动note中滑动部分的开始位置。 下面是多个滑动Note连接的示例：
+</p>
 
-2. Run it. In the file selector it opens, select your midi file. Click Open.
+<p spaces-before="0">
+  （注：第一个直线note与后方的曲线部分是分开的， 它的结束时间与下一个音符的开始时间相同。)
+</p>
 
-3. Fill out the fields:
- - `Song Name` is the full name of the song, shown in the info when you select it in-game .
- - `Short Name` is shown while scrolling through the song list. Text gets smaller when the name is long so I'm not sure if there's a maximum length.
- - `Folder Name` is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
- - `Year` is the year the song was created.
- - `Author` is the composer of the song.
- - `Difficulty` is the number of difficulty stars that appear on the song's info.
- - `Note Spacing` affects how fast the level scrolls, in combination with BPM.
- - `Song Endpoint` is the beat on which the song ends. It is automatically calculated, but you can adjust it to change when the level end screen appears.
- - `Beats per Bar` determines how far apart the "beat lines" are.
+<p spaces-before="0">
+  <img src="../docs/files/slide2.png" alt="长滑动note示例" />
+</p>
 
-4. Hit OK. In the file selector it opens, create a folder with the same name as you entered in the `Folder Name` field, and save the file as `song.tmb` inside that folder.
+<h2 spaces-before="0">
+  转换Midi文件为谱面文件
+</h2>
 
-5. Your music track should be a .ogg file. At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file `song.ogg`.
+<p spaces-before="0">
+  ?> 除了Midi2TromboneChamp以外，还有两个Midi转换器可用！ <br>由于仍然处于测试阶段， <strong x-id="1">它们可能有 bug</strong>，因此本指南仍然是为 Midi2TromboneChamp编写的。 <br>这些新转换器的使用流程足够相似，本指南仍然可以使用。 <br>如果您想尝试这些更新的转换程序，请看这里： <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp(Unity 版本)</a> - 一个使用Unity编写的Midi2TromboneChamp。 <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chapt Converter</a> - 一个有新功能的网页版转换器。
+</p>
 
-6. Move the ogg file into the same folder as `song.tmb`.
-
-7. Follow the [Custom Song Installation instructions](installing-songs) to test it.
-
-8. [Add a background!](chart-backgrounds)
+<ol start="1">
+  <li>
+    <p spaces-before="0">
+      前往 <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/leases/leases/latest</a> 并点击 <code>Midi2TromboneChamp.exe</code> 进行下载。
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      运行它。 在打开的文件选择其中选择你的Midi文件。 点击Open。
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      填写谱面信息：
+    </p>
+    <ul>
+      <li>
+        <code>Song Name</code> 是歌曲的全名，当您在游戏中选择这个谱面时，这一条会显示在左上角。
+      </li>
+      <li>
+        <code>Short Name</code> 该内容会显示在曲目滚动列表中. 名称过长时文本字号会相应变小，所以无法确定是否存在长度上限。
+      </li>
+      <li>
+        <code>Folder Name</code> 是您用来存储谱面和歌曲文件的文件夹的名称。 举例： 如果您将文件夹名称设置为“我的自制谱”，您的自制谱路径将是 BepInEx/CustomSongs/我的自制谱/song.tmb。
+      </li>
+      <li>
+        <code>Year</code>是曲目的创作年份。
+      </li>
+      <li>
+        <code>Author</code> 是乐曲的作者。
+      </li>
+      <li>
+        <code>Difficulty</code> 是歌曲信息上出现的难度星级。
+      </li>
+      <li>
+        <code>Note Spacing</code> 影响游戏内note的移动速度，通常与BPM对应.
+      </li>
+      <li>
+        <code>Song Endpoint</code> 是曲目结束时的节奏点。 这个值通常由软件自动计算，但是你可以调整这个数值来改变结算界面的出现时机。
+      </li>
+      <li>
+        <code>Beats per Bar</code> 决定游玩谱面时屏幕上显示的节拍线之间的距离。
+      </li>
+    </ul>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      点击OK。 在出现的文件选择器中，创建一个与您输入的 <code>Folder Name</code> 字段相同的文件夹，并将文件命名为 <code>song.tmb</code>后放入文件夹中 。
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      您的音乐应该是一个 .ogg 文件。 在填写谱面信息时，曲目的持续时间必须长于Song Endpoint中填写的时间点，否则谱面会卡住并永远无法结束。 您可以使用像Audacity这样的软件在音轨开始时插入一定时长的空白来将它与midi文件匹配。 将文件命名为<code>song.ogg</code>。
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      移动ogg文件到与<code>song.tmb</code>相同的文件夹。
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      按照 <a href="installing-songs">自制谱面安装说明</a> 来测试你的自制谱。
+    </p>
+  </li>
+  
+  <li>
+    <p spaces-before="0">
+      <a href="chart-backgrounds">添加背景！</a>
+    </p>
+  </li>
+</ol>

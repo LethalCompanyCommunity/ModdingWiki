@@ -1,28 +1,28 @@
-# Chart Backgrounds
+# 自制谱面背景
 ---
 
-Backgrounds are an important feature of a chart, and there's a few different types (in order of complexity):
+背景是一个谱面的重要组成部分，下面介绍背景的几种不同的类型（以复杂程度从简至繁排序）：
 
 ### .png
 
-If you want a simple, easy background, this is what's recommended.
+如果您想要一个简单直接的背景，推荐使用这个格式。
 
-Simply put a `1920x1080` image named `bg.png` in your song's folder.
+只需在您的歌曲文件夹中放入名称为 `bg.png`，分辨率为`1920x1080` 的图像。
 
-You can use non-`1920x1080` images, but it might behave weirdly, as unity sprite scale is based on image resolution.
+您可以使用非 -`1920x1080` 图像，但是它有可能无法正常地显示，因为Unity的精灵图尺寸是基于图像分辨率。
 
 ### .mp4
 
-If you want a slightly more interesting background, a music video background, or want to prerender a moving background, you can also use a video!
+如果您想要稍微更有趣的背景，例如一个音乐视频，或者单纯想要一个预渲染的动态的背景，您也可以使用视频文件！
 
-Simply put an mp4 named `bg.mp4` in your song's folder.
+只需在您的歌曲文件夹中放入名称为`bg.mp4`的视频。
 
-You can use any resolution of video, but **please** try to keep the size reasonable - aim for under 50MB. If your video's size is too high, you can always lower the resolution in your favorite video editor.
+您可以使用任何分辨率的视频，但是**请务必**控制视频文件的体积，尽量低于50MB。 如果您的视频体积太大，您总是可以在您最喜欢的视频编辑器中尝试降低视频分辨率或其他能够压缩视频文件体积的方法。
 
 ### .trombackground
 
-If you want a background that'll blow people away, want to use events, or want to have full creative control of how your chart looks, it's highly recommended to use a `.trombackground` file.
+如果您想要一个能令人瞠目结舌的背景，想要使用事件，或想要完全地创造性地控制您的自制谱面外观，强烈建议您使用 `.trombackground` 文件。
 
-This will give you the full power of the Unity Editor, and the amount of things you can do is significantly higher than either of the other methods.
+这个格式允许您使用Unity Editor的全部功能。您的编辑自由度会远远高于其他任何一种背景形式。
 
-The instructions are currently found in a detailed readme on the Unity Project GitHub: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
+目前在Unity Project GitHub有一个详细的指南：<https://github.com/legoandmars/TrombLoaderBackgroundProject/>
