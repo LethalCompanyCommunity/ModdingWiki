@@ -24,6 +24,8 @@ Questa guida è scritta principalmente da [Bobbie](https://twitter.com/VRBobbie)
 > 
 > **German:** KlosRadieschen
 > 
+> **Italian:** Palleuomo, gardaviolenta
+> 
 > **Portoghese (Brasiliano):** NekoDinner
 > 
 > **Spagnolo:** dakar665, BrookeAFK
