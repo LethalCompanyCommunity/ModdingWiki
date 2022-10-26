@@ -1,8 +1,8 @@
 - **ユーザーガイド**
-- [序文](./)
-- **改造**
-- [モッドを入れる](installing-mods)
-- [歌を入れる](installing-songs)
+- [まず始めに](./)
+- **Mod**
+- [Modの導入方法](installing-mods)
+- [楽曲の導入方法](installing-songs)
 - **マッピング**
 - [マップを作る](creating-charts)
 - [マップの背景](chart-backgrounds)
