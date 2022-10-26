@@ -24,6 +24,8 @@ Diese Anleitung wird hauptsächlich von [Bobbie](https://twitter.com/VRBobbie) g
 > 
 > **German:** KlosRadieschen
 > 
+> **Italian:** Palleuomo, gardaviolenta
+> 
 > **Portugiesisch (Brasilianisch):** NekoDinner
 > 
 > **Spanisch:** dakar665, BrookeAFK
