@@ -1,9 +1,9 @@
-- **Gebruikers Handleiding**
+- **Gebruikershandleiding**
 - [Introductie](./)
 - **Modding**
 - [Mods Installeren](installing-mods)
-- [Mappen Installeren](installing-songs)
-- **Mappen**
+- [Liedjes Installeren](installing-songs)
+- **Maps**
 - [Map Maken](creating-charts)
 - [Map Achtergrond](chart-backgrounds)
 - [Diversen Map Informatie](misc-charting-info)
