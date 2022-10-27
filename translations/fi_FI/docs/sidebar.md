@@ -1,16 +1,16 @@
-- **User Guide**
-- [Introduction](./)
-- **Modding**
-- [Installing Mods](installing-mods)
-- [Installing Songs](installing-songs)
-- **Charting**
-- [Creating Charts](creating-charts)
-- [Chart Backgrounds](chart-backgrounds)
-- [Misc Charting Info](misc-charting-info)
-- **Extras**
-- [Frequently Asked Questions](faq)
-- **Links**
+- **Käyttöopas**
+- [Johdanto](./)
+- **Modaus**
+- [Modien Asentaminen](installing-mods)
+- [Kappaleiden Asentaminen](installing-songs)
+- **Kartoitus**
+- [Karttojen Luonti](creating-charts)
+- [Kartan Taustat](chart-backgrounds)
+- [Sekalaiset Kartoitustiedot](misc-charting-info)
+- **Extrat**
+- [Usein Kysytyt Kysymykset](faq)
+- **Linkit**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)
-- [![Translate](https://icongr.am/material/translate.svg?color=808080&size=16)Translate](https://crowdin.com/project/trombone-champ-modding-wiki)
-- [About](about)
+- [![Käännä](https://icongr.am/material/translate.svg?color=808080&size=16)Käännä](https://crowdin.com/project/trombone-champ-modding-wiki)
+- [Tietoja](about)
