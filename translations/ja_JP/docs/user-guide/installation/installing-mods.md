@@ -1,7 +1,7 @@
 # MODの導入方法
 ---
 
-?> もし動画による解説をご希望でしたら、VorgunTheBeta氏が投稿した[MODと創作譜面(音源)の導入方法を説明している動画](https://youtu.be/pSwNSGx-P5c)をご覧ください。(※英語).
+?> もし動画による解説をご希望でしたら、VorgunTheBeta氏が投稿した[MODとカスタム音源の導入方法を説明している動画](https://youtu.be/pSwNSGx-P5c)をご覧ください。(※英語).
 
 ?> このガイドの冒頭部分はLinuxとSteam Deckにも対応しています！ 詳しい内容については [このガイドの末尾](#linuxsteam-deck-specific-tips)をご確認ください。
 
@@ -68,15 +68,15 @@ BepInExの導入方法は上記のWindowsでのやり方とほぼ同じですが
 
 ![Steam プロパティのプレビュー](../docs/files/linuxsteamproperties.png)
 
-書き込むとBepInExが動作するようになります。 Install your mods [as instructed above](##installation) to get custom songs working.
+書き込むとBepInExが動作するようになります。 カスタム音源を動作させるには、[「MODを導入する」の説明に従って](##installation)Modをインストールしてください。
 
-### Video Backgrounds {docsify-ignore}
+### 背景の動画について {docsify-ignore}
 
-Some custom songs will include videos for their backgrounds, and the default Proton install cannot play these back. If you want these to work, you can install `GE-Proton` using [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/). This is a version of Proton that includes some additional features, including the ability to play back video formats that Valve are unable to support officially.
+カスタム音源の中には背景に動画を含むものがあり、Protonへの通常インストールでは正常に再生することができません。 もし動画を再生させたい場合は[ProtonUp-Qt](https://davidotek.github.io/protonup-qt/)を使用し、`GE-Proton`をインストールすることで可能になります。 これはいくつかの追加機能を含むProtonのバージョンです。 Valveが公式にサポートしていないビデオフォーマットを再生する機能が含まれています。
 
-We recommend following [this guide created by GamingOnLinux](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) for instructions on how to use ProtonUp-Qt and install `GE-Proton`.
+ProtonUp-Qtの使用方法と`GE-Proton`のインストール方法については、[GamingOnLinuxが作成したこちらのガイド](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/)を参照することをお勧めします。
 
-!> Even with GE-Proton, you may still experience some issues with video playback depending on your setup. </details>
+!> 仮にGE-Protonを使用しても設定の仕方によっては動画の再生に問題が発生する場合があります。 </details>
 
 ## カスタム音源を導入する {docsify-ignore}
 
