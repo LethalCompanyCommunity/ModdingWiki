@@ -61,22 +61,22 @@ Le processus d'installation de BepInEx est en grande partie le même que sur Win
 
  - Les fichiers log et de sauvegarde sont stockés dans votre dossier Steam, dans les dossiers de compatibilité de Proton.
 
-    - On Steam Deck this can be found at: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
-    - On other Linux flavors you can run `locate -r /Holy Wow$` from the terminal if you're unsure of where your Steam folder is.
+    - Sur le Steam Deck, cela peut être trouvé à : `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
+    - Sur d'autres versions de Linux, vous pouvez exécuter `locate -r /Holy Wow<0>locate -r /Holy Wow$` à partir du terminal si vous êtes incertain de l'emplacement de votre dossier Steam.
 
-You will also need to add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your game's launch options. To do this, right click the game in Steam and click `Properties`. Unlike on Windows, Proton won't load BepInEx's files unless specifically instructed to here.
+Vous devrez aussi ajouter `WINEDLLOVERRIDES="winhttp=n,b" %command%` à vos options de lancement du jeu. Pour faire cela, faites un clic droit sur le jeu sur Steam and cliquez sur `Properties`. Contrairement à Windows, Proton ne chargera pas les fichiers de BepInEx à moins que ce soit spécifiquement demandé ici.
 
 ![Aperçu des propriétés Steam](../docs/files/linuxsteamproperties.png)
 
-Once added, BepInEx should now work! Install your mods [as instructed above](##installation) to get custom songs working.
+Une fois ajouté, BepInEx devrait fonctionner ! Installez vos mods [comme spécifié ci-dessus](##installation) pour faire fonctionner vos chansons personnalisées.
 
-### Video Backgrounds {docsify-ignore}
+### Arrières-plans vidéo {docsify-ignore}
 
-Some custom songs will include videos for their backgrounds, and the default Proton install cannot play these back. If you want these to work, you can install `GE-Proton` using [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/). This is a version of Proton that includes some additional features, including the ability to play back video formats that Valve are unable to support officially.
+Certaines chansons personnalisées incluront des vidéos pour leur arrière-plan et l'installation par défaut de Proton ne peut pas jouer celles-ci. Si vous voulez les faire fonctionner, vous pouvez installer `GE-Proton` en utilisant [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/). Ceci est une version de Proton qui inclue quelques fonctionnalités supplémentaires, y compris la possibilité de lire des formats vidéo que Valve ne prend pas officiellement en charge.
 
-We recommend following [this guide created by GamingOnLinux](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) for instructions on how to use ProtonUp-Qt and install `GE-Proton`.
+Nous recommandons de suivre [ce guide créé par GamingOnLinux](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) pour des instructions sur comment utiliser ProtonUp-Qt et installer `GE-Proton`.
 
-!> Even with GE-Proton, you may still experience some issues with video playback depending on your setup. </details>
+!> Même avec GE-Proton, vous pourriez encore rencontrer quelques problèmes de lecture de vidéos dépendamment de votre configuration. </details>
 
 ## Installation des chansons personnalisées {docsify-ignore}
 
