@@ -3,7 +3,7 @@
 
 ?> 如果需要视频教学, 可参考VorgunTheBeta 的[mod安装与自制曲目导入指南](https://youtu.be/pSwNSGx-P5c).
 
-?> The start of this guide also works for Linux and Steam Deck! Make sure to [read the end](#linuxsteam-deck-specific-tips) for additional details.
+?> 本指南的前半部分也适用于Linux和Steam Deck！ 请务必查看 [结尾](#linuxsteam-deck-specific-tips)以确认关于这两个运行环境的更多信息。
 
 ## 寻找安装位置
 1. 打开Steam并右键点击Trombone Champ。 在右键菜单中选择 `管理 > 浏览本地文件`。
@@ -21,7 +21,7 @@
 
 ![BepInEx 解压缩预览](../docs/files/bepinexextract.png)
 
-!> 请确认你下载的BepInEx为 `x64`版本， `unix` 与`x86`版本会导致你的游戏无法正常运行。 This also applies to users on Linux/Steam Deck.
+!> 请确认你下载的BepInEx为 `x64`版本， `unix` 与`x86`版本会导致你的游戏无法正常运行。 这也适用于Linux/Steam Deck的用户。
 
 !> **注意:** 如上图所示将 BepInEx *直接*解压 到你的游戏安装文件夹， 如果操作正确，你的游戏安装文件夹会与下图相同。
 
@@ -47,7 +47,7 @@ BepInEx安装完成之后，你就可以开始下载一些特定的mod了。[Tro
 
 4. 运行一次Trombone Champ 来初始化该模组的必要文件。
 
-## Linux/Steam Deck Tips
+## Linux/Steam Deck 相关
 <details closed>
 <summary>Expand</summary>
 
