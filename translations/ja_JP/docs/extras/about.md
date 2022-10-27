@@ -20,17 +20,17 @@
 > 
 > **オランダ語:** VorgunTheBeta
 > 
-> **French:** MrKegg, H3ITO, slaw
+> **フランス語:** MrKegg, H3ITO, slaw
 > 
-> **German:** KlosRadieschen
+> **ドイツ語:** KlosRadieschen
 > 
-> **Italian:** Palleuomo, gardaviolenta
+> **イタリア語:** Palleuomo, gardaviolenta
 > 
 > **ポルトガル語 (ブラジル語):** NekoDinner
 > 
 > **スペイン語:** dakar665, BrookeAFK
 > 
-> **Ukrainian:** sw1ft
+> **ウクライナ語:** sw1ft
 
 ?> **オープンソースとプライバシー**  
 [当ガイドはGitHubにてオープンソース化されています](https://github.com/tc-mods/TromboneChampModdingWiki). こちらは[ISCライセンス](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md)に基づいた上でライセンスされています。
