@@ -2,7 +2,7 @@
 - [まず始めに](./)
 - **MOD**
 - [MODの導入方法](installing-mods)
-- [音源の導入方法](installing-songs)
+- [カスタム音源の導入方法](installing-songs)
 - **創作譜面**
 - [譜面の作成方法](creating-charts)
 - [譜面の背景設定](chart-backgrounds)
