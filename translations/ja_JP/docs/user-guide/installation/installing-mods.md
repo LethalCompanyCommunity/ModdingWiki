@@ -8,24 +8,24 @@
 ## MODを導入するフォルダーを確認する
 1. Steamのライブラリを開き、Trombone Champを右クリックする。 次に、`管理 > ローカルファイルを閲覧`を選択する。
 
-![Right-click Menu Preview](../docs/files/localfilescontext.png)
+![右クリックしたメニューのプレビュー](../docs/files/localfilescontext.png)
 
 2. 上部にあるアドレスバー左側のフォルダマークをクリックして、フォルダパスを選択した状態にする。 `CTRLキー`+`Cキー`を押してクリップボードにコピーする。
 
-![Copy Folder Path Preview](../docs/files/copyfolderpath.png)
+![コピーしたフォルダパスのプレビュ](../docs/files/copyfolderpath.png)
 
 ## BepInEx(前提MOD)を導入する
 
 1. まず初めにTromboneChampのフォルダに[BepInEx](https://github.com/BepInEx/BepInEx/releases/latest)をダウンロードする。 BepinEx_x64_VERSION.zip (※VERSIONはBepinExのバージョン番号) が置かれているはずです。
 2. ダウンロードしたzipファイルの内容をTromboneChamp.exeと同じフォルダに直接解凍してください。
 
-![BepInEx Extraction Preview](../docs/files/bepinexextract.png)
+![BepInExの解凍 プレビュー](../docs/files/bepinexextract.png)
 
-BepInExの `x64` (64bit版)をダウンロードしたことをご確認ください。 `unix` および `x86` (32bit版)の場合、ゲームが正常に動作しない可能性があります。 これはLinuxとSteam Deckのユーザーにも当てはまります。
+BepInExの `x64` (64bit版)をダウンロードしたことをご確認ください。 `unix版` および `x86` (32bit版)の場合、ゲームが正常に動作しない可能性があります。 これはLinuxとSteam Deckのユーザーにも当てはまります。
 
 !> **重要:** 上記の画像のように、BepInExをTromboneChampのゲームフォルダに*"直接"*解凍してください。 正しく解凍できた場合、下記の画像のようになっているはずです。
 
-![Finished BepinEx Install](../docs/files/finishedbepinex.png)
+![BepinExのインストール完了](../docs/files/finishedbepinex.png)
 
 3. Trombone Champを一度起動するとBepInExのインストールが完了します。
 
@@ -33,17 +33,17 @@ BepInExの `x64` (64bit版)をダウンロードしたことをご確認くだ�
 
 BepInExがインストールされたら、特定のMODを入れることができるようになります。[Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ)の`#mod-releases`チャンネルから配布されているMODのリストが確認できます。
 
-創作譜面を導入することを想定して、まずここでは[TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest)を例に出して説明します。
+カスタム音源を導入することを想定して、まずここでは[TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest)を例に出して説明します。
 
 1. [TromboneChampのゲームフォルダ](###finding-install-location) / `BepInEx`フォルダ / `plugins`フォルダの順に移動してください。
 
 2. 上部にあるアドレスバー左側のフォルダマークをクリックして、フォルダパスを選択した状態にする。 `CTRLキー`+`Cキー`を押してクリップボードにコピーする。
 
-![Copy Folder Path Preview](../docs/files/copyfolderpathplugins.png)
+![コピーしたフォルダパスのプレビュー](../docs/files/copyfolderpathplugins.png)
 
 3. 拡張子が".dll"になっているMODファイルをpluginsフォルダにダウンロードしてください。
 
-![Plugins Folder Preview](../docs/files/pluginswithtrombloader.png)
+![プラグインフォルダのプレビュー](../docs/files/pluginswithtrombloader.png)
 
 4. Trombone Champを一度起動するとMODのインストールが完了し、そのMODに必要なファイルが初期化されます。
 
@@ -51,22 +51,22 @@ BepInExがインストールされたら、特定のMODを入れることがで�
 <details closed>
 <summary>詳細を表示</summary>
 
-The process of installing BepInEx is largely the same as on Windows listed above, however there are some extra things to be aware of first:
+BepInExの導入方法は上記のWindowsでのやり方とほぼ同じですが最初に注意すべき点がいくつかあります:
 
- - To follow the guide, Steam Deck users will need to switch to Desktop Mode by holding down the power button and selecting `Desktop Mode` from the menu.
+ - まずSteam Deckのユーザーはこのガイドに従うにあたって、Steam Deckの電源ボタンを長押し、電源メニューも表示させ、「デスクトップに切り替え」の項目を選択して `デスクトップモード` を立ち上げる必要があります。
 
- - Steam Deck users will need to install the game to the internal storage, as BepInEx will not load from the microSD card.
+ - Steam DeckのユーザーはmicroSDカードからBepInExが読み込まれないため、ゲームを内部ストレージにインストールする必要があります。
 
- - As stated earlier, you will still need to install the `x64` Windows version of BepInEx, not the `unix` version, as Trombone Champ is still a Windows application running under Proton.
+ - 前述の通り、Trombone ChampはProton環境下において動作するWindowsアプリケーションであるため、`unix版`ではなく`x64`のWindows版BepInExをインストールする必要があります。
 
- - Save and log files are stored in your Steam folder within Proton's compatibility folders.
+ - セーブファイルやログファイルはProtonの互換フォルダ内のSteamフォルダに保存されます。
 
-    - On Steam Deck this can be found at: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
-    - On other Linux flavors you can run `locate -r /Holy Wow$` from the terminal if you're unsure of where your Steam folder is.
+    - Steam Deckでは以下のようになります: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
+    - 他のLinuxフレーバーではSteamフォルダの場所がわからない場合、ターミナルから `locate -r /Holy Wow` を実行してください。
 
 You will also need to add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your game's launch options. To do this, right click the game in Steam and click `Properties`. Unlike on Windows, Proton won't load BepInEx's files unless specifically instructed to here.
 
-![Steam Properties Preview](../docs/files/linuxsteamproperties.png)
+![Steam プロパティのプレビュー](../docs/files/linuxsteamproperties.png)
 
 Once added, BepInEx should now work! Install your mods [as instructed above](##installation) to get custom songs working.
 
@@ -78,6 +78,6 @@ We recommend following [this guide created by GamingOnLinux](https://www.gamingo
 
 !> Even with GE-Proton, you may still experience some issues with video playback depending on your setup. </details>
 
-## 音源を導入する {docsify-ignore}
+## カスタム音源を導入する {docsify-ignore}
 
-> Check out the [**Custom Songs guide**](installing-songs) for info on installing custom songs.
+> カスタム音源の導入に関しては[**カスタム音源のガイド**](installing-songs)をご参照ください。
