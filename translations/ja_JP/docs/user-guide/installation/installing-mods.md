@@ -64,11 +64,11 @@ BepInExの導入方法は上記のWindowsでのやり方とほぼ同じですが
     - Steam Deckでは以下のようになります: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
     - 他のLinuxフレーバーではSteamフォルダの場所がわからない場合、ターミナルから `locate -r /Holy Wow` を実行してください。
 
-You will also need to add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your game's launch options. To do this, right click the game in Steam and click `Properties`. Unlike on Windows, Proton won't load BepInEx's files unless specifically instructed to here.
+また、ゲームの起動オプションに `WINEDLLOVERRIDES="winhttp=n,b" %command%` を追加する必要があります。 起動オプションに書き込みを行うには、SteamのライブラリにてTrombone Champを右クリックし、`プロパティ`をクリックして表示させます。 Windowsとは異なり、Steam Protonは起動オプションにて特に指示がない限り、BepInExのファイルを読み込むことはありません。
 
 ![Steam プロパティのプレビュー](../docs/files/linuxsteamproperties.png)
 
-Once added, BepInEx should now work! Install your mods [as instructed above](##installation) to get custom songs working.
+書き込むとBepInExが動作するようになります。 Install your mods [as instructed above](##installation) to get custom songs working.
 
 ### Video Backgrounds {docsify-ignore}
 
