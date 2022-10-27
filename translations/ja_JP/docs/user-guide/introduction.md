@@ -8,7 +8,7 @@ Trombone Champとは、Holy Wow Studiosが開発、販売している音ゲー�
 
 > ### [![Steam ロゴ](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**MODの導入方法**](installing-mods)
 > 
-> ### [![Apple Music ロゴ](https://icongr.am/simple/applemusic.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**楽曲の導入方法**](installing-songs)
+> ### [![Apple Music ロゴ](https://icongr.am/simple/applemusic.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**音源の導入方法**](installing-songs)
 > 
 > ### [![Musicbrainz ロゴ](https://icongr.am/simple/musicbrainz.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**譜面の作成方法**](creating-charts)
 > 
