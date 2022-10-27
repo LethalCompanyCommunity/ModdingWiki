@@ -10,7 +10,7 @@
 
 ![Right-click Menu Preview](../docs/files/localfilescontext.png)
 
-2. 上部にあるアドレスバー左側のフォルダーマークをクリックして、フォルダーパスを選択した状態にする。 `CTRLキー`+`Cキー`を押してクリップボードにコピーする。
+2. 上部にあるアドレスバー左側のフォルダマークをクリックして、フォルダパスを選択した状態にする。 `CTRLキー`+`Cキー`を押してクリップボードにコピーする。
 
 ![Copy Folder Path Preview](../docs/files/copyfolderpath.png)
 
@@ -21,31 +21,31 @@
 
 ![BepInEx Extraction Preview](../docs/files/bepinexextract.png)
 
-!> Please ensure that you've downloaded the `x64` version of BepInEx. the `unix` and `x86` versions will cause your game to not function properly. This also applies to users on Linux/Steam Deck.
+BepInExの `x64` (64bit版)をダウンロードしたことをご確認ください。 `unix` および `x86` (32bit版)の場合、ゲームが正常に動作しない可能性があります。 これはLinuxとSteam Deckのユーザーにも当てはまります。
 
-!> **IMPORTANT:** Extract BepInEx *directly* into your game's folder as shown in the image above. If you've done it correctly, your game's folder should look like the below image.
+!> **重要:** 上記の画像のように、BepInExをTromboneChampのゲームフォルダに*"直接"*解凍してください。 正しく解凍できた場合、下記の画像のようになっているはずです。
 
 ![Finished BepinEx Install](../docs/files/finishedbepinex.png)
 
-3. Run Trombone Champ once to complete installation.
+3. Trombone Champを一度起動するとBepInExのインストールが完了します。
 
 ## MODを導入する
 
-With BepInEx installed, you can start downloading specific mods - a full list is available in the `#mod-releases` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
+BepInExがインストールされたら、特定のMODを入れることができるようになります。[Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ)の`#mod-releases`チャンネルから配布されているMODのリストが確認できます。
 
-As you likely want to install custom songs, this section will use [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest) as an example.
+創作譜面を導入することを想定して、まずここでは[TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest)を例に出して説明します。
 
-1. Navigate to your [game's install folder](###finding-install-location), the `BepInEx` folder, then the `plugins` folder.
+1. [TromboneChampのゲームフォルダ](###finding-install-location) / `BepInEx`フォルダ / `plugins`フォルダの順に移動してください。
 
-2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
+2. 上部にあるアドレスバー左側のフォルダマークをクリックして、フォルダパスを選択した状態にする。 `CTRLキー`+`Cキー`を押してクリップボードにコピーする。
 
 ![Copy Folder Path Preview](../docs/files/copyfolderpathplugins.png)
 
-3. Download the mod's .dll file into the copied folder.
+3. 拡張子が".dll"になっているMODファイルをpluginsフォルダにダウンロードしてください。
 
 ![Plugins Folder Preview](../docs/files/pluginswithtrombloader.png)
 
-4. Run Trombone Champ once to initialize necessary files for that mod.
+4. Trombone Champを一度起動するとMODのインストールが完了し、そのMODに必要なファイルが初期化されます。
 
 ## Linux/Steam Deckの場合
 <details closed>
