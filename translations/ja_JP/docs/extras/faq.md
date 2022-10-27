@@ -1,6 +1,6 @@
-# Frequently Asked Questions
+# よくある質問 (FAQ)
 ---
 
-## Baboon?
+## Baboon? (ヒヒ？)
 
 🐒
