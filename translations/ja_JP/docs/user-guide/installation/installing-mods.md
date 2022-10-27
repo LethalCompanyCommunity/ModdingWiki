@@ -16,8 +16,8 @@
 
 ## BepInEx(前提MOD)を導入する
 
-1. まず初めにTromboneChampのフォルダに[BepInEx](https://github.com/BepInEx/BepInEx/releases/latest)をダウンロードする。 BepinEx_x64_VERSION.zip (※VERSIONはBepinExのバージョン番号) が置かれるはずです。
-2. Extract the contents of the BepInEx .zip file directly into the [install folder](##finding-install-location) of your Trombone Champ installation.
+1. まず初めにTromboneChampのフォルダに[BepInEx](https://github.com/BepInEx/BepInEx/releases/latest)をダウンロードする。 BepinEx_x64_VERSION.zip (※VERSIONはBepinExのバージョン番号) が置かれているはずです。
+2. ダウンロードしたzipファイルの内容をTromboneChamp.exeと同じフォルダに直接解凍してください。
 
 ![BepInEx Extraction Preview](../docs/files/bepinexextract.png)
 
