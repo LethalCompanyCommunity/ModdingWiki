@@ -53,13 +53,13 @@ Comme vous voulez probablement installer des chansons personnalisées, cette sec
 
 Le processus d'installation de BepInEx est en grande partie le même que sur Windows listé ci-dessus, cependant il y a quelques choses supplémentaires dont il faut d'abord être informé:
 
- - To follow the guide, Steam Deck users will need to switch to Desktop Mode by holding down the power button and selecting `Desktop Mode` from the menu.
+ - Pour suivre le guide, les utilisateurs du Steam Deck devront passer en mode Bureau en maintenant enfoncé le bouton d'alimentation et en sélectionnant `Mode Bureau` à partir du menu.
 
- - Steam Deck users will need to install the game to the internal storage, as BepInEx will not load from the microSD card.
+ - Les utilisateurs du Steam Deck devront installer le jeu dans le stockage interne, puisque BepInEx ne chargera pas à partir de la carte microSD.
 
- - As stated earlier, you will still need to install the `x64` Windows version of BepInEx, not the `unix` version, as Trombone Champ is still a Windows application running under Proton.
+ - Comme mentionné plus tôt, vous devrez quand même installer la version Windows `x64` de BepInEx, et non la version `unix`, puisque Trombone Champ est toujours une application Windows fonctionnant sous Proton.
 
- - Save and log files are stored in your Steam folder within Proton's compatibility folders.
+ - Les fichiers log et de sauvegarde sont stockés dans votre dossier Steam, dans les dossiers de compatibilité de Proton.
 
     - On Steam Deck this can be found at: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
     - On other Linux flavors you can run `locate -r /Holy Wow$` from the terminal if you're unsure of where your Steam folder is.
