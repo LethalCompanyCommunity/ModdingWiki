@@ -1,7 +1,7 @@
 # MODの導入方法
 ---
 
-?> もし動画による解説をご希望でしたら、VorgunTheBeta氏が投稿した[MODとカスタム音源の導入方法を説明している動画](https://youtu.be/pSwNSGx-P5c)をご覧ください。(※英語).
+?> もし動画による解説をご希望でしたら、VorgunTheBeta氏が投稿した[MODとカスタム音源の導入方法を説明している動画](https://youtu.be/pSwNSGx-P5c)をご覧ください。(※英語)
 
 ?> このガイドの冒頭部分はLinuxとSteam Deckにも対応しています！ 詳しい内容については [このガイドの末尾](#linuxsteam-deck-specific-tips)をご確認ください。
 
