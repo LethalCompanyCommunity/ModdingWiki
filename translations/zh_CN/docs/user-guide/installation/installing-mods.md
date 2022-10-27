@@ -49,34 +49,34 @@ BepInEx安装完成之后，你就可以开始下载一些特定的mod了。[Tro
 
 ## Linux/Steam Deck 相关
 <details closed>
-<summary>Expand</summary>
+<summary>展开...</summary>
 
-The process of installing BepInEx is largely the same as on Windows listed above, however there are some extra things to be aware of first:
+安装BepInEx 的过程与上面列出的 Windows 版本基本相同，但还有一些额外的东西需要首先了解：
 
- - To follow the guide, Steam Deck users will need to switch to Desktop Mode by holding down the power button and selecting `Desktop Mode` from the menu.
+ - 在按照指南进行操作之前Steam Deck用户需要按住电源按钮，并从菜单中选择`Desktop Mode/桌面模式`来切换到桌面模式。
 
- - Steam Deck users will need to install the game to the internal storage, as BepInEx will not load from the microSD card.
+ - Steam Deck用户将需要将游戏安装到内部存储，因为BepInEx无法从microSD卡中加载。
 
- - As stated earlier, you will still need to install the `x64` Windows version of BepInEx, not the `unix` version, as Trombone Champ is still a Windows application running under Proton.
+ - 如前所述，您仍然需要安装 `x64` Windows 版本的 BepInEx，而不是 `unix` 版本，因为Trombone Champ仍然是一个在 Proton环境下运行的Windows应用程序。
 
- - Save and log files are stored in your Steam folder within Proton's compatibility folders.
+ - 存档与日志文件存储在您的Proton兼容文件夹内的Steam文件夹中。
 
-    - On Steam Deck this can be found at: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
-    - On other Linux flavors you can run `locate -r /Holy Wow$` from the terminal if you're unsure of where your Steam folder is.
+    - 在Steam Deck上的位置如下： `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
+    - 在其他基于Linux的系统上，如果您不确定您Steam 文件夹的位置，您可以从终端中运行`locate -r /Holy Wow$`
 
-You will also need to add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your game's launch options. To do this, right click the game in Steam and click `Properties`. Unlike on Windows, Proton won't load BepInEx's files unless specifically instructed to here.
+您还需要将 `WINEDLLOVERRIDES="winhttp=n,b" %command%` 添加到您的游戏启动项中。 右键单击Steam中的游戏，然后单击 `Properties/属性`。 与Windows不同的是，除非有明确的命令，Proton不会加载BepInEx的相关文件。
 
-![Steam Properties Preview](../docs/files/linuxsteamproperties.png)
+![Steam属性预览](../docs/files/linuxsteamproperties.png)
 
-Once added, BepInEx should now work! Install your mods [as instructed above](##installation) to get custom songs working.
+到这一步，BepInEx应该已经可以正常工作了！ 按照[上方的教程](##installation)安装您的mod，以使自制谱面能正常运行。
 
-### Video Backgrounds {docsify-ignore}
+### 视频背景 {docsify-ignore}
 
-Some custom songs will include videos for their backgrounds, and the default Proton install cannot play these back. If you want these to work, you can install `GE-Proton` using [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/). This is a version of Proton that includes some additional features, including the ability to play back video formats that Valve are unable to support officially.
+一些自制谱面可能包含视频文件，默认的Proton设置无法播放。 如果您想要这些视频文件正常播放，可以使用[ProtonUp-Qt](https://davidotek.github.io/protonup-qt/)安装`GE-Proton`。 这是一个包含一些额外功能的Proton版本，包括能够播放Valve官方无法支持的视频格式。
 
-We recommend following [this guide created by GamingOnLinux](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) for instructions on how to use ProtonUp-Qt and install `GE-Proton`.
+我们建议参考[由GamingOnLinux编写的指南](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) ，用于说明如何使用ProtonUp-Qt安装 `GE-Proton`。
 
-!> Even with GE-Proton, you may still experience some issues with video playback depending on your setup. </details>
+！> 即便使用GE-Proton, 您仍然可能会遇到一些视频播放方面的问题，这取决于您的设置。 </details>
 
 ## 安装自制谱面 {docsify-ignore}
 
