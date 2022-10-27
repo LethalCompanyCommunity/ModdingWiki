@@ -22,15 +22,15 @@
 > 
 > **法语：** MrKegg, H3ITO, slaw
 > 
-> **German:** KlosRadieschen
+> **德语：** KlosRadieschen
 > 
-> **Italian:** Palleuomo, gardaviolenta
+> **意大利语：** Palleuomo, gardaviolenta
 > 
 > **葡萄牙语(巴西)：** NekoDinner
 > 
 > **西班牙语：** dakar665, BrookeAFK
 > 
-> **Ukrainian:** sw1ft
+> **乌克兰语：** sw1ft
 
 ?> **开源与隐私**  
 [本指南在 GitHub上是开源的。](https://github.com/tc-mods/TromboneChampModdingWiki)  它是在 [ISC 许可证](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md) 下被授权的。
