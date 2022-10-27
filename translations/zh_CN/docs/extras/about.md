@@ -20,7 +20,7 @@
 > 
 > **荷兰语：** VorgunTheBeta
 > 
-> **French:** MrKegg, H3ITO, slaw
+> **法语：** MrKegg, H3ITO, slaw
 > 
 > **German:** KlosRadieschen
 > 
