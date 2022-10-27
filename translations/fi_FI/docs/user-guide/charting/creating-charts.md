@@ -1,56 +1,56 @@
-# Creating Charts
+# Karttojen Luonti
 ---
 
-?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
+?> Jos haluat videotutoriaaleja, NyxTheShieldilla on [stream-arkisto](https://www.youtube.com/watch?v=ig27SlJveGs), joka selittää yksityiskohtaisesti kaikki kartoitusprosessin vaiheet.
 
-## Basics
+## Perusteet
 ### Midi Editor/DAW
-Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
+Kartat tehdään luomalla midi tiedosto ja viemällä ne [MIDI muuntimen](#converting-midi-to-map-file) läpi.
 
-Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Midi nuotit tulisi olla 48 - 72 asteikon välillä toimiakseen pelin kanssa.<br>**HUOM:** Erilaiset editorit käyttävät pianolle erilaisia arvoja.
 
-Some free, verified to work midi editors include:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (Range: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: C4-C6)
+Jotkut ilmaiset, todennettu toimimaan midi editorit ovat:
+- [Reaper](https://www.reaper.fm/download.php)* (Asteikko: C3-C5)
+- [LMMS](https://lmms.io/download#windows) (Asteikko: C3-C5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Asteikko: C4-C6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Asteikko: C4-C6)
 
-<sub>*Full software is not free, but has a free trial that works for charting.</sub><br> <sub>**Exports notes into MIDI track 2 by default, which makes it incompatible with Midi2TromboneChamp by default.</sub><br> <sub>†The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
+<sub>*Täysi ohjelmisto ei ole ilmainen, mutta on ilmainen kokeiluversio, joka toimii kartoitukseen.</sub><br> <sub>**Vie nuotit MIDI radalle 2 oletuksena, mikä tekee siitä yhteensopimattoman Midi2TromboneChampin kanssa.</sub><br> <sub>†FL Studio kokeiluversio ei salli sinun viedä MIDIä mutta voit kiertää tämän tallentamalla projektin tiedoston ja käyttämällä <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
 
 <h4 spaces-before="0">
-  Reaper Project
+  Reaper Projekti
 </h4>
 
 <p spaces-before="0">
-  If you're not sure which editor to use, Reaper is recommended as there's a custom Trombone Champ project file that comes with:
+  Jos et ole varma mitä editoria käyttäisi, Reaper on suositeltava, koska siinä on oma Trombone Champ projektitiedosto, joka sisältää:
 </p>
 
 <ul>
   <li>
-    A basic explanation on how to use the controls of Reaper (in English)
+    Perusselitys siitä, miten käyttää Reaperia (englanniksi)
   </li>
   <li>
-    Preconfigured settings
+    Esimääritellyt asetukset
   </li>
   <li>
-    Example MIDI
+    Esimerkki MIDI
   </li>
 </ul>
 
 <p spaces-before="0">
-  The project can be <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">downloaded here</a>.
+  Projekti voidaan <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">ladata täältä</a>.
 </p>
 
 <h3 spaces-before="0">
-  Normal Notes
+  Tavalliset Nuotit
 </h3>
 
 <p spaces-before="0">
-  Normal notes are created in the midi editor and look the same in-game. Make sure to leave a gap in time between notes!
+  Normaalit nuotit luodaan midi editoriin ja näyttävät samalta pelin sisällä. Varmista, että jätät aukon nuottien väliin!
 </p>
 
 <h3 spaces-before="0">
-  Slide Notes
+  Liuku Nuotit
 </h3>
 
 <p spaces-before="0">
