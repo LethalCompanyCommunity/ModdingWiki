@@ -1,13 +1,13 @@
-# Chart Backgrounds
+# Kartan Taustat
 ---
 
-Backgrounds are an important feature of a chart, and there's a few different types (in order of complexity):
+Taustat ovat tärkeä osa karttaa, ja niitä on muutamia eri tyyppejä (monimutkaisuus järjestyksessä):
 
 ### .png
 
-If you want a simple, easy background, this is what's recommended.
+Jos haluat yksinkertaisen, helpon taustan, tämä on mitä suositellaan.
 
-Simply put a `1920x1080` image named `bg.png` in your song's folder.
+Laita vain `1920x1080` kuva nimeltä `bg.png` kappaleesi kansioon.
 
 You can use non-`1920x1080` images, but it might behave weirdly, as unity sprite scale is based on image resolution.
 
