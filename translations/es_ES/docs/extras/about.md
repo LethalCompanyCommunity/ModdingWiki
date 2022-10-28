@@ -32,7 +32,7 @@ Esta guía está escrita principalmente por [Bobbie](https://twitter.com/VRBobbi
 > 
 > **Ucraniano:** sw1ft
 
-?> **Open Source and Privacy**  
-[This guide is open source on GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). It is licensed under the [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
+?> **Código abierto y Privacidad**  
+[Esta guía es de código abierto en GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). Está licenciado bajo la [Licencia ISC](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
 
-?> **Disclaimer:** This product is an unofficial fanwork not affiliated with Trombone Champ or Holy Wow Studios and is not endorsed or otherwise sponsored by Holy Wow Studios.
+?> **Aviso legal:** Este producto es un fanwork no oficial no afiliado con Trombone Champ o Holy Wow Studios y no es apoyado o patrocinado por Holy Wow Studios.
