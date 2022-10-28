@@ -1,6 +1,6 @@
 # Sobre esta guía
 ---
-This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+Esta guía está escrita principalmente por [Bobbie](https://twitter.com/VRBobbie), con ayuda y consejo de otros escritores y wikis. La guía fue inspirada por [bsmg.wiki](https://bsmg.wiki).
 
 > ## Créditos
 > 
@@ -8,7 +8,7 @@ This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with ass
 > 
 > **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Personal de Nintendo Homebrew Discord (creadores de la guía original)**
 > 
-> --- Thank you to [everyone else](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
+> --- Gracias a [ los demás](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) que contribuyeron a la guía en GitHub.
 >
 > ## Creditos de Desarrollador / Herramienta
 > 
@@ -20,17 +20,17 @@ This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with ass
 > 
 > **Neerlandés:** VorgunTheBeta
 > 
-> **French:** MrKegg, H3ITO, slaw
+> **Francés:** MrKegg, H3ITO, slaw
 > 
-> **German:** KlosRadieschen
+> **Alemán:** KlosRadieschen
 > 
-> **Italian:** Palleuomo, gardaviolenta
+> **Italiano:** Palleuomo, gardaviolenta
 > 
 > **Portugués (brasileño):** NekoDinner
 > 
 > **Español:** dakar665, BrookeAFK
 > 
-> **Ukrainian:** sw1ft
+> **Ucraniano:** sw1ft
 
 ?> **Open Source and Privacy**  
 [This guide is open source on GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). It is licensed under the [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
