@@ -3,7 +3,7 @@
 
 ?> Si prefieres tutoriales en vídeo, VorgunTheBeta tiene [un vídeo explicando como instalar mods y canciones personalizadas](https://youtu.be/pSwNSGx-P5c).
 
-?> The start of this guide also works for Linux and Steam Deck! Make sure to [read the end](#linuxsteam-deck-specific-tips) for additional details.
+?> ¡El inicio de esta guía también funciona para Linux y el Steam Deck! Asegúrate de [leer el final](#linuxsteam-deck-specific-tips) para detalles adicionales.
 
 ## Encontrando Ubicación de Instalación
 1. Abre Steam y haz clic derecho en Trombone Champ. Luego, ve a `Administrar > Explorar archivos locales`.
@@ -21,7 +21,7 @@
 
 ![Vista previa de extracción de BepInEx](../docs/files/bepinexextract.png)
 
-!> Por favor, asegúrate de que has descargado la versión `x64` de BepInEx. Las versiones `unix` y `x86` harán que tu juego no funcione correctamente. This also applies to users on Linux/Steam Deck.
+!> Por favor, asegúrate de que has descargado la versión `x64` de BepInEx. Las versiones `unix` y `x86` harán que tu juego no funcione correctamente. Esto también se aplica a los usuarios en Linux/Steam Deck.
 
 !> **IMPORTANTE:** Extraer BepInEx *directamente* en la carpeta de tu juego como se muestra en la imagen superior. Si lo has hecho correctamente, tu carpeta del juego debería verse como la imagen de abajo.
 
@@ -47,9 +47,9 @@ Como probablemente quieres instalar canciones personalizadas, esta sección usar
 
 4. Ejecute Trombone Champ una vez para inicializar archivos necesarios para ese mod.
 
-## Linux/Steam Deck Tips
+## Consejos de Linux/Steam Deck
 <details closed>
-<summary>Expand</summary>
+<summary>Ampliar</summary>
 
 The process of installing BepInEx is largely the same as on Windows listed above, however there are some extra things to be aware of first:
 
