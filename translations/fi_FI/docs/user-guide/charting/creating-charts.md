@@ -58,7 +58,7 @@ Jotkut ilmaiset, todennettu toimimaan midi editorit ovat:
 </p>
 
 <p spaces-before="0">
-  <img src="../docs/files/slide1.png" alt="Slide Note Example" />
+  <img src="../docs/files/slide1.png" alt="Liuku Nuotti Esimerkki" />
 </p>
 
 <p spaces-before="0">
@@ -70,7 +70,7 @@ Jotkut ilmaiset, todennettu toimimaan midi editorit ovat:
 </p>
 
 <p spaces-before="0">
-  <img src="../docs/files/slide2.png" alt="Multiple Slide Note Example" />
+  <img src="../docs/files/slide2.png" alt="Useiden Liukunuottien Esimerkki" />
 </p>
 
 <h2 spaces-before="0">
@@ -137,25 +137,25 @@ Jotkut ilmaiset, todennettu toimimaan midi editorit ovat:
   
   <li>
     <p spaces-before="0">
-      Musiikkikappaleesi pitäisi olla .ogg-tiedosto. Kappaleen keston on oltava kirjoittamisen aikaan pidempi kuin kappaleen päätepiste, tai laulu jää jumiin eikä koskaan loppuu. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file <code>song.ogg</code>.
+      Musiikkikappaleesi pitäisi olla .ogg-tiedosto. Kappaleen keston on oltava kirjoittamisen aikaan pidempi kuin kappaleen päätepiste, tai laulu jää jumiin eikä koskaan loppuu. Voit käyttää Audacityn kaltaista ohjelmistoa asettaksesi hiljaisuuden kappaleen alkuun, jotta voit saada sen syncaamaan midin kanssa. Nimeä tiedosto <code>song.ogg</code>.
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Move the ogg file into the same folder as <code>song.tmb</code>.
+      Siirrä ogg-tiedosto samaan kansioon kuin <code>song.tmb</code>.
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Follow the <a href="installing-songs">Custom Song Installation instructions</a> to test it.
+      Testaa sitä noudattamalla <a href="installing-songs">Custom kappaleen asennusohjeita</a>.
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      <a href="chart-backgrounds">Add a background!</a>
+      <a href="chart-backgrounds">Lisää tausta!</a>
     </p>
   </li>
 </ol>
