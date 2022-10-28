@@ -4,16 +4,16 @@
 ?> Si prefieres tutoriales en video, NyxTheShield tiene [un archivo de stream](https://www.youtube.com/watch?v=ig27SlJveGs) que explica cada paso del proceso de mapeado en detalle.
 
 ## Básicos
-### Midi Editor/DAW
-Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
+### Editor Midi/DAW
+Los mapas se hacen creando un archivo midi y ejecutándolo en un [convertidor MIDI](#converting-midi-to-map-file).
 
-Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Notas Midi deben estar en el rango de 48 a 72 para coincidir con el juego.<br>**NOTA:** Diferentes editores usan diferentes valores en el piano para este rango.
 
 Algunos editores midi gratis, verificados que funcionan incluyen:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (Range: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: C4-C6)
+- [Reaper](https://www.reaper.fm/download.php)* (Rango: C3-C5)
+- [LMMS](https://lmms.io/download#windows) (Rango: C3-C5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Rango: C4-C6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Rango: C4-C6)
 
 <sub>*Full software is not free, but has a free trial that works for charting.</sub><br> <sub>**Exports notes into MIDI track 2 by default, which makes it incompatible with Midi2TromboneChamp by default.</sub><br> <sub>†The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
 
