@@ -1,13 +1,13 @@
 # 譜面の背景設定
 ---
 
-Backgrounds are an important feature of a chart, and there's a few different types (in order of complexity):
+背景の設定は譜面作成において大事なことで、使用できるファイルの種類はいくつかあります (簡単なものから説明):
 
 ### .png
 
-If you want a simple, easy background, this is what's recommended.
+シンプルで簡単な背景が欲しいときはPNGファイルがオススメです。
 
-Simply put a `1920x1080` image named `bg.png` in your song's folder.
+準備する画像の解像度はフルHD(1920x1080)です。ファイル名は「bg」`bg.png` にしてカスタム音源のフォルダに入れてください。
 
 You can use non-`1920x1080` images, but it might behave weirdly, as unity sprite scale is based on image resolution.
 
