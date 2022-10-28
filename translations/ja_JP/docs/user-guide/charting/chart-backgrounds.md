@@ -5,19 +5,19 @@
 
 ### .png
 
-シンプルで簡単な背景が欲しいときはPNGファイルがオススメです。
+シンプルで簡単な背景が欲しいときはPNGファイル(画像)がオススメです！
 
-準備する画像の解像度はフルHD(1920x1080)です。ファイル名は「bg」`bg.png` にしてカスタム音源のフォルダに入れてください。
+使用する画像の解像度はフルHD(1920x1080)です。ファイル名を「bg」`bg.png` にしたらカスタム音源のフォルダに入れてください。
 
-You can use non-`1920x1080` images, but it might behave weirdly, as unity sprite scale is based on image resolution.
+`1920x1080`以外の解像度でも使用できますが、Unityスプライトのスケールが画像の解像度に基づいているのでおかしなことになる可能性があるのでご注意ください。
 
 ### .mp4
 
-If you want a slightly more interesting background, a music video background, or want to prerender a moving background, you can also use a video!
+もう少し背景をおもしろくしたかったり、ミュージックビデオを流したいときはMP4ファイル(動画)がオススメです！
 
-Simply put an mp4 named `bg.mp4` in your song's folder.
+使用するMP4ファイルの名前を「bg」`bg.mp4` にしたらカスタム音源のフォルダに入れてください。
 
-You can use any resolution of video, but **please** try to keep the size reasonable - aim for under 50MB. If your video's size is too high, you can always lower the resolution in your favorite video editor.
+PNGとは違い、動画の解像度に指定はありませんが動画のファイル容量は50MB未満を目安にするよう**お願いします**。 もし動画のファイル容量が大きい場合、編集ソフトなどで解像度を下げましょう。
 
 ### .trombackground
 
