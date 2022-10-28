@@ -51,7 +51,7 @@ Como probablemente quieres instalar canciones personalizadas, esta sección usar
 <details closed>
 <summary>Ampliar</summary>
 
-The process of installing BepInEx is largely the same as on Windows listed above, however there are some extra things to be aware of first:
+El proceso de instalación de BepInEx es en gran medida el mismo que lo de Windows enumerado anteriormente, pero hay que tener en cuenta algunas cosas adicionales antes:
 
  - To follow the guide, Steam Deck users will need to switch to Desktop Mode by holding down the power button and selecting `Desktop Mode` from the menu.
 
