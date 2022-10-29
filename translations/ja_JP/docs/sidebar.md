@@ -6,7 +6,7 @@
 - **創作譜面**
 - [譜面の作成方法](creating-charts)
 - [譜面の背景設定](chart-backgrounds)
-- [その他の譜面作成に関するお知らせ](misc-charting-info)
+- [その他の譜面作成に関する情報](misc-charting-info)
 - **おまけ**
 - [よくある質問 (FAQ)](faq)
 - **外部リンク**
