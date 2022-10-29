@@ -23,6 +23,6 @@ PNGとは違い、動画の解像度に指定はありませんが動画のフ�
 
 もっとプレイするみんなを驚かせるような背景が欲しいとき、イベントを使いたいとき、譜面の見え方をより独創的にしたいときは `Trombackground` ファイルを使用することを強くオススメします！
 
-This will give you the full power of the Unity Editor, and the amount of things you can do is significantly higher than either of the other methods.
+これを使うとUnityエディターの機能をフル活用することができ、他のやり方と比べて出来ることも格段に増えます。
 
-The instructions are currently found in a detailed readme on the Unity Project GitHub: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
+現在このUnityプロジェクトはGitHubに詳しい説明があるのでこちらをご覧ください: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
