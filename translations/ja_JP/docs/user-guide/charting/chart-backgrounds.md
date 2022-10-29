@@ -13,7 +13,7 @@
 
 ### .mp4
 
-もう少し背景をおもしろくしたかったり、ミュージックビデオを流したいときはMP4ファイル(動画)がオススメです！
+もう少し背景をおもしろくしたいとき、ミュージックビデオを流したいときはMP4ファイル(動画)がオススメです！
 
 使用するMP4ファイルの名前を「bg」`bg.mp4` にしたらカスタム音源のフォルダに入れてください。
 
@@ -21,7 +21,7 @@ PNGとは違い、動画の解像度に指定はありませんが動画のフ�
 
 ### .trombackground
 
-If you want a background that'll blow people away, want to use events, or want to have full creative control of how your chart looks, it's highly recommended to use a `.trombackground` file.
+もっとプレイするみんなを驚かせるような背景が欲しいとき、イベントを使いたいとき、譜面の見え方をより独創的にしたいときは `Trombackground` ファイルを使用することを強くオススメします！
 
 This will give you the full power of the Unity Editor, and the amount of things you can do is significantly higher than either of the other methods.
 
