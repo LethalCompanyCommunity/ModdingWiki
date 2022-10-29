@@ -7,13 +7,13 @@
 ### MIDIエディター / DAW
 譜面はMIDIファイルを作成し、[MIDIコンバーター](#converting-midi-to-map-file)を使って変換することで作ることができます。
 
-Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+MIDIの音符(ノート)の高さはゲームに合わせて48～72の範囲である必要があります。<br>**注意:** MIDIエディターによってはこの範囲でのピアノの数値が異なるかもしれません。
 
-Some free, verified to work midi editors include:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (Range: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: C4-C6)
+動作確認済みでフリーで使えるMIDIエディターには以下のようなものがあります:
+- [Reaper](https://www.reaper.fm/download.php)* (対応する範囲: C3-C5)
+- [LMMS](https://lmms.io/download#windows) (対応する範囲: C3-C5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (対応する範囲: C4-C6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (対応する範囲: C4-C6)
 
 <sub>*Full software is not free, but has a free trial that works for charting.</sub><br> <sub>**Exports notes into MIDI track 2 by default, which makes it incompatible with Midi2TromboneChamp by default.</sub><br> <sub>†The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
 
