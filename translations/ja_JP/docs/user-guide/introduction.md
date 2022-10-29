@@ -2,7 +2,7 @@
 ---
 Trombone Champとは、Holy Wow Studiosが開発、販売している音ゲーの要素を取り入れたバカゲーである。[Steamにて発売中](https://store.steampowered.com/app/1059990/Trombone_Champ/)
 
-当Wikiは、トロンボーン演奏をより良く楽しむために有志によって作成された非公式MODや創作譜面の導入、またそれらの製作に役立つ情報をまとめています。
+当Wikiは、トロンボーン演奏をより良く楽しむために有志によって作成された非公式のMODやカスタム音源の導入、またそれらの作成に役立つ情報をまとめています。
 
 ?> **Discordヘルプ** このガイドに関するお問い合わせは[Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ)内の**#modding-support**チャンネルへお越しくださいませ。(※英語) まず事前に[よくある質問 (FAQ)](faq)をお読みいただき、すでに回答がないかご確認ください。
 
