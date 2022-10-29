@@ -1,11 +1,11 @@
-# Creating Charts
+# 譜面の作成方法
 ---
 
-?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
+?> もし動画による解説をご希望でしたら、NyxTheShield氏が配信した[生放送の録画](https://www.youtube.com/watch?v=ig27SlJveGs)をご覧ください。譜面作成のすべての工程を詳しく説明しています。
 
-## Basics
-### Midi Editor/DAW
-Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
+## 基本
+### MIDIエディター / DAW
+譜面はMIDIファイルを作成し、[MIDIコンバーター](#converting-midi-to-map-file)を使って変換することで作ることができます。
 
 Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
 
