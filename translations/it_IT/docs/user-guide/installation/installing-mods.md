@@ -3,7 +3,7 @@
 
 ?> Se preferisci i video tutorial, VorgunTheBeta ha realizzato [un video che spiega come installare le mod e i brani personalizzati](https://youtu.be/pSwNSGx-P5c).
 
-?> The start of this guide also works for Linux and Steam Deck! Make sure to [read the end](#linuxsteam-deck-specific-tips) for additional details.
+?> L'inizio di questa guida funziona anche per Linux e Steam Deck! Assicurati di [leggere la fine](#linuxsteam-deck-specific-tips) per ulteriori dettagli.
 
 ## Trovare la cartella di installazione
 1. Apri Steam e clicca col destro su Trombone Champ. Quindi, vai su `Gestisci> Sfoglia i file locali`.
@@ -21,7 +21,7 @@
 
 ![Anteprima Estrai BepInEx](../docs/files/bepinexextract.png)
 
-> Assicurati di aver scaricato la versione `x64` di BepInEx. e versioni `unix` e `x86` impediscono al gioco di funzionare correttamente. This also applies to users on Linux/Steam Deck.
+> Assicurati di aver scaricato la versione `x64` di BepInEx. e versioni `unix` e `x86` impediscono al gioco di funzionare correttamente. Questo si applica anche per utenti di Linux/Steam Deck.
 
 !> **IMPORTANTE:** Estrarre BepInEx *direttamente* nella cartella del gioco come mostrato nell'immagine qui sopra. Se l'operazione è stata eseguita correttamente, la cartella del gioco dovrebbe apparire come nell'immagine qui sotto.
 
@@ -47,9 +47,9 @@ Siccome probabilmente vorrai installare brani personalizzati, questa sezione use
 
 4. Avvia Trombone Champ una volta per inizializzare i file necessari per la mod.
 
-## Linux/Steam Deck Tips
+## Consigli per Linux/Steam Deck
 <details closed>
-<summary>Expand</summary>
+<summary>Espandi</summary>
 
 The process of installing BepInEx is largely the same as on Windows listed above, however there are some extra things to be aware of first:
 
@@ -66,17 +66,17 @@ The process of installing BepInEx is largely the same as on Windows listed above
 
 You will also need to add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your game's launch options. To do this, right click the game in Steam and click `Properties`. Unlike on Windows, Proton won't load BepInEx's files unless specifically instructed to here.
 
-![Steam Properties Preview](../docs/files/linuxsteamproperties.png)
+![Anteprima delle Proprietà di Steam](../docs/files/linuxsteamproperties.png)
 
-Once added, BepInEx should now work! Install your mods [as instructed above](##installation) to get custom songs working.
+Once added, BepInEx should now work! Installa le tue mod [come indicato sopra](##installation)affinché le canzoni funzionino.
 
-### Video Backgrounds {docsify-ignore}
+### Video in Background {docsify-ignore}
 
-Some custom songs will include videos for their backgrounds, and the default Proton install cannot play these back. If you want these to work, you can install `GE-Proton` using [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/). This is a version of Proton that includes some additional features, including the ability to play back video formats that Valve are unable to support officially.
+Alcune canzoni possono includere video in background, e l'installazione di default di Proton non può riprodurli. Se vuoi che funzioni, puoi installare `GE-Proton` usando [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/). Questa versione di Proton include funzionalità aggiuntive, inclusa la possibilità di riprodurre video in formati che Valve non supporta ufficialmente.
 
-We recommend following [this guide created by GamingOnLinux](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) for instructions on how to use ProtonUp-Qt and install `GE-Proton`.
+Ti raccomandiamo la seguente [guida creata da GamingOnLinux](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) per l'utilizzo di ProtonUp-Qt e per l'installazione di `GE-Proton`.
 
-!> Even with GE-Proton, you may still experience some issues with video playback depending on your setup. </details>
+!> Anche con GE-Proton, potresti ancora avere problemi con i video in background che dipendono dal tuo setup. </details>
 
 ## Installare Brani Personalizzati {docsify-ignore}
 
