@@ -10,6 +10,7 @@
   - [Français](/fr_FR/)
   - [简体中文](/zh_CN/)
   - [Italiano](/it_IT/)
+  - [Suomi](/fi_FI/)
 <!---  - [日本語](/ja_JP/) -->
 <!---  - [Dansk](/da_DK/) -->
 <!---  - [Norsk](/no_NO/) -->
