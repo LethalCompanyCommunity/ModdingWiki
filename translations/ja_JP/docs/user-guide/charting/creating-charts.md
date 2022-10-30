@@ -78,25 +78,25 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて48～72の範囲で�
 </h2>
 
 <p spaces-before="0">
-  ?> Midi2TromboneChamp以外に2つのMIDIコンバーターが用意されています！ <br>しかしまだベータ版のため、<strong x-id="1">バグがあるかもしれません</strong>。そのためこのガイドではまだMidi2TromboneChampをメインに書いています。 <br>The process for these new converters is similar enough that this guide should still be usable. <br>If you want to try a more up-to-date conversion program, feel free to give a new converter a try: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - a unity-based sequel to Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - a web-based alternative with new features.
+  ?> Midi2TromboneChamp以外に2つのMIDIコンバーターが用意されています！ <br>しかしまだベータ版のため、<strong x-id="1">バグがあるかもしれません</strong>。そのためこのガイドではまだMidi2TromboneChampをメインに書いています。 <br>これらのMIDIコンバーターの使用方法は似たような感じなのでこのガイドをそのまま参考にすることができます。 <br>もし最新の変換プログラムを試したい場合は、新しいコンバーターを気軽に試してみてください: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - Unityをベースに作成されたブラウザ版Midi2TromboneChamp <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - 新機能を搭載したウェブベースのコンバーター
 </p>
 
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Go to <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
+      <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> に移動し、<code>Midi2TromboneChamp.exe</code> をクリックしてダウンロードしてください。
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Run it. In the file selector it opens, select your midi file. Click Open.
+      起動し、 ファイル選択画面が開くのでMIDIファイル(.mid)を選択します。 「開く」をクリック
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Fill out the fields:
+      設定項目を入力してください:
     </p>
     <ul>
       <li>
