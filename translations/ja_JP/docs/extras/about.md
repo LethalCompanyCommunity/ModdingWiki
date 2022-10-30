@@ -20,9 +20,11 @@
 > 
 > **オランダ語:** VorgunTheBeta
 > 
-> **フランス語:** MrKegg, H3ITO
+> **フランス語:** MrKegg, H3ITO, slaw
 > 
-> **ドイツ語:** King Dice
+> **ドイツ語:** KlosRadieschen
+> 
+> **イタリア語:** Palleuomo, gardaviolenta
 > 
 > **ポルトガル語 (ブラジル語):** NekoDinner
 > 

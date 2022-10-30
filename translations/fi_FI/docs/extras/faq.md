@@ -1,6 +1,6 @@
-# Frequently Asked Questions
+# Usein Kysytyt Kysymykset
 ---
 
-## Baboon?
+## Paviaani?
 
 🐒

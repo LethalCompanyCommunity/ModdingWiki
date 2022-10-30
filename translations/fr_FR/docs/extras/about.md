@@ -6,7 +6,7 @@ Ce guide est principalement écrit par [Bobbie](https://twitter.com/VRBobbie), a
 > 
 > ### Écrivains
 > 
-> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Personnel Nintendo Homebrew Discord (créateurs de guide original)**
+> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Personnel du serveur Discord Nintendo Homebrew (créateurs du guide original)**
 > 
 > --- Merci à [tous les autres](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors)  qui ont contribué au guide sur GitHub.
 >
@@ -20,9 +20,11 @@ Ce guide est principalement écrit par [Bobbie](https://twitter.com/VRBobbie), a
 > 
 > **Néerlandais :** VorgunTheBeta
 > 
-> **Français :** MrKegg, H3ITO
+> **Français :** MrKegg, H3ITO, slaw
 > 
-> **Allemang :** King Dice
+> **Allemand :** KlosRadieschen
+> 
+> **Italien :** Palleuomo, gardaviolenta
 > 
 > **Portugais (brésilien) :** NekoDinner
 > 

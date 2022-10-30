@@ -1,27 +1,27 @@
-# Installing Songs
+# Kappaleiden Asentaminen
 ---
-?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
+?> Jos haluat videotutoriaaleja, VorgunTheBeta on [tehnyt videon, jossa kerrotaan, miten modit ja custom kappaleet asennetaan](https://youtu.be/pSwNSGx-P5c).
 
-!> **IMPORTANT:** Make sure you've followed the [mod installation guide](installing-mods) to install BepInEx and TrombLoader before continuing!
+!> **TÄRKEÄÄ:** Varmista, että olet seurannut [modien asennusopasta](installing-mods) asentaaksesi BepInExin ja TrombLoaderin ennen jatkamista!
 
-## Finding Songs
+## Kappaleiden Löytäminen
 
-Custom songs can be found in the `#custom-charts` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
+Custom kappaleita löytyy `#custom-charts` kanavasta [Trombone Champ Modding Discordissa](https://discord.gg/KVzKRsbetJ).
 
-If you'd like a more compact list, TheGlitched64 has created [a spreadsheet containing information on every custom chart](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing).
+Jos haluat kompaktimman listan, TheGlitched64 on luonut [taulukon, joka sisältää tietoa jokaisesta custom kartasta](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing).
 
-## Installation
+## Asennus
 
-1. Download the custom song - it will generally be some kind of archive file, usually ending in `.zip`.
+1. Lataa custom kappale - se on yleensä jonkinlainen arkisto tiedosto, yleensä päättyy `.zip`.
 
-2. Extract the contents of the archive file directly into the `BepInEx/CustomSongs` folder that got created when you first ran the game with TrombLoader installed.
+2. Pura arkiston sisältö suoraan `BepInEx/CustomSongs` -kansioon, joka luotiin kun ensin käynnistit pelin TrombLoader asennettuna.
 
-![BepInEx Extraction Preview](../docs/files/customsongextract.png)
+![BepInExin Purkamisen Esikatselu](../docs/files/customsongextract.png)
 
-3. Double check that the song is just in one folder instead of nested in multiple - in this example, all the song's files should be located in `BepinEx/CustomSongs/BakaMitai/`.
+3. Tarkista, että kappale on vain yhdessä kansiossa sen sijaan, että se olisi sisäkkäinen useisiin - tässä esimerkissä, kaikki kappaleen tiedostot on sijoitettava `BepinEx/CustomSongs/BakaMitai/`.
 
-![Correct Extraction Preview](../docs/files/customsongcorrect.png)
+![Oikean Purkamisen Esikatselu](../docs/files/customsongcorrect.png)
 
-### Creating Custom Songs {docsify-ignore}
+### Luodaan Custom Kappaleita {docsify-ignore}
 
-> Check out the [**Charting guide**](creating-charts) for info on creating your own custom charts.
+> Tutustu [**Karttaoppaaseen**](creating-charts) saadaksesi tietoa omien karttojen luomisesta.

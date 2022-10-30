@@ -1,4 +1,4 @@
-# Misc Charting Info
+# その他の譜面作成に関する情報
 ---
 
 ## Note Color

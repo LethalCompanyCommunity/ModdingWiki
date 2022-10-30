@@ -1,6 +1,6 @@
 # Sobre esta guía
 ---
-This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+Esta guía está escrita principalmente por [Bobbie](https://twitter.com/VRBobbie), con ayuda y consejo de otros escritores y wikis. La guía fue inspirada por [bsmg.wiki](https://bsmg.wiki).
 
 > ## Créditos
 > 
@@ -8,7 +8,7 @@ This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with ass
 > 
 > **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Personal de Nintendo Homebrew Discord (creadores de la guía original)**
 > 
-> --- Thank you to [everyone else](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
+> --- Gracias a [ los demás](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) que contribuyeron a la guía en GitHub.
 >
 > ## Creditos de Desarrollador / Herramienta
 > 
@@ -20,9 +20,11 @@ This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with ass
 > 
 > **Neerlandés:** VorgunTheBeta
 > 
-> **Francés:** MrKegg, H3ITO
+> **Francés:** MrKegg, H3ITO, slaw
 > 
-> **Alemán:** King Dice
+> **Alemán:** KlosRadieschen
+> 
+> **Italiano:** Palleuomo, gardaviolenta
 > 
 > **Portugués (brasileño):** NekoDinner
 > 
@@ -30,7 +32,7 @@ This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with ass
 > 
 > **Ucraniano:** sw1ft
 
-?> **Open Source and Privacy**  
-[This guide is open source on GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). It is licensed under the [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
+?> **Código abierto y Privacidad**  
+[Esta guía es de código abierto en GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). Está licenciado bajo la [Licencia ISC](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
 
-?> **Disclaimer:** This product is an unofficial fanwork not affiliated with Trombone Champ or Holy Wow Studios and is not endorsed or otherwise sponsored by Holy Wow Studios.
+?> **Aviso legal:** Este producto es un fanwork no oficial no afiliado con Trombone Champ o Holy Wow Studios y no es apoyado o patrocinado por Holy Wow Studios.

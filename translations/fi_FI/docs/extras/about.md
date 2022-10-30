@@ -1,36 +1,38 @@
-# About This Guide
+# Tietoja Tästä Oppaasta
 ---
-This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+Tämän oppaan on pääasiassa kirjoittanut [Bobbie](https://twitter.com/VRBobbie) muitten eri kirjoittajien ja wikien avulla. Oppaan on inspiroinut [bsmg.wiki](https://bsmg.wiki).
 
-> ## Credits
+> ## Kiitokset
 > 
-> ### Writers
+> ### Kirjoittajat
 > 
-> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)**
+> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discordin henkilökunta (alkuperäiset oppaan luojat)**
 > 
-> --- Thank you to [everyone else](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
+> --- Kiitos [kaikille muille](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) jotka osallistuivat oppaasen kirjoittamiseen GitHubin puolella.
 >
-> ## Developer / Tool Credits
+> ## Kehittäjä / Työkalujen Tekijät
 > 
-> - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
+> - **BepInEx Avustajat** [BepInEx](https://github.com/BepInEx/BepInEx).
 >
-> ## Translation Credits
+> ## Käännösten Tekijät
 > 
-> **Chinese (Simplified):** Derek37, SilverFoxV933
+> **Kiina (yksinkertaistettu):** Derek37, SilverFoxV933
 > 
-> **Dutch:** VorgunTheBeta
+> **Hollanti:** VorgunTheBeta
 > 
-> **French:** MrKegg, H3ITO
+> **Ranska:** MrKegg, H3ITO, slaw
 > 
-> **German:** King Dice
+> **Saksa:** KlosRadieschen
 > 
-> **Portuguese (Brazilian):** NekoDinner
+> **Italia:** Palleuomo, gardaviolenta
 > 
-> **Spanish:** dakar665, BrookeAFK
+> **Portugali (Brasilia):** NekoDinner
 > 
-> **Ukranian:** sw1ft
+> **Espanja:** dakar665, BrookeAFK
+> 
+> **ukrainaksi:** sw1ft
 
-?> **Open Source and Privacy**  
-[This guide is open source on GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). It is licensed under the [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
+?> **Avoin lähdekoodi ja yksityisyyden suoja**  
+[Tämän oppaan lähdekoodi on julkinen GitHubissa](https://github.com/tc-mods/TromboneChampModdingWiki). Se on lisensoitu [ISC lisenssillä](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
 
-?> **Disclaimer:** This product is an unofficial fanwork not affiliated with Trombone Champ or Holy Wow Studios and is not endorsed or otherwise sponsored by Holy Wow Studios.
+?> **Tiedote:** Tämä tuote on epävirallinen faniteos, joka ei liity Trombone Champ tai Holy Wow Studios ja jota Holy Wow Studios ei tue tai muuten sponsoroi.

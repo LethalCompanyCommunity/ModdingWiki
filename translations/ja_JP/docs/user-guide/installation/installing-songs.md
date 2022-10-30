@@ -1,27 +1,27 @@
-# Installing Songs
+# カスタム音源の導入方法
 ---
-?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
+?> もし動画による解説をご希望でしたら、VorgunTheBeta氏が投稿した[MODとカスタム音源の導入方法を説明している動画](https://youtu.be/pSwNSGx-P5c)をご覧ください。(※英語)
 
-!> **IMPORTANT:** Make sure you've followed the [mod installation guide](installing-mods) to install BepInEx and TrombLoader before continuing!
+!> **重要:** BepInExとTrombLoaderをインストールしていなければ[MODの導入方法](installing-mods)のページをご参照ください！
 
-## Finding Songs
+## カスタム音源を見つけよう
 
-Custom songs can be found in the `#custom-charts` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
+カスタム音源は[Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ)の `#custom-charts` チャンネルで見つけることができます。
 
-If you'd like a more compact list, TheGlitched64 has created [a spreadsheet containing information on every custom chart](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing).
+もっとコンパクトなリストをご希望でしたら、TheGlitched64氏が[すべての創作譜面の情報を含むスプレッドシート](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing)を作ってくれました。
 
-## Installation
+## カスタム音源を導入する
 
-1. Download the custom song - it will generally be some kind of archive file, usually ending in `.zip`.
+1. カスタム音源をダウンロードする。(大体は `.zip` の拡張子が付いているアーカイブファイル)
 
-2. Extract the contents of the archive file directly into the `BepInEx/CustomSongs` folder that got created when you first ran the game with TrombLoader installed.
+2. TrombLoaderをインストールした際に生成された`BepInEx内のCustomSongs`フォルダにアーカイブファイル(zip等)を直接解凍する。
 
-![BepInEx Extraction Preview](../docs/files/customsongextract.png)
+![BepInExの解凍 プレビュー](../docs/files/customsongextract.png)
 
-3. Double check that the song is just in one folder instead of nested in multiple - in this example, all the song's files should be located in `BepinEx/CustomSongs/BakaMitai/`.
+3. もし複数のフォルダが重なって[譜面データ、音源、背景データ]が入っていた場合、1つのフォルダにしてください。要確認。この例だと[譜面データ、音源、背景データ]は`BepinEx/CustomSongs/BakaMitai/`の下に置く必要があります。
 
-![Correct Extraction Preview](../docs/files/customsongcorrect.png)
+![Correctの解凍 プレビュー](../docs/files/customsongcorrect.png)
 
-### Creating Custom Songs {docsify-ignore}
+### 譜面の作成方法 {docsify-ignore}
 
-> Check out the [**Charting guide**](creating-charts) for info on creating your own custom charts.
+> 創作譜面を作るための情報は[**譜面の作成方法**](creating-charts)をご覧ください。

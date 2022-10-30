@@ -1,60 +1,60 @@
-# Creating Charts
+# 譜面の作成方法
 ---
 
-?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
+?> もし動画による解説をご希望でしたら、NyxTheShield氏が配信した[生放送の録画](https://www.youtube.com/watch?v=ig27SlJveGs)をご覧ください。譜面作成のすべての工程を詳しく説明しています。
 
-## Basics
-### Midi Editor/DAW
-Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
+## 基本
+### MIDIエディター / DAW
+譜面はMIDIファイルを作成し、[MIDIコンバーター](#converting-midi-to-map-file)を使って変換することで作ることができます。
 
-Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+MIDIの音符(ノーツ)の高さはゲームに合わせて48～72の範囲である必要があります。<br>**注:** MIDIエディターによってはこの範囲でのピアノの数値が異なるかもしれません。
 
-Some free, verified to work midi editors include:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (Range: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: C4-C6)
+動作確認済みでフリーで使えるMIDIエディターには以下のようなものがあります:
+- [Reaper](https://www.reaper.fm/download.php)* (対応する範囲: C3-C5)
+- [LMMS](https://lmms.io/download#windows) (対応する範囲: C3-C5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (対応する範囲: C4-C6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (対応する範囲: C4-C6)
 
-<sub>*Full software is not free, but has a free trial that works for charting.</sub><br> <sub>**Exports notes into MIDI track 2 by default, which makes it incompatible with Midi2TromboneChamp by default.</sub><br> <sub>†The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
+<sub>*有料バージョンもありますが無料のままでも譜面の作成に使えます。</sub><br> <sub>**既定のままだとMIDIトラック2にノーツを書き出すため、Midi2TromboneChampとの互換性がありません。</sub><br> <sub>FL Studioの体験版ではMIDIの書き出しは出来ませんがプロジェクトデータを保存し、<a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a> を使用することで回避できます。</p>
 
 <h4 spaces-before="0">
-  Reaper Project
+  Reaperでのプロジェクト
 </h4>
 
 <p spaces-before="0">
-  If you're not sure which editor to use, Reaper is recommended as there's a custom Trombone Champ project file that comes with:
+  MIDIエディターどれを使えばいいのかわからない、と思っていたら「Reaper」がオススメです！なんと譜面作成の参考になるプロジェクトファイルも配布しています。
 </p>
 
 <ul>
   <li>
-    A basic explanation on how to use the controls of Reaper (in English)
+    Reaperの基本的な操作の説明 (ただし英語)
   </li>
   <li>
-    Preconfigured settings
+    作りやすいようにあらかじめ設定が変更済み
   </li>
   <li>
-    Example MIDI
+    MIDIの例
   </li>
 </ul>
 
 <p spaces-before="0">
-  The project can be <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">downloaded here</a>.
+  プロジェクトファイルは<a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">こちらからダウンロード</a>
 </p>
 
 <h3 spaces-before="0">
-  Normal Notes
+  普通のノーツ
 </h3>
 
 <p spaces-before="0">
-  Normal notes are created in the midi editor and look the same in-game. Make sure to leave a gap in time between notes!
+  通常のノーツはMIDIエディターで作成され、ゲーム内でも同じように見えます。 ノーツとノーツの間には隙間を空けるようにしましょう。
 </p>
 
 <h3 spaces-before="0">
-  Slide Notes
+  スライドするノーツ
 </h3>
 
 <p spaces-before="0">
-  Slides are created by overlapping notes in time. For a pair of overlapping notes, the slide goes from the start of the first note to the start of the second. The overlapping part of the first note is discarded. See this image for an example:
+  スライドはノーツを重ねることで作ることができます。 例えば、2つのノーツが重なっている場合、1つ目のノーツの先頭から2つ目のノーツの先頭までスライドします。 ただし、最初のノーツと重なる部分は消えます。 例としてこちらの画像をご覧ください:
 </p>
 
 <p spaces-before="0">
@@ -62,11 +62,11 @@ Some free, verified to work midi editors include:
 </p>
 
 <p spaces-before="0">
-  If a note ends but the next note starts at the exact same time, they will be connected. This allows you to adjust where the curve of a slide starts. Here's an example of multiple slides connected together:
+  もしノーツが終わっても次のノーツが同じタイミングで始まれば、その2つのノーツは繋がります。 これにより、スライドのカーブの開始位置を調整することができます。 こちらは複数のスライドを繋げた例:
 </p>
 
 <p spaces-before="0">
-  (note: The first straight section is a separate note from the curved section. Its end time is the same as the next one's start time.)
+  (注: 最初の直線部分は曲線部分とは別のノーツであり、 ノーツの終了時間は次のノーツの開始時刻と同じになります)
 </p>
 
 <p spaces-before="0">
@@ -74,29 +74,29 @@ Some free, verified to work midi editors include:
 </p>
 
 <h2 spaces-before="0">
-  Converting Midi to Map File
+  MIDIから譜面データへの変換
 </h2>
 
 <p spaces-before="0">
-  ?> There are two Midi converters available besides Midi2TromboneChamp! <br>Since they're still in beta, <strong x-id="1">they may have bugs</strong>, so this guide is still written for Midi2TromboneChamp. <br>The process for these new converters is similar enough that this guide should still be usable. <br>If you want to try a more up-to-date conversion program, feel free to give a new converter a try: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - a unity-based sequel to Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - a web-based alternative with new features.
+  ?> Midi2TromboneChamp以外に2つのMIDIコンバーターが用意されています！ <br>しかしまだベータ版のため、<strong x-id="1">バグがあるかもしれません</strong>。そのためこのガイドではまだMidi2TromboneChampをメインに書いています。 <br>これらのMIDIコンバーターの使用方法は似たような感じなのでこのガイドをそのまま参考にすることができます。 <br>もし最新の変換プログラムを試したい場合は、新しいコンバーターを気軽に試してみてください: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - Unityをベースに作成されたブラウザ版Midi2TromboneChamp <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - 新機能を搭載したウェブベースのコンバーター
 </p>
 
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Go to <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
+      <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> に移動し、<code>Midi2TromboneChamp.exe</code> をクリックしてダウンロードしてください。
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Run it. In the file selector it opens, select your midi file. Click Open.
+      起動し、 ファイル選択画面が開くのでMIDIファイル(.mid)を選択します。 「開く」をクリック
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Fill out the fields:
+      設定項目を入力してください:
     </p>
     <ul>
       <li>

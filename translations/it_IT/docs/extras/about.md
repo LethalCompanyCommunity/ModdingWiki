@@ -20,9 +20,11 @@ Questa guida è scritta principalmente da [Bobbie](https://twitter.com/VRBobbie)
 > 
 > **Olandese:** VorgunTheBeta
 > 
-> **Francese:** MrKegg, H3ITO
+> **Francese:** MrKegg, H3ITO, slaw
 > 
-> **Tedesco:** King Dice
+> **Tedesco:** KlosRadieschen
+> 
+> **Italiano:** Palleuomo, gardaviolenta
 > 
 > **Portoghese (Brasiliano):** NekoDinner
 > 
@@ -31,6 +33,6 @@ Questa guida è scritta principalmente da [Bobbie](https://twitter.com/VRBobbie)
 > **Ucraino:** sw1ft
 
 ?> **Open Source e Privacy**  
-[Questa guida è open source su GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). È concesso sotto la licenza di [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
+[Questa guida è open Source su GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). È concesso sotto la licenza di [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
 
 ?> **Disclaimer:** Questo prodotto è un'opera non ufficiale creata dai fan e non è affiliato con Trombone Champ o Holy Wow Studios e non è approvato o altrimenti sponsorizzato da Holy Wow Studios.

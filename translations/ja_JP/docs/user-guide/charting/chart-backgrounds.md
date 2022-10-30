@@ -1,28 +1,28 @@
-# マップの背景
+# 譜面の背景設定
 ---
 
-Backgrounds are an important feature of a chart, and there's a few different types (in order of complexity):
+背景の設定は譜面作成において大事なことで、使用できるファイルの種類はいくつかあります (簡単なものから説明):
 
 ### .png
 
-If you want a simple, easy background, this is what's recommended.
+シンプルで簡単な背景が欲しいときはPNGファイル(画像)がオススメです！
 
-Simply put a `1920x1080` image named `bg.png` in your song's folder.
+使用する画像の解像度はフルHD(1920x1080)です。ファイル名を「bg」`bg.png` にしたらカスタム音源のフォルダに入れてください。
 
-You can use non-`1920x1080` images, but it might behave weirdly, as unity sprite scale is based on image resolution.
+`1920x1080`以外の解像度でも使用できますが、Unityスプライトのスケールが画像の解像度に基づいているのでおかしなことになる可能性があるのでご注意ください。
 
 ### .mp4
 
-If you want a slightly more interesting background, a music video background, or want to prerender a moving background, you can also use a video!
+もう少し背景をおもしろくしたいとき、ミュージックビデオを流したいときはMP4ファイル(動画)がオススメです！
 
-Simply put an mp4 named `bg.mp4` in your song's folder.
+使用するMP4ファイルの名前を「bg」`bg.mp4` にしたらカスタム音源のフォルダに入れてください。
 
-You can use any resolution of video, but **please** try to keep the size reasonable - aim for under 50MB. If your video's size is too high, you can always lower the resolution in your favorite video editor.
+PNGとは違い、動画の解像度に指定はありませんが動画のファイル容量は50MB未満を目安にするよう**お願いします**。 もし動画のファイル容量が大きい場合、編集ソフトなどで解像度を下げましょう。
 
 ### .trombackground
 
-If you want a background that'll blow people away, want to use events, or want to have full creative control of how your chart looks, it's highly recommended to use a `.trombackground` file.
+もっとプレイするみんなを驚かせるような背景が欲しいとき、イベントを使いたいとき、譜面の見え方をより独創的にしたいときは `Trombackground` ファイルを使用することを強くオススメします！
 
-This will give you the full power of the Unity Editor, and the amount of things you can do is significantly higher than either of the other methods.
+これを使うとUnityエディターの機能をフル活用することができ、他のやり方と比べて出来ることも格段に増えます。
 
-The instructions are currently found in a detailed readme on the Unity Project GitHub: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
+現在このUnityプロジェクトはGitHubに詳しい説明があるのでこちらをご覧ください: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
