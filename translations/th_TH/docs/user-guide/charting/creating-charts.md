@@ -7,50 +7,50 @@
 ### ตัวตัดต่อ Midi/DAW
 ผังสร้างได้จากการสร้างไฟล์ MIDI และรันผ่าน [MIDI converter](#converting-midi-to-map-file)
 
-โน็ตของ MIDI ควรที่จะอยู่ระหว่างแนว 48 ถึง 72 เพื่อที่จะตรงกับเกม <br>**โน็ต:** ตัวตัดต่อแต่ละตัวจะใช้ค่าของเปียนโนต่างกันกับแนวนี้
+โน็ตของ MIDI ควรที่จะอยู่ระหว่างแนวที่ 48 ถึง 72 เพื่อที่จะตรงกับเกม <br>**โน็ต:** ตัวตัดต่อแต่ละตัวจะใช้ค่าของเปียนโนต่างกันกับแนวนี้
 
-Some free, verified to work midi editors include:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (Range: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: C4-C6)
+ตัวตัดต่อ Midi ที่ฟรีและทดสอบว่าใช้ได้มี:
+- [Reaper](https://www.reaper.fm/download.php)* (แนวที่: C3-C5)
+- [LMMS](https://lmms.io/download#windows) (แนวที่: C3-C5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (แนวที่: C4-C6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (แนวที่: C4-C6)
 
-<sub>*Full software is not free, but has a free trial that works for charting.</sub><br> <sub>**Exports notes into MIDI track 2 by default, which makes it incompatible with Midi2TromboneChamp by default.</sub><br> <sub>†The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
+<sub>*ซอฟต์แวร์เต็มไม่ฟรีแต่มีใช้ทดอลงฟรีที่ทำผังได้</sub><br> <sub>**ส่งออกโน็ตไป MIDI จะได้ 2 รางโดยมาตราฐานซึ่งไม่สามารถใช้งานได้กับ Midi2TromboneChamp โดยมาตราฐาน</sub><br> <sub>†เวอร์ชั่นทดลองฟรีของ FL Studio ไม่ยอมให้คุณส่งออก MIDI แต่สามารถใช้วิธีอ้อมได้โดยบันทึกไฟล์โปรเจ็กและใช้ <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
 
 <h4 spaces-before="0">
-  Reaper Project
+  โปรเจ็กของ Reaper
 </h4>
 
 <p spaces-before="0">
-  If you're not sure which editor to use, Reaper is recommended as there's a custom Trombone Champ project file that comes with:
+  ถ้าคุณไม่แน่ใจว่าจะใช้อะไร แนะนำให้ใช้ Reaper เพราะมันมีไฟล์โปรเจ็กดัดแปลงของ Trombone Champ มาให้:
 </p>
 
 <ul>
   <li>
-    A basic explanation on how to use the controls of Reaper (in English)
+    คำอธิบายพื้นฐานวิธีการใช้ตัวควบคุมของ Reaper (ในภาษาอังกฤษ)
   </li>
   <li>
-    Preconfigured settings
+    ตั้งค่าคอนฟิกที่กำหนดไว้แล้ว
   </li>
   <li>
-    Example MIDI
+    MIDI ตัวอย่าง
   </li>
 </ul>
 
 <p spaces-before="0">
-  The project can be <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">downloaded here</a>.
+  โปรเจ็กสามารถ<a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">ดาวน์โหลดได้ที่นี่</a>
 </p>
 
 <h3 spaces-before="0">
-  Normal Notes
+  โน็ตปกติ
 </h3>
 
 <p spaces-before="0">
-  Normal notes are created in the midi editor and look the same in-game. Make sure to leave a gap in time between notes!
+  โน็ตปกติสร้างในตัวตัดต่อ Midi และดูเหมือนกันกับในเกม เอาให้แน่ใจว่ามันมีช่องว่างระหว่างโน็ตแต่ละตัว!
 </p>
 
 <h3 spaces-before="0">
-  Slide Notes
+  โน็ตสไลด์
 </h3>
 
 <p spaces-before="0">
