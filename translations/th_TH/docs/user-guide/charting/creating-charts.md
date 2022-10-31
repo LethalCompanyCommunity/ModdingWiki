@@ -1,13 +1,13 @@
 # การสร้างผัง
 ---
 
-?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
+?> ถ้าคุณชอบวิธีแบบวีดีโอ NyxTheShield มี [บันทึกของสตรีม](https://www.youtube.com/watch?v=ig27SlJveGs) ที่อธิบายทุกขั้นตอนในการทำผังอย่างละเอียด
 
-## Basics
-### Midi Editor/DAW
-Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
+## พื้นฐาน
+### ตัวตัดต่อ Midi/DAW
+ผังสร้างได้จากการสร้างไฟล์ MIDI และรันผ่าน [MIDI converter](#converting-midi-to-map-file)
 
-Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+โน็ตของ MIDI ควรที่จะอยู่ระหว่างแนว 48 ถึง 72 เพื่อที่จะตรงกับเกม <br>**โน็ต:** ตัวตัดต่อแต่ละตัวจะใช้ค่าของเปียนโนต่างกันกับแนวนี้
 
 Some free, verified to work midi editors include:
 - [Reaper](https://www.reaper.fm/download.php)* (Range: C3-C5)
