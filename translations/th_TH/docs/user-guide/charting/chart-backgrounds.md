@@ -1,15 +1,15 @@
-# Chart Backgrounds
+# พื้นหลังของผัง
 ---
 
-Backgrounds are an important feature of a chart, and there's a few different types (in order of complexity):
+พื้นหลังเป็นฟีเจอร์ที่สำคัญของผังและมีความแตกต่างบางประการ (ตามลำดับความซับซ้อน)
 
 ### .png
 
-If you want a simple, easy background, this is what's recommended.
+อันนี้แนะนำถ้าคุณอยากได้พื้นหลังแบบง่ายๆ
 
-Simply put a `1920x1080` image named `bg.png` in your song's folder.
+แค่ใส่ภาพขนาด `1920x1080` และเปลี่ยนชื่อเป็น `bg.png` ในโฟลเดอร์ของคุณ
 
-You can use non-`1920x1080` images, but it might behave weirdly, as unity sprite scale is based on image resolution.
+คุณสามารณใช้ภาพที่ไม่ใช่ขนาด `1920x1080` แต่อาจจะมีอาการผิดปกติเพราะ unity sprite scale นั้นขึ้นอยู่กับขนาดภาพ
 
 ### .mp4
 
