@@ -17,7 +17,7 @@
 
 แค่ใส่วีดีโอ mp4 และเปลี่ยนชื่อเป็น `bg.mp4` ในโฟลเดอร์เพลงของคุณ
 
-You can use any resolution of video, but **please** try to keep the size reasonable - aim for under 50MB. If your video's size is too high, you can always lower the resolution in your favorite video editor.
+คุณสามารถใช้ขนาดภาพเท่าไหรก็ได้แต่ **ได้โปรด** พยายามทำให้ขนาดไฟล์เหมาะสมเล็งให้ได้ต่ำกว่า 50 เมกะไบต์ ถ้าขนาดไฟล์นั้นใหญ่เกินคุณสามารถลงขนาดภาพลงได้ด้วยใช้โปรแกรมตัดต่อวีดีโอที่คุณชอบ
 
 ### .trombackground
 
