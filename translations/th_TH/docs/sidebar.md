@@ -1,5 +1,5 @@
-- **User Guide**
-- [Introduction](./)
+- **คู่มือผู้ใช้**
+- [บทนำ](./)
 - **Modding**
 - [Installing Mods](installing-mods)
 - [Installing Songs](installing-songs)
