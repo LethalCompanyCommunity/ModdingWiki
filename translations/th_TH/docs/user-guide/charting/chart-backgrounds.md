@@ -13,9 +13,9 @@
 
 ### .mp4
 
-If you want a slightly more interesting background, a music video background, or want to prerender a moving background, you can also use a video!
+ถ้าคุณอยากได้พื้หลังที่น่าสนใจมากขึ้น, มิวสิควิดีโอ หรืออยากให้พื้นหลังเคลื่อนไหว คุณสามารถใช้วีดีโอได้!
 
-Simply put an mp4 named `bg.mp4` in your song's folder.
+แค่ใส่วีดีโอ mp4 และเปลี่ยนชื่อเป็น `bg.mp4` ในโฟลเดอร์เพลงของคุณ
 
 You can use any resolution of video, but **please** try to keep the size reasonable - aim for under 50MB. If your video's size is too high, you can always lower the resolution in your favorite video editor.
 
