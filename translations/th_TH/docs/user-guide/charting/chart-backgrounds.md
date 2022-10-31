@@ -21,8 +21,8 @@
 
 ### .trombackground
 
-If you want a background that'll blow people away, want to use events, or want to have full creative control of how your chart looks, it's highly recommended to use a `.trombackground` file.
+ถ้าคุณอยากได้พื้นหลังที่จะทำให้คนตะลึง, อยากจะใช้อีเวนท์, หรืออยากจะสร้างสรรค์เต็มความสามารถของผังของคุณ แนะนำอย่างสูงให้ใช้ไฟล์ `.trombackground`
 
-This will give you the full power of the Unity Editor, and the amount of things you can do is significantly higher than either of the other methods.
+นี่จะทำให้คุณมีอำนาจจาก Unity Editor เต็มที่และหลายอย่างที่สามราถทำได้สูงกว่าจากวิธีที่กล่าวมา
 
-The instructions are currently found in a detailed readme on the Unity Project GitHub: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
+ขั้นตอนอยู่ใน readme บน Unity Project GitHub <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
