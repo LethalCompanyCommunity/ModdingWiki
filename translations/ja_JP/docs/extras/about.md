@@ -35,4 +35,4 @@
 ?> **オープンソースとプライバシー**  
 [当ガイドはGitHubにてオープンソース化されています](https://github.com/tc-mods/TromboneChampModdingWiki). こちらは[ISCライセンス](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md)に基づいた上でライセンスされています。
 
-?> **免責事項:** 本製品は、Trombone ChampもしくはHoly Wow Studiosとは無関係の非公式ファンワークであり、Holy Wow Studiosによる許可やその他のスポンサーシップを受けたものではありません。
+?> **免責事項:** 当サイトは、Trombone ChampもしくはHoly Wow Studiosとは無関係の非公式ファンワークであり、Holy Wow Studiosによる認可やその他のスポンサーシップを受けたものではありません。
