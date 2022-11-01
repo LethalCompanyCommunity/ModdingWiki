@@ -118,20 +118,20 @@
         <code>Difficulty</code> เลขดาวระดับความยากที่แสดงในข้อมูลเพลง
       </li>
       <li>
-        <code>Note Spacing</code> affects how fast the level scrolls, in combination with BPM.
+        <code>Note Spacing</code> ความเร็วที่เลเวลจะเลื่อน จะรวมกับ BPM
       </li>
       <li>
-        <code>Song Endpoint</code> is the beat on which the song ends. It is automatically calculated, but you can adjust it to change when the level end screen appears.
+        <code>Song Endpoint</code> จังหวะที่เพลงจบ มันคำนวณอัตโนมัติแต่คุณสามารถเปลี่ยนได้ว่าเลเวลจะจบตอนไหน
       </li>
       <li>
-        <code>Beats per Bar</code> determines how far apart the "beat lines" are.
+        <code>Beats per Bar</code> กำหนดความกว้างของ "เส้นโน็ต"
       </li>
     </ul>
   </li>
   
   <li>
     <p spaces-before="0">
-      Hit OK. In the file selector it opens, create a folder with the same name as you entered in the <code>Folder Name</code> field, and save the file as <code>song.tmb</code> inside that folder.
+      กด OK In the file selector it opens, create a folder with the same name as you entered in the <code>Folder Name</code> field, and save the file as <code>song.tmb</code> inside that folder.
     </p>
   </li>
   
