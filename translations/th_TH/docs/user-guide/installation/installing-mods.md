@@ -16,7 +16,7 @@
 
 ## การลง BepInEx
 
-1. Download [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) into your TromboneChamp folder. You will want to get `BepinEx_x64_VERSION.zip`, with `VERSION` being the version number.
+1. ดาวน์โหลด [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest)ใส่ในโฟล์เดอร์ TromboneChamp ของคุณ คุณจะต้องเอา `BepinEx_x64_VERSION.zip` โดย `VERSION` จะเป็นเลขของเวอร์ชั่น
 2. Extract the contents of the BepInEx .zip file directly into the [install folder](##finding-install-location) of your Trombone Champ installation.
 
 ![BepInEx Extraction Preview](../docs/files/bepinexextract.png)
