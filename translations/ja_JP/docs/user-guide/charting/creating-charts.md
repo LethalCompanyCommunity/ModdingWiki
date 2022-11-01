@@ -100,10 +100,10 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて48～72の範囲で�
     </p>
     <ul>
       <li>
-        <code>Song Name</code> is the full name of the song, shown in the info when you select it in-game .
+        <code>Song Name</code> 楽曲のフルネームで、ゲーム内の選曲画面で選択すると楽曲情報に表示される。
       </li>
       <li>
-        <code>Short Name</code> is shown while scrolling through the song list. Text gets smaller when the name is long so I'm not sure if there's a maximum length.
+        <code>Short Name</code> 楽曲リストをスクロールするときに表示される名前で、 Text gets smaller when the name is long so I'm not sure if there's a maximum length.
       </li>
       <li>
         <code>Folder Name</code> is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
