@@ -1,7 +1,7 @@
 - **คู่มือผู้ใช้**
 - [บทนำ](./)
 - **Modding**
-- [การลง Mod](installing-mods)
+- [การลง Mods](installing-mods)
 - [การลงเพลง](installing-songs)
 - **การทำผัง**
 - [การสร้างผัง](creating-charts)
