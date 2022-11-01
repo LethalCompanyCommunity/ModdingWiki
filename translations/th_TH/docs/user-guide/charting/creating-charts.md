@@ -115,7 +115,7 @@
         <code>Author</code> คนสร้างเพลง
       </li>
       <li>
-        <code>Difficulty</code> is the number of difficulty stars that appear on the song's info.
+        <code>Difficulty</code> เลขดาวระดับความยากที่แสดงในข้อมูลเพลง
       </li>
       <li>
         <code>Note Spacing</code> affects how fast the level scrolls, in combination with BPM.
