@@ -18,14 +18,14 @@
 
 ## ข้อมูล .trombackground อื่นๅ
 
-### Render Over Tromboner
-If you're making a `.trombackground`, you can render OVER the tromboner by setting your Camera's depth to 1
+### แสดงเหนือคนเล่นทรอมโบน
+ถ้าคุณสร้าง `.trombackground` คุณสามารถเรนเดอร์เหนือคนเล่นทรอมโบนโดยตั้งค่าความความลึกของกล้อง เป็น 1
 
-### Add Tromboner In Scene
-If you're making a `.trombackground` and want to move around the player, add the `Prefabs/Tromboner` prefab to your background.
+### ใส่คนคนเล่นทรอมโบนในฉาก
+ถ้าคุณสร้าง `.trombackground` และอยากเคลื่อนที่รอบๆผู้เล่น เพิ่ม prefab `Prefabs/Tromboner` ไปที่พื้นหลังของคุณ
 
-Once the game is loaded, it'll be replaced with an exact clone of the player.
+เมื่อเกมโหลดมันจะเปลี่ยนเป็นโคลนของผู้เล่น
 
-You can also change the player model & trombone skin if you don't want it to look exactly like the player.
+และคุณยังสามารถเปลี่ยนโมเดลผู้เล่น และ สกินของทรอมโบนถ้าคุณไม่อยากให้มันดูเหมือนกับผู้เล่น
 
-(Use in conjunction with the depth render tip above to completely change how the tromboner is rendered!)
+(ใช้ร่วมกับการเรนเดอร์ความลึกข้างบนเพื่อเปลี่ยนการเรนเดอร์คนเล่นทรอมโบนทั้งหมด!)
