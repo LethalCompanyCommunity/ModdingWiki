@@ -19,13 +19,13 @@
 1. ดาวน์โหลด [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest)ใส่ในโฟล์เดอร์ TromboneChamp ของคุณ คุณจะต้องเอา `BepinEx_x64_VERSION.zip` โดย `VERSION` จะเป็นเลขของเวอร์ชั่น
 2. แตกไฟล์ BepInEx .zip ไปที่ [โฟล์เดอร์ทีลง](##finding-install-location) Trombone Champ ของคุณ
 
-![BepInEx Extraction Preview](../docs/files/bepinexextract.png)
+![ตัวอย่างการแตกไฟล์ BepInEx](../docs/files/bepinexextract.png)
 
 !> ใฟ้แน่ใจว่าคุณได้ดาวน์โหลด BepInEx เวอร์ชั่น `x64` เวอร์ชั่น `unix` และ `x86` จะทำให้เกมของคุณทำงานไม่ถูกต้อง นี่รวมถึงผู้ที่ใช้ Linux และ Steam Deck
 
 !> **สำคัญ:** แตกไฟล์ BepInEx ไปที่โฟล์เดอร์เกมของคุณ *โดยตรง* อย่างที่ภาพแสดงข้างบน ถ้าคุณทำมันถูกต้องโฟล์เดอร์เกมของคุณจะดูเหมือนภาพข้างล่าง
 
-![Finished BepinEx Install](../docs/files/finishedbepinex.png)
+![การลง BepinEx เสร็จสิ้น](../docs/files/finishedbepinex.png)
 
 3. เปิด Trombone Champ เพื่อเสร็จสินการลง
 
@@ -39,11 +39,11 @@
 
 2. กดไปที่ช่องที่อยู่ข้างบนเพื่อที่จะเลือกเส้นทางโฟล์เดอร์สำหรับการลง กด `CTRL`+`C` เพื่อคัดลอกนี้ไปที่คลิปบอรด์
 
-![Copy Folder Path Preview](../docs/files/copyfolderpathplugins.png)
+![ตัวอย่างการก็อปปี้โฟล์เดอร์เป็นเส้นทาง](../docs/files/copyfolderpathplugins.png)
 
 3. ดาวน์โหลดไฟล์ .dll ของ Mod ไปที่โฟล์เดอร์ที่สุดกอปปี้ไว้
 
-![Plugins Folder Preview](../docs/files/pluginswithtrombloader.png)
+![ตัวอย่างโฟล์เดอร์ Plugins](../docs/files/pluginswithtrombloader.png)
 
 4. เปิด Trombone Champ เพื่อที่จะให้ Mod เริ่มต้นไฟล์ที่ต้องการ
 
@@ -66,7 +66,7 @@
 
 คุณจะยังต้องการเพิ่ม `WINEDLLOVERRIDES="winhttp=n,b" %command%` ที่ตัวเลือการเริ่มเกมของคุณ ทำอันนี้โดยการ คลิกขวาที่เกมใน Steam และคลิก `Properties` Proton จะไม่โหลดไฟล์ BepInEx เว้นแต่ว่าจะบอกให้มันโหลด ไม่เหมือนกับ Windows
 
-![Steam Properties Preview](../docs/files/linuxsteamproperties.png)
+![ตัวอย่าง Steam Properties](../docs/files/linuxsteamproperties.png)
 
 และเมื่อเพิ่ม BepInEx ควรที่จะใช้งานได้ตอนนี้ ลง mods ของคุณ [ตามที่ขั้นตอนข้างบน](##installation) เพื่อที่จะได้เพลงที่กำหนดเองใช้งานได้
 
