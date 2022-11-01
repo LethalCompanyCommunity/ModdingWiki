@@ -42,15 +42,15 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて48～72の範囲で�
 </p>
 
 <h3 spaces-before="0">
-  普通のノーツ
+  ノーマルノーツ
 </h3>
 
 <p spaces-before="0">
-  通常のノーツはMIDIエディターで作成され、ゲーム内でも同じように見えます。 ノーツとノーツの間には隙間を空けるようにしましょう。
+  ノーマルノーツはMIDIエディターで打ち込み、ゲーム内でも打ち込んだ時と同じように見えます。 ノーツとノーツの間には隙間を空けるようにしましょう。
 </p>
 
 <h3 spaces-before="0">
-  スライドするノーツ
+  スライドノーツ
 </h3>
 
 <p spaces-before="0">
@@ -58,7 +58,7 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて48～72の範囲で�
 </p>
 
 <p spaces-before="0">
-  <img src="../docs/files/slide1.png" alt="Slide Note Example" />
+  <img src="../docs/files/slide1.png" alt="スライドノーツの例" />
 </p>
 
 <p spaces-before="0">
@@ -70,7 +70,7 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて48～72の範囲で�
 </p>
 
 <p spaces-before="0">
-  <img src="../docs/files/slide2.png" alt="Multiple Slide Note Example" />
+  <img src="../docs/files/slide2.png" alt="複数のスライドノーツの例" />
 </p>
 
 <h2 spaces-before="0">
@@ -137,25 +137,25 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて48～72の範囲で�
   
   <li>
     <p spaces-before="0">
-      音源データはOGGファイル(.ogg)にする必要があります。 At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file <code>song.ogg</code>.
+      音源データはOGGファイル(.ogg)を使用します。 当記事執筆時点で音源の長さはSong Endpointよ当記事執筆時点で音源の長さはSong Endpointより長くあり必要があります。そうでない場合、楽曲が途中で止まってしまい最後まで演奏できなくなってしまいます。 Audacityなどのソフトウェアを使って、音源の最初に無音部分を挿入してMIDIに合わせることができます。 ファイル名: <code>song.ogg</code>
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Move the ogg file into the same folder as <code>song.tmb</code>.
+      <code>song.tmb</code>と同じフォルダにOGGファイルを入れる。
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Follow the <a href="installing-songs">Custom Song Installation instructions</a> to test it.
+      テストプレイを行う際は<a href="installing-songs">カスタム音源の導入方法</a>をご参照ください。
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      <a href="chart-backgrounds">Add a background!</a>
+      <a href="chart-backgrounds">次は背景を追加だ！</a>
     </p>
   </li>
 </ol>
