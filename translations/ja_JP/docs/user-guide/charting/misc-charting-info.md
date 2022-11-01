@@ -1,15 +1,15 @@
 # その他の譜面作成に関する情報
 ---
 
-## Note Color
-If you want to change your note color, you can do that! Open up your `song.tmb` file in your favorite text editor, and add `note_color_start` and `note_color_end` arrays to the end.
+## ノーツの色設定
+楽曲の雰囲気に合わせてノーツの色を変更したいって思いませんか？...なんと出来ます！ `song.tmb` をお気に入りのテキストエディタ(Notepad++やIntelliJ IDEA等)で開き、 `note_color_start` と `note_color_end` を以下のように配列の末尾に追加してください。
 ```
 ... "timesig": 2, "tempo": 100, "UNK1": 0} 
-// Before ^
+// 追加前 ↑
 ... "timesig": 2, "tempo": 100, "UNK1": 0, "note_color_start": [0.0, 0.0, 0.0], "note_color_end": [1.0, 1.0, 1.0]}
-// After ^
+// 追加後 ↑
 ```
-The color format is RGB1, the example above starts with black and turns into white. To convert to this format, use a color picker such as <https://rgbacolorpicker.com/> and get the RGB values of the colors you want. Let's say I want to use a nice deep purple that's `rgb(84, 14, 50)`. To use this, divide everything by `255` and put it in the array.
+色の表示はRGB1で、上記の例では黒から白に変わります。 このような数値にするには <https://rgbacolorpicker.com/> などのカラーピッカーを利用し、使用する色をRGB値で取得します。 それでは試しに、`rgb(84, 14, 50)` のような素敵な深みのある紫色を使いたいと仮定しましょう。 To use this, divide everything by `255` and put it in the array.
 ```
 ... "timesig": 2, "tempo": 100, "UNK1": 0, "note_color_start": [0.329411765, 0.0549019608, 0.196078431], "note_color_end": [0.329411765, 0.0549019608, 0.196078431]}
 ```
