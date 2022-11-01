@@ -1,11 +1,11 @@
 # Map Achtergrond
 ---
 
-Achtergronden zijn een belangrijke functie van een grafiek, en er zijn een paar verschillende types (in volgorde van complexiteit):
+Achtergronden zijn een belangrijke functie van een map, en er zijn een paar verschillende types (in volgorde van complexiteit):
 
 ### .png
 
-Als u een eenvoudige, eenvoudige achtergrond wilt, wordt dit aanbevolen.
+Als je een eenvoudige achtergrond wilt, wordt dit aanbevolen.
 
 Plaats gewoon een `1920x1080` afbeelding genaamd `bg.png` in je songmap.
 
