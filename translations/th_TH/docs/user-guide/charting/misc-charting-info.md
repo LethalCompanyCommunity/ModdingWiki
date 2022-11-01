@@ -1,15 +1,15 @@
-# Misc Charting Info
+# ข้อมูลผังอย่างอื่น
 ---
 
-## Note Color
-If you want to change your note color, you can do that! Open up your `song.tmb` file in your favorite text editor, and add `note_color_start` and `note_color_end` arrays to the end.
+## สีของโน็ต
+ถ้าคุณอยากเปลี่ยนสีโน็ตคุณสามารถทำได้! เปิดไฟล์ `song.tmb` ของคุณกับโปรแกรมแก้ไขข้อความและใส่ `note_color_start` กับ `note_color_end` แถวส่วนท้าย
 ```
 ... "timesig": 2, "tempo": 100, "UNK1": 0} 
-// Before ^
+// ก่อน ^
 ... "timesig": 2, "tempo": 100, "UNK1": 0, "note_color_start": [0.0, 0.0, 0.0], "note_color_end": [1.0, 1.0, 1.0]}
-// After ^
+// หลัง ^
 ```
-The color format is RGB1, the example above starts with black and turns into white. To convert to this format, use a color picker such as <https://rgbacolorpicker.com/> and get the RGB values of the colors you want. Let's say I want to use a nice deep purple that's `rgb(84, 14, 50)`. To use this, divide everything by `255` and put it in the array.
+รูปแบบสีคือ RGB1 ตัวอย่างข้างบนเริ่มจากดำและเปลี่ยนไปเป็นสีขาว เพื่อแปลงเป็นรูปแบบนี้ใช้ตัวเลือกสี เช่น <https://rgbacolorpicker.com/> และเอาค่า RGB ของสีที่คุณอยากได้ เอาเป็นว่าฉันอยากได้สีม่วงดำจะเป็น `rgb(84, 14, 50)` ใช้นี้หารทุกตัวด้วย `255` และใส่ในแถว
 ```
 ... "timesig": 2, "tempo": 100, "UNK1": 0, "note_color_start": [0.329411765, 0.0549019608, 0.196078431], "note_color_end": [0.329411765, 0.0549019608, 0.196078431]}
 ```
