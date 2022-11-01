@@ -13,10 +13,10 @@
 ```
 ... "timesig": 2, "tempo": 100, "UNK1": 0, "note_color_start": [0.329411765, 0.0549019608, 0.196078431], "note_color_end": [0.329411765, 0.0549019608, 0.196078431]}
 ```
-Now the notes will both end and start with that deep purple color!
+ตอนนี้ตัวโน็ตจะเริ่มและจบด้วยสีสีม่วงดำ!
 
 
-## Other .trombackground Info
+## ข้อมูล .trombackground อื่นๅ
 
 ### Render Over Tromboner
 If you're making a `.trombackground`, you can render OVER the tromboner by setting your Camera's depth to 1
