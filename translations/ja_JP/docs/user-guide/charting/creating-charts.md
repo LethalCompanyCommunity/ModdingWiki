@@ -103,25 +103,25 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて48～72の範囲で�
         <code>Song Name</code> 楽曲のフルネームで、ゲーム内の選曲画面で選択すると楽曲情報に表示される。
       </li>
       <li>
-        <code>Short Name</code> 楽曲リストをスクロールするときに表示される名前で、 Text gets smaller when the name is long so I'm not sure if there's a maximum length.
+        <code>Short Name</code> 楽曲リストをスクロールするときに表示される名前で、 文字数が長いと表示テキストが縮小されます。文字数制限があるかは不明
       </li>
       <li>
-        <code>Folder Name</code> is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
+        <code>Folder Name</code> 作成した譜面と音源のデータを格納するフォルダの名前です。 例: Folder Nameを「my map」に設定すると譜面データのファイルパスはBepInEx/CustomSongs/my map/song.tmbになります。
       </li>
       <li>
-        <code>Year</code> is the year the song was created.
+        <code>Year</code> 使用した楽曲が作成された年
       </li>
       <li>
-        <code>Author</code> is the composer of the song.
+        <code>Author</code> 使用した楽曲の作曲者名
       </li>
       <li>
-        <code>Difficulty</code> is the number of difficulty stars that appear on the song's info.
+        <code>Difficulty</code> 楽曲情報に表示される譜面の難易度を表す星マークの数です。
       </li>
       <li>
-        <code>Note Spacing</code> affects how fast the level scrolls, in combination with BPM.
+        <code>Note Spacing</code>  BPMと組み合わせて、演奏時のノーツの移動速度に影響します。
       </li>
       <li>
-        <code>Song Endpoint</code> is the beat on which the song ends. It is automatically calculated, but you can adjust it to change when the level end screen appears.
+        <code>Song Endpoint</code> 楽曲の終わりを示す拍子。 It is automatically calculated, but you can adjust it to change when the level end screen appears.
       </li>
       <li>
         <code>Beats per Bar</code> determines how far apart the "beat lines" are.
