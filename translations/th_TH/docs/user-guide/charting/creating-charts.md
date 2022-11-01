@@ -54,15 +54,15 @@
 </h3>
 
 <p spaces-before="0">
-  Slides are created by overlapping notes in time. For a pair of overlapping notes, the slide goes from the start of the first note to the start of the second. The overlapping part of the first note is discarded. See this image for an example:
+  สไลด์สร้างจากการเอาโน็ตมาซ้อนกันตามเวลา สำหรับโน็ตที่ซ้อนกัน สไลด์เริ่มจากจุดเริ่มต้นโน็ตแรกถึงจุดเริ่มต้นโน็ตที่สอง จุดที่ซ้อนกันของโน็ตแรกจะถูกทิ้ง ดูภาพนี้เพื่อเป็นตัวอย่าง
 </p>
 
 <p spaces-before="0">
-  <img src="../docs/files/slide1.png" alt="Slide Note Example" />
+  <img src="../docs/files/slide1.png" alt="ตัวอย่างโน็ตสไลด์" />
 </p>
 
 <p spaces-before="0">
-  If a note ends but the next note starts at the exact same time, they will be connected. This allows you to adjust where the curve of a slide starts. Here's an example of multiple slides connected together:
+  ถ้าโน็ตจบแต่โน็ตต่อไปเริ่มจุดเดียวกัน มันจะต่อกัน This allows you to adjust where the curve of a slide starts. Here's an example of multiple slides connected together:
 </p>
 
 <p spaces-before="0">
