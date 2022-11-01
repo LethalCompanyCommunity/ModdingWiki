@@ -121,23 +121,23 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて48～72の範囲で�
         <code>Note Spacing</code>  BPMと組み合わせて、演奏時のノーツの移動速度に影響します。
       </li>
       <li>
-        <code>Song Endpoint</code> 楽曲の終わりを示す拍子。 It is automatically calculated, but you can adjust it to change when the level end screen appears.
+        <code>Song Endpoint</code> 楽曲の終わりを示す拍子。 通常これは自動的に計算されますが、演奏終了画面が表示されたときに変更することが可能です。
       </li>
       <li>
-        <code>Beats per Bar</code> determines how far apart the "beat lines" are.
+        <code>Beats per Bar</code> 拍子の線の間隔を決める。
       </li>
     </ul>
   </li>
   
   <li>
     <p spaces-before="0">
-      Hit OK. In the file selector it opens, create a folder with the same name as you entered in the <code>Folder Name</code> field, and save the file as <code>song.tmb</code> inside that folder.
+      OKを押す。 ファイル選択画面で<code>Folder Name</code>で入力した同じ名前のフォルダを作成し、その中に<code>song.tmb</code>という名前で保存
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Your music track should be a .ogg file. At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file <code>song.ogg</code>.
+      音源データはOGGファイル(.ogg)にする必要があります。 At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file <code>song.ogg</code>.
     </p>
   </li>
   
