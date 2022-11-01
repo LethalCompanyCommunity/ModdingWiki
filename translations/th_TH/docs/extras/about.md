@@ -1,38 +1,38 @@
-# About This Guide
+# เกี่ยวกับคู่มือนี้
 ---
-This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+คู่มือนี้ส่วนใหญ่เขียนโดย [Bobbie](https://twitter.com/VRBobbie) ด้วยความช่วยเหลือและคำแนะนำจากนักเขียนคนอื่นและวิกิ คู่มือนี้ได้แรงบัลดาลใจจาก [bsmg.wiki](https://bsmg.wiki)
 
-> ## Credits
+> ## เครดิต
 > 
-> ### Writers
+> ### ผู้เขียน
 > 
-> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)**
+> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (ผู้เขียนคู่มือต้นฉบับ)**
 > 
-> --- Thank you to [everyone else](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
+> --- ขอบคุณสำหรับ [คนอื่นๆ](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) ที่มีส่วนร่วมในคู่มือนี้บน GitHub
 >
-> ## Developer / Tool Credits
+> ## ผู้พัฒนา / เครดิต เครื่องมือ
 > 
-> - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
+> - **ผู้ที่มีส่วนร่วมใน BepInEx** สำหรับ [BepInEx](https://github.com/BepInEx/BepInEx)
 >
-> ## Translation Credits
+> ## เครเครดิต การแปลภาษา
 > 
-> **Chinese (Simplified):** Derek37, SilverFoxV933
+> **จีน (ตัวย่อ):** Derek37, SilverFoxV933
 > 
-> **Dutch:** VorgunTheBeta
+> **ดัทช์:** VorgunTheBeta
 > 
-> **French:** MrKegg, H3ITO, slaw
+> **ฝรั่งเศส:** MrKegg, H3ITO, slaw
 > 
-> **German:** KlosRadieschen
+> **เยอรมัน:** KlosRadieschen
 > 
-> **Italian:** Palleuomo, gardaviolenta
+> **อิตาลี** Palleuomo, gardaviolenta
 > 
-> **Portuguese (Brazilian):** NekoDinner
+> **โปรตุเกส (บราซิล):** NekoDinner
 > 
-> **Spanish:** dakar665, BrookeAFK
+> **สเปน:** dakar665, BrookeAFK
 > 
-> **Ukrainian:** sw1ft
+> **ยูเครน:** sw1ft
 
-?> **Open Source and Privacy**  
-[This guide is open source on GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). It is licensed under the [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
+?> **โอเพ่นซอร์ส และ ความเป็นส่วนตัว**  
+[คู่มือนี้โอเพ่นซอร์ส บน GitHub](https://github.com/tc-mods/TromboneChampModdingWiki) ได้รับใบอนุญาตภายใต้ [ใบอนุญาต ISC](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md)
 
-?> **Disclaimer:** This product is an unofficial fanwork not affiliated with Trombone Champ or Holy Wow Studios and is not endorsed or otherwise sponsored by Holy Wow Studios.
+?> **คำเตือน:** สิ่งนี้เป็นแฟนเวิร์คที่ไม่เป็นทางการและไม่เกี่ยวกับ Trombone Champ หรือ Holy Wow Studios และไม่ได้รับการรับรองหรือสนับสนุนจาก Holy Wow Studios
