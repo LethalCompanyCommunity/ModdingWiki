@@ -131,31 +131,31 @@
   
   <li>
     <p spaces-before="0">
-      กด OK In the file selector it opens, create a folder with the same name as you entered in the <code>Folder Name</code> field, and save the file as <code>song.tmb</code> inside that folder.
+      กด OK ในตัวเลือกไฟล์ที่เปิดขึ้นมา สร้างโฟล์เดอร์ที่มีชื่อเดียวกันกับช่อง <code>Folder Name</code> และบันทึกไฟล์ <code>song.tmb</code> ข้างในโฟล์เดอร์นั้น
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Your music track should be a .ogg file. At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file <code>song.ogg</code>.
+      แทร็กเพลงของคุณควรเป็นไฟล์ .ogg ในขณะที่เขียนนี้ ความยาวแทร็กจะต้องยาวกว่า "Song Endpoint" หรือไม่งั้นเพลงจะค้างและไม่จบ คุณสามารถใช้โปรแกรมเช่น Audacity ใส่ส่วนเงียบเข้าไปในแทร็กเพื่อที่จะให้ตรงกับ Midi ตั้งชื่อไฟล์เป็น <code>song.ogg</code>
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Move the ogg file into the same folder as <code>song.tmb</code>.
+      ย้ายไฟล์ ogg ไปโฟล์เดอร์เดียวกันที่มี <code>song.tmb</code>
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Follow the <a href="installing-songs">Custom Song Installation instructions</a> to test it.
+      ทำตาม <a href="installing-songs">ขั้นตอนการลงเพลงที่กำหนดเอง</a> เพื่อทดสอบ
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      <a href="chart-backgrounds">Add a background!</a>
+      <a href="chart-backgrounds">ใส่พื้นหลัง!</a>
     </p>
   </li>
 </ol>
