@@ -2,26 +2,26 @@
 ---
 ?> ถ้าคุณอยากได้วิธีแบบวีดีโอ VorgunTheBeta มี [วีดีโออธิบายวิธีการลง mods และ การลงเพลงกำหนดเอง](https://youtu.be/pSwNSGx-P5c)
 
-!> **IMPORTANT:** Make sure you've followed the [mod installation guide](installing-mods) to install BepInEx and TrombLoader before continuing!
+!> **สำคัญ:** ให้คุณแน่ใจว่าคุณทำตาม [คู่มือการลง Mod](installing-mods) เพื่อที่จะลง BepInEx และ TrombLoader ก่อนที่จะดำเนินการต่อไป!
 
-## Finding Songs
+## การหาเพลง
 
-Custom songs can be found in the `#custom-charts` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
+เพลงที่กำหนดเองสามารถหาได้ที่ช่อง `#custom-charts` ใน [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ)
 
-If you'd like a more compact list, TheGlitched64 has created [a spreadsheet containing information on every custom chart](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing).
+ถ้าคุณยากได้รายการแบบกระชับ TheGlitched64 ได้สร้าง [สเปรดชีตที่มีข้อมูลของผังสร้างเองทุกตัว](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing)
 
-## Installation
+## การติดตั้ง
 
-1. Download the custom song - it will generally be some kind of archive file, usually ending in `.zip`.
+1. ดาวน์โหลดเพลงกำหนดเอง มันจะเป็นไฟล์บีบอัดโดยทั่วไป ส่วนใหญ่ลงท้ายด้วย `.zip`
 
-2. Extract the contents of the archive file directly into the `BepInEx/CustomSongs` folder that got created when you first ran the game with TrombLoader installed.
+2. แตกไฟล์บีบอัดไปที่ข้างในโฟล์เดอร์ที่ได้มาจากการเริ่มเกมครั้งแรกด้วย TrombLoader ที่ `BepInEx/CustomSongs` โดยตรง
 
-![BepInEx Extraction Preview](../docs/files/customsongextract.png)
+![ตัวอย่างการแตกไฟล์ BepInEx](../docs/files/customsongextract.png)
 
-3. Double check that the song is just in one folder instead of nested in multiple - in this example, all the song's files should be located in `BepinEx/CustomSongs/BakaMitai/`.
+3. ตรวจสอบอีกรอบว่าเพลงเป็นโฟล์เดอร์เดียวและไม่เป็นหลายไฟล์ - ในตัวอย่างนี้ไฟล์ของเพลงควรที่จะอยู่ใน `BepinEx/CustomSongs/BakaMitai/`
 
-![Correct Extraction Preview](../docs/files/customsongcorrect.png)
+![ตัวอย่างการแตกไฟล์ที่ถูกต้อง](../docs/files/customsongcorrect.png)
 
-### Creating Custom Songs {docsify-ignore}
+### การสร้างเพลงที่กำหนดเอง {docsify-ignore}
 
-> Check out the [**Charting guide**](creating-charts) for info on creating your own custom charts.
+> ไปที่ [**คู่มือการสร้างผัง**](creating-charts) สำหรับการสร้างผังของคุณเอง
