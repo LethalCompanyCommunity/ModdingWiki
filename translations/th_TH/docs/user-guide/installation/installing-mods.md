@@ -1,20 +1,20 @@
-# Installing Mods
+# การลง Mods
 ---
 
-?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
+?> ถ้าคุณอยากได้วิธีแบบวีดีโอ VorgunTheBeta มี [วีดีโออธิบายวิธีการลง mods และ การลงเพลงกำหนดเอง](https://youtu.be/pSwNSGx-P5c)
 
-?> The start of this guide also works for Linux and Steam Deck! Make sure to [read the end](#linuxsteam-deck-specific-tips) for additional details.
+?> จุดเริ่มของคู่มือนี้ใช้ได้กับ Linux และ Steam Deck! เอาให้แน่ใจว่า [อ่านจนจบ](#linuxsteam-deck-specific-tips) สำหรับรายละเอียดอื่นๆ
 
-## Finding Install Location
-1. Open Steam and right-click on Trombone Champ. Then, go to `Manage > Browse local files`.
+## การหาที่ลง
+1. เปิด Steam และคลิกขวาที่ Trombone Champ จากนั้นไปที่ `Manage > Browse local files`
 
 ![Right-click Menu Preview](../docs/files/localfilescontext.png)
 
-2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
+2. กดไปที่ช่องที่อยู่ข้างบนเพื่อที่จะเลือกเส้นทางโฟล์เดอร์สำหรับการลง กด `CTRL`+`C` เพื่อคัดลอกนี้ไปที่คลิปบอรด์
 
 ![Copy Folder Path Preview](../docs/files/copyfolderpath.png)
 
-## Installing BepInEx
+## การลง BepInEx
 
 1. Download [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) into your TromboneChamp folder. You will want to get `BepinEx_x64_VERSION.zip`, with `VERSION` being the version number.
 2. Extract the contents of the BepInEx .zip file directly into the [install folder](##finding-install-location) of your Trombone Champ installation.
@@ -78,6 +78,6 @@ We recommend following [this guide created by GamingOnLinux](https://www.gamingo
 
 !> Even with GE-Proton, you may still experience some issues with video playback depending on your setup. </details>
 
-## Installing Custom Songs {docsify-ignore}
+## การลงเพลงที่กำหนดเอง {docsify-ignore}
 
-> Check out the [**Custom Songs guide**](installing-songs) for info on installing custom songs.
+> ดูที่ [**คู่มือเพลงที่กำหนดเอง**](installing-songs) สำหรับข้อมูลการลงเพลงที่กำหนดเอง
