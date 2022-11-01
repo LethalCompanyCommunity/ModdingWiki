@@ -17,51 +17,51 @@
 ## การลง BepInEx
 
 1. ดาวน์โหลด [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest)ใส่ในโฟล์เดอร์ TromboneChamp ของคุณ คุณจะต้องเอา `BepinEx_x64_VERSION.zip` โดย `VERSION` จะเป็นเลขของเวอร์ชั่น
-2. Extract the contents of the BepInEx .zip file directly into the [install folder](##finding-install-location) of your Trombone Champ installation.
+2. แตกไฟล์ BepInEx .zip ไปที่ [โฟล์เดอร์ทีลง](##finding-install-location) Trombone Champ ของคุณ
 
 ![BepInEx Extraction Preview](../docs/files/bepinexextract.png)
 
-!> Please ensure that you've downloaded the `x64` version of BepInEx. the `unix` and `x86` versions will cause your game to not function properly. This also applies to users on Linux/Steam Deck.
+!> ใฟ้แน่ใจว่าคุณได้ดาวน์โหลด BepInEx เวอร์ชั่น `x64` เวอร์ชั่น `unix` และ `x86` จะทำให้เกมของคุณทำงานไม่ถูกต้อง นี่รวมถึงผู้ที่ใช้ Linux และ Steam Deck
 
-!> **IMPORTANT:** Extract BepInEx *directly* into your game's folder as shown in the image above. If you've done it correctly, your game's folder should look like the below image.
+!> **สำคัญ:** แตกไฟล์ BepInEx ไปที่โฟล์เดอร์เกมของคุณ *โดยตรง* อย่างที่ภาพแสดงข้างบน ถ้าคุณทำมันถูกต้องโฟล์เดอร์เกมของคุณจะดูเหมือนภาพข้างล่าง
 
 ![Finished BepinEx Install](../docs/files/finishedbepinex.png)
 
-3. Run Trombone Champ once to complete installation.
+3. เปิด Trombone Champ เพื่อเสร็จสินการลง
 
-## Installation
+## การติดตั้ง
 
-With BepInEx installed, you can start downloading specific mods - a full list is available in the `#mod-releases` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
+และเมื่อ BepInEx ติดตั้ง คุณสามารถดาวน์โหลด Mods ได้ - รายการทั้งหมดมีอยู่ที่ช่อง `#mod-releases` ใน [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ)
 
-As you likely want to install custom songs, this section will use [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest) as an example.
+คุณอาจจะต้องการลงเพลงที่กำหนดเอง ส่วนนี้จะใช้ [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest) เป็นตัวอย่าง
 
-1. Navigate to your [game's install folder](###finding-install-location), the `BepInEx` folder, then the `plugins` folder.
+1. ไปที่ [โฟล์เดอร์ที่คุณลงเกม](###finding-install-location) แล้วไปที่โฟล์เอดร์ `BepInEx` จากนั้นโฟล์เดอร์ `plugins`
 
-2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
+2. กดไปที่ช่องที่อยู่ข้างบนเพื่อที่จะเลือกเส้นทางโฟล์เดอร์สำหรับการลง กด `CTRL`+`C` เพื่อคัดลอกนี้ไปที่คลิปบอรด์
 
 ![Copy Folder Path Preview](../docs/files/copyfolderpathplugins.png)
 
-3. Download the mod's .dll file into the copied folder.
+3. ดาวน์โหลดไฟล์ .dll ของ Mod ไปที่โฟล์เดอร์ที่สุดกอปปี้ไว้
 
 ![Plugins Folder Preview](../docs/files/pluginswithtrombloader.png)
 
-4. Run Trombone Champ once to initialize necessary files for that mod.
+4. เปิด Trombone Champ เพื่อที่จะให้ Mod เริ่มต้นไฟล์ที่ต้องการ
 
-## Linux/Steam Deck Tips
+## เคล็ดลับ สำหรับ Linux และ Steam Deck
 <details closed>
-<summary>Expand</summary>
+<summary>ขยาย</summary>
 
-The process of installing BepInEx is largely the same as on Windows listed above, however there are some extra things to be aware of first:
+ขั้นตอนการลง BepInEx ส่วนใหญ่จะเหมือนกับ Windows ข้างบน แต่ยังไงก็ตามจะมีบางสิ่งที่ต้องรู้ไว้ก่อน:
 
- - To follow the guide, Steam Deck users will need to switch to Desktop Mode by holding down the power button and selecting `Desktop Mode` from the menu.
+ - ผู้ใช้ Steam Deck จะต้องเปลี่ยนเป็น Desktop Mode เพื่อที่จะทำตามคู่มือนี้ โดย กดปุ่ม Power ค้างไว้และเลือก `Desktop Mode` จากเมนู
 
- - Steam Deck users will need to install the game to the internal storage, as BepInEx will not load from the microSD card.
+ - ผู้ใช้ Steam Deck จะต้องติดตั้งเกมไปที่จัดเก็บภายใน เพราะว่า BepInEx จะไม่โหลดจาก microSD card
 
- - As stated earlier, you will still need to install the `x64` Windows version of BepInEx, not the `unix` version, as Trombone Champ is still a Windows application running under Proton.
+ - อย่างที่บอกไว้ คุณจะต้องลง BepInEx เวอร์ชั่น `x64` ของ Windows ไม่ใช่เวอร์ชั่น `unix` เพราะว่า Trombone Champ ยังเป็นโปรแกรมของ Windows วิ่งด้วย Proton
 
- - Save and log files are stored in your Steam folder within Proton's compatibility folders.
+ - ไฟล์ เซฟเกม และ บันทึกข้อมูล เก็บอยู่ที่โฟล์เดอร์ Steam ข้างในโฟล์เดอร์ความเข้ากันได้ของ Proton
 
-    - On Steam Deck this can be found at: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
+    - บน Steam Deck หาได้ที่: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
     - On other Linux flavors you can run `locate -r /Holy Wow$` from the terminal if you're unsure of where your Steam folder is.
 
 You will also need to add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your game's launch options. To do this, right click the game in Steam and click `Properties`. Unlike on Windows, Proton won't load BepInEx's files unless specifically instructed to here.
