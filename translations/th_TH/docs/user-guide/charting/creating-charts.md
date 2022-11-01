@@ -62,57 +62,57 @@
 </p>
 
 <p spaces-before="0">
-  ถ้าโน็ตจบแต่โน็ตต่อไปเริ่มจุดเดียวกัน มันจะต่อกัน This allows you to adjust where the curve of a slide starts. Here's an example of multiple slides connected together:
+  ถ้าโน็ตจบแต่โน็ตต่อไปเริ่มจุดเดียวกัน มันจะต่อกัน นี่จะอนุญตให้คุณจัดความโค้งของโน็ตสไลด์ นี่คือตัวอย่างของสไลด์หลายตัวต่อกัน
 </p>
 
 <p spaces-before="0">
-  (note: The first straight section is a separate note from the curved section. Its end time is the same as the next one's start time.)
+  (โน็ต: ส่วนตรงจะแยกออกจากส่วนโค้ง ส่วนจบจะเหมือนกันในขณะที่ตัวถัดไปเริ่มเวลา)
 </p>
 
 <p spaces-before="0">
-  <img src="../docs/files/slide2.png" alt="Multiple Slide Note Example" />
+  <img src="../docs/files/slide2.png" alt="ตัวอย่างโน็ตสไลด์หลายตัว" />
 </p>
 
 <h2 spaces-before="0">
-  Converting Midi to Map File
+  การแปลง Midi เป็นไฟล์ผัง
 </h2>
 
 <p spaces-before="0">
-  ?> There are two Midi converters available besides Midi2TromboneChamp! <br>Since they're still in beta, <strong x-id="1">they may have bugs</strong>, so this guide is still written for Midi2TromboneChamp. <br>The process for these new converters is similar enough that this guide should still be usable. <br>If you want to try a more up-to-date conversion program, feel free to give a new converter a try: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - a unity-based sequel to Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - a web-based alternative with new features.
+  ?> มันมีตัวแปลง Midi นอกจาก Midi2TromboneChamp! <br>พวกมันยังอยู่ในเบต้า <strong x-id="1">มันจะมีบักอยู่</strong> เพราะฉะนั้นคู่มือนี้ยังเขียนสำหรับ Midi2TromboneChamp <br>กระบวนการสำหรับตัวแปลงตัวใหม่จะคลายๆกันที่คู่มือนี้สามารถใช้ได้ด้วยกัน <br>ถ้าคุณอยากจะลองตัวแปลงตัวใหม่คุณสามารถลองได้: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (เวอร์ชั่น Unity)</a> - โปรแกรมที่ใช้ฐาน unity ต่อมาจาก Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> เว็บไซต์ทาเลือกพร้อมกับฟีเจอร์ใหม่
 </p>
 
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Go to <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
+      ไปที่ <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> และคลิกที่ <code>Midi2TromboneChamp.exe</code> เพื่อดาวน์โลดมัน
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Run it. In the file selector it opens, select your midi file. Click Open.
+      เริ่มโปรแกรม ในที่เลือกไฟล์ ให้เลือกไฟล์ Midi ของคุณ คลิกเปิด
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Fill out the fields:
+      ใส่ข้อมูลในช่อง
     </p>
     <ul>
       <li>
-        <code>Song Name</code> is the full name of the song, shown in the info when you select it in-game .
+        <code>Song Name</code> ชื่อเต็มของเพลง แสดงข้อมูลในเกม
       </li>
       <li>
-        <code>Short Name</code> is shown while scrolling through the song list. Text gets smaller when the name is long so I'm not sure if there's a maximum length.
+        <code>Short Name</code> แสดงชื่อในขณะที่เลือ่นผ่านรายการเพลง ตัวอักษรจะเล็กลงเพราะฉะนั้นเราไม่แน่ใจว่ามันมีลิมิตสูงสุดเท่าไร
       </li>
       <li>
-        <code>Folder Name</code> is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
+        <code>Folder Name</code> ชื่อโฟล์เดอร์ที่สุดจะใส่เพลงเข้าไป ตัวอย่างเช่น ถ้าคุณตั้งชื่อโฟล์เดอร์เป็น "My Map" ที่อยู่ของผังคุณจะอยู่ที่ "BepInEx/CustomSongs/My Map/song.tmb."
       </li>
       <li>
-        <code>Year</code> is the year the song was created.
+        <code>Year</code> ปีที่เพลงได้สร้างขึ้น
       </li>
       <li>
-        <code>Author</code> is the composer of the song.
+        <code>Author</code> คนสร้างเพลง
       </li>
       <li>
         <code>Difficulty</code> is the number of difficulty stars that appear on the song's info.
