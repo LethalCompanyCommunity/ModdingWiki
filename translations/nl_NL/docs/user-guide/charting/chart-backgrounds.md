@@ -23,6 +23,6 @@ Je kan elke resolutie van video gebruiken, maar probeer **alsjeblieft** de besta
 
 Als je een achtergrond wil die mensen wegblaast, als je events wil gebruiken of gewoon volledige creatieve controle hebben over hoe je map eruit ziet, wordt het sterk aanbevolen om een `.trombackground` bestand te gebruiken.
 
-Dit geeft je volledige kracht van de Unity Editor, en de hoeveelheid dingen die je kunt doen is beduidend hoger dan een van de andere methoden.
+Dit geeft je de volledige kracht van de Unity Editor, en de hoeveelheid dingen die je kunt doen is een stuk groter dan met de andere methoden.
 
 De instructies zijn momenteel gevonden in een gedetailleerde readme op Unity Project GitHub: <https://github.com/legoandmars/TrombLoaderBackgroundProject/>
