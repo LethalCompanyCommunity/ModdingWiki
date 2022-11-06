@@ -20,17 +20,17 @@ Este guia é escrito principalmente por [Bobbie](https://twitter.com/VRBobbie), 
 > 
 > **Holandês:** VorgunTheBeta
 > 
-> **French:** MrKegg, H3ITO, slaw
+> **Francês:** MrKegg, H3ITO, slaw
 > 
-> **German:** KlosRadieschen
+> **Alemão:** KlosRadieschen
 > 
-> **Italian:** Palleuomo, gardaviolenta
+> **Italiano:** Palleuomo, gardaviolenta
 > 
-> **Português (Brasil):** NekoDinner
+> **Português (Brasil):** Dinner (Eu!)
 > 
 > **Espanhol:** dakar665, BrookeAFK
 > 
-> **Ukrainian:** sw1ft
+> **Ucraniano:** sw1ft
 
 ?> **Código Aberto e Privacidade**  
 [Este guia é de código aberto no GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). É licenciado sob a [licença ISC](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
