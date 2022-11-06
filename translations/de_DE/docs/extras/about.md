@@ -1,6 +1,6 @@
-# Über diese Anleitung
+Infos zur Anleitung
 ---
-Diese Anleitung wird hauptsächlich von [Bobbie](https://twitter.com/VRBobbie) geschrieben, mit Unterstützung und Rat von verschiedenen anderen Autoren und Wikis. Die Anleitung hat sich bei [bsmg.wiki](https://bsmg.wiki) inspiriert.
+Diese Anleitung wird hauptsächlich von [Bobbie](https://twitter.com/VRBobbie) geschrieben, mit Unterstützung und Beratung von verschiedenen anderen Autoren und Wikis. Die Anleitung hat sich bei [bsmg.wiki](https://bsmg.wiki) inspiriert.
 
 > ## Credits
 > 
@@ -20,17 +20,17 @@ Diese Anleitung wird hauptsächlich von [Bobbie](https://twitter.com/VRBobbie) g
 > 
 > **Niederländisch:** VorgunTheBeta
 > 
-> **French:** MrKegg, H3ITO, slaw
+> **Französisch:** MrKegg, H3ITO, slaw
 > 
-> **German:** KlosRadieschen
+> **Deutsch:** KlosRadieschen
 > 
-> **Italian:** Palleuomo, gardaviolenta
+> **Italienisch:** Palleuomo, gardaviolenta
 > 
 > **Portugiesisch (Brasilianisch):** NekoDinner
 > 
 > **Spanisch:** dakar665, BrookeAFK
 > 
-> **Ukrainian:** sw1ft
+> **Ukrainisch:** sw1ft
 
 ?> **Open Source und Datenschutz**  
 [Diese Anleitung ist Open Source auf GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). Es ist lizenziert unter der [ISC Lizenz](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
