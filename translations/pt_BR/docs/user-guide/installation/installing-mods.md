@@ -3,7 +3,7 @@
 
 ?> Se preferir, VorgunTheBeta tem [um vídeo explicando como instalar mods e músicas personalizadas](https://youtu.be/pSwNSGx-P5c).
 
-?> The start of this guide also works for Linux and Steam Deck! Make sure to [read the end](#linuxsteam-deck-specific-tips) for additional details.
+?> O início deste guia também funciona para Linux e Steam Deck! Certifique-se de que [leia o final](#linuxsteam-deck-specific-tips) para obter detalhes adicionais.
 
 ## Encontrando o local de instalação
 1. Abra a Steam e dê um clique direito em Trombone Champ. Após isso, vá para `Gerenciar > Navegar pelos arquivos locais`.
@@ -21,7 +21,7 @@
 
 ![Preview da extração do BepInEx](../docs/files/bepinexextract.png)
 
-!> Tenha certeza de que você baixou a versão `x64` do BepInEx. As versões em `unix` e `x86` farão com que o jogo não funcione devidamente. This also applies to users on Linux/Steam Deck.
+!> Tenha certeza de que você baixou a versão `x64` do BepInEx. As versões em `unix` e `x86` farão com que o jogo não funcione devidamente. Isso também se aplica aos usuários que usam Linux/Steam Deck.
 
 !> **IMPORTANTE:** Extraia o BepInEx *diretamente* a pasta de instalação como mostrado na imagem acima. Se feito corretamente, a pasta de instalação do jogo deve se parecer com a imagem mostrada abaixo.
 
@@ -47,13 +47,13 @@ Como você provavelmente quer instalar músicas personalizadas, esta seção ir�
 
 4. Abra o Trombone Champ uma vez só, assim inicializando os arquivos necessários para o mod funcionar.
 
-## Linux/Steam Deck Tips
+## Dicas para Linux/Steam Deck
 <details closed>
-<summary>Expand</summary>
+<summary>Expandir</summary>
 
-The process of installing BepInEx is largely the same as on Windows listed above, however there are some extra things to be aware of first:
+O processo de instalação do BepInEx é quase igual ao do Windows mostrado acima, mas tem algumas coisas extras que precisamos estar cientes:
 
- - To follow the guide, Steam Deck users will need to switch to Desktop Mode by holding down the power button and selecting `Desktop Mode` from the menu.
+ - Para seguir esse guia, o Steam Deck precisa estar no modo desktop. Isso pode ser feito segurando o botão liga/desliga e selecionando o `Desktop Mode` no menu.
 
  - Steam Deck users will need to install the game to the internal storage, as BepInEx will not load from the microSD card.
 
@@ -66,7 +66,7 @@ The process of installing BepInEx is largely the same as on Windows listed above
 
 You will also need to add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your game's launch options. To do this, right click the game in Steam and click `Properties`. Unlike on Windows, Proton won't load BepInEx's files unless specifically instructed to here.
 
-![Steam Properties Preview](../docs/files/linuxsteamproperties.png)
+![Preview das propriedades da Steam](../docs/files/linuxsteamproperties.png)
 
 Once added, BepInEx should now work! Install your mods [as instructed above](##installation) to get custom songs working.
 
