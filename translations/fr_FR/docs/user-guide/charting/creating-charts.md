@@ -22,7 +22,7 @@ Quelques éditeurs MIDI gratuits et fonctionnels incluent :
 </h4>
 
 <p spaces-before="0">
-  Si vous n'êtes pas sûr lequel éditeur à utiliser, Reaper est recommandé, car il y a un fichier de projet personnalisé pour Trombone Champ qui comprend :
+  Si vous n'êtes pas sûr quel éditeur utiliser, Reaper est recommandé, car il y a un fichier de projet personnalisé pour Trombone Champ qui comprend :
 </p>
 
 <ul>
