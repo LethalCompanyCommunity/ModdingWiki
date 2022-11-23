@@ -35,4 +35,4 @@ Ce guide est principalement écrit par [Bobbie](https://twitter.com/VRBobbie), a
 ?> **Libre d'usage et confidentialité**  
 [Ce guide est libre d'usage sur GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). Il est sous licence de la [Licence ISC](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
 
-?> **Avertissement :** Ce produit est un travail de fans non officiel et qui est non affilié à Trombone Champ ou à Holy Wow Studios est n'est pas soutenu ou sponsorisé par Holy Wow Studios.
+?> **Avertissement :** Ce produit est un travail de fans non officiel, non affilié à Trombone Champ ni à Holy Wow Studios, et non soutenu ni sponsorisé par Holy Wow Studios.
