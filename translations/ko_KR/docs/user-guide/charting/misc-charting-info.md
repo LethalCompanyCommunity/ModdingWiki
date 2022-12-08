@@ -1,31 +1,31 @@
-# Misc Charting Info
+# 기타 채보 작성 정보
 ---
 
-## Note Color
-If you want to change your note color, you can do that! Open up your `song.tmb` file in your favorite text editor, and add `note_color_start` and `note_color_end` arrays to the end.
+## 노트 색상
+노트 색상을 변경하고 싶다면, 가능합니다! 자주 사용하는 텍스트 편집기에서 `song.tmb` 파일을 열고 `note_color_start`와 `note_color_end` 배열을 아래와 같이 끝에 추가합니다.
 ```
 ... "timesig": 2, "tempo": 100, "UNK1": 0} 
 // Before ^
 ... "timesig": 2, "tempo": 100, "UNK1": 0, "note_color_start": [0.0, 0.0, 0.0], "note_color_end": [1.0, 1.0, 1.0]}
 // After ^
 ```
-The color format is RGB1, the example above starts with black and turns into white. To convert to this format, use a color picker such as <https://rgbacolorpicker.com/> and get the RGB values of the colors you want. Let's say I want to use a nice deep purple that's `rgb(84, 14, 50)`. To use this, divide everything by `255` and put it in the array.
+색상 형식은 RGB1이며, 위의 예시는 검은색으로 시작하여 흰색으로 바뀝니다. 이 형식으로 변환하려면 <https://rgbacolorpicker.com/>과 같은 색 선택기를 사용하여 원하는 색의 RGB 값을 가져옵니다. 예를 들어 `rgb(84, 14, 50)`과 같은 멋지고 깊이 있는 보라색을 사용하고 싶다고 가정해 봅시다. 이를 사용하려면 R, G, B의 모든 값을 `255`로 나누어 배열에 넣습니다.
 ```
 ... "timesig": 2, "tempo": 100, "UNK1": 0, "note_color_start": [0.329411765, 0.0549019608, 0.196078431], "note_color_end": [0.329411765, 0.0549019608, 0.196078431]}
 ```
-Now the notes will both end and start with that deep purple color!
+이제 노트의 처음과 끝이 짙은 보라색으로 바뀝니다!
 
 
-## Other .trombackground Info
+## 기타 .trombackground 정보
 
-### Render Over Tromboner
-If you're making a `.trombackground`, you can render OVER the tromboner by setting your Camera's depth to 1
+### 트럼본 연주자 표시
+`.trombackground`를 제작할 때 카메라 깊이를 1로 설정하면 트럼본 연주자를 위에 표시할 수 있습니다.
 
-### Add Tromboner In Scene
-If you're making a `.trombackground` and want to move around the player, add the `Prefabs/Tromboner` prefab to your background.
+### 트럼본 연주자를 장면에 추가
+`.trombackground`를 제작할 때 자유롭게 움직일 수 있는 트럼본 연주자를 원한다면 `Prefabs/Tromboner` 프리셋을 배경으로 추가해주세요.
 
-Once the game is loaded, it'll be replaced with an exact clone of the player.
+게임이 로드되면 플레이어의 완전한 복제로 대체됩니다.
 
-You can also change the player model & trombone skin if you don't want it to look exactly like the player.
+또한 연주자와 똑같이 하고 싶지 않다면 연주자 모델 & 트롬본 스킨을 변경할 수 있습니다.
 
-(Use in conjunction with the depth render tip above to completely change how the tromboner is rendered!)
+(위 카메라 깊이 표시 방법 팁과 조합하여 트럼본 연주자 렌더링 방법을 완전히 변경할 수 있습니다.)
