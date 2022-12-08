@@ -1,38 +1,38 @@
 # 이 가이드에 대해
 ---
-본 가이드의 주요 내용은 [Bobbie](https://twitter.com/VRBobbie)가 작성하였으며, 다른 작성자와, Wiki의 조언, 도움을 받아 운영하고 있습니다. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+본 가이드의 주요 내용은 [Bobbie](https://twitter.com/VRBobbie)가 작성하였으며, 다른 작성자와, Wiki의 조언, 도움을 받아 운영하고 있습니다. 이 가이드는 [bsmg.wiki](https://bsmg.wiki)에서 영감을 받았습니다.
 
-> ## Credits
+> ## 크레딧
 > 
-> ### Writers
+> ### 작성자
 > 
-> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)**
+> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (오리지널 가이드 작성자)**
 > 
-> --- Thank you to [everyone else](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
+> --- GitHub 가이드에 기여해주신 [모든 분들](https://github.com/tc-mods/TromboneChampModdingWiki/graphs/contributors)께 감사드립니다.
 >
-> ## Developer / Tool Credits
+> ## 개발 / 도구
 > 
 > - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
 >
-> ## Translation Credits
+> ## 번역
 > 
-> **Chinese (Simplified):** Derek37, SilverFoxV933
+> **중국어 (간체):** Derek37, SilverFoxV933
 > 
-> **Dutch:** VorgunTheBeta
+> **네덜란드어:** VorgunTheBeta
 > 
-> **French:** MrKegg, H3ITO, slaw
+> **프랑스어:** MrKegg, H3ITO, slaw
 > 
-> **German:** KlosRadieschen
+> **독일어:** KlosRadieschen
 > 
-> **Italian:** Palleuomo, gardaviolenta
+> **이탈리아어:** Palleuomo, gardaviolenta
 > 
-> **Portuguese (Brazilian):** NekoDinner
+> **포르투갈어 (브라질어):** NekoDinner
 > 
-> **Spanish:** dakar665, BrookeAFK
+> **스페인어:** dakar665, BrookeAFK
 > 
-> **Ukrainian:** sw1ft
+> **우크라이나어:** sw1ft
 
-?> **Open Source and Privacy**  
-[This guide is open source on GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). It is licensed under the [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).
+?> **오픈 소스 및 프라이버시**  
+[이 가이드는 GitHub의 오픈 소스입니다](https://github.com/tc-mods/TromboneChampModdingWiki). [ISC 라이센스](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md)에 따라 라이센스가 부여됩니다.
 
-?> **Disclaimer:** This product is an unofficial fanwork not affiliated with Trombone Champ or Holy Wow Studios and is not endorsed or otherwise sponsored by Holy Wow Studios.
+?> **면책 사항:** 이 사이트는 Trombone Champ나 Holy Wow Studios와 제휴하지 않은 비공식 팬워크이며 Holy Wow Studio의 승인이나 후원을 받지 않았습니다.
