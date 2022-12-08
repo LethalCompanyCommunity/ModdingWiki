@@ -1,6 +1,6 @@
-# About This Guide
+# 이 가이드에 대해
 ---
-This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+본 가이드의 주요 내용은 [Bobbie](https://twitter.com/VRBobbie)가 작성하였으며, 다른 작성자와, Wiki의 조언, 도움을 받아 운영하고 있습니다. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
 
 > ## Credits
 > 
