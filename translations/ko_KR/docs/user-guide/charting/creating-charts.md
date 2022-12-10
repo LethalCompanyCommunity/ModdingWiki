@@ -7,13 +7,16 @@
 ### Midi 에디터/DAW
 채보는 Midi 파일을 만들고 [MIDI 컨버터](#converting-midi-to-map-file)를 사용하여 만들 수 있습니다.
 
-Midi의 음표(노트)는 게임에 맞추어 48에서 72의 범위여야 합니다.<br>**참고:** Midi 에디터에 따라 이 범위는 달라질 수 있습니다.
+Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
 
 일부 무료로 사용 가능한 Midi 에디터는 다음과 같습니다:
-- [Reaper](https://www.reaper.fm/download.php)* (범위: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (범위: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (범위: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (범위: C4-C6)
+- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
+- [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
+- [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
 <sub>*유료 버전이 있으나 무료 체험판으로도 채보 작성에 사용 가능합니다.</sub><br> <sub>**노트를 기본적으로 Midi 트랙 2로 내보내므로 MIDI2TromboneChamp와 호환되지 않습니다.</sub><br> <sub>†FL Studio의 평가판에서는 Midi 파일로 내보낼 수 없으나 프로젝트 파일을 저장하고 <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>를 사용하여 해결할 수 있습니다.</p>
 
@@ -78,13 +81,13 @@ Midi의 음표(노트)는 게임에 맞추어 48에서 72의 범위여야 합니
 </h2>
 
 <p spaces-before="0">
-  ?> Midi2TromboneChamp 외에도 Midi 컨버터가 두 개 있습니다! <br>아직 베타 버전이기 때문에 <strong x-id="1">버그가 있을 수 있으므로</strong>, 이 가이드는 Midi2TromboneChamp 용으로 작성되었습니다. <br>이러한 Midi 컨버터의 사용 방법은 비슷한 느낌이므로 이 가이드를 그대로 참고할 수 있습니다. <br>만약 최신 변환 프로그램을 사용하고 싶다면, 새로운 컨버터도 자유롭게 사용해보세요: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - Unity 기반 브라우저 버전 Midi2TromboneChamp <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - 새로운 기능이 추가된 브라우저 기반 컨버터
+  ?> Midi2TromboneChamp 외에도 Midi 컨버터가 두 개 있습니다! <br>이러한 Midi 컨버터의 사용 방법은 비슷한 느낌이므로 이 가이드를 그대로 참고할 수 있습니다. <br>만약 최신 변환 프로그램을 사용하고 싶다면, 새로운 컨버터도 자유롭게 사용해보세요: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - Unity 기반 브라우저 버전 Midi2TromboneChamp <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - 새로운 기능이 추가된 브라우저 기반 컨버터
 </p>
 
 <ol start="1">
   <li>
     <p spaces-before="0">
-      <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a>로 이동하여 <code>Midi2TromboneChamp.exe</code>를 클릭하고 다운로드하세요.
+      Go to <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
     </p>
   </li>
   
