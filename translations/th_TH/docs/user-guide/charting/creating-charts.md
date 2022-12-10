@@ -7,13 +7,16 @@
 ### ตัวตัดต่อ Midi/DAW
 ผังสร้างได้จากการสร้างไฟล์ MIDI และรันผ่าน [MIDI converter](#converting-midi-to-map-file)
 
-โน็ตของ MIDI ควรที่จะอยู่ระหว่างแนวที่ 48 ถึง 72 เพื่อที่จะตรงกับเกม <br>**โน็ต:** ตัวตัดต่อแต่ละตัวจะใช้ค่าของเปียนโนต่างกันกับแนวนี้
+Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
 
 ตัวตัดต่อ Midi ที่ฟรีและทดสอบว่าใช้ได้มี:
-- [Reaper](https://www.reaper.fm/download.php)* (แนวที่: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (แนวที่: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (แนวที่: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (แนวที่: C4-C6)
+- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
+- [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
+- [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
 <sub>*ซอฟต์แวร์เต็มไม่ฟรีแต่มีใช้ทดอลงฟรีที่ทำผังได้</sub><br> <sub>**ส่งออกโน็ตไป MIDI จะได้ 2 รางโดยมาตราฐานซึ่งไม่สามารถใช้งานได้กับ Midi2TromboneChamp โดยมาตราฐาน</sub><br> <sub>†เวอร์ชั่นทดลองฟรีของ FL Studio ไม่ยอมให้คุณส่งออก MIDI แต่สามารถใช้วิธีอ้อมได้โดยบันทึกไฟล์โปรเจ็กและใช้ <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
 
@@ -78,13 +81,13 @@
 </h2>
 
 <p spaces-before="0">
-  ?> มันมีตัวแปลง Midi นอกจาก Midi2TromboneChamp! <br>พวกมันยังอยู่ในเบต้า <strong x-id="1">มันจะมีบักอยู่</strong> เพราะฉะนั้นคู่มือนี้ยังเขียนสำหรับ Midi2TromboneChamp <br>กระบวนการสำหรับตัวแปลงตัวใหม่จะคลายๆกันที่คู่มือนี้สามารถใช้ได้ด้วยกัน <br>ถ้าคุณอยากจะลองตัวแปลงตัวใหม่คุณสามารถลองได้: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (เวอร์ชั่น Unity)</a> - โปรแกรมที่ใช้ฐาน unity ต่อมาจาก Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> เว็บไซต์ทาเลือกพร้อมกับฟีเจอร์ใหม่
+  ?> มันมีตัวแปลง Midi นอกจาก Midi2TromboneChamp! <br>กระบวนการสำหรับตัวแปลงตัวใหม่จะคลายๆกันที่คู่มือนี้สามารถใช้ได้ด้วยกัน <br>ถ้าคุณอยากจะลองตัวแปลงตัวใหม่คุณสามารถลองได้: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (เวอร์ชั่น Unity)</a> - โปรแกรมที่ใช้ฐาน unity ต่อมาจาก Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> เว็บไซต์ทาเลือกพร้อมกับฟีเจอร์ใหม่
 </p>
 
 <ol start="1">
   <li>
     <p spaces-before="0">
-      ไปที่ <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> และคลิกที่ <code>Midi2TromboneChamp.exe</code> เพื่อดาวน์โลดมัน
+      Go to <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
     </p>
   </li>
   
