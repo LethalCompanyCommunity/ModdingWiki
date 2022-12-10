@@ -7,13 +7,16 @@
 ### Midi Editor/DAW
 Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
 
-Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
 
 Some free, verified to work midi editors include:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (Range: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: C4-C6)
+- [Reaper](https://www.reaper.fm/download.php)* (Range: B3-C#5)
+- [LMMS](https://lmms.io/download#windows) (Range: B3-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B4-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B4-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Range: B2-C#4)
+- [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
+- [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
 <sub>*Full software is not free, but has a free trial that works for charting.</sub><br>
 <sub>**Exports notes into MIDI track 2 by default, which makes it incompatible with Midi2TromboneChamp by default.</sub><br>
@@ -46,13 +49,12 @@ If a note ends but the next note starts at the exact same time, they will be con
 ## Converting Midi to Map File
 
 ?> There are two Midi converters available besides Midi2TromboneChamp!
-<br>Since they're still in beta, **they may have bugs**, so this guide is still written for Midi2TromboneChamp.
 <br>The process for these new converters is similar enough that this guide should still be usable.
 <br>If you want to try a more up-to-date conversion program, feel free to give a new converter a try:
 <br><br>[Midi2TromboneChamp (Unity Version)](https://nyxtheshield.github.io/Midi2TromboneChamp/) - a unity-based sequel to Midi2TromboneChamp.
 <br>[Trombone Champ Chart Converter](https://rshieldsprojects.github.io/projects/tccc/) - a web-based alternative with new features.
 
-1. Go to <https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest> and click `Midi2TromboneChamp.exe` to download it.
+1. Go to <https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest> and click `Midi2TromboneChamp.exe` to download it.
 
 2. Run it. In the file selector it opens, select your midi file. Click Open.
 
