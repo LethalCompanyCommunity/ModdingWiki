@@ -7,13 +7,16 @@
 ### Éditeur MIDI/station audionumérique
 Les partitions sont faites par créer un fichier MIDI qui est ensuite passé à travers un [convertisseur MIDI](#converting-midi-to-map-file).
 
-Les notes MIDI devraient être entre 48 à 72 pour correspondre au jeu. <br> **NOTE :** Les éditeurs différents utilisent des valeurs différentes sur le piano pour cette gamme.
+Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
 
 Quelques éditeurs MIDI gratuits et fonctionnels incluent :
-- [Reaper](https://www.reaper.fm/download.php)* (Gamme : C3-C5)
-- [LMMS](https://lmms.io/download#windows) (Gamme : C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Gamme : C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Gamme : C4-C6)
+- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
+- [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
+- [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
 <sub>*Le programme complet n'est pas gratuit, mais a un essai gratuit qui fonctionne pour créer des partitions.</sub><br> <sub>**Exporte les notes à la piste MIDI 2 par défaut, qui le rend incompatible avec Midi2TromboneChamp par défaut.</sub><br> <sub>†L'essai gratuit de FL Studio ne vous permet pas d'exporter MIDI, mais vous pouvez contourner cela en sauvegardant le fichier du projet et en utilisant <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
 
@@ -78,13 +81,13 @@ Quelques éditeurs MIDI gratuits et fonctionnels incluent :
 </h2>
 
 <p spaces-before="0">
-  ?> Il y a deux convertisseurs MIDI disponibles en plus de Midi2TromboneChamp! <br>Puisqu'ils sont encore en version bêta. <strong x-id="1">ils peuvent avoir des bugs </strong>, donc ce guide est encore écrit pour Midi2TromboneChamp. <br>Le processus pour ces nouveaux convertisseurs est assez similaire que ce guide devrait suffire. <br>Si vous voulez essayer un convertisseur plus à jour, n'hésitez pas à donner une chance à un des convertisseurs nouveaux <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Version Unity)</a> - un successeur à Midi2TromboneChamp basée sur Unity. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Convertisseur de partition de Trombone Champ</a> - une application web alternative avec de nouvelles fonctionnalités.
+  ?> Il y a deux convertisseurs MIDI disponibles en plus de Midi2TromboneChamp! <br>Le processus pour ces nouveaux convertisseurs est assez similaire que ce guide devrait suffire. <br>Si vous voulez essayer un convertisseur plus à jour, n'hésitez pas à donner une chance à un des convertisseurs nouveaux <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Version Unity)</a> - un successeur à Midi2TromboneChamp basée sur Unity. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Convertisseur de partition de Trombone Champ</a> - une application web alternative avec de nouvelles fonctionnalités.
 </p>
 
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Allez à <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> et cliquez sur <code>Midi2TromboneChamp.exe</code> pour le télécharger.
+      Go to <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
     </p>
   </li>
   
