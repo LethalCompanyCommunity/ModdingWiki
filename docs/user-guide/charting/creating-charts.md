@@ -10,11 +10,11 @@ Charts are made by creating a midi file and running them through a [MIDI convert
 Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
 
 Some free, verified to work midi editors include:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: B3-C#5)
-- [LMMS](https://lmms.io/download#windows) (Range: B3-C#5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B4-C#6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B4-C#6)
-- [Ableton](https://www.ableton.com/en/trial/)* (Range: B2-C#4)
+- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
 - [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
 - [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
