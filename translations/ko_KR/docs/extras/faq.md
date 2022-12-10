@@ -1,6 +1,6 @@
-# Frequently Asked Questions
+# 자주 묻는 질문
 ---
 
-## Baboon?
+## 개코원숭이?
 
 🐒

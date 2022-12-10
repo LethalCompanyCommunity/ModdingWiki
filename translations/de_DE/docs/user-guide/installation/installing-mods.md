@@ -3,7 +3,7 @@
 
 ?> Wenn du Video-Tutorials bevorzugst, hat VorgunTheBeta [ein Video, das erklärt, wie du Mods und eigene Songs installieren kannst](https://youtu.be/pSwNSGx-P5c).
 
-?> The start of this guide also works for Linux and Steam Deck! Make sure to [read the end](#linuxsteam-deck-specific-tips) for additional details.
+?> Der Anfang dieser Anleitung funktioniert auch für Linux und Steam Deck! Lies [das Ende](#linuxsteam-deck-specific-tips) des Guides für zusätzliche Details.
 
 ## Installationsort finden
 1. Öffne Steam und klicke mit der rechten Maustaste auf Trombone Champ. Gehe dann zu `Verwalten > Lokale Dateien durchsuchen`.
@@ -21,7 +21,7 @@
 
 ![BepInEx extrahieren Vorschau](../docs/files/bepinexextract.png)
 
-> Bitte stelle sicher, dass die `x64` Version von BepInEx heruntergeladen ist. Die `Unix` und `x86` Versionen führen dazu, dass das Spiel nicht richtig funktioniert. This also applies to users on Linux/Steam Deck.
+> Bitte stelle sicher, dass die `x64` Version von BepInEx heruntergeladen ist. Die `Unix` und `x86` Versionen führen dazu, dass das Spiel nicht richtig funktioniert. Dies gilt auch für Benutzer auf Linux/Steam Deck.
 
 !> **WICHTIG:** Extrahiere BepInEx *direkt* in den Ordner Ihres Spiels, wie im obrigen Bild gezeigt. Wenn Sie alles richtig gemacht haben, sollte der Ordner Ihres Spiels wie das unten stehende Bild aussehen.
 
@@ -47,36 +47,36 @@ Da du wahrscheinlich eigene Songs installieren möchtest, wird dieser Abschnitt 
 
 4. Starte Trombone Champ, um die notwendigen Dateien zu initialisieren.
 
-## Linux/Steam Deck Tips
+## Linux/Steam Deck Tipps
 <details closed>
-<summary>Expand</summary>
+<summary>Mehr</summary>
 
-The process of installing BepInEx is largely the same as on Windows listed above, however there are some extra things to be aware of first:
+Der Installationsprozess von BepInEx ist weitgehend identisch mit Windows. Es gibt jedoch einige zusätzliche Dinge, die man zuerst beachten sollte:
 
- - To follow the guide, Steam Deck users will need to switch to Desktop Mode by holding down the power button and selecting `Desktop Mode` from the menu.
+ - Um der Anleitung zu folgen, müssen Steam Deck Benutzer in den Desktop Modus wechseln, in dem sie den An-Knopf gedrückt halten und den `Desktop Mode` aus dem Menü auswählen.
 
- - Steam Deck users will need to install the game to the internal storage, as BepInEx will not load from the microSD card.
+ - Steam Deck Benutzer müssen das Spiel auf dem internen Speicher installieren, da BepInEx nicht von der microSD-Karte aus lädt.
 
- - As stated earlier, you will still need to install the `x64` Windows version of BepInEx, not the `unix` version, as Trombone Champ is still a Windows application running under Proton.
+ - Wie bereits erwähnt, müssen Sie weiterhin die `x64` Windows-Version von BepInEx, installieren nicht die `unix` Version, da Trombone Champ immer noch eine Windows-Anwendung, die unter Proton läuft, ist.
 
- - Save and log files are stored in your Steam folder within Proton's compatibility folders.
+ - Speicherdaten und Logs werden im Steam Ordner innerhalb Protons Kompatibilitätsordner gespeichert.
 
-    - On Steam Deck this can be found at: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
-    - On other Linux flavors you can run `locate -r /Holy Wow$` from the terminal if you're unsure of where your Steam folder is.
+    - Auf dem Steam Deck lässt sich dies hier finden: `~/.local/share/Steam/Steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
+    - Auf anderen Linux Varianten können Sie `locate -r /Holy Wow$<0>locate -r /Holy Wow$` im Terminal ausführen, wenn Sie sich nicht sicher sind, wo sich Ihr Steam Ordner befindet.
 
-You will also need to add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your game's launch options. To do this, right click the game in Steam and click `Properties`. Unlike on Windows, Proton won't load BepInEx's files unless specifically instructed to here.
+Sie müssen auch `WINEDLLOVERRIDES="winhttp=n,b" %command%` zu den Startoptionen deines Spiels hinzufügen. Klicken Sie dazu mit der rechten Maustaste auf das Spiel in Steam und klicken Sie auf `Eigenschaften`. Im Gegensatz zu Windows wird Proton BepInEx nicht laden, es sei denn, es wird hier ausdrücklich angewiesen.
 
-![Steam Properties Preview](../docs/files/linuxsteamproperties.png)
+![Steam Eigenschaften Vorschau](../docs/files/linuxsteamproperties.png)
 
-Once added, BepInEx should now work! Install your mods [as instructed above](##installation) to get custom songs working.
+Einmal hinzugefügt, sollte BepInEx jetzt funktionieren! Installieren Sie Mods [wie oben beschrieben](##installation), damit eigene Songs funktionieren.
 
-### Video Backgrounds {docsify-ignore}
+### Video-Hintergründe {docsify-ignore}
 
-Some custom songs will include videos for their backgrounds, and the default Proton install cannot play these back. If you want these to work, you can install `GE-Proton` using [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/). This is a version of Proton that includes some additional features, including the ability to play back video formats that Valve are unable to support officially.
+Einige benutzerdefinierte Lieder werden Videos für ihre Hintergründe enthalten, und die Standard-Proton-Installation kann diese nicht wiedergeben. Wenn diese funktionieren sollen, können Sie `GE-Proton` mit [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/) installieren. Dies ist eine Version von Proton, die einige zusätzliche Funktionen enthält, einschließlich der Möglichkeit, Videoformate wiederzugeben, die Valve nicht offiziell unterstützen kann.
 
-We recommend following [this guide created by GamingOnLinux](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) for instructions on how to use ProtonUp-Qt and install `GE-Proton`.
+Wir empfehlen [dieser Guide von GamingOnLinux zu folgen](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/), um Anleitungen zur Verwendung von ProtonUp-Qt zu erhalten und `GE-Proton` zu installieren.
 
-!> Even with GE-Proton, you may still experience some issues with video playback depending on your setup. </details>
+!> Auch mit GE-Proton könnten Sie immer noch Probleme mit der Videowiedergabe haben, abhängig von Ihrem Setup. </details>
 
 ## Eigene Songs installieren {docsify-ignore}
 

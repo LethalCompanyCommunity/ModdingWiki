@@ -1,0 +1,16 @@
+- **คู่มือผู้ใช้**
+- [บทนำ](./)
+- **Modding**
+- [การลง Mods](installing-mods)
+- [การลงเพลง](installing-songs)
+- **การทำผัง**
+- [การสร้างผัง](creating-charts)
+- [พื้นหลังของผัง](chart-backgrounds)
+- [ข้อมูลผังอย่างอื่น](misc-charting-info)
+- **เพิ่มเติม**
+- [คำถามที่พบบ่อย](faq)
+- **ลิงค์**
+- [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
+- [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)
+- [![แปลภาษา](https://icongr.am/material/translate.svg?color=808080&size=16)แปลภาษา](https://crowdin.com/project/trombone-champ-modding-wiki)
+- [เกี่ยวกับ](about)

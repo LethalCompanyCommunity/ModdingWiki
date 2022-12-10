@@ -42,15 +42,15 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて48～72の範囲で�
 </p>
 
 <h3 spaces-before="0">
-  普通のノーツ
+  ノーマルノーツ
 </h3>
 
 <p spaces-before="0">
-  通常のノーツはMIDIエディターで作成され、ゲーム内でも同じように見えます。 ノーツとノーツの間には隙間を空けるようにしましょう。
+  ノーマルノーツはMIDIエディターで打ち込み、ゲーム内でも打ち込んだ時と同じように見えます。 ノーツとノーツの間には隙間を空けるようにしましょう。
 </p>
 
 <h3 spaces-before="0">
-  スライドするノーツ
+  スライドノーツ
 </h3>
 
 <p spaces-before="0">
@@ -58,7 +58,7 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて48～72の範囲で�
 </p>
 
 <p spaces-before="0">
-  <img src="../docs/files/slide1.png" alt="Slide Note Example" />
+  <img src="../docs/files/slide1.png" alt="スライドノーツの例" />
 </p>
 
 <p spaces-before="0">
@@ -70,7 +70,7 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて48～72の範囲で�
 </p>
 
 <p spaces-before="0">
-  <img src="../docs/files/slide2.png" alt="Multiple Slide Note Example" />
+  <img src="../docs/files/slide2.png" alt="複数のスライドノーツの例" />
 </p>
 
 <h2 spaces-before="0">
@@ -100,62 +100,62 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて48～72の範囲で�
     </p>
     <ul>
       <li>
-        <code>Song Name</code> is the full name of the song, shown in the info when you select it in-game .
+        <code>Song Name</code> 楽曲のフルネームで、ゲーム内の選曲画面で選択すると楽曲情報に表示される。
       </li>
       <li>
-        <code>Short Name</code> is shown while scrolling through the song list. Text gets smaller when the name is long so I'm not sure if there's a maximum length.
+        <code>Short Name</code> 楽曲リストをスクロールするときに表示される名前で、 文字数が長いと表示テキストが縮小されます。文字数制限があるかは不明
       </li>
       <li>
-        <code>Folder Name</code> is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
+        <code>Folder Name</code> 作成した譜面と音源のデータを格納するフォルダの名前です。 例: Folder Nameを「my map」に設定すると譜面データのファイルパスはBepInEx/CustomSongs/my map/song.tmbになります。
       </li>
       <li>
-        <code>Year</code> is the year the song was created.
+        <code>Year</code> 使用した楽曲が作成された年
       </li>
       <li>
-        <code>Author</code> is the composer of the song.
+        <code>Author</code> 使用した楽曲の作曲者名
       </li>
       <li>
-        <code>Difficulty</code> is the number of difficulty stars that appear on the song's info.
+        <code>Difficulty</code> 楽曲情報に表示される譜面の難易度を表す星マークの数です。
       </li>
       <li>
-        <code>Note Spacing</code> affects how fast the level scrolls, in combination with BPM.
+        <code>Note Spacing</code>  BPMと組み合わせて、演奏時のノーツの移動速度に影響します。
       </li>
       <li>
-        <code>Song Endpoint</code> is the beat on which the song ends. It is automatically calculated, but you can adjust it to change when the level end screen appears.
+        <code>Song Endpoint</code> 楽曲の終わりを示す拍子。 通常これは自動的に計算されますが、演奏終了画面が表示されたときに変更することが可能です。
       </li>
       <li>
-        <code>Beats per Bar</code> determines how far apart the "beat lines" are.
+        <code>Beats per Bar</code> 拍子の線の間隔を決める。
       </li>
     </ul>
   </li>
   
   <li>
     <p spaces-before="0">
-      Hit OK. In the file selector it opens, create a folder with the same name as you entered in the <code>Folder Name</code> field, and save the file as <code>song.tmb</code> inside that folder.
+      OKを押す。 ファイル選択画面で<code>Folder Name</code>で入力した同じ名前のフォルダを作成し、その中に<code>song.tmb</code>という名前で保存
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Your music track should be a .ogg file. At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file <code>song.ogg</code>.
+      音源データはOGGファイル(.ogg)を使用します。 当記事執筆時点で音源の長さはSong Endpointよ当記事執筆時点で音源の長さはSong Endpointより長くあり必要があります。そうでない場合、楽曲が途中で止まってしまい最後まで演奏できなくなってしまいます。 Audacityなどのソフトウェアを使って、音源の最初に無音部分を挿入してMIDIに合わせることができます。 ファイル名: <code>song.ogg</code>
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Move the ogg file into the same folder as <code>song.tmb</code>.
+      <code>song.tmb</code>と同じフォルダにOGGファイルを入れる。
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Follow the <a href="installing-songs">Custom Song Installation instructions</a> to test it.
+      テストプレイを行う際は<a href="installing-songs">カスタム音源の導入方法</a>をご参照ください。
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      <a href="chart-backgrounds">Add a background!</a>
+      <a href="chart-backgrounds">次は背景を追加だ！</a>
     </p>
   </li>
 </ol>

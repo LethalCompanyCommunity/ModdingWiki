@@ -20,17 +20,17 @@ Deze handleiding is voornamelijk geschreven door [Bobbie](https://twitter.com/VR
 > 
 > **Nederlands:** VorgunTheBeta
 > 
-> **French:** MrKegg, H3ITO, slaw
+> **Frans:** MrKegg, H3ITO, slaw
 > 
-> **German:** KlosRadieschen
+> **Duits:** KlosRadieschen
 > 
-> **Italian:** Palleuomo, gardaviolenta
+> **Italiaans:** Palleuomo, gardaviolenta
 > 
 > **Portugees (Braziliaan):** NekoDinner
 > 
 > **Spaans:** dakar665, BrookeAFK
 > 
-> **Ukrainian:** sw1ft
+> **Oekraïens:**: sw1ft
 
 ?> **Open Source en Privacy**  
 [Deze handleiding is open source op GitHub](https://github.com/tc-mods/TromboneChampModdingWiki). Het is gelicenseerd onder de [ISC License](https://github.com/tc-mods/TromboneChampModdingWiki/blob/master/LICENSE.md).

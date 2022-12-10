@@ -1,161 +1,161 @@
-# Creating Charts
+# 채보 작성
 ---
 
-?> If you prefer video tutorials, NyxTheShield has [a stream archive](https://www.youtube.com/watch?v=ig27SlJveGs) that explains every step of the charting process in detail.
+?> 동영상 튜토리얼을 선호하는 경우 NyxTheShield의 [생방송 다시보기](https://www.youtube.com/watch?v=ig27SlJveGs)를 시청하세요. 채보 작성의 모든 과정을 자세히 설명하고 있습니다.
 
-## Basics
-### Midi Editor/DAW
-Charts are made by creating a midi file and running them through a [MIDI converter](#converting-midi-to-map-file).
+## 기본
+### Midi 에디터/DAW
+채보는 Midi 파일을 만들고 [MIDI 컨버터](#converting-midi-to-map-file)를 사용하여 만들 수 있습니다.
 
-Midi notes should be in the range 48 to 72 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Midi의 음표(노트)는 게임에 맞추어 48에서 72의 범위여야 합니다.<br>**참고:** Midi 에디터에 따라 이 범위는 달라질 수 있습니다.
 
-Some free, verified to work midi editors include:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (Range: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: C4-C6)
+일부 무료로 사용 가능한 Midi 에디터는 다음과 같습니다:
+- [Reaper](https://www.reaper.fm/download.php)* (범위: C3-C5)
+- [LMMS](https://lmms.io/download#windows) (범위: C3-C5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (범위: C4-C6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (범위: C4-C6)
 
-<sub>*Full software is not free, but has a free trial that works for charting.</sub><br> <sub>**Exports notes into MIDI track 2 by default, which makes it incompatible with Midi2TromboneChamp by default.</sub><br> <sub>†The trial version of FL Studio doesn't allow you to export MIDI, but you can get around this by saving the project file and using <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
+<sub>*유료 버전이 있으나 무료 체험판으로도 채보 작성에 사용 가능합니다.</sub><br> <sub>**노트를 기본적으로 Midi 트랙 2로 내보내므로 MIDI2TromboneChamp와 호환되지 않습니다.</sub><br> <sub>†FL Studio의 평가판에서는 Midi 파일로 내보낼 수 없으나 프로젝트 파일을 저장하고 <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>를 사용하여 해결할 수 있습니다.</p>
 
 <h4 spaces-before="0">
-  Reaper Project
+  Reaper 프로젝트
 </h4>
 
 <p spaces-before="0">
-  If you're not sure which editor to use, Reaper is recommended as there's a custom Trombone Champ project file that comes with:
+  어떤 에디터를 사용해야 할지 잘 모르겠다면 Reaper를 추천합니다. 채보 작성에 참고가 되는 프로젝트 파일도 배포하고 있습니다.
 </p>
 
 <ul>
   <li>
-    A basic explanation on how to use the controls of Reaper (in English)
+    Reaper의 기본적인 조작 설명 (영어)
   </li>
   <li>
-    Preconfigured settings
+    사전 구성된 설정
   </li>
   <li>
-    Example MIDI
+    예제 MIDI
   </li>
 </ul>
 
 <p spaces-before="0">
-  The project can be <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">downloaded here</a>.
+  프로젝트 파일은 <a href="https://trombone.wiki/docs/files/REAPER_Trombone_Champ_Charting_Template.zip">여기서 다운로드</a>할 수 있습니다.
 </p>
 
 <h3 spaces-before="0">
-  Normal Notes
+  일반 노트
 </h3>
 
 <p spaces-before="0">
-  Normal notes are created in the midi editor and look the same in-game. Make sure to leave a gap in time between notes!
+  일반 노트는 Midi 에디터에서 생성하면 게임 내에서 동일하게 보입니다. 노트 사이에 시간 간격을 두도록 하세요!
 </p>
 
 <h3 spaces-before="0">
-  Slide Notes
+  슬라이드 노트
 </h3>
 
 <p spaces-before="0">
-  Slides are created by overlapping notes in time. For a pair of overlapping notes, the slide goes from the start of the first note to the start of the second. The overlapping part of the first note is discarded. See this image for an example:
+  슬라이드는 노트를 겹쳐서 만들 수 있습니다. 두 개의 노트가 겹쳐 있는 경우 첫 번째 노트의 시작에서 두 번째 노트의 시작까지 슬라이드합니다. 첫 번째 노트와 겹치는 부분은 사라집니다. 예시는 아래 사진을 참고하세요:
 </p>
 
 <p spaces-before="0">
-  <img src="../docs/files/slide1.png" alt="Slide Note Example" />
+  <img src="../docs/files/slide1.png" alt="슬라이드 노트 예시" />
 </p>
 
 <p spaces-before="0">
-  If a note ends but the next note starts at the exact same time, they will be connected. This allows you to adjust where the curve of a slide starts. Here's an example of multiple slides connected together:
+  만약 노트가 끝나도 다음 노트가 같은 타이밍에 시작되면 그 두 노트는 연결됩니다. 이렇게 하면 슬라이드의 곡선이 시작되는 위치를 조정할 수 있습니다. 다음은 여러 슬라이드를 함께 연결한 예시입니다:
 </p>
 
 <p spaces-before="0">
-  (note: The first straight section is a separate note from the curved section. Its end time is the same as the next one's start time.)
+  (참고: 첫 번째 직선 구간은 곡선 구간과 별개의 노트입니다. 노트의 종료 시간은 다음 노트의 시작 시간과 같습니다.)
 </p>
 
 <p spaces-before="0">
-  <img src="../docs/files/slide2.png" alt="Multiple Slide Note Example" />
+  <img src="../docs/files/slide2.png" alt="여러 슬라이드 노트 예시" />
 </p>
 
 <h2 spaces-before="0">
-  Converting Midi to Map File
+  Midi에서 채보 파일로 변환
 </h2>
 
 <p spaces-before="0">
-  ?> There are two Midi converters available besides Midi2TromboneChamp! <br>Since they're still in beta, <strong x-id="1">they may have bugs</strong>, so this guide is still written for Midi2TromboneChamp. <br>The process for these new converters is similar enough that this guide should still be usable. <br>If you want to try a more up-to-date conversion program, feel free to give a new converter a try: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - a unity-based sequel to Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - a web-based alternative with new features.
+  ?> Midi2TromboneChamp 외에도 Midi 컨버터가 두 개 있습니다! <br>아직 베타 버전이기 때문에 <strong x-id="1">버그가 있을 수 있으므로</strong>, 이 가이드는 Midi2TromboneChamp 용으로 작성되었습니다. <br>이러한 Midi 컨버터의 사용 방법은 비슷한 느낌이므로 이 가이드를 그대로 참고할 수 있습니다. <br>만약 최신 변환 프로그램을 사용하고 싶다면, 새로운 컨버터도 자유롭게 사용해보세요: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - Unity 기반 브라우저 버전 Midi2TromboneChamp <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - 새로운 기능이 추가된 브라우저 기반 컨버터
 </p>
 
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Go to <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
+      <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a>로 이동하여 <code>Midi2TromboneChamp.exe</code>를 클릭하고 다운로드하세요.
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Run it. In the file selector it opens, select your midi file. Click Open.
+      실행하고 파일 선택 화면이 열리면 Midi 파일을 선택합니다. "열기"를 클릭합니다.
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Fill out the fields:
+      설정 항목을 입력합니다:
     </p>
     <ul>
       <li>
-        <code>Song Name</code> is the full name of the song, shown in the info when you select it in-game .
+        <code>Song Name</code>: 악곡의 풀네임으로 게임 내 선곡 화면에서 선택했을 때 악곡 정보에 표시됩니다.
       </li>
       <li>
-        <code>Short Name</code> is shown while scrolling through the song list. Text gets smaller when the name is long so I'm not sure if there's a maximum length.
+        <code>Short Name</code>: 악곡 목록을 스크롤할 때 표시되는 이름입니다. 글자 수가 길면 텍스트 크기가 작아집니다. 글자 수 제한이 있는지는 명확하지 않습니다.
       </li>
       <li>
-        <code>Folder Name</code> is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
+        <code>Folder Name</code>: 작성한 채보와 악곡을 저장하는 폴더의 이름입니다. 예시: Folder Name을 "my map"으로 설정하면 채보 데이터의 파일 경로는 BepInEx/CustomSongs/my map/song.tmb가 됩니다.
       </li>
       <li>
-        <code>Year</code> is the year the song was created.
+        <code>Year</code>: 곡이 제작된 년도를 입력합니다.
       </li>
       <li>
-        <code>Author</code> is the composer of the song.
+        <code>Author</code>: 곡의 작곡가를 입력합니다.
       </li>
       <li>
-        <code>Difficulty</code> is the number of difficulty stars that appear on the song's info.
+        <code>Difficulty</code>: 악곡 정보에 표시되는 채보의 난이도를 나타내는 별의 개수입니다.
       </li>
       <li>
-        <code>Note Spacing</code> affects how fast the level scrolls, in combination with BPM.
+        <code>Note Spacing</code>: BPM과 조합하여 연주 시 노트의 이동 속도에 영향을 줍니다.
       </li>
       <li>
-        <code>Song Endpoint</code> is the beat on which the song ends. It is automatically calculated, but you can adjust it to change when the level end screen appears.
+        <code>Song Endpoint</code>: 악곡의 끝을 나타내는 박자입니다. 보통 이것은 자동으로 계산되지만 연주 종료 화면이 표시되었을 때 변경할 수 있습니다.
       </li>
       <li>
-        <code>Beats per Bar</code> determines how far apart the "beat lines" are.
+        <code>Beats per Bar</code>: 박자 선의 간격을 정합니다.
       </li>
     </ul>
   </li>
   
   <li>
     <p spaces-before="0">
-      Hit OK. In the file selector it opens, create a folder with the same name as you entered in the <code>Folder Name</code> field, and save the file as <code>song.tmb</code> inside that folder.
+      OK를 누릅니다. 파일 선택 화면에서 <code>Folder Name</code>에 입력한 동일한 이름의 폴더를 생성하고 그 안에 <code>song.tmb</code>라는 이름으로 저장합니다.
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Your music track should be a .ogg file. At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file <code>song.ogg</code>.
+      음악 파일은 .ogg 파일을 사용합니다. 곡을 작성할 때, 음원 길이는 Song Endpoint보다 길어야 합니다. 그렇지 않은 경우, 악곡이 도중에 멈춰버려서 끝나지 않게 됩니다. Audacity 등의 소프트웨어를 사용하여 음원의 처음에 무음 부분을 삽입하여 Midi에 맞출 수 있습니다. 파일명은 <code>song.ogg</code>입니다.
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Move the ogg file into the same folder as <code>song.tmb</code>.
+      ogg 파일을 <code>song.tmb</code>와 동일한 폴더로 넣습니다.
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      Follow the <a href="installing-songs">Custom Song Installation instructions</a> to test it.
+      테스트 플레이를 할 때는 <a href="installing-songs">커스텀 곡 추가 방법</a>을 참조해 주세요.
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      <a href="chart-backgrounds">Add a background!</a>
+      <a href="chart-backgrounds">배경 추가하기!</a>
     </p>
   </li>
 </ol>

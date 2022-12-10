@@ -51,24 +51,24 @@ Siccome probabilmente vorrai installare brani personalizzati, questa sezione use
 <details closed>
 <summary>Espandi</summary>
 
-The process of installing BepInEx is largely the same as on Windows listed above, however there are some extra things to be aware of first:
+Il processo per installare BepInEx è in gran parte lo stesso di quello su Windows sopra elencato, tuttavia ci sono alcune cose su cui essere consapevoli:
 
- - To follow the guide, Steam Deck users will need to switch to Desktop Mode by holding down the power button and selecting `Desktop Mode` from the menu.
+ - Per seguire la guida, gli utenti Steam Deck dovranno passare alla modalità Desktop schiacciando il pulsante di accensione e selezionando `Desktop Mode` dal menu.
 
- - Steam Deck users will need to install the game to the internal storage, as BepInEx will not load from the microSD card.
+ - Gli utenti Steam Deck dovranno installare il gioco nella memoria interna, dato che BepInEx non verrà caricato dalla scheda microSD.
 
- - As stated earlier, you will still need to install the `x64` Windows version of BepInEx, not the `unix` version, as Trombone Champ is still a Windows application running under Proton.
+ - Come detto in precedenza, dovrai installare la versione `x64` di BepInEx, non la versione `unix`, dato che Trombone Champ è un'applicazione di Windows che gira con Proton.
 
- - Save and log files are stored in your Steam folder within Proton's compatibility folders.
+ - I files di salvataggio sono conservati nelle cartelle di Steam compatibili con Proton.
 
-    - On Steam Deck this can be found at: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
-    - On other Linux flavors you can run `locate -r /Holy Wow$` from the terminal if you're unsure of where your Steam folder is.
+    - Su Steam Deck questo può essere trovato in: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
+    - Su altri sistemi di Linux puoi eseguire `localizza -r /Holy Wow<0>localizza -r /Holy Wow$` dal terminale se non sei sicuro di dove si trovi la tua cartella Steam.
 
-You will also need to add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your game's launch options. To do this, right click the game in Steam and click `Properties`. Unlike on Windows, Proton won't load BepInEx's files unless specifically instructed to here.
+Dovrai anche aggiungere `WINEDLLOVERRIDES="winhttp=n,b" %command%` alle tue opzioni di avvio del gioco. Per fare questo, schiaccia il tasto destro sul gioco su Steam e schiaccia `Propietà`. Rispetto a Windows, Proton non caricherà i files di BepInEx a meno che non sia specificatamente indicato qui.
 
 ![Anteprima delle Proprietà di Steam](../docs/files/linuxsteamproperties.png)
 
-Once added, BepInEx should now work! Installa le tue mod [come indicato sopra](##installation)affinché le canzoni funzionino.
+Una volta aggiunto, BepInEx dovrebbe funzionare! Installa le tue mod [come indicato sopra](##installation)affinché le canzoni funzionino.
 
 ### Video in Background {docsify-ignore}
 
