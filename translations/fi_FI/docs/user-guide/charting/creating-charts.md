@@ -7,13 +7,16 @@
 ### Midi Editor/DAW
 Kartat tehdään luomalla midi tiedosto ja viemällä ne [MIDI muuntimen](#converting-midi-to-map-file) läpi.
 
-Midi nuotit tulisi olla 48 - 72 asteikon välillä toimiakseen pelin kanssa.<br>**HUOM:** Erilaiset editorit käyttävät pianolle erilaisia arvoja.
+Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
 
 Jotkut ilmaiset, todennettu toimimaan midi editorit ovat:
-- [Reaper](https://www.reaper.fm/download.php)* (Asteikko: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (Asteikko: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Asteikko: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Asteikko: C4-C6)
+- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
+- [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
+- [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
 <sub>*Täysi ohjelmisto ei ole ilmainen, mutta on ilmainen kokeiluversio, joka toimii kartoitukseen.</sub><br> <sub>**Vie nuotit MIDI radalle 2 oletuksena, mikä tekee siitä yhteensopimattoman Midi2TromboneChampin kanssa.</sub><br> <sub>†FL Studio kokeiluversio ei salli sinun viedä MIDIä mutta voit kiertää tämän tallentamalla projektin tiedoston ja käyttämällä <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>.</p>
 
@@ -78,13 +81,13 @@ Jotkut ilmaiset, todennettu toimimaan midi editorit ovat:
 </h2>
 
 <p spaces-before="0">
-  ?> Midi2TromboneChampin lisäksi on saatavilla kaksi Midi -muunninta! <br>Koska ne ovat vielä betassa, <strong x-id="1">niissä voi olla bugeja</strong>, joten tämä opas on vielä kirjoitettu Midi2TromboneChampille. <br>Prosessi näille uusille muuntimille on tarpeeksi samanlainen, että tämä opas olisi edelleen käyttökelpoinen. <br>Jos haluat kokeilla ajan tasalla olevaa muuntoohjelmaa, voit kokeilla vapaasti uutta muunninta: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - unity-pohjainen jatko-osa Midi2TromboneChampille. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - web-pohjainen vaihtoehto, jossa on uusia ominaisuuksia.
+  ?> Midi2TromboneChampin lisäksi on saatavilla kaksi Midi -muunninta! <br>Prosessi näille uusille muuntimille on tarpeeksi samanlainen, että tämä opas olisi edelleen käyttökelpoinen. <br>Jos haluat kokeilla ajan tasalla olevaa muuntoohjelmaa, voit kokeilla vapaasti uutta muunninta: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - unity-pohjainen jatko-osa Midi2TromboneChampille. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - web-pohjainen vaihtoehto, jossa on uusia ominaisuuksia.
 </p>
 
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Mene <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> ja lataa <code>Midi2TromboneChamp.exe</code>.
+      Go to <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
     </p>
   </li>
   
