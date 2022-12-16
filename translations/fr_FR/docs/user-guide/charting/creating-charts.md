@@ -7,14 +7,14 @@
 ### Éditeur MIDI/station audionumérique
 Les partitions sont faites par créer un fichier MIDI qui est ensuite passé à travers un [convertisseur MIDI](#converting-midi-to-map-file).
 
-Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Les notes MIDI devraient être situées entre 47 et 73 pour correspondre au jeu.<br>**NOTE:** Différents éditeurs utilisent des valeurs différentes sur le piano pour cette gamme.
 
 Quelques éditeurs MIDI gratuits et fonctionnels incluent :
-- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
-- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
-- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
+- [Reaper](https://www.reaper.fm/download.php)* (Gamme : B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (Gamme : B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Gamme : B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Gamme : B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Gamme : B1-C#4)
 - [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
 - [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
@@ -87,7 +87,7 @@ Quelques éditeurs MIDI gratuits et fonctionnels incluent :
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Go to <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
+      Allez à <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> et cliquez sur <code>Midi2TromboneChamp.exe</code> pour le télécharger.
     </p>
   </li>
   
