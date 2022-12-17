@@ -7,7 +7,7 @@
 ### ตัวตัดต่อ Midi/DAW
 ผังสร้างได้จากการสร้างไฟล์ MIDI และรันผ่าน [MIDI converter](#converting-midi-to-map-file)
 
-Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+โน็ตของ MIDI ควรที่จะอยู่ระหว่างแนวที่ 47 ถึง 73 เพื่อที่จะตรงกับเกม <br>**โน็ต:** ตัวตัดต่อแต่ละตัวจะใช้ค่าของเปียนโนต่างกันกับแนวนี้
 
 ตัวตัดต่อ Midi ที่ฟรีและทดสอบว่าใช้ได้มี:
 - [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)

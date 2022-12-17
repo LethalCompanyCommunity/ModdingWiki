@@ -7,7 +7,7 @@
 ### MIDIエディター / DAW
 譜面はMIDIファイルを作成し、[MIDIコンバーター](#converting-midi-to-map-file)を使って変換することで作ることができます。
 
-Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+MIDIの音符(ノーツ)の高さはゲームに合わせて47～73の範囲である必要があります。<br>**注:** MIDIエディターによってはこの範囲でのピアノの数値が異なるかもしれません。
 
 動作確認済みでフリーで使えるMIDIエディターには以下のようなものがあります:
 - [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)

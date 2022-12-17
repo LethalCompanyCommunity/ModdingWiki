@@ -7,7 +7,7 @@
 ### Midi Editor/DAW
 自制谱的制作需要创建Midi文件并使用[MIDI转换器](#converting-midi-to-map-file)进行转换。
 
-Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Midi文件中的音符应该在47到73的范围内以匹配游戏。<br>**注意：**该范围在不同的编辑器上会使用不同的钢琴琴键范围。
 
 一些免费可用的Midi编辑器包括：
 - [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)

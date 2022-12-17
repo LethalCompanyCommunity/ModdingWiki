@@ -7,7 +7,7 @@
 ### Midi-редактор/DAW
 Чарти зроблені шляхом створення midi файлу та їх конвертування через [MIDI конвертор](#converting-midi-to-map-file).
 
-Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Ноти у Midi файлі мають бути в діапазоні від 47 до 73 для сходження з грою.<br>**ПРИМІТКА:** Різні редактори використовують різні значення на фортепіано для цього діапазону.
 
 Деякі безкоштовні та перевірені Midi-редактори:
 - [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)

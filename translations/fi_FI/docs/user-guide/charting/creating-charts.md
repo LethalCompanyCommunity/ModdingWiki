@@ -7,7 +7,7 @@
 ### Midi Editor/DAW
 Kartat tehdään luomalla midi tiedosto ja viemällä ne [MIDI muuntimen](#converting-midi-to-map-file) läpi.
 
-Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Midi nuotit tulisi olla 47 - 73 asteikon välillä toimiakseen pelin kanssa.<br>**HUOM:** Erilaiset editorit käyttävät pianolle erilaisia arvoja.
 
 Jotkut ilmaiset, todennettu toimimaan midi editorit ovat:
 - [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)

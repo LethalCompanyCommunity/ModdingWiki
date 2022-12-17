@@ -7,7 +7,7 @@
 ### Midi Editor/DAW
 Charts werden erschaffen, wenn man eine midi Datei erstellt und sie mit dem Programm [Midi2TromboneChamp](#converting-midi-to-map-file) konvertiert.
 
-Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Midi Noten sollten in der Reichweite von 47 bis 73 sein, um mit dem Spiel übereinzustimmen.<br>**HINWEIS:** Verschiedene Editoren verwenden für diesen Bereich unterschiedliche Werte auf dem Klavier.
 
 Einige kostenlose, überprüfte Midi-Editoren beinhalten:
 - [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)

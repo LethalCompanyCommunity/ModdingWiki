@@ -7,7 +7,7 @@
 ### Editor Midi/DAW
 Los mapas se hacen creando un archivo midi y ejecutándolo en un [convertidor MIDI](#converting-midi-to-map-file).
 
-Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Notas Midi deben estar en el rango de 47 a 73 para coincidir con el juego.<br>**NOTA:** Diferentes editores usan diferentes valores en el piano para este rango.
 
 Algunos editores midi gratis, verificados que funcionan incluyen:
 - [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)

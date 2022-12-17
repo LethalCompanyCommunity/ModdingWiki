@@ -7,7 +7,7 @@
 ### MIDI Editor/DAW
 Maps zijn gemaakt door een MIDI bestand te maken en deze door [Midi2TromboneChamp](#converting-midi-to-map-file) te voeren.
 
-Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+De MIDI-noten moeten in het bereik 47 tot 73 liggen, anders werkt het niet in het spel. <br>**LET OP:** Verschillende editors gebruiken verschillende waarden op de piano voor dit bereik.
 
 Enkele gratis en geverifieerd werkende MIDI-editors zijn:
 - [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)

@@ -7,7 +7,7 @@
 ### Midi 에디터/DAW
 채보는 Midi 파일을 만들고 [MIDI 컨버터](#converting-midi-to-map-file)를 사용하여 만들 수 있습니다.
 
-Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Midi의 음표(노트)는 게임에 맞추어 47에서 73의 범위여야 합니다.<br>**참고:** Midi 에디터에 따라 이 범위는 달라질 수 있습니다.
 
 일부 무료로 사용 가능한 Midi 에디터는 다음과 같습니다:
 - [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)

@@ -7,7 +7,7 @@
 ### Editor Midi/DAW
 Le charts vengono realizzate creando un file midi e facendolo processare da un [convertitore MIDI](#converting-midi-to-map-file).
 
-Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
+Le note midi dovrebbero essere nell'intervallo da 47 a 73 per abbinarsi al gioco. <br>**NOTA BENE:** Editor diversi usano valori diversi per il piano in questo intervallo.
 
 Alcuni editor midi gratuiti, il cui funzionamento è verificato, sono:
 - [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
