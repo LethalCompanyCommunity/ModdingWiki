@@ -17,15 +17,15 @@ TheGlitched64 a aussi créé [une feuille de calcul contenant de l'information s
 
 ## Pourquoi BepInEx ne crée-t-il pas de dossiers ?
 
-Make sure that you downloaded the x64 BepInEx. Also make sure your folder looks like this: ![Finished BepinEx Install](../docs/files/finishedbepinex.png)
+Assurez-vous d'avoir téléchargé la version x64 de BepInEx. Assurez-vous aussi que vos dossiers ressemblent à ceci : ![Installation terminée de BepinEx](../docs/files/finishedbepinex.png)
 
-## Why aren't my songs appearing in the game?
+## Pourquoi mes chansons n'apparaissent-t-elles pas dans le jeu ?
 
-Make sure you've unzipped the file. It should look like this: ![Correct Extraction Preview](../docs/files/customsongcorrect.png)
+Assurez-vous d'avoir décompressé le fichier. Ça devrait ressembler à ceci : ![Corriger l'aperçu d'extraction](../docs/files/customsongcorrect.png)
 
-## What do I do with .7zip or .rar files?
+## Que dois-je faire avec les fichiers .7zip ou .rar ?
 
-You can unzip them with [7-zip](https://www.7-zip.org/download.html).
+Vous pouvez les décompresser avec [7-zip](https://www.7-zip.org/download.html).
 
 ## Babouin ?
 
