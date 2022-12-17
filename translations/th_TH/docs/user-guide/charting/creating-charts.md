@@ -10,11 +10,11 @@
 โน็ตของ MIDI ควรที่จะอยู่ระหว่างแนวที่ 47 ถึง 73 เพื่อที่จะตรงกับเกม <br>**โน็ต:** ตัวตัดต่อแต่ละตัวจะใช้ค่าของเปียนโนต่างกันกับแนวนี้
 
 ตัวตัดต่อ Midi ที่ฟรีและทดสอบว่าใช้ได้มี:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
-- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
-- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
+- [Reaper](https://www.reaper.fm/download.php)* (แนวที่: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (แนวที่: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (แนวที่: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (แนวที่: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (แนวที่: B1-C#4)
 - [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
 - [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
@@ -87,7 +87,7 @@
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Go to <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
+      ไปที่ <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> และคลิกที่ <code>Midi2TromboneChamp.exe</code> เพื่อดาวน์โลดมัน
     </p>
   </li>
   

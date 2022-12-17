@@ -10,11 +10,11 @@
 Ноти у Midi файлі мають бути в діапазоні від 47 до 73 для сходження з грою.<br>**ПРИМІТКА:** Різні редактори використовують різні значення на фортепіано для цього діапазону.
 
 Деякі безкоштовні та перевірені Midi-редактори:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
-- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
-- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
+- [Reaper](https://www.reaper.fm/download.php)* (Діапазон: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (Діапазон: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Діапазон: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Діапазон: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Діапазон: B1-C#4)
 - [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
 - [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 

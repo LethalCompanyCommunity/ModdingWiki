@@ -10,11 +10,11 @@
 Midi의 음표(노트)는 게임에 맞추어 47에서 73의 범위여야 합니다.<br>**참고:** Midi 에디터에 따라 이 범위는 달라질 수 있습니다.
 
 일부 무료로 사용 가능한 Midi 에디터는 다음과 같습니다:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
-- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
-- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
+- [Reaper](https://www.reaper.fm/download.php)* (범위: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (범위: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (범위: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (범위: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (범위: B1-C#4)
 - [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
 - [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
@@ -87,7 +87,7 @@ Midi의 음표(노트)는 게임에 맞추어 47에서 73의 범위여야 합니
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Go to <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
+      <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a>로 이동하여 <code>Midi2TromboneChamp.exe</code>를 클릭하고 다운로드하세요.
     </p>
   </li>
   

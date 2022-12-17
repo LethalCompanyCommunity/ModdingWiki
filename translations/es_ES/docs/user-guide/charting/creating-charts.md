@@ -10,11 +10,11 @@ Los mapas se hacen creando un archivo midi y ejecutándolo en un [convertidor MI
 Notas Midi deben estar en el rango de 47 a 73 para coincidir con el juego.<br>**NOTA:** Diferentes editores usan diferentes valores en el piano para este rango.
 
 Algunos editores midi gratis, verificados que funcionan incluyen:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
-- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
-- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
+- [Reaper](https://www.reaper.fm/download.php)* (Rango: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (Rango: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Rango: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Rango: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Rango: B1-C#4)
 - [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
 - [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
@@ -87,7 +87,7 @@ Algunos editores midi gratis, verificados que funcionan incluyen:
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Go to <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
+      Ve a <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> y haz clic en <code>Midi2TromboneChamp.exe</code> para descargarlo.
     </p>
   </li>
   

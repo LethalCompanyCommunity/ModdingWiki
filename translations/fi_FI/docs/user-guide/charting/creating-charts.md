@@ -10,11 +10,11 @@ Kartat tehdään luomalla midi tiedosto ja viemällä ne [MIDI muuntimen](#conve
 Midi nuotit tulisi olla 47 - 73 asteikon välillä toimiakseen pelin kanssa.<br>**HUOM:** Erilaiset editorit käyttävät pianolle erilaisia arvoja.
 
 Jotkut ilmaiset, todennettu toimimaan midi editorit ovat:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
-- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
-- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
+- [Reaper](https://www.reaper.fm/download.php)* (Asteikko: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (Asteikko: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Asteikko: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Asteikko: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Asteikko: B1-C#4)
 - [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
 - [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
@@ -87,7 +87,7 @@ Jotkut ilmaiset, todennettu toimimaan midi editorit ovat:
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Go to <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
+      Mene <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> ja lataa <code>Midi2TromboneChamp.exe</code>.
     </p>
   </li>
   

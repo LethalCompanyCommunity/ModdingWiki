@@ -10,11 +10,11 @@ Maps zijn gemaakt door een MIDI bestand te maken en deze door [Midi2TromboneCham
 De MIDI-noten moeten in het bereik 47 tot 73 liggen, anders werkt het niet in het spel. <br>**LET OP:** Verschillende editors gebruiken verschillende waarden op de piano voor dit bereik.
 
 Enkele gratis en geverifieerd werkende MIDI-editors zijn:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
-- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
-- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
+- [Reaper](https://www.reaper.fm/download.php)* (Bereik: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (Bereik: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Bereik: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Bereik: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Bereik: B1-C#4)
 - [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
 - [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
@@ -87,7 +87,7 @@ Enkele gratis en geverifieerd werkende MIDI-editors zijn:
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Go to <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
+      Ga naar <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> en klik op <code>Midi2TromboneChamp.exe</code> om het te downloaden.
     </p>
   </li>
   

@@ -10,11 +10,11 @@ Charts werden erschaffen, wenn man eine midi Datei erstellt und sie mit dem Prog
 Midi Noten sollten in der Reichweite von 47 bis 73 sein, um mit dem Spiel übereinzustimmen.<br>**HINWEIS:** Verschiedene Editoren verwenden für diesen Bereich unterschiedliche Werte auf dem Klavier.
 
 Einige kostenlose, überprüfte Midi-Editoren beinhalten:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
-- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
-- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
+- [Reaper](https://www.reaper.fm/download.php)* (Reichweite: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (Reichweite: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Reichweite: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Reichweite: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Reichweite: B1-C#4)
 - [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
 - [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
@@ -87,7 +87,7 @@ Einige kostenlose, überprüfte Midi-Editoren beinhalten:
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Go to <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
+      Gehe zu <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> und klicke <code>Midi2TromboneChamp.exe</code>, um es herunterzuladen.
     </p>
   </li>
   

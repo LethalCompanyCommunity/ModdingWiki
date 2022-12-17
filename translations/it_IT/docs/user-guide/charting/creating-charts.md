@@ -10,11 +10,11 @@ Le charts vengono realizzate creando un file midi e facendolo processare da un [
 Le note midi dovrebbero essere nell'intervallo da 47 a 73 per abbinarsi al gioco. <br>**NOTA BENE:** Editor diversi usano valori diversi per il piano in questo intervallo.
 
 Alcuni editor midi gratuiti, il cui funzionamento è verificato, sono:
-- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
-- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
-- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
+- [Reaper](https://www.reaper.fm/download.php)* (Intervallo: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (Intervallo: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Intervallo: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Intervallo: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Intervallo: B1-C#4)
 - [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
 - [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
@@ -87,7 +87,7 @@ Alcuni editor midi gratuiti, il cui funzionamento è verificato, sono:
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Go to <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> and click <code>Midi2TromboneChamp.exe</code> to download it.
+      Vai su <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> e clicca <code>Midi2TromboneChamp.exe</code> per scaricarlo.
     </p>
   </li>
   
