@@ -7,13 +7,16 @@
 ### Midi Editor/DAW
 自制谱的制作需要创建Midi文件并使用[MIDI转换器](#converting-midi-to-map-file)进行转换。
 
-Midi文件中的音符应该在48到72的范围内以匹配游戏。<br>**注意：**该范围在不同的编辑器上会使用不同的钢琴琴键范围。
+Midi文件中的音符应该在47到73的范围内以匹配游戏。<br>**注意：**该范围在不同的编辑器上会使用不同的钢琴琴键范围。
 
 一些免费可用的Midi编辑器包括：
-- [Reaper](https://www.reaper.fm/download.php)* (对应琴键范围: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (对应琴键范围: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (对应琴键范围: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (对应琴键范围: C4-C6)
+- [Reaper](https://www.reaper.fm/download.php)* ((对应琴键范围: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) ((对应琴键范围: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† ((对应琴键范围: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** ((对应琴键范围: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* ((对应琴键范围: B1-C#4)
+- [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
+- [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
 <sub>*完整版的软件并非免费，但只使用试用版依然可以完成谱面的制作。</sub><br> <sub>**默认情况下会导出到 Midi 轨道2，会导致无法使用Midi2TromboneChamp。</sub><br> <sub>†FL Studio的试用版无法直接输出Midi文件, 但你可以通过保存项目文件并使用 <a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a>来解决这个问题.</p>
 
@@ -78,13 +81,13 @@ Midi文件中的音符应该在48到72的范围内以匹配游戏。<br>**注意
 </h2>
 
 <p spaces-before="0">
-  ?> 除了Midi2TromboneChamp以外，还有两个Midi转换器可用！ <br>由于仍然处于测试阶段， <strong x-id="1">它们可能有 bug</strong>，因此本指南仍然是为 Midi2TromboneChamp编写的。 <br>这些新转换器的使用流程足够相似，本指南仍然可以使用。 <br>如果您想尝试这些更新的转换程序，请看这里： <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp(Unity 版本)</a> - 一个使用Unity编写的Midi2TromboneChamp。 <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chapt Converter</a> - 一个有新功能的网页版转换器。
+  ?> 除了Midi2TromboneChamp以外，还有两个Midi转换器可用！ <br>这些新转换器的使用流程足够相似，本指南仍然可以使用。 <br>如果您想尝试这些更新的转换程序，请看这里： <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp(Unity 版本)</a> - 一个使用Unity编写的Midi2TromboneChamp。 <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chapt Converter</a> - 一个有新功能的网页版转换器。
 </p>
 
 <ol start="1">
   <li>
     <p spaces-before="0">
-      前往 <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/leases/leases/latest</a> 并点击 <code>Midi2TromboneChamp.exe</code> 进行下载。
+      前往 <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/leases/leases/latest</a> 并点击 <code>Midi2TromboneChamp.exe</code> 进行下载。
     </p>
   </li>
   

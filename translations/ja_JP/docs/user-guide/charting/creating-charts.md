@@ -7,13 +7,16 @@
 ### MIDIエディター / DAW
 譜面はMIDIファイルを作成し、[MIDIコンバーター](#converting-midi-to-map-file)を使って変換することで作ることができます。
 
-MIDIの音符(ノーツ)の高さはゲームに合わせて48～72の範囲である必要があります。<br>**注:** MIDIエディターによってはこの範囲でのピアノの数値が異なるかもしれません。
+MIDIの音符(ノーツ)の高さはゲームに合わせて47～73の範囲である必要があります。<br>**注:** MIDIエディターによってはこの範囲でのピアノの数値が異なるかもしれません。
 
 動作確認済みでフリーで使えるMIDIエディターには以下のようなものがあります:
-- [Reaper](https://www.reaper.fm/download.php)* (対応する範囲: C3-C5)
-- [LMMS](https://lmms.io/download#windows) (対応する範囲: C3-C5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (対応する範囲: C4-C6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (対応する範囲: C4-C6)
+- [Reaper](https://www.reaper.fm/download.php)* (対応する範囲: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (対応する範囲: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (対応する範囲: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (対応する範囲: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (対応する範囲: B1-C#4)
+- [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
+- [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
 <sub>*有料バージョンもありますが無料のままでも譜面の作成に使えます。</sub><br> <sub>**既定のままだとMIDIトラック2にノーツを書き出すため、Midi2TromboneChampとの互換性がありません。</sub><br> <sub>FL Studioの体験版ではMIDIの書き出しは出来ませんがプロジェクトデータを保存し、<a href="https://github.com/Kaydax/flp2midi/releases/latest">flp2midi</a> を使用することで回避できます。</p>
 
@@ -78,13 +81,13 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて48～72の範囲で�
 </h2>
 
 <p spaces-before="0">
-  ?> Midi2TromboneChamp以外に2つのMIDIコンバーターが用意されています！ <br>しかしまだベータ版のため、<strong x-id="1">バグがあるかもしれません</strong>。そのためこのガイドではまだMidi2TromboneChampをメインに書いています。 <br>これらのMIDIコンバーターの使用方法は似たような感じなのでこのガイドをそのまま参考にすることができます。 <br>もし最新の変換プログラムを試したい場合は、新しいコンバーターを気軽に試してみてください: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - Unityをベースに作成されたブラウザ版Midi2TromboneChamp <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - 新機能を搭載したウェブベースのコンバーター
+  ?> Midi2TromboneChamp以外に2つのMIDIコンバーターが用意されています！ <br>これらのMIDIコンバーターの使用方法は似たような感じなのでこのガイドをそのまま参考にすることができます。 <br>もし最新の変換プログラムを試したい場合は、新しいコンバーターを気軽に試してみてください: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - Unityをベースに作成されたブラウザ版Midi2TromboneChamp <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - 新機能を搭載したウェブベースのコンバーター
 </p>
 
 <ol start="1">
   <li>
     <p spaces-before="0">
-      <a href="https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/NyxTheShield/Midi2TromboneChamp/releases/latest</a> に移動し、<code>Midi2TromboneChamp.exe</code> をクリックしてダウンロードしてください。
+      <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> に移動し、<code>Midi2TromboneChamp.exe</code> をクリックしてダウンロードしてください。
     </p>
   </li>
   
