@@ -5,6 +5,7 @@
 - [Installare i Brani](installing-songs)
 - **Charting**
 - [Creare le Charts](creating-charts)
+- [Charting Guidelines](charting-guidelines)
 - [Sfondi delle Charts](chart-backgrounds)
 - [Informazioni Varie sul Charting](misc-charting-info)
 - **Extra**
@@ -12,5 +13,5 @@
 - **Collegamenti Utili**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)
-- [![Traduci](https://icongr.am/material/translate.svg?color=808080&size=16)Traduci](https://crowdin.com/project/trombone-champ-modding-wiki)
+- [![Translate](https://icongr.am/material/translate.svg?color=808080&size=16)Traduci](https://crowdin.com/project/trombone-champ-modding-wiki)
 - [Su questa Guida](about)
