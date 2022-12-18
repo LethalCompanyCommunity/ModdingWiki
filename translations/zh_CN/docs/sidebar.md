@@ -5,6 +5,7 @@
 - [安装自制谱](installing-songs)
 - **自制谱板块**
 - [创作自制谱](creating-charts)
+- [Charting Guidelines](charting-guidelines)
 - [自制谱背景](chart-backgrounds)
 - [其他自制谱信息](misc-charting-info)
 - **其他**
@@ -12,5 +13,5 @@
 - **链接**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)
-- [![翻译](https://icongr.am/material/translate.svg?color=808080&size=16)翻译](https://crowdin.com/project/trombone-champ-modding-wiki)
+- [![Translate](https://icongr.am/material/translate.svg?color=808080&size=16)翻译](https://crowdin.com/project/trombone-champ-modding-wiki)
 - [关于我们](about)
