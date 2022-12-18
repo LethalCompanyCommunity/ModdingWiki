@@ -29,7 +29,7 @@ The following guidelines are not absolute requirements. The goal is to make a ch
   - NOT IDEAL: (all notes read as eighth notes)
   - ![Bad Visual Rhythm](../docs/files/charting/bad-visual-rhythm.png)
 - Use a reasonable `savednotespacing` (scroll speed) value
-  - 120~200, depending on song complexity
+  - 120~200, depending on song complexity. A good guideline is `100/[BPM]*280`.
   - This should be fast enough for the rhythm to be visually intuitive and slow enough that the player has time to react.
   - This value does not have to be the same as the tempo!
 
