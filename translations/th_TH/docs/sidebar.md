@@ -5,6 +5,7 @@
 - [การลงเพลง](installing-songs)
 - **การทำผัง**
 - [การสร้างผัง](creating-charts)
+- [Charting Guidelines](charting-guidelines)
 - [พื้นหลังของผัง](chart-backgrounds)
 - [ข้อมูลผังอย่างอื่น](misc-charting-info)
 - **เพิ่มเติม**
@@ -12,5 +13,5 @@
 - **ลิงค์**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)
-- [![แปลภาษา](https://icongr.am/material/translate.svg?color=808080&size=16)แปลภาษา](https://crowdin.com/project/trombone-champ-modding-wiki)
+- [![Translate](https://icongr.am/material/translate.svg?color=808080&size=16)แปลภาษา](https://crowdin.com/project/trombone-champ-modding-wiki)
 - [เกี่ยวกับ](about)
