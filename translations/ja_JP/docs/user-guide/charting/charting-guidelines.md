@@ -1,4 +1,4 @@
-# Charting Guidelines
+# ガイドラインの作成方法
 ---
 The following guidelines are not absolute requirements. The goal is to make a chart that's fun to play. If ignoring these rules make a chart more enjoyable or engaging (e.g. Rush E), you are welcome to do so. Credits: tsunderestorm, StaticR.
 
