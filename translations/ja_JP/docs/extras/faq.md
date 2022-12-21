@@ -1,31 +1,31 @@
 # よくある質問 (FAQ)
 ---
 
-## Why is there a black screen with a music note?
+## 音符(ノーツ)は描画されるのに画面が真っ黒になるのはなぜですか？
 
-Update [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest). Replace the old dll in `BepInEx/plugins` with the new dll.
+[TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest)を更新する。 `BepInEx/plugins`にある古いdllファイルを新しいdllファイルに置き換えてください。
 
-## Do custom songs work with a pirated version of the game?
+## カスタム音源は海賊版でも動作しますか？
 
-The latest TrombLoader will work on the latest version of Trombone Champ. Buy the game.
+最新のTrombLoaderは、最新バージョンのTrombone Champで動作します。 まずはゲームを買え🐒
 
-## Where can I find custom songs?
+## カスタム音源はどこで入手できますか？
 
-Go to `#custom-charts` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
+[Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ)の`#custom-charts`チャンネルをご覧になってください。
 
-TheGlitched64 has also created [a spreadsheet containing information on every custom chart](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing).
+また、TheGlitched64氏が[すべての創作譜面の情報を含むスプレッドシート](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing)を作成しています。
 
-## Why isn't BepInEx creating folders?
+## BepInExがフォルダを作成しないのはなぜですか？
 
-Make sure that you downloaded the x64 BepInEx. Also make sure your folder looks like this: ![Finished BepinEx Install](../docs/files/finishedbepinex.png)
+x64 (64bit版)のBepInExがダウンロードされているか確認してください。 また、フォルダ構造がこのようになっているか確認してください: ![BepinExのインストール完了](../docs/files/finishedbepinex.png)
 
-## Why aren't my songs appearing in the game?
+## ゲームにカスタム音源が表示されないのはなぜですか？
 
-Make sure you've unzipped the file. It should look like this: ![Correct Extraction Preview](../docs/files/customsongcorrect.png)
+zipファイルが正しく解凍されているか確認してください。 以下のようになるはずです: ![正しい解凍の仕方](../docs/files/customsongcorrect.png)
 
-## What do I do with .7zip or .rar files?
+## .7zipや.rarなどの圧縮ファイルはどうすればいいですか？
 
-You can unzip them with [7-zip](https://www.7-zip.org/download.html).
+[7-zip](https://www.7-zip.org/download.html)で解凍できます。
 
 ## Baboon? (ヒヒ？)
 
