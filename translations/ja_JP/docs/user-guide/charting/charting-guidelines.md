@@ -30,24 +30,26 @@ The following guidelines are not absolute requirements. The goal is to make a ch
   - This value does not have to be the same as the tempo!
 
 ### Looping Tracks
-- Avoid repeating the same note pattern over and over.
+- A few repetitions are fine, but avoid repeating the same note pattern over and over.
   - You can look for a TV version or edit it yourself if you want a shorter version of the song.
-  - Alternatives:
-    - Often, there's a primary and secondary melody. Follow one the first time and the other the second.
+  - Generally, it flows best if you chart the easier or more expected parts in the first play, and switch to alternatives:
+    - Often, there's a primary and secondary melody.
     - Follow the chords or bassline.
     - Play it in a different octave.
     - If you know what you're doing musically, use different chords or harmonies.
+  - You may want to reverse this if the main part serves as a high point in the music. Musical high points typically fit best at around the last third or quarter of the entire track, so structuring a loop like that can make it feel more complete.
 - Really short tracks are best looped until about 1 to 1:30 minutes, unless they are really repetitive.
 - You may choose to add a full or partial loop if there are different parts to play in a section.
 - Ending a track that endlessly loops can be hard. Suggestions:
   - End at the end without any loop back.
   - End at the first beat, chord, or section of the loop.
+  - Fade the music out at the end of a musical phrase.
 
 ### Slides
 - Avoid 90 degree slide angles.
-  - **MAYBE IDEAL**: (player has adequate time to change pitches)
+  - **IDEAL**: (player has adequate time to change pitches. Depending on latency, you might want to adjust the position of the connecting points.)
   - ![Ideal Slide 1](../docs/files/charting/ideal-slide1.png)
-  - **MAYBE IDEAL**: (depending on the tempo of the song)
+  - **MAYBE IDEAL**: (only if a quick transition is absolutely necessary)
   - ![Ideal Slide 2](../docs/files/charting/ideal-slide2.png)
   - **NOT IDEAL**: (this is not humanly playable)
   - ![Bad Slide](../docs/files/charting/bad-slide.png)
@@ -61,6 +63,7 @@ The following guidelines are not absolute requirements. The goal is to make a ch
   - Making each individual note part of the slide will make the slide very wobbly. You can make an exception if you specifically want the slide to look like this or the note shape is too complex to estimate with one slide.
 - Vibrato or trill type slides work great if they connect in the middle of the note.
 - Generally, slides are cleaner with fewer connecting points.
+- In a very slide heavy track, setting the color to a solid color instead of a 2 color gradient could look way cleaner.
 - If you want clean slides with a midi converter, use [TCCC](https://rshieldsprojects.github.io/projects/tccc/)'s custom slide method.
 
 ## Technical Requirements
