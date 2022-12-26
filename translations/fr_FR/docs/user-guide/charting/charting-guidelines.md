@@ -74,18 +74,18 @@ The following guidelines are not absolute requirements. The goal is to make a ch
 - Use [AutoToot](https://github.com/TomDotBat/AutoToot) or [Boner Viewer](https://paturages.github.io/boner-viewer/) and listen if the notes are consistently early or late.
 - Set a difficulty rating consistent with [TootTally](https://toottally.com/upload/).
 - Avoid excessively long rest sections.
-- Have a relevant background. A static PNG background is OK.
+- Have a relevant background. Un fond PNG statique peut suffire.
 - Have good visual contrast between the notes and the background.
 - If necessary, reduce the loudness of the song (via Audacity, etc.) so that the trombone sound can be clearly heard over the background track.
   - -15dB LUFS is a good starting point and the default export setting in the reaper template.
 
 ### File Specifications
-- Follow this archive format: `[mychart].zip/[mychart]/[files]`
+- Suivez ce format d'archive : `[mychart].zip/[mychart]/[files]`
 - Double check for invalid metadata in the .tmb file
   - `trackref` should be unique and not something like `"trackref"="trombone_charter_x64"`.
-  - Check that the [json is valid](https://jsonformatter.curiousconcept.com/#).
-- Use h.264 as the video codec for maximum compatibility.
+  - Vérifiez que [le json est valide](https://jsonformatter.curiousconcept.com/#).
+- Utilisez h.264 comme codec vidéo pour une compatibilité maximale.
 - Have an appropriate video file size (target 10MB per minute of song)
   - Use a tool like [Handbrake](https://handbrake.fr/) to reencode video.
   - Use two-pass encoding with a target bitrate of 1333kbps to eliminate any guesswork.
-  - Remove the audio track entirely.
+  - Supprimez complètement la piste audio.
