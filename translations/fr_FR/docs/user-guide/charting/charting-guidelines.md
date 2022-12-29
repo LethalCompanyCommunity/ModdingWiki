@@ -46,13 +46,13 @@ Les directives suivantes ne sont pas des exigences absolues. Le but est de crée
   - Faire un fondu dégradé à la fin de la phrase musicale.
 
 ### Glisses
-- Avoid 90 degree slide angles.
-  - **IDEAL**: (player has adequate time to change pitches. Depending on latency, you might want to adjust the position of the connecting points.)
-  - ![Ideal Slide 1](../docs/files/charting/ideal-slide1.png)
-  - **MAYBE IDEAL**: (only if a quick transition is absolutely necessary)
-  - ![Ideal Slide 2](../docs/files/charting/ideal-slide2.png)
-  - **NOT IDEAL**: (this is not humanly playable)
-  - ![Bad Slide](../docs/files/charting/bad-slide.png)
+- Éviter les glisses à 90 degrés.
+  - **IDÉAL**: (le joueur a suffisamment de temps pour changer de hauteur de note. Selon la latence, vous pouvez ajuster la position des points de connexion.)
+  - ![Glisse idéale 1](../docs/files/charting/ideal-slide1.png)
+  - **PEUT-ÊTRE IDÉAL**: (seulement si une transition rapide est absolument nécessaire)
+  - ![Glisse idéale 2](../docs/files/charting/ideal-slide2.png)
+  - **NON IDÉAL**: (ceci n'est pas humainement jouable)
+  - ![Mauvaise glisse](../docs/files/charting/bad-slide.png)
 - A slide approaches the target pitch before the slide end.
   - Make the end of the slide ~1-2 32nd notes late, depending on the length of the slide.
   - Start the slide about one 16th note before the target beat. It'll still be fine if half the note is a slide.
