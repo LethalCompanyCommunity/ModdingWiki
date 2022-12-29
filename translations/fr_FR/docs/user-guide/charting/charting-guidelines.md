@@ -38,14 +38,14 @@ Les directives suivantes ne sont pas des exigences absolues. Le but est de crée
     - Jouez-le dans une octave différente.
     - Si vous savez ce que vous faites musicalement, utilisez différents accords ou harmonies.
   - Vous voudrez peut-être inverser cela si la partie principale sert de point culminant dans la musique. Les points musicaux culminants vont le mieux vers le dernier tiers ou quart de l'ensemble de la chanson, alors structurer une boucle ainsi peut faire en sorte que le tout ait l'air plus complet.
-- Really short tracks are best looped until about 1 to 1:30 minutes, unless they are really repetitive.
-- You may choose to add a full or partial loop if there are different parts to play in a section.
-- Ending a track that endlessly loops can be hard. Suggestions:
-  - End at the end without any loop back.
-  - End at the first beat, chord, or section of the loop.
-  - Fade the music out at the end of a musical phrase.
+- Les chansons très courtes sont mieux en boucle jusqu'à environ 1:00 à 1:30, à moins qu'elles soient très répétitives.
+- Vous pouvez choisir d'ajouter une boucle complète ou partielle s'il y a différentes parties à jouer dans une section.
+- Mettre fin à une chanson qui ne cesse de boucler peut être difficile. Suggestions :
+  - Terminer à la fin sans boucle en arrière.
+  - Terminer à la première note, au premier accord ou à la première section de la boucle.
+  - Faire un fondu dégradé à la fin de la phrase musicale.
 
-### Slides
+### Glisses
 - Avoid 90 degree slide angles.
   - **IDEAL**: (player has adequate time to change pitches. Depending on latency, you might want to adjust the position of the connecting points.)
   - ![Ideal Slide 1](../docs/files/charting/ideal-slide1.png)
