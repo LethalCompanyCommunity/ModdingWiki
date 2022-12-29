@@ -1,43 +1,43 @@
 # Guided de chartin
 ---
-Les directives suivantes ne sont pas des exigences absolues. The goal is to make a chart that's fun to play. If ignoring these rules make a chart more enjoyable or engaging (e.g. Rush E), you are welcome to do so. Credits: tsunderestorm, StaticR.
+Les directives suivantes ne sont pas des exigences absolues. Le but est de créer une chart amusante à jouer. Si ignorer ces règles rend une chart plus amusante ou engageante (par exemple, Rush E), vous pouvez le faire sans problème. Crédits : tsunderestorm, StaticR.
 
-## Best Practices
+## Bonne pratiques
 
-- Maintain note spacing appropriate for the difficulty.
-  - As a very general guideline, the note and space between it and the next note should be of equal length
-  - **IDEAL**:
-  - ![Ideal Note Spacing](../docs/files/charting/ideal-note-spacing.png)
-  - **NOT IDEAL**: (this might sound good in preview or autotoot but does not provide much time for a player to release and hit the next note)
-  - ![Bad Note Spacing](../docs/files/charting/bad-note-spacing.png)
-  - You may make exceptions:
-    - to emphasize [articulation](https://people.carleton.edu/~jellinge/m101s12/Pages/04/04Articulation.html) like slurs, staccato, or legato
-    - to make it easier to maintain combo on very fast sections
-    - if the song tempo is very slow and a tight spacing is adequate
-- Do not be off-key. If you have a poor sense of tone, ask #charting or #wip to take a look.
-- Do not be off-beat. You can slow the song down in your editor to help distinguish faster rhythms.
-- Do not start nor end abruptly.
-  - Give at least one bar of rest before the first note, and continue your chart until the end of the song.
-  - Adjust the length / song endpoint if the curtains are closing slightly before the background track ends. Do not to set the song endpoint in the tmb to be longer than the song length, or the song won't end.
-- The rhythm should be visually intuitive. If notes are slightly longer, they should be slightly longer visually. If notes are slightly shorter, they should be slightly shorter visually.
-  - **IDEAL**: (easy to see which are eighth notes and which are dotted eighth (3/16) notes)
-  - ![Ideal Visual Rhythm](../docs/files/charting/ideal-visual-rhythm.png)
-  - **NOT IDEAL**: (all notes read as eighth notes)
-  - ![Bad Visual Rhythm](../docs/files/charting/bad-visual-rhythm.png)
-- Use a reasonable `savednotespacing` (scroll speed) value
-  - 120~200, depending on song complexity. A good guideline is `100/[BPM]*280`.
-  - This should be fast enough for the rhythm to be visually intuitive and slow enough that the player has time to react.
-  - This value does not have to be the same as the tempo!
+- Maintenir l'espacement de notes approprié à la difficulté.
+  - Comme directive générale, la note et l'espace entre celle-ci et la note suivante devraient être de même longueur
+  - **IDÉAL**:
+  - ![Espacement idéal de notes](../docs/files/charting/ideal-note-spacing.png)
+  - **NON IDÉAL**: (cela pourrait paraitre bien dans l'aperçu ou l'autotoot, mais ne donne pas beaucoup de temps au joueur pour relâcher et cliquer sur la note suivante)
+  - ![Mauvais espacement de notes](../docs/files/charting/bad-note-spacing.png)
+  - Vous pouvez faire des exceptions :
+    - pour mettre l'accent sur [l'articulation](https://people.carleton.edu/~jellinge/m101s12/Pages/04/04Articulation.html) comme des glisses, staccato ou legato
+    - pour faciliter le maintien d'un combo dans des sections très rapides
+    - si le tempo de la chanson est lent et un espacement serré est adéquat
+- Ne soyez pas faux. Si vous avez une mauvaise oreille, demandez à #charting ou #wip de vous assister.
+- Ne soyez pas hors rythme. Vous pouvez ralentir la chanson dans votre éditeur pour permettre de distinguer des rythmes plus rapides.
+- Ne commencez pas et ne finissez pas brusquement.
+  - Donnez au moins une mesure de repos avant la première note et continuez votre chart jusqu'à la fin de la chanson.
+  - Ajustez la longueur / le point final de la chanson si les rideaux se ferment un peu trop rapidement avant la fin de la piste de fond. Ne définissez pas le point de terminaison de la chanson dans le tmb pour qu'il soit plus long que la longueur du morceau. Sinon, le morceau ne se terminera pas.
+- Le rythme devrait être visuellement intuitif. Si les notes sont un peu plus longues, elles devraient être un peu plus longues visuellement. Si les notes sont un peu plus courtes, elles devraient être légèrement plus courtes visuellement.
+  - **IDÉAL**: (facile de voir lesquelles sont des triples croches (1/8) et lesquelles sont des triples croches pointées (3/16))
+  - ![Rythme visuel idéal](../docs/files/charting/ideal-visual-rhythm.png)
+  - **NON IDÉAL**: (toutes les notes se lisent comme des triples croches)
+  - ![Rythme visuel incorrect](../docs/files/charting/bad-visual-rhythm.png)
+- Utilisez une valeur raisonnable de `savednotespacing` (vitesse de défilement)
+  - 120~200, selon la complexité de la chanson. Une bonne ligne directrice est `100/[BPM]*280`.
+  - Cela devrait être assez rapide pour que le rythme soit visuellement intuitif et assez lent pour que le lecteur ait le temps de réagir.
+  - Cette valeur ne doit pas nécessairement être la même que le tempo !
 
-### Looping Tracks
-- A few repetitions are fine, but avoid repeating the same note pattern over and over.
-  - You can look for a TV version or edit it yourself if you want a shorter version of the song.
-  - Generally, it flows best if you chart the easier or more expected parts in the first play, and switch to alternatives:
-    - Often, there's a primary and secondary melody.
-    - Follow the chords or bassline.
-    - Play it in a different octave.
-    - If you know what you're doing musically, use different chords or harmonies.
-  - You may want to reverse this if the main part serves as a high point in the music. Musical high points typically fit best at around the last third or quarter of the entire track, so structuring a loop like that can make it feel more complete.
+### Pistes en boucle
+- Vous pouvez faire quelques répétitions, mais évitez de répéter le même motif de notes trop de fois.
+  - Vous pouvez chercher une version TV ou l'éditer vous-même si vous voulez une version plus courte de la chanson.
+  - Généralement, c'est plus naturel si vous arrangez les parties les plus faciles ou attendues dans la première partie et basculez vers des alternatives :
+    - Souvent, il y a une mélodie primaire et secondaire.
+    - Suivez les accords ou lignes de basse.
+    - Jouez-le dans une octave différente.
+    - Si vous savez ce que vous faites musicalement, utilisez différents accords ou harmonies.
+  - Vous voudrez peut-être inverser cela si la partie principale sert de point culminant dans la musique. Les points musicaux culminants vont le mieux vers le dernier tiers ou quart de l'ensemble de la chanson, alors structurer une boucle ainsi peut faire en sorte que le tout ait l'air plus complet.
 - Really short tracks are best looped until about 1 to 1:30 minutes, unless they are really repetitive.
 - You may choose to add a full or partial loop if there are different parts to play in a section.
 - Ending a track that endlessly loops can be hard. Suggestions:
