@@ -28,6 +28,8 @@ The following guidelines are not absolute requirements. The goal is to make a ch
   - 120~200, depending on song complexity. A good guideline is `100/[BPM]*280`.
   - This should be fast enough for the rhythm to be visually intuitive and slow enough that the player has time to react.
   - This value does not have to be the same as the tempo!
+- A note can be held for 4.5 seconds before running out of breath. If you have a note or slide longer than that, it's recommended to break it up so the player can catch their breath.
+- Chords typically consist of 3-4 notes. The highest or lowest note usually sounds the cleanest to chart.
 
 ### Looping Tracks
 - A few repetitions are fine, but avoid repeating the same note pattern over and over.
@@ -65,6 +67,13 @@ The following guidelines are not absolute requirements. The goal is to make a ch
 - Generally, slides are cleaner with fewer connecting points.
 - In a very slide heavy track, setting the color to a solid color instead of a 2 color gradient could look way cleaner.
 - If you want clean slides with a midi converter, use [TCCC](https://rshieldsprojects.github.io/projects/tccc/)'s custom slide method.
+- Slides can only go 1 octave both up and down from the starting note. If you want a chart a slide that spans a greater range, you can break it up in between and/or find a place where you can start the slide towards the middle of the screen
+- You can connect multiple notes at the same pitch as a slide. This plays as one continuous held note. This boosts combo count and champ meter extremely quickly, which may be useful for certain effects and gimmicks, but you wouldn't want to use it outside of that.
+- Good slide timings seem to be about 2:1 to 5:1  (slide end late by about half to one 5th of the length of the slide)
+  - 1:1 works too for things like trills or vibrato.
+  - When in doubt, just putting the slide end a 32nd note late tends to work well for most slides.
+- 2 16th notes or shorter connected work completely fine with only one slide, there doesn't need to be any held for it to sound ok, unless it is a very large jump.
+- Slide ends don't need a held part, they're fine just ending a bit early (if the slide end is already delayed by the appropriate amount)
 
 ## Technical Requirements
 - Don't just convert the .mp3 to .mid. This converts all the instruments, but we can only play one note at a time. Finding a MIDI online would also likely not work without a lot of editing.
