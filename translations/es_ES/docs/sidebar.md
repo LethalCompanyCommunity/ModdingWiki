@@ -5,6 +5,7 @@
 - [Instalando Canciones](installing-songs)
 - **Mapear**
 - [Creando Mapas](creating-charts)
+- [Charting Guidelines](charting-guidelines)
 - [Fondo de Mapa](chart-backgrounds)
 - [Información de Mapear Miscelánea](misc-charting-info)
 - **Extras**

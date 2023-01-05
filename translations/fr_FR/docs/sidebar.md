@@ -5,6 +5,7 @@
 - [Installer des chansons](installing-songs)
 - **Charting**
 - [Créer des charts](creating-charts)
+- [Guide de charting](charting-guidelines)
 - [Arrière-plans de charts](chart-backgrounds)
 - [Infos diverses de charting](misc-charting-info)
 - **Extras**

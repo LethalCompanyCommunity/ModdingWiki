@@ -5,6 +5,7 @@
 - [Встановлення пісень](installing-songs)
 - **Чартинг**
 - [Створення чартів](creating-charts)
+- [Charting Guidelines](charting-guidelines)
 - [Фон чартів](chart-backgrounds)
 - [Додаткова інформація по чартингу](misc-charting-info)
 - **Додатково**

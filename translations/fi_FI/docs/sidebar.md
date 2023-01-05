@@ -5,6 +5,7 @@
 - [Kappaleiden Asentaminen](installing-songs)
 - **Kartoitus**
 - [Karttojen Luonti](creating-charts)
+- [Charting Guidelines](charting-guidelines)
 - [Kartan Taustat](chart-backgrounds)
 - [Sekalaiset Kartoitustiedot](misc-charting-info)
 - **Extrat**

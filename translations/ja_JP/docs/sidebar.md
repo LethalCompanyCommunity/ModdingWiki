@@ -5,6 +5,7 @@
 - [カスタム音源の導入方法](installing-songs)
 - **創作譜面**
 - [譜面の作成方法](creating-charts)
+- [ガイドラインの作成方法](charting-guidelines)
 - [譜面の背景設定](chart-backgrounds)
 - [その他の譜面作成に関する情報](misc-charting-info)
 - **おまけ**

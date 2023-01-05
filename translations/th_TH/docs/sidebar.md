@@ -5,6 +5,7 @@
 - [การลงเพลง](installing-songs)
 - **การทำผัง**
 - [การสร้างผัง](creating-charts)
+- [Charting Guidelines](charting-guidelines)
 - [พื้นหลังของผัง](chart-backgrounds)
 - [ข้อมูลผังอย่างอื่น](misc-charting-info)
 - **เพิ่มเติม**

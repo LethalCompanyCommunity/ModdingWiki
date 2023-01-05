@@ -87,13 +87,13 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて47～73の範囲で�
 <ol start="1">
   <li>
     <p spaces-before="0">
-      <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> に移動し、<code>Midi2TromboneChamp.exe</code> をクリックしてダウンロードしてください。
+      <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> に移動し、 <code>Midi2TromboneChamp.exe</code> をクリックしてダウンロードしてください。
     </p>
   </li>
   
   <li>
     <p spaces-before="0">
-      起動し、 ファイル選択画面が開くのでMIDIファイル(.mid)を選択します。 「開く」をクリック
+      それを起動してください。 ファイル選択画面が開くのでMIDIファイル(.mid)を選択します。 「開く」をクリックする。
     </p>
   </li>
   

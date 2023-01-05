@@ -5,6 +5,7 @@
 - [安装自制谱](installing-songs)
 - **自制谱板块**
 - [创作自制谱](creating-charts)
+- [Charting Guidelines](charting-guidelines)
 - [自制谱背景](chart-backgrounds)
 - [其他自制谱信息](misc-charting-info)
 - **其他**

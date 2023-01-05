@@ -5,6 +5,7 @@
 - [Liedjes Installeren](installing-songs)
 - **Maps**
 - [Map Maken](creating-charts)
+- [Charting Guidelines](charting-guidelines)
 - [Map Achtergrond](chart-backgrounds)
 - [Diversen Map Informatie](misc-charting-info)
 - **Extras**
