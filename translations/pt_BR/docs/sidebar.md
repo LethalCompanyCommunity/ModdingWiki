@@ -13,5 +13,5 @@
 - **Links**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)
-- [![Translate](https://icongr.am/material/translate.svg?color=808080&size=16)Traduzir](https://crowdin.com/project/trombone-champ-modding-wiki)
+- [![Traduzir](https://icongr.am/material/translate.svg?color=808080&size=16)Traduzir](https://crowdin.com/project/trombone-champ-modding-wiki)
 - [Sobre](about)
