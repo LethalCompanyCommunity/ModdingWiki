@@ -3,29 +3,29 @@
 
 ## Why is there a black screen with a music note?
 
-Update [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest). Replace the old dll in `BepInEx/plugins` with the new dll.
+更新 [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest)。 用新的 dll文件替换 `BepInEx/plugins` 中的旧dll文件
 
-## Do custom songs work with a pirated version of the game?
+## 自制谱是否与破解版游戏兼容？
 
-The latest TrombLoader will work on the latest version of Trombone Champ. Buy the game.
+最新的 TrombLoader 兼容最新版本的长号冠军。 购买这个游戏。
 
-## Where can I find custom songs?
+## 如何寻找自制谱？
 
-Go to `#custom-charts` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
+自制谱可以在 [Discord长号冠军自制群](https://discord.gg/KVzKRsbetJ) 的 `#custom-charts` 频道中找到。
 
 TheGlitched64 has also created [a spreadsheet containing information on every custom chart](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing).
 
-## Why isn't BepInEx creating folders?
+## 为什么 BepInEx 没有创建文件夹？
 
-Make sure that you downloaded the x64 BepInEx. Also make sure your folder looks like this: ![Finished BepinEx Install](../docs/files/finishedbepinex.png)
+请确保您下载了64位版本的 BepInEx。 还请确保您的文件夹看起来像这样： ![Finished BepinEx Install](../docs/files/finishedbepinex.png)
 
-## Why aren't my songs appearing in the game?
+## 为什么自制谱没有出现在游戏中？
 
-Make sure you've unzipped the file. It should look like this: ![Correct Extraction Preview](../docs/files/customsongcorrect.png)
+请确保您已经解压了文件。 它应该看起来像这样： ![Correct Extraction Preview](../docs/files/customsongcorrect.png)
 
-## What do I do with .7zip or .rar files?
+## 我该如何处理 .7zip 或 .rar 文件？
 
-You can unzip them with [7-zip](https://www.7-zip.org/download.html).
+你可以用 [7-zip](https://www.7-zip.org/download.html) 解压它们。
 
 ## 狒狒?
 
