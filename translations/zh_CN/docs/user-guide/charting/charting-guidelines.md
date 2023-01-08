@@ -1,15 +1,15 @@
 # 谱面制作指导
 ---
-以下内容仅为指导意见，并非绝对的硬性要求。 一切指导意见的最终目的都是制作一个游玩体验足够优秀的自制谱面。 如果忽略这些意见能够使你的谱面更有趣或者更具有吸引力（例如 Rush E），那么按照您自己的方式去制作即可。 编写者: tsunderestorm, StaticR.
+以下内容仅为指导意见，并非绝对的硬性要求。 一切指导意见的最终目的都是制作一个游玩体验足够优秀的自制谱面。 如果忽略这些意见能够使你的谱面更有趣或者更具有吸引力（例如 Rush E），那么按照您自己的方式去制作即可。 编写者: tsunderestorm, StaticR. （译者：Bilibili@银狐V933 Discord@SilverFoxV933，以下内容较为抽象，看不懂不要太在意，实在想了解可以来b站直接与我交流。译者从未系统学过乐理相关知识。对于部分用词不准确或混乱的情况，还望海涵。）
 
 ## 游玩体验最佳化
 
 - 保证note间距与难度相匹配
   - 通常情况下，note与note之间的间隔应该与note本身同长。
   - **正面示例**:
-  - ![Ideal Note Spacing](../docs/files/charting/ideal-note-spacing.png)
+  - ![理想的note间距](../docs/files/charting/ideal-note-spacing.png)
   - **反面示例**: （这种排布虽然在自动演奏中可能会拥有较好的听感，但没有足够的时间空档让玩家抬手并点击下一个note。）
-  - ![Bad Note Spacing](../docs/files/charting/bad-note-spacing.png)
+  - ![糟糕的note间距](../docs/files/charting/bad-note-spacing.png)
   - 当遇到以下情形时，可不遵守此项：
     - 突出表达音调的[连续性](https://people.carleton.edu/~jellinge/m101s12/Pages/04/04Articulation.html)。
     - 在较快速的段落简化谱面以保持Combo。
@@ -21,9 +21,9 @@
   - 在谱面的.tmb文件中调整谱面的结束点（endpoint）以确保结算画面不会过早出现。 结束点推荐设置在乐曲最后一个音结束到乐曲文件结束之间。不要设置在乐曲文件结束之后，会导致无法结算。
 - 谱面节奏应足够直观。 如果一个note略微更长，这种长度区别在实际游玩时应该能被明显地辨认出。 短note同理。
   - **正面示例**: （可以直观的分辨note的长短）
-  - ![Ideal Visual Rhythm](../docs/files/charting/ideal-visual-rhythm.png)
+  - ![理想的节奏视觉表现](../docs/files/charting/ideal-visual-rhythm.png)
   - **反面示例**: （所有note看起来长度相等）
-  - ![Bad Visual Rhythm](../docs/files/charting/bad-visual-rhythm.png)
+  - ![糟糕的节奏视觉表现](../docs/files/charting/bad-visual-rhythm.png)
 - 选择一个合适的 `savednotespacing` （滚动速度）。
   - 通常在120~200的区间内，取决于谱面的复杂程度。 推荐使用 `100/[BPM]*280`.
   - 理想的谱面的滚动速度，应该是能让谱面的节奏得以直观展现的同时，足以让玩家有时间对谱面作出反应。
@@ -50,11 +50,11 @@
 ### 滑动（slide）note
 - 避免出现接近90度的滑动操作。
   - **正面示例**: （玩家有足够的时间改变音高。 考虑到延迟，您可能需要调整滑动note连接点的位置。）
-  - ![Ideal Slide 1](../docs/files/charting/ideal-slide1.png)
+  - ![理想的滑动note 1](../docs/files/charting/ideal-slide1.png)
   - **可接受的示例**: （仅在有必要使用快速过渡时。）
-  - ![Ideal Slide 2](../docs/files/charting/ideal-slide2.png)
+  - ![理想的滑动note 2](../docs/files/charting/ideal-slide2.png)
   - **反面示例**: （不是人玩的东西-_-）
-  - ![Bad Slide](../docs/files/charting/bad-slide.png)
+  - ![糟糕的滑动note](../docs/files/charting/bad-slide.png)
 - 滑动note的滑动部分到达目标音高的时间比滑动部分结束要提前一点。
   - 将滑动部分的结束点延后1~2/32音符的长度。
   - 滑动部分的起始点提前1/16音符。 适合滑动note中滑动部分占比超过一半的情况。
@@ -73,28 +73,28 @@
   - 1:1 通常适用于抖动音或颤音。
   - 如有疑惑，只要将滑动部分的末尾延后1/32音符就能适配绝大多数滑动note的情况。
 - 1/8或更短音符仅需单个滑动部分即可，不需要额外在中间放置note分段就可以有不错的听感，除非是大范围的跳跃。
-- 滑动note的结尾不必保留停顿的部分，在滑动部分的结束点已经按照前文所说提前了的情况下已经不在需要额外保留停顿。
+- 滑动note的结尾不必保留停顿的部分，在滑动部分的结束点已经按照前文所说提前了的情况下已经不在需要额外保留停顿。（译者注：以上内容看不懂也没关系，多写写就懂了。其实我很多也不懂……）
 
 ## 技术性要求
-- 请勿直接将.mp3转换为.mid（即自动扒谱）。 这类转换通常无法提取出单独的某一种乐曲或声部，而我们在游戏中一次只能弹奏一个note。 即便寻找现成的midi文件，在放入转换器转换为可玩的谱面之前通常也免不了大量的编辑。
-- 在转换谱面时记得设定小节线（[beat](https://en.wikipedia.org/wiki/Beat_(music)#On-beat_and_off-beat) markers），除非乐曲的bpm有变化。
-- Use an audio editing software like [Audacity](https://www.audacityteam.org/) to add/remove silence to the beginning of a song to help line up the audio file’s beats with the chart’s beats.
-- Ensure that the chart is perfectly synced with the background audio.
-- Use [AutoToot](https://github.com/TomDotBat/AutoToot) or [Boner Viewer](https://paturages.github.io/boner-viewer/) and listen if the notes are consistently early or late.
-- Set a difficulty rating consistent with [TootTally](https://toottally.com/upload/).
-- Avoid excessively long rest sections.
-- Have a relevant background. A static PNG background is OK.
-- Have good visual contrast between the notes and the background.
-- If necessary, reduce the loudness of the song (via Audacity, etc.) so that the trombone sound can be clearly heard over the background track.
-  - -15dB LUFS is a good starting point and the default export setting in the reaper template.
+- 请勿直接将.mp3转换为.mid（译者注：即自动扒谱）。 这类转换通常无法提取出单独的某一种乐曲或声部，而我们在游戏中一次只能弹奏一个note。 即便寻找现成的midi文件，在放入转换器转换为可玩的谱面之前通常也免不了大量的编辑。
+- 在转换谱面时记得设定小节线（[beat](https://en.wikipedia.org/wiki/Beat_(music)#On-beat_and_off-beat) markers）并与音乐对齐，除非乐曲的bpm有变化。
+- 使用音频编辑软件（例如[Audacity](https://www.audacityteam.org/)）调整乐曲开头的空白部分的时长来让乐曲的节奏与谱面的节奏对齐。
+- 保证谱面与乐曲的同步性。
+- 使用 [AutoToot](https://github.com/TomDotBat/AutoToot) 或[Boner Viewer](https://paturages.github.io/boner-viewer/) 检验谱面中的note是否有持续性的提前或延后现象。
+- 使用[TootTally](https://toottally.com/upload/)来给你的谱面进行难度定级。
+- 避免出现过长的休息段。
+- 记得添加一个合适的背景。 一个静态PNG图片就足够了。
+- 谱面上的note在背景上应有足够的辨识度，可以考虑调整note颜色或将背景略微调暗。
+- 如有必要，减小乐曲的音量（使用Audacity或其他）以保证长号的声音能被清晰地听到。
+  - -15dB LUFS 效果比较不错，是Reaper自制文件示例中的默认导出设置。（译者注：实际要根据不同曲目的音量情况进行单独调整，推荐实际去游戏中进行实地测试。此外乐曲音量应该减弱多少还与当前曲目是否有声部容易与长号的声音发生混合有关。举例来说如果你的音乐是去掉了人声的流行乐，而在写谱时选择用长号代替人声，则乐曲音量就不需要降得太低。无论如何最终仍应以游戏内实际测试为准。）
 
-### File Specifications
-- Follow this archive format: `[mychart].zip/[mychart]/[files]`
-- Double check for invalid metadata in the .tmb file
-  - `trackref` should be unique and not something like `"trackref"="trombone_charter_x64"`.
-  - Check that the [json is valid](https://jsonformatter.curiousconcept.com/#).
-- Use h.264 as the video codec for maximum compatibility.
-- Have an appropriate video file size (target 10MB per minute of song)
-  - Use a tool like [Handbrake](https://handbrake.fr/) to reencode video.
-  - Use two-pass encoding with a target bitrate of 1333kbps to eliminate any guesswork.
-  - Remove the audio track entirely.
+### 文件规格
+- 推荐使用的压缩包命名以及压缩包内容的格式：`[mychart].zip/[mychart]/[files]`
+- 反复检查.tmb文件中涉及的谱面基本数据。
+  - `trackref` 应该是唯一的，而不是类似 `"trackref"="trombone_charter_x64"`.
+  - 确认谱面文件.tmb中的 [json代码](https://jsonformatter.curiousconcept.com/#)准确无误。（译者注：链接是一个json语句纠错的网站，用记事本打开.tmb文件并复制全部文本至这个网页，点Process就可以检测文件是否有语法上的错误，防止出现一些意想不到的情况。）
+- 使用h.264来对视频格式的谱面背景进行编码以获得最佳兼容性。
+- 控制视频文件的体积（推荐每分钟10MB）。
+  - 使用类似 [Handbrake](https://handbrake.fr/)的工具对视频进行压制。
+  - 编码模式使用2-pass，目标比特率推荐设为1333。
+  - 记得去掉视频的音轨，使视频完全静音。（译者注：视频的编码与压制很复杂，想要详细了解可以b站找我。简中区用户也可以使用小丸工具箱压制和处理视频，体量小功能强大。）
