@@ -31,7 +31,7 @@
 - 一个长note的极限长度为4.5秒，超过这个时间会触发强制的换气惩罚。 推荐对超过这个时间的长note进行拆分以便玩家有时间换气。
 - 和弦通常包含3到4个note。 选择最高或最低的note写入谱面，效果最好。
 
-### 循环乐曲
+### 乐曲结构
 - 允许存在一定的重复。但要避免同一个note排布过度反复地出现。
   - 选曲时，可以考虑选择TV版（如果有的话），或亲手编辑以获得较短版本的乐曲。
   - 通常情况下，在两个重复的段落中，首段采用较为简单或较为明显的部分来作谱，复段则采用其他部分，这类分配效果最好。
@@ -59,10 +59,10 @@
   - 将滑动部分的结束点延后1~2/32音符的长度。
   - 滑动部分的起始点提前1/16音符。 适合滑动note中滑动部分占比超过一半的情况。
 - 对于等于或短于1/8音符的滑动note，不建议滑动部分中间分段。
-  - You often don't need a held note at the slide start, middle or end at all, unless you want the note to be clearly held for an 8th note or longer.
-- Simplify slides for a consistent stream of notes going up or down.
-  - Instead, you can just do one single slide and pull back the end point until the slide curve matches the notes.
-  - Making each individual note part of the slide will make the slide very wobbly. You can make an exception if you specifically want the slide to look like this or the note shape is too complex to estimate with one slide.
+  - 一个滑动note可以不在开始，中途或结束保留任何非滑动部分。
+- 简化滑动note，减少多余的波动。
+  - 同方向的多段滑动可以合并为单个滑动，通过调整滑动部分结束点来与实际的音调匹配。
+  - 一段滑动中每一个note都保留会使得滑动部分过于波动。 尽量避免这种情况，除非您有意为之或原曲音调过于复杂无法用单个滑动来表现。
 - Vibrato or trill type slides work great if they connect in the middle of the note.
 - Generally, slides are cleaner with fewer connecting points.
 - In a very slide heavy track, setting the color to a solid color instead of a 2 color gradient could look way cleaner.
