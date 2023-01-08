@@ -1,6 +1,6 @@
-# Charting Guidelines
+# 谱面制作指导
 ---
-The following guidelines are not absolute requirements. The goal is to make a chart that's fun to play. If ignoring these rules make a chart more enjoyable or engaging (e.g. Rush E), you are welcome to do so. Credits: tsunderestorm, StaticR.
+以下内容仅为指导意见，并非绝对的硬性要求。 一切指导意见的最终目的都是制作一个游玩体验足够优秀的自制谱面。 If ignoring these rules make a chart more enjoyable or engaging (e.g. Rush E), you are welcome to do so. Credits: tsunderestorm, StaticR.
 
 ## Best Practices
 
