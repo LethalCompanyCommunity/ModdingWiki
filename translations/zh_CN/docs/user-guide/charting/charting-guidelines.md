@@ -20,25 +20,25 @@
   - 在第一个note之前留出至少一个小节的空白距离，并保证你的谱面能持续到乐曲结束。
   - 在谱面的.tmb文件中调整谱面的结束点（endpoint）以确保结算画面不会过早出现。 结束点推荐设置在乐曲最后一个音结束到乐曲文件结束之间。不要设置在乐曲文件结束之后，会导致无法结算。
 - 谱面节奏应足够直观。 如果一个note略微更长，这种长度区别在实际游玩时应该能被明显地辨认出。 短note同理。
-  - **IDEAL**: (easy to see which are eighth notes and which are dotted eighth (3/16) notes)
+  - **正面示例**: （可以直观的分辨note的长短）
   - ![Ideal Visual Rhythm](../docs/files/charting/ideal-visual-rhythm.png)
-  - **NOT IDEAL**: (all notes read as eighth notes)
+  - **反面示例**: （所有note看起来长度相等）
   - ![Bad Visual Rhythm](../docs/files/charting/bad-visual-rhythm.png)
-- Use a reasonable `savednotespacing` (scroll speed) value
-  - 120~200, depending on song complexity. A good guideline is `100/[BPM]*280`.
-  - This should be fast enough for the rhythm to be visually intuitive and slow enough that the player has time to react.
-  - This value does not have to be the same as the tempo!
-- A note can be held for 4.5 seconds before running out of breath. If you have a note or slide longer than that, it's recommended to break it up so the player can catch their breath.
-- Chords typically consist of 3-4 notes. The highest or lowest note usually sounds the cleanest to chart.
+- 选择一个合适的 `savednotespacing` （滚动速度）。
+  - 通常在120~200的区间内，取决于谱面的复杂程度。 推荐使用 `100/[BPM]*280`.
+  - 理想的谱面的滚动速度，应该是能让谱面的节奏得以直观展现的同时，足以让玩家有时间对谱面作出反应。
+  - 这个值不必与BPM相同！
+- 一个长note的极限长度为4.5秒，超过这个时间会触发强制的换气惩罚。 推荐对超过这个时间的长note进行拆分以便玩家有时间换气。
+- 和弦通常包含3到4个note。 选择最高或最低的note写入谱面，效果最好。
 
-### Looping Tracks
-- A few repetitions are fine, but avoid repeating the same note pattern over and over.
-  - You can look for a TV version or edit it yourself if you want a shorter version of the song.
-  - Generally, it flows best if you chart the easier or more expected parts in the first play, and switch to alternatives:
-    - Often, there's a primary and secondary melody.
-    - Follow the chords or bassline.
-    - Play it in a different octave.
-    - If you know what you're doing musically, use different chords or harmonies.
+### 循环乐曲
+- 允许存在一定的重复。但要避免同一个note排布过度反复地出现。
+  - 选曲时，可以考虑选择TV版（如果有的话），或亲手编辑以获得较短版本的乐曲。
+  - 通常情况下，在两个重复的段落中，首段采用较为简单或较为明显的部分来作谱，复段则采用其他部分，这类分配效果最好。
+    - 一个乐曲段落通常由主副两段旋律（或多段）合成。
+    - 尝试采用和弦或低音声部。
+    - 高（或低）一个八度来演奏。
+    - 如果您对您的乐感比较有自信，可以尝试自己编写合适的和声。
   - You may want to reverse this if the main part serves as a high point in the music. Musical high points typically fit best at around the last third or quarter of the entire track, so structuring a loop like that can make it feel more complete.
 - Really short tracks are best looped until about 1 to 1:30 minutes, unless they are really repetitive.
 - You may choose to add a full or partial loop if there are different parts to play in a section.
