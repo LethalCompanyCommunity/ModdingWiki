@@ -63,21 +63,21 @@
 - 简化滑动note，减少多余的波动。
   - 同方向的多段滑动可以合并为单个滑动，通过调整滑动部分结束点来与实际的音调匹配。
   - 一段滑动中每一个note都保留会使得滑动部分过于波动。 尽量避免这种情况，除非您有意为之或原曲音调过于复杂无法用单个滑动来表现。
-- Vibrato or trill type slides work great if they connect in the middle of the note.
-- Generally, slides are cleaner with fewer connecting points.
-- In a very slide heavy track, setting the color to a solid color instead of a 2 color gradient could look way cleaner.
-- If you want clean slides with a midi converter, use [TCCC](https://rshieldsprojects.github.io/projects/tccc/)'s custom slide method.
-- Slides can only go 1 octave both up and down from the starting note. If you want a chart a slide that spans a greater range, you can break it up in between and/or find a place where you can start the slide towards the middle of the screen
-- You can connect multiple notes at the same pitch as a slide. This plays as one continuous held note. This boosts combo count and champ meter extremely quickly, which may be useful for certain effects and gimmicks, but you wouldn't want to use it outside of that.
-- Good slide timings seem to be about 2:1 to 5:1  (slide end late by about half to one 5th of the length of the slide)
-  - 1:1 works too for things like trills or vibrato.
-  - When in doubt, just putting the slide end a 32nd note late tends to work well for most slides.
-- 2 16th notes or shorter connected work completely fine with only one slide, there doesn't need to be any held for it to sound ok, unless it is a very large jump.
-- Slide ends don't need a held part, they're fine just ending a bit early (if the slide end is already delayed by the appropriate amount)
+- 抖动音或颤音建议从每个音的中间进行连接。
+- 通常情况下，分段越少的滑动效果越好。
+- 如果谱面中滑动轨道较多，建议设置note颜色时头尾选择相同的颜色，可增强谱面观感。
+- 除了旧有的滑动note编写方式，还可以尝试 [TCCC](https://rshieldsprojects.github.io/projects/tccc/)转换器采用的新的编写方式，对于编写滑动note有一定的帮助。
+- 滑动note滑动的最大范围为一个八度。 如果需要更大的滑动范围，可以考虑从中间断开并/或找到一个合适的起始位置可以向屏幕中线滑动。
+- 您无法将同音高的note连接成滑动note。 这种情况下游玩起来与普通长note相同。 与普通长note不同的是它可以以极快的速度累积Combo数，在某些特殊场合可能会比较有用，但也仅此而已，不应滥用。
+- 适宜的滑动note时间比例通常为2:1到5:1（滑动部分的结束点延后一般到五分之一的整个滑动note长度）。
+  - 1:1 通常适用于抖动音或颤音。
+  - 如有疑惑，只要将滑动部分的末尾延后1/32音符就能适配绝大多数滑动note的情况。
+- 1/8或更短音符仅需单个滑动部分即可，不需要额外在中间放置note分段就可以有不错的听感，除非是大范围的跳跃。
+- 滑动note的结尾不必保留停顿的部分，在滑动部分的结束点已经按照前文所说提前了的情况下已经不在需要额外保留停顿。
 
-## Technical Requirements
-- Don't just convert the .mp3 to .mid. This converts all the instruments, but we can only play one note at a time. Finding a MIDI online would also likely not work without a lot of editing.
-- Have [beat](https://en.wikipedia.org/wiki/Beat_(music)#On-beat_and_off-beat) markers that line up with the background audio (unless the song has a varying tempo).
+## 技术性要求
+- 请勿直接将.mp3转换为.mid（即自动扒谱）。 这类转换通常无法提取出单独的某一种乐曲或声部，而我们在游戏中一次只能弹奏一个note。 即便寻找现成的midi文件，在放入转换器转换为可玩的谱面之前通常也免不了大量的编辑。
+- 在转换谱面时记得设定小节线（[beat](https://en.wikipedia.org/wiki/Beat_(music)#On-beat_and_off-beat) markers），除非乐曲的bpm有变化。
 - Use an audio editing software like [Audacity](https://www.audacityteam.org/) to add/remove silence to the beginning of a song to help line up the audio file’s beats with the chart’s beats.
 - Ensure that the chart is perfectly synced with the background audio.
 - Use [AutoToot](https://github.com/TomDotBat/AutoToot) or [Boner Viewer](https://paturages.github.io/boner-viewer/) and listen if the notes are consistently early or late.
