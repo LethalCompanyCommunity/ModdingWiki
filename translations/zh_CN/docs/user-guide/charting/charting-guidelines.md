@@ -1,25 +1,25 @@
 # 谱面制作指导
 ---
-以下内容仅为指导意见，并非绝对的硬性要求。 一切指导意见的最终目的都是制作一个游玩体验足够优秀的自制谱面。 If ignoring these rules make a chart more enjoyable or engaging (e.g. Rush E), you are welcome to do so. Credits: tsunderestorm, StaticR.
+以下内容仅为指导意见，并非绝对的硬性要求。 一切指导意见的最终目的都是制作一个游玩体验足够优秀的自制谱面。 如果忽略这些意见能够使你的谱面更有趣或者更具有吸引力（例如 Rush E），那么按照您自己的方式去制作即可。 编写者: tsunderestorm, StaticR.
 
-## Best Practices
+## 游玩体验最佳化
 
-- Maintain note spacing appropriate for the difficulty.
-  - As a very general guideline, the note and space between it and the next note should be of equal length
-  - **IDEAL**:
+- 保证note间距与难度相匹配
+  - 通常情况下，note与note之间的间隔应该与note本身同长。
+  - **正面示例**:
   - ![Ideal Note Spacing](../docs/files/charting/ideal-note-spacing.png)
-  - **NOT IDEAL**: (this might sound good in preview or autotoot but does not provide much time for a player to release and hit the next note)
+  - **反面示例**: （这种排布虽然在自动演奏中可能会拥有较好的听感，但没有足够的时间空档让玩家抬手并点击下一个note。）
   - ![Bad Note Spacing](../docs/files/charting/bad-note-spacing.png)
-  - You may make exceptions:
-    - to emphasize [articulation](https://people.carleton.edu/~jellinge/m101s12/Pages/04/04Articulation.html) like slurs, staccato, or legato
-    - to make it easier to maintain combo on very fast sections
-    - if the song tempo is very slow and a tight spacing is adequate
-- Do not be off-key. If you have a poor sense of tone, ask #charting or #wip to take a look.
-- Do not be off-beat. You can slow the song down in your editor to help distinguish faster rhythms.
-- Do not start nor end abruptly.
-  - Give at least one bar of rest before the first note, and continue your chart until the end of the song.
-  - Adjust the length / song endpoint if the curtains are closing slightly before the background track ends. Do not to set the song endpoint in the tmb to be longer than the song length, or the song won't end.
-- The rhythm should be visually intuitive. If notes are slightly longer, they should be slightly longer visually. If notes are slightly shorter, they should be slightly shorter visually.
+  - 当遇到以下情形时，可不遵守此项：
+    - 突出表达音调的[连续性](https://people.carleton.edu/~jellinge/m101s12/Pages/04/04Articulation.html)。
+    - 在较快速的段落简化谱面以保持Combo。
+    - 曲目的节奏较慢，以至于可以使用较紧凑的note排布。
+- 请勿跑调。 如果您音感不佳，可以向#charting或#wip请求协助。
+- 请注意节奏。 您可以在编辑谱面时适当减慢乐曲的速度以应对较快的节奏。
+- 开始与结束应尽可能自然。
+  - 在第一个note之前留出至少一个小节的空白距离，并保证你的谱面能持续到乐曲结束。
+  - 在谱面的.tmb文件中调整谱面的结束点（endpoint）以确保结算画面不会过早出现。 结束点推荐设置在乐曲最后一个音结束到乐曲文件结束之间。不要设置在乐曲文件结束之后，会导致无法结算。
+- 谱面节奏应足够直观。 如果一个note略微更长，这种长度区别在实际游玩时应该能被明显地辨认出。 短note同理。
   - **IDEAL**: (easy to see which are eighth notes and which are dotted eighth (3/16) notes)
   - ![Ideal Visual Rhythm](../docs/files/charting/ideal-visual-rhythm.png)
   - **NOT IDEAL**: (all notes read as eighth notes)
