@@ -39,26 +39,26 @@
     - 尝试采用和弦或低音声部。
     - 高（或低）一个八度来演奏。
     - 如果您对您的乐感比较有自信，可以尝试自己编写合适的和声。
-  - You may want to reverse this if the main part serves as a high point in the music. Musical high points typically fit best at around the last third or quarter of the entire track, so structuring a loop like that can make it feel more complete.
-- Really short tracks are best looped until about 1 to 1:30 minutes, unless they are really repetitive.
-- You may choose to add a full or partial loop if there are different parts to play in a section.
-- Ending a track that endlessly loops can be hard. Suggestions:
-  - End at the end without any loop back.
-  - End at the first beat, chord, or section of the loop.
-  - Fade the music out at the end of a musical phrase.
+  - 应尽可能避免乐曲的高潮桥段出现的过早。 音乐高点通常最适合出现在整个曲目的最后三分之一或四分之一左右，照此调整整个乐曲的结构可以让乐曲显得更加完整。
+- 较短的乐曲应该循环至1:00到1:30之间，除非重复性过高。
+- 如果您对某个段落打算编写多个不同的排布，您可以选择对其添加一个完整或部分的循环。
+- 对于一个无限循环的乐曲来说，可能会较难寻找结束点。 建议您：
+  - 在单次循环结束时直接结束，不做任何循环。
+  - 在循环的第一个节奏点，第一个和弦或第一个小节结束循环。
+  - 在乐曲末尾添加淡出效果。
 
-### Slides
-- Avoid 90 degree slide angles.
-  - **IDEAL**: (player has adequate time to change pitches. Depending on latency, you might want to adjust the position of the connecting points.)
+### 滑动（slide）note
+- 避免出现接近90度的滑动操作。
+  - **正面示例**: （玩家有足够的时间改变音高。 考虑到延迟，您可能需要调整滑动note连接点的位置。）
   - ![Ideal Slide 1](../docs/files/charting/ideal-slide1.png)
-  - **MAYBE IDEAL**: (only if a quick transition is absolutely necessary)
+  - **可接受的示例**: （仅在有必要使用快速过渡时。）
   - ![Ideal Slide 2](../docs/files/charting/ideal-slide2.png)
-  - **NOT IDEAL**: (this is not humanly playable)
+  - **反面示例**: （不是人玩的东西-_-）
   - ![Bad Slide](../docs/files/charting/bad-slide.png)
-- A slide approaches the target pitch before the slide end.
-  - Make the end of the slide ~1-2 32nd notes late, depending on the length of the slide.
-  - Start the slide about one 16th note before the target beat. It'll still be fine if half the note is a slide.
-- For 8th note slides or shorter, you don't need to include a held note in the middle.
+- 滑动note的滑动部分到达目标音高的时间比滑动部分结束要提前一点。
+  - 将滑动部分的结束点延后1~2/32音符的长度。
+  - 滑动部分的起始点提前1/16音符。 适合滑动note中滑动部分占比超过一半的情况。
+- 对于等于或短于1/8音符的滑动note，不建议滑动部分中间分段。
   - You often don't need a held note at the slide start, middle or end at all, unless you want the note to be clearly held for an 8th note or longer.
 - Simplify slides for a consistent stream of notes going up or down.
   - Instead, you can just do one single slide and pull back the end point until the slide curve matches the notes.
