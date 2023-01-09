@@ -1,100 +1,100 @@
-# Charting Guidelines
+# 谱面制作指导
 ---
-The following guidelines are not absolute requirements. The goal is to make a chart that's fun to play. If ignoring these rules make a chart more enjoyable or engaging (e.g. Rush E), you are welcome to do so. Credits: tsunderestorm, StaticR.
+以下内容仅为指导意见，并非绝对的硬性要求。 一切指导意见的最终目的都是制作一个游玩体验足够优秀的自制谱面。 如果忽略这些意见能够使你的谱面更有趣或者更具有吸引力（例如 Rush E），那么按照您自己的方式去制作即可。 编写者: tsunderestorm, StaticR. （译者：Bilibili@银狐V933 Discord@SilverFoxV933，以下内容较为抽象，看不懂不要太在意，实在想了解可以来b站直接与我交流。译者从未系统学过乐理相关知识。对于部分用词不准确或混乱的情况，还望海涵。）
 
-## Best Practices
+## 游玩体验最佳化
 
-- Maintain note spacing appropriate for the difficulty.
-  - As a very general guideline, the note and space between it and the next note should be of equal length
-  - **IDEAL**:
-  - ![Ideal Note Spacing](../docs/files/charting/ideal-note-spacing.png)
-  - **NOT IDEAL**: (this might sound good in preview or autotoot but does not provide much time for a player to release and hit the next note)
-  - ![Bad Note Spacing](../docs/files/charting/bad-note-spacing.png)
-  - You may make exceptions:
-    - to emphasize [articulation](https://people.carleton.edu/~jellinge/m101s12/Pages/04/04Articulation.html) like slurs, staccato, or legato
-    - to make it easier to maintain combo on very fast sections
-    - if the song tempo is very slow and a tight spacing is adequate
-- Do not be off-key. If you have a poor sense of tone, ask #charting or #wip to take a look.
-- Do not be off-beat. You can slow the song down in your editor to help distinguish faster rhythms.
-- Do not start nor end abruptly.
-  - Give at least one bar of rest before the first note, and continue your chart until the end of the song.
-  - Adjust the length / song endpoint if the curtains are closing slightly before the background track ends. Do not to set the song endpoint in the tmb to be longer than the song length, or the song won't end.
-- The rhythm should be visually intuitive. If notes are slightly longer, they should be slightly longer visually. If notes are slightly shorter, they should be slightly shorter visually.
-  - **IDEAL**: (easy to see which are eighth notes and which are dotted eighth (3/16) notes)
-  - ![Ideal Visual Rhythm](../docs/files/charting/ideal-visual-rhythm.png)
-  - **NOT IDEAL**: (all notes read as eighth notes)
-  - ![Bad Visual Rhythm](../docs/files/charting/bad-visual-rhythm.png)
-- Use a reasonable `savednotespacing` (scroll speed) value
-  - 120~200, depending on song complexity. A good guideline is `100/[BPM]*280`.
-  - This should be fast enough for the rhythm to be visually intuitive and slow enough that the player has time to react.
-  - This value does not have to be the same as the tempo!
-- A note can be held for 4.5 seconds before running out of breath. If you have a note or slide longer than that, it's recommended to break it up so the player can catch their breath.
-- Chords typically consist of 3-4 notes. The highest or lowest note usually sounds the cleanest to chart.
+- 保证note间距与难度相匹配
+  - 通常情况下，note与note之间的间隔应该与note本身同长。
+  - **正面示例**:
+  - ![理想的note间距](../docs/files/charting/ideal-note-spacing.png)
+  - **反面示例**: （这种排布虽然在自动演奏中可能会拥有较好的听感，但没有足够的时间空档让玩家抬手并点击下一个note。）
+  - ![糟糕的note间距](../docs/files/charting/bad-note-spacing.png)
+  - 当遇到以下情形时，可不遵守此项：
+    - 突出表达音调的[连续性](https://people.carleton.edu/~jellinge/m101s12/Pages/04/04Articulation.html)。
+    - 在较快速的段落简化谱面以保持Combo。
+    - 曲目的节奏较慢，以至于可以使用较紧凑的note排布。
+- 请勿跑调。 如果您音感不佳，可以向#charting或#wip请求协助。
+- 请注意节奏。 您可以在编辑谱面时适当减慢乐曲的速度以应对较快的节奏。
+- 开始与结束应尽可能自然。
+  - 在第一个note之前留出至少一个小节的空白距离，并保证你的谱面能持续到乐曲结束。
+  - 在谱面的.tmb文件中调整谱面的结束点（endpoint）以确保结算画面不会过早出现。 结束点推荐设置在乐曲最后一个音结束到乐曲文件结束之间。不要设置在乐曲文件结束之后，会导致无法结算。
+- 谱面节奏应足够直观。 如果一个note略微更长，这种长度区别在实际游玩时应该能被明显地辨认出。 短note同理。
+  - **正面示例**: （可以直观的分辨note的长短）
+  - ![理想的节奏视觉表现](../docs/files/charting/ideal-visual-rhythm.png)
+  - **反面示例**: （所有note看起来长度相等）
+  - ![糟糕的节奏视觉表现](../docs/files/charting/bad-visual-rhythm.png)
+- 选择一个合适的 `savednotespacing` （滚动速度）。
+  - 通常在120~200的区间内，取决于谱面的复杂程度。 推荐使用 `100/[BPM]*280`.
+  - 理想的谱面的滚动速度，应该是能让谱面的节奏得以直观展现的同时，足以让玩家有时间对谱面作出反应。
+  - 这个值不必与BPM相同！
+- 一个长note的极限长度为4.5秒，超过这个时间会触发强制的换气惩罚。 推荐对超过这个时间的长note进行拆分以便玩家有时间换气。
+- 和弦通常包含3到4个note。 选择最高或最低的note写入谱面，效果最好。
 
-### Looping Tracks
-- A few repetitions are fine, but avoid repeating the same note pattern over and over.
-  - You can look for a TV version or edit it yourself if you want a shorter version of the song.
-  - Generally, it flows best if you chart the easier or more expected parts in the first play, and switch to alternatives:
-    - Often, there's a primary and secondary melody.
-    - Follow the chords or bassline.
-    - Play it in a different octave.
-    - If you know what you're doing musically, use different chords or harmonies.
-  - You may want to reverse this if the main part serves as a high point in the music. Musical high points typically fit best at around the last third or quarter of the entire track, so structuring a loop like that can make it feel more complete.
-- Really short tracks are best looped until about 1 to 1:30 minutes, unless they are really repetitive.
-- You may choose to add a full or partial loop if there are different parts to play in a section.
-- Ending a track that endlessly loops can be hard. Suggestions:
-  - End at the end without any loop back.
-  - End at the first beat, chord, or section of the loop.
-  - Fade the music out at the end of a musical phrase.
+### 乐曲结构
+- 允许存在一定的重复。但要避免同一个note排布过度反复地出现。
+  - 选曲时，可以考虑选择TV版（如果有的话），或亲手编辑以获得较短版本的乐曲。
+  - 通常情况下，在两个重复的段落中，首段采用较为简单或较为明显的部分来作谱，复段则采用其他部分，这类分配效果最好。
+    - 一个乐曲段落通常由主副两段旋律（或多段）合成。
+    - 尝试采用和弦或低音声部。
+    - 高（或低）一个八度来演奏。
+    - 如果您对您的乐感比较有自信，可以尝试自己编写合适的和声。
+  - 应尽可能避免乐曲的高潮桥段出现的过早。 音乐高点通常最适合出现在整个曲目的最后三分之一或四分之一左右，照此调整整个乐曲的结构可以让乐曲显得更加完整。
+- 较短的乐曲应该循环至1:00到1:30之间，除非重复性过高。
+- 如果您对某个段落打算编写多个不同的排布，您可以选择对其添加一个完整或部分的循环。
+- 对于一个无限循环的乐曲来说，可能会较难寻找结束点。 建议您：
+  - 在单次循环结束时直接结束，不做任何循环。
+  - 在循环的第一个节奏点，第一个和弦或第一个小节结束循环。
+  - 在乐曲末尾添加淡出效果。
 
-### Slides
-- Avoid 90 degree slide angles.
-  - **IDEAL**: (player has adequate time to change pitches. Depending on latency, you might want to adjust the position of the connecting points.)
-  - ![Ideal Slide 1](../docs/files/charting/ideal-slide1.png)
-  - **MAYBE IDEAL**: (only if a quick transition is absolutely necessary)
-  - ![Ideal Slide 2](../docs/files/charting/ideal-slide2.png)
-  - **NOT IDEAL**: (this is not humanly playable)
-  - ![Bad Slide](../docs/files/charting/bad-slide.png)
-- A slide approaches the target pitch before the slide end.
-  - Make the end of the slide ~1-2 32nd notes late, depending on the length of the slide.
-  - Start the slide about one 16th note before the target beat. It'll still be fine if half the note is a slide.
-- For 8th note slides or shorter, you don't need to include a held note in the middle.
-  - You often don't need a held note at the slide start, middle or end at all, unless you want the note to be clearly held for an 8th note or longer.
-- Simplify slides for a consistent stream of notes going up or down.
-  - Instead, you can just do one single slide and pull back the end point until the slide curve matches the notes.
-  - Making each individual note part of the slide will make the slide very wobbly. You can make an exception if you specifically want the slide to look like this or the note shape is too complex to estimate with one slide.
-- Vibrato or trill type slides work great if they connect in the middle of the note.
-- Generally, slides are cleaner with fewer connecting points.
-- In a very slide heavy track, setting the color to a solid color instead of a 2 color gradient could look way cleaner.
-- If you want clean slides with a midi converter, use [TCCC](https://rshieldsprojects.github.io/projects/tccc/)'s custom slide method.
-- Slides can only go 1 octave both up and down from the starting note. If you want a chart a slide that spans a greater range, you can break it up in between and/or find a place where you can start the slide towards the middle of the screen
-- You can connect multiple notes at the same pitch as a slide. This plays as one continuous held note. This boosts combo count and champ meter extremely quickly, which may be useful for certain effects and gimmicks, but you wouldn't want to use it outside of that.
-- Good slide timings seem to be about 2:1 to 5:1  (slide end late by about half to one 5th of the length of the slide)
-  - 1:1 works too for things like trills or vibrato.
-  - When in doubt, just putting the slide end a 32nd note late tends to work well for most slides.
-- 2 16th notes or shorter connected work completely fine with only one slide, there doesn't need to be any held for it to sound ok, unless it is a very large jump.
-- Slide ends don't need a held part, they're fine just ending a bit early (if the slide end is already delayed by the appropriate amount)
+### 滑动（slide）note
+- 避免出现接近90度的滑动操作。
+  - **正面示例**: （玩家有足够的时间改变音高。 考虑到延迟，您可能需要调整滑动note连接点的位置。）
+  - ![理想的滑动note 1](../docs/files/charting/ideal-slide1.png)
+  - **可接受的示例**: （仅在有必要使用快速过渡时。）
+  - ![理想的滑动note 2](../docs/files/charting/ideal-slide2.png)
+  - **反面示例**: （不是人玩的东西-_-）
+  - ![糟糕的滑动note](../docs/files/charting/bad-slide.png)
+- 滑动note的滑动部分到达目标音高的时间比滑动部分结束要提前一点。
+  - 将滑动部分的结束点延后1~2/32音符的长度。
+  - 滑动部分的起始点提前1/16音符。 适合滑动note中滑动部分占比超过一半的情况。
+- 对于等于或短于1/8音符的滑动note，不建议滑动部分中间分段。
+  - 一个滑动note可以不在开始，中途或结束保留任何非滑动部分。
+- 简化滑动note，减少多余的波动。
+  - 同方向的多段滑动可以合并为单个滑动，通过调整滑动部分结束点来与实际的音调匹配。
+  - 一段滑动中每一个note都保留会使得滑动部分过于波动。 尽量避免这种情况，除非您有意为之或原曲音调过于复杂无法用单个滑动来表现。
+- 抖动音或颤音建议从每个音的中间进行连接。
+- 通常情况下，分段越少的滑动效果越好。
+- 如果谱面中滑动轨道较多，建议设置note颜色时头尾选择相同的颜色，可增强谱面观感。
+- 除了旧有的滑动note编写方式，还可以尝试 [TCCC](https://rshieldsprojects.github.io/projects/tccc/)转换器采用的新的编写方式，对于编写滑动note有一定的帮助。
+- 滑动note滑动的最大范围为一个八度。 如果需要更大的滑动范围，可以考虑从中间断开并/或找到一个合适的起始位置可以向屏幕中线滑动。
+- 您无法将同音高的note连接成滑动note。 这种情况下游玩起来与普通长note相同。 与普通长note不同的是它可以以极快的速度累积Combo数，在某些特殊场合可能会比较有用，但也仅此而已，不应滥用。
+- 适宜的滑动note时间比例通常为2:1到5:1（滑动部分的结束点延后一般到五分之一的整个滑动note长度）。
+  - 1:1 通常适用于抖动音或颤音。
+  - 如有疑惑，只要将滑动部分的末尾延后1/32音符就能适配绝大多数滑动note的情况。
+- 1/8或更短音符仅需单个滑动部分即可，不需要额外在中间放置note分段就可以有不错的听感，除非是大范围的跳跃。
+- 滑动note的结尾不必保留停顿的部分，在滑动部分的结束点已经按照前文所说提前了的情况下已经不在需要额外保留停顿。（译者注：以上内容看不懂也没关系，多写写就懂了。其实我很多也不懂……）
 
-## Technical Requirements
-- Don't just convert the .mp3 to .mid. This converts all the instruments, but we can only play one note at a time. Finding a MIDI online would also likely not work without a lot of editing.
-- Have [beat](https://en.wikipedia.org/wiki/Beat_(music)#On-beat_and_off-beat) markers that line up with the background audio (unless the song has a varying tempo).
-- Use an audio editing software like [Audacity](https://www.audacityteam.org/) to add/remove silence to the beginning of a song to help line up the audio file’s beats with the chart’s beats.
-- Ensure that the chart is perfectly synced with the background audio.
-- Use [AutoToot](https://github.com/TomDotBat/AutoToot) or [Boner Viewer](https://paturages.github.io/boner-viewer/) and listen if the notes are consistently early or late.
-- Set a difficulty rating consistent with [TootTally](https://toottally.com/upload/).
-- Avoid excessively long rest sections.
-- Have a relevant background. A static PNG background is OK.
-- Have good visual contrast between the notes and the background.
-- If necessary, reduce the loudness of the song (via Audacity, etc.) so that the trombone sound can be clearly heard over the background track.
-  - -15dB LUFS is a good starting point and the default export setting in the reaper template.
+## 技术性要求
+- 请勿直接将.mp3转换为.mid（译者注：即自动扒谱）。 这类转换通常无法提取出单独的某一种乐曲或声部，而我们在游戏中一次只能弹奏一个note。 即便寻找现成的midi文件，在放入转换器转换为可玩的谱面之前通常也免不了大量的编辑。
+- 在转换谱面时记得设定小节线（[beat](https://en.wikipedia.org/wiki/Beat_(music)#On-beat_and_off-beat) markers）并与音乐对齐，除非乐曲的bpm有变化。
+- 使用音频编辑软件（例如[Audacity](https://www.audacityteam.org/)）调整乐曲开头的空白部分的时长来让乐曲的节奏与谱面的节奏对齐。
+- 保证谱面与乐曲的同步性。
+- 使用 [AutoToot](https://github.com/TomDotBat/AutoToot) 或[Boner Viewer](https://paturages.github.io/boner-viewer/) 检验谱面中的note是否有持续性的提前或延后现象。
+- 使用[TootTally](https://toottally.com/upload/)来给你的谱面进行难度定级。
+- 避免出现过长的休息段。
+- 记得添加一个合适的背景。 一个静态PNG图片就足够了。
+- 谱面上的note在背景上应有足够的辨识度，可以考虑调整note颜色或将背景略微调暗。
+- 如有必要，减小乐曲的音量（使用Audacity或其他）以保证长号的声音能被清晰地听到。
+  - -15dB LUFS 效果比较不错，是Reaper自制文件示例中的默认导出设置。（译者注：实际要根据不同曲目的音量情况进行单独调整，推荐实际去游戏中进行实地测试。此外乐曲音量应该减弱多少还与当前曲目是否有声部容易与长号的声音发生混合有关。举例来说如果你的音乐是去掉了人声的流行乐，而在写谱时选择用长号代替人声，则乐曲音量就不需要降得太低。无论如何最终仍应以游戏内实际测试为准。）
 
-### File Specifications
-- Follow this archive format: `[mychart].zip/[mychart]/[files]`
-- Double check for invalid metadata in the .tmb file
-  - `trackref` should be unique and not something like `"trackref"="trombone_charter_x64"`.
-  - Check that the [json is valid](https://jsonformatter.curiousconcept.com/#).
-- Use h.264 as the video codec for maximum compatibility.
-- Have an appropriate video file size (target 10MB per minute of song)
-  - Use a tool like [Handbrake](https://handbrake.fr/) to reencode video.
-  - Use two-pass encoding with a target bitrate of 1333kbps to eliminate any guesswork.
-  - Remove the audio track entirely.
+### 文件规格
+- 推荐使用的压缩包命名以及压缩包内容的格式：`[mychart].zip/[mychart]/[files]`
+- 反复检查.tmb文件中涉及的谱面基本数据。
+  - `trackref` 应该是唯一的，而不是类似 `"trackref"="trombone_charter_x64"`.
+  - 确认谱面文件.tmb中的 [json代码](https://jsonformatter.curiousconcept.com/#)准确无误。（译者注：链接是一个json语句纠错的网站，用记事本打开.tmb文件并复制全部文本至这个网页，点Process就可以检测文件是否有语法上的错误，防止出现一些意想不到的情况。）
+- 使用h.264来对视频格式的谱面背景进行编码以获得最佳兼容性。
+- 控制视频文件的体积（推荐每分钟10MB）。
+  - 使用类似 [Handbrake](https://handbrake.fr/)的工具对视频进行压制。
+  - 编码模式使用2-pass，目标比特率推荐设为1333。
+  - 记得去掉视频的音轨，使视频完全静音。（译者注：视频的编码与压制很复杂，想要详细了解可以b站找我。简中区用户也可以使用小丸工具箱压制和处理视频，体量小功能强大。）

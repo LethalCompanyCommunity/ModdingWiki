@@ -7,14 +7,14 @@
 ### Midi Editor/DAW
 自制谱的制作需要创建Midi文件并使用[MIDI转换器](#converting-midi-to-map-file)进行转换。
 
-Midi文件中的音符应该在47到73的范围内以匹配游戏。<br>**注意：**该范围在不同的编辑器上会使用不同的钢琴琴键范围。
+Midi文件中的音符应该在47到73的范围内以匹配游戏内的音高范围。<br>**注意：**该范围在不同的编辑器上会对应不同的钢琴琴键范围。
 
 一些免费可用的Midi编辑器包括：
-- [Reaper](https://www.reaper.fm/download.php)* ((对应琴键范围: B2-C#5)
-- [LMMS](https://lmms.io/download#windows) ((对应琴键范围: B2-C#5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† ((对应琴键范围: B3-C#6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** ((对应琴键范围: B3-C#6)
-- [Ableton](https://www.ableton.com/en/trial/)* ((对应琴键范围: B1-C#4)
+- [Reaper](https://www.reaper.fm/download.php)* (琴键范围: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (琴键范围: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (琴键范围: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (琴键范围: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (琴键范围: B1-C#4)
 - [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
 - [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
@@ -87,7 +87,7 @@ Midi文件中的音符应该在47到73的范围内以匹配游戏。<br>**注意
 <ol start="1">
   <li>
     <p spaces-before="0">
-      前往 <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/leases/leases/latest</a> 并点击 <code>Midi2TromboneChamp.exe</code> 进行下载。
+      前往 <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a>并点击 <code>Midi2TromboneChamp.exe</code> 进行下载。
     </p>
   </li>
   
