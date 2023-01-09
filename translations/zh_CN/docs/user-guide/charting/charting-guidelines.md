@@ -11,7 +11,7 @@
   - **反面示例**: （这种排布虽然在自动演奏中可能会拥有较好的听感，但没有足够的时间空档让玩家抬手并点击下一个note。）
   - ![糟糕的note间距](../docs/files/charting/bad-note-spacing.png)
   - 当遇到以下情形时，可不遵守此项：
-    - 突出表达音调的[连续性](https://people.carleton.edu/~jellinge/m101s12/Pages/04/04Articulation.html)。
+    - 突出表达音调的[连续性](https://people.carleton.edu/~jellinge/m101s12/Pages/04/04Articulation.html)。比如连奏，断奏和延长音
     - 在较快速的段落简化谱面以保持Combo。
     - 曲目的节奏较慢，以至于可以使用较紧凑的note排布。
 - 请勿跑调。 如果您音感不佳，可以向#charting或#wip请求协助。
