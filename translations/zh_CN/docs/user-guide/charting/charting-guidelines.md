@@ -11,7 +11,7 @@
   - **反面示例**: （这种排布虽然在自动演奏中可能会拥有较好的听感，但没有足够的时间空档让玩家抬手并点击下一个note。）
   - ![糟糕的note间距](../docs/files/charting/bad-note-spacing.png)
   - 当遇到以下情形时，可不遵守此项：
-    - 突出表达音调的[连续性](https://people.carleton.edu/~jellinge/m101s12/Pages/04/04Articulation.html)。
+    - 突出表达音调的[连续性](https://people.carleton.edu/~jellinge/m101s12/Pages/04/04Articulation.html)。比如连奏，断奏和延长音
     - 在较快速的段落简化谱面以保持Combo。
     - 曲目的节奏较慢，以至于可以使用较紧凑的note排布。
 - 请勿跑调。 如果您音感不佳，可以向#charting或#wip请求协助。
@@ -26,7 +26,7 @@
   - ![糟糕的节奏视觉表现](../docs/files/charting/bad-visual-rhythm.png)
 - 选择一个合适的 `savednotespacing` （滚动速度）。
   - 通常在120~200的区间内，取决于谱面的复杂程度。 推荐使用 `100/[BPM]*280`.
-  - 理想的谱面的滚动速度，应该是能让谱面的节奏得以直观展现的同时，足以让玩家有时间对谱面作出反应。
+  - 理想的谱面流速，应该是能让谱面的节奏得以直观展现的同时，足以让玩家有时间对谱面作出反应。
   - 这个值不必与BPM相同！
 - 一个长note的极限长度为4.5秒，超过这个时间会触发强制的换气惩罚。 推荐对超过这个时间的长note进行拆分以便玩家有时间换气。
 - 和弦通常包含3到4个note。 选择最高或最低的note写入谱面，效果最好。
