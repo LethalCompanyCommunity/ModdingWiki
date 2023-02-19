@@ -1,7 +1,7 @@
 # Using r2modman
 ---
 
-?> For Mac users, you may try looking at Candygoblen123's [Trombone Champ Mod Manager for Mac](https://github.com/Candygoblen123/TromboneChampModManager/releases/latest/)
+?> For Mac users, you may try looking at Candygoblen123's [Trombone Champ Mod Manager for Mac](https://github.com/Candygoblen123/TromboneChampModManager/)
 
 ?> For the purposes of this guide, we will only be installing **TrombLoader** although installing other mods would work the same way.
 
