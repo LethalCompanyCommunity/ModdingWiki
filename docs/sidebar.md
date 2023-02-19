@@ -3,6 +3,7 @@
 - **Modding**
 - [Installing Mods](installing-mods)
 - [Installing Songs](installing-songs)
+- [Using r2modman](installing-r2modman)
 - **Charting**
 - [Creating Charts](creating-charts)
 - [Charting Guidelines](charting-guidelines)
