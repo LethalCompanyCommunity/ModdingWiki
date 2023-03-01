@@ -77,6 +77,6 @@ From there, your `BepInEx` folder is the `BepInEx` folder that you see.
 
 ![BepInEx Folder](../docs/files/r2modman-install/bepinexfolder.png)
 
-!> If there is no `CustomSongs` folder inside your `BepInEx` folder, **run the game once by click Start Modded**. If that doesn't generate the folder, you may make it yourself.
+!> If there is no `CustomSongs` folder inside your `BepInEx` folder, **run the game once by clicking Start Modded**. If that doesn't generate the folder, you may make it yourself.
 
 From there, follow the steps outlined in the [Installing Songs](installing-songs) guide.
