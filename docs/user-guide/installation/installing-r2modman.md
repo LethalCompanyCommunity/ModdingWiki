@@ -9,7 +9,7 @@ This guide will run you through installing and using [r2modman](https://github.c
 
 ## Installing r2modman
 
-!> As of writing (Feb. 19, 2023), the latest version of r2modman is **3.1.36**. If the version has updated to something higher than that, please use that version instead.
+!> As of writing (March 1, 2023), the latest version of r2modman is **3.1.38**. If the version has updated to something higher than that, please use that version instead.
 
 First things first, download [**r2modman from its GitHub page**](https://github.com/ebkr/r2modmanPlus/releases/latest/).
 
