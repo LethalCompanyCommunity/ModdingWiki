@@ -26,7 +26,7 @@ On Linux, r2modman is available in different package formats depending on your d
 
 Visit the [**r2modman GitHub releases page**](https://github.com/ebkr/r2modmanPlus/releases/latest/) and download the appropriate package file for your distro and install it according to your package manager's documentation.
 
-**For Steam Deck users**, download the `.AppImage` file and keep it in a safe location such as your Desktop or your Documents folder. You will also need to mark the file as executable. To do this, right-click the `.AppImage` file and select `Properties`. Switch to the **Permissions** tab and check the box marked `Is Executable` and click OK.
+**For Steam Deck users,** download the `.AppImage` file and keep it in a safe location such as your Desktop or your Documents folder. You will also need to mark the file as executable. To do this, right-click the `.AppImage` file and select `Properties`. Switch to the **Permissions** tab and check the box marked `Is Executable` and click OK.
 
 ![Steam Deck Permissions Window](../docs/files/r2modman-linux/appimageproperties.png)
 
@@ -38,43 +38,43 @@ Once you have succesfully installed r2modman, you can finally install mods.
 
 1. Launch **r2modman**. You will be greeted with the following screen.
 
-![r2modman Game Selection Screen](../docs/files/r2modman-install/gameselection.png)
+![r2modman Game Selection Screen](../docs/files/r2modman-linux/gameselection.png)
 
 2. Select **"Trombone Champ"**, and click **"Select Game"**.
 
 ?> If you do not see it, **use the search bar or scroll down** to find "Trombone Champ".
 
-![Select Trombone Champ](../docs/files/r2modman-install/selecttc.png)
+![Select Trombone Champ](../docs/files/r2modman-linux/selecttc.png)
 
 3. It will ask you to choose which profile to use. For this guide's purposes, we will stick with the Default profile. Click **"Select profile"**.
 
-![Select Default Profile](../docs/files/r2modman-install/profileselect.png)
+![Select Default Profile](../docs/files/r2modman-linux/profileselect.png)
 
 4. This will lead us to this screen.
 
-![First Time Opening Installed](../docs/files/r2modman-install/firsttimeinstall.png)
+![First Time Opening Installed](../docs/files/r2modman-linux/firsttimeinstall.png)
 
 5. Click **"Online"** on the sidebar. This will bring up a list of all available to download mods on [Thunderstore](https://trombone-champ.thunderstore.io/).
 
-![Clicking Online](../docs/files/r2modman-install/selectonline.png)
+![Clicking Online](../docs/files/r2modman-linux/selectonline.png)
 
 6. From here, you may choose which mods you would like to download and install. Click on **TrombLoader**, and then click on Download.
 
 ?> If you do not see **TrombLoader**, use the search bar or scroll down.
 
-![Downloading TrombLoader](../docs/files/r2modman-install/downloadtrombloader.png)
+![Downloading TrombLoader](../docs/files/r2modman-linux/downloadtrombloader.png)
 
 7. It will ask you which version to use. Download the latest version, which is already selected for you by default. Click **"Download with dependencies"** or **"Download"**.
 
-![Downloading with dependencies](../docs/files/r2modman-install/downloadlatest.png)
+![Downloading with dependencies](../docs/files/r2modman-linux/downloadlatest.png)
 
 8. Do the same for **"BepInExPack_TromboneChamp"**.
 
-![Downloading BepInExPack_TromboneChamp](../docs/files/r2modman-install/downloadbepinex.png)
+![Downloading BepInExPack_TromboneChamp](../docs/files/r2modman-linux/downloadbepinex.png)
 
 9. Once you are done installing your mods, you may click on "Start modded" on the sidebar. This will launch the game with your mods.
 
-![Start Trombone Champ Modded](../docs/files/r2modman-install/startmodded.png)
+![Start Trombone Champ Modded](../docs/files/r2modman-linux/startmodded.png)
 
 That's it! You have just successfully modded Trombone Champ!
 
@@ -84,13 +84,11 @@ Godspeed, Tromboner.
 
 The steps for installing custom songs are more or the less the same as specified in the [Installing Songs](installing-songs) guide. The only difference is that you need to find your `BepInEx` folder. It can be found by clicking "Settings" on the sidebar, and then clicking on "Browse profile folder".
 
-![Browse profile folder](../docs/files/r2modman-install/browseprofile.png)
+![Browse profile folder](../docs/files/r2modman-linux/browseprofile.png)
 
 From there, your `BepInEx` folder is the `BepInEx` folder that you see.
 
-![Profile Folder](../docs/files/r2modman-install/profilefolder.png)
-
-![BepInEx Folder](../docs/files/r2modman-install/bepinexfolder.png)
+![Profile Folder](../docs/files/r2modman-linux/profilefolder.png)
 
 !> If there is no `CustomSongs` folder inside your `BepInEx` folder, **run the game once by clicking Start Modded**. If that doesn't generate the folder, you may make it yourself.
 
