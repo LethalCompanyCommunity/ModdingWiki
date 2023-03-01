@@ -104,7 +104,7 @@ We recommend following [this guide created by GamingOnLinux](https://www.gamingo
 !> Even with GE-Proton, you may still experience some issues with video playback depending on your setup.
 
 ## Using Mods in Steam Deck's Game Mode
-**r2modman will not work in Steam Deck's Game mode, and therefore mods will not load by default.** To get around this, right-click the game in Steam and click `Properties`. From there, past the following into **Launch Options**:
+**r2modman will not work in Steam Deck's Game mode, and therefore mods will not load by default.** To get around this, right-click the game in Steam and click `Properties`. From there, paste the following into **Launch Options**:
 
 ```
 WINEDLLOVERRIDES="winhttp=n,b" %command% --doorstop-enable true --doorstop-target "/home/deck/.config/r2modmanPlus-local/TromboneChamp/profiles/Default/BepInEx/core/BepInEx.Preloader.dll" --r2profile "Default"
