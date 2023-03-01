@@ -1,6 +1,8 @@
 # Using r2modman
 ---
 
+?> For Linux and Steam Deck users, please follow the [Linux instructions](installing-r2modman-linux).
+
 ?> For Mac users, you may try looking at Candygoblen123's [Trombone Champ Mod Manager for Mac](https://github.com/Candygoblen123/TromboneChampModManager/)
 
 ?> For the purposes of this guide, we will only be installing **TrombLoader** although installing other mods would work the same way.
@@ -9,7 +11,7 @@ This guide will run you through installing and using [r2modman](https://github.c
 
 ## Installing r2modman
 
-!> As of writing (Feb. 19, 2023), the latest version of r2modman is **3.1.36**. If the version has updated to something higher than that, please use that version instead.
+!> As of writing (March 1, 2023), the latest version of r2modman is **3.1.38**. If the version has updated to something higher than that, please use that version instead.
 
 First things first, download [**r2modman from its GitHub page**](https://github.com/ebkr/r2modmanPlus/releases/latest/).
 
@@ -77,6 +79,6 @@ From there, your `BepInEx` folder is the `BepInEx` folder that you see.
 
 ![BepInEx Folder](../docs/files/r2modman-install/bepinexfolder.png)
 
-!> If there is no `CustomSongs` folder inside your `BepInEx` folder, **run the game once by click Start Modded**. If that doesn't generate the folder, you may make it yourself.
+!> If there is no `CustomSongs` folder inside your `BepInEx` folder, **run the game once by clicking Start Modded**. If that doesn't generate the folder, you may make it yourself.
 
 From there, follow the steps outlined in the [Installing Songs](installing-songs) guide.
