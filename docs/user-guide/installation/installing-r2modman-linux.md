@@ -13,6 +13,8 @@ On Steam Deck you will need to do the following before you can follow this guide
 
 Once you're at the desktop, you're ready to continue!
 
+!> r2modman does **not** work in Game Mode. Please make sure to read the [**Using Mods in Steam Deck's Game Mode**](installing-r2modman-linux?id=using-mods-in-steam-decks-game-mode) section for a workaround once you've finished with the **Installing r2modman** section.
+
 ## Installing r2modman
 
 !> As of writing (March 1, 2023), the latest version of r2modman is **3.1.38**. If the version has updated to something higher than that, please use that version instead.
@@ -93,3 +95,19 @@ From there, your `BepInEx` folder is the `BepInEx` folder that you see.
 !> If there is no `CustomSongs` folder inside your `BepInEx` folder, **run the game once by clicking Start Modded**. If that doesn't generate the folder, you may make it yourself.
 
 From there, follow the steps outlined in the [Installing Songs](installing-songs) guide.
+
+## Getting Video Backgrounds Working
+Some custom songs will include videos for their backgrounds, and the default Proton install cannot play these back. If you want these to work, you can install `GE-Proton` using [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/). This is a version of Proton that includes some additional features, including the ability to play back video formats that Valve are unable to support officially.
+
+We recommend following [this guide created by GamingOnLinux](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) for instructions on how to use ProtonUp-Qt and install `GE-Proton`.
+
+!> Even with GE-Proton, you may still experience some issues with video playback depending on your setup.
+
+## Using Mods in Steam Deck's Game Mode
+**r2modman will not work in Steam Deck's Game mode, and therefore mods will not load by default.** To get around this, right-click the game in Steam and click `Properties`. From there, past the following into **Launch Options**:
+
+```
+WINEDLLOVERRIDES="winhttp=n,b" %command% --doorstop-enable true --doorstop-target "/home/deck/.config/r2modmanPlus-local/TromboneChamp/profiles/Default/BepInEx/core/BepInEx.Preloader.dll" --r2profile "Default"
+```
+![Steam Properties](../docs/files/r2modman-linux/steamproperties.png)
+This will instruct the game to launch with the Default profile we configured in r2modman earlier, so all your mods and custom songs installed there will be available.
