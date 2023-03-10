@@ -2,6 +2,20 @@
     margin: 0;
 }
 
+.markdown-section span.fetched-version {
+    padding: 1px;
+    background: var(--mono-tint2);
+    border-radius: 2px;
+    position: relative;
+}
+
+.markdown-section span.fetched-version:hover::after {
+    content: ' (latest version)';
+    display: inline;
+    font-size: 0.75em;
+/*    background: #111;*/
+}
+
 figure.thumbnails img {
     margin: 0.75em 0;
     border-radius: 3px;
