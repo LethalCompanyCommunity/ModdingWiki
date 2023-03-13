@@ -68,3 +68,61 @@ TrombLoader is now also on NuGet, so you can simply add another PackageReference
 ```xml
 <PackageReference Include="TromboneChamp.TrombLoader" Version="%{nuget:TromboneChamp.TrombLoader}" />
 ```
+
+## Basic setup
+
+Now that you're set up, you're ready to start writing a plugin!
+Your primary entrypoint is a class extending `BaseUnityPlugin`:
+
+```csharp
+[BepInPlugin("ch.offbeatwit.chimpanzee", "Chimpanzee", "1.0.0.0")]
+public class ChimpanzeePlugin : BaseUnityPlugin
+{
+```
+
+`BaseUnityPlugin` is really just a special MonoBehaviour.
+So you can implement any of the basic Unity event functions!
+Your initial setup should all be in Awake.
+
+```csharp
+    private void Awake()
+    {
+        // Setup goes here!
+    }
+}
+```
+
+## Basic setup with BaboonAPI
+
+[BaboonAPI](https://baboonapi.trombone.wiki/) provides a "safe initialization" API,
+which has the advantage of safely stopping the game loading and displaying an error
+if something goes wrong.
+
+First you'll want to add BaboonAPI as a BepInDependency:
+
+```csharp
+using BaboonAPI.Hooks.Initializer;
+
+[BepInPlugin("ch.offbeatwit.chimpanzee", "Chimpanzee", "1.0.0.0")]
+[BepInDependency("ch.offbeatwit.baboonapi.plugin")]
+public class ChimpanzeePlugin : BaseUnityPlugin
+{
+```
+
+Then you can use the GameInitalizationEvent:
+
+```csharp
+    private Harmony _harmony = new Harmony("ch.offbeatwit.chimpanzee");
+
+    private void Awake()
+    {
+        GameInitalizationEvent.Register(Info, TryInitialize);
+    }
+
+    private void TryInitialize()
+    {
+        // Harmony patches can fail to apply, so do them here
+        _harmony.PatchAll();
+    }
+}
+```
