@@ -53,11 +53,11 @@ below the end of the `</PropertyGroup>`:
 <ItemGroup>
     <!-- Required: BepInEx and the game code itself! -->
     <PackageReference Include="BepInEx.Core" Version="5.*" />
-    <PackageReference Include="TromboneChamp.GameLibs" Version="%{nuget:TromboneChamp.GameLibs}" />
+    <PackageReference Include="TromboneChamp.GameLibs" Version="%{nuget:TromboneChamp.GameLibs:highlighted}" />
 
     <!-- BaboonAPI provides useful hooks and patches for mods, -->
     <!-- but it's not strictly required -->
-    <PackageReference Include="TromboneChamp.BaboonAPI" Version="%{nuget:TromboneChamp.BaboonAPI}" />
+    <PackageReference Include="TromboneChamp.BaboonAPI" Version="%{nuget:TromboneChamp.BaboonAPI:highlighted}" />
 </ItemGroup>
 ```
 
@@ -66,7 +66,7 @@ below the end of the `</PropertyGroup>`:
 TrombLoader is now also on NuGet, so you can simply add another PackageReference:
 
 ```xml
-<PackageReference Include="TromboneChamp.TrombLoader" Version="%{nuget:TromboneChamp.TrombLoader}" />
+<PackageReference Include="TromboneChamp.TrombLoader" Version="%{nuget:TromboneChamp.TrombLoader:highlighted}" />
 ```
 
 ## Basic setup

@@ -2,14 +2,14 @@
     margin: 0;
 }
 
-.markdown-section span.fetched-version {
+.markdown-section span.fetched-version.highlight {
     padding: 1px;
     background: var(--mono-tint2);
     border-radius: 2px;
     position: relative;
 }
 
-.markdown-section span.fetched-version:hover::after {
+.markdown-section span.fetched-version.highlight:hover::after {
     content: ' (latest version)';
     display: inline;
     font-size: 0.75em;

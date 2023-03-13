@@ -38,11 +38,11 @@
 
     const liveVersionsPlugin = (hook, vm) => {
         const getLatestVersion = async name => {
-            if (name in _cache) return _cache[name];
-
-            const [type, key] = name.split(":");
+            const [type, key, extra] = name.split(":");
             let fetchedVersion;
-            if (type === "nuget") {
+            if (name in _cache) {
+                fetchedVersion = _cache[name];
+            } else if (type === "nuget") {
                 fetchedVersion = await latestNugetVersion(key);
             } else if (type === "thunderstore") {
                 fetchedVersion = await latestThunderstoreVersion(key);
@@ -50,7 +50,9 @@
                 return `[${name} invalid type '${type}']`;
             }
 
-            return `<span class="fetched-version ${type}">${cache(name, fetchedVersion)}</span>`;
+            const extraClass = (extra === "highlighted") ? "highlight" : "";
+
+            return `<span class="fetched-version ${type} ${extraClass}">${cache(name, fetchedVersion)}</span>`;
         };
 
         const replaceVersions = replaceAllAsync(/\%{([a-zA-Z0-9_:.-]+)}/g, getLatestVersion);
