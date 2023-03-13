@@ -20,6 +20,16 @@
             });
     };
 
+    const latestThunderstoreVersion = async packageUuid => {
+        const res = await fetch(`https://thunderstore.io/api/v1/package/${packageUuid}/`);
+        const pkg = await res.json();
+
+        if (pkg.versions.length === 0)
+            return `[Package ${packageUuid} has no versions published]`;
+
+        return pkg.versions[0].version_number;
+    };
+
     const _cache = {};
     const cache = (key, result) => {
         _cache[key] = result;
@@ -31,17 +41,26 @@
             if (name in _cache) return _cache[name];
 
             const [type, key] = name.split(":");
+            let fetchedVersion;
             if (type === "nuget") {
-                return `<span class="fetched-version nuget">${cache(name, await latestNugetVersion(key))}</span>`;
+                fetchedVersion = await latestNugetVersion(key);
+            } else if (type === "thunderstore") {
+                fetchedVersion = await latestThunderstoreVersion(key);
+            } else {
+                return `[${name} invalid type '${type}']`;
             }
 
-            return `[${name} invalid type '${type}']`;
+            return `<span class="fetched-version ${type}">${cache(name, fetchedVersion)}</span>`;
         };
 
-        const replaceVersions = replaceAllAsync(/\%{([a-zA-Z_:.-]+)}/g, getLatestVersion);
+        const replaceVersions = replaceAllAsync(/\%{([a-zA-Z0-9_:.-]+)}/g, getLatestVersion);
 
         hook.afterEach((content, next) => {
-            replaceVersions(content).then(result => next(result));
+            replaceVersions(content).then(result => next(result))
+                .catch(err => {
+                    console.error(err);
+                    next(content);
+                });
         });
     };
 
