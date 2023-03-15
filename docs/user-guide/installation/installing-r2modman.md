@@ -11,13 +11,11 @@ This guide will run you through installing and using [r2modman](https://github.c
 
 ## Installing r2modman
 
-!> As of writing (March 1, 2023), the latest version of r2modman is **3.1.38**. If the version has updated to something higher than that, please use that version instead.
+?> The latest version of r2modman is **%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}**.
 
 First things first, download [**r2modman from its GitHub page**](https://github.com/ebkr/r2modmanPlus/releases/latest/).
 
-For **Windows**, you would want to get `r2modman-Setup-3.1.36.exe` or `r2modman-3.1.36.exe`. The former installs the mod manager to your system, while the latter simply runs r2modman without any sort of installation. Simply run the installer or the program in order to open r2modman.
-
-For **Linux**, refer to which package manager your system is using to determine which file to download. Debian/Ubuntu users should opt to use `r2modman_3.1.36_amd64.deb`, and Arch users should opt to use `r2modman-3.1.36.pacman`. To install, again refer to your package manager's documentation as to how.
+For **Windows**, you would want to get `r2modman-Setup-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}.exe` or `r2modman-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}.exe`. The former installs the mod manager to your system, while the latter simply runs r2modman without any sort of installation. Simply run the installer or the program in order to open r2modman.
 
 ## Installing Mods on r2modman
 

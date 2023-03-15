@@ -17,7 +17,7 @@ Once you're at the desktop, you're ready to continue!
 
 ## Installing r2modman
 
-!> As of writing (March 1, 2023), the latest version of r2modman is **3.1.38**. If the version has updated to something higher than that, please use that version instead.
+?> The latest version of r2modman is **%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}**.
 
 On Linux, r2modman is available in different package formats depending on your distro:
 
