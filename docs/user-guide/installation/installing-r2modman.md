@@ -17,6 +17,10 @@ First things first, download [**r2modman from its GitHub page**](https://github.
 
 For **Windows**, you would want to get `r2modman-Setup-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}.exe` or `r2modman-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}.exe`. The former installs the mod manager to your system, while the latter simply runs r2modman without any sort of installation. Simply run the installer or the program in order to open r2modman.
 
+In order to download, simply click the links as shown below and run the program you just downloaded.
+
+![r2modman GitHub Download (v3.1.39)](../docs/files/r2modman-install/r2modmandownload.png)
+
 ## Installing Mods on r2modman
 
 Once you have succesfully installed r2modman, you can finally install mods.
