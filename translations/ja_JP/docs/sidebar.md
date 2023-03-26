@@ -3,11 +3,14 @@
 - **MOD**
 - [MODの導入方法](installing-mods)
 - [カスタム音源の導入方法](installing-songs)
+- [Using r2modman](installing-r2modman)
 - **創作譜面**
 - [譜面の作成方法](creating-charts)
 - [ガイドラインの作成方法](charting-guidelines)
 - [譜面の背景設定](chart-backgrounds)
 - [その他の譜面作成に関する情報](misc-charting-info)
+- **Developers**
+- [Writing Mods](writing-mods)
 - **おまけ**
 - [よくある質問 (FAQ)](faq)
 - **外部リンク**

@@ -3,11 +3,14 @@
 - **Modding**
 - [Instalando mods](installing-mods)
 - [Instalando músicas](installing-songs)
+- [Using r2modman](installing-r2modman)
 - **Charts**
 - [Criando charts](creating-charts)
 - [Charting Guidelines](charting-guidelines)
 - [Plano de fundo para charts](chart-backgrounds)
 - [Informações diversas sobre charts](misc-charting-info)
+- **Developers**
+- [Writing Mods](writing-mods)
 - **Extras**
 - [Perguntas frequentes (FAQ's)](faq)
 - **Links**

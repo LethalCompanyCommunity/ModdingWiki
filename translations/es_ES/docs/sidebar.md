@@ -3,11 +3,14 @@
 - **Modificando**
 - [Instalando Mods](installing-mods)
 - [Instalando Canciones](installing-songs)
+- [Using r2modman](installing-r2modman)
 - **Mapear**
 - [Creando Mapas](creating-charts)
 - [Charting Guidelines](charting-guidelines)
 - [Fondo de Mapa](chart-backgrounds)
 - [Información de Mapear Miscelánea](misc-charting-info)
+- **Developers**
+- [Writing Mods](writing-mods)
 - **Extras**
 - [Preguntas Frecuentes](faq)
 - **Enlaces**

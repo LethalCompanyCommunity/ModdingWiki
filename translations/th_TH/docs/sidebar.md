@@ -3,11 +3,14 @@
 - **Modding**
 - [การลง Mods](installing-mods)
 - [การลงเพลง](installing-songs)
+- [Using r2modman](installing-r2modman)
 - **การทำผัง**
 - [การสร้างผัง](creating-charts)
 - [Charting Guidelines](charting-guidelines)
 - [พื้นหลังของผัง](chart-backgrounds)
 - [ข้อมูลผังอย่างอื่น](misc-charting-info)
+- **Developers**
+- [Writing Mods](writing-mods)
 - **เพิ่มเติม**
 - [คำถามที่พบบ่อย](faq)
 - **ลิงค์**

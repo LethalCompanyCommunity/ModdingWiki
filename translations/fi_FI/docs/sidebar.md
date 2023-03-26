@@ -3,11 +3,14 @@
 - **Modaus**
 - [Modien Asentaminen](installing-mods)
 - [Kappaleiden Asentaminen](installing-songs)
+- [Using r2modman](installing-r2modman)
 - **Kartoitus**
 - [Karttojen Luonti](creating-charts)
 - [Charting Guidelines](charting-guidelines)
 - [Kartan Taustat](chart-backgrounds)
 - [Sekalaiset Kartoitustiedot](misc-charting-info)
+- **Developers**
+- [Writing Mods](writing-mods)
 - **Extrat**
 - [Usein Kysytyt Kysymykset](faq)
 - **Linkit**
