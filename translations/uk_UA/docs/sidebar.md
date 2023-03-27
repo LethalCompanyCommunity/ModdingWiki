@@ -3,11 +3,14 @@
 - **Модування**
 - [Встановлення модів](installing-mods)
 - [Встановлення пісень](installing-songs)
+- [Using r2modman](installing-r2modman)
 - **Чартинг**
 - [Створення чартів](creating-charts)
 - [Charting Guidelines](charting-guidelines)
 - [Фон чартів](chart-backgrounds)
 - [Додаткова інформація по чартингу](misc-charting-info)
+- **Developers**
+- [Writing Mods](writing-mods)
 - **Додатково**
 - [Найчастіші питання](faq)
 - **Посилання**
