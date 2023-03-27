@@ -1,4 +1,4 @@
-(function () {
+(function() {
     const replaceAllAsync = (pattern, replacer) => async input => {
         const keys = [...input.matchAll(pattern)].map(match => match[1]);
 
@@ -51,8 +51,12 @@
             }
 
             const extraClass = (extra === "highlighted") ? "highlight" : "";
-
-            return `<span class="fetched-version ${type} ${extraClass}">${cache(name, fetchedVersion)}</span>`;
+            const version = cache(name, fetchedVersion);
+            if (extra === "raw") {
+                return version;
+            } else {
+                return `<span class="fetched-version ${type} ${extraClass}">${version}</span>`;
+            }
         };
 
         const replaceVersions = replaceAllAsync(/\%{([a-zA-Z0-9_:.-]+)}/g, getLatestVersion);
