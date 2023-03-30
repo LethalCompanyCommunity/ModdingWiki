@@ -1,5 +1,7 @@
 # Upgrading to TrombLoader 2
 
+This guide shows you how to upgrade from a manually modded game to r2modman!
+
 !> Make sure to follow this guide fully - otherwise you could end up with missing save data!
 
 ## Uninstalling TrombLoader 1
