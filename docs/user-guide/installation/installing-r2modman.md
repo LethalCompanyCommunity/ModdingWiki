@@ -1,6 +1,8 @@
 # Using r2modman
 ---
 
+!> IMPORTANT: If you've previously modded Trombone Champ before the switch to r2modman, make sure to follow the [Migration Guide](migration.md) after setting up r2modman!
+
 ?> For Linux and Steam Deck users, please follow the [Linux instructions](installing-r2modman-linux).
 
 ?> For Mac users, you may try looking at Candygoblen123's [Trombone Champ Mod Manager for Mac](https://github.com/Candygoblen123/TromboneChampModManager/)
