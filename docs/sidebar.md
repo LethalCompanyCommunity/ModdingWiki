@@ -4,6 +4,7 @@
 - [Installing Mods](installing-mods)
 - [Installing Songs](installing-songs)
 - [Using r2modman](installing-r2modman)
+- [Upgrading to TrombLoader 2](migrating-to-v2)
 - **Charting**
 - [Creating Charts](creating-charts)
 - [Charting Guidelines](charting-guidelines)

@@ -14,7 +14,7 @@ If you'd like a more compact list, TheGlitched64 has created [a spreadsheet cont
 
 1. Download the custom song - it will generally be some kind of archive file, usually ending in `.zip`.
 
-2. Extract the contents of the archive file directly into the `BepInEx/CustomSongs` folder that got created when you first ran the game with TrombLoader installed.
+2. Extract the contents of the archive file directly into the `BepInEx/CustomSongs` folder in the r2modman profile directory.
 
 ![BepInEx Extraction Preview](../docs/files/customsongextract.png)
 
