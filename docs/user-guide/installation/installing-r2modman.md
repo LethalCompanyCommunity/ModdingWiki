@@ -1,7 +1,7 @@
 # Using r2modman
 ---
 
-!> IMPORTANT: If you've previously modded Trombone Champ before the switch to r2modman, make sure to follow the [Migration Guide](migration.md) after setting up r2modman!
+!> IMPORTANT: If you've previously modded Trombone Champ before the switch to r2modman, make sure to follow the [Migration Guide](migrating-to-v2) after setting up r2modman!
 
 ?> For Linux and Steam Deck users, please follow the [Linux instructions](installing-r2modman-linux).
 
