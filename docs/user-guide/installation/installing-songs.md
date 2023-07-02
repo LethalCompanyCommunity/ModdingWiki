@@ -1,8 +1,8 @@
 # Installing Songs
 ---
-?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
+?> If you prefer video tutorials, Rayanne has [a video explaining how to install mods and custom songs](https://youtu.be/6msFI8Sz1UQ).
 
-!> **IMPORTANT:** Make sure you've followed the [mod installation guide](installing-mods) to install BepInEx and TrombLoader before continuing!
+!> **IMPORTANT:** Make sure you've followed the [mod installation guide](installing-r2modman) to install BepInEx and TrombLoader before continuing!
 
 ## Finding Songs
 
