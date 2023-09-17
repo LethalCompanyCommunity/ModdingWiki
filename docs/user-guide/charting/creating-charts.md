@@ -52,7 +52,7 @@ If a note ends but the next note starts at the exact same time, they will be con
 <br>The process for these new converters is similar enough that this guide should still be usable.
 <br>If you want to try a more up-to-date conversion program, feel free to give a new converter a try:
 <br><br>[Midi2TromboneChamp (Unity Version)](https://nyxtheshield.github.io/Midi2TromboneChamp/) - a unity-based sequel to Midi2TromboneChamp.
-<br>[Trombone Champ Chart Converter](https://rshieldsprojects.github.io/projects/tccc/) - a web-based alternative with new features.
+<br>[Trombone Champ Chart Converter](https://tc-chart-converter.github.io/) - a web-based alternative with new features.
 
 1. Go to <https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest> and click `Midi2TromboneChamp.exe` to download it.
 
