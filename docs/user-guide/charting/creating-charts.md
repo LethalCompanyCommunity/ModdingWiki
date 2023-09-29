@@ -48,28 +48,20 @@ If a note ends but the next note starts at the exact same time, they will be con
 
 ## Converting Midi to Map File
 
-?> There are two Midi converters available besides Midi2TromboneChamp!
-<br>The process for these new converters is similar enough that this guide should still be usable.
-<br>If you want to try a more up-to-date conversion program, feel free to give a new converter a try:
-<br><br>[Midi2TromboneChamp (Unity Version)](https://nyxtheshield.github.io/Midi2TromboneChamp/) - a unity-based sequel to Midi2TromboneChamp.
-<br>[Trombone Champ Chart Converter](https://tc-chart-converter.github.io/) - a web-based alternative with new features.
+1. Go to [Trombone Champ Chart Converter](https://tc-chart-converter.github.io/).
 
-1. Go to <https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest> and click `Midi2TromboneChamp.exe` to download it.
-
-2. Run it. In the file selector it opens, select your midi file. Click Open.
-
-3. Fill out the fields:
- - `Song Name` is the full name of the song, shown in the info when you select it in-game .
+2. Fill out the fields:
+ - `Song Name` is the full name of the song, shown in the info when you select it in-game.
  - `Short Name` is shown while scrolling through the song list. Text gets smaller when the name is long so I'm not sure if there's a maximum length.
- - `Folder Name` is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
- - `Year` is the year the song was created.
- - `Author` is the composer of the song.
+ - `Release Year` is the year the song was created.
+ - `Artist` is the composer of the song.
+ - `Beats per Bar` determines how far apart the "beat lines" are.
  - `Difficulty` is the number of difficulty stars that appear on the song's info.
  - `Note Spacing` affects how fast the level scrolls, in combination with BPM.
+ - `Folder Name` is the name of the folder you will put your map and song file in. E.g. If you set Folder Name to my map, your map path will be BepInEx/CustomSongs/my map/song.tmb.
  - `Song Endpoint` is the beat on which the song ends. It is automatically calculated, but you can adjust it to change when the level end screen appears.
- - `Beats per Bar` determines how far apart the "beat lines" are.
 
-4. Hit OK. In the file selector it opens, create a folder with the same name as you entered in the `Folder Name` field, and save the file as `song.tmb` inside that folder.
+4. Hit OK. Create a folder with the same name as you entered in the `Folder Name` field, and save the file as `song.tmb` inside that folder.
 
 5. Your music track should be a .ogg file. At the time of writing, the track duration must be longer than the Song Endpoint, or the song will get stuck and never finish. You can use software like Audacity to insert silence at the start of the track to line it up with the midi. Name the file `song.ogg`.
 
