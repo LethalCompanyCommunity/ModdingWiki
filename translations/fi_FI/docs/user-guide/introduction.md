@@ -6,7 +6,7 @@ Tämä wiki toimii dokumentaation ja tutoriaalien lähteenä erilaisille epävir
 
 ?> **Discord-ohje** Saadaksesi live-tukea tämän oppaan kanssa, ole hyvä ja tavoita meihin kanavalla **#modding-support** [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ) palvelimella ja pyydä apua. Lue meidän [Usein kysyttyjä kysymyksiä](faq) -sivu etukäteen nähdäksesi, onko kysymykseesi jo vastattu.
 
-> ### [![Steamin Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Modien asentaminen**](installing-mods)
+> ### [![Steamin Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Installing Mods**](installing-r2modman)
 > 
 > ### [![Apple Musiikin Logo](https://icongr.am/simple/applemusic.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Custom kappaleiden asentaminen**](installing-songs)
 > 

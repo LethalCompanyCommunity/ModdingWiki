@@ -1,8 +1,8 @@
 # การลงเพลงที่กำหนดเอง
 ---
-?> ถ้าคุณอยากได้วิธีแบบวีดีโอ VorgunTheBeta มี [วีดีโออธิบายวิธีการลง mods และ การลงเพลงกำหนดเอง](https://youtu.be/pSwNSGx-P5c)
+?> If you prefer video tutorials, Rayanne has [a video explaining how to install mods and custom songs](https://youtu.be/6msFI8Sz1UQ).
 
-!> **สำคัญ:** ให้คุณแน่ใจว่าคุณทำตาม [คู่มือการลง Mod](installing-mods) เพื่อที่จะลง BepInEx และ TrombLoader ก่อนที่จะดำเนินการต่อไป!
+!> **IMPORTANT:** Make sure you've followed the [mod installation guide](installing-r2modman) to install BepInEx and TrombLoader before continuing!
 
 ## การหาเพลง
 
@@ -14,7 +14,7 @@
 
 1. ดาวน์โหลดเพลงกำหนดเอง มันจะเป็นไฟล์บีบอัดโดยทั่วไป ส่วนใหญ่ลงท้ายด้วย `.zip`
 
-2. แตกไฟล์บีบอัดไปที่ข้างในโฟล์เดอร์ที่ได้มาจากการเริ่มเกมครั้งแรกด้วย TrombLoader ที่ `BepInEx/CustomSongs` โดยตรง
+2. Extract the contents of the archive file directly into the `BepInEx/CustomSongs` folder in the r2modman profile directory.
 
 ![ตัวอย่างการแตกไฟล์ BepInEx](../docs/files/customsongextract.png)
 

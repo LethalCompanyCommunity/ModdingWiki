@@ -7,14 +7,14 @@
 ### ตัวตัดต่อ Midi/DAW
 ผังสร้างได้จากการสร้างไฟล์ MIDI และรันผ่าน [MIDI converter](#converting-midi-to-map-file)
 
-โน็ตของ MIDI ควรที่จะอยู่ระหว่างแนวที่ 47 ถึง 73 เพื่อที่จะตรงกับเกม <br>**โน็ต:** ตัวตัดต่อแต่ละตัวจะใช้ค่าของเปียนโนต่างกันกับแนวนี้
+Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
 
 ตัวตัดต่อ Midi ที่ฟรีและทดสอบว่าใช้ได้มี:
-- [Reaper](https://www.reaper.fm/download.php)* (แนวที่: B2-C#5)
-- [LMMS](https://lmms.io/download#windows) (แนวที่: B2-C#5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (แนวที่: B3-C#6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (แนวที่: B3-C#6)
-- [Ableton](https://www.ableton.com/en/trial/)* (แนวที่: B1-C#4)
+- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
 - [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
 - [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
@@ -80,20 +80,10 @@
   การแปลง Midi เป็นไฟล์ผัง
 </h2>
 
-<p spaces-before="0">
-  ?> มันมีตัวแปลง Midi นอกจาก Midi2TromboneChamp! <br>กระบวนการสำหรับตัวแปลงตัวใหม่จะคลายๆกันที่คู่มือนี้สามารถใช้ได้ด้วยกัน <br>ถ้าคุณอยากจะลองตัวแปลงตัวใหม่คุณสามารถลองได้: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (เวอร์ชั่น Unity)</a> - โปรแกรมที่ใช้ฐาน unity ต่อมาจาก Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> เว็บไซต์ทาเลือกพร้อมกับฟีเจอร์ใหม่
-</p>
-
 <ol start="1">
   <li>
     <p spaces-before="0">
-      ไปที่ <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> และคลิกที่ <code>Midi2TromboneChamp.exe</code> เพื่อดาวน์โลดมัน
-    </p>
-  </li>
-  
-  <li>
-    <p spaces-before="0">
-      เริ่มโปรแกรม ในที่เลือกไฟล์ ให้เลือกไฟล์ Midi ของคุณ คลิกเปิด
+      Go to <a href="https://tc-chart-converter.github.io/">Trombone Champ Chart Converter</a>.
     </p>
   </li>
   
@@ -103,19 +93,19 @@
     </p>
     <ul>
       <li>
-        <code>Song Name</code> ชื่อเต็มของเพลง แสดงข้อมูลในเกม
+        <code>Song Name</code> is the full name of the song, shown in the info when you select it in-game.
       </li>
       <li>
         <code>Short Name</code> แสดงชื่อในขณะที่เลือ่นผ่านรายการเพลง ตัวอักษรจะเล็กลงเพราะฉะนั้นเราไม่แน่ใจว่ามันมีลิมิตสูงสุดเท่าไร
       </li>
       <li>
-        <code>Folder Name</code> ชื่อโฟล์เดอร์ที่สุดจะใส่เพลงเข้าไป ตัวอย่างเช่น ถ้าคุณตั้งชื่อโฟล์เดอร์เป็น "My Map" ที่อยู่ของผังคุณจะอยู่ที่ "BepInEx/CustomSongs/My Map/song.tmb."
+        <code>Release Year</code> is the year the song was created.
       </li>
       <li>
-        <code>Year</code> ปีที่เพลงได้สร้างขึ้น
+        <code>Artist</code> is the composer of the song.
       </li>
       <li>
-        <code>Author</code> คนสร้างเพลง
+        <code>Beats per Bar</code> กำหนดความกว้างของ "เส้นโน็ต"
       </li>
       <li>
         <code>Difficulty</code> เลขดาวระดับความยากที่แสดงในข้อมูลเพลง
@@ -124,17 +114,17 @@
         <code>Note Spacing</code> ความเร็วที่เลเวลจะเลื่อน จะรวมกับ BPM
       </li>
       <li>
-        <code>Song Endpoint</code> จังหวะที่เพลงจบ มันคำนวณอัตโนมัติแต่คุณสามารถเปลี่ยนได้ว่าเลเวลจะจบตอนไหน
+        <code>Folder Name</code> ชื่อโฟล์เดอร์ที่สุดจะใส่เพลงเข้าไป ตัวอย่างเช่น ถ้าคุณตั้งชื่อโฟล์เดอร์เป็น "My Map" ที่อยู่ของผังคุณจะอยู่ที่ "BepInEx/CustomSongs/My Map/song.tmb."
       </li>
       <li>
-        <code>Beats per Bar</code> กำหนดความกว้างของ "เส้นโน็ต"
+        <code>Song Endpoint</code> จังหวะที่เพลงจบ มันคำนวณอัตโนมัติแต่คุณสามารถเปลี่ยนได้ว่าเลเวลจะจบตอนไหน
       </li>
     </ul>
   </li>
   
   <li>
     <p spaces-before="0">
-      กด OK ในตัวเลือกไฟล์ที่เปิดขึ้นมา สร้างโฟล์เดอร์ที่มีชื่อเดียวกันกับช่อง <code>Folder Name</code> และบันทึกไฟล์ <code>song.tmb</code> ข้างในโฟล์เดอร์นั้น
+      กด OK Create a folder with the same name as you entered in the <code>Folder Name</code> field, and save the file as <code>song.tmb</code> inside that folder.
     </p>
   </li>
   

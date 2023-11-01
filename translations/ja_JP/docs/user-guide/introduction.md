@@ -6,7 +6,7 @@ Trombone Champとは、Holy Wow Studiosが開発、販売している音ゲー�
 
 ?> **Discordヘルプ** このガイドに関するお問い合わせは[Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ)内の**#modding-support**チャンネルへお越しくださいませ。(※英語) まず事前に[よくある質問 (FAQ)](faq)をお読みいただき、すでに回答がないかご確認ください。
 
-> ### [![Steam ロゴ](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**MODの導入方法**](installing-mods)
+> ### [![Steam ロゴ](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Installing Mods**](installing-r2modman)
 > 
 > ### [![Apple Music ロゴ](https://icongr.am/simple/applemusic.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**カスタム音源の導入方法**](installing-songs)
 > 

@@ -6,7 +6,7 @@
 
 ?> **Discord客服** 如果你需要任何帮助，请去 discord上的[长号冠军模组群](https://discord.gg/KVzKRsbetJ) ，在 **#modding-support**里寻求帮助 请事先阅读我们的 [常见问题](faq) 页，以查看您的问题是否已经得到答复。
 
-> ### [![Steam标志](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**安装模组**](installing-mods)
+> ### [![Steam标志](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Installing Mods**](installing-r2modman)
 > 
 > ### [![Apple Music 标志](https://icongr.am/simple/applemusic.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**安装自制谱**](installing-songs)
 > 

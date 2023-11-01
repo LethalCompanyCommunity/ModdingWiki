@@ -1,83 +1,83 @@
-# 安装mod
+# Installing Mods
 ---
 
-?> 如果需要视频教学, 可参考VorgunTheBeta 的[mod安装与自制曲目导入指南](https://youtu.be/pSwNSGx-P5c).
+?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
 
-?> 本指南的前半部分也适用于Linux和Steam Deck！ 请务必查看 [结尾](#linuxsteam-deck-specific-tips)以确认关于这两个运行环境的更多信息。
+?> The start of this guide also works for Linux and Steam Deck! Make sure to [read the end](#linuxsteam-deck-specific-tips) for additional details.
 
-## 寻找安装位置
-1. 打开Steam并右键点击Trombone Champ。 在右键菜单中选择 `管理 > 浏览本地文件`。
+## Finding Install Location
+1. Open Steam and right-click on Trombone Champ. Then, go to `Manage > Browse local files`.
 
-![右键菜单预览](../docs/files/localfilescontext.png)
+![Right-click Menu Preview](../docs/files/localfilescontext.png)
 
-2. 在弹出的文件浏览界面中点击顶部地址栏并选中文件夹路径。 点击`CTRL`+`C`将这个路径复制到剪贴板。
+2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
 
-![复制文件夹路径预览](../docs/files/copyfolderpath.png)
+![Copy Folder Path Preview](../docs/files/copyfolderpath.png)
 
-## 安装BepInEx
+## Installing BepInEx
 
-1. 下载[BepInEx](https://github.com/BepInEx/BepInEx/releases/latest)到你的TromboneChamp文件夹。 选择 `BepinEx_x64_VERSION.zip`，其中`VERSION`为版本号。
-2. 直接解压压缩包内的文件并放入Trombone Champ的 [文件夹](##finding-install-location)。
+1. Download [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) into your TromboneChamp folder. You will want to get `BepinEx_x64_VERSION.zip`, with `VERSION` being the version number.
+2. Extract the contents of the BepInEx .zip file directly into the [install folder](##finding-install-location) of your Trombone Champ installation.
 
-![BepInEx 解压缩预览](../docs/files/bepinexextract.png)
+![BepInEx Extraction Preview](../docs/files/bepinexextract.png)
 
-!> 请确认你下载的BepInEx为 `x64`版本， `unix` 与`x86`版本会导致你的游戏无法正常运行。 这也适用于Linux/Steam Deck的用户。
+!> Please ensure that you've downloaded the `x64` version of BepInEx. the `unix` and `x86` versions will cause your game to not function properly. This also applies to users on Linux/Steam Deck.
 
-!> **注意:** 如上图所示将 BepInEx *直接*解压 到你的游戏安装文件夹， 如果操作正确，你的游戏安装文件夹会与下图相同。
+!> **IMPORTANT:** Extract BepInEx *directly* into your game's folder as shown in the image above. If you've done it correctly, your game's folder should look like the below image.
 
-![BepinEx 安装完成](../docs/files/finishedbepinex.png)
+![Finished BepinEx Install](../docs/files/finishedbepinex.png)
 
-3. 运行一次Trombone Champ来完成安装。
+3. Run Trombone Champ once to complete installation.
 
-## 安装mod
+## Installation
 
-BepInEx安装完成之后，你就可以开始下载一些特定的mod了。[Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ)的`#mod-releases`频道有一份mod清单可供参考。
+With BepInEx installed, you can start downloading specific mods - a full list is available in the `#mod-releases` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
 
-考虑到你大概率想要安装自制谱面，本节将以 [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest)作为例子。
+As you likely want to install custom songs, this section will use [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest) as an example.
 
-1. 打开你的[游戏安装文件夹](###finding-install-location)，再打开 `BepInEx`文件夹，然后进入`plugins` 文件夹。
+1. Navigate to your [game's install folder](###finding-install-location), the `BepInEx` folder, then the `plugins` folder.
 
-2. 点击顶部地址栏并选中文件夹路径， 点击`CTRL`+`C` 将这个路径复制到剪贴板。
+2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
 
-![复制文件夹路径预览](../docs/files/copyfolderpathplugins.png)
+![Copy Folder Path Preview](../docs/files/copyfolderpathplugins.png)
 
-3. 下载mod的 .dll 文件到复制的文件夹。
+3. Download the mod's .dll file into the copied folder.
 
-![Plugins文件夹预览](../docs/files/pluginswithtrombloader.png)
+![Plugins Folder Preview](../docs/files/pluginswithtrombloader.png)
 
-4. 运行一次Trombone Champ 来初始化该模组的必要文件。
+4. Run Trombone Champ once to initialize necessary files for that mod.
 
-## Linux/Steam Deck 相关
+## Linux/Steam Deck Tips
 <details closed>
-<summary>展开...</summary>
+<summary>Expand</summary>
 
-安装BepInEx 的过程与上面列出的 Windows 版本基本相同，但还有一些额外的东西需要首先了解：
+The process of installing BepInEx is largely the same as on Windows listed above, however there are some extra things to be aware of first:
 
- - 在按照指南进行操作之前Steam Deck用户需要按住电源按钮，并从菜单中选择`Desktop Mode/桌面模式`来切换到桌面模式。
+ - To follow the guide, Steam Deck users will need to switch to Desktop Mode by holding down the power button and selecting `Desktop Mode` from the menu.
 
- - Steam Deck用户将需要将游戏安装到内部存储，因为BepInEx无法从microSD卡中加载。
+ - Steam Deck users will need to install the game to the internal storage, as BepInEx will not load from the microSD card.
 
- - 如前所述，您仍然需要安装 `x64` Windows 版本的 BepInEx，而不是 `unix` 版本，因为Trombone Champ仍然是一个在 Proton环境下运行的Windows应用程序。
+ - As stated earlier, you will still need to install the `x64` Windows version of BepInEx, not the `unix` version, as Trombone Champ is still a Windows application running under Proton.
 
- - 存档与日志文件存储在您的Proton兼容文件夹内的Steam文件夹中。
+ - Save and log files are stored in your Steam folder within Proton's compatibility folders.
 
-    - 在Steam Deck上的位置如下： `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
-    - 在其他基于Linux的系统上，如果您不确定您Steam 文件夹的位置，您可以从终端中运行`locate -r /Holy Wow$`
+    - On Steam Deck this can be found at: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
+    - On other Linux flavors you can run `locate -r /Holy Wow$` from the terminal if you're unsure of where your Steam folder is.
 
-您还需要将 `WINEDLLOVERRIDES="winhttp=n,b" %command%` 添加到您的游戏启动项中。 右键单击Steam中的游戏，然后单击 `Properties/属性`。 与Windows不同的是，除非有明确的命令，Proton不会加载BepInEx的相关文件。
+You will also need to add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your game's launch options. To do this, right click the game in Steam and click `Properties`. Unlike on Windows, Proton won't load BepInEx's files unless specifically instructed to here.
 
-![Steam属性预览](../docs/files/linuxsteamproperties.png)
+![Steam Properties Preview](../docs/files/linuxsteamproperties.png)
 
-到这一步，BepInEx应该已经可以正常工作了！ 按照[上方的教程](##installation)安装您的mod，以使自制谱面能正常运行。
+Once added, BepInEx should now work! Install your mods [as instructed above](##installation) to get custom songs working.
 
-### 视频背景 {docsify-ignore}
+### Video Backgrounds {docsify-ignore}
 
-一些自制谱面可能包含视频文件，默认的Proton设置无法播放。 如果您想要这些视频文件正常播放，可以使用[ProtonUp-Qt](https://davidotek.github.io/protonup-qt/)安装`GE-Proton`。 这是一个包含一些额外功能的Proton版本，包括能够播放Valve官方无法支持的视频格式。
+Some custom songs will include videos for their backgrounds, and the default Proton install cannot play these back. If you want these to work, you can install `GE-Proton` using [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/). This is a version of Proton that includes some additional features, including the ability to play back video formats that Valve are unable to support officially.
 
-我们建议参考[由GamingOnLinux编写的指南](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) ，用于说明如何使用ProtonUp-Qt安装 `GE-Proton`。
+We recommend following [this guide created by GamingOnLinux](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) for instructions on how to use ProtonUp-Qt and install `GE-Proton`.
 
-！> 即便使用GE-Proton, 您仍然可能会遇到一些视频播放方面的问题，这取决于您的设置。 </details>
+!> Even with GE-Proton, you may still experience some issues with video playback depending on your setup. </details>
 
-## 安装自制谱面 {docsify-ignore}
+## Installing Custom Songs {docsify-ignore}
 
-> 参考[**Custom Songs guide**](installing-songs) 以获取安装自制谱面的信息。
+> Check out the [**Custom Songs guide**](installing-songs) for info on installing custom songs.

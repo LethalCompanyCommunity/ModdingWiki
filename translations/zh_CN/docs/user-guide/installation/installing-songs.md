@@ -1,8 +1,8 @@
 # 安装自制谱面
 ---
-?> 如果需要视频教学, 可参考VorgunTheBeta 的[mod安装与自制曲目导入指南](https://youtu.be/pSwNSGx-P5c).
+?> If you prefer video tutorials, Rayanne has [a video explaining how to install mods and custom songs](https://youtu.be/6msFI8Sz1UQ).
 
-！> **注意：** 请确保您已经按照 [mod安装指南](installing-mods) 安装BepInEx 和 TrombLoader，然后再继续！
+!> **IMPORTANT:** Make sure you've followed the [mod installation guide](installing-r2modman) to install BepInEx and TrombLoader before continuing!
 
 ## 搜索自制谱面
 
@@ -14,7 +14,7 @@
 
 1. 下载自制谱面。通常情况下是一个压缩包，以`.zip`等压缩包格式作为文件名结尾。
 
-2. 解压压缩包的内容并直接放入`BepInEx/CustomSongs` 文件夹中。这个文件夹会在你安装了TrombLoader并第一次运行游戏之后自动创建。
+2. Extract the contents of the archive file directly into the `BepInEx/CustomSongs` folder in the r2modman profile directory.
 
 ![BeepInEx 解压缩预览](../docs/files/customsongextract.png)
 

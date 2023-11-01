@@ -1,8 +1,8 @@
 # Instalando músicas
 ---
-?> Se preferir, VorgunTheBeta tem [um vídeo explicando como instalar mods e músicas personalizadas](https://youtu.be/pSwNSGx-P5c).
+?> If you prefer video tutorials, Rayanne has [a video explaining how to install mods and custom songs](https://youtu.be/6msFI8Sz1UQ).
 
-!> **IMPORTANTE:** Tenha certeza de que seguiu o [guia de instalação de mods](installing-mods) e tem o BepInEx e TrombLoader instalados antes de continuar!
+!> **IMPORTANT:** Make sure you've followed the [mod installation guide](installing-r2modman) to install BepInEx and TrombLoader before continuing!
 
 ## Encontrando músicas
 
@@ -14,7 +14,7 @@ Se quiser uma lista mais curta, TheGlitched64 criou uma [planilha contendo infor
 
 1. Baixe o chart personalizado — geralmente são arquivos compactados, como a extensão `.zip`.
 
-2. Extraia o conteúdo do arquivo diretamente para a pasta `BepInEx/CustomSongs` que é criada quando se inicia o jogo pela primeira vez com o TrombLoader instalado.
+2. Extract the contents of the archive file directly into the `BepInEx/CustomSongs` folder in the r2modman profile directory.
 
 ![Preview de extração do BepInEx](../docs/files/customsongextract.png)
 

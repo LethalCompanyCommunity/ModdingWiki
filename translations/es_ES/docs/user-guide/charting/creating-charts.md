@@ -7,14 +7,14 @@
 ### Editor Midi/DAW
 Los mapas se hacen creando un archivo midi y ejecutándolo en un [convertidor MIDI](#converting-midi-to-map-file).
 
-Notas Midi deben estar en el rango de 47 a 73 para coincidir con el juego.<br>**NOTA:** Diferentes editores usan diferentes valores en el piano para este rango.
+Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
 
 Algunos editores midi gratis, verificados que funcionan incluyen:
-- [Reaper](https://www.reaper.fm/download.php)* (Rango: B2-C#5)
-- [LMMS](https://lmms.io/download#windows) (Rango: B2-C#5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Rango: B3-C#6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Rango: B3-C#6)
-- [Ableton](https://www.ableton.com/en/trial/)* (Rango: B1-C#4)
+- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
 - [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
 - [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
@@ -80,20 +80,10 @@ Algunos editores midi gratis, verificados que funcionan incluyen:
   Convirtiendo Midi a Archivo de Mapa
 </h2>
 
-<p spaces-before="0">
-  ?> ¡Hay dos convertidores Midi disponibles además de Midi2TromboneChamp! <br>El proceso para estos nuevos convertidores es lo bastante similar para que esta guía debería seguir siendo utilizable. <br>Si quieres un programa de conversión más actualizado, siéntete libre de probar un nuevo convertidor: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Versión Unity)</a> una secuela basado - en unity- para Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - una alternativa basada en la web con nuevas características.
-</p>
-
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Ve a <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> y haz clic en <code>Midi2TromboneChamp.exe</code> para descargarlo.
-    </p>
-  </li>
-  
-  <li>
-    <p spaces-before="0">
-      Ejecútalo. En el selector de archivo que abre, selecciona tu archivo midi. Haz clic en Abrir.
+      Go to <a href="https://tc-chart-converter.github.io/">Trombone Champ Chart Converter</a>.
     </p>
   </li>
   
@@ -103,19 +93,19 @@ Algunos editores midi gratis, verificados que funcionan incluyen:
     </p>
     <ul>
       <li>
-        <code>Song Name</code> es el nombre completo de la canción, que se muestra en la información cuando la seleccionas en el juego.
+        <code>Song Name</code> is the full name of the song, shown in the info when you select it in-game.
       </li>
       <li>
         <code>Short Name</code> se muestra mientras te desplazas por la lista de canciones. El texto se hace más pequeño cuando el nombre es largo por lo que no estoy seguro de si hay una longitud máxima.
       </li>
       <li>
-        <code>Folder Name</code> es el nombre de la carpeta en la que vas a poner tu archivo de mapa y canción. P. ej. Si pones en Folder Name mi mapa, la ruta será BepInEx/CustomSongs/mi mapa/song.tmb.
+        <code>Release Year</code> is the year the song was created.
       </li>
       <li>
-        <code>Year</code> es el año en que se creó la canción.
+        <code>Artist</code> is the composer of the song.
       </li>
       <li>
-        <code>Author</code> es el compositor de la canción.
+        <code>Beats per Bar</code> determina lo alejadas que están las "líneas de pulsos".
       </li>
       <li>
         <code>Difficulty</code> es el número de estrellas de dificultad que aparecen en la información de la canción.
@@ -124,17 +114,17 @@ Algunos editores midi gratis, verificados que funcionan incluyen:
         <code>Note Spacing</code> afecta cómo de rápido se desplaza el nivel, en combinación con BPM.
       </li>
       <li>
-        <code>Song Endpoint</code> es el pulso en el que acaba la canción. Se calcula automáticamente, pero puedes ajustarlo para cambiar cuando aparece la pantalla del final de nivel.
+        <code>Folder Name</code> es el nombre de la carpeta en la que vas a poner tu archivo de mapa y canción. P. ej. Si pones en Folder Name mi mapa, la ruta será BepInEx/CustomSongs/mi mapa/song.tmb.
       </li>
       <li>
-        <code>Beats per Bar</code> determina lo alejadas que están las "líneas de pulsos".
+        <code>Song Endpoint</code> es el pulso en el que acaba la canción. Se calcula automáticamente, pero puedes ajustarlo para cambiar cuando aparece la pantalla del final de nivel.
       </li>
     </ul>
   </li>
   
   <li>
     <p spaces-before="0">
-      Pulsa OK. En el selector de archivo que abre, crea una carpeta con el mismo nombre al que has puesto en el campo <code>Folder Name</code>, y guarda el archivo como <code>song.tmb</code> en esa carpeta.
+      Pulsa OK. Create a folder with the same name as you entered in the <code>Folder Name</code> field, and save the file as <code>song.tmb</code> inside that folder.
     </p>
   </li>
   

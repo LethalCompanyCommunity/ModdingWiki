@@ -1,14 +1,15 @@
 - **ユーザーガイド**
 - [まず初めに](./)
 - **MOD**
-- [MODの導入方法](installing-mods)
-- [カスタム音源の導入方法](installing-songs)
 - [Using r2modman](installing-r2modman)
+- [カスタム音源の導入方法](installing-songs)
+- [Upgrading to TrombLoader 2](migrating-to-v2)
 - **創作譜面**
 - [譜面の作成方法](creating-charts)
 - [ガイドラインの作成方法](charting-guidelines)
 - [譜面の背景設定](chart-backgrounds)
 - [その他の譜面作成に関する情報](misc-charting-info)
+- [Chart Troubleshooting](chart-troubleshooting)
 - **Developers**
 - [Writing Mods](writing-mods)
 - **おまけ**

@@ -1,14 +1,15 @@
 - **Guia do usuário**
 - [Introdução](./)
 - **Modding**
-- [Instalando mods](installing-mods)
-- [Instalando músicas](installing-songs)
 - [Using r2modman](installing-r2modman)
+- [Instalando músicas](installing-songs)
+- [Upgrading to TrombLoader 2](migrating-to-v2)
 - **Charts**
 - [Criando charts](creating-charts)
 - [Charting Guidelines](charting-guidelines)
 - [Plano de fundo para charts](chart-backgrounds)
 - [Informações diversas sobre charts](misc-charting-info)
+- [Chart Troubleshooting](chart-troubleshooting)
 - **Developers**
 - [Writing Mods](writing-mods)
 - **Extras**
@@ -16,5 +17,5 @@
 - **Links**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)
-- [![Traduzir](https://icongr.am/material/translate.svg?color=808080&size=16)Traduzir](https://crowdin.com/project/trombone-champ-modding-wiki)
+- [![Translate](https://icongr.am/material/translate.svg?color=808080&size=16)Traduzir](https://crowdin.com/project/trombone-champ-modding-wiki)
 - [Sobre](about)

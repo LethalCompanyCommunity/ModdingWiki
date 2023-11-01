@@ -1,83 +1,83 @@
-# Installer des mods
+# Installing Mods
 ---
 
-?> Si vous préférez des tutoriels vidéo, VorgunTheBeta a [une vidéo expliquant comment installer des mods et des chansons personnalisées](https://youtu.be/pSwNSGx-P5c).
+?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
 
-?> Le début de ce guide fonctionne également pour Linux et Steam Deck ! Assurez-vous de [lire la fin](#linuxsteam-deck-specific-tips) pour plus de détails.
+?> The start of this guide also works for Linux and Steam Deck! Make sure to [read the end](#linuxsteam-deck-specific-tips) for additional details.
 
-## Trouver l'emplacement d'installation
-1. Ouvrez Steam et faites un clic droit sur Trombone Champ. Ensuite, allez sur `Gérer > Parcourir les fichiers locaux`.
+## Finding Install Location
+1. Open Steam and right-click on Trombone Champ. Then, go to `Manage > Browse local files`.
 
-![Clic droit sur Aperçu du Menu](../docs/files/localfilescontext.png)
+![Right-click Menu Preview](../docs/files/localfilescontext.png)
 
-2. Cliquez sur la barre d'adresse en haut pour sélectionner le chemin de votre dossier d'installation. Faites` CTRL`+`C` pour copier cela dans votre presse-papiers.
+2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
 
-![Copier l'aperçu du chemin du dossier](../docs/files/copyfolderpath.png)
+![Copy Folder Path Preview](../docs/files/copyfolderpath.png)
 
-## Installer BepInEx
+## Installing BepInEx
 
-1. Téléchargez [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) dans votre dossier TromboneChamp. Vous voudrez obtenir `BepinEx_x64_VERSION.zip`, avec `VERSION` étant le numéro de version.
-2. Extrayez le contenu du fichier BepInEx.zip directement dans le [dossier d'installation](##finding-install-location) de votre installation de Champ Trombone.
+1. Download [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) into your TromboneChamp folder. You will want to get `BepinEx_x64_VERSION.zip`, with `VERSION` being the version number.
+2. Extract the contents of the BepInEx .zip file directly into the [install folder](##finding-install-location) of your Trombone Champ installation.
 
-![Aperçu d'extraction de BepInEx](../docs/files/bepinexextract.png)
+![BepInEx Extraction Preview](../docs/files/bepinexextract.png)
 
-!> Veuillez vous assurer que vous avez téléchargé la version `x64` de BepInEx. les versions `unix` et `x86` provoqueront un mauvais fonctionnement de votre jeu. Cela s'applique également aux utilisateurs sur Linux/Steam Deck.
+!> Please ensure that you've downloaded the `x64` version of BepInEx. the `unix` and `x86` versions will cause your game to not function properly. This also applies to users on Linux/Steam Deck.
 
-!> **IMPORTANT :** Extrayez BepInEx *directement* dans le dossier de votre jeu comme indiqué dans l'image ci-dessus. Si vous avez fait cela correctement, le dossier de votre jeu devrait ressembler à l'image ci-dessous.
+!> **IMPORTANT:** Extract BepInEx *directly* into your game's folder as shown in the image above. If you've done it correctly, your game's folder should look like the below image.
 
-![Installation terminée de BepinEx](../docs/files/finishedbepinex.png)
+![Finished BepinEx Install](../docs/files/finishedbepinex.png)
 
-3. Lancez Trombone Champ une fois pour terminer l'installation.
+3. Run Trombone Champ once to complete installation.
 
 ## Installation
 
-Avec BepInEx installé, vous pouvez commencer à télécharger des mods spécifiques - une liste complète est disponible dans le canal `#mod-releases` dans le [Serveur de modding de Trombone Champ](https://discord.gg/KVzKRsbetJ).
+With BepInEx installed, you can start downloading specific mods - a full list is available in the `#mod-releases` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
 
-Comme vous voulez probablement installer des chansons personnalisées, cette section utilisera [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest) comme exemple.
+As you likely want to install custom songs, this section will use [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest) as an example.
 
-1. Naviguez vers le dossier d'installation de votre [jeu](###finding-install-location), le dossier `BepInEx` , puis le dossier `plugins`.
+1. Navigate to your [game's install folder](###finding-install-location), the `BepInEx` folder, then the `plugins` folder.
 
-2. Cliquez sur la barre d'adresse en haut pour sélectionner le chemin de votre dossier d'installation. Faites` CTRL`+`C` pour copier cela dans votre presse-papiers.
+2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
 
-![Copier l'aperçu du chemin du dossier](../docs/files/copyfolderpathplugins.png)
+![Copy Folder Path Preview](../docs/files/copyfolderpathplugins.png)
 
-3. Téléchargez le fichier .dll du mod dans le dossier copié.
+3. Download the mod's .dll file into the copied folder.
 
-![Aperçu du dossier des plugins](../docs/files/pluginswithtrombloader.png)
+![Plugins Folder Preview](../docs/files/pluginswithtrombloader.png)
 
-4. Lancez Trombone Champ une fois afin d'initialiser les fichiers nécessaires pour ce mod.
+4. Run Trombone Champ once to initialize necessary files for that mod.
 
-## Astuces pour Linux/Steam Deck
+## Linux/Steam Deck Tips
 <details closed>
-<summary>Agrandir</summary>
+<summary>Expand</summary>
 
-Le processus d'installation de BepInEx est en grande partie le même que sur Windows listé ci-dessus, cependant il y a quelques choses supplémentaires dont il faut d'abord être informé:
+The process of installing BepInEx is largely the same as on Windows listed above, however there are some extra things to be aware of first:
 
- - Pour suivre le guide, les utilisateurs du Steam Deck devront passer en mode Bureau en maintenant enfoncé le bouton d'alimentation et en sélectionnant `Mode Bureau` à partir du menu.
+ - To follow the guide, Steam Deck users will need to switch to Desktop Mode by holding down the power button and selecting `Desktop Mode` from the menu.
 
- - Les utilisateurs du Steam Deck devront installer le jeu dans le stockage interne, puisque BepInEx ne chargera pas à partir de la carte microSD.
+ - Steam Deck users will need to install the game to the internal storage, as BepInEx will not load from the microSD card.
 
- - Comme mentionné plus tôt, vous devrez quand même installer la version Windows `x64` de BepInEx, et non la version `unix`, puisque Trombone Champ est toujours une application Windows fonctionnant sous Proton.
+ - As stated earlier, you will still need to install the `x64` Windows version of BepInEx, not the `unix` version, as Trombone Champ is still a Windows application running under Proton.
 
- - Les fichiers log et de sauvegarde sont stockés dans votre dossier Steam, dans les dossiers de compatibilité de Proton.
+ - Save and log files are stored in your Steam folder within Proton's compatibility folders.
 
-    - Sur le Steam Deck, cela peut être trouvé à : `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
-    - Sur d'autres versions de Linux, vous pouvez exécuter `locate -r /Holy Wow<0>locate -r /Holy Wow$` à partir du terminal si vous êtes incertain de l'emplacement de votre dossier Steam.
+    - On Steam Deck this can be found at: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
+    - On other Linux flavors you can run `locate -r /Holy Wow$` from the terminal if you're unsure of where your Steam folder is.
 
-Vous devrez aussi ajouter `WINEDLLOVERRIDES="winhttp=n,b" %command%` à vos options de lancement du jeu. Pour faire cela, faites un clic droit sur le jeu sur Steam and cliquez sur `Properties`. Contrairement à Windows, Proton ne chargera pas les fichiers de BepInEx à moins que ce soit spécifiquement demandé ici.
+You will also need to add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your game's launch options. To do this, right click the game in Steam and click `Properties`. Unlike on Windows, Proton won't load BepInEx's files unless specifically instructed to here.
 
-![Aperçu des propriétés Steam](../docs/files/linuxsteamproperties.png)
+![Steam Properties Preview](../docs/files/linuxsteamproperties.png)
 
-Une fois ajouté, BepInEx devrait fonctionner ! Installez vos mods [comme spécifié ci-dessus](##installation) pour faire fonctionner vos chansons personnalisées.
+Once added, BepInEx should now work! Install your mods [as instructed above](##installation) to get custom songs working.
 
-### Arrières-plans vidéo {docsify-ignore}
+### Video Backgrounds {docsify-ignore}
 
-Certaines chansons personnalisées incluront des vidéos pour leur arrière-plan et l'installation par défaut de Proton ne peut pas jouer celles-ci. Si vous voulez les faire fonctionner, vous pouvez installer `GE-Proton` en utilisant [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/). Ceci est une version de Proton qui inclue quelques fonctionnalités supplémentaires, y compris la possibilité de lire des formats vidéo que Valve ne prend pas officiellement en charge.
+Some custom songs will include videos for their backgrounds, and the default Proton install cannot play these back. If you want these to work, you can install `GE-Proton` using [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/). This is a version of Proton that includes some additional features, including the ability to play back video formats that Valve are unable to support officially.
 
-Nous recommandons de suivre [ce guide créé par GamingOnLinux](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) pour des instructions sur comment utiliser ProtonUp-Qt et installer `GE-Proton`.
+We recommend following [this guide created by GamingOnLinux](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) for instructions on how to use ProtonUp-Qt and install `GE-Proton`.
 
-!> Même avec GE-Proton, vous pourriez encore rencontrer quelques problèmes de lecture de vidéos dépendamment de votre configuration. </details>
+!> Even with GE-Proton, you may still experience some issues with video playback depending on your setup. </details>
 
-## Installation des chansons personnalisées {docsify-ignore}
+## Installing Custom Songs {docsify-ignore}
 
-> Consultez le guide des chansons personnalisées [****](installing-songs) pour plus d'informations sur l'installation de chansons personnalisées.
+> Check out the [**Custom Songs guide**](installing-songs) for info on installing custom songs.

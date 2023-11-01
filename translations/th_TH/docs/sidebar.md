@@ -1,14 +1,15 @@
 - **คู่มือผู้ใช้**
 - [บทนำ](./)
 - **Modding**
-- [การลง Mods](installing-mods)
-- [การลงเพลง](installing-songs)
 - [Using r2modman](installing-r2modman)
+- [การลงเพลง](installing-songs)
+- [Upgrading to TrombLoader 2](migrating-to-v2)
 - **การทำผัง**
 - [การสร้างผัง](creating-charts)
 - [Charting Guidelines](charting-guidelines)
 - [พื้นหลังของผัง](chart-backgrounds)
 - [ข้อมูลผังอย่างอื่น](misc-charting-info)
+- [Chart Troubleshooting](chart-troubleshooting)
 - **Developers**
 - [Writing Mods](writing-mods)
 - **เพิ่มเติม**
@@ -16,5 +17,5 @@
 - **ลิงค์**
 - [![Discord](https://icongr.am/simple/discord.svg?colored&size=16)Discord](https://discord.gg/KVzKRsbetJ)
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080&size=16)GitHub](https://github.com/tc-mods/TromboneChampModdingWiki)
-- [![แปลภาษา](https://icongr.am/material/translate.svg?color=808080&size=16)แปลภาษา](https://crowdin.com/project/trombone-champ-modding-wiki)
+- [![Translate](https://icongr.am/material/translate.svg?color=808080&size=16)แปลภาษา](https://crowdin.com/project/trombone-champ-modding-wiki)
 - [เกี่ยวกับ](about)

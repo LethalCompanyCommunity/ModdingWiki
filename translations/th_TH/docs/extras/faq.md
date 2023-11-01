@@ -1,31 +1,31 @@
 # คำถามที่พบบ่อย
 ---
 
-## Why is there a black screen with a music note?
+## ทำไมมันจอดำกับโน็ตเพลง?
 
-Update [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest). Replace the old dll in `BepInEx/plugins` with the new dll.
+อัปเดต [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest) เปลี่ยน DLL ของเก่าใน `BepInEx/plugins` เป็น DLL ของใหม่
 
-## Do custom songs work with a pirated version of the game?
+## เพลงที่ทำเองสามารถใช้กับเกมส์ที่โหลดเถื่อนได้ไหม?
 
-The latest TrombLoader will work on the latest version of Trombone Champ. Buy the game.
+TrombLoader เวอร์ชั่นล่าสุดจะใช้งานได้กับเกมส์ Trombone Champ เวอร์ชั่นล่าสุด ซื้อเกมส์เถอะอย่าเป็นคนแบบนี้
 
-## Where can I find custom songs?
+## ฉันจะหาเพลงที่ทำเองได้ที่ไหน?
 
-Go to `#custom-charts` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
+ไปที่ช่อง `#custom-charts` ใน [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ)
 
-TheGlitched64 has also created [a spreadsheet containing information on every custom chart](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing).
+TheGlitched64 ก็ยังได้ได้สร้าง [สเปรดชีตที่มีข้อมูลของเพลงสร้างเองทุกตัว](https://docs.google.com/spreadsheets/d/1xpoUnHdSJFqOQEK_637-HCECYtJsgK91oY4dRuDMtik/edit?usp=sharing)
 
-## Why isn't BepInEx creating folders?
+## ทำไม BepInEx ไม่สร้างโฟลเดอร์?
 
-Make sure that you downloaded the x64 BepInEx. Also make sure your folder looks like this: ![Finished BepinEx Install](../docs/files/finishedbepinex.png)
+ให้แน่ใจว่าได้ดาวน์โหลด BepInEx รุ่น x64 และให้แน่ใจว่าโฟลเดอร์ดูเหมือนอย่างนี้: ![ติดตั้ง BepinEx เสร็จสิ้น](../docs/files/finishedbepinex.png)
 
-## Why aren't my songs appearing in the game?
+## ทำไมเพลงของฉันไม่แสดงในเกมส์?
 
-Make sure you've unzipped the file. It should look like this: ![Correct Extraction Preview](../docs/files/customsongcorrect.png)
+ให้แน่ใจว่าคุณได้แตกไฟล์แล้ว มันควรที่จะเป็นแบบนี้: ![ตัวอย่างการแตกไฟล์ที่ถูกต้อง](../docs/files/customsongcorrect.png)
 
-## What do I do with .7zip or .rar files?
+## ฉันควรจะทำอะไรกับไฟล์ .7z หรือ .rar ?
 
-You can unzip them with [7-zip](https://www.7-zip.org/download.html).
+คุณสามารถแตกไฟล์ด้วย [7-zip](https://www.7-zip.org/download.html)
 
 ## ลิงบาบูน?
 

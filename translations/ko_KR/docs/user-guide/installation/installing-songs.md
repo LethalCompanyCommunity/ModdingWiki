@@ -1,8 +1,8 @@
 # Installing Songs
 ---
-?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
+?> If you prefer video tutorials, Rayanne has [a video explaining how to install mods and custom songs](https://youtu.be/6msFI8Sz1UQ).
 
-!> **IMPORTANT:** Make sure you've followed the [mod installation guide](installing-mods) to install BepInEx and TrombLoader before continuing!
+!> **IMPORTANT:** Make sure you've followed the [mod installation guide](installing-r2modman) to install BepInEx and TrombLoader before continuing!
 
 ## Finding Songs
 
@@ -14,7 +14,7 @@ If you'd like a more compact list, TheGlitched64 has created [a spreadsheet cont
 
 1. Download the custom song - it will generally be some kind of archive file, usually ending in `.zip`.
 
-2. Extract the contents of the archive file directly into the `BepInEx/CustomSongs` folder that got created when you first ran the game with TrombLoader installed.
+2. Extract the contents of the archive file directly into the `BepInEx/CustomSongs` folder in the r2modman profile directory.
 
 ![BepInEx Extraction Preview](../docs/files/customsongextract.png)
 

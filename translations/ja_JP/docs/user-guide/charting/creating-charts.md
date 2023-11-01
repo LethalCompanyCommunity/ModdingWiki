@@ -80,20 +80,10 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて47～73の範囲で�
   MIDIから譜面データへの変換
 </h2>
 
-<p spaces-before="0">
-  ?> Midi2TromboneChamp以外に2つのMIDIコンバーターが用意されています！ <br>これらのMIDIコンバーターの使用方法は似たような感じなのでこのガイドをそのまま参考にすることができます。 <br>もし最新の変換プログラムを試したい場合は、新しいコンバーターを気軽に試してみてください: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Unity Version)</a> - Unityをベースに作成されたブラウザ版Midi2TromboneChamp <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> - 新機能を搭載したウェブベースのコンバーター
-</p>
-
 <ol start="1">
   <li>
     <p spaces-before="0">
-      <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> に移動し、 <code>Midi2TromboneChamp.exe</code> をクリックしてダウンロードしてください。
-    </p>
-  </li>
-  
-  <li>
-    <p spaces-before="0">
-      それを起動してください。 ファイル選択画面が開くのでMIDIファイル(.mid)を選択します。 「開く」をクリックする。
+      Go to <a href="https://tc-chart-converter.github.io/">Trombone Champ Chart Converter</a>.
     </p>
   </li>
   
@@ -103,19 +93,19 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて47～73の範囲で�
     </p>
     <ul>
       <li>
-        <code>Song Name</code> 楽曲のフルネームで、ゲーム内の選曲画面で選択すると楽曲情報に表示される。
+        <code>Song Name</code> is the full name of the song, shown in the info when you select it in-game.
       </li>
       <li>
         <code>Short Name</code> 楽曲リストをスクロールするときに表示される名前で、 文字数が長いと表示テキストが縮小されます。文字数制限があるかは不明
       </li>
       <li>
-        <code>Folder Name</code> 作成した譜面と音源のデータを格納するフォルダの名前です。 例: Folder Nameを「my map」に設定すると譜面データのファイルパスはBepInEx/CustomSongs/my map/song.tmbになります。
+        <code>Release Year</code> is the year the song was created.
       </li>
       <li>
-        <code>Year</code> 使用した楽曲が作成された年
+        <code>Artist</code> is the composer of the song.
       </li>
       <li>
-        <code>Author</code> 使用した楽曲の作曲者名
+        <code>Beats per Bar</code> 拍子の線の間隔を決める。
       </li>
       <li>
         <code>Difficulty</code> 楽曲情報に表示される譜面の難易度を表す星マークの数です。
@@ -124,17 +114,17 @@ MIDIの音符(ノーツ)の高さはゲームに合わせて47～73の範囲で�
         <code>Note Spacing</code>  BPMと組み合わせて、演奏時のノーツの移動速度に影響します。
       </li>
       <li>
-        <code>Song Endpoint</code> 楽曲の終わりを示す拍子。 通常これは自動的に計算されますが、演奏終了画面が表示されたときに変更することが可能です。
+        <code>Folder Name</code> 作成した譜面と音源のデータを格納するフォルダの名前です。 例: Folder Nameを「my map」に設定すると譜面データのファイルパスはBepInEx/CustomSongs/my map/song.tmbになります。
       </li>
       <li>
-        <code>Beats per Bar</code> 拍子の線の間隔を決める。
+        <code>Song Endpoint</code> 楽曲の終わりを示す拍子。 通常これは自動的に計算されますが、演奏終了画面が表示されたときに変更することが可能です。
       </li>
     </ul>
   </li>
   
   <li>
     <p spaces-before="0">
-      OKを押す。 ファイル選択画面で<code>Folder Name</code>で入力した同じ名前のフォルダを作成し、その中に<code>song.tmb</code>という名前で保存
+      OKを押す。 Create a folder with the same name as you entered in the <code>Folder Name</code> field, and save the file as <code>song.tmb</code> inside that folder.
     </p>
   </li>
   

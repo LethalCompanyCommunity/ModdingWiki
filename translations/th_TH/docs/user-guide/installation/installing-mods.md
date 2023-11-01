@@ -1,83 +1,83 @@
-# การลง Mods
+# Installing Mods
 ---
 
-?> ถ้าคุณอยากได้วิธีแบบวีดีโอ VorgunTheBeta มี [วีดีโออธิบายวิธีการลง mods และ การลงเพลงกำหนดเอง](https://youtu.be/pSwNSGx-P5c)
+?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
 
-?> จุดเริ่มของคู่มือนี้ใช้ได้กับ Linux และ Steam Deck! เอาให้แน่ใจว่า [อ่านจนจบ](#linuxsteam-deck-specific-tips) สำหรับรายละเอียดอื่นๆ
+?> The start of this guide also works for Linux and Steam Deck! Make sure to [read the end](#linuxsteam-deck-specific-tips) for additional details.
 
-## การหาที่ลง
-1. เปิด Steam และคลิกขวาที่ Trombone Champ จากนั้นไปที่ `Manage > Browse local files`
+## Finding Install Location
+1. Open Steam and right-click on Trombone Champ. Then, go to `Manage > Browse local files`.
 
-![ตัวอย่างเมนูคลิกขวา](../docs/files/localfilescontext.png)
+![Right-click Menu Preview](../docs/files/localfilescontext.png)
 
-2. กดไปที่ช่องที่อยู่ข้างบนเพื่อที่จะเลือกเส้นทางโฟล์เดอร์สำหรับการลง กด `CTRL`+`C` เพื่อคัดลอกนี้ไปที่คลิปบอรด์
+2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
 
-![ตัวอย่างการก็อปปี้โฟล์เดอร์เป็นเส้นทาง](../docs/files/copyfolderpath.png)
+![Copy Folder Path Preview](../docs/files/copyfolderpath.png)
 
-## การลง BepInEx
+## Installing BepInEx
 
-1. ดาวน์โหลด [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest)ใส่ในโฟล์เดอร์ TromboneChamp ของคุณ คุณจะต้องเอา `BepinEx_x64_VERSION.zip` โดย `VERSION` จะเป็นเลขของเวอร์ชั่น
-2. แตกไฟล์ BepInEx .zip ไปที่ [โฟล์เดอร์ทีลง](##finding-install-location) Trombone Champ ของคุณ
+1. Download [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) into your TromboneChamp folder. You will want to get `BepinEx_x64_VERSION.zip`, with `VERSION` being the version number.
+2. Extract the contents of the BepInEx .zip file directly into the [install folder](##finding-install-location) of your Trombone Champ installation.
 
-![ตัวอย่างการแตกไฟล์ BepInEx](../docs/files/bepinexextract.png)
+![BepInEx Extraction Preview](../docs/files/bepinexextract.png)
 
-!> ใฟ้แน่ใจว่าคุณได้ดาวน์โหลด BepInEx เวอร์ชั่น `x64` เวอร์ชั่น `unix` และ `x86` จะทำให้เกมของคุณทำงานไม่ถูกต้อง นี่รวมถึงผู้ที่ใช้ Linux และ Steam Deck
+!> Please ensure that you've downloaded the `x64` version of BepInEx. the `unix` and `x86` versions will cause your game to not function properly. This also applies to users on Linux/Steam Deck.
 
-!> **สำคัญ:** แตกไฟล์ BepInEx ไปที่โฟล์เดอร์เกมของคุณ *โดยตรง* อย่างที่ภาพแสดงข้างบน ถ้าคุณทำมันถูกต้องโฟล์เดอร์เกมของคุณจะดูเหมือนภาพข้างล่าง
+!> **IMPORTANT:** Extract BepInEx *directly* into your game's folder as shown in the image above. If you've done it correctly, your game's folder should look like the below image.
 
-![การลง BepinEx เสร็จสิ้น](../docs/files/finishedbepinex.png)
+![Finished BepinEx Install](../docs/files/finishedbepinex.png)
 
-3. เปิด Trombone Champ เพื่อเสร็จสินการลง
+3. Run Trombone Champ once to complete installation.
 
-## การติดตั้ง
+## Installation
 
-และเมื่อ BepInEx ติดตั้ง คุณสามารถดาวน์โหลด Mods ได้ - รายการทั้งหมดมีอยู่ที่ช่อง `#mod-releases` ใน [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ)
+With BepInEx installed, you can start downloading specific mods - a full list is available in the `#mod-releases` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
 
-ส่วนนี้จะใช้ [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest) เป็นตัวอย่าง ตามที่คุณต้องการที่จะลงเพลงที่กำหนดเอง
+As you likely want to install custom songs, this section will use [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest) as an example.
 
-1. ไปที่ [โฟล์เดอร์ที่คุณลงเกม](###finding-install-location) แล้วไปที่โฟล์เอดร์ `BepInEx` จากนั้นโฟล์เดอร์ `plugins`
+1. Navigate to your [game's install folder](###finding-install-location), the `BepInEx` folder, then the `plugins` folder.
 
-2. กดไปที่ช่องที่อยู่ข้างบนเพื่อที่จะเลือกเส้นทางโฟล์เดอร์สำหรับการลง กด `CTRL`+`C` เพื่อคัดลอกนี้ไปที่คลิปบอรด์
+2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
 
-![ตัวอย่างการก็อปปี้โฟล์เดอร์เป็นเส้นทาง](../docs/files/copyfolderpathplugins.png)
+![Copy Folder Path Preview](../docs/files/copyfolderpathplugins.png)
 
-3. ดาวน์โหลดไฟล์ .dll ของ Mod ไปที่โฟล์เดอร์ที่สุดกอปปี้ไว้
+3. Download the mod's .dll file into the copied folder.
 
-![ตัวอย่างโฟล์เดอร์ Plugins](../docs/files/pluginswithtrombloader.png)
+![Plugins Folder Preview](../docs/files/pluginswithtrombloader.png)
 
-4. เปิด Trombone Champ เพื่อที่จะให้ Mod เริ่มต้นไฟล์ที่ต้องการ
+4. Run Trombone Champ once to initialize necessary files for that mod.
 
-## เคล็ดลับ สำหรับ Linux และ Steam Deck
+## Linux/Steam Deck Tips
 <details closed>
-<summary>ขยาย</summary>
+<summary>Expand</summary>
 
-ขั้นตอนการลง BepInEx ส่วนใหญ่จะเหมือนกับ Windows ข้างบน แต่ยังไงก็ตามจะมีบางสิ่งที่ต้องรู้ไว้ก่อน:
+The process of installing BepInEx is largely the same as on Windows listed above, however there are some extra things to be aware of first:
 
- - ผู้ใช้ Steam Deck จะต้องเปลี่ยนเป็น Desktop Mode เพื่อที่จะทำตามคู่มือนี้ โดย กดปุ่ม Power ค้างไว้และเลือก `Desktop Mode` จากเมนู
+ - To follow the guide, Steam Deck users will need to switch to Desktop Mode by holding down the power button and selecting `Desktop Mode` from the menu.
 
- - ผู้ใช้ Steam Deck จะต้องติดตั้งเกมไปที่จัดเก็บภายใน เพราะว่า BepInEx จะไม่โหลดจาก microSD card
+ - Steam Deck users will need to install the game to the internal storage, as BepInEx will not load from the microSD card.
 
- - อย่างที่บอกไว้ คุณจะต้องลง BepInEx เวอร์ชั่น `x64` ของ Windows ไม่ใช่เวอร์ชั่น `unix` เพราะว่า Trombone Champ ยังเป็นโปรแกรมของ Windows วิ่งด้วย Proton
+ - As stated earlier, you will still need to install the `x64` Windows version of BepInEx, not the `unix` version, as Trombone Champ is still a Windows application running under Proton.
 
- - ไฟล์ เซฟเกม และ บันทึกข้อมูล เก็บอยู่ที่โฟล์เดอร์ Steam ข้างในโฟล์เดอร์ความเข้ากันได้ของ Proton
+ - Save and log files are stored in your Steam folder within Proton's compatibility folders.
 
-    - บน Steam Deck หาได้ที่: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
-    - ใน Linux ชนิดอื่นคุณสามารถใช้คำสั่ง `locate -r /Holy Wow$` บนเทอร์มินัลถ้าคุณไม่แน่ใจว่าโฟล์เดอร์ Steam อยู่ที่ไหน
+    - On Steam Deck this can be found at: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
+    - On other Linux flavors you can run `locate -r /Holy Wow$` from the terminal if you're unsure of where your Steam folder is.
 
-คุณจะยังต้องการเพิ่ม `WINEDLLOVERRIDES="winhttp=n,b" %command%` ที่ตัวเลือการเริ่มเกมของคุณ ทำอันนี้โดยการ คลิกขวาที่เกมใน Steam และคลิก `Properties` Proton จะไม่โหลดไฟล์ BepInEx เว้นแต่ว่าจะบอกให้มันโหลด ไม่เหมือนกับ Windows
+You will also need to add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your game's launch options. To do this, right click the game in Steam and click `Properties`. Unlike on Windows, Proton won't load BepInEx's files unless specifically instructed to here.
 
-![ตัวอย่าง Steam Properties](../docs/files/linuxsteamproperties.png)
+![Steam Properties Preview](../docs/files/linuxsteamproperties.png)
 
-และเมื่อเพิ่ม BepInEx ควรที่จะใช้งานได้ตอนนี้ ลง mods ของคุณ [ตามที่ขั้นตอนข้างบน](##installation) เพื่อที่จะได้เพลงที่กำหนดเองใช้งานได้
+Once added, BepInEx should now work! Install your mods [as instructed above](##installation) to get custom songs working.
 
-### วีดีโอพื้นหลัง {docsify-ignore}
+### Video Backgrounds {docsify-ignore}
 
-เพลงที่กำหนดเองบางเพลงจะมีพื้นหลังที่เป็นวีดีโอ และ Proton พื้นฐานไม่สารมารถเล่นได้ ถ้าคุณอยากให้มันใช้งานได้คุณสามารถลง `GE-Proton` โดยใช้ [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/) Proton เวอร์ชั่นนี้ได้รวมฟีเจอร์เพิ่มเติมรวมถึงการเล่นรูปแบบวีดีโอที่ Valve ไม่สามารถที่สนันสนุนอยากเป็นทางการได้
+Some custom songs will include videos for their backgrounds, and the default Proton install cannot play these back. If you want these to work, you can install `GE-Proton` using [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/). This is a version of Proton that includes some additional features, including the ability to play back video formats that Valve are unable to support officially.
 
-เราแนะนำให้ทำตาม [คู่มือนี้สร้างโดย GamingOnLinux](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) สำหรับการใช้งาน ProtonUp-Qt และติดตั้ง `GE-Proton`
+We recommend following [this guide created by GamingOnLinux](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) for instructions on how to use ProtonUp-Qt and install `GE-Proton`.
 
-!> แม้กระทั่งมี GE-Proton คุณอาจจะยังมีปัญหากับการเล่นวีดีโอขึ้นอยู่กับคอมพิวเตอร์ของคุณ </details>
+!> Even with GE-Proton, you may still experience some issues with video playback depending on your setup. </details>
 
-## การลงเพลงที่กำหนดเอง {docsify-ignore}
+## Installing Custom Songs {docsify-ignore}
 
-> ดูที่ [**คู่มือเพลงที่กำหนดเอง**](installing-songs) สำหรับข้อมูลการลงเพลงที่กำหนดเอง
+> Check out the [**Custom Songs guide**](installing-songs) for info on installing custom songs.

@@ -80,20 +80,10 @@ Midi文件中的音符应该在47到73的范围内以匹配游戏内的音高范
   转换Midi文件为谱面文件
 </h2>
 
-<p spaces-before="0">
-  ?> 除了Midi2TromboneChamp以外，还有两个Midi转换器可用！ <br>这些新转换器的使用流程足够相似，本指南仍然可以使用。 <br>如果您想尝试这些更新的转换程序，请看这里： <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp(Unity 版本)</a> - 一个使用Unity编写的Midi2TromboneChamp。 <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chapt Converter</a> - 一个有新功能的网页版转换器。
-</p>
-
 <ol start="1">
   <li>
     <p spaces-before="0">
-      前往 <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a>并点击 <code>Midi2TromboneChamp.exe</code> 进行下载。
-    </p>
-  </li>
-  
-  <li>
-    <p spaces-before="0">
-      运行它。 在打开的文件选择其中选择你的Midi文件。 点击Open。
+      Go to <a href="https://tc-chart-converter.github.io/">Trombone Champ Chart Converter</a>.
     </p>
   </li>
   
@@ -103,19 +93,19 @@ Midi文件中的音符应该在47到73的范围内以匹配游戏内的音高范
     </p>
     <ul>
       <li>
-        <code>Song Name</code> 是歌曲的全名，当您在游戏中选择这个谱面时，这一条会显示在左上角。
+        <code>Song Name</code> is the full name of the song, shown in the info when you select it in-game.
       </li>
       <li>
         <code>Short Name</code> 该内容会显示在曲目滚动列表中. 名称过长时文本字号会相应变小，所以无法确定是否存在长度上限。
       </li>
       <li>
-        <code>Folder Name</code> 是您用来存储谱面和歌曲文件的文件夹的名称。 举例： 如果您将文件夹名称设置为“我的自制谱”，您的自制谱路径将是 BepInEx/CustomSongs/我的自制谱/song.tmb。
+        <code>Release Year</code> is the year the song was created.
       </li>
       <li>
-        <code>Year</code>是曲目的创作年份。
+        <code>Artist</code> is the composer of the song.
       </li>
       <li>
-        <code>Author</code> 是乐曲的作者。
+        <code>Beats per Bar</code> 决定游玩谱面时屏幕上显示的节拍线之间的距离。
       </li>
       <li>
         <code>Difficulty</code> 是歌曲信息上出现的难度星级。
@@ -124,17 +114,17 @@ Midi文件中的音符应该在47到73的范围内以匹配游戏内的音高范
         <code>Note Spacing</code> 影响游戏内note的移动速度，通常与BPM对应.
       </li>
       <li>
-        <code>Song Endpoint</code> 是曲目结束时的节奏点。 这个值通常由软件自动计算，但是你可以调整这个数值来改变结算界面的出现时机。
+        <code>Folder Name</code> 是您用来存储谱面和歌曲文件的文件夹的名称。 举例： 如果您将文件夹名称设置为“我的自制谱”，您的自制谱路径将是 BepInEx/CustomSongs/我的自制谱/song.tmb。
       </li>
       <li>
-        <code>Beats per Bar</code> 决定游玩谱面时屏幕上显示的节拍线之间的距离。
+        <code>Song Endpoint</code> 是曲目结束时的节奏点。 这个值通常由软件自动计算，但是你可以调整这个数值来改变结算界面的出现时机。
       </li>
     </ul>
   </li>
   
   <li>
     <p spaces-before="0">
-      点击OK。 在出现的文件选择器中，创建一个与您输入的 <code>Folder Name</code> 字段相同的文件夹，并将文件命名为 <code>song.tmb</code>后放入文件夹中 。
+      点击OK。 Create a folder with the same name as you entered in the <code>Folder Name</code> field, and save the file as <code>song.tmb</code> inside that folder.
     </p>
   </li>
   

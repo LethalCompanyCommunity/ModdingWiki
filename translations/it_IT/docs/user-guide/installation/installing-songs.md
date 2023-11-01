@@ -1,8 +1,8 @@
 #Installare dei Brani
 ---
-?> Se preferisci i video tutorial, VorgunTheBeta ha [fatto un video che spiega come installare le mod e brani personalizzati](https://youtu.be/pSwNSGx-P5c).
+?> If you prefer video tutorials, Rayanne has [a video explaining how to install mods and custom songs](https://youtu.be/6msFI8Sz1UQ).
 
-!> **IMPORTANTE:** Assicurati di aver seguito la [guida per l'installazione delle mod](installing-mods) per installare BepInEx e TrombLoader prima di continuare!
+!> **IMPORTANT:** Make sure you've followed the [mod installation guide](installing-r2modman) to install BepInEx and TrombLoader before continuing!
 
 ## Trovare i Brani
 
@@ -14,7 +14,7 @@ Se prefirisci una lista più compatta, TheGlitched64 ha creato [un foglio di cal
 
 1. Scaricare il brano personalizzato - normalmente sarà un qualche tipo di file archivio, di solito con estensione `.zip`.
 
-2. Estrai il contenuto dell'archivio direttamente nella cartella `BepInEx/CustomSongs` che viene creata la prima volta che avvii il gioco con TrombLoader installato.
+2. Extract the contents of the archive file directly into the `BepInEx/CustomSongs` folder in the r2modman profile directory.
 
 ![Ateprima Estrazione BepInEx](../docs/files/customsongextract.png)
 

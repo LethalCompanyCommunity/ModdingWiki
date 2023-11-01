@@ -7,14 +7,14 @@
 ### Editores MIDI/DAW
 Charts são feitos a partir de um arquivo midi, que em sequência passam por um [conversor MIDI](#converting-midi-to-map-file).
 
-As nots midi devem estar na região 47 a 73 para se igualarem as possíveis no jogo.<br>**NOTA:** Nem todos os editores usam as mesmas oitavas para essa região.
+Midi notes should be in the range 47 to 73 to match the game.<br>**NOTE:** Different editors use different values on the piano for this range.
 
 Alguns editores midi gratuitos que devem funcionar incluem:
-- [Reaper](https://www.reaper.fm/download.php)* (Oitavas: B2-C#5)
-- [LMMS](https://lmms.io/download#windows) (Oitavas: B2-C#5)
-- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Oitavas: B3-C#6)
-- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Oitavas: B3-C#6)
-- [Ableton](https://www.ableton.com/en/trial/)* (Oitavas: B1-C#4)
+- [Reaper](https://www.reaper.fm/download.php)* (Range: B2-C#5)
+- [LMMS](https://lmms.io/download#windows) (Range: B2-C#5)
+- [FL Studio](https://www.image-line.com/fl-studio-download/)*† (Range: B3-C#6)
+- [Cakewalk](https://www.bandlab.com/products/cakewalk)** (Range: B3-C#6)
+- [Ableton](https://www.ableton.com/en/trial/)* (Range: B1-C#4)
 - [Sekaiju](http://openmidiproject.osdn.jp/Sekaiju_en.html)
 - [Trombone Charter](https://github.com/towai/TromboneCharter/releases/latest)
 
@@ -80,20 +80,10 @@ Alguns editores midi gratuitos que devem funcionar incluem:
   Convertendo Midi ao arquivo de mapa
 </h2>
 
-<p spaces-before="0">
-  ?> Existem dois conversores Midi disponíveis além do Midi2TromboneChamp! <br>O processo para esses novos conversores é semelhante o suficiente, então este guia ainda é utilizável. <br>Se quiser um conversor mais atualizado, sinta-se à vontade para utilizar os seguintes: <br><br><a href="https://nyxtheshield.github.io/Midi2TromboneChamp/">Midi2TromboneChamp (Versão Unity)</a> — Uma versão nova em Unity do Midi2TromboneChamp. <br><a href="https://rshieldsprojects.github.io/projects/tccc/">Trombone Champ Chart Converter</a> — Uma versão alternativa na web com novos recursos.
-</p>
-
 <ol start="1">
   <li>
     <p spaces-before="0">
-      Vá para <a href="https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest" x-nc="1">https://github.com/SockHungryClutz/Midi2TromboneChamp/releases/latest</a> e clique em <code>Midi2TromboneChamp.exe</code> para baixar o arquivo.
-    </p>
-  </li>
-  
-  <li>
-    <p spaces-before="0">
-      Execute-o. No seletor de arquivos que foi aberto, selecione seu arquivo midi. Clique em Abrir.
+      Go to <a href="https://tc-chart-converter.github.io/">Trombone Champ Chart Converter</a>.
     </p>
   </li>
   
@@ -103,19 +93,19 @@ Alguns editores midi gratuitos que devem funcionar incluem:
     </p>
     <ul>
       <li>
-        <code>Song Name</code> é o nome completo da música, mostrado nas informações da música quando selecionada.
+        <code>Song Name</code> is the full name of the song, shown in the info when you select it in-game.
       </li>
       <li>
         <code>Short Name</code> é mostrado enquanto navega pela çista de músicas. O texto fica menor dependendo do tamanho do nome, mas não se sabe se tem um limite para tal.
       </li>
       <li>
-        <code>Folder Name</code> é o nome da pasta em que foi colocado a música e o chart. Ex. Se você definiu o nome da pasta como banana, seu chart vai estar localizado em BepInEx/CustomSongs/banana/song.tmb.
+        <code>Release Year</code> is the year the song was created.
       </li>
       <li>
-        <code>Year</code> é o ano em que a música foi criada.
+        <code>Artist</code> is the composer of the song.
       </li>
       <li>
-        <code>Author</code> é o compositor da música.
+        <code>Beats per Bar</code> determina o quão distantes estão as "linhas de batida".
       </li>
       <li>
         <code>Difficulty</code> é o número de estrelas que aparece na informação de dificuldade.
@@ -124,17 +114,17 @@ Alguns editores midi gratuitos que devem funcionar incluem:
         <code>Note Spacing</code> afeta a velocidade de rolagem, em combinação com o BPM.
       </li>
       <li>
-        <code>Song Endpoint</code> é a batida em que a música termina. Ela é calculada automaticamente, mas você pode ajustá-la manualmente para mudar quando o nível acaba.
+        <code>Folder Name</code> é o nome da pasta em que foi colocado a música e o chart. Ex. Se você definiu o nome da pasta como banana, seu chart vai estar localizado em BepInEx/CustomSongs/banana/song.tmb.
       </li>
       <li>
-        <code>Beats per Bar</code> determina o quão distantes estão as "linhas de batida".
+        <code>Song Endpoint</code> é a batida em que a música termina. Ela é calculada automaticamente, mas você pode ajustá-la manualmente para mudar quando o nível acaba.
       </li>
     </ul>
   </li>
   
   <li>
     <p spaces-before="0">
-      Aperte em OK. No seletor de arquivos que será aberto, crie uma pasta de mesmo nome do <code>Folder Name</code>, e salve o arquivo como <code>song.tmb</code> na pasta.
+      Aperte em OK. Create a folder with the same name as you entered in the <code>Folder Name</code> field, and save the file as <code>song.tmb</code> inside that folder.
     </p>
   </li>
   

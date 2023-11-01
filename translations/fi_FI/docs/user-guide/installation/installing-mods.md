@@ -1,83 +1,83 @@
-# Modien Asentaminen
+# Installing Mods
 ---
 
-?> Jos haluat videotutoriaaleja, VorgunTheBeta on [ tehnyt videon, jossa kerrotaan, miten modit ja custom kappaleet asennetaan](https://youtu.be/pSwNSGx-P5c).
+?> If you prefer video tutorials, VorgunTheBeta has [a video explaining how to install mods and custom songs](https://youtu.be/pSwNSGx-P5c).
 
-?> Tämän oppaan alku toimii myös Linux- ja Steam Deckin kanssa! Varmista, että [luet loppuun](#linuxsteam-deck-specific-tips) saadaksesi lisätietoja.
+?> The start of this guide also works for Linux and Steam Deck! Make sure to [read the end](#linuxsteam-deck-specific-tips) for additional details.
 
-## Asennussijainnin Löytäminen
-1. Avaa Steam ja paina Trombone Champ peliä hiiren oikealla painikkeella. Sitten mene `Manage > Browse local files`.
+## Finding Install Location
+1. Open Steam and right-click on Trombone Champ. Then, go to `Manage > Browse local files`.
 
 ![Right-click Menu Preview](../docs/files/localfilescontext.png)
 
-2. Paina osoitepalkkia yläreunassa valitaksesi asennuskansion polun. Paina `CTRL`+`C` kopioidaksesi tämän leikepöydällesi.
+2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
 
-![Kopioi Kansion Polku Esikatselu](../docs/files/copyfolderpath.png)
+![Copy Folder Path Preview](../docs/files/copyfolderpath.png)
 
-## BipInEx Asennus
+## Installing BepInEx
 
-1. Lataa [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) TromboneChamp kansioon. Haluat saada `BepinEx_x64_VERSION.zip`, jossa `VERSION` on versionumero.
-2. Pura BepInEx .zip-tiedoston sisältö suoraan Trombone Champ [asennuskansioon](##finding-install-location).
+1. Download [BepInEx](https://github.com/BepInEx/BepInEx/releases/latest) into your TromboneChamp folder. You will want to get `BepinEx_x64_VERSION.zip`, with `VERSION` being the version number.
+2. Extract the contents of the BepInEx .zip file directly into the [install folder](##finding-install-location) of your Trombone Champ installation.
 
-![BepInExin Purkamisen Esikatselu](../docs/files/bepinexextract.png)
+![BepInEx Extraction Preview](../docs/files/bepinexextract.png)
 
-!> Varmista, että olet ladannut `x64` version BepInExistä. `unix` ja `x86` versiot aiheuttavat sen, että pelisi ei toimi kunnolla. Tämä koskee myös Linux/Steam Deckin käyttäjiä.
+!> Please ensure that you've downloaded the `x64` version of BepInEx. the `unix` and `x86` versions will cause your game to not function properly. This also applies to users on Linux/Steam Deck.
 
-!> **TÄRKEÄÄ:** Pura BepInEx *suoraan* pelin kansioon kuten yllä olevassa kuvassa näkyy. Jos olet tehnyt kaiken oikein, pelin kansion pitäisi näyttää kuin alla olevassa kuvassa.
+!> **IMPORTANT:** Extract BepInEx *directly* into your game's folder as shown in the image above. If you've done it correctly, your game's folder should look like the below image.
 
-![BepinExin Asennus Valmis](../docs/files/finishedbepinex.png)
+![Finished BepinEx Install](../docs/files/finishedbepinex.png)
 
-3. Käynnistä Trombone Champ viimeistelläksesi asennuksen.
+3. Run Trombone Champ once to complete installation.
 
-## Asennus
+## Installation
 
-Kun BepInEx on asennettu, voit aloittaa tiettyjen modien lataamisen - täydellinen lista on saatavilla `#mod-releases` kanavalla [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ) palvelimella.
+With BepInEx installed, you can start downloading specific mods - a full list is available in the `#mod-releases` channel in the [Trombone Champ Modding Discord](https://discord.gg/KVzKRsbetJ).
 
-Haluat todennäköisesti asentaa custom kappaleita, tämä osio käyttää [TrombLoaderia](https://github.com/NyxTheShield/TrombLoader/releases/latest) esimerkkinä.
+As you likely want to install custom songs, this section will use [TrombLoader](https://github.com/NyxTheShield/TrombLoader/releases/latest) as an example.
 
-1. Mene [pelin asennuskansioon](###finding-install-location), `BepInEx` kansioon, ja sitten `plugins` kansioon.
+1. Navigate to your [game's install folder](###finding-install-location), the `BepInEx` folder, then the `plugins` folder.
 
-2. Paina osoitepalkkia yläreunassa valitaksesi asennuskansion polun. Paina `CTRL`+`C` kopioidaksesi tämän leikepöydällesi.
+2. Click the address bar at the top to select your installation folder's path. Hit `CTRL`+`C` to copy this to your clipboard.
 
-![Kopioi Kansion Polku Esikatselu](../docs/files/copyfolderpathplugins.png)
+![Copy Folder Path Preview](../docs/files/copyfolderpathplugins.png)
 
-3. Lataa modin .dll tiedosto kopioituun kansioon.
+3. Download the mod's .dll file into the copied folder.
 
-![Lisäosien Kansion Esikatselu](../docs/files/pluginswithtrombloader.png)
+![Plugins Folder Preview](../docs/files/pluginswithtrombloader.png)
 
-4. Käynnistä Trombone Champ tarvittavien tiedostoiden alustamiseksi kyseiseen moodin.
+4. Run Trombone Champ once to initialize necessary files for that mod.
 
-## Linux/Steam Deck Vinkit
+## Linux/Steam Deck Tips
 <details closed>
-<summary>Laajenna</summary>
+<summary>Expand</summary>
 
-BepInExin asennus on suurelta osin sama kuin Windowsin edellä lueteltu, mutta on olemassa joitakin ylimääräisiä asioita joista olla tietoisia ensin:
+The process of installing BepInEx is largely the same as on Windows listed above, however there are some extra things to be aware of first:
 
- - Jos haluat seurata opasta, Steam Deck käyttäjien on vaihdettava työpöytätilaan pitämällä virtapainike pohjassa ja valitsemalla `Työpöytätila` valikosta.
+ - To follow the guide, Steam Deck users will need to switch to Desktop Mode by holding down the power button and selecting `Desktop Mode` from the menu.
 
- - Steam Deck -käyttäjien tulee asentaa peli sisäiseen tallennustilaan, koska BepInEx ei toimi microSD-kortilla.
+ - Steam Deck users will need to install the game to the internal storage, as BepInEx will not load from the microSD card.
 
- - Kuten aiemmin todettiin, sinun täytyy silti asentaa `x64` BepInEx Windows-versio, ei `unix` -versio, sillä Trombone Champ on vielä Protonin alla toimiva Windows-sovellus.
+ - As stated earlier, you will still need to install the `x64` Windows version of BepInEx, not the `unix` version, as Trombone Champ is still a Windows application running under Proton.
 
- - Tallennus ja loki tiedostot ovat tallennettu Steam-kansion Proton yhteensopivuuskansioihin.
+ - Save and log files are stored in your Steam folder within Proton's compatibility folders.
 
-    - Steam Deckillä tämä löytyy: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
-    - Muilla Linux-asennuksilla voit suorittaa `locate -r /Holy Wow$<0>` terminaalissa, jos et ole varma missä Steam-kansio on.
+    - On Steam Deck this can be found at: `~/.local/share/Steam/steamapps/compatdata/1059990/pfx/drive_c/users/steamuser/AppData/LocalLow/Holy Wow/TromboneChamp`
+    - On other Linux flavors you can run `locate -r /Holy Wow$` from the terminal if you're unsure of where your Steam folder is.
 
-Sinun tulee myös lisätä `WINEDLLOVERRIDES="winhttp=n,b" %command%` pelin käynnistysvalintoihin. Voit tehdä tämän napsauttamalla hiiren oikealla painikkeella peliä Steamissä ja klikkaa `Properties`. Toisin kuin Windowsissa, Proton ei lataa BepInExin tiedostoja, ellei sitä ole erikseen ohjeistettu tässä.
+You will also need to add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your game's launch options. To do this, right click the game in Steam and click `Properties`. Unlike on Windows, Proton won't load BepInEx's files unless specifically instructed to here.
 
-![Steamin Ominaisuudet Esikatselu](../docs/files/linuxsteamproperties.png)
+![Steam Properties Preview](../docs/files/linuxsteamproperties.png)
 
-Kun se on lisätty, BepInExin pitäisi nyt toimia! Asenna modit [yllä olevien ohjeiden mukaisesti](##installation) saadaksesi custom kappaleet toimimaan.
+Once added, BepInEx should now work! Install your mods [as instructed above](##installation) to get custom songs working.
 
-### Videotaustat {docsify-ignore}
+### Video Backgrounds {docsify-ignore}
 
-Jotkin custom kappaleet sisältävät videoita taustalleen, eikä Protonin oletusasennus voi toistaa niitä. Jos haluat näiden toimivan, voit asentaa `GE-Proton` käyttäen [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/). Tämä on Protonin versio, joka sisältää joitakin lisäominaisuuksia, mukaan lukien kyky toistaa videoformaatteja, joita Valve ei pysty tukemaan virallisesti.
+Some custom songs will include videos for their backgrounds, and the default Proton install cannot play these back. If you want these to work, you can install `GE-Proton` using [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/). This is a version of Proton that includes some additional features, including the ability to play back video formats that Valve are unable to support officially.
 
-Suosittelemme seuraamaan [tätä GamingOnLinuxin](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) luomaa opasta ProtonUp-Qt käytöstä ja `GE-Proton` asennuksesta.
+We recommend following [this guide created by GamingOnLinux](https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/) for instructions on how to use ProtonUp-Qt and install `GE-Proton`.
 
-!> Jopa GE-Protonin kanssa, saatat silti kokea ongelmia videon toiston kanssa asetuksistasi riippuen. </details>
+!> Even with GE-Proton, you may still experience some issues with video playback depending on your setup. </details>
 
-## Custom Kappaleiden Asennus {docsify-ignore}
+## Installing Custom Songs {docsify-ignore}
 
-> Tutustu [**Custom Kappaleet oppaseen**](installing-songs) saadaksesi lisätietoja asennettaessa custom kappaleita.
+> Check out the [**Custom Songs guide**](installing-songs) for info on installing custom songs.

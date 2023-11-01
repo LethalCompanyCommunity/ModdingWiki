@@ -1,14 +1,15 @@
 - **Guide de l'utilisateur**
 - [Introduction](./)
 - **Modding**
-- [Installer des mods](installing-mods)
-- [Installer des chansons](installing-songs)
 - [Using r2modman](installing-r2modman)
+- [Installer des chansons](installing-songs)
+- [Upgrading to TrombLoader 2](migrating-to-v2)
 - **Charting**
 - [Créer des charts](creating-charts)
 - [Guide de charting](charting-guidelines)
 - [Arrière-plans de charts](chart-backgrounds)
 - [Infos diverses de charting](misc-charting-info)
+- [Chart Troubleshooting](chart-troubleshooting)
 - **Developers**
 - [Writing Mods](writing-mods)
 - **Extras**

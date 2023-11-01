@@ -6,7 +6,7 @@ Esta Wiki serve como fonte de documentação e tutoriais para vários mods não 
 
 ?> **Ajuda no Discord** Para suporte direito com esta guia, por favor visite-nos no **#modding-support** do [Discord de modding para Trombone Champ](https://discord.gg/KVzKRsbetJ) e peça ajuda. Favor ler as [Perguntas Frequentes (FAQ's)](faq) antes para ter certeza de que sua pergunta não foi respondida anteriormente.
 
-> ### [![Logo da Steam](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Instalando mods**](installing-mods)
+> ### [![Logo da Steam](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Installing Mods**](installing-r2modman)
 > 
 > ### [![Logo da Apple Music](https://icongr.am/simple/applemusic.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Instalando músicas**](installing-songs)
 > 
