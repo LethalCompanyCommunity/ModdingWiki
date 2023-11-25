@@ -53,6 +53,6 @@ Once you have succesfully installed r2modman, you can finally install mods.
 
 8. Once you are done installing your mods, you may click on "Start modded" on the sidebar. This will launch the game with your mods.
 
-![Start Trombone Champ Modded](../docs/files/r2modman-install/startmodded.png)
+![Start Lethal Company Modded](../docs/files/r2modman-install/startmodded.png)
 
 That's it! You have just successfully modded Lethal Company!

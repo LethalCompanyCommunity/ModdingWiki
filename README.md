@@ -1,8 +1,8 @@
-# Trombone Champ Modding Guide
+# Lethal Company Modding Guide
 
-This guide is a fork of [gorillatagmodding.burrito.software](https://gorillatagmodding.burrito.software).
+This guide is a fork of [trombone.wiki](https://trombone.wiki).
 
-[The guide can be found here!](https://trombone.wiki)
+[The guide can be found here!](https://lethal.wiki)
 
 ## Developer Guide
 
