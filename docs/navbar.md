@@ -1,7 +1,7 @@
 - ![Themes](https://icongr.am/material/brightness-6.svg?color=A9A9A9&size=37)
   - <a href="#" data-link-title="Dark">Dark</a>
   - <a href="#" data-link-title="Light">Light</a>
-- ![Languages](https://icongr.am/material/translate.svg?color=A9A9A9&size=37)
+<!-- - ![Languages](https://icongr.am/material/translate.svg?color=A9A9A9&size=37)
   - [English](/)
   - [Español](/es_ES/)
   - [Português (Brasil)](/pt_BR/)
@@ -10,11 +10,11 @@
   - [Français](/fr_FR/)
   - [简体中文](/zh_CN/)
   - [Italiano](/it_IT/)
-  - [Suomi](/fi_FI/)
+  - [Suomi](/fi_FI/) -->
 <!---  - [日本語](/ja_JP/) -->
 <!---  - [Dansk](/da_DK/) -->
 <!---  - [Norsk](/no_NO/) -->
 <!---  - [Polskie](/pl_PL/) -->
 <!---  - [Svenska](/sv_SE/) -->
 <!---  - [Pirate English](/en_PT/) -->
-- [![Discord](https://icongr.am/material/discord.svg?color=A9A9A9&size=37)](https://discord.gg/KVzKRsbetJ)
+- [![Discord](https://icongr.am/material/discord.svg?color=A9A9A9&size=37)](https://discord.gg/XeyYqRdRGC)
