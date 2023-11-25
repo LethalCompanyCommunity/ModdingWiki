@@ -17,4 +17,4 @@
 <!---  - [Polskie](/pl_PL/) -->
 <!---  - [Svenska](/sv_SE/) -->
 <!---  - [Pirate English](/en_PT/) -->
-- [![Discord](https://icongr.am/material/discord.svg?color=A9A9A9&size=37)](https://discord.gg/XeyYqRdRGC)
+- [![Discord](https://icongr.am/material/discord.svg?color=A9A9A9&size=37)](https://discord.gg/nYcQFEpXfU)
