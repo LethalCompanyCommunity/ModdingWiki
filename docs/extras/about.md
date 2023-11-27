@@ -8,7 +8,7 @@ This guide is mainly written by [Max](https://github.com/MaxWasUnavailable) & [B
 > **Bobbie, Max, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)**
 >
 > ---
-> Thank you to [everyone else](https://github.com/legoandmars/LethalCompanyModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
+> Thank you to [everyone else](https://github.com/LethalCompany/ModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
 
 >
 > ## Developer / Tool Credits
