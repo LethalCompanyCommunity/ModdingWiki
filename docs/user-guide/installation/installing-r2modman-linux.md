@@ -79,4 +79,4 @@ That's it! You have just successfully modded Lethal Company!
 WINEDLLOVERRIDES="winhttp=n,b" %command% --doorstop-enable true --doorstop-target "/home/deck/.config/r2modmanPlus-local/LethalCompany/profiles/Default/BepInEx/core/BepInEx.Preloader.dll" --r2profile "Default"
 ```
 ![Steam Properties](../docs/files/r2modman-linux/steamproperties.png)
-This will instruct the game to launch with the Default profile we configured in r2modman earlier, so all your mods and custom songs installed there will be available.
+This will instruct the game to launch with the Default profile we configured in r2modman earlier, so all your mods installed there will be available.
