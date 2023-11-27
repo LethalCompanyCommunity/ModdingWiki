@@ -1,11 +1,11 @@
 # About This Guide
 ---
-This guide is mainly written by [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+This guide is mainly written by [Max](https://github.com/MaxWasUnavailable) & [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
 
 > ## Credits
 >
 > ### Writers
-> **Bobbie, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)**
+> **Bobbie, Max, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)**
 >
 > ---
 > Thank you to [everyone else](https://github.com/legoandmars/LethalCompanyModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
