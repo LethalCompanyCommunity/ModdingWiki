@@ -83,4 +83,4 @@ WINEDLLOVERRIDES="winhttp=n,b" %command% --doorstop-enable true --doorstop-targe
 ```
 
 ![Steam Properties](../docs/files/r2modman-linux/steamproperties.png)
-This will instruct the game to launch with the Default profile we configured in r2modman earlier, so all your mods and custom songs installed there will be available.
+This will instruct the game to launch with the Default profile we configured in r2modman earlier, so all your mods installed there will be available.
