@@ -63,6 +63,11 @@ Note that you can leave dependencies empty if your mod does not have any:
     "dependencies": []
 ```
 
+!> **Note that if you use BepInEx, you will have to add `BepInEx-BepInExPack-5.4.2100` to your dependencies:**
+```json
+    "dependencies": ["BepInEx-BepInExPack-5.4.2100"]
+```
+
 Once you're done with all of this, happy with the way your README [will look](https://thunderstore.io/tools/markdown-preview/), and your manifest [is valid](https://thunderstore.io/tools/manifest-v1-validator/), you simply need to create a zip file and upload the mod!
 
 **Note that the zip file has to be created using the individual files, not the folder they're in. E.g. select all of the files listed above, and *then* create a zip.**
