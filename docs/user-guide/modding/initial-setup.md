@@ -2,7 +2,9 @@
 
 ## Setting up your development environment
 
-Before you can start modding, you'll need some tools to actually create mods. Luckily, all of these are **available for free**. There exist some paid options we will cover, but those are primarily aimed at existing developers who already have licenses for these tools. This guide is roughly based on some parts of the [BepInEx setup guide](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/1_setup.html), and you can also follow that one if it's clearer.
+Before you can start modding, you'll need some tools to actually create mods. Luckily, all of these are **available for free**. 
+
+>! This guide is roughly based on some parts of the [BepInEx setup guide](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/1_setup.html), which is another great resource for learning how to mod
 
 ### .Net SDK
 An SDK (=Software Development Kit) is a system that allows you to turn your code into something that your PC can run. It is used by other tools, and you'll generally not interact with it directly.
