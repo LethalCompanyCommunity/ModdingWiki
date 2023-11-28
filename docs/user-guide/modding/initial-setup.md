@@ -58,7 +58,7 @@ to
 Enabled = true
 ```
 
-### Decompiler (optional)
+### Decompiler (*highly recommended / near essential*)
 A decompiler allows you to decompile an existing program. This is technical terminology that can roughly be translated to "it allows you to peek behind the curtain and see what the code of a program looks like". Why is this important, you may ask? Well, if we're going to mod a game, we first need to know *what* to mod. Do we want to reduce the price of items? We'll need to know in what part of the code items are displayed and sold to the player. Do we want to add a weather condition? We'll need to know in what parts of the code the game handles and spawns weather.
 
 We recommend one (or all) of three free options:
@@ -66,7 +66,7 @@ We recommend one (or all) of three free options:
 - [ILSpy](https://github.com/icsharpcode/ILSpy)
 - [dotPeek](https://www.jetbrains.com/decompiler/)
 
-Note you do not necessarily need this if you have Rider or Visual Studio, since they come with built-in decompilers. Note that different decompilers offer slightly different results, and have different interfaces.
+!> **Note you do not necessarily need this if you have Rider or Visual Studio, since they come with built-in decompilers. Note that different decompilers offer slightly different results, and have different interfaces.**
 
 ### Unity Explorer (optional)
 [Unity Explorer](https://github.com/sinai-dev/UnityExplorer) is a tool which adds an in-game UI that allows you to explore, debug, and modify the game while it's running. This tool can be highly useful to get to know the game's technical side better, and his hence strongly recommended.
