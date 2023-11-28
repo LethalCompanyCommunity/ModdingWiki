@@ -11,7 +11,7 @@ An SDK (=Software Development Kit) is a system that allows you to turn your code
 
 You'll want to download and install the latest recommended version from [this page](https://dotnet.microsoft.com/en-us/download). It'll look something like this:
 
-[![image](https://github.com/LethalCompany/LethalCompanyModdingWiki/assets/89798523/6cbfe6ac-bc13-4566-a458-f432061f9393)](https://dotnet.microsoft.com/en-us/download)
+[![.Net SDK download](../docs/files/initial-setup/netsdkdownload.png)](https://dotnet.microsoft.com/en-us/download)
 
 
 ### IDE
@@ -73,7 +73,7 @@ We recommend one (or all) of three free options:
 
 You will want to download the version compatible with the latest version of BepInEx (5).
 
-[![image](https://github.com/LethalCompany/LethalCompanyModdingWiki/assets/89798523/56027c1a-dfd8-4b99-8756-a496c7dd18ca)](https://github.com/sinai-dev/UnityExplorer/releases/latest/download/UnityExplorer.BepInEx5.Mono.zip)
+[![Unity Explorer download](../docs/files/initial-setup/unityexplorerdownload.png)](https://github.com/sinai-dev/UnityExplorer/releases/latest/download/UnityExplorer.BepInEx5.Mono.zip)
 
 ### Additional tools (optional)
 There are a number of BepInEx plugins and tools that might be useful as you get more experienced with modding. The BepInEx devs have helpfully listed them [here](https://docs.bepinex.dev/articles/dev_guide/dev_tools.html).
