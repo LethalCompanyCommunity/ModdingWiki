@@ -1,6 +1,6 @@
 # Open-source and ethics
 
-## What is open-source
+## What is open-source?
 
 Open-source means that code is publicly available, to be used, edited, and distributed by anyone. It fosters a
 collaborative and public approach to software development. There are a number of important things to take into account
