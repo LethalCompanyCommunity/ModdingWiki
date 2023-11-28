@@ -1,15 +1,20 @@
 # Publishing your mod
 
-There are a number of options for releasing your mods:
+There are a number of options for releasing your mods, such as different modding websites.
 
-## Mod websites
+However, the wider Lethal Company modding community has primarily targeted the [Thunderstore](https://thunderstore.io/c/lethal-company/). Hence, we will focus on publishing to this website.
 
-- https://thunderstore.io/c/lethal-company/ **<-- We recommend using Thunderstore, since it has a good mod manager (R2ModMan)**
-- https://www.moddb.com/games/lethal-company
-- https://www.nexusmods.com
+There are a number of reasons we recommend this:
+- Thunderstore has a mod manager, and is used by the open-source R2ModMan mod manager -- this makes it significantly easier for users to find and install mods
+- If the entire modding community targets the same modding website, that means mods are less scattered in different locations
+- It makes it easier for the modding community to provide help (such as this wiki), compared to supporting multiple different platforms
+
+<!-- ## Mod websites -->
+<!-- - https://www.moddb.com/games/lethal-company -->
+<!-- - https://www.nexusmods.com -->
 <!-- - https://mod.io/g **(Not available currently, since Lethal Company has not been registered there yet)** -->
 
-### Using Thunderstore
+## Using Thunderstore
 
 First, create an account. Once you've created your account, you'll need to set up a "Team". Do this by going to your account settings, which you can find at the top right of the window, over here:
 
@@ -62,10 +67,10 @@ Once you're done with all of this, happy with the way your README [will look](ht
 
 **Note that the zip file has to be created using the individual files, not the folder they're in. E.g. select all of the files listed above, and *then* create a zip.**
 
-### Updating on Thunderstore
+## Updating on Thunderstore
 
 To update a mod on the Thunderstore, you'll need to repeat the upload process. **Make sure you have increased the version in your `manifest.json` file!**
 
-## Discord
+# Discord
 
 - The [Unofficial Lethal Company Community](https://discord.gg/nYcQFEpXfU) has a [#mod-releases](https://discord.com/channels/1169792572382773318/1169851544359927858) channel.
