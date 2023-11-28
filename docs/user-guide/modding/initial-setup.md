@@ -9,7 +9,8 @@ Before you can start modding, you'll need some tools to actually create mods. Lu
 ### .Net SDK
 An SDK (=Software Development Kit) is a system that allows you to turn your code into something that your PC can run. It is used by other tools, and you'll generally not interact with it directly.
 
-You'll want to download and install the latest recommended version from [this](https://dotnet.microsoft.com/en-us/download) page. It'll look something like this:
+You'll want to download and install the latest recommended version from [this page](https://dotnet.microsoft.com/en-us/download). It'll look something like this:
+
 [![image](https://github.com/LethalCompany/LethalCompanyModdingWiki/assets/89798523/6cbfe6ac-bc13-4566-a458-f432061f9393)](https://dotnet.microsoft.com/en-us/download)
 
 
