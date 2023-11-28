@@ -89,6 +89,6 @@ We highly recommend reading through the rest of the [official BepInEx guide](htt
 
 ## Next steps
 
-We recommend reading through our very short guide on [open-source & ethics](), to help foster a healthy modding community.
+We recommend reading through our very short guide on [open-source & ethics](open-source-and-ethics), to help foster a healthy modding community.
 
-Once you've finished a mod, you can [publish it]().
+Once you've finished a mod, you can [publish it](publishing-your-mod).

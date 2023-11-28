@@ -103,4 +103,4 @@ To create an account, simply go to [GitHub's home page](https://github.com/) and
 
 ## Next steps
 
-Now that you've set up everything, you'll want to proceed to the **[starting a mod]()** article!
+Now that you've set up everything, you'll want to proceed to the **[starting a mod](starting-a-mod)** article!
