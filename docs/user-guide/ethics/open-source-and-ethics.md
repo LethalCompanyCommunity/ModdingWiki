@@ -29,7 +29,7 @@ We recommend going with one of the following two licenses for mods:
   this license as well. This means your work, and any derivative work, will remain open-source. It means people can't
   grab your work and create a version which has no public code, and it means the community will forever be able to build
   upon your work and keep your mod alive, even if you lose interest in it.
-- [MIT License](https://choosealicense.com/licenses/mit/) -- this is a more extreme version of the GNU General Public
+- [MIT License](https://choosealicense.com/licenses/mit/) -- this is a more permissive version of the GNU General Public
   License. It *also* allows users to create *closed-source* versions of your mod. This means a user is not required to
   share their updated code publicly. They must, however, still retain the original license's copyright notice readily
   available.
