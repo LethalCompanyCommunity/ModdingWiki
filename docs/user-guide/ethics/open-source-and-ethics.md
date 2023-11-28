@@ -37,9 +37,11 @@ We recommend going with one of the following two licenses for mods:
 ### Healthy collaboration
 
 A modding community thrives when users help each other out. Keeping your mods open-source means current (and future)
-modders can learn from your current work, and perhaps even keep your mods updated if you ever leave the community. It
-is, however, important to be ethical about this. We understand a modding community can get competitive. Please, refrain
-from taking code and claiming it as your own - always properly give credit where credit is due. Likewise, when other
-users help you by fixing bugs, and want to submit a pull request, please accept that, rather than taking the fix and
-implementing it yourself - this gives them some credit for the fix, and fosters a community where people aren't afraid
-to help out.
+modders can learn from your current work, and perhaps even keep your mods updated if you ever leave the community.
+
+It is, however, important to be ethical about this. We understand a modding community can get competitive. Please,
+refrain from taking code and claiming it as your own - always properly give credit where credit is due.
+
+Likewise, when other users help you by fixing bugs, and want to submit a pull request, please accept that, rather
+than taking the fix and implementing it yourself - this gives them some credit for the fix, and fosters a community
+where people aren't afraid to help out.
