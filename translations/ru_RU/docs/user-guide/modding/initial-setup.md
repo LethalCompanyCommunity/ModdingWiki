@@ -12,7 +12,7 @@ An SDK (=Software Development Kit) is a system that allows you to turn your code
 
 You'll want to download and install the latest recommended version from [this page](https://dotnet.microsoft.com/en-us/download). It'll look something like this:
 
-[![image](https://github.com/LethalCompany/LethalCompanyModdingWiki/assets/89798523/6cbfe6ac-bc13-4566-a458-f432061f9393)](https://dotnet.microsoft.com/en-us/download)
+[![.Net SDK download](../docs/files/initial-setup/netsdkdownload.png)](https://dotnet.microsoft.com/en-us/download)
 
 ### IDE
 
@@ -81,7 +81,7 @@ We recommend one (or all) of three free options:
 
 You will want to download the version compatible with the latest version of BepInEx (5).
 
-[![image](https://github.com/LethalCompany/LethalCompanyModdingWiki/assets/89798523/56027c1a-dfd8-4b99-8756-a496c7dd18ca)](https://github.com/sinai-dev/UnityExplorer/releases/latest/download/UnityExplorer.BepInEx5.Mono.zip)
+[![Unity Explorer download](../docs/files/initial-setup/unityexplorerdownload.png)](https://github.com/sinai-dev/UnityExplorer/releases/latest/download/UnityExplorer.BepInEx5.Mono.zip)
 
 ### Additional tools (optional)
 
@@ -113,4 +113,4 @@ To create an account, simply go to [GitHub's home page](https://github.com/) and
 
 ## Next steps
 
-Now that you've set up everything, you'll want to proceed to the **starting a mod** article!
+Now that you've set up everything, you'll want to proceed to the **[starting a mod](starting-a-mod)** article!
