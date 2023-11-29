@@ -3,7 +3,10 @@
 - **Modding**
 - [Using r2modman](installing-r2modman)
 - **Developers**
-- [Writing Mods](writing-mods)
+- [Initial modding setup](initial-setup)
+- [Starting a mod](starting-a-mod)
+- [Open-source and ethics](open-source-and-ethics)
+- [Publishing your mod](publishing-your-mod)
 - **Extras**
 - [Frequently Asked Questions](faq)
 - **Links**
