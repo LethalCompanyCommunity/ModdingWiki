@@ -34,7 +34,7 @@ Feel free to use these to your advantage, or start from scratch if you think you
 
 ## Page translation order
 
-Ths pages we recommend prioritizing, in order, are as follows:
+The pages we recommend prioritizing, in order, are as follows:
 - The main landing page (introduction.md)
 - The sidebar (sidebar.md)
 - Windows modding tutorial (installing-r2modman.md)
@@ -45,6 +45,17 @@ Ths pages we recommend prioritizing, in order, are as follows:
 
 ## Questions and new languages
 
-If you have any questions about translation or would like a new language added, feel free to:
+If you have any questions about translation or would like a new language added to Crowdin, feel free to:
 - [Create a discussion on Crowdin](https://crowdin.com/project/lethal-company-modding-wiki/discussions)
 - [Make a GitHub issue](https://github.com/LethalCompany/ModdingWiki/issues)
+
+
+### Enabling a translation
+Once a translation is moderately complete, it needs to actually be added to the wiki so people can use it.
+
+If a translation you're working on is moderately complete, contact the wiki maintainers through the above methods to get it added.
+
+Not every single page needs to be finished, but you should ideally have translated at least:
+- introduction.md
+- sidebar.md
+- any pages related to *installing* mods
