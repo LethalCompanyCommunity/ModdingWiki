@@ -1,25 +1,25 @@
-# About This Guide
+# Erről Az Útmutatóról
 
 ***
 
-This guide is mainly written by [Max](https://github.com/MaxWasUnavailable) & [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+Ez az útmutató főképp [Max](https://github.com/MaxWasUnavailable) és [Bobbie](https://twitter.com/VRBobbie) által íródott, támogatással és tanácsadással különböző más íróktól és wikiktől. Az útmutató az inspirációt a [bsmg.wiki](https://bsmg.wiki) által kapta.
 
-> ## Credits
+> ## Kreditek
 >
-> ### Writers
+> ### Írók
 >
-> **Bobbie, Max, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)**
+> **Bobbie, Max, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Személyzet (Az eredeti útmutató készítői)**
 >
 > ***
 >
-> Thank you to [everyone else](https://github.com/LethalCompany/ModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
+> Köszönjük [mindenki másnak](https://github.com/LethalCompany/ModdingWiki/graphs/contributors), akik hozzájárultak az útmutatóhoz GitHub-on.
 
-> ## Developer / Tool Credits
+> ## Fejlesztők / Eszközök Készítői
 >
-> - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
+> - **BepInEx Közreműködők** a [BepInEx](https://github.com/BepInEx/BepInEx)-hez.
 
-?> **Open Source and Privacy**\
-[This guide is open source on GitHub](https://github.com/legoandmars/LethalCompanyModdingWiki). It is licensed under the [ISC License](https://github.com/legoandmars/LethalCompanyModdingWiki/blob/master/LICENSE.md).
+?> **Nyílt forráskód és Adatvédelem**\
+[Ez az útmutató nyílt forráskódú a GitHub](https://github.com/legoandmars/LethalCompanyModdingWiki)-on. Engedélyeztetve van az [ISC License](https://github.com/legoandmars/LethalCompanyModdingWiki/blob/master/LICENSE.md) által.
 
-?> **Disclaimer:**
-This product is an unofficial fanwork, not affiliated with Lethal Company or Zeekerss, and is not endorsed or otherwise sponsored by Zeekerss or any developer/publisher of Lethal Company.
+?> **Figyelem:**
+Ez a termék egy nem hivatalos rajongói alkotás, nem kapcsolódik a Lethal Company-hez vagy Zeekerss-hez, és nincs jóváhagyva vagy más módon támogatva Zeekerss vagy a Lethal Company bármely fejlesztője/kiadója által.
