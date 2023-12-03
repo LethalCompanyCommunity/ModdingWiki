@@ -1,8 +1,8 @@
-# About This Guide
+# Sobre este Guia
 
 ***
 
-This guide is mainly written by [Max](https://github.com/MaxWasUnavailable) & [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+Este guia foi escrito principalmente por \[Max] (https\://github.com/MaxWasUnavailable) e \[Bobbie] (https\://twitter.com/VRBobbie), com ajuda e conselhos de vários outros escritores e wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
 
 > ## Credits
 >
