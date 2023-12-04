@@ -1,14 +1,14 @@
-# Publishing your mod
+# Опубликуйте свой мод
 
-There are a number of options for releasing your mods, such as different modding websites.
+Существует несколько вариантов для публикации вашего мода, например, на различных сайтах, посвященных моддингу.
 
-However, the wider Lethal Company modding community has primarily targeted the [Thunderstore](https://thunderstore.io/c/lethal-company/). Hence, we will focus on publishing to this website.
+Однако большинство моддеров Lethal Company используют в первую очередь [Thunderstore](https://thunderstore.io/c/lethal-company/). Поэтому мы сосредоточимся на нем.
 
-There are a number of reasons we recommend this:
+Есть ряд причин, по которым мы рекомендуем использовать его:
 
-- Thunderstore has a mod manager, and is used by the open-source R2ModMan mod manager -- this makes it significantly easier for users to find and install mods
-- If the entire modding community targets the same modding website, that means mods are less scattered in different locations
-- It makes it easier for the modding community to provide help (such as this wiki), compared to supporting multiple different platforms
+- У Thunderstore есть свой лаунчер для модов, использующий open-source лаунчер R2ModMan -- он позволяет пользователям устанавливать моды буквально в один клик
+- Когда сообщество моддеров нацелено на один сайт это делает поиск модов легче и малозатратнее по времени
+- Сообществу моддеров становится проще предоставлять помощь (как эта вики) по сравнению с поддержкой разных платформ
 
 <!-- ## Mod websites -->
 
@@ -18,40 +18,40 @@ There are a number of reasons we recommend this:
 
 <!-- - https://mod.io/g **(Not available currently, since Lethal Company has not been registered there yet)** -->
 
-## Using Thunderstore
+## Использование Thunderstore
 
-First, create an account. Once you've created your account, you'll need to set up a "Team". Do this by going to your account settings, which you can find at the top right of the window, over here:
+Сначала создайте аккаунт. Когда ваш аккаунт будет создан, вам нужно будет настроить "Team". Чтобы это сделать направляйтесь в настройки аккаунта, находящиеся в правом верхнем углу окна, вот здесь:
 
-![Thunderstore account settings](../docs/files/publishing-your-mod/thunderstoresettings.png)
+![Настройки аккаунта Thunderstore](../docs/files/publishing-your-mod/thunderstoresettings.png)
 
-Then, go to the "Teams" tab, and click on "Create Team":
+Следом, нажмите "Teams", и снова нажмите "Create Team":
 
-![Thunderstore Create Team button](../docs/files/publishing-your-mod/thunderstorecreateteam.png)
+![Кнопка "Create Team" на Thunderstore](../docs/files/publishing-your-mod/thunderstorecreateteam.png)
 
-We recommend using your username as team name, unless you actually have a team and an agreed-upon name for it.
+Мы рекомендуем использовать ник как наименование команды, если вы не имеете команды.
 
-To upload a mod for Lethal Company, you'll first want to go to the [Lethal Company category](https://thunderstore.io/c/lethal-company/).
+Чтобы загрузить мод для Lethal Company, вам сначала нужно переместиться в категорию [Lethal Company](https://thunderstore.io/c/lethal-company/).
 
-All you need to do here is press the "Upload" button, which you can find at the top left:
+Всё что вам нужно здесь это нажать "Upload", в верхнем левом углу экрана:
 
-![Thunderstore Upload button](../docs/files/publishing-your-mod/thunderstoreupload.png)
+![Кнопка "Upload" на Thunderstore](../docs/files/publishing-your-mod/thunderstoreupload.png)
 
-You'll be met with the following page:
+Вы увидите следующее:
 
-![Thunderstore Upload package page](../docs/files/publishing-your-mod/thunderstoreuploadpackage.png)
+![Страница загрузки мода на Thunderstore](../docs/files/publishing-your-mod/thunderstoreuploadpackage.png)
 
-A mod needs to be a specific format to be valid for the Thunderstore. This allows them to present your description, image, and other properties to the users.
+Мод должен быть определенного формата, чтобы быть подходящим для Thunderstore. Это позволит им показать его описание, иконку и другие особенности пользователю.
 
-The documentation on this format can be found [here](https://thunderstore.io/c/lethal-company/create/docs/).
+Документацию для этого формата вы можете найти [здесь](https://thunderstore.io/c/lethal-company/create/docs/).
 
-For those who want a short explanation, however, you'll want to create a folder with the following:
+Однако если вы хотите получить краткое объяснение, то вам нужно создать папку со следующими файлами:
 
-- icon.png (PNG icon for the mod, must be 256x256 resolution)
-- README.md (Readme in markdown syntax to be rendered on the package's page)
-- manifest.json (JSON file with the package's metadata)
-- Your mod file(s) itself (e.g. `MyMod.dll`)
+- icon.png (PNG иконка для мода, должна быть 256x256 разрешения)
+- README.md (Readme файл с расширением .md для отображения на странице)
+- manifest.json (файл JSON с метадатой)
+- Сам мод (типа 'MyMod.dll')
 
-Below is an example of a manifest:
+Ниже приведен пример manifest.json:
 
 ```json
 {
