@@ -1,14 +1,13 @@
-# Lethal Company Modding Guide {docsify-ignore-all}
+# Гайд по моддингу Lethal Company {docsify-ignore-all}
 
 ***
 
-Lethal Company is a co-op horror game by Zeekerss, [available on Steam](https://store.steampowered.com/app/1966720/Lethal_Company/).
+Lethal Company это кооперативная хоррор игра от Zeekerss, [доступная в Steam](https://store.steampowered.com/app/1966720/Lethal_Company/).
 
-This wiki serves as a source of documentation and tutorials for various unofficial mods created to enhance your experience.
+Эта вики является источником документаций и руководств для разных неофициальных модов, созданных для улучшения игрового опыта.
 
-?> **Discord Help**
-For live support with this guide please visit us in **#mod-support** on the [Unofficial Lethal Company Community](https://discord.gg/nYcQFEpXfU) and ask for assistance. Please read our [Frequently Asked Questions](faq) page beforehand to see if your question has already been answered.
+?> **В Discord** на помощь вам может прийти поддержка в канале **#mod-support** на сервере [Unofficial Lethal Company Community](https://discord.gg/nYcQFEpXfU). Но перед этим, настоятельно просим, прочитать [Часто Задаваемые Вопросы](faq) вдруг на ваш вопрос есть ответ там.
 
-> ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9\&size=18.72)](pc-guide)&nbsp;[**Installing Mods**](installing-r2modman)
+> ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9\&size=18.72)](pc-guide)&nbsp;[**Установка Модификаций**](installing-r2modman)
 
 <!-- > ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Creating Mods**](pc-guide) -->
