@@ -1,31 +1,32 @@
-# Translating the wiki
+# Переводим Вики
 
-In an effort to make modding as widely accessible as possible, this wiki does translation through crowdin: https\://crwd.in/lethal-company-modding-wiki
+Чтобы сделать моддинг как можно более доступным, эта вики переводится с помощью Crowdin: https\://crwd.in/lethal-company-modding-wiki
 
-!> **Please don't submit automatic translations.** Translations only using ChatGPT, Google Translate, or similar machine translation will be rejected.
+!> **Просим вас! Не отправляйте автоматический перевод.**
+Переводы основанные только на ChatGPT, Google Переводчике, или других машинных переводчиках будут отклонены.
 
-## Tips
+## Советы
 
-?> **We don't recommend using Crowdin's "translate all" feature**, just click a file you want to translate and do that for each file. You get more context this way.
+?> **Мы не рекомендуем использовать функцию Crowdin "перевести все"**, просто нажмите на файл, что хотите перевести и делайте так с каждым файлом. Так вы сможете получить больше конкретики.
 
-The first time you launch the editor you will see Crowdin's own tips, please read them!
+В первый запуск вы увидите подсказки Crowdin, пожалуйста прочитайте их!
 
-If the site/program does not have native translation support, please _do not translate the names of English buttons/menus_. The following programs/sites are not currently translated:
+Если сайт/программа не имеют перевода с английского, то, пожалуйста, _не переводите имена кнопок/меню_. Следующие программы/сайты в настоящий момент не перевели на другие языки:
 
 - r2modman
 - Thunderstore
 
-If you're not sure if a site/program has native translation, try it yourself or [start a discussion](#Questions-and-new-languages)
+Если вы не уверены есть у программы/сайта перевод на другой язык кроме оригинала, то попробуйте узнать сами или [начните обсуждение](#Questions-and-new-languages)
 
-### Links and parameters
+### Ссылки и параметры
 
-Anything you see highlighted (or any other weird-looking text) are usually links or parameters.
+Все, что вы видите подсвеченным (или любой другой странно выглядящей текст), обычно является ссылкой или параметрами.
 
-Links are usually `<0>`, `<1>`, etc, and there's an opening and closing link. You **must** include anything that's highlighted in your translation. Example:
+Ссылки обычно выглядят как `<0>`, `<1>` и т.п., и у них всегда есть открывающая и закрывающая стрелка. Вы **должны** включать все, что выделено в ваш перевод. К примеру:
 
-![Example of proper translation, with links and formatting the same as the source material](../docs/files/translating-the-wiki/dutchformattingexample.png)
+![Пример правильного перевода со ссылками и форматированием, идентичным исходному.](../docs/files/translating-the-wiki/dutchformattingexample.png)
 
-### Previous translations
+### Предшествующие переводы
 
 Because this wiki is partially based on a [previously translated wiki](https://trombone.wiki), sometimes crowdin will show you similar existing translations.
 
