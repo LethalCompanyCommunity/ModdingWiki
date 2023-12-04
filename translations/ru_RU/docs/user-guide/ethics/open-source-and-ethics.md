@@ -1,8 +1,8 @@
-# Open-source and ethics
+# Этика и Открытый код
 
-## What is open-source?
+## Что такое Открытый код?
 
-Open-source means that code is publicly available, to be used, edited, and distributed by anyone. It fosters a
+Открытый код означает что код лежит в открытом доступе и может использоваться, редактироваться и распространяться кем угодно. It fosters a
 collaborative and public approach to software development. There are a number of important things to take into account
 when developing open-source software, however.
 
