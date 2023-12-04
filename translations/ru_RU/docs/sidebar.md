@@ -1,16 +1,16 @@
-- **User Guide**
-- [Introduction](./)
-- **Modding**
-- [Using r2modman](installing-r2modman)
-- **Developers**
-- [Initial modding setup](initial-setup)
-- [Starting a mod](starting-a-mod)
-- [Open-source and ethics](open-source-and-ethics)
-- [Publishing your mod](publishing-your-mod)
-- **Extras**
-- [Frequently Asked Questions](faq)
-- **Links**
+- **Руководство Пользователя**
+- [Введение](./)
+- **Модинг**
+- [Используем r2modman](installing-r2modman)
+- **Разработчикам**
+- [Подготовка к созданию мода](initial-setup)
+- [Создание модификации](starting-a-mod)
+- [Open-source и этика](open-source-and-ethics)
+- [Опубликуйте свой мод](publishing-your-mod)
+- **Дополнительно**
+- [Часто Задаваемые Вопросы](faq)
+- **Ссылки**
 - [![Discord](https://icongr.am/simple/discord.svg?colored\&size=16)Discord](https://discord.gg/nYcQFEpXfU)
 - [![GitHub](https://icongr.am/simple/github.svg?color=808080\&size=16)GitHub](https://github.com/LethalCompany/ModdingWiki)
-- [Translate](translating-the-wiki)
-- [About](about)
+- [Перевод](translating-the-wiki)
+- [О нас](about)
