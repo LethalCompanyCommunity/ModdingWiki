@@ -1,8 +1,8 @@
-# About This Guide
+# О Руководстве
 
 ***
 
-This guide is mainly written by [Max](https://github.com/MaxWasUnavailable) & [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+Это руководство в основном написано [Max](https://github.com/MaxWasUnavailable) и [Bobbie](https://twitter.com/vrbobbie), с помощью других авторов и источников. Руководство было вдохновлено [bsmg.wiki](https://bsmg.wiki).
 
 > ## Credits
 >
