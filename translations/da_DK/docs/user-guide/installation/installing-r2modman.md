@@ -1,59 +1,59 @@
-# Using r2modman
+# Brug af r2modman
 
 ***
 
-!> For Linux and Steam Deck users, please follow the [Linux instructions](installing-r2modman-linux).
+!> For Linux og Steam Deck brugere, følg venligst [Linux instruktionerne](installing-r2modman-linux).
 
-This guide will run you through installing and using [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) to install and play with mods that are available through [Thunderstore](https://thunderstore.io/c/lethal-company/). Using a mod manager like r2modman allows you to update and play with the latest versions of the mods with ease as the manager does all of that for you!
+Denne guide vil føre dig i gennem installation og benyttelse af [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) for at installere og spille med modifikationer der er tilgængelige gennem [Thunderstore](https://thunderstore.io/c/lethal-company/). Ved brug af en modifikations manager som r2modman tillader det dig at opdatere og spille med de nyeste version af modifikation uden bøvl eftersom at manageren gør alt dette for dig!
 
-## Installing r2modman
+## Installation af r2modman
 
-?> The latest version of r2modman is **%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}**.
+?> Den nyeste version af r2modman er **%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}**.
 
-First things first, download [**r2modman from its GitHub page**](https://github.com/ebkr/r2modmanPlus/releases/latest/).
+Til at starte med skal du downloade [**r2modman fra dets GitHub side**](https://github.com/ebkr/r2modmanPlus/releases/latest/).
 
-For **Windows**, you would want to get [`r2modman-Setup-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}.exe`](https://github.com/ebkr/r2modmanPlus/releases/download/v%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b:raw}/r2modman-Setup-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b:raw}.exe) or [`r2modman-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}.exe`](https://github.com/ebkr/r2modmanPlus/releases/download/v%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b:raw}/r2modman-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b:raw}.exe). The former installs the mod manager to your system, while the latter simply runs r2modman without any sort of installation. Simply run the installer or the program in order to open r2modman.
+For **Windows** brugere, vil du gerne have [`r2modman-Setup-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}.exe`](https://github.com/ebkr/r2modmanPlus/releases/download/v%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b:raw}/r2modman-Setup-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b:raw}.exe) eller [`r2modman-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}.exe`](https://github.com/ebkr/r2modmanPlus/releases/download/v%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b:raw}/r2modman-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b:raw}.exe). Den første installere modifikations manageren til dit system, mens den sidste kører r2modman uden nogen form for installation. Du skal bare benytte dig af installatøren eller programmet for at åbne r2modman.
 
-In order to download, simply click the links as shown below and run the program you just downloaded.
+For at downloade, skal du klikke på linksne der er vist her under og kører det program du lige har downloadet.
 
 ![r2modman GitHub Download (v3.1.39)](../docs/files/r2modman-install/r2modmandownload.png)
 
-## Installing Mods on r2modman
+## Installation af Modifikationer med r2modman
 
-Once you have succesfully installed r2modman, you can finally install mods.
+Så snart du har installeret r2modman succesfuldt, kan du endelig installere modifikationer.
 
-1. Launch **r2modman**. You will be greeted with the following screen.
+1. Kør **r2modman**. Du vil blive mødt med den følgende skærm.
 
 ![r2modman Game Selection Screen](../docs/files/r2modman-install/gameselection.png)
 
-2. Select **"Lethal Company"**, and click **"Select Game"**.
+2. Vælg **"Lethal Company"**, og klik **"Select Game"**.
 
-?> If you do not see it, **use the search bar or scroll down** to find "Lethal Company".
+?> Hvis du ikke kan se spillet, **brug søgefeltet eller scroll ned** for at finde "Lethal Company".
 
 ![Select Lethal Company](../docs/files/r2modman-install/selectlc.png)
 
-3. It will ask you to choose which profile to use. For this guide's purposes, we will stick with the Default profile. Click **"Select profile"**.
+3. Den vil spørge dig om at vælge hvilken profil du vil bruge. For denne guides formål, vil vi holde os til Default profilen. Klik **"Select profile"**.
 
 ![Select Default Profile](../docs/files/r2modman-install/profileselect.png)
 
-4. This will lead us to this screen.
+4. Dette vil føre os til denne skærm.
 
 ![First Time Opening Installed](../docs/files/r2modman-install/firsttimeinstall.png)
 
-5. Click **"Online"** on the sidebar. This will bring up a list of all available to download mods on [Thunderstore](https://thunderstore.io/c/lethal-company/).
+5. Klik **"Online"** ude i sidelinjen. Dette vil vise en liste over alle tilgængelige modifikationer du kan downloade på [Thunderstore](https://thunderstore.io/c/lethal-company/).
 
 ![Clicking Online](../docs/files/r2modman-install/selectonline.png)
 
-6. From here, you may choose which mods you would like to download and install. Click on a mod you'd like, and then click on Download.
+6. Herfra kan du selv vælge, hvilke modifikationer du kunne tænke dig at downloade og installere. Klik på en modifikation du kan lide, klik derefter Download.
 
-?> If you want to hide modpacks, click `Filter Categories` in the top right, then select the `Mods` category.
+?> Hvis du gerne vil skjule modifikationspakker, klik `Filter Categories` øverst til højre, vælg derefter `Mods` kategorien.
 
 ![Downloading a mod](../docs/files/r2modman-install/download.png)
 
-7. It will ask you which version to use. Download the latest version, which is already selected for you by default. Click **"Download with dependencies"** or **"Download"**.
+7. Den vil spørge dig ind til hvilken version du gerne vil benytte. Download den nyeste version, der allerede er valgt for dig som standard. Klik **"Download with dependencies"** eller **"Download"**.
 
-8. Once you are done installing your mods, you may click on "Start modded" on the sidebar. This will launch the game with your mods.
+8. Så snart du er færdig med at installere dine modifikationer, kan du klikke "Start modded" ude i sidelinjen. Dette vil starte dit spil med dine modifikationer.
 
 ![Start Lethal Company Modded](../docs/files/r2modman-install/startmodded.png)
 
-That's it! You have just successfully modded Lethal Company!
+Det var det! Du har nu succesfuldt modificeret Lethal Company!
