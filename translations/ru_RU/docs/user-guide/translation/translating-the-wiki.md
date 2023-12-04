@@ -44,23 +44,23 @@
 - Гайд по установке модов на Linux (installing-r2modman-linux.md)
 - Часто Задаваемые Вопросы (faq.md)
 - Информация о Вики (about.md)
-- Everything else (mod development tutorials, this translation page, etc)
+- Все остальное (разработка мода, эта страница, и т.д.)
 
-## Questions and new languages
+## Вопросы и новые языки
 
-If you have any questions about translation or would like a new language added to Crowdin, feel free to:
+Если у вас есть вопросы по переводу или вы хотите добавить новый язык в Crowdin, то:
 
-- [Create a discussion on Crowdin](https://crowdin.com/project/lethal-company-modding-wiki/discussions)
-- [Make a GitHub issue](https://github.com/LethalCompany/ModdingWiki/issues)
+- [Создайте обсуждение на Crowdin](https://crowdin.com/project/lethal-company-modding-wiki/discussions)
+- [Отправьте сообщение об ошибке на GitHub](https://github.com/LethalCompany/ModdingWiki/issues)
 
-### Enabling a translation
+### Включение перевода
 
-Once a translation is moderately complete, it needs to actually be added to the wiki so people can use it.
+Как только перевод будет более-менее завершен, его необходимо добавить в вики, чтобы люди могли его использовать.
 
-If a translation you're working on is moderately complete, contact the wiki maintainers through the above methods to get it added.
+Если перевод над которым вы работаете более-менее готов, свяжитесь с создателями этой Вики, указанными выше способами чтобы его добавили.
 
-Not every single page needs to be finished, but you should ideally have translated at least:
+Не каждую страницу нужно полностью переводить, но в идеале вам следует перевести как минимум:
 
 - introduction.md
 - sidebar.md
-- any pages related to _installing_ mods
+- любые страницы, связанные с _установкой_ модов
