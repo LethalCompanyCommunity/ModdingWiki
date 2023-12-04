@@ -1,14 +1,14 @@
-# Lethal Company Modding Guide {docsify-ignore-all}
+# Lethal Company Modifikations Guide {docsify-ignore-all}
 
 ***
 
-Lethal Company is a co-op horror game by Zeekerss, [available on Steam](https://store.steampowered.com/app/1966720/Lethal_Company/).
+Lethal Company er et co-op gyser spil lavet af Zeekerss, [tilgængeligt på Steam](https://store.steampowered.com/app/1966720/Lethal_Company/).
 
-This wiki serves as a source of documentation and tutorials for various unofficial mods created to enhance your experience.
+Denne wiki er til for at kunne benyttes som en kilde til dokumentation og vejledninger til forskellige uofficielle modifikationer, der er til for at forbedre din opevelse.
 
-?> **Discord Help**
-For live support with this guide please visit us in **#mod-support** on the [Unofficial Lethal Company Community](https://discord.gg/nYcQFEpXfU) and ask for assistance. Please read our [Frequently Asked Questions](faq) page beforehand to see if your question has already been answered.
+?> **Discord Hjælp**
+For live support med denne guide kan du besøge os i **#mod-support** på den [Uofficielle Lethal Company Fællesskabs Discord](https://discord.gg/nYcQFEpXfU) og spørge efter assistance. Læs venligst vores [Ofte Stillede Spørgsmål](faq) side inden for at se om dit spørgsmål allerede er blevet besvaret.
 
-> ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9\&size=18.72)](pc-guide)&nbsp;[**Installing Mods**](installing-r2modman)
+> ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9\&size=18.72)](pc-guide)&nbsp;[**Installation af Modifikationer**](installing-r2modman)
 
 <!-- > ### [![Steam Logo](https://icongr.am/simple/steam.svg?color=A9A9A9&size=18.72)](pc-guide)&nbsp;[**Creating Mods**](pc-guide) -->
