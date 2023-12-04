@@ -23,12 +23,12 @@ På Linux er r2modman tilgængeligt i forskellige pakke formater, alt afhængigt
 
 - `deb` for Debian og Ubuntu-baserede distroer
 - `pacman` for Arch-baserede distroer
-- `rpm` for distros using the RPM Package Manager (RHEL, CentOS, Fedora, openSUSE, etc.)
-- `AppImage`, a single executable file that can run on most distros - **useful for Steam Deck**
+- `rpm` for distroer der benytter sig af RPM Pakke Manageren (RHEL, CentOS, Fedora, openSUSE, etc.)
+- `AppImage`, en enkelt eksekverbar fil du kan køre på de fleste distroer - **særligt brugbar til Steam Deck**
 
-Visit the [**r2modman GitHub releases page**](https://github.com/ebkr/r2modmanPlus/releases/latest/) and download the appropriate package file for your distro and install it according to your package manager's documentation.
+Besøg [**r2modman GitHub udgivelses oversigten**](https://github.com/ebkr/r2modmanPlus/releases/latest/) og download den passende pakke fil til din distro og installer den ifølge din pakke manager's dokumentation.
 
-**For Steam Deck users,** download the `.AppImage` file and keep it in a safe location such as your Desktop or your Documents folder. You will also need to mark the file as executable. To do this, right-click the `.AppImage` file and select `Properties`. Switch to the **Permissions** tab and check the box marked `Is Executable` and click OK.
+**For Steam Deck brugere,** download `.AppImage` filen og opbevar den et sikkert sted så som dit Skrivebord eller din Dokument folder. Du bliver også nødt til at markere filen som en eksekverbar fil. For at gøre dette, højre-klik på `.AppImage`filen og vælg `Properties`. Skift til **Tilladelses** siden og tjek boksen markeret med `Is Executable` af og klik OK.
 
 ![Steam Deck Permissions Window](../docs/files/r2modman-linux/appimageproperties.png)
 
