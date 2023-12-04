@@ -1,25 +1,25 @@
-# About This Guide
+# Om Denne Guide
 
 ***
 
-This guide is mainly written by [Max](https://github.com/MaxWasUnavailable) & [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+Denne guide er primært skrevet af [Max](https://github.com/MaxWasUnavailable) og [Bobbie](https://twitter.com/VRBobbie), med assistance og vejledning fra flere andre skribenter og wikier. Denne guide blev inspireret af [bsmg.wiki](https://bsmg.wiki).
 
-> ## Credits
+> ## Medvirkende
 >
-> ### Writers
+> ### Forfattere
 >
-> **Bobbie, Max, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)**
+> **Bobbie, Max, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (de originale kreatører)**
 >
 > ***
 >
-> Thank you to [everyone else](https://github.com/LethalCompany/ModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
+> Tak til [alle de andre deltagende](https://github.com/LethalCompany/ModdingWiki/graphs/contributors) der har bidraget til guiden på GitHub.
 
-> ## Developer / Tool Credits
+> ## Udvikler / Redskabs Medvirkende
 >
-> - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
+> - **BepInEx Bidragsyderne** for [BepInEx](https://github.com/BepInEx/BepInEx).
 
-?> **Open Source and Privacy**\
-[This guide is open source on GitHub](https://github.com/legoandmars/LethalCompanyModdingWiki). It is licensed under the [ISC License](https://github.com/legoandmars/LethalCompanyModdingWiki/blob/master/LICENSE.md).
+?> **Open Source and Privatliv**\
+[Denne guide er open source på GitHub](https://github.com/legoandmars/LethalCompanyModdingWiki). Den benytter sig af [ISC Licensen](https://github.com/legoandmars/LethalCompanyModdingWiki/blob/master/LICENSE.md).
 
-?> **Disclaimer:**
-This product is an unofficial fanwork, not affiliated with Lethal Company or Zeekerss, and is not endorsed or otherwise sponsored by Zeekerss or any developer/publisher of Lethal Company.
+?> **OBS:**
+Dette produkt er en uofficiel fankreation, og er ikke en del af et indgået samarbejde med Lethal Company eller Zeekerss, og er ikke godkendt eller på andenvis betalt eller sponsoreret af Zeekerss eller nogen anden udvikler/udgiver af Lethal Company.
