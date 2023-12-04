@@ -1,4 +1,4 @@
-# Опубликуйте свой мод
+# Публикуем свой мод
 
 Существует несколько вариантов для публикации вашего мода, например, на различных сайтах, посвященных моддингу.
 
@@ -18,7 +18,7 @@
 
 <!-- - https://mod.io/g **(Not available currently, since Lethal Company has not been registered there yet)** -->
 
-## Использование Thunderstore
+## Публикуем на Thunderstore
 
 Сначала создайте аккаунт. Когда ваш аккаунт будет создан, вам нужно будет настроить "Team". Чтобы это сделать направляйтесь в настройки аккаунта, находящиеся в правом верхнем углу окна, вот здесь:
 
@@ -58,33 +58,33 @@
     "name": "MoonOfTheDay",
     "version_number": "1.0.3",
     "website_url": "https://github.com/MaxWasUnavailable/MoonOfTheDay",
-    "description": "This is a description for a mod. 250 characters max",
+    "description": "Описание мода. Максимум 250 символов.",
     "dependencies": [
         "LethalAPI-1.0.0"
     ]
 }
 ```
 
-Note that you can leave dependencies empty if your mod does not have any:
+Обратите внимание, что вы можете оставить зависимости пустыми, если в вашем моде их нет:
 
 ```json
     "dependencies": []
 ```
 
-!> **Note that if you use BepInEx, you will have to add `BepInEx-BepInExPack-5.4.2100` to your dependencies:**
+!> **Обратите внимание, что если вы используете BepInEx, то вам нужно будет добавить `BepInEx-BepInExPack-5.4.2100` к вашим зависимостям:**
 
 ```json
     "dependencies": ["BepInEx-BepInExPack-5.4.2100"]
 ```
 
-Once you're done with all of this, happy with the way your README [will look](https://thunderstore.io/tools/markdown-preview/), and your manifest [is valid](https://thunderstore.io/tools/manifest-v1-validator/), you simply need to create a zip file and upload the mod!
+Как только вы закончите со всем этим, и будете довольны тем, как ваш README файл \[будет выглядеть] (https\://thunderstore.io/tools/markdown-preview/), и ваш манифест \[будет проверен] (https\://thunderstore.io/tools/manifest-v1-validator/), вам останется только создать zip-архив и загрузить мод!
 
-**Note that the zip file has to be created using the individual files, not the folder they're in. E.g. select all of the files listed above, and _then_ create a zip.**
+**Обратите внимание, что в zip-архив нужно засунуть файлы, а не папку с файлами. Выберите все файлы а и потом уже создавайте zip архив.**
 
-## Updating on Thunderstore
+## Обновляем на Thunderstore
 
-To update a mod on the Thunderstore, you'll need to repeat the upload process. **Make sure you have increased the version in your `manifest.json` file!**
+Чтобы обновить мод на Thunderstore вам необходимо повторить процесс публикации. **Убедитесь что вы изменили версию мода в файле `manifest.json`!**
 
 # Discord
 
-- The [Unofficial Lethal Company Community](https://discord.gg/nYcQFEpXfU) has a [#mod-releases](https://discord.com/channels/1169792572382773318/1169851544359927858) channel.
+- На сервере [Unofficial Lethal Company Community](https://discord.gg/nYcQFEpXfU) есть канал [#mod-releases](https://discord.com/channels/1169792572382773318/1169851544359927858).
