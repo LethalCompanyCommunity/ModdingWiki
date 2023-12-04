@@ -8,32 +8,25 @@
 
 Репозиторий на GitHub _без_ лицензии **не является** открытым так как
 
-> без лицензии автоматически применяются стандартные авторские права а это значит что никто не может воспроизводить, использовать или создавать на его основе другие работы.
+> без лицензии автоматически применяются стандартные авторские права, а это значит что никто не может воспроизводить, использовать или создавать на его основе другие работы.
 >
 > _источник: https\://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license_
 
-Это значит, что если вы действительно хотите оставить код своих модов открытым, то вам придется выбрать правильную лицензию.
-This might sound scary, but it really doesn't have to be. GitHub created a very simple and nice website to find a
-license that fits your project: https\://choosealicense.com/
+Это значит, что если вы хотите оставить код своих модов открытым, то вам придется выбрать правильную лицензию.
+Это может звучать безумно, но на самом деле это не так. GitHub создали очень простой и удобный сайт, чтобы найти подходящую лицензию для вашего проекта:
+https\://choosealicense.com/
 
-!> **Obligatory "we are not lawyers". Our interpretation of these licenses is primarily based off of the `choosealicense`
-website, as well as personal experience.**
+!> **Но "мы не юристы". Наша интерпретация этих лицензий в первую очередь основана на сайте 'choosealicense', а также на личном опыте.**
 
-We recommend going with one of the following two licenses for mods:
+Мы рекомендуем выбрать одну из следующих лицензий для модов:
 
-- [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/) -- the main benefit of this license is
-  that anyone using your mod's code (be it as a spin-off version, updated version, or in other games) will _have_ to use
-  this license as well. This means your work, and any derivative work, will remain open-source. It means people can't
-  grab your work and create a version which has no public code, and it means the community will forever be able to build
-  upon your work and keep your mod alive, even if you lose interest in it.
-- [MIT License](https://choosealicense.com/licenses/mit/) -- this is a more permissive version of the GNU General Public
-  License. It _also_ allows users to create _closed-source_ versions of your mod. This means a user is not required to
-  share their updated code publicly. They must, however, still retain the original license's copyright notice readily
-  available.
+- [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/) --
+  Основное преимущество этой лицензии в том что любой, кто использует код вашего мода (будь то спинофф, обновление или для других игр), _должен_ будет использовать эту же лицензию. Это значит, что ваш код и любые производные работы будут являться открытыми. Это значит что никто не сможет взять ваш код и сделать его непубличным, и сообщество в случае чего сможет поддерживать мод, например если вы потеряете интерес.
+- [MIT License](https://choosealicense.com/licenses/mit/) -- это более снисходительная версия GNU General Public License. Она _к тому же_ позволяет создавать _проекты с закрытым кодом_ на основе вашего мода. Это значит что разработчику необязательно делиться своим изменённым кодом с публикой. Однако они все равно обязаны оставить лицензию открытой.
 
-### Healthy collaboration
+### Здоровое сотрудничество
 
-A modding community thrives when users help each other out. Keeping your mods open-source means current (and future)
+Сообщество моддеров процветает когда мы помогаем друг другу. Keeping your mods open-source means current (and future)
 modders can learn from your current work, and perhaps even keep your mods updated if you ever leave the community.
 
 It is, however, important to be ethical about this. We understand a modding community can get competitive. Please,
