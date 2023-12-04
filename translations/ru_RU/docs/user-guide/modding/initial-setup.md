@@ -1,47 +1,47 @@
-# Initial Setup
+# Первоначальная настройка
 
-## Setting up your development environment
+## Настройка среды разработки
 
-Before you can start modding, you'll need some tools to actually create mods. Luckily, all of these are **available for free**.
+Перед тем как начинать вам нужно установить некоторые инструменты для создания модов. К счастью, все они **доступны бесплатно**.
 
-> ! This guide is roughly based on some parts of the [BepInEx setup guide](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/1_setup.html), which is another great resource for learning how to mod
+> ! Это руководство в общих чертах основано на некоторых частях [гайда по установке BepInEx](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/1_setup.html), что является еще одним отличным ресурсом для изучения
 
 ### .Net SDK
 
-An SDK (=Software Development Kit) is a system that allows you to turn your code into something that your PC can run. It is used by other tools, and you'll generally not interact with it directly.
+SDK (=Набор для разработки программного обеспечения) это набор систем позволяющих вам превратить ваш код во что-то что может быть запущено на вашем ПК. Он используется другими инструментами, и вы, как правило, не будете взаимодействовать с ним напрямую.
 
-You'll want to download and install the latest recommended version from [this page](https://dotnet.microsoft.com/en-us/download). It'll look something like this:
+Вам нужно установить последнюю рекомендованную версию с [этого сайта](https://dotnet.microsoft.com/en-us/download). Это выглядит примерно так:
 
-[![.Net SDK download](../docs/files/initial-setup/netsdkdownload.png)](https://dotnet.microsoft.com/en-us/download)
+[![.Net SDK](../docs/files/initial-setup/netsdkdownload.png)](https://dotnet.microsoft.com/en-us/download)
 
 ### IDE
 
-By far the most important tool in a programmer's toolbox is an IDE (=Integrated Development Environment). For now, the definition of an "overengineered text editor" will suffice. Through an IDE, you can edit code far more efficiently, since it offers features such as:
+Безусловно, самым важным инструментом в арсенале программиста является IDE (=Интегрированная среда разработки). На данный момент для нас будет достаточно определения "чрезмерно переработанного текстового редактора". С помощью IDE вы можете редактировать код гораздо эффективнее, поскольку она предлагает такие функции, как:
 
-- Syntax highlighting
-- Compiling
-- Code completion
-- Integrated tools (version control, linting, etc...)
-- Debugging
+- Подсветка синтаксиса
+- Компиляция
+- Автодополнение кода
+- Интегрированные инструменты (Контроль версий, отладка и т.д.)
+- Отладка
 
-You might wonder why some of these are important (or what some of these even are), but that falls outside of the scope of this wiki. Rest assured however that they're essential and will save you a lot of headaches. Do _not_ try and create mods in a simple text editor such as notepad. Technically, you can do this, but there's no reason for it beyond masochism.
+Вы можете задаться вопросом, для чего все они нужны (и что это вообще такое), но это выходит за рамки данной вики. Однако будьте уверены, что все они необходимы и избавят вас от многих проблем. Даже не пытайтесь создавать моды в простом текстовом редакторе, по типу блокнота. Технически, вы сможете это сделать, но для этого не может быть никаких причин, кроме мазохизма.
 
-For IDE's, we recommend one of the following free options:
+Из IDE мы рекомендуем один из следующих бесплатных вариантов:
 
-- [Visual Studio](https://visualstudio.microsoft.com/) -- **Recommended** -- An all-in-one package. Has a built-in decompiler, which can save some time.
-- [Visual Studio Code](https://code.visualstudio.com/) -- A more lightweight package.
+- [Visual Studio](https://visualstudio.microsoft.com/) -- **Рекомендуем!** -- Всё-в-одном. Имеет встроенный декомпилятор что поможет сохранить немного времени.
+- [Visual Studio Code](https://code.visualstudio.com/) -- Облегченная версия Visual Studio.
 
-If you have access to a Jetbrains License, we recommend the following paid option:
+Если же у вас есть лицензия Jetbrains, мы рекомендуем следующий платный вариант:
 
-- [Rider](https://www.jetbrains.com/rider/) -- **Recommended** (The author of this article uses it himself) -- An all-in-one package. Comparable to Visual Studio. Has a built-in decompiler, which can save some time.
+- [Rider](https://www.jetbrains.com/rider/) -- **Рекомендуем!** (Автор руководства использует его сам!) -- Так же Всё-в-одном. Сравним с Visual Studio. Также имеет встроенный декомпилятор.
 
 ### BepInEx
 
-To actually load mods into the game, we need a mod loader. This is where BepInEx comes in! **Be**pis **In**jector **Ex**tensible is a patcher/plug-in framework for Unity games. It'll handle everything related to getting the plugin to actually load into the game, so we can focus on creating the plugin without having to worry about anything else.
+Чтобы загрузить моды в игру, нам нужен загрузчик. Вот тут-то и пригодится BepInEx! **Be**pis **In**jector **Ex**tensible это фреймворк-патчер работающий из коробки как модуль для игр Unity. Он будет обрабатывать все, что связано с загрузкой мода в игру, так что мы можем сосредоточиться на создании модификации, не беспокоясь ни о чем другом.
 
-You'll first want to install BepInEx to your game. Follow their great [installation guide](https://docs.bepinex.dev/articles/user_guide/installation/index.html) to get this done. You'll want [this](https://github.com/BepInEx/BepInEx/releases/download/v5.4.22/BepInEx_x64_5.4.22.0.zip) version of BepInEx.
+Сначала установите BepInEx на вашу игру. Следуйте данному великолепному [руководству по установке](https://docs.bepinex.dev/articles/user_guide/installation/index.html). Вам нужна [эта](https://github.com/BepInEx/BepInEx/releases/download/v5.4.22/BepInEx_x64_5.4.22.0.zip) версия BepInEx.
 
-Once installation is complete, boot up the game once to have it generate some configuration files. Then, refresh the folder you just installed BepInEx into, and go into the `BepInEx/config` folder. Here, you'll find a file named `BepInEx.cfg`. Open it, and find and edit the following section:
+Как только установка будет завершена, запустите игру один раз, чтобы она сгенерировала конфиги. Затем перейдите в папку `BepInEx/config`. Здесь вам нужен файл `BepInEx.cfg`. Откройте его, найдите и отредактируйте следующий раздел:
 
 ```ini
 [Logging.Console]
@@ -52,7 +52,7 @@ Once installation is complete, boot up the game once to have it generate some co
 Enabled = false
 ```
 
-to
+В
 
 ```ini
 [Logging.Console]
@@ -63,29 +63,29 @@ to
 Enabled = true
 ```
 
-### Decompiler (_highly recommended / near essential_)
+### Декомпилятор (_настоятельно рекомендуется / почти необходим_)
 
-A decompiler allows you to decompile an existing program. This is technical terminology that can roughly be translated to "it allows you to peek behind the curtain and see what the code of a program looks like". Why is this important, you may ask? Well, if we're going to mod a game, we first need to know _what_ to mod. Do we want to reduce the price of items? We'll need to know in what part of the code items are displayed and sold to the player. Do we want to add a weather condition? We'll need to know in what parts of the code the game handles and spawns weather.
+Декомпилятор позволяет вам декомпилировать существующую программу. Это технический термин, который можно перевести как "то что позволяет вам заглянуть за занавес и увидеть, как выглядит код программы". Вы можете спросить, почему это важно? Что ж, если мы собираемся модифицировать игру, то нам сначала нужно знать, _что именно нужно_ модифицировать. Хотите снизить цены на предметы? Тогда нам нужно будет знать, в какой части кода отображаются предметы, которые продаются игроку. Хотите добавить погоду? Тогда нам нужно будет знать, в каких частях кода игра обрабатывает погоду и создаёт ее.
 
-We recommend one (or all) of three free options:
+Мы рекомендуем один (или все) из трех бесплатных вариантов:
 
 - [dnSpy](https://github.com/dnSpy/dnSpy)
 - [ILSpy](https://github.com/icsharpcode/ILSpy)
 - [dotPeek](https://www.jetbrains.com/decompiler/)
 
-!> **Note you do not necessarily need this if you have Rider or Visual Studio, since they come with built-in decompilers. Note that different decompilers offer slightly different results, and have different interfaces.**
+!> \*\* Обратите внимание, что это не обязательно, если у вас есть Rider или Visual Studio, поскольку они поставляются со встроенными декомпиляторами. Также обратите внимание, что разные декомпиляторы предлагают немного разные результаты и имеют разные интерфейсы.\*\*
 
-### Unity Explorer (optional)
+### Unity Explorer (необязательно)
 
-[Unity Explorer](https://github.com/sinai-dev/UnityExplorer) is a tool which adds an in-game UI that allows you to explore, debug, and modify the game while it's running. This tool can be highly useful to get to know the game's technical side better, and his hence strongly recommended.
+[Unity Explorer](https://github.com/sinai-dev/UnityExplorer) это инструмент, который добавляет GUI, позволяющий вам изучать, отлаживать и изменять игру во время ее запуска. Он может быть очень полезен для лучшего знакомства с технической стороной игры, и поэтому его настоятельно рекомендуется использовать.
 
-You will want to download the version compatible with the latest version of BepInEx (5).
+Вам потребуется загрузить версию, совместимую с последней версией BepInEx (5).
 
-[![Unity Explorer download](../docs/files/initial-setup/unityexplorerdownload.png)](https://github.com/sinai-dev/UnityExplorer/releases/latest/download/UnityExplorer.BepInEx5.Mono.zip)
+[![скачать Unity Explorer](../docs/files/initial-setup/unityexplorerdownload.png)](https://github.com/sinai-dev/UnityExplorer/releases/latest/download/UnityExplorer.BepInEx5.Mono.zip)
 
-### Additional tools (optional)
+### Дополнительные инструменты (необязательны)
 
-There are a number of BepInEx plugins and tools that might be useful as you get more experienced with modding. The BepInEx devs have helpfully listed them [here](https://docs.bepinex.dev/articles/dev_guide/dev_tools.html).
+Существует ряд плагинов и инструментов BepInEx, которые могут оказаться полезными по мере того, как вы приобретете больше опыта в моддинге. The BepInEx devs have helpfully listed them [here](https://docs.bepinex.dev/articles/dev_guide/dev_tools.html).
 
 ## Creating a GitHub account
 
