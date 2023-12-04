@@ -1,63 +1,63 @@
-# Starting a mod
+# Создаем мод
 
-## Setting up your project
+## Подготовка проекта
 
-> This guide assumes you've completed all the required steps in **initial setup**, or that you know what you're doing.
+> Предполагается, что вы выполнили все необходимые шаги при **первоначальной настройке**.
 
-This guide follows certain parts of the [official BepInEx guide](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/2_plugin_start.html).
+Это руководство в основном следует [официальному руководству BepInEx](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/2_plugin_start.html).
 
-### Using the template repository
+### Используем шаблон проекта
 
-We have created a [template repository](https://github.com/LethalCompany/LethalCompanyTemplate) on GitHub. If you're remotely familiar with GitHub, or willing to [learn](#TODO-LINK-TO-CORRECT-PAGE-AND-HEADER), this might serve as a quick start. It does come with some minor drawbacks such as it using "LethalCompanyTemplate" as project name in a number of files, but you can edit this. It should build out-of-the-box with no edits required; though you may need to add BepInEx as a NuGet source (see the [relevant](#adding-nuget-source) section below).
+Мы создали [шаблон проекта](https://github.com/LethalCompany/LethalCompanyTemplate) на GitHub. Если вы отдаленно знакомы с GitHub или хотите [научиться им пользоваться](#TODO-LINK-TO-CORRECT-PAGE-AND-HEADER), то это может послужить быстрым введением. У шаблона есть некоторые незначительные недостатки, такие как использование «LethalCompanyTemplate» в качестве имени проекта в некоторых файлах, но вы можете это изменить в случае чего. Он должен работать «из коробки» без каких-либо изменений; хотя возможно вам может потребоваться добавить BepInEx в качестве источника NuGet (см. [релевантный](#adding-nuget-source) раздел ниже).
 
-### Creating your project
+### Создаём ваш проект
 
-First things first, you'll need to create your project. If you've not done so already, we recommend running the following command in a console to add some BepInEx templates for new projects:
+Сначала ва нужно создать ваш проект. Если вы еще этого не сделали, мы рекомендуем запустить следующую команду в консоли, чтобы добавить несколько шаблонов BepInEx:
 
 ```cmd
 dotnet new -i BepInEx.Templates --nuget-source https://nuget.bepinex.dev/v3/index.json
 ```
 
-Next, you'll want to create a new project (sometimes called "solution", in CSharp). There are two main ways to do this.
+Далее, вам нужно создать новый проект (Иногда называемый "решением" в CSharp). Есть несколько способов сделать это.
 
-#### Using an IDE (more control)
+#### Используя IDE(больше контроля)
 
-Depending on your IDE, this process will look slightly different. You'll want to give the solution the name of your soon-to-be mod. If given the option to use a template (you may want to google for _"how to use template in `insert your IDE name here, for example "Rider" or "Visual Studio"`"_), use the `BepInEx 5 Plugin Template`.
+В зависимости от вашей IDE этот процесс будет выглядеть по-разному. Вам нужно дать название вашему новому моду. Если у вас есть возможность использовать шаблоны (вы можете поискать в Google _"как использовать шаблон, `вставьте имя вашей IDE, например "Rider" или "Visual Studio"`"_), то используйте `BepInEx 5 Plugin Template`.
 
-#### Using the console (simpler)
+#### Используя консоль(проще)
 
-Alternatively, you can open a console and run the following command, assuming you've set up the templates using the command above. Replace `MyFirstPlugin` with your mod's name:
+Во втором случае вы можете открыть консоль и выполнить следующую команду, при условии, что вы настроили шаблоны с помощью команды выше. Заменив при этом `MyFirstPlugin` на название вашего мода:
 
 ```cmd
 dotnet new bepinex5plugin -n MyFirstPlugin -T "netstandard2.1" -U "2022.3.9"
 ```
 
-### Organising your modding projects
+### Организация ваших проектов
 
-We recommend creating a folder somewhere easily accessible that will store all of your future modding projects. Something like "LethalCompanyMods". Move the newly created folder for your mod into this folder, to keep things well-organised.
+Мы советуем вам создать папку в которой вы будете хранить все свои проекты в будущем. Что-нибудь типа "МодыLC". Перенесите недавно созданную папку мода в эту папку чтобы все было более менее организовано.
 
-### Adding NuGet source
+### Добавление источника NuGet
 
-BepInEx uses a separate NuGet source. You'll need to add the BepInEx NuGet source to your global source list.
+BepInEx использует NuGet. Вам нужно будет добавить BepInEx NuGet в список источников.
 
-The BepInEx NuGet source has the following configuration:
+BepInEx NuGet имеет следующую конфигурацию:
 
 ```
 name: BepInEx
 url: https://nuget.bepinex.dev/v3/index.json
 ```
 
-For Rider, you can do this by going to the NuGet window, going to its `Sources` tab, and then clicking on the green "+" icon in the `Feeds` sub-tab. There, add a new entry using the above configuration. See [Rider's docs](https://www.jetbrains.com/help/rider/Using_NuGet.html#sources) for more info.
+Используя Rider вы можете добавить NuGet через вкладку 'Sources' нажав на зелёный плюсик в 'Feeds'. Там добавьте новую запись, используя приведенную выше конфигурацию. Прочитайте [документацию Rider](https://www.jetbrains.com/help/rider/Using_NuGet.html#sources) для большей информации.
 
-![Show Nuget Sources tab in Rider](../docs/files/starting-a-mod/ridershownugetsources.png)
+![Показ Nuget Sources вкладки в Rider](../docs/files/starting-a-mod/ridershownugetsources.png)
 
-![Rider Nuget Sources config with BepInEx added](../docs/files/starting-a-mod/ridernugetfeeds.png)
+![Rider Nuget Sources конфиг добавлен в BepInEx](../docs/files/starting-a-mod/ridernugetfeeds.png)
 
-For Visual Studio, please follow [this documentation](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources).
+Если вы используете Visual Studio, то, пожалуйста, следуйте [этой документации](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources).
 
-### Making sure your mod is set up correctly
+### Убедитесь, что ваш мод настроен правильно
 
-Mods are developed for specific versions of Unity and .NET, which can be specified in a configuration file. This file is a `.csproj` file, and has as name the name of your mod (e.g. `MyFirstPlugin.csproj`). If you used the console command correctly, it should work out of the box. However, you'll want to double check this to prevent any easy-to-fix problems that can result from not having it set up correctly. When using an IDE, the template might not use the correct version, so in this case you'll definitely have to check things.
+Моды разрабатываются для конкретных версий Unity и .NET, которые можно указать в файле конфигурации. Этот файл представляет собой файл `.csproj` и имеет в качестве имени имя вашего мода (например, `MyFirstPlugin.csproj`). If you used the console command correctly, it should work out of the box. However, you'll want to double check this to prevent any easy-to-fix problems that can result from not having it set up correctly. When using an IDE, the template might not use the correct version, so in this case you'll definitely have to check things.
 
 Our [template project](https://github.com/LethalCompany/LethalCompanyTemplate) has an example `.csproj` file that is properly configured, which can be found [here](https://github.com/LethalCompany/LethalCompanyTemplate/blob/main/LethalCompanyTemplate/LethalCompanyTemplate.csproj). Please check and compare your local mod's file with this file, and make sure the following segment is the same (except for the `AssemblyName`, `Description`, and `Version`).
 
