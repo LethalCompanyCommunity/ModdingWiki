@@ -28,22 +28,22 @@
 
 ### Предшествующие переводы
 
-Because this wiki is partially based on a [previously translated wiki](https://trombone.wiki), sometimes crowdin will show you similar existing translations.
+Из-за того что эта вики частично основана на [предыдущей переведённой вики](https://trombone.wiki), то иногда вы будете видеть подсказки Crowdin показывающие уже существующие переводы.
 
-Feel free to use these to your advantage, or start from scratch if you think you could improve upon it.
+Не стесняйтесь использовать их в своих интересах или начните с нуля, если считаете, что можете написать лучше.
 
-![Example of a suggested translation from the Trombone Champ Modding Wiki](../docs/files/translating-the-wiki/suggestions.png)
+![Пример предлагаемого перевода с Trombone Champ Modding Wiki](../docs/files/translating-the-wiki/suggestions.png)
 
-## Page translation order
+## Порядок перевода страниц
 
-The pages we recommend prioritizing, in order, are as follows:
+Страницы, перевод которых мы считаем приоритетными:
 
-- The main landing page (introduction.md)
-- The sidebar (sidebar.md)
-- Windows modding tutorial (installing-r2modman.md)
-- Linux modding tutorial (installing-r2modman-linux.md)
-- Frequently Asked Questions (faq.md)
-- Info about the wiki (about.md)
+- Главная страница (introduction.md)
+- Боковое меню (sidebar.md)
+- Гайд по установке модов на Windows (installing-r2modman.md)
+- Гайд по установке модов на Linux (installing-r2modman-linux.md)
+- Часто Задаваемые Вопросы (faq.md)
+- Информация о Вики (about.md)
 - Everything else (mod development tutorials, this translation page, etc)
 
 ## Questions and new languages
