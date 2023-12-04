@@ -2,20 +2,17 @@
 
 ## Что такое Открытый код?
 
-Открытый код означает что код лежит в открытом доступе и может использоваться, редактироваться и распространяться кем угодно. It fosters a
-collaborative and public approach to software development. There are a number of important things to take into account
-when developing open-source software, however.
+Открытый код означает что код лежит в открытом доступе и может использоваться, редактироваться и распространяться кем угодно. Это способствует публичной и совместной разработке ПО. Есть ряд важных вещей, которые следует принять во внимание при разработке ПО с открытым кодом.
 
-### Licenses
+### Лицензии
 
-A GitHub repository _without_ a License is **not** open-source:
+Репозиторий на GitHub _без_ лицензии **не является** открытым так как
 
-> without a license, the default copyright laws apply, meaning that you retain all rights to your source code and no one
-> may reproduce, distribute, or create derivative works from your work.
+> без лицензии автоматически применяются стандартные авторские права а это значит что никто не может воспроизводить, использовать или создавать на его основе другие работы.
 >
-> _source: https\://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license_
+> _источник: https\://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license_
 
-This means, if you actually want to properly open-source your mods, that you'll have to pick an open-source license.
+Это значит, что если вы действительно хотите оставить код своих модов открытым, то вам придется выбрать правильную лицензию.
 This might sound scary, but it really doesn't have to be. GitHub created a very simple and nice website to find a
 license that fits your project: https\://choosealicense.com/
 
