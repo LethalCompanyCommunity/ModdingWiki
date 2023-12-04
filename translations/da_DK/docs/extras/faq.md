@@ -1,21 +1,21 @@
-# Frequently Asked Questions
+# Ofte Stillede Spørgsmål
 
 ***
 
-## I Installed MoreCompany/BiggerLobby and it doesn't work.
+## Jeg har installeret MoreCompany/BiggerLobby men det virker ikke.
 
-Ensure that:
+Sikre dig at:
 
-- You only have EITHER MoreCompany or BiggerLobby installed. Trying to install both will break your game.
-- Everybody trying to join the server has the mod installed.
-- Everybody trying to join the server has the same mod version installed.
+- Du kun har ENTEN MoreCompany eller BiggerLobby installeret. Forsøg på at installere begge vil ødelægge dit spil.
+- Alle der prøver at joine serveren har modifikationen installeret.
+- Alle der prøver at joine serveren har den samme version af modifikationen installeret.
 
-## Do mods work with a pirated version of the game?
+## Virker modifikationer med piratkopierede udgaver af spillet?
 
-Mods will only work on the latest Steam version of Lethal Company. Buy the game.
+Modifikationer virker kun hvis du har den nyeste Steam version af Lethal Company. Køb spillet.
 
-## Does (X Mod) require everybody to have it installed?
+## Er det nødvendigt at alle skal have (X Modifikation) installeret for at det virker?
 
-It depends on the specific mod. Some mods work fully clientside, and some require everybody to have it installed.
+Det kommer an på den specifikke modifikation. Nogle modifikationer virker fint udelukkende i ens egen klient, mens andre har behov for at alle har dem installeret.
 
-When in doubt, assume that a mod will only work if everybody on the server has it installed.
+Hvis der opstår tvivl, så antag at en given modifikation kun vil virke hvis alle på serveren har installeret den.
