@@ -85,31 +85,31 @@ Enabled = true
 
 ### Дополнительные инструменты (необязательны)
 
-Существует ряд плагинов и инструментов BepInEx, которые могут оказаться полезными по мере того, как вы приобретете больше опыта в моддинге. The BepInEx devs have helpfully listed them [here](https://docs.bepinex.dev/articles/dev_guide/dev_tools.html).
+Существует ряд плагинов и инструментов BepInEx, которые могут оказаться полезными по мере того, как вы приобретете больше опыта в моддинге. Разработчики BepInEx любезно перечислили их [здесь](https://docs.bepinex.dev/articles/dev_guide/dev_tools.html).
 
-## Creating a GitHub account
+## Создаём аккаунт на GitHub
 
-We strongly recommend using git - a "version control system". The most popular website that offers this as a (free) service is GitHub; the website you're on right now.
+Мы крайне рекомендуем использовать контролёр версий git. Самый популярный сайт, предлагающий эту (бесплатную) услугу, — GitHub; то где вы сейчас находитесь.
 
-The following video is a short primer on what git (and a version control systems in general) is: https\://www\.youtube.com/watch?v=2ReR1YJrNOM
+Данное видео представляет собой краткое описание того, что такое git (и о системе контроля версий в целом): https\://www\.youtube.com/watch?v=2ReR1YJrNOM
 
-For additional reading, please see [GitHub's documentation](https://docs.github.com/en/get-started/quickstart/hello-world).
+За дополнительной информацией следуйте [сюда](https://docs.github.com/en/get-started/quickstart/hello-world).
 
-In short, Git(Hub) allows you to do the following things without hassle:
+Вкратце GitHub позволяет делать вам следующее:
 
-- Keep a _complete_ history of your project
-  - Allows you to revert to a previous version if you made a mistake
-  - Allows you to retrieve your code if your hard drive fails, or you delete something by accident
-  - Allows you to revisit previous updates and patch notes, adding implicit documentation to your project (when done right)
-- Collaborate with others
-  - Others can send _requests_ to update files of your project
-  - Others can download your code and learn from it
-  - Others can continue updating your project, _long_ after you've stopped caring about it
-  - Others can help you fix a bug, and you can easily get that bug fixed version of your project
+- Сохранять _полную_ историю вашего проекта
+  - Позволяет вернуться к предыдущей версии, если вы допустили ошибку
+  - Позволяет восстановить код в случае поломки жесткого диска или случайного удаления
+  - Позволяет вам вернуться к предыдущим обновлениям и примечаниям, добавляя некоторую документацию в ваш проект (если все сделано правильно)
+- Сотрудничать с другими авторами
+  - Другие могут отправлять запросы на обновление файлов в ваших проектах
+  - Другие могут скачать ваш код и узнать из него что-нибудь новое
+  - Другие могут продолжить ваш проект если вас он перестанет интересовать
+  - Другие могут помочь с фиксом багов и вы с лёгкостью сможете добавить патч в свой проект
 
-Without going into too much detail, there is a difference between "Git", and "GitHub". Git is a program that anyone can run. GitHub is a website that makes this program available to others through the cloud - allowing for collaborating, and remote backups. You _can_ just use Git locally, but you'll lose a lot of the benefits. An alternative to GitHub is [GitLab](https://about.gitlab.com/).
+Не вдаваясь в подробности, отметим, что между «Git» и «GitHub» есть разница. Git это программа, которую может запустить каждый. GitHub же является сайтом позволяющим этой программе отправлять весь проект в облако - позволяя объединять свои усилия и делать резервные копии. Вы _можете_ использовать Git локально, но во многом потеряете его преимущества. Как альтернативу GitHub вы можете использовать [GitLab](https://about.gitlab.com/).
 
-To create an account, simply go to [GitHub's home page](https://github.com/) and follow the steps. GitHub also has a [guide](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account) on creating a new account (just ignore the step about checking pricing plans - you don't need a paid account, this is primarily for companies and professional users).
+Чтобы создать аккаунт просто откройте [домашнюю страницу GitHub](https://github.com/) и следуйте оффицальному руководству. GitHub also has a [guide](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account) on creating a new account (just ignore the step about checking pricing plans - you don't need a paid account, this is primarily for companies and professional users).
 
 ## Next steps
 
