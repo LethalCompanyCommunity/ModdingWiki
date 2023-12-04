@@ -1,28 +1,28 @@
-# Using r2modman on Linux and Steam Deck
+# Brug af r2modman på Linux og Steam Deck
 
 ***
 
-This guide will run you through installing and using [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) to install and play with mods that are available through [Thunderstore](https://thunderstore.io/c/lethal-company/). Using a mod manager like r2modman allows you to update and play with the latest versions of the mods with ease as the manager does all of that for you!
+Denne guide vil føre dig i gennem installation og benyttelse af [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) for at installere og spille med modifikationer der er tilgængelige gennem [Thunderstore](https://thunderstore.io/c/lethal-company/). Ved brug af en modifikations manager som r2modman tillader det dig at opdatere og spille med de nyeste version af modifikation uden bøvl eftersom at manageren gør alt dette for dig!
 
-## Steam Deck Specific Preparation
+## Steam Deck Specifikke Forberedelser
 
-On Steam Deck you will need to do the following before you can follow this guide:
+På Steam Deck er du nødt til at gøre det følgende før du kan følge denne guide:
 
-- Make sure the game is installed into the internal storage - mods will not load if the game is installed to the MicroSD card.
-- Enter **Desktop Mode** by holding down the power button and selecting Desktop Mode from the menu.
+- Vær sikker på at spille er installeret på den interne opbevaring - modifikation vil ikke kører hvis spillet er installeret på MicroSD kortet.
+- Tilgå **Skrivebords Tilstand** ved at holde nede på power knappen og valg af Dekstop Mode fra menuen.
 
-Once you're at the desktop, you're ready to continue!
+Så snart du er på Skrivebordet, er du klar til at forsætte!
 
-!> r2modman does **not** work in Game Mode. Please make sure to read the [**Using Mods in Steam Deck's Game Mode**](installing-r2modman-linux?id=using-mods-in-steam-decks-game-mode) section for a workaround once you've finished with the **Installing r2modman** section.
+!> r2modman virker **ikke** i Game Mode. Vær venlig at læse [**Brug af Modifikationer i Steam Deck's Game Mode**](installing-r2modman-linux?id=using-mods-in-steam-decks-game-mode) sektion for et nemt fix så snart du er færdig ed **Installation af r2modman** sektionen.
 
-## Installing r2modman
+## Installation af r2modman
 
-?> The latest version of r2modman is **%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}**.
+?> Den nyeste version af r2modman er **%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}**.
 
-On Linux, r2modman is available in different package formats depending on your distro:
+På Linux er r2modman tilgængeligt i forskellige pakke formater, alt afhængigt af din distro:
 
-- `deb` for Debian and Ubuntu-based distros
-- `pacman` for Arch-based disros
+- `deb` for Debian og Ubuntu-baserede distroer
+- `pacman` for Arch-baserede distroer
 - `rpm` for distros using the RPM Package Manager (RHEL, CentOS, Fedora, openSUSE, etc.)
 - `AppImage`, a single executable file that can run on most distros - **useful for Steam Deck**
 
