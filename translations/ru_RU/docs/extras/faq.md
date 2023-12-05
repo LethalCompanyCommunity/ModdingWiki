@@ -2,7 +2,7 @@
 
 ***
 
-## Я установил MoreCompany/BiggerLobby и ничего не изменилось.
+## Я установил MoreCompany/BiggerLobby но ничего не поменялось.
 
 Способы решения:
 
