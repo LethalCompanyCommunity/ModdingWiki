@@ -29,16 +29,16 @@ dotnet new -i BepInEx.Templates --nuget-source https://nuget.bepinex.dev/v3/inde
 Во втором случае вы можете открыть консоль и выполнить следующую команду, если вы настроили шаблоны с помощью команды выше :
 
 ```cmd
-dotnet new bepinex5plugin -n MyFirstPlugin -T "netstandard2.1" -U "2022.3.9"
+dotnet new bepinex5plugin -n 'Вставьте сюда имя вашего мода' -T "netstandard2.1" -U "2022.3.9"
 ```
 
-### Организация ваших проектов
+### Храним ваши проекты
 
-Мы советуем вам создать папку в которой вы будете хранить все свои проекты в будущем. Что-нибудь типа "МодыLC". Перенесите недавно созданную папку мода в эту папку чтобы все было более менее организовано.
+Мы советуем вам создать папку в которой вы будете хранить все свои проекты. Что-нибудь по типу "МодыLC". Перенесите недавно созданную папку мода в эту, чтобы все было более менее организовано.
 
-### Добавление источника NuGet
+### Добавляем NuGet
 
-BepInEx использует NuGet. Вам нужно будет добавить BepInEx NuGet в список источников.
+BepInEx использует NuGet. Так что вам придется добавить BepInEx NuGet в список источников.
 
 BepInEx NuGet имеет следующую конфигурацию:
 
@@ -47,31 +47,31 @@ name: BepInEx
 url: https://nuget.bepinex.dev/v3/index.json
 ```
 
-Используя Rider вы можете добавить NuGet через вкладку 'Sources' нажав на зелёный плюсик в 'Feeds'. Там добавьте новую запись, используя приведенную выше конфигурацию. Прочитайте [документацию Rider](https://www.jetbrains.com/help/rider/Using_NuGet.html#sources) для большей информации.
+Используя Rider вы можете добавить NuGet через вкладку 'Sources' нажав на зелёный плюсик в 'Feeds'. Там добавьте новую запись, используя приведенную выше конфигурацию. Прочитайте [документацию Rider](https://www.jetbrains.com/help/rider/Using_NuGet.html#sources) для большего понимания.
 
 ![Показ Nuget Sources вкладки в Rider](../docs/files/starting-a-mod/ridershownugetsources.png)
 
-![Rider Nuget Sources конфиг добавлен в BepInEx](../docs/files/starting-a-mod/ridernugetfeeds.png)
+![Rider Nuget Sources подключен к BepInEx](../docs/files/starting-a-mod/ridernugetfeeds.png)
 
-Если вы используете Visual Studio, то, пожалуйста, следуйте [этой документации](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources).
+Если же вы используете Visual Studio, то, пожалуйста, следуйте [этой документации](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources).
 
 ### Убедитесь, что ваш мод настроен правильно
 
-Моды разрабатываются для конкретных версий Unity и .NET, которые можно указать в файле конфигурации. Этот файл представляет собой файл `.csproj` и имеет в качестве имени имя вашего мода (например, `MyFirstPlugin.csproj`). If you used the console command correctly, it should work out of the box. However, you'll want to double check this to prevent any easy-to-fix problems that can result from not having it set up correctly. When using an IDE, the template might not use the correct version, so in this case you'll definitely have to check things.
+Модификации разрабатываются под конкретные версий Unity и .NET, которые можно указать в особом конфиге. Файл `.csproj` и является им. В качестве его имени обычно стоит имя вашего мода (например, `MyFirstPlugin.csproj`). Если вы правильно использовали консольные команды сверху то все должно быть настроено. Тем не менее, вам следует проверить конфиг, чтобы предотвратить любые проблемы, которые могут возникнуть из-за неправильной настройки. При использовании IDE шаблоны могут использовать не ту версию BepInEx, поэтому вам обязательно придется все проверить.
 
-Our [template project](https://github.com/LethalCompany/LethalCompanyTemplate) has an example `.csproj` file that is properly configured, which can be found [here](https://github.com/LethalCompany/LethalCompanyTemplate/blob/main/LethalCompanyTemplate/LethalCompanyTemplate.csproj). Please check and compare your local mod's file with this file, and make sure the following segment is the same (except for the `AssemblyName`, `Description`, and `Version`).
+Наш [шаблон](https://github.com/LethalCompany/LethalCompanyTemplate) уже имеет полностью настроенный`.csproj`, а найти его вы можете [здесь](https://github.com/LethalCompany/LethalCompanyTemplate/blob/main/LethalCompanyTemplate/LethalCompanyTemplate.csproj). Проверьте и сравните ваш файл с этим и убедитесь, что следующий сегмент тот же (за исключением `AssemblyName`, `Description`, и `Version`).
 
-![Example csproj with Nuget references and proper metadata](../docs/files/starting-a-mod/csprojexample.png)
+![Пример csproj с ссылками на Nuget и правильной метой](../docs/files/starting-a-mod/csprojexample.png)
 
-### "Building" your mod
+### "Билдим" ваш мод
 
-Your IDE is capable of turning your code into a file that can be run (in this case by BepInEx as a mod). This process is called "building" or "compiling". In this case, it will turn your code into a `.dll` file. This file _is_ your mod.
+IDE способна превратить ваш код в рабочий мод, который можно запустить (в нашем случае с помощью BepInEx). Этот процесс называется билдингом или компиляцией. В нашем случае на выходе должен получиться файл с расширением `.dll`. Этот файл и есть ваш мод.
 
-Depending on your IDE, the build button may be placed differently. For Rider, it is in the top right:
+В зависимости от вашей среды кнопка компиляции может быть расположена по разному. В Rider она находится в верхнем правом углу:
 
-![Rider's Build Solution button](../docs/files/starting-a-mod/riderbuild.png)
+![Кнопка Билда в Rider](../docs/files/starting-a-mod/riderbuild.png)
 
-Once built, you should be able to find the `.dll` file in your project's folder, in the following subfolder path (once again replacing `MyFirstPlugin` with the name you gave your mod/project): `MyFirstPlugin/bin/(Release or Debug)/netstandard2.1/MyFirstPlugin.dll`
+После компиляции вы сможете найти файл `.dll` в папке вашего проекта по следующему пути (замените `MyFirstPlugin` на имя, которое вы дали своей модификации): `MyFirstPlugin/bin/(Release или Debug)/netstandard2.1/MyFirstPlugin.dll`
 
 Simply copy & paste this `.dll` file into the `BepInEx/plugins` folder, in your game directory, and it should run the mod. We recommend keeping the default `LogInfo` statement in your `Awake` method that comes with the template. If you have this statement, you should see it appear in the console that opens when you run the game (after installing BepInEx, and enabling the console as per the first wiki article).
 
@@ -93,4 +93,4 @@ We highly recommend reading through the rest of the [official BepInEx guide](htt
 
 We recommend reading through our very short guide on [open-source & ethics](open-source-and-ethics), to help foster a healthy modding community.
 
-Once you've finished a mod, you can [publish it](publishing-your-mod).
+Как только вы закончили создание своего мода вы можете [опубликовать его](publishing-your-mod).
