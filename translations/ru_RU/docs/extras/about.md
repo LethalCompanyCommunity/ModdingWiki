@@ -19,7 +19,7 @@
 > - [BepInEx](https://github.com/BepInEx/BepInEx).
 
 ?> **Конфиденциальность и Открытый Код**\
-[Исходный код руководства лежит на GitHub](https://github.com/legoandmars/LethalCompanyModdingWiki) ?> **Open-source и Конфиденциальность**\
+[Исходный код вики лежит на GitHub](https://github.com/legoandmars/LethalCompanyModdingWiki) ?> **Open-source и Конфиденциальность**\
 [Исходный код руководства лежит на GitHub](https://github.com/legoandmars/LethalCompanyModdingWiki)
 
 ?> **Внимание:**
