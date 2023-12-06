@@ -10,12 +10,12 @@ Assicurati che:
 - Tutti coloro che stiano provando ad entrare nel server abbiano la mod installata.
 - Tutti coloro che stiano provando ad entrare nel server abbiamo la stessa versione della mod installata.
 
-## Do mods work with a pirated version of the game?
+## Le mod funzionano con una copia piratata del gioco?
 
-Mods will only work on the latest Steam version of Lethal Company. Buy the game.
+Le mod funzioneranno solo nell'ultima versione di Steam di Lethal Company. Compra il gioco.
 
-## Does (X Mod) require everybody to have it installed?
+## La mod (X) Richiede che tutti ce l'abbiamo installata?
 
-It depends on the specific mod. Some mods work fully clientside, and some require everybody to have it installed.
+Dipende dal tipo specifico di mod installata. Alcune mod funzionano perfettamente clientside, altre richiedono che tutti ce l'abbiano installata.
 
-When in doubt, assume that a mod will only work if everybody on the server has it installed.
+In caso tu abbia dubbi, agisci come se la mod dovesse essere installata da tutti i giocatori.
