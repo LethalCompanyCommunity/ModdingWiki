@@ -1,14 +1,14 @@
-# Frequently Asked Questions
+# Domande Frequenti
 
 ***
 
-## I Installed MoreCompany/BiggerLobby and it doesn't work.
+## Ho Installato MoreCompany/BiggerLobby e non funziona.
 
-Ensure that:
+Assicurati che:
 
-- You only have EITHER MoreCompany or BiggerLobby installed. Trying to install both will break your game.
-- Everybody trying to join the server has the mod installed.
-- Everybody trying to join the server has the same mod version installed.
+- Stai utilizzando MoreCompany OPPURE BiggerLobby. Provare ad installare entrambe romperà il gioco.
+- Tutti coloro che stiano provando ad entrare nel server abbiano la mod installata.
+- Tutti coloro che stiano provando ad entrare nel server abbiamo la stessa versione della mod installata.
 
 ## Do mods work with a pirated version of the game?
 
