@@ -9,7 +9,48 @@ This tutorial requires using [@EvaisaDev](https://github.com/EvaisaDev/)'s [Unit
 
 ### Why use Unity Netcode Weaver?
 
-Unity Netcode Weaver replicates the IL Post Processing Unity performs when compiling code utilizing Netcode for GameObjects package. Essentially, this allows you to create and use RPCs, Network Variables, etc.
+Unity Netcode Weaver replicates the IL Post Processing Unity performs when compiling code utilizing Netcode for GameObjects package. This turns the C# code before the post processing step:
+
+```cs
+[ClientRpc]
+public void EventClientRPC(string eventType)
+{
+    // code here
+}
+```
+
+Into something a bit less legible, but allows networking:
+
+```cs
+[ClientRpc]
+public void EventClientRPC(string eventType)
+{
+    NetworkManager networkManager = base.NetworkManager;
+    if (networkManager == null || !networkManager.IsListening)
+    {
+        return;
+    }
+    if (this.__rpc_exec_stage != NetworkBehaviour.__RpcExecStage.Client && (networkManager.IsServer || networkManager.IsHost))
+    {
+        ClientRpcParams clientRpcParams;
+        FastBufferWriter fastBufferWriter = base.__beginSendClientRpc(1302598205U, clientRpcParams, RpcDelivery.Reliable);
+        bool flag = eventType != null;
+        fastBufferWriter.WriteValueSafe<bool>(flag, default(FastBufferWriter.ForPrimitives));
+        if (flag)
+        {
+            fastBufferWriter.WriteValueSafe(eventType, false);
+        }
+        base.__endSendClientRpc(ref fastBufferWriter, 1302598205U, clientRpcParams, RpcDelivery.Reliable);
+    }
+    if (this.__rpc_exec_stage != NetworkBehaviour.__RpcExecStage.Client || (!networkManager.IsClient && !networkManager.IsHost))
+    {
+        return;
+    }
+    // code here
+}
+```
+
+Essentially, this allows you to create and use RPCs, Network Variables, etc.
 
 ### Other Setup Required
 
@@ -21,8 +62,8 @@ There **must** be a project reference to `Unity.Netcode.Runtime.dll` to utilize 
 
 There are two parts to making a mod using Netcode for GameObjects (NGO) to allow the transmission of info between the host & clients.
 
-1. Creating what I call the `NetworkHandler`
-2. Spawning said `NetworkHandler` into the game
+1. Creating the `NetworkHandler` Class
+2. Spawning the `NetworkHandler` Game Object into the game
 
 The first part is simple, it just requires making a script that will be attached to a game object as a component. The second gets more complicated due to requiring loading a GameObject from an AssetBundle - something not explained in this tutorial.
 
