@@ -1,4 +1,4 @@
-# Open-source and ethics
+# Open-source et éthique
 
 ## What is open-source?
 
