@@ -151,7 +151,9 @@ The Game Object we spawn as an asset requires a network object. We will use this
 
 ![ExampleNetworkHandler Prefab](../docs/files/custom-networking/ExampleNetworkHandlerPrefab.png)
 
-We bundle this prefab up, add it to our project folder, and then import it using `MainAssetBundle = AssetBundle.LoadFromStream()`. We then can begin working on the patch that spawns the NetworkHandler.
+We bundle this prefab up, embed the prefab as a resource in our ExampleMod project, and then import it using `MainAssetBundle = AssetBundle.LoadFromStream(Assembly.GetExecutingAssembly().GetManifestResourceStream("ExampleMod.ExampleModAssets"))`. We then can begin working on the patch that spawns the NetworkHandler.
+
+One other method of importing the asset is with `MainAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "ExampleModAssets"));`. While this method works, it's not recommended due to potential issues with the ExampleModAssets file not existing at that location, either from the mod not being installed correctly, or someone accidentally deleting the file.
 
 ### Loading the Asset In
 
