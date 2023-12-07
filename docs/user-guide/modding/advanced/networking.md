@@ -1,6 +1,6 @@
 # Custom Networking
 
->**Note:** This is not a tutorial on how to use Unity's [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/current/tutorials/get-started-ngo/) Rpcs and Network Variables.  
+>**Note:** This is not a tutorial on how to use Unity's [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/current/tutorials/get-started-ngo/) RPCs and Network Variables.  
 >This is only meant to be used to understand <i>how</i> to implement custom networking into the game.
 
 ## Preface
@@ -9,34 +9,34 @@ This tutorial requires using [@EvaisaDev](https://github.com/EvaisaDev/)'s [Unit
 
 ### Why use Unity Netcode Weaver?
 
-Unity Netcode Weaver replicates the IL Post Processing unity does when compiling code utitlizing the Netcode for GameObjects package. Essentially, this allows you create and use RPCs, Network Variables, etc.
+Unity Netcode Weaver replicates the IL Post Processing Unity performs when compiling code utilizing Netcode for GameObjects package. Essentially, this allows you to create and use RPCs, Network Variables, etc.
 
 ### Other Setup Required
 
-There **must** be a project reference to `Unity.Netcode.Runtime.dll` in order to utilize Netcode for GameObjects. You can refer to [this section](./starting-a-mod?id=adding-game-assemblies) of this wiki to add it.
+There **must** be a project reference to `Unity.Netcode.Runtime.dll` to utilize Netcode for GameObjects. You can refer to [this section](./starting-a-mod?id=adding-game-assemblies) of this wiki to add it.
 
 ><b><i>In addition, the mod must use </i></b>`netstandard2.1`<b><i>. Failure to do so can cause Unity Netcode Weaver to not function!</i></b> (You should be using `netstandard2.1` anyways since the game is built with that.)
 
 ## Introduction
 
-There are two parts in making a mod use Netcode for GameObjects (NGO) in this game to allow transmitting info between the host & clients.
+There are two parts to making a mod using Netcode for GameObjects (NGO) to allow the transmission of info between the host & clients.
 
 1. Creating what I call the `NetworkHandler`
 2. Spawning said `NetworkHandler` into the game
 
-The first part is pretty simple, it just requires making a script that will be attached to a game object as a component. The second is gets more complicated due to requiring loading a GameObject from an AssetBundle - something not explained in this tutorial.
+The first part is simple, it just requires making a script that will be attached to a game object as a component. The second gets more complicated due to requiring loading a GameObject from an AssetBundle - something not explained in this tutorial.
 
 This tutorial will not go into detail on how to use this for Custom Objects or Creatures, but the basics generally are the same.
 
 ### ExampleMod
 
-As an example, this tutorial will go through the process of adding networking to a mod that adds new level events into the game. These events are not able to be replicated on each client, and must instead recieve info from the server/host what event is to be played. Since we are dealing with events, RPCs would be preferable to Network Variables.
+As an example, this tutorial will go through the process of adding networking to a mod that adds new-level events into the game. These events are not able to be replicated on each client and must instead receive info from the server/host on what event is to be played. Since we are dealing with events, RPCs would be preferable to Network Variables.
 
 ## Creating the NetworkHandler
 
-The `NetworkHandler` houses the RPCs, Network Variables, and any other methods allowing information will be passed over the network. I recommend separating this script as far as possible from any patches to avoid potential errors through Unity. This can easily be done by not including/using any outside methods and variables in the script.
+The `NetworkHandler` houses the RPCs, Network Variables, and any other methods allowing information to be passed over the network. I recommend separating this script as far as possible from any patches to avoid potential errors through Unity. This can easily be done by not including/using any outside methods and variables in the script.
 
-When creating the `NetworkHandler`, you must inherit the `NetworkBehaviour` class. This allows the script to utilize the aforementioned networking methods.
+When creating the `NetworkHandler`, you must inherit the `NetworkBehaviour` class. This allows the script to utilize the networking methods.
 
 ```cs
 using System;
@@ -55,7 +55,7 @@ namespace ExampleMod
 
 ### ClientRpc
 
-We have our basic component! From here, we need to add the RPCs and a measure to avoid duplicate signals. Since the event info is only sent by the server, we do not have to deal with a ServerRPC, and only need to set up the ClientRPC. This is what our ExampleMod uses:
+We have our basic component! From here, we need to add the RPCs and a measure to avoid duplicate signals. Since the event info is only sent by the server, we do not have to deal with a ServerRpc and only need to set up the ClientRpc. This is what our example mod uses:
 
 ```cs
 public static event Action<String> LevelEvent;
@@ -71,7 +71,7 @@ According to the [Unity Docs](https://docs-multiplayer.unity3d.com/netcode/curre
 
 ### ServerRpc
 
-Although not necessary in out tutorial mod, a server RPC method is similar and easy to set up as well. By default, however, any client that is not the owner of the game object will not be able to call the method. To avoid this and allow any client to call this method, we can add `(RequireOwnership = false)` to the attribute, resulting in the following method:
+Although not necessary in our tutorial mod, a server RPC method is similar and easy to set up as well. By default, however, any client that is not the owner of the game object will not be able to call the method. To avoid this and allow any client to call this method, we can add `(RequireOwnership = false)` to the attribute, resulting in the following method:
 
 ```cs
 [ServerRpc(RequireOwnership = false)]
@@ -83,7 +83,7 @@ public void EventServerRPC(/*parameters here*/)
 
 ### C# Events
 
-Now, you may ask, what is `public static event Action<String> LevelEvent;`? This uses C#'s event/delagate system to create a readable event. While it may look complex at first, it turns out to be quite simple! A script can subscribe to the event (which will be shown later), at which point, when the event is invoked, a specified method will run.
+Now, you may ask, what is `public static event Action<String> LevelEvent;`? This uses C#'s event/delegate system to create a readable event. While it may look complex at first, it turns out to be quite simple! A script can subscribe to the event (which will be shown later), at which point, when the event is invoked, a specified method will run.
 
 You may also see `LevelEvent?.Invoke(eventName)` and wonder what the heck this mess of letters and symbols does. It's just a simplified version of the following code:
 
@@ -94,7 +94,7 @@ if (LevelEvent != null)
 }
 ```
 
-All this checks is if the event is not equal to null and calls the event if so. The event will be null *if there are no subscribers to the event.*
+All this if statement checks is whether the event is not equal to null and calls the event if so. The event will be null *if there are no subscribers to the event.*
 
 ### Preventing Duplication of Events
 
@@ -109,9 +109,9 @@ public override void OnNetworkSpawn()
 }
 ```
 
-This removes any subscribers, and continues to call the base OnNetworkSpawn method to allow any code that runs in that to still occur.
+This removes any subscribers and continues to call the base OnNetworkSpawn method to allow any code that runs in that to still occur.
 
-### Finallized Network Handler
+### Finalized Network Handler
 
 We finished! All that's left is to throw it all together into one script:
 
@@ -145,19 +145,19 @@ namespace ExampleMod
 
 ## Spawning the Network Handler
 
-Before we can spawn the ExampleNetworkHandler, we have to load it into the game. There are two ways we can do this: through LethalLib or loading it from an AssetBundle. In our case, we are going to load our handler from an AssetBundle. 
+Before we can spawn the ExampleNetworkHandler, we must load it into the game. There are two ways we can do this: through LethalLib or loading it from an AssetBundle. In our case, we are going to load our handler from an AssetBundle. 
 
 The Game Object we spawn as an asset requires a network object. We will use this prefab for our Network Handler:
 
 ![ExampleNetworkHandler Prefab](../docs/files/custom-networking/ExampleNetworkHandlerPrefab.png)
 
-We bundle this prefab up, add it to our project folder, and then import it using `MainAssetBundle = AssetBundle.LoadFromStream()`. We then can begin working on the patch that spawns the NetworkHandler in.
+We bundle this prefab up, add it to our project folder, and then import it using `MainAssetBundle = AssetBundle.LoadFromStream()`. We then can begin working on the patch that spawns the NetworkHandler.
 
 ### Loading the Asset In
 
-The asset needs to be loaded in and given to the NetworkManager as a NetworkPrefab - before the player starts or joins a server. If this is not done, the host and/or clients will not know what object to spawn in and will result with nothing spawning in.
+The asset needs to be loaded in and given to the NetworkManager as a NetworkPrefab - before the player starts or joins a server. If this is not done, the host and/or clients will not know what object to spawn in, and will result in nothing spawning in.
 
-First we need to load in the asset, which we will patch into GameNetworkManager's Start method to load it in:
+First, we need to load in the asset, which we will patch into GameNetworkManager's Start method to load it in:
 
 ```cs
 [HarmonyPatch]
@@ -177,7 +177,7 @@ public class NetworkObjectManager
 }
 ```
 
-Wait! Before we can send this to the NetworkManager, don't you think it's missing something? Right, the ExampleNetworkHandler component! While it is possible to add this to the prefab before hand (you can ask to find out how), it's also simple to add it right here and now. All we have to do is add it as a component:
+Wait! Before we can send this to the NetworkManager, don't you think it's missing something? Right, the ExampleNetworkHandler component! While it is possible to add this to the prefab beforehand (you can ask to find out how), it's also simple to add it right here and now. All we must do is add it as a component:
 
 ```cs
 [HarmonyPostfix, HarmonyPatch(typeof(GameNetworkManager), "Start")]
@@ -219,9 +219,9 @@ public static void Init()
 }
 ```
 
-### Spawning the NetworkHandler In
+### Spawning the NetworkHandler
 
-Now that the game knows what to load when we tell it to load the ExampleNetworkHandler, we just have to spawn it! To do so, we just have to Instantiate the prefab, then load it in:
+Now that the game knows what to load when we tell it to load the ExampleNetworkHandler, all we have left is to spawn it! To do so, we just must Instantiate the prefab, then load it in:
 
 ```cs
 var networkHandlerHost = Object.Instantiate(networkPrefab, Vector3.zero, Quaternion.identity)
@@ -232,7 +232,7 @@ networkHandlerHost.GetComponent<NetworkObject>().Spawn();
 >
 >This scene never gets unloaded until disconnecting from the server - <i>precisely</i> when we want the network object to be destroyed!
 
-But wait, there's a catch: Only the host/server is allowed to spawn the network object! To prevent clients from spawning the object, we can do something pretty simple. We just have to check if the game instance is a host or a client:
+But wait, there's a catch: Only the host/server is allowed to spawn the network object! To prevent clients from spawning the object, we can do something simple. We just check whether the game instance is a host or a client:
 
 ```cs
 [HarmonyPostfix, HarmonyPatch(typeof(StartOfRound), "Awake")]
@@ -248,7 +248,7 @@ static void SpawnNetworkHandler()
 
 We want to attach this to `StartOfRound.Awake` as this method only runs when a new server is started by the host or loaded in by the client. Not only that, but it's one of the first methods to run when starting or joining a server.
 
-### Finallized Network Object Manager
+### Finalized Network Object Manager
 
 Once we throw everything together, we get a class looking like this:
 
@@ -285,7 +285,7 @@ public class NetworkObjectManager
 
 ## Utilizing the NetworkHandler
 
-Finally! The handler is in the game! Now we just have to utilize it. But how? Easy, we just have to subscribe to the C# event. For example, our mod only needs to subscribe when the round starts, and needs to unsubscribe when the round ends.
+Finally! The handler is in the game! Now we can utilize it. But how? Easy, we subscribe to the C# event. For example, our mod only needs to subscribe when the round starts and needs to unsubscribe when the round ends.
 
 ```cs
 [HarmonyPostfix, HarmonyPatch(typeof(RoundManager), "GenerateNewLevelClientRpc")]
@@ -359,4 +359,5 @@ If this does not work, you can [follow the instructions on how to use UnityNetco
 
 ## Conclusion
 
-Now that you've finally finished all the code and patched it with UnityNetcodeWeaver, you should have working networking in your mod! Congrats! Give yourself a pat on the back! It's not easy getting to this stage, and you will always run into issues as you continue your modding journey. But don't fret! You can always get help in the [Unoffical Lethal Company Community Discord!](https://discord.gg/nYcQFEpXfU)
+Now that you've finally finished all the code and patched it with UnityNetcodeWeaver, you should have networking in your mod! Congrats! Pat yourself on the back! It's not easy getting to this stage, and you will always run into issues as you continue your modding journey. But don't fret! You can always get help in the [Unofficial Lethal Company Community Discord!](https://discord.gg/nYcQFEpXfU)
+
