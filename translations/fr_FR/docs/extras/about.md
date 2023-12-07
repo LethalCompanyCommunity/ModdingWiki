@@ -1,25 +1,25 @@
-# About This Guide
+# À propos de ce guide
 
 ***
 
-This guide is mainly written by [Max](https://github.com/MaxWasUnavailable) & [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+Ce guide est principalement écrit par [Max](https://github.com/MaxWasUnavailable) & [Bobbie](https://twitter.com/VRBobbie), avec l'aide et les conseils de divers autres contributeurs et wikis. Ce guide a été inspiré par [bsmg.wiki](https://bsmg.wiki).
 
-> ## Credits
+> ## Crédits
 >
-> ### Writers
+> ### Auteurs
 >
-> **Bobbie, Max, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)**
+> **Bobbie, Max, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (créateurs du guide original)**
 >
 > ***
 >
-> Thank you to [everyone else](https://github.com/LethalCompany/ModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
+> Merci à [tout le monde](https://github.com/LethalCompany/ModdingWiki/graphs/contributors) qui a contribué au guide sur GitHub.
 
-> ## Developer / Tool Credits
+> ## Crédits du Développeur / Outils
 >
-> - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
+> - **Contributeurs BepInEx** pour [BepInEx](https://github.com/BepInEx/BepInEx).
 
-?> **Open Source and Privacy**\
-[This guide is open source on GitHub](https://github.com/legoandmars/LethalCompanyModdingWiki). It is licensed under the [ISC License](https://github.com/legoandmars/LethalCompanyModdingWiki/blob/master/LICENSE.md).
+?> **Open Source et vie privée**\
+[Ce guide est open source sur GitHub](https://github.com/legoandmars/LethalCompanyModdingWiki). Ceci est sous la [licence ISC](https://github.com/legoandmars/LethalCompanyModdingWiki/blob/master/LICENSE.md).
 
-?> **Disclaimer:**
-This product is an unofficial fanwork, not affiliated with Lethal Company or Zeekerss, and is not endorsed or otherwise sponsored by Zeekerss or any developer/publisher of Lethal Company.
+?> **Clause de non-responsabilité :**
+Ce produit est une création amateur non-officielle, non affiliée à Lethal Company ou Zeekerss, est n'est pas approuvé ou autrement sponsorisée par Zeekerss ou quelconque autre développeur/éditeur de Lethal Company.
