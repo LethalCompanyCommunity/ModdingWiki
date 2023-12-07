@@ -6,16 +6,16 @@
 
 Vérifiez que:
 
-- Vous avez SOIT MoreCompany ou BiggerLobby installé. Trying to install both will break your game.
-- Everybody trying to join the server has the mod installed.
-- Everybody trying to join the server has the same mod version installed.
+- Vous avez SOIT MoreCompany ou BiggerLobby installé. Essayer d'installer les deux empêchera votre jeu de fonctionner.
+- Tout le monde essayant de rejoindre le serveur a le mod installé.
+- Tout le monde essayant de rejoindre le serveur a la même version du mod installé.
 
-## Do mods work with a pirated version of the game?
+## Est-ce que les mods fonctionnent avec une version piratée du jeu ?
 
-Mods will only work on the latest Steam version of Lethal Company. Buy the game.
+Les mods ne fonctionneront qu'avec la dernière version Steam de Lethal Company. Achetez le jeu.
 
-## Does (X Mod) require everybody to have it installed?
+## Est-ce que (mod X) nécessite que tout le monde l'ait installé?
 
-It depends on the specific mod. Some mods work fully clientside, and some require everybody to have it installed.
+Cela dépend du mod spécifique. Certains mods fonctionnent complètement côté client, et certains requièrent que tout le monde l'ait installé.
 
-When in doubt, assume that a mod will only work if everybody on the server has it installed.
+S'il y a un doute, faites comme si tout le monde avait besoin du mod installé.
