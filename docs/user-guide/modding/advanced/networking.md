@@ -30,7 +30,7 @@ This tutorial will not go into detail on how to use this for Custom Objects or C
 
 ### ExampleMod
 
-As an example, this tutorial will go through the process of adding networking to a mod that adds new-level events into the game. These events are not able to be replicated on each client and must instead receive info from the server/host on what event is to be played. Since we are dealing with events, RPCs would be preferable to Network Variables.
+As an example, this tutorial will go through the process of adding networking to a mod that adds new-level events into the game. These events are not able to be replicated on each client and must instead receive info from the server/host on what event is to be played. Since we are dealing with events, RPCs are preferable over Network Variables.
 
 ## Creating the NetworkHandler
 
@@ -83,7 +83,7 @@ public void EventServerRPC(/*parameters here*/)
 
 ### C# Events
 
-Now, you may ask, what is `public static event Action<String> LevelEvent;`? This uses C#'s event/delegate system to create a readable event. While it may look complex at first, it turns out to be quite simple! A script can subscribe to the event (which will be shown later), at which point, when the event is invoked, a specified method will run.
+Now, you may ask, what is `public static event Action<String> LevelEvent`? This uses C#'s event/delegate system to create a readable event. While it may look complex at first, it turns out to be quite simple! A script can subscribe to the event - which will be shown later - then, when the event is invoked, any specified method(s) will run.
 
 You may also see `LevelEvent?.Invoke(eventName)` and wonder what the heck this mess of letters and symbols does. It's just a simplified version of the following code:
 
@@ -109,7 +109,7 @@ public override void OnNetworkSpawn()
 }
 ```
 
-This removes any subscribers and continues to call the base OnNetworkSpawn method to allow any code that runs in that to still occur.
+This removes any subscribers and continues to call the base OnNetworkSpawn method to allow any code that runs in that method to still occur.
 
 ### Finalized Network Handler
 
@@ -143,7 +143,7 @@ namespace ExampleMod
 }
 ```
 
-## Spawning the Network Handler
+## Spawning the NetworkHandler
 
 Before we can spawn the ExampleNetworkHandler, we must load it into the game. There are two ways we can do this: through LethalLib or loading it from an AssetBundle. In our case, we are going to load our handler from an AssetBundle. 
 
@@ -167,11 +167,11 @@ MainAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Path.GetDirectoryName(As
 
 While this method works, it's not recommended due to potential issues with the ExampleModAssets file not existing at that location, either from the mod not being installed correctly, or someone accidentally deleting the file.
 
-### Loading the Asset In
+### Loading the Asset
 
-The asset needs to be loaded in and given to the NetworkManager as a NetworkPrefab - before the player starts or joins a server. If this is not done, the host and/or clients will not know what object to spawn in, and will result in nothing spawning in.
+The asset needs to be loaded and given to the NetworkManager as a NetworkPrefab - before the player starts or joins a server. If this is not done, the host and/or clients will not know what object to spawn, and will result in nothing spawning.
 
-First, we need to load in the asset, which we will patch into GameNetworkManager's Start method to load it in:
+First, we need to load the asset, which we will patch into GameNetworkManager's Start method to load it:
 
 ```cs
 [HarmonyPatch]
@@ -207,7 +207,7 @@ public static void Init()
 
 ### Adding Asset as Network Prefab
 
-Now that we have the prefab ready to be loaded, it's quite simple:
+Now that we have the prefab ready to be loaded, it's quite simple to give this to the NetworkManager as a prefab:
 
 ```cs
 NetworkManager.Singleton.AddNetworkPrefab(networkPrefab);
@@ -233,16 +233,16 @@ public static void Init()
 }
 ```
 
-### Spawning the NetworkHandler
+### Spawning the GameObject During Runtime
 
-Now that the game knows what to load when we tell it to load the ExampleNetworkHandler, all we have left is to spawn it! To do so, we just must Instantiate the prefab, then load it in:
+Now that the game knows what to load when we tell it to load the ExampleNetworkHandler, all we have left is to spawn it! To do so, we just must Instantiate the prefab, then spawn it:
 
 ```cs
 var networkHandlerHost = Object.Instantiate(networkPrefab, Vector3.zero, Quaternion.identity)
 networkHandlerHost.GetComponent<NetworkObject>().Spawn();
 ```
 
->**Note:** While you can put false as a parameter in the Spawn method to prevent the game from auto-deleting the object, you shouldn't! The object stays loaded in `SampleSceneRelay`, which is the main ship scene. 
+>**Note:** While you can put <i>false</i> as a parameter in the Spawn method to prevent the game from auto-deleting the object, you shouldn't in this case! The object stays loaded in `SampleSceneRelay`, which is the main ship scene. 
 >
 >This scene never gets unloaded until disconnecting from the server - <i>precisely</i> when we want the network object to be destroyed!
 
@@ -320,7 +320,7 @@ static void ReceivedEventFromServer(string eventName)
 }
 ```
 
-What does this all do? Well, `NetworkHandler.LevelEvent += ReceivedEventFromServer;` simply tells C# that we want to have `ReceivedEventFromServer(string eventName)` to run when the `LevelEvent` event is invoked. `NetworkHandler.LevelEvent -= Received` tells C# that we no longer want `ReceivedEventFromServer` to run when the event is invoked.
+What does this all do? Well, `NetworkHandler.LevelEvent += ReceivedEventFromServer` simply tells C# that we want `ReceivedEventFromServer(string eventName)` to run when the `LevelEvent` event is invoked. `NetworkHandler.LevelEvent -= Received` tells C# that we no longer want `ReceivedEventFromServer` to run when the event is invoked.
 
 >**Note:** When subscribing and unsubscribing to an event, make sure that <i>both</i> the host and the client do so. Both `GenerateNewLevelClientRpc` and `DespawnPropsAtEndOfRound` run on all game instances - even if the latter method immediately attempts to return if the game instance is not the host.
 >
