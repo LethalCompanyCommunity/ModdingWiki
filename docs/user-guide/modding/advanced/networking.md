@@ -57,8 +57,6 @@ Essentially, this allows you to create and use RPCs, Network Variables, etc.
 
 There **must** be a project reference to `Unity.Netcode.Runtime.dll` to utilize Netcode for GameObjects. You can refer to [this section](./starting-a-mod?id=adding-game-assemblies) of this wiki to add it.
 
-!><b><i>In addition, the mod must use </i></b>`netstandard2.1`<b><i>. Failure to do so can cause Unity Netcode Weaver to not function!</i></b> (You should be using `netstandard2.1` anyways since the game is built with it.)
-
 ## Introduction
 
 There are two parts to making a mod using Netcode for GameObjects (NGO) to allow the transmission of info between the host & clients.
@@ -366,11 +364,9 @@ What does this all do? Well, `NetworkHandler.LevelEvent += ReceivedEventFromServ
 
 Now that we've finished the networking code, all that's left is to patch the compiled mod assembly with Unity Netcode Weaver/Patcher. Before we can do so, we need to prepare the mod for patching. 
 
-First, ***ensure that you are using netstandard2.1 [as aforementioned.](/custom-networking?id=other-setup-required)***
+1. Make sure that there is a .pdb file when you build your plugin. If it is not there, make sure that Debug Symbols is set to `Portable` and not embedded.
 
-Second, make sure that there is a .pdb file when you build your plugin. If it is not there, make sure that Debug Symbols is set to `Portable` and not embedded.
-
-Finally, add the following code to your main Plugin.cs file, and make sure the method only runs **once**:
+2. Add the following code to your main Plugin.cs file, and make sure the method only runs **once**:
 
 ```cs
 private static void NetcodeWeaver()
