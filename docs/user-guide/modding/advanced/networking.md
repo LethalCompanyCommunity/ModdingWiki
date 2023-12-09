@@ -205,7 +205,9 @@ One other method of importing the asset is with:
 MainAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "ExampleModAssets"));
 ```
 
-While this method works, it's not recommended due to potential issues with the ExampleModAssets file not existing at that location, either from the mod not being installed correctly, or someone accidentally deleting the file.
+The AssetBundle file has to be added to the Plugins folder with the mod's .dll file in this case. It won't work if it's nonexistant or in the Bundles folder of BepInEx.
+
+>? While this method works, it's not recommended due to potential issues with the ExampleModAssets file not existing at that location, either from the mod not being installed correctly, or someone accidentally deleting the file.
 
 ### Loading the Asset
 
