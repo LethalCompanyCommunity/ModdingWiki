@@ -1,7 +1,8 @@
 # Custom Networking
 
-> **Note:** This is not a tutorial on how to use Unity's [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/current/tutorials/get-started-ngo/) RPCs and Network Variables.\
-> This is only meant to be used to understand <i>how</i> to implement custom networking into the game.
+!> **Warning: This is an advanced article. While this introduces some C# concepts, it is highly recommended to understand C# and the basics of modding this game <i>before</i> reading this article.**
+
+?>**Note:** This is not a tutorial on how to use Unity's [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/current/tutorials/get-started-ngo/) RPCs and Network Variables. This is only meant to be used to understand <i>how</i> to implement custom networking into the game.
 
 ## Preface
 
@@ -55,8 +56,6 @@ Essentially, this allows you to create and use RPCs, Network Variables, etc.
 ### Other Setup Required
 
 There **must** be a project reference to `Unity.Netcode.Runtime.dll` to utilize Netcode for GameObjects. You can refer to [this section](./starting-a-mod?id=adding-game-assemblies) of this wiki to add it.
-
-> <b><i>In addition, the mod must use </i></b>`netstandard2.1`<b><i>. Failure to do so can cause Unity Netcode Weaver to not function!</i></b> (You should be using `netstandard2.1` anyways since the game is built with that.)
 
 ## Introduction
 
@@ -254,9 +253,7 @@ Now that we have the prefab ready to be loaded, it's quite simple to give this t
 NetworkManager.Singleton.AddNetworkPrefab(networkPrefab);
 ```
 
-> **Note:** You can only add network prefabs to NetworkManager **before** the player creates or joins a server. You can also do so after the player leaves the server.
->
-> If you try to add a network prefab while the player is connected to a server, it will result in an error and your object <u>will not</u> be loaded.
+?>**Note:** You can only add network prefabs to NetworkManager **before** the player creates or joins a server. You can also do so after the player leaves the server.<br><br>If you try to add a network prefab while the player is connected to a server, it will result in an error and your object <u>will not</u> be loaded.
 
 To prevent any errors, we do this shortly after the prefab is loaded:
 
@@ -283,9 +280,7 @@ var networkHandlerHost = Object.Instantiate(networkPrefab, Vector3.zero, Quatern
 networkHandlerHost.GetComponent<NetworkObject>().Spawn();
 ```
 
-> **Note:** While you can put <i>false</i> as a parameter in the Spawn method to prevent the game from auto-deleting the object, you shouldn't in this case! The object stays loaded in `SampleSceneRelay`, which is the main ship scene.
->
-> This scene never gets unloaded until disconnecting from the server - <i>precisely</i> when we want the network object to be destroyed!
+?>**Note:** While you can put <i>false</i> as a parameter in the Spawn method to prevent the game from auto-deleting the object, you shouldn't in this case! The object stays loaded in `SampleSceneRelay`, which is the main ship scene.<br><br>This scene never gets unloaded until disconnecting from the server - <i>precisely</i> when we want the network object to be destroyed!
 
 But wait, there's a catch: Only the host/server is allowed to spawn the network object! To prevent clients from spawning the object, we can do something simple. We just check whether the game instance is a host or a client:
 
@@ -363,19 +358,15 @@ static void ReceivedEventFromServer(string eventName)
 
 What does this all do? Well, `NetworkHandler.LevelEvent += ReceivedEventFromServer` simply tells C# that we want `ReceivedEventFromServer(string eventName)` to run when the `LevelEvent` event is invoked. `NetworkHandler.LevelEvent -= Received` tells C# that we no longer want `ReceivedEventFromServer` to run when the event is invoked.
 
-> **Note:** When subscribing and unsubscribing to an event, make sure that <i>both</i> the host and the client do so. Both `GenerateNewLevelClientRpc` and `DespawnPropsAtEndOfRound` run on all game instances - even if the latter method immediately attempts to return if the game instance is not the host.
->
-> If you don't ensure both the host and clients subscribe/unsubscribe to an event, it very quickly leads to unwanted behavior. For example, if the client doesn't unsubscribe in our test mod, events will be duplicated on client instances since the event will be subscribed to multiple times.
+?>**Note:** When subscribing and unsubscribing to an event, make sure that <i>both</i> the host and the client do so. Both `GenerateNewLevelClientRpc` and `DespawnPropsAtEndOfRound` run on all game instances - even if the latter method immediately attempts to return if the game instance is not the host.<br><br>If you don't ensure both the host and clients subscribe/unsubscribe to an event, it very quickly leads to unwanted behavior. For example, if the client doesn't unsubscribe in our test mod, events will be duplicated on client instances since the event will be subscribed to multiple times.
 
 ## Using UnityNetcodeWeaver
 
 Now that we've finished the networking code, all that's left is to patch the compiled mod assembly with Unity Netcode Weaver/Patcher. Before we can do so, we need to prepare the mod for patching.
 
-First, _**ensure that you are using netstandard2.1 [as aforementioned.](/custom-networking?id=other-setup-required)**_
+1. Make sure that there is a .pdb file when you build your plugin. If it is not there, make sure that Debug Symbols is set to `Portable` and not embedded.
 
-Second, make sure that there is a .pdb file when you build your plugin. If it is not there, make sure that Debug Symbols is set to `Portable` and not embedded.
-
-Finally, add the following code to your main Plugin.cs file, and make sure the method only runs once:
+2. Add the following code to your main Plugin.cs file, and make sure the method only runs **once**:
 
 ```cs
 private static void NetcodeWeaver()
