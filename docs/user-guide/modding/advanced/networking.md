@@ -89,13 +89,12 @@ namespace ExampleMod
     public class ExampleNetworkHandler : NetworkBehaviour
     {
 
-        private static ExampleNetworkHandler _Instance;
-        public static ExampleNetworkHandler Instance { get { return _Instance; } }
+        public static ExampleNetworkHandler Instance { get; private set; }
     }
 }
 ```
 
-We also add the two lines of code to allow scripts to easily access any methods or variables, since in the case of our ExampleMod, there is only one version of this class. While you can just use:
+We also add the one line of code to allow scripts to easily access any methods or variables, since in the case of our ExampleMod, there is only one version of this class. While you can just use:
 
 ```cs
 public static ExampleNetworkHandler Instance;
@@ -169,8 +168,8 @@ public override void OnNetworkSpawn()
     LevelEvent = null;
 
     if (NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsServer)
-        _Instance?.gameObject.GetComponent<NetworkObject>().Despawn();
-    _Instance = this;
+        Instance?.gameObject.GetComponent<NetworkObject>().Despawn();
+    Instance = this;
 
     base.OnNetworkSpawn();
 }
@@ -195,8 +194,8 @@ namespace ExampleMod
             LevelEvent = null;
 
             if (NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsServer)
-                _Instance?.gameObject.GetComponent<NetworkObject>().Despawn();
-            _Instance = this;
+                Instance?.gameObject.GetComponent<NetworkObject>().Despawn();
+            Instance = this;
 
             base.OnNetworkSpawn();
         }
@@ -209,8 +208,7 @@ namespace ExampleMod
 
         public static event Action<String> LevelEvent;
 
-        private static ExampleNetworkHandler _Instance;
-        public static ExampleNetworkHandler Instance { get { return _Instance; } }
+        public static ExampleNetworkHandler Instance { get; private set; }
     }
 }
 ```
