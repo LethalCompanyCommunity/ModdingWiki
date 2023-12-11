@@ -205,7 +205,9 @@ One other method of importing the asset is with:
 MainAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "ExampleModAssets"));
 ```
 
-While this method works, it's not recommended due to potential issues with the ExampleModAssets file not existing at that location, either from the mod not being installed correctly, or someone accidentally deleting the file.
+The AssetBundle file has to be added to the Plugins folder with the mod's .dll file in this case. It won't work if it's nonexistant or in the Bundles folder of BepInEx.
+
+?> While this method works, it's not recommended due to potential issues with the ExampleModAssets file not existing at that location, either from the mod not being installed correctly, or someone accidentally deleting the file.
 
 ### Loading the Asset
 
@@ -218,7 +220,7 @@ First, we need to load the asset, which we will patch into GameNetworkManager's 
 public class NetworkObjectManager
 {
 
-    [HarmonyPostfix, HarmonyPatch(typeof(GameNetworkManager), "Start")]
+    [HarmonyPostfix, HarmonyPatch(typeof(GameNetworkManager), nameof(GameNetworkManager.Start))]
     public static void Init()
     {
         if (networkPrefab != null)
@@ -234,7 +236,7 @@ public class NetworkObjectManager
 Wait! Before we can send this to the NetworkManager, don't you think it's missing something? Right, the ExampleNetworkHandler component! While it is possible to add this to the prefab beforehand (you can ask to find out how), it's also simple to add it right here and now. All we must do is add it as a component:
 
 ```cs
-[HarmonyPostfix, HarmonyPatch(typeof(GameNetworkManager), "Start")]
+[HarmonyPostfix, HarmonyPatch(typeof(GameNetworkManager), nameof(GameNetworkManager.Start))]
 public static void Init()
 {
     if (networkPrefab != null)
@@ -258,7 +260,7 @@ NetworkManager.Singleton.AddNetworkPrefab(networkPrefab);
 To prevent any errors, we do this shortly after the prefab is loaded:
 
 ```cs
-[HarmonyPostfix, HarmonyPatch(typeof(GameNetworkManager), "Start")]
+[HarmonyPostfix, HarmonyPatch(typeof(GameNetworkManager), nameof(GameNetworkManager.Start))]
 public static void Init()
 {
     if (networkPrefab != null)
@@ -285,7 +287,7 @@ networkHandlerHost.GetComponent<NetworkObject>().Spawn();
 But wait, there's a catch: Only the host/server is allowed to spawn the network object! To prevent clients from spawning the object, we can do something simple. We just check whether the game instance is a host or a client:
 
 ```cs
-[HarmonyPostfix, HarmonyPatch(typeof(StartOfRound), "Awake")]
+[HarmonyPostfix, HarmonyPatch(typeof(StartOfRound), nameof(StartOfRound.Awake))]
 static void SpawnNetworkHandler()
 {
     if(NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsServer)
@@ -307,7 +309,7 @@ Once we throw everything together, we get a class looking like this:
 public class NetworkObjectManager
 {
 
-    [HarmonyPostfix, HarmonyPatch(typeof(GameNetworkManager), "Start")]
+    [HarmonyPostfix, HarmonyPatch(typeof(GameNetworkManager), nameof(GameNetworkManager.Start))]
     public static void Init()
     {
         if (networkPrefab != null)
@@ -319,7 +321,7 @@ public class NetworkObjectManager
         NetworkManager.Singleton.AddNetworkPrefab(networkPrefab);
     }
 
-    [HarmonyPostfix, HarmonyPatch(typeof(StartOfRound), "Awake")]
+    [HarmonyPostfix, HarmonyPatch(typeof(StartOfRound), nameof(StartOfRound.Awake))]
     static void SpawnNetworkHandler()
     {
         if(NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsServer)
@@ -338,13 +340,13 @@ public class NetworkObjectManager
 Finally! The handler is in the game! Now we can utilize it. But how? Easy, we subscribe to the C# event. For example, our mod only needs to subscribe when the round starts and needs to unsubscribe when the round ends.
 
 ```cs
-[HarmonyPostfix, HarmonyPatch(typeof(RoundManager), "GenerateNewLevelClientRpc")]
+[HarmonyPostfix, HarmonyPatch(typeof(RoundManager), nameof(RoundManager.GenerateNewLevelClientRpc))]
 static void SubscribeToHandler()
 {
     NetworkHandler.LevelEvent += ReceivedEventFromServer;
 }
 
-[HarmonyPostfix, HarmonyPatch(typeof(RoundManager), "DespawnPropsAtEndOfRound")]
+[HarmonyPostfix, HarmonyPatch(typeof(RoundManager), nameof(RoundManager.DespawnPropsAtEndOfRound))]
 static void UnsubscribeFromHandler()
 {
     NetworkHandler.LevelEvent -= ReceivedEventFromServer;
