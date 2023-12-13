@@ -1,17 +1,24 @@
+---
+prev: false
+description: Learn how to install all the necessary prerequisites to get started with creating Lethal Company mods.
+---
+
 # Initial Setup
 
 ## Setting up your development environment
 
 Before you can start modding, you'll need some tools to actually create mods. Luckily, all of these are **available for free**. 
 
->! This guide is roughly based on some parts of the [BepInEx setup guide](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/1_setup.html), which is another great resource for learning how to mod
+::: tip
+This guide is roughly based on some parts of the [BepInEx setup guide](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/1_setup.html), which is another great resource for learning how to mod
+:::
 
 ### .Net SDK
 An SDK (=Software Development Kit) is a system that allows you to turn your code into something that your PC can run. It is used by other tools, and you'll generally not interact with it directly.
 
 You'll want to download and install the latest recommended version from [this page](https://dotnet.microsoft.com/en-us/download). It'll look something like this:
 
-[![.Net SDK download](../docs/files/initial-setup/netsdkdownload.png)](https://dotnet.microsoft.com/en-us/download)
+[![.Net SDK download](../images/initial-setup/netsdkdownload.png)](https://dotnet.microsoft.com/en-us/download)
 
 
 ### IDE
@@ -66,14 +73,16 @@ We recommend one (or all) of three free options:
 - [ILSpy](https://github.com/icsharpcode/ILSpy)
 - [dotPeek](https://www.jetbrains.com/decompiler/)
 
-!> **Note you do not necessarily need this if you have Rider or Visual Studio, since they come with built-in decompilers. Note that different decompilers offer slightly different results, and have different interfaces.**
+::: tip
+**Note you do not necessarily need this if you have Rider or Visual Studio, since they come with built-in decompilers. Note that different decompilers offer slightly different results, and have different interfaces.**
+:::
 
 ### Unity Explorer (optional)
 [Unity Explorer](https://github.com/sinai-dev/UnityExplorer) is a tool which adds an in-game UI that allows you to explore, debug, and modify the game while it's running. This tool can be highly useful to get to know the game's technical side better, and his hence strongly recommended.
 
 You will want to download the version compatible with the latest version of BepInEx (5).
 
-[![Unity Explorer download](../docs/files/initial-setup/unityexplorerdownload.png)](https://github.com/sinai-dev/UnityExplorer/releases/latest/download/UnityExplorer.BepInEx5.Mono.zip)
+[![Unity Explorer download](../images/initial-setup/unityexplorerdownload.png)](https://github.com/sinai-dev/UnityExplorer/releases/latest/download/UnityExplorer.BepInEx5.Mono.zip)
 
 ### Additional tools (optional)
 There are a number of BepInEx plugins and tools that might be useful as you get more experienced with modding. The BepInEx devs have helpfully listed them [here](https://docs.bepinex.dev/articles/dev_guide/dev_tools.html).

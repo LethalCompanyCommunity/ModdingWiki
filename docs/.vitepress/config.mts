@@ -35,24 +35,24 @@ export default defineConfig({
             { 
               text: 'Advanced Modding Topics', 
               items: [
-                { text: 'Custom Networking', link: '/advanced-modding/custom-networking' }
+                { text: 'Custom Networking', link: '/advanced-modding/networking' }
               ]
             },
             { 
               text: 'Other Resources', 
               items: [
-                { text: 'Frequently Asked Questions', link: '/faq' },
-                { text: 'Contributing translations', link: '/translating-the-wiki' },
-                { text: 'About', link: '/about' }
+                { text: 'Frequently Asked Questions', link: '/extras/faq' },
+                { text: 'Contributing translations', link: '/translation/translating-the-wiki' },
+                { text: 'About', link: '/extras/about' }
               ]
             },
           ]
         }
       ],
     },
-
+    outline: 'deep',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/LethalCompany/ModdingWiki' }
     ]
   }
 })

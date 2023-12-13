@@ -1,3 +1,7 @@
+---
+description: A basic overview of the Open Source approach used by the Lethal Company modding community.
+---
+
 # Open-source and ethics
 
 ## What is open-source?
@@ -19,8 +23,10 @@ This means, if you actually want to properly open-source your mods, that you'll 
 This might sound scary, but it really doesn't have to be. GitHub created a very simple and nice website to find a
 license that fits your project: https://choosealicense.com/
 
-!> **Obligatory "we are not lawyers". Our interpretation of these licenses is primarily based off of the `choosealicense`
+::: warning
+ **Obligatory "we are not lawyers". Our interpretation of these licenses is primarily based off of the `choosealicense`
 website, as well as personal experience.**
+:::
 
 We recommend going with one of the following two licenses for mods:
 

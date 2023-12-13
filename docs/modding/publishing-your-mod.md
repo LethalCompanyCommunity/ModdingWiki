@@ -1,3 +1,8 @@
+---
+next: false
+description: Learn how to prepare your finished Lethal Company mod and upload it to thunderstore.
+---
+
 # Publishing your mod
 
 There are a number of options for releasing your mods, such as different modding websites.
@@ -18,11 +23,11 @@ There are a number of reasons we recommend this:
 
 First, create an account. Once you've created your account, you'll need to set up a "Team". Do this by going to your account settings, which you can find at the top right of the window, over here:
 
-![Thunderstore account settings](../docs/files/publishing-your-mod/thunderstoresettings.png)
+![Thunderstore account settings](../images/publishing-your-mod/thunderstoresettings.png)
 
 Then, go to the "Teams" tab, and click on "Create Team":
 
-![Thunderstore Create Team button](../docs/files/publishing-your-mod/thunderstorecreateteam.png)
+![Thunderstore Create Team button](../images/publishing-your-mod/thunderstorecreateteam.png)
 
 We recommend using your username as team name, unless you actually have a team and an agreed-upon name for it.
 
@@ -30,11 +35,11 @@ To upload a mod for Lethal Company, you'll first want to go to the [Lethal Compa
 
 All you need to do here is press the "Upload" button, which you can find at the top left:
 
-![Thunderstore Upload button](../docs/files/publishing-your-mod/thunderstoreupload.png)
+![Thunderstore Upload button](../images/publishing-your-mod/thunderstoreupload.png)
 
 You'll be met with the following page:
 
-![Thunderstore Upload package page](../docs/files/publishing-your-mod/thunderstoreuploadpackage.png)
+![Thunderstore Upload package page](../images/publishing-your-mod/thunderstoreuploadpackage.png)
 
 A mod needs to be a specific format to be valid for the Thunderstore. This allows them to present your description, image, and other properties to the users.
 
@@ -63,10 +68,12 @@ Note that you can leave dependencies empty if your mod does not have any:
     "dependencies": []
 ```
 
-!> **Note that if you use BepInEx, you will have to add `BepInEx-BepInExPack-5.4.2100` to your dependencies:**
+::: warning
+ **Note that if you use BepInEx, you will have to add `BepInEx-BepInExPack-5.4.2100` to your dependencies:**
 ```json
     "dependencies": ["BepInEx-BepInExPack-5.4.2100"]
 ```
+:::
 
 Once you're done with all of this, happy with the way your README [will look](https://thunderstore.io/tools/markdown-preview/), and your manifest [is valid](https://thunderstore.io/tools/manifest-v1-validator/), you simply need to create a zip file and upload the mod!
 
