@@ -68,6 +68,9 @@ export default defineConfig({
     outline: 'deep',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/LethalCompany/ModdingWiki' }
-    ]
+    ],
+    editLink: {
+      pattern: 'https://github.com/LethalCompany/ModdingWiki/edit/main/docs/:path',
+    }
   }
 })
