@@ -8,7 +8,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Beginners Guide', link: '/installing-r2modman.md' },
+      { text: 'Discord', link: 'https://discord.gg/nYcQFEpXfU' }
     ],
 
     sidebar: [
