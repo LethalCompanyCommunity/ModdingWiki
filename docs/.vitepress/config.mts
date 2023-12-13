@@ -11,8 +11,8 @@ export default defineConfig({
     head.push(['meta', { property: 'og:title', content: pageData.title }])
     head.push(['meta', { property: 'og:description', content: pageData.frontmatter.description }])
     head.push(['meta', { property: 'og:site_name', content: "Lethal Company Modding Wiki" }])
-    head.push(['meta', { property: 'og:image', content: "https://lethal.wiki/docs/assets/img/logo.png" }]) // TODO: fix to new value
-    head.push(['meta', { name: 'theme-color', content: "#ff3600" }]) // TODO: fix to new value
+    head.push(['meta', { property: 'og:image', content: "https://lethal.wiki/logo.png" }])
+    head.push(['meta', { name: 'theme-color', content: "#ff3600" }])
 
     return head
   },
