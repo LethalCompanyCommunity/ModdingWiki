@@ -30,16 +30,16 @@ hero:
   </HomeGroup>
 
   <HomeGroup title="Creating Mods">
-    <HomeItem name="Initial modding setup" href="./initial-setup.html" />
-    <HomeItem name="Starting a mod" href="./starting-a-mod.html" />
-    <HomeItem name="Open-source and ethics" href="./open-source-and-ethics.html" />
-    <HomeItem name="Publishing your mod" href="./publishing-your-mod.html" />
+    <HomeItem name="Initial modding setup" href="./modding/initial-setup.html" />
+    <HomeItem name="Starting a mod" href="./modding/starting-a-mod.html" />
+    <HomeItem name="Open-source and ethics" href="./modding/open-source-and-ethics.html" />
+    <HomeItem name="Publishing your mod" href="./modding/publishing-your-mod.html" />
   </HomeGroup>
 
   <HomeGroup title="Other Resources">
-    <HomeItem name="Frequently Asked Questions" href="./faq.html" />
-    <HomeItem name="Contributing translations" href="./translating-the-wiki.html" />
-    <HomeItem name="About" href="./about.html" />
+    <HomeItem name="Frequently Asked Questions" href="./extras/faq.html" />
+    <HomeItem name="Contributing translations" href="./translation/translating-the-wiki.html" />
+    <HomeItem name="About" href="./extras/about.html" />
   </HomeGroup>
 </Home>
 
@@ -47,6 +47,6 @@ hero:
 
 - [Join the Discord server!](https://discord.gg/nYcQFEpXfU)
 - [Contribute on GitHub](https://github.com/LethalCompany/ModdingWiki)
-- [Translate the Wiki](./translating-the-wiki.html) - Localize the wiki to your language!
+- [Translate the Wiki](./translation/translating-the-wiki.html) - Localize the wiki to your language!
 
 </HomeLinks>
