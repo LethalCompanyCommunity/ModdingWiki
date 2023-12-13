@@ -1,3 +1,9 @@
+---
+prev: false
+next: false
+description: Learn how to use r2modman to install Lethal Company mods from Thunderstore. 
+---
+
 # Using r2modman
 ---
 

@@ -8,7 +8,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Beginners Guide', link: '/installing-r2modman.md' },
+      { text: 'Beginners Guide', link: '/beginners-guide.md' },
       { text: 'Discord', link: 'https://discord.gg/nYcQFEpXfU' }
     ],
 
@@ -29,7 +29,13 @@ export default defineConfig({
                 { text: 'Initial modding setup', link: '/modding/initial-setup' },
                 { text: 'Starting a mod', link: '/modding/starting-a-mod' },
                 { text: 'Open-source and ethics', link: '/modding/open-source-and-ethics' },
-                { text: 'Publishing your mod', link: '/modding/publishing-your-mod' },
+                { text: 'Publishing your mod', link: '/modding/publishing-your-mod' }
+              ]
+            },
+            { 
+              text: 'Advanced Modding Topics', 
+              items: [
+                { text: 'Custom Networking', link: '/advanced-modding/custom-networking' }
               ]
             },
             { 
