@@ -32,7 +32,7 @@ Anything you see highlighted (or any other weird-looking text) are usually links
 
 Links are usually `<0>`, `<1>`, etc, and there's an opening and closing link. You **must** include anything that's highlighted in your translation. Example:
 
-![Example of proper translation, with links and formatting the same as the source material](../images/translating-the-wiki/dutchformattingexample.png)
+![Example of proper translation, with links and formatting the same as the source material](/images/translating-the-wiki/dutchformattingexample.png)
 
 ### Previous translations
 
@@ -40,7 +40,7 @@ Because this wiki is partially based on a [previously translated wiki](https://t
 
 Feel free to use these to your advantage, or start from scratch if you think you could improve upon it.
 
-![Example of a suggested translation from the Trombone Champ Modding Wiki](../images/translating-the-wiki/suggestions.png)
+![Example of a suggested translation from the Trombone Champ Modding Wiki](/images/translating-the-wiki/suggestions.png)
 
 ## Page translation order
 

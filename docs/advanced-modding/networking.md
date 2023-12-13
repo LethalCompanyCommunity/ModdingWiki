@@ -199,7 +199,7 @@ Before we can spawn the ExampleNetworkHandler, we must load it into the game. Th
 
 The Game Object we spawn as an asset requires a network object. We will use this prefab for our Network Handler:
 
-![ExampleNetworkHandler Prefab](../images/custom-networking/ExampleNetworkHandlerPrefab.png)
+![ExampleNetworkHandler Prefab](/images/custom-networking/ExampleNetworkHandlerPrefab.png)
 
 We bundle this prefab up, embed the prefab as a resource in our ExampleMod project, and then import it using:
 

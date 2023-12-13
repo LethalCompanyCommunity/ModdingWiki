@@ -23,11 +23,11 @@ There are a number of reasons we recommend this:
 
 First, create an account. Once you've created your account, you'll need to set up a "Team". Do this by going to your account settings, which you can find at the top right of the window, over here:
 
-![Thunderstore account settings](../images/publishing-your-mod/thunderstoresettings.png)
+![Thunderstore account settings](/images/publishing-your-mod/thunderstoresettings.png)
 
 Then, go to the "Teams" tab, and click on "Create Team":
 
-![Thunderstore Create Team button](../images/publishing-your-mod/thunderstorecreateteam.png)
+![Thunderstore Create Team button](/images/publishing-your-mod/thunderstorecreateteam.png)
 
 We recommend using your username as team name, unless you actually have a team and an agreed-upon name for it.
 
@@ -35,11 +35,11 @@ To upload a mod for Lethal Company, you'll first want to go to the [Lethal Compa
 
 All you need to do here is press the "Upload" button, which you can find at the top left:
 
-![Thunderstore Upload button](../images/publishing-your-mod/thunderstoreupload.png)
+![Thunderstore Upload button](/images/publishing-your-mod/thunderstoreupload.png)
 
 You'll be met with the following page:
 
-![Thunderstore Upload package page](../images/publishing-your-mod/thunderstoreuploadpackage.png)
+![Thunderstore Upload package page](/images/publishing-your-mod/thunderstoreuploadpackage.png)
 
 A mod needs to be a specific format to be valid for the Thunderstore. This allows them to present your description, image, and other properties to the users.
 

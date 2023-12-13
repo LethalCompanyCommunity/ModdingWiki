@@ -53,9 +53,9 @@ url: https://nuget.bepinex.dev/v3/index.json
 
 For Rider, you can do this by going to the NuGet window, going to its `Sources` tab, and then clicking on the green "+" icon in the `Feeds` sub-tab. There, add a new entry using the above configuration. See [Rider's docs](https://www.jetbrains.com/help/rider/Using_NuGet.html#sources) for more info.
 
-![Show Nuget Sources tab in Rider](../images/starting-a-mod/ridershownugetsources.png)
+![Show Nuget Sources tab in Rider](/images/starting-a-mod/ridershownugetsources.png)
 
-![Rider Nuget Sources config with BepInEx added](../images/starting-a-mod/ridernugetfeeds.png)
+![Rider Nuget Sources config with BepInEx added](/images/starting-a-mod/ridernugetfeeds.png)
 
 For Visual Studio, please follow [this documentation](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources).
 
@@ -65,7 +65,7 @@ Mods are developed for specific versions of Unity and .NET, which can be specifi
 
 Our [template project](https://github.com/LethalCompany/LethalCompanyTemplate) has an example `.csproj` file that is properly configured, which can be found [here](https://github.com/LethalCompany/LethalCompanyTemplate/blob/main/LethalCompanyTemplate/LethalCompanyTemplate.csproj). Please check and compare your local mod's file with this file, and make sure the following segment is the same (except for the `AssemblyName`, `Description`, and `Version`).
 
-![Example csproj with Nuget references and proper metadata](../images/starting-a-mod/csprojexample.png)
+![Example csproj with Nuget references and proper metadata](/images/starting-a-mod/csprojexample.png)
 
 ### "Building" your mod
 
@@ -73,7 +73,7 @@ Your IDE is capable of turning your code into a file that can be run (in this ca
 
 Depending on your IDE, the build button may be placed differently. For Rider, it is in the top right:
 
-![Rider's Build Solution button](../images/starting-a-mod/riderbuild.png)
+![Rider's Build Solution button](/images/starting-a-mod/riderbuild.png)
 
 Once built, you should be able to find the `.dll` file in your project's folder, in the following subfolder path (once again replacing `MyFirstPlugin` with the name you gave your mod/project): `MyFirstPlugin/bin/(Release or Debug)/netstandard2.1/MyFirstPlugin.dll`
 

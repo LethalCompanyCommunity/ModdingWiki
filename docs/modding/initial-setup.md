@@ -18,7 +18,7 @@ An SDK (=Software Development Kit) is a system that allows you to turn your code
 
 You'll want to download and install the latest recommended version from [this page](https://dotnet.microsoft.com/en-us/download). It'll look something like this:
 
-[![.Net SDK download](../images/initial-setup/netsdkdownload.png)](https://dotnet.microsoft.com/en-us/download)
+[![.Net SDK download](/images/initial-setup/netsdkdownload.png)](https://dotnet.microsoft.com/en-us/download)
 
 
 ### IDE
@@ -82,7 +82,7 @@ We recommend one (or all) of three free options:
 
 You will want to download the version compatible with the latest version of BepInEx (5).
 
-[![Unity Explorer download](../images/initial-setup/unityexplorerdownload.png)](https://github.com/sinai-dev/UnityExplorer/releases/latest/download/UnityExplorer.BepInEx5.Mono.zip)
+[![Unity Explorer download](/images/initial-setup/unityexplorerdownload.png)](https://github.com/sinai-dev/UnityExplorer/releases/latest/download/UnityExplorer.BepInEx5.Mono.zip)
 
 ### Additional tools (optional)
 There are a number of BepInEx plugins and tools that might be useful as you get more experienced with modding. The BepInEx devs have helpfully listed them [here](https://docs.bepinex.dev/articles/dev_guide/dev_tools.html).

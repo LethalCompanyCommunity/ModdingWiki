@@ -1,9 +1,17 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, HeadConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Lethal Company Modding Wiki",
   description: "A modding wiki for lethal company",
+  transformHead: ({ pageData }) => {
+    const head: HeadConfig[] = []
+
+    head.push(['meta', { property: 'og:title', content: pageData.frontmatter.title }])
+    head.push(['meta', { property: 'og:description', content: pageData.frontmatter.description }])
+
+    return head
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
