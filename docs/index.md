@@ -2,6 +2,7 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 titleTemplate: false
+description: The Lethal Company Modding Wiki. Learn how to install, manage, and create mods for Lethal Company!
 
 hero:
   name: "Lethal Company Modding Wiki"
@@ -9,7 +10,7 @@ hero:
   actions:
     - theme: brand
       text: Beginners Guide
-      link: /installing-r2modman.html
+      link: /beginners-guide.html
     - theme: alt
       text: Edit on GitHub
       link: https://github.com/LethalCompany/ModdingWiki
@@ -24,7 +25,8 @@ hero:
 
 <Home>
   <HomeGroup title="Installing Mods">
-    <HomeItem name="Using r2modman" href="./installing-r2modman.html" />
+    <HomeItem name="Beginners guide" href="./beginners-guide.html" />
+    <HomeItem name="Using r2modman" href="./installation/installing-r2modman.html" />
   </HomeGroup>
 
   <HomeGroup title="Creating Mods">

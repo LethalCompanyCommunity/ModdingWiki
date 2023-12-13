@@ -12,15 +12,38 @@ export default defineConfig({
       { text: 'Discord', link: 'https://discord.gg/nYcQFEpXfU' }
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar: {
+      '/': [
+        {
+          items: [
+            { text: 'Beginners Guide', link: '/beginners-guide' },
+            { 
+              text: 'Installing Mods', 
+              items: [
+                { text: 'Using r2modman', link: '/installation/installing-r2modman' }
+              ]
+            },
+            { 
+              text: 'Creating Mods', 
+              items: [
+                { text: 'Initial modding setup', link: '/modding/initial-setup' },
+                { text: 'Starting a mod', link: '/modding/starting-a-mod' },
+                { text: 'Open-source and ethics', link: '/modding/open-source-and-ethics' },
+                { text: 'Publishing your mod', link: '/modding/publishing-your-mod' },
+              ]
+            },
+            { 
+              text: 'Other Resources', 
+              items: [
+                { text: 'Frequently Asked Questions', link: '/faq' },
+                { text: 'Contributing translations', link: '/translating-the-wiki' },
+                { text: 'About', link: '/about' }
+              ]
+            },
+          ]
+        }
+      ],
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
