@@ -8,6 +8,7 @@
 - [Open-source and ethics](open-source-and-ethics)
 - [Publishing your mod](publishing-your-mod)
 - [Custom Networking](custom-networking)
+- [Audio replacement](audio-modding-customsounds)
 - **Extras**
 - [Frequently Asked Questions](faq)
 - **Links**
