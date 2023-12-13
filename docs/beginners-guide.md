@@ -1,7 +1,7 @@
 ---
 prev: false
 next: false
-description: An explanation of everything related to modding Lethal Company for beginners.
+description: Get up and running with modifications to Lethal Company to enhance your experience.
 ---
 
 # Beginners Guide
