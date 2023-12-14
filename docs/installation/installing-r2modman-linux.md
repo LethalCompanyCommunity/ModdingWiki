@@ -22,8 +22,6 @@ Once you're at the desktop, you're ready to continue!
 :::
 ## Installing r2modman
 
-?> The latest version of r2modman is **%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}**.
-
 On Linux, r2modman is available in different package formats depending on your distro:
 
  - `deb` for Debian and Ubuntu-based distros

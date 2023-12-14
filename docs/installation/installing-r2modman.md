@@ -15,13 +15,11 @@ This guide will run you through installing and using [r2modman](https://github.c
 
 ## Installing r2modman
 
-::: tip
- The latest version of r2modman is **%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}**.
-:::
+<!-- f21c391c-0bc5-431d-a233-95323b95e01b -->
 
 First things first, download [**r2modman from its GitHub page**](https://github.com/ebkr/r2modmanPlus/releases/latest/).
 
-For **Windows**, you would want to get [`r2modman-Setup-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}.exe`](https://github.com/ebkr/r2modmanPlus/releases/download/v%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b:raw}/r2modman-Setup-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b:raw}.exe) or [`r2modman-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b}.exe`](https://github.com/ebkr/r2modmanPlus/releases/download/v%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b:raw}/r2modman-%{thunderstore:f21c391c-0bc5-431d-a233-95323b95e01b:raw}.exe). The former installs the mod manager to your system, while the latter simply runs r2modman without any sort of installation. Simply run the installer or the program in order to open r2modman.
+For **Windows**, you would want to get `r2modman-Setup-VERSION.exe` or `r2modman-VERSION.exe`. The former installs the mod manager to your system, while the latter simply runs r2modman without any sort of installation. Simply run the installer or the program in order to open r2modman.
 
 In order to download, simply click the links as shown below and run the program you just downloaded.
 
