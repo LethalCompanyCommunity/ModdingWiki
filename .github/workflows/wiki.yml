@@ -34,7 +34,7 @@ jobs:
       - name: Install packages
         run: npm ci
       - name: Build
-        run: npm run docs:build
+        run: npm run build
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v2
       - name: Upload Pages Artifact
