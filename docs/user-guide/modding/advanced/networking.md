@@ -2,7 +2,7 @@
 
 !> **Warning: This is an advanced article. While this introduces some C# concepts, it is highly recommended to understand C# and the basics of modding this game <i>before</i> reading this article.**
 
-?>**Note:** This is not a tutorial on how to use Unity's [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/current/tutorials/get-started-ngo/) RPCs and Network Variables. This is only meant to be used to understand <i>how</i> to implement custom networking into the game.
+?>**Note:** This is not a tutorial on how to use Unity's [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/1.5.2/about/) RPCs and Network Variables. This is only meant to be used to understand <i>how</i> to implement custom networking into the game.
 
 ## Preface
 
@@ -89,9 +89,18 @@ namespace ExampleMod
     public class ExampleNetworkHandler : NetworkBehaviour
     {
 
+        public static ExampleNetworkHandler Instance { get; private set; }
     }
 }
 ```
+
+We also add the one line of code to allow scripts to easily access any methods or variables, since in the case of our ExampleMod, there is only one version of this class. While you can just use:
+
+```cs
+public static ExampleNetworkHandler Instance;
+```
+
+Doing it with the aforementioned method will prevent any classes from overriding the Instance variable, ensuring it can always be referenced as long as the ExampleNetworkHandler exists.
 
 ### ClientRpc
 
@@ -136,7 +145,7 @@ if (LevelEvent != null)
 
 All this if statement checks is whether the event is not equal to null and calls the event if so. The event will be null *if there are no subscribers to the event.*
 
-### Preventing Duplication of Events
+### Preventing Duplication of Events and Instance
 
 Since we are using `static` when defining our C# event, an edge case can occur. What happens if the event is not unsubscribed from, and the player joins a new server? Any code that unknowingly subscribes to the event a second time will run twice! How do we make sure this does not occur? We set the C# event to equal null. The best time to do so is when the NetworkHandler gets spawned in:
 
@@ -150,6 +159,21 @@ public override void OnNetworkSpawn()
 ```
 
 This removes any subscribers and continues to call the base OnNetworkSpawn method to allow any code that runs in that method to still occur.
+
+But what about our Instance variable? If we don't set it to anything, any scripts attempting to use this handler won't be able to use .Instance! Here, we can assign the `Instance` variable to be the current object. We also need to remove any previously existing GameObject with our `ExampleNetworkHandler` class, which can only be done via the server.
+
+```cs
+public override void OnNetworkSpawn()
+{
+    LevelEvent = null;
+
+    if (NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsServer)
+        Instance?.gameObject.GetComponent<NetworkObject>().Despawn();
+    Instance = this;
+
+    base.OnNetworkSpawn();
+}
+```
 
 ### Finalized Network Handler
 
@@ -169,6 +193,10 @@ namespace ExampleMod
         {
             LevelEvent = null;
 
+            if (NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsServer)
+                Instance?.gameObject.GetComponent<NetworkObject>().Despawn();
+            Instance = this;
+
             base.OnNetworkSpawn();
         }
 
@@ -179,13 +207,15 @@ namespace ExampleMod
         }
 
         public static event Action<String> LevelEvent;
+
+        public static ExampleNetworkHandler Instance { get; private set; }
     }
 }
 ```
 
 ## Spawning the NetworkHandler
 
-Before we can spawn the ExampleNetworkHandler, we must load it into the game. There are two ways we can do this: through LethalLib or loading it from an AssetBundle. In our case, we are going to load our handler from an AssetBundle. 
+Before we can spawn the ExampleNetworkHandler, we must load it into the game. To do so, we need to load our handler from an AssetBundle. 
 
 The Game Object we spawn as an asset requires a network object. We will use this prefab for our Network Handler:
 
@@ -343,18 +373,26 @@ Finally! The handler is in the game! Now we can utilize it. But how? Easy, we su
 [HarmonyPostfix, HarmonyPatch(typeof(RoundManager), nameof(RoundManager.GenerateNewLevelClientRpc))]
 static void SubscribeToHandler()
 {
-    NetworkHandler.LevelEvent += ReceivedEventFromServer;
+    ExampleNetworkHandler.LevelEvent += ReceivedEventFromServer;
 }
 
 [HarmonyPostfix, HarmonyPatch(typeof(RoundManager), nameof(RoundManager.DespawnPropsAtEndOfRound))]
 static void UnsubscribeFromHandler()
 {
-    NetworkHandler.LevelEvent -= ReceivedEventFromServer;
+    ExampleNetworkHandler.LevelEvent -= ReceivedEventFromServer;
 }
 
 static void ReceivedEventFromServer(string eventName)
 {
     // Event Code Here
+}
+
+static void SendEventToClients(string eventName)
+{
+    if (!(NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsHost))
+        return;
+
+    ExampleNetworkHandler.Instance.EventClientRpc(eventName);
 }
 ```
 
