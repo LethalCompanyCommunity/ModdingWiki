@@ -56,3 +56,57 @@ Once you have succesfully installed r2modman, you can finally install mods.
 ![Start Lethal Company Modded](../docs/files/r2modman-install/startmodded.png)
 
 That's it! You have just successfully modded Lethal Company!
+
+## Profile sharing in r2modman
+---
+
+This guide will run you through profile sharing in r2modman (this is assuming you have already added all the mods you want to share with your friends in the mod manager) so you dont have to go through the hassel of creating a modpack for your friends (and so we arent flooding the Thunderstore with thousands of modpacks)
+
+### Exporting your profile
+---
+here is a simple guide for exporting your profile.
+
+1. when you load up r2modman you'll need to select the game for the mods you will be sharing.
+
+![page1](../docs/files/r2modman-profile-share/page1.png)
+
+2. Now you will select the profile you will be sharing.
+
+![page2](../docs/files/r2modman-profile-share/page2.png)
+
+3. Double check that all the mods you want to share are in the profile.
+
+![page3](../docs/files/r2modman-profile-share/page3.png)
+
+you will then click settings and navigate to the "Profile" tab
+
+![page4](../docs/files/r2modman-profile-share/page4.png)
+
+4. Once you are here look for either "Export profile as code" or "Export profile as a file" 
+
+![page5](../docs/files/r2modman-profile-share/page5.png)
+
+Once this is done, send either the code or the file to all who you want to share the profile/modpack with!
+
+### Importing a shared profile
+---
+here is a short guide to import shared profiles
+
+1. select the game you will be importing the profile to
+
+![page6](../docs/files/r2modman-profile-share/page6.png)
+
+2. Once you are on the profile page, select "Import/Update"
+
+![page7](../docs/files/r2modman-profile-share/page7.png)
+
+3. Select "Import new profile" or if updating an existing profile select "Update existing profile"
+
+![page8](../docs/files/r2modman-profile-share/page8.png)
+
+4. You will then import from either code or file
+
+![page9](../docs/files/r2modman-profile-share/page9.png)
+
+Once you're done you can load your new profile and start the game modded with your friends!
+
