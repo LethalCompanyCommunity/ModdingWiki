@@ -1,16 +1,16 @@
 ---
-description: Learn how to create a basic project for a Lethal Company mod.
+description: Aprenda a fazer um projeto básico de um mod para Lethal Company.
 ---
 
-# Starting a mod
+# Começar um mod
 
-## Setting up your project
+## Preparar seu projeto
 
 :::warning
-This guide assumes you've completed all the required steps in **[initial setup](initial-setup)**, or that you know what you're doing.
+Este guia assume que completou todos os passos precisos em **\[inital setup] (initial-setup)**, ou saiba o que está a fazer.
 :::
 
-This guide follows certain parts of the [official BepInEx guide](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/2_plugin_start.html).
+Este guia começa com uma partes do [oficial BepinEx guia](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/2_plugin_start.html).
 
 ### Using the template repository
 
