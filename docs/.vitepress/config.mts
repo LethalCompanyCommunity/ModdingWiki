@@ -50,7 +50,8 @@ export default defineConfig({
             { 
               text: 'Intermediate Modding Topics', 
               items: [
-                { text: 'Custom Configs', link: '/intermediate-modding/custom-configs' }
+                { text: 'Custom Configs', link: '/intermediate-modding/custom-configs' },
+                { text: 'Custom Config Syncing', link: '/intermediate-modding/custom-config-syncing' }
               ]
             },
             { 
