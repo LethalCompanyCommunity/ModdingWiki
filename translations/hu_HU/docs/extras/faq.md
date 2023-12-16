@@ -1,3 +1,9 @@
+---
+prev: false
+next: false
+description: Frequently asked Lethal Company modding questions.
+---
+
 # Frequently Asked Questions
 
 ***
