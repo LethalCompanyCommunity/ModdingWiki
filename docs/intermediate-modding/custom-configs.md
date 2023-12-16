@@ -67,7 +67,7 @@ private void MyExamplePatch()
 ```
 
 ::: danger STOP
-Understand that your config file **Will Not Be Created** until your mod is loaded ingame **at least once**. See the [r2modman Configs Page]([link not yet](https://lethal.wiki/installation/configuration.html) for using your configs.
+Understand that your config file **Will Not Be Created** until your mod is loaded ingame **at least once**. See the [r2modman Configs Page](https://lethal.wiki/installation/configuration.html) for using your configs.
 :::
 
 Now you have config files for your mods!
