@@ -1,12 +1,22 @@
+---
+prev: false
+next: false
+description: Information on how YOU can get started translating the Lethal Company Modding Wiki into another language.
+---
+
 # Translating the wiki
 
 In an effort to make modding as widely accessible as possible, this wiki does translation through crowdin: https://crwd.in/lethal-company-modding-wiki
 
-!> **Please don't submit automatic translations.** Translations only using ChatGPT, Google Translate, or similar machine translation will be rejected.
+::: danger
+**Please don't submit automatic translations.** Translations only using ChatGPT, Google Translate, or similar machine translation will be rejected.
+:::
 
 ## Tips
 
-?> **We don't recommend using Crowdin's "translate all" feature**, just click a file you want to translate and do that for each file. You get more context this way.
+::: tip
+**We don't recommend using Crowdin's "translate all" feature**, just click a file you want to translate and do that for each file. You get more context this way.
+:::
 
 The first time you launch the editor you will see Crowdin's own tips, please read them!
 
@@ -14,7 +24,7 @@ If the site/program does not have native translation support, please *do not tra
 - r2modman
 - Thunderstore
 
-If you're not sure if a site/program has native translation, try it yourself or [start a discussion](#Questions-and-new-languages)
+If you're not sure if a site/program has native translation, try it yourself or [start a discussion](#questions-and-new-languages)
 
 ### Links and parameters
 
@@ -22,7 +32,7 @@ Anything you see highlighted (or any other weird-looking text) are usually links
 
 Links are usually `<0>`, `<1>`, etc, and there's an opening and closing link. You **must** include anything that's highlighted in your translation. Example:
 
-![Example of proper translation, with links and formatting the same as the source material](../docs/files/translating-the-wiki/dutchformattingexample.png)
+![Example of proper translation, with links and formatting the same as the source material](/images/translating-the-wiki/dutchformattingexample.png)
 
 ### Previous translations
 
@@ -30,7 +40,7 @@ Because this wiki is partially based on a [previously translated wiki](https://t
 
 Feel free to use these to your advantage, or start from scratch if you think you could improve upon it.
 
-![Example of a suggested translation from the Trombone Champ Modding Wiki](../docs/files/translating-the-wiki/suggestions.png)
+![Example of a suggested translation from the Trombone Champ Modding Wiki](/images/translating-the-wiki/suggestions.png)
 
 ## Page translation order
 
