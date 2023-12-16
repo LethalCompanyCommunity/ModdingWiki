@@ -1,6 +1,6 @@
 ---
 prev: true
-next: false
+next: true
 description: Learn how to use r2modman profile codes to sync your mods with friends.
 ---
 

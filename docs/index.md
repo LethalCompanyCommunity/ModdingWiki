@@ -28,6 +28,7 @@ hero:
     <HomeItem name="Beginners guide" href="./beginners-guide.html" />
     <HomeItem name="Using r2modman" href="./installation/installing-r2modman.html" />
     <HomeItem name="Syncing mods with friends" href="./installation/syncing-mods.html" />
+    <HomeItem name="Configuring mods" href="./installation/syncing-mods.html" />
   </HomeGroup>
 
   <HomeGroup title="Creating Mods">
