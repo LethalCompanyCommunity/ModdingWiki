@@ -69,7 +69,7 @@ Enabled = true
 A decompiler allows you to decompile an existing program. This is technical terminology that can roughly be translated to "it allows you to peek behind the curtain and see what the code of a program looks like". Why is this important, you may ask? Well, if we're going to mod a game, we first need to know *what* to mod. Do we want to reduce the price of items? We'll need to know in what part of the code items are displayed and sold to the player. Do we want to add a weather condition? We'll need to know in what parts of the code the game handles and spawns weather.
 
 We recommend one (or all) of three free options:
-- [dnSpy](https://github.com/dnSpy/dnSpy)
+- [dnSpyEx](https://github.com/dnSpyEx/dnSpy)
 - [ILSpy](https://github.com/icsharpcode/ILSpy)
 - [dotPeek](https://www.jetbrains.com/decompiler/)
 
