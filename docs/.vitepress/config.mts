@@ -48,6 +48,12 @@ export default defineConfig({
               ]
             },
             { 
+              text: 'Intermediate Modding Topics', 
+              items: [
+                { text: 'Custom Configs', link: '/intermediate-modding/configs' }
+              ]
+            },
+            { 
               text: 'Advanced Modding Topics', 
               items: [
                 { text: 'Custom Networking', link: '/advanced-modding/networking' }
