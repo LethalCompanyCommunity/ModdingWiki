@@ -4,7 +4,7 @@ next: true
 description: Learn how to use r2modman profile codes to sync your mods with friends.
 ---
 
-# Syncing mods with friends
+# Syncing r2modman profiles
 
 If you're playing the game with friends, you'll probably want to make sure you have the same mods installed.
 

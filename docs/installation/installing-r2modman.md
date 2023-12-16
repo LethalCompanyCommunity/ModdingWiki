@@ -65,20 +65,4 @@ Once you have succesfully installed r2modman, you can finally install mods.
 
 That's it! You have just successfully modded Lethal Company!
 
-If you'd like to sync your mods with friends, navigate to the [syncing mods with friends](syncing-mods) page.
-
-## Changing Configs with r2modman
-
-::: warning
-Understand that config files **Will Not Be Created** until the mod is loaded ingame **at least once**.
-:::
-
-In the **Config editor** in your r2modman profile see all of your mods config files. Select the one you wish and click "Edit Config".
-
-![Edit configs](/images/r2modman-install/editconfigs.png)
-
-Once you have changed configs in your mod of choice be sure to press the "Save" button.
-
-![Save configs](/images/r2modman-install/saveconfigs.png)
-
-That's it, now you can configure to your hearts content!
+If you'd like to sync your mods with friends, navigate to the [syncing r2modman profiles](syncing-mods) page.
