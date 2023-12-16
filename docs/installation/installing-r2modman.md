@@ -25,7 +25,7 @@ In order to download, simply click the links as shown below and run the program 
 
 ![r2modman GitHub Download (v3.1.39)](/images/r2modman-install/r2modmandownload.png)
 
-## Installing Mods on r2modman
+## Installing Mods with r2modman
 
 Once you have succesfully installed r2modman, you can finally install mods.
 
@@ -65,7 +65,7 @@ Once you have succesfully installed r2modman, you can finally install mods.
 
 That's it! You have just successfully modded Lethal Company!
 
-## Sharing Profiles
+## Sharing Profiles with r2modman
 
 ### Exporting a Profile
 
