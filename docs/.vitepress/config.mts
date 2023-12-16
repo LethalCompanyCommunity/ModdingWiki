@@ -16,6 +16,7 @@ export default defineConfig({
 
     return head
   },
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
