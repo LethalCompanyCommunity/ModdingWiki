@@ -77,7 +77,7 @@ This will copy a code you can send to friends to your clipboard automatically.
 
 ### Importing a Profile
 
-1. Click **"Import/Update"** in the **Profile selction** area after selecting Lethal Company in r2modman.
+1. Click **"Import/Update"** in the **Profile selection** area after selecting Lethal Company in r2modman.
 
 ![Importing Profile](/images/r2modman-install/importprofile.png)
 
