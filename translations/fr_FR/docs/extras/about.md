@@ -1,25 +1,37 @@
+---
+prev: false
+next: false
+description: Additional information regarding the contributors and licensing of the Lethal Company Modding Wiki.
+---
+
 # À propos de ce guide
 
 ***
 
 Ce guide est principalement écrit par [Max](https://github.com/MaxWasUnavailable) & [Bobbie](https://twitter.com/VRBobbie), avec l'aide et les conseils de divers autres contributeurs et wikis. Ce guide a été inspiré par [bsmg.wiki](https://bsmg.wiki).
 
-> ## Crédits
->
-> ### Auteurs
->
-> **Bobbie, Max, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (créateurs du guide original)**
->
-> ***
->
-> Merci à [tout le monde](https://github.com/LethalCompany/ModdingWiki/graphs/contributors) qui a contribué au guide sur GitHub.
+## Crédits
 
-> ## Crédits du Développeur / Outils
->
-> - **Contributeurs BepInEx** pour [BepInEx](https://github.com/BepInEx/BepInEx).
+### Auteurs
 
-?> **Open Source et vie privée**\
-[Ce guide est open source sur GitHub](https://github.com/legoandmars/LethalCompanyModdingWiki). Ceci est sous la [licence ISC](https://github.com/legoandmars/LethalCompanyModdingWiki/blob/master/LICENSE.md).
+**Bobbie, Max, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)** <!-- TODO: Update with new contributors from lethal.wiki and trombone.wiki -->
 
-?> **Clause de non-responsabilité :**
-Ce produit est une création amateur non-officielle, non affiliée à Lethal Company ou Zeekerss, est n'est pas approuvé ou autrement sponsorisée par Zeekerss ou quelconque autre développeur/éditeur de Lethal Company.
+### Developer / Tool Credits
+
+- **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
+
+Merci à [tout le monde](https://github.com/LethalCompany/ModdingWiki/graphs/contributors) qui a contribué au guide sur GitHub.
+
+### **Open Source and Privacy**
+
+[This guide is open source on GitHub](https://github.com/LethalCompany/ModdingWiki). It is licensed under the [ISC License](https://github.com/LethalCompany/ModdingWiki/blob/master/LICENSE.md).
+
+Vitepress wiki build pages are based on [bsmg.wiki](https://bsmg.wiki), which is licensed under the [MIT LICENSE](https://github.com/bsmg/wiki/blob/master/LICENSE).
+
+Some content on the pages `beginners-guide.md` and `index.md` are based on the content of [bsmg.wiki](https://bsmg.wiki), which is licensed under the [Creative Commons BY-NC-SA 4.0 License](https://github.com/bsmg/wiki/blob/master/wiki/LICENSE).
+
+***
+
+:::warning **Disclaimer:**
+This product is an unofficial fanwork, not affiliated with Lethal Company or Zeekerss, and is not endorsed or otherwise sponsored by Zeekerss or any developer/publisher of Lethal Company.
+:::
