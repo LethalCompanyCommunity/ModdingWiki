@@ -65,4 +65,4 @@ Once you have succesfully installed r2modman, you can finally install mods.
 
 That's it! You have just successfully modded Lethal Company!
 
-If you'd like to sync your mods with friends, navigate to the [syncing r2modman profiles](syncing-mods) page.
+If you'd like to sync your mods with friends, navigate to the [sharing r2modman profiles](syncing-mods) page.

@@ -17,7 +17,7 @@ If you're using Windows, follow the [r2modman installation guide](./installation
 
 If you're on Linux or Steam Deck, you'll want the [linux installation guide](./installation/installing-r2modman-linux.md).
 
-Want a quick, easy way to install the same mods as your friends? Check out the [syncing r2modman profiles](./installation/syncing-mods) page.
+Want a quick, easy way to install the same mods as your friends? Check out the [sharing r2modman profiles](./installation/syncing-mods) page.
 
 ## Creating mods
 
