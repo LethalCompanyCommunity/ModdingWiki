@@ -12,31 +12,26 @@ description: An intermediate overview of how to impliment custom configs for you
 :::
 
 ::: info
-This tutorial is taken and adapted from the [BepInEx Configuration Documentation]([https://docs-multiplayer.unity3d.com/netcode/1.5.2/about/](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html)). For more resources refer to that.
+This tutorial is taken and adapted from the [BepInEx Configuration Documentation](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html). For more resources refer to that.
 :::
 
 ## Creating Config Entries
-In your main class (usually `Plugin.cs`), create entries for any variables that you want to be configurable.
+Create a config class and add entries for any variables that you want to be configurable.
 
 ```cs
-public class MyExampleMod : BaseUnityPlugin
+public class Config
 {
     public static ConfigEntry<string> configGreeting;
     public static ConfigEntry<bool> configDisplayGreeting;
 
     // ...
-
-    private void Awake()
-    {
-        ExampleInitConfig(); //See below
-    }
 }
 ```
 
-We also need to run a method to bind said configs to proper values and properties for users. This could be done inside of the Awake method but for the sake of coding conventions making it a seperate method is a more readable way of doing so.
+Then we can start binding our config entries to the fields we just created inside of a class constructor.
 
 ```cs
-static void ExampleInitConfig()
+public Config()
 {
     configGreeting = Config.Bind("General",       // The section under which the option is shown
                                  "GreetingText",  // The key of the configuration option in the configuration file
@@ -50,6 +45,24 @@ static void ExampleInitConfig()
 }
 ```
 
+We then need to run said constructor to bind said configs to proper values and properties for users.<br>
+In your main class (usually `Plugin.cs`), implement the constructor with a parameter referencing the file that will be created by BepInEx.
+
+```cs
+public class MyExampleMod : BaseUnityPlugin
+{
+    public static new Config MyConfig { get; internal set; }
+
+    // ...
+
+    private void Awake()
+    {
+        MyConfig = new(base.Config);
+    }
+}
+```
+
+
 ## Using Config Entries
 
 You can now get the data from the config variables you have made using the `.Value` property.
@@ -60,8 +73,8 @@ private void MyExamplePatch()
     private void MyExampleMethod()
     {
         // Instead of just Logger.LogInfo("Hello, world!")
-        if(MyExampleMod.configDisplayGreeting.Value)
-            Logger.LogInfo(MyExampleMod.configGreeting.Value);
+        if(configDisplayGreeting.Value)
+            Logger.LogInfo(configGreeting.Value);
     }
 }
 ```
