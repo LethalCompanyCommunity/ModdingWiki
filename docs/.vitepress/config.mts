@@ -37,7 +37,7 @@ export default defineConfig({
               items: [
                 { text: 'Using r2modman', link: '/installation/installing-r2modman' },
                 { text: 'Sharing r2modman profiles', link: '/installation/syncing-mods' },
-                { text: 'Configuring mods', link: '/installation/configuration' },
+                { text: 'Configuring mods', link: '/installation/configuration' }
               ]
             },
             { 
