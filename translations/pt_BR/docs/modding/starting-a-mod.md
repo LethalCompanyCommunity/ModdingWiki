@@ -7,7 +7,7 @@ description: Aprenda a fazer um projeto básico de um mod para Lethal Company.
 ## Preparar seu projeto
 
 :::warning
-Este guia assume que completou todos os passos precisos em **\[inital setup] (initial-setup)**, ou saiba o que está a fazer.
+Este guia assume que completou todos os passos precisos em **[inital setup] (initial-setup)**, ou saiba o que está a fazer.
 :::
 
 Este guia começa com uma partes do [oficial BepinEx guia](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/2_plugin_start.html).
@@ -37,6 +37,15 @@ Alternatively, you can open a console and run the following command, assuming yo
 ```cmd
 dotnet new bepinex5plugin -n MyFirstPlugin -T "netstandard2.1" -U "2022.3.9"
 ```
+
+::: warning
+Some people have been [reporting problems](https://github.com/BepInEx/BepInEx.Templates/issues/8) creating new BepInEx plugins from the template when using the .NET 8 SDK:
+
+`Failed to create template.
+Details: Object reference not set to an instance of an object.`
+
+If you get this error, try downgrading to the [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0).
+:::
 
 ### Organising your modding projects
 
