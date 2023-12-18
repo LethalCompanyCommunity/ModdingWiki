@@ -38,6 +38,15 @@ dotnet new -i BepInEx.Templates --nuget-source https://nuget.bepinex.dev/v3/inde
 dotnet new bepinex5plugin -n 'Вставьте сюда имя вашего мода' -T "netstandard2.1" -U "2022.3.9"
 ```
 
+::: warning
+Some people have been [reporting problems](https://github.com/BepInEx/BepInEx.Templates/issues/8) creating new BepInEx plugins from the template when using the .NET 8 SDK:
+
+`Failed to create template.
+Details: Object reference not set to an instance of an object.`
+
+If you get this error, try downgrading to the [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0).
+:::
+
 ### Храним ваши проекты
 
 Мы советуем вам создать папку где-нибудь в документах, где вы будете хранить все свои проекты. Назвав её при этом чем-то по типу "МодыLC". Перенесите недавно созданную папку мода в эту, чтобы все было более менее организовано.
