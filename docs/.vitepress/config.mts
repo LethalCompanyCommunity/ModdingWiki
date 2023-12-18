@@ -16,7 +16,6 @@ export default defineConfig({
 
     return head
   },
-  cleanUrls: true,
   sitemap: {
     hostname: 'https://lethal.wiki/'
   },
@@ -30,6 +29,7 @@ export default defineConfig({
       { text: 'Beginners Guide', link: '/beginners-guide.md' },
       { text: 'Discord', link: 'https://discord.gg/nYcQFEpXfU' }
     ],
+
     sidebar: {
       '/': [
         {
