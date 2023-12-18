@@ -16,10 +16,6 @@ export default defineConfig({
 
     return head
   },
-  cleanUrls: true,
-  sitemap: {
-    hostname: 'https://lethal.wiki/'
-  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
@@ -30,6 +26,7 @@ export default defineConfig({
       { text: 'Beginners Guide', link: '/beginners-guide.md' },
       { text: 'Discord', link: 'https://discord.gg/nYcQFEpXfU' }
     ],
+
     sidebar: {
       '/': [
         {
