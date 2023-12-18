@@ -76,7 +76,7 @@ A decompiler allows you to decompile an existing program. This is technical term
 
 We recommend one (or all) of three free options:
 
-- [dnSpy](https://github.com/dnSpy/dnSpy)
+- [dnSpyEx](https://github.com/dnSpyEx/dnSpy)
 - [ILSpy](https://github.com/icsharpcode/ILSpy)
 - [dotPeek](https://www.jetbrains.com/decompiler/)
 
