@@ -37,6 +37,15 @@ Alternatively, you can open a console and run the following command, assuming yo
 dotnet new bepinex5plugin -n MyFirstPlugin -T "netstandard2.1" -U "2022.3.9"
 ```
 
+::: warning
+Some people have been [reporting problems](https://github.com/BepInEx/BepInEx.Templates/issues/8) creating new BepInEx plugins from the template when using the .NET 8 SDK:
+
+`Failed to create template.
+Details: Object reference not set to an instance of an object.`
+
+If you get this error, try downgrading to the [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0).
+:::
+
 ### Organising your modding projects
 
 We recommend creating a folder somewhere easily accessible that will store all of your future modding projects. Something like "LethalCompanyMods". Move the newly created folder for your mod into this folder, to keep things well-organised.
