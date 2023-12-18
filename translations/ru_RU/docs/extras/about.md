@@ -19,6 +19,7 @@ description: Additional information regarding the contributors and licensing of 
 ### Developer / Tool Credits
 
 - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
+- **EvaisaDev** for [UnityNetcodeWeaver](https://github.com/EvaisaDev/UnityNetcodeWeaver).
 
 Спасибо [всем остальным](https://github.com/LethalCompany/ModdingWiki/graphs/contributors) кто способствовал написанию руководства на GitHub.
 
