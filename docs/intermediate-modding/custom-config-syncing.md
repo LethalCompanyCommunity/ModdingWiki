@@ -37,7 +37,7 @@ Alternatively, you can call ```Configuration.Create(identifier, name, category, 
 
 It is also possible set a tooltip or add a category with `.SetTooltip()` and `.NewCategory()` which you can read more about on the [ConfigurableCompany](https://thunderstore.io/c/lethal-company/p/AMRV/ConfigurableCompany/) Thunderstore page.
 
-Now your configs are synced using ConfigurableCompany! See [Synced Config Usage](https://lethal.wiki/intermediate-modding/custom-config-syncing.html#custom-config-syncing) for using synced configs inside your mod.
+Now your configs are synced using ConfigurableCompany!
 
 ## Manually Syncing Instances
 For this approach, we will take advantage of [Custom Messages](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/custom-messages/#named-messages), specifically Named Messages.
