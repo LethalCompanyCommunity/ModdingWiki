@@ -19,6 +19,7 @@ export default defineConfig({
   sitemap: {
     hostname: 'https://lethal.wiki/'
   },
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
