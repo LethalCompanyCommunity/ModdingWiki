@@ -61,18 +61,26 @@ url: https://nuget.bepinex.dev/v3/index.json
 ```
 
 ::: details Visual Studio
-For Visual Studio, you can do this by going to the Package Manager Settings window, going to its `Sources` tab, and then clicking on the green "+" icon in the top right. There, add a new entry using the above configuration. See [Visual Studios's docs](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources) for more info.
+For Visual Studio, you can do this by going to the NuGet Package Manager window and clicking on the settings/gear icon.
+
+![View NuGet Packages in Visual Studio](/images/starting-a-mod/visualstudioviewnugetpackages.png)
 
 ![Show NuGet Project Settings in Visual Studio](/images/starting-a-mod/visualstudioshownugetsettings.png)
 
+This will bring up an options modal; click on the `Package Sources` tab, and then click on the green "+" icon in the top right. From there, you can add a new entry using the above configuration.
+
 ![Visual Studio NuGet Sources config with BepInEx added](/images/starting-a-mod/visualstudionugetsources.png)
+
+See [Visual Studios's docs](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources) for more info.
 :::
 ::: details Rider
-For Rider, you can do this by going to the NuGet window, going to its `Sources` tab, and then clicking on the green "+" icon in the `Feeds` sub-tab. There, add a new entry using the above configuration. See [Rider's docs](https://www.jetbrains.com/help/rider/Using_NuGet.html#sources) for more info.
+For Rider, you can do this by going to the NuGet window, going to its `Sources` tab, and then clicking on the green "+" icon in the `Feeds` sub-tab. There, add a new entry using the above configuration.
 
 ![Show NuGet Sources tab in Rider](/images/starting-a-mod/ridershownugetsources.png)
 
 ![Rider NuGet Sources config with BepInEx added](/images/starting-a-mod/ridernugetfeeds.png)
+
+See [Rider's docs](https://www.jetbrains.com/help/rider/Using_NuGet.html#sources) for more info.
 :::
 ::: details VS Code
 For VS Code, there is no built in method for NuGet Packages. The only way to add the BepInEx NuGet source is by modifying the `NuGet.Config` file in your project directory. Add the following code in the `<packageSources>` section:
