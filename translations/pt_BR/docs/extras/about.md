@@ -8,7 +8,7 @@ description: Additional information regarding the contributors and licensing of 
 
 ***
 
-Este guia foi escrito principalmente por \[Max] (https\://github.com/MaxWasUnavailable) e \[Bobbie] (https\://twitter.com/VRBobbie), com ajuda e conselhos de vários outros escritores e wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+Este guia foi escrito principalmente por [Max] (https\://github.com/MaxWasUnavailable) e [Bobbie] (https\://twitter.com/VRBobbie), com ajuda e conselhos de vários outros escritores e wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
 
 ## Credits
 
@@ -19,6 +19,7 @@ Este guia foi escrito principalmente por \[Max] (https\://github.com/MaxWasUnava
 ### Developer / Tool Credits
 
 - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
+- **EvaisaDev** for [UnityNetcodeWeaver](https://github.com/EvaisaDev/UnityNetcodeWeaver).
 
 Thank you to [everyone else](https://github.com/LethalCompany/ModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
 
