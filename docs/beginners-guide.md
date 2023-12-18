@@ -17,6 +17,8 @@ If you're using Windows, follow the [r2modman installation guide](./installation
 
 If you're on Linux or Steam Deck, you'll want the [linux installation guide](./installation/installing-r2modman-linux.md).
 
+Want a quick, easy way to install the same mods as your friends? Check out the [sharing r2modman profiles](./installation/syncing-mods) page.
+
 ## Creating mods
 
 If you're interested in trying to create your own mod for Lethal Company, you can find some basic modding guides in the [Modding section](./modding/initial-setup.md).

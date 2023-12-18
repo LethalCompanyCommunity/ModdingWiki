@@ -87,3 +87,5 @@ WINEDLLOVERRIDES="winhttp=n,b" %command% --doorstop-enable true --doorstop-targe
 ```
 ![Steam Properties](/images/r2modman-linux/steamproperties.png)
 This will instruct the game to launch with the Default profile we configured in r2modman earlier, so all your mods installed there will be available.
+
+If you'd like to sync your mods with friends, navigate to the [syncing r2modman profiles](syncing-mods) page.
