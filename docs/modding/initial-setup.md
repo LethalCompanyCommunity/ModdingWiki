@@ -89,7 +89,7 @@ There are a number of BepInEx plugins and tools that might be useful as you get 
 
 ## Creating a GitHub account
 
-We strongly recommend using git - a "version control system". The most popular website that offers this as a (free) service is GitHub; the website you're on right now.
+We strongly recommend using git - a "version control system". The most popular website that offers this as a (free) service is [GitHub](https://github.com/).
 
 The following video is a short primer on what git (and a version control systems in general) is: https://www.youtube.com/watch?v=2ReR1YJrNOM
 

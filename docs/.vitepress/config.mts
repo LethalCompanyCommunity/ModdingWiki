@@ -17,6 +17,7 @@ export default defineConfig({
     return head
   },
   cleanUrls: true,
+  lastUpdated: true,
   sitemap: {
     hostname: 'https://lethal.wiki/'
   },
