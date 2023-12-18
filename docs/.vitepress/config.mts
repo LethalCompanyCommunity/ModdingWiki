@@ -16,8 +16,6 @@ export default defineConfig({
 
     return head
   },
-  cleanUrls: true,
-  lastUpdated: true,
   sitemap: {
     hostname: 'https://lethal.wiki/'
   },
@@ -78,5 +76,6 @@ export default defineConfig({
     editLink: {
       pattern: 'https://github.com/LethalCompany/ModdingWiki/edit/main/docs/:path',
     }
-  }
+  },
+  lastUpdated: true
 })
