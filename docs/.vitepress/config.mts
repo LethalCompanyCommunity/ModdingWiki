@@ -77,5 +77,6 @@ export default defineConfig({
     editLink: {
       pattern: 'https://github.com/LethalCompany/ModdingWiki/edit/main/docs/:path',
     }
-  }
+  },
+  lastUpdated: true
 })
