@@ -43,7 +43,7 @@ To actually load mods into the game, we need a mod loader. This is where BepInEx
 
 You'll first want to install BepInEx to your game. Follow their great [installation guide](https://docs.bepinex.dev/articles/user_guide/installation/index.html) to get this done. You'll want [this](https://github.com/BepInEx/BepInEx/releases/download/v5.4.22/BepInEx_x64_5.4.22.0.zip) version of BepInEx.
 
-Once installation is complete, boot up the game once to have it generate some configuration files. Then, refresh the folder you just installed BepInEx into, and go into the `BepInEx/config` folder. Here, you'll find a file named `BepInEx.cfg`. Open it, and find and edit the following section:
+Once installation is complete, boot up the game once to have it generate some configuration files. Then, refresh the folder you just installed BepInEx into, and go into the `BepInEx/config` folder. Here, you'll find a file named `BepInEx.cfg`. Open it, and find the `[Logging.Console]` section and make the following changes:
 
 ```ini
 [Logging.Console]
@@ -51,18 +51,8 @@ Once installation is complete, boot up the game once to have it generate some co
 ## Enables showing a console for log output.
 # Setting type: Boolean
 # Default value: false
-Enabled = false
-```
-
-to
-
-```ini
-[Logging.Console]
-
-## Enables showing a console for log output.
-# Setting type: Boolean
-# Default value: false
-Enabled = true
+Enabled = false // [!code --]
+Enabled = true // [!code ++]
 ```
 
 ### Decompiler (*highly recommended / near essential*)
