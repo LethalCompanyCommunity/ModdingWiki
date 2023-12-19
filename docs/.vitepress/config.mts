@@ -54,6 +54,12 @@ export default defineConfig({
               ]
             },
             { 
+              text: 'Modding APIs', 
+              items: [
+                { text: 'Modding APIs Overview', link: '/apis/modding-apis' },
+              ]
+            },
+            { 
               text: 'Advanced Modding Topics', 
               items: [
                 { text: 'Custom Networking', link: '/advanced-modding/networking' }
