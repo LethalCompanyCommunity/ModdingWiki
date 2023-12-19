@@ -408,7 +408,7 @@ static void ReceivedEventFromServer(string eventName)
 
 static void SendEventToClients(string eventName)
 {
-    if (!(NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsHost))
+    if (!(NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsServer))
         return;
 
     ExampleNetworkHandler.Instance.EventClientRpc(eventName);
