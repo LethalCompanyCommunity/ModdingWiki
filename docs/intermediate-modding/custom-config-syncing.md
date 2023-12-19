@@ -14,30 +14,7 @@ description: An intermediate overview of how to sync custom configs for your Let
 ## Preface
 A very common case for many mod developers is wanting to synchronize the host's configuration file with all other players.
 
-There are many different ways you could achieve this, but we will only go through the two most straight-forward approaches that should work for the majority of cases.
-
-## Automatically Syncing (ConfigurableCompany)
-This is a save-dependent mod that acts as an API, therefore you will need to add it as a dependency if you plan to upload your mod to Thunderstore.
-You can download and learn about it [here](https://thunderstore.io/c/lethal-company/p/AMRV/ConfigurableCompany/) - note that it does not have a **GitHub** repository at the current moment.
-
-With **ConfigurableCompany**, synchronizing configs is quite simple.<br>
-Begin by downloading it and add its DLL as an **Assembly Reference**.
-
-Now we need to bind our config to its own API rather than BepInEx.
-```cs
-ConfigurationBuilder.NewConfig("modder_config_name")
-    .SetName("Configuration name")
-    .SetType(ConfigurationType.Boolean)
-    .SetValue(true)
-    .SetSyncronized(true)
-    .Build();
-```
-
-Alternatively, you can call ```Configuration.Create(identifier, name, category, type, defaultValue)```, though this is not advised due to the complexity of the arguments.
-
-It is also possible set a tooltip or add a category with `.SetTooltip()` and `.NewCategory()` which you can read more about on the [ConfigurableCompany](https://thunderstore.io/c/lethal-company/p/AMRV/ConfigurableCompany/) Thunderstore page.
-
-Now your configs are synced using ConfigurableCompany!
+There are many different ways you could achieve this, but we will only go through the two most straightforward approaches that should work for most cases.
 
 ## Manually Syncing Instances
 For this approach, we will take advantage of [Custom Messages](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/custom-messages/#named-messages), specifically Named Messages.
@@ -110,7 +87,7 @@ We will now make use of the config class file made prior by changing this line:
 public class Config
 ```
 
-Into an synced alternative that can be serialized.
+Into a synced alternative that can be serialized.
 
 ```cs
 [Serializable]
@@ -184,7 +161,7 @@ public static void OnReceiveSync(ulong _, FastBufferReader reader) {
 ```
 
 ### 3. Apply patch to PlayerControllerB
-Add in the following method also, replacing "ModName" with the name (or abbreviation) of your mod.
+Add in the following method, replacing "ModName" with the name (or abbreviation) of your mod.
 
 Keep in mind that `ConnectClientToPlayerObject` is run just before the player is spawned.
 This means if you are patching `SpawnPlayerAnimation`, you might find it gets called before the config has finished syncing!
@@ -214,11 +191,11 @@ If you are having issues with this patch, you may want to try **GameNetworkManag
 Finally, you have manually synced configs within your mod!
 
 ## Synced Config Usage
-Every client will now have their config synchronized to the host's upon joining the game.
-All thats left to do is actually use the synced variables where appropriate.
+Every client will now have their config synchronized to the hosts upon joining the game.
+All that's left to do is use the synced variables where appropriate.
 
 We can do this by referencing `Config.Instance` from any class.
-Heres an example that sets the local player's movement speed.
+Here's an example that sets the local player's movement speed.
 ```cs
 public static void ExamplePatch(PlayerControllerB __instance) {
     if (__instance == null)
