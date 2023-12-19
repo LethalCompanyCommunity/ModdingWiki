@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Beginners Guide
-      link: /beginners-guide.html
+      link: /beginners-guide
     - theme: alt
       text: Edit on GitHub
       link: https://github.com/LethalCompany/ModdingWiki
@@ -23,19 +23,21 @@ hero:
 
 <Home>
   <HomeGroup title="Installing Mods">
-    <HomeItem name="Beginners guide" href="./beginners-guide.html" />
-    <HomeItem name="Using r2modman" href="./installation/installing-r2modman.html" /></HomeGroup>
+    <HomeItem name="Beginners guide" href="./beginners-guide" />
+    <HomeItem name="Using r2modman" href="./installation/installing-r2modman" />
+    <HomeItem name="Sharing r2modman profiles" href="./installation/syncing-mods" />
+    <HomeItem name="Configuring mods" href="./installation/configuration" /></HomeGroup>
 
   <HomeGroup title="Creating Mods">
-    <HomeItem name="Initial modding setup" href="./modding/initial-setup.html" />
-    <HomeItem name="Starting a mod" href="./modding/starting-a-mod.html" />
-    <HomeItem name="Open-source and ethics" href="./modding/open-source-and-ethics.html" />
-    <HomeItem name="Publishing your mod" href="./modding/publishing-your-mod.html" /></HomeGroup>
+    <HomeItem name="Initial modding setup" href="./modding/initial-setup" />
+    <HomeItem name="Starting a mod" href="./modding/starting-a-mod" />
+    <HomeItem name="Open-source and ethics" href="./modding/open-source-and-ethics" />
+    <HomeItem name="Publishing your mod" href="./modding/publishing-your-mod" /></HomeGroup>
 
   <HomeGroup title="Other Resources">
-    <HomeItem name="Frequently Asked Questions" href="./extras/faq.html" />
-    <HomeItem name="Contributing translations" href="./translation/translating-the-wiki.html" />
-    <HomeItem name="About" href="./extras/about.html" /></HomeGroup>
+    <HomeItem name="Frequently Asked Questions" href="./extras/faq" />
+    <HomeItem name="Contributing translations" href="./translation/translating-the-wiki" />
+    <HomeItem name="About" href="./extras/about" /></HomeGroup>
 
 
 <HomeLinks>
