@@ -324,8 +324,8 @@ var networkHandlerHost = Object.Instantiate(networkPrefab, Vector3.zero, Quatern
 networkHandlerHost.GetComponent<NetworkObject>().Spawn();
 ```
 
-:::info
-While you can put <i>false</i> as a parameter in the Spawn method to prevent the game from auto-deleting the object, you shouldn't in this case! The object stays loaded in `SampleSceneRelay`, which is the main ship scene.<br><br>This scene never gets unloaded until disconnecting from the server - <i>precisely</i> when we want the network object to be destroyed!
+:::tip
+While you can put `destroyWithScene: false` as a parameter in the Spawn method to prevent the game from auto-deleting the object, you shouldn't in this case! The object stays loaded in `SampleSceneRelay`, which is the main ship scene.<br><br>This scene never gets unloaded until disconnecting from the server - <i>precisely</i> when we want the network object to be destroyed!
 :::
 
 But wait, there's a catch: Only the host/server is allowed to spawn the network object! To prevent clients from spawning the object, we can do something simple. We just check whether the game instance is a host or a client:
@@ -389,7 +389,7 @@ public class NetworkObjectManager
 Finally! The handler is in the game! Now we can utilize it. But how? Easy, we subscribe to the C# event. For example, our mod only needs to subscribe when the round starts and needs to unsubscribe when the round ends.
 
 ```cs
-[HarmonyPostfix, HarmonyPatch(typeof(RoundManager), nameof(RoundManager.GenerateNewLevelClientRpc))]
+[HarmonyPostfix, HarmonyPatch(typeof(RoundManager), nameof(RoundManager.GenerateNewFloor))]
 static void SubscribeToHandler()
 {
     ExampleNetworkHandler.LevelEvent += ReceivedEventFromServer;
@@ -408,7 +408,7 @@ static void ReceivedEventFromServer(string eventName)
 
 static void SendEventToClients(string eventName)
 {
-    if (!(NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsHost))
+    if (!(NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsServer))
         return;
 
     ExampleNetworkHandler.Instance.EventClientRpc(eventName);
@@ -417,8 +417,12 @@ static void SendEventToClients(string eventName)
 
 What does this all do? Well, `NetworkHandler.LevelEvent += ReceivedEventFromServer` simply tells C# that we want `ReceivedEventFromServer(string eventName)` to run when the `LevelEvent` event is invoked. `NetworkHandler.LevelEvent -= Received` tells C# that we no longer want `ReceivedEventFromServer` to run when the event is invoked.
 
-:::info
-When subscribing and unsubscribing to an event, make sure that <i>both</i> the host and the client do so. Both `GenerateNewLevelClientRpc` and `DespawnPropsAtEndOfRound` run on all game instances - even if the latter method immediately attempts to return if the game instance is not the host.<br><br>If you don't ensure both the host and clients subscribe/unsubscribe to an event, it very quickly leads to unwanted behavior. For example, if the client doesn't unsubscribe in our test mod, events will be duplicated on client instances since the event will be subscribed to multiple times.
+:::tip
+When subscribing and unsubscribing to an event, make sure that <i>both</i> the host and the client do so. Both `GenerateNewFloor` and `DespawnPropsAtEndOfRound` run on all game instances - even if the latter method immediately attempts to return if the game instance is not the host.<br><br>If you don't ensure both the host and clients subscribe/unsubscribe to an event, it very quickly leads to unwanted behavior. For example, if the client doesn't unsubscribe in our test mod, events will be duplicated on client instances since the event will be subscribed to multiple times.
+:::
+
+:::warning
+Hooking to a ClientRpc can cause errors with code running multiple times on the host instance. Avoid hooking to any ClientRpcs - and if you must, consider adding a debounce.
 :::
 
 ## Using UnityNetcodeWeaver
