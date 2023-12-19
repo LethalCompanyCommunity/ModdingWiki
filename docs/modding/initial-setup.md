@@ -6,7 +6,7 @@ description: Learn how to install all the necessary prerequisites to get started
 # Initial Setup
 
 ::: tip
-If you can't code and want to create a mod that does one specific, simple thing (such as adding a suit or sound replacement) make sure to check the [non-code Modding APIs](/apis/modding-apis#non-code-apis) section!
+If you can't code and want to create a mod that does one common, simple thing (such as adding a suit or sound replacement) make sure to check the [non-code Modding APIs](/apis/modding-apis#non-code-apis) section!
 
 Many common usecases already have APIs that allow you to easily add content without using any code.
 :::
