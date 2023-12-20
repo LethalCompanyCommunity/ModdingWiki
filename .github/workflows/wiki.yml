@@ -1,0 +1,46 @@
+name: Wiki CI
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches-ignore:
+      - cwdin-backups
+      - 'crowdin/**'
+
+env:
+  NODE_VERSION: 18.x
+
+jobs:
+  deploy:
+    name: Deploy
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - name: Install packages
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v2
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: docs/.vitepress/dist
+      - name: Deploy Wiki
+        id: deployment
+        uses: actions/deploy-pages@v1
