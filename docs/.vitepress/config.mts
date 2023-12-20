@@ -28,7 +28,8 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Beginners Guide', link: '/beginners-guide.md' },
+      { text: 'Beginner\'s Guide', link: '/beginners-guide.md' },
+      { text: 'Developer\'s Guide', link: '/modding/initial-setup.md' },
       { text: 'Discord', link: 'https://discord.gg/nYcQFEpXfU' }
     ],
 
@@ -36,45 +37,70 @@ export default defineConfig({
       '/': [
         {
           items: [
-            { text: 'Beginners Guide', link: '/beginners-guide' },
-            { 
-              text: 'Installing Mods', 
+            {text: 'Beginner\'s Guide', link: '/beginners-guide'},
+            {
+              text: 'Installing Mods',
               items: [
-                { text: 'Using r2modman', link: '/installation/installing-r2modman' },
-                { text: 'Sharing r2modman profiles', link: '/installation/syncing-mods' },
-                { text: 'Configuring mods', link: '/installation/configuration' }
+                {text: 'Using r2modman', link: '/installation/installing-r2modman'},
+                {text: 'Sharing r2modman Profiles', link: '/installation/syncing-mods'},
+                {text: 'Configuring Mods', link: '/installation/configuration'}
               ]
             },
+            {
+              text: 'Other Resources',
+              items: [
+                {text: 'Frequently Asked Questions', link: '/extras/faq'},
+                {text: 'Contributing Translations', link: '/translation/translating-the-wiki'},
+                {text: 'About', link: '/extras/about'}
+              ]
+            },
+          ]
+        }
+        ],
+      '/modding/': [
+        {
+          items: [
             { 
               text: 'Creating Mods', 
               items: [
-                { text: 'Initial modding setup', link: '/modding/initial-setup' },
-                { text: 'Starting a mod', link: '/modding/starting-a-mod' },
-                { text: 'Open-source and ethics', link: '/modding/open-source-and-ethics' },
-                { text: 'Publishing your mod', link: '/modding/publishing-your-mod' }
+                { text: 'Initial Setup', link: '/modding/initial-setup' },
+                { text: 'Starting a Mod', link: '/modding/starting-a-mod' },
+                { text: 'Open-Source & Ethics', link: '/modding/open-source-and-ethics' },
+                { text: 'Publishing Your Mod', link: '/modding/publishing-your-mod' }
               ]
             },
             { 
-              text: 'Advanced Modding Topics', 
+              text: 'Advanced Topics', 
               items: [
-                { text: 'Custom Networking', link: '/advanced-modding/networking' }
+                { text: 'Custom Networking', link: '/modding/advanced/networking' }
               ]
             },
             { 
               text: 'Modding APIs', 
               items: [
-                { text: 'Modding APIs Overview', link: '/apis/modding-apis' },
-                { text: 'CustomSounds', link: '/apis/customsounds'},
+                { text: 'Overview', link: '/modding/apis/modding-apis' },
+                {
+                  text: 'Non-Code APIs',
+                  collapsed: false,
+                  items: [
+                    { text: 'CustomSounds', link: '/modding/apis/customsounds'},
+                  ]
+                },
+                /*{
+                  text: 'Code APIs',
+                  collapsed: false,
+                  items: [
+                    
+                  ]
+                }*/
               ]
             },
-            { 
-              text: 'Other Resources', 
+            {
+              text: 'Other Resources',
               items: [
-                { text: 'Frequently Asked Questions', link: '/extras/faq' },
-                { text: 'Contributing translations', link: '/translation/translating-the-wiki' },
-                { text: 'About', link: '/extras/about' }
+                {text: 'About', link: '/modding/extras/about'}
               ]
-            },
+            }
           ]
         }
       ],
