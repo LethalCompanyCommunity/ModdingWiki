@@ -5,6 +5,16 @@ description: Learn how to install all the necessary prerequisites to get started
 
 # Первоначальная настройка
 
+::: tip
+If you can't code and want to create a mod that does one common, simple thing (such as adding a suit or sound replacement) make sure to check the [non-code Modding APIs](/apis/modding-apis#non-code-apis) section!
+
+Many common usecases already have APIs that allow you to easily add content without using any code.
+:::
+
+This section of the wiki will cover how to get set up for development.
+
+Once you're set up, make sure to check the [Modding APIs](/apis/modding-apis) section to see if there's any libraries that would make creating your mod easier.
+
 ## Настраиваем среду разработки
 
 Перед тем как начинать создание модификаций вам необходимо установить некоторые инструменты для их написания. К счастью, все они **доступны бесплатно**.
