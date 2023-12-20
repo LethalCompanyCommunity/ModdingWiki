@@ -33,8 +33,7 @@ hero:
 
   <HomeGroup title="Creating Mods">
     <HomeItem name="Initial modding setup" href="./modding/initial-setup" />
-    <HomeItem name="Starting a mod" href="./modding/starting-a-mod" />
-    <HomeItem name="Open-source and ethics" href="./modding/open-source-and-ethics" />
+    <HomeItem name="Modding APIs overview" href="./apis/modding-apis" />
     <HomeItem name="Publishing your mod" href="./modding/publishing-your-mod" />
   </HomeGroup>
 
