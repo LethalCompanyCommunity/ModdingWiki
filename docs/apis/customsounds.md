@@ -27,7 +27,7 @@ First, open up AssetRipper and select the Audio Export Format as "Covert to WAV"
 If everything worked correctly, you should be seeing this window:
 ![Image of Assetripper](/images/customsounds/AssetRipper.png)
 
-Now, to extract ALL the audio files from the game, you need to find an AudioClip file in one of the sharedassets folders. For example, if you click on the arrow next to sharedassets0 and then the one next to AudioClip you should be able to see the files BootUp, ButtonPress1 and HoverButton1. Now, click on any one of these files so that it's selected, and at the top click on Export > Export All Files of Selected Type. Afterwards, select where you would like to save the audio files and click Select Folder. At the time of writing this guide, there should be exactly 700 audio files that you can export.
+Now, to extract ALL the audio files from the game, you need to find an AudioClip file in one of the sharedassets folders. For example, if you click on the arrow next to sharedassets0 and then the one next to AudioClip you should be able to see the files BootUp, ButtonPress1 and HoverButton1. Now, click on any one of these files so that it's selected, and at the top click on Export > Export All Files of Selected Type. Afterwards, select where you would like to save the audio files and click Select Folder. At the time of writing this guide, there should be exactly 769 audio files that you can export.
 
 Afterwards, go to the directory you exported the audio files to, and go to Lethal Company\ExportedProject\Assets\AudioClip, and there, you should be able to see all the audio files that are currently in the game! Feel free to copy these files somewhere else or to delete the .meta files.
 
@@ -104,7 +104,7 @@ Here's a little fun demo of how this particular setup looks like:
 
 This one is by far the most obvious and simple method, you just put the audio files into a .zip file, upload it somewhere, tell your friends to download it and put it into the CustomSounds folder, and that's it.
 
-### Customsounds syncing feature (NEW!)
+### Customsounds syncing feature
 
 The second one uses a new experimental feature of CustomSounds, which allows your friends to synchronize their custom sounds with yours. As before, you can type in "customsounds help" to see all the available commands. The command of interest to you is the "customsounds sync" command. Once you type in this command, everyone in your lobby should get this prompt:
 ![Image of Sync request](/images/customsounds/Sync_request_client.png)
@@ -127,7 +127,7 @@ The only thing you need to keep in mind when publishing your mod is to keep this
                 - [Insert All Audio Files Here]
 ```
 
-For the rest, check out the section on how to [publish your mod](./publishing-your-mod) here on this wiki. 
+For the rest, check out the section on how to [publish your mod](/modding/publishing-your-mod) here on this wiki. 
 
 ## Credits
 
