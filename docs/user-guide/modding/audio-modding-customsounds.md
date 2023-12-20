@@ -37,7 +37,9 @@ However, if you REALLY can't find the sound file you're looking for, then **Step
 
 ### Using LCSoundTool
 
-?>**Note:** If you already have found the audio file you're looking for, you can skip directly to the next section.
+::: tip
+If you already have found the audio file you're looking for, you can skip directly to the next section.
+:::
 
 If you can't find the sound you're replacing by just looking at the extracted audio files, then you can use method this to find out the exact name of the sound file.
 
