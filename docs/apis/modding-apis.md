@@ -30,8 +30,7 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 - [LethalPosters by femboytv](https://thunderstore.io/c/lethal-company/p/femboytv/LethalPosters/) allows you to create your own custom posters that appear in the ship. [The README](https://thunderstore.io/c/lethal-company/p/femboytv/LethalPosters/) has a basic section on how to format your poster for upload.
 
 ### Sound Replacement
-- ⭐ [CustomSounds by Clementinise](https://thunderstore.io/c/lethal-company/p/Clementinise/CustomSounds/) allows you to replace ingame sounds using your own .wav file. [The wiki page on CustomSounds](/apis/customsounds) covers the process of creating your own Custom Sound.
-<!-- Add a gold star when #28 is merged -->
+- ⭐ [CustomSounds by Clementinise](https://thunderstore.io/c/lethal-company/p/Clementinise/CustomSounds/) allows you to replace ingame sounds using your own .wav file. [The wiki page on CustomSounds](/apis/customsounds) covers the process of creating of swapping out sounds.
 
 ## Code APIs
 
