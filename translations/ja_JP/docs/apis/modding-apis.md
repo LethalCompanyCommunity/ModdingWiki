@@ -35,9 +35,7 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 
 ### Sound Replacement
 
-- [CustomSounds by Clementinise](https://thunderstore.io/c/lethal-company/p/Clementinise/CustomSounds/) allows you to replace ingame sounds using your own .wav file. [This guide by milleroski](https://github.com/milleroski/Lethal-Company-Sound-Modding-Guide) covers the process of creating your own Custom Sound using CustomSounds.
-
-<!-- Add a gold star when #28 is merged -->
+- ⭐ [CustomSounds by Clementinise](https://thunderstore.io/c/lethal-company/p/Clementinise/CustomSounds/) allows you to replace ingame sounds using your own .wav file. [The wiki page on CustomSounds](/apis/customsounds) covers the process of creating of swapping out sounds.
 
 ## Code APIs
 
