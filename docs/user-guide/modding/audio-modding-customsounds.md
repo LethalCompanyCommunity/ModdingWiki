@@ -1,6 +1,8 @@
 # A guide to Lethal Company audio modding (using CustomSounds)
 
-?>**Note:** This is not a tutorial on how to replace audio with BepInEx using Harmony Patching or with LCSoundTool. This is a guide for using CustomSounds to replace audio. If you want to make a standalone audio mod without CustomSounds, this guide is not for you.
+::: warning 
+This is not a tutorial on how to replace audio with BepInEx using Harmony Patching or with LCSoundTool. This is a guide for using CustomSounds to replace audio. If you want to make a standalone audio mod without CustomSounds, this guide is not for you.
+:::
 
 ## Installing the mods
 You need to install the following mods to be able to add custom sounds:
