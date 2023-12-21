@@ -9,8 +9,8 @@ hero:
   tagline: Welcome to the Lethal Company modding guide! Learn how to install, manage, and create mods for Lethal Company!
   actions:
     - theme: brand
-      text: Beginners Guide
-      link: /beginners-guide
+      text: Beginner's Guide
+      link: /overview
     - theme: alt
       text: Edit on GitHub
       link: https://github.com/LethalCompany/ModdingWiki
@@ -34,7 +34,7 @@ hero:
   <HomeGroup title="Creating Mods">
     <HomeItem name="Developer's Guide" href="./modding/overview" />
     <HomeItem name="Initial Modding Setup" href="./modding/initial-setup" />
-    <HomeItem name="Modding APIs Overview" href="./modding/apis/modding-apis" />
+    <HomeItem name="Modding APIs Overview" href="./modding/apis/overview" />
     <HomeItem name="Publishing Your Mod" href="./modding/publishing-your-mod" />
   </HomeGroup>
 

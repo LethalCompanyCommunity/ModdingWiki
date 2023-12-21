@@ -21,7 +21,7 @@ Want a quick, easy way to install the same mods as your friends? Check out the [
 ## Creating mods
 
 ::: tip
-If you can't code and want to create a mod that does one common, simple thing (such as adding a suit or sound replacement) make sure to check the [asset Modding APIs](/modding/apis/overview#asset-apis) section!
+If you can't code and want to create a mod that does one common, simple thing (such as adding a suit or sound replacement) make sure to check the [Asset Modding APIs](/modding/apis/overview#asset-apis) section!
 
 Many common use cases already have APIs that allow you to easily add content without using any code.
 :::
