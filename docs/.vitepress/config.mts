@@ -78,16 +78,16 @@ export default defineConfig({
             { 
               text: 'Modding APIs', 
               items: [
-                { text: 'Overview', link: '/modding/apis/modding-apis' },
+                { text: 'Overview', link: '/modding/apis/overview' },
                 {
-                  text: 'Non-Code APIs',
+                  text: 'Asset APIs',
                   collapsed: false,
                   items: [
                     { text: 'CustomSounds', link: '/modding/apis/customsounds'},
                   ]
                 },
                 /*{
-                  text: 'Code APIs',
+                  text: 'Programming APIs',
                   collapsed: false,
                   items: [
                     

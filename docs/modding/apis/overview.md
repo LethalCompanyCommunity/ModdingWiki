@@ -15,7 +15,7 @@ There may be multiple APIs for a single concept, each with their own pros and co
 
 APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 
-## Non-code APIs
+## Asset APIs
 
 ### Cosmetics
 - [MoreCompany by notnotnotswipez](https://thunderstore.io/c/lethal-company/p/notnotnotswipez/MoreCompany/) has a feature that adds custom cosmetics (hats, badges, etc). You can learn how to create your own through the official [Cosmetic Creation Guide](https://github.com/notnotnotswipez/MoreCompany/wiki/Cosmetic-Creation).
@@ -33,7 +33,7 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 - [CustomSounds by Clementinise](https://thunderstore.io/c/lethal-company/p/Clementinise/CustomSounds/) allows you to replace ingame sounds using your own .wav file. [This guide by milleroski](https://github.com/milleroski/Lethal-Company-Sound-Modding-Guide) covers the process of creating your own Custom Sound using CustomSounds.
 <!-- Add a gold star when #28 is merged -->
 
-## Code APIs
+## Programming APIs
 
 ### Enemies
 - [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new enemies, although the process is fairly involved and not currently well documented.
