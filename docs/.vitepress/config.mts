@@ -71,7 +71,8 @@ export default defineConfig({
               text: 'Other Resources', 
               items: [
                 { text: 'Frequently Asked Questions', link: '/extras/faq' },
-                { text: 'Contributing translations', link: '/translation/translating-the-wiki' },
+                { text: 'Contributing translations', link: '/contribute/translating-the-wiki' },
+                { text: 'Contributing Articles', link: '/contribute/writing-articles' },
                 { text: 'About', link: '/extras/about' }
               ]
             },
