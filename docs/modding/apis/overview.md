@@ -59,6 +59,6 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 If you're an API developer and want to get your API added to this list, feel free to make a [pull request](https://github.com/LethalCompany/ModdingWiki), assuming your API meets the following criteria:
 
 - Open source
-- Fairly well documented - even better if you write a wiki article<sup>1</sup>
+- Fairly well documented - even better if you write a wiki article<sup>[1](#fn-1)</sup>
 
-<sup>1</sup>: Some exceptions may be made if it's an especially groundbreaking API, or it's the only existing solution.
+<a name="fn-1">1</a>: Some exceptions may be made if it's an especially groundbreaking API, or it's the only existing solution.
