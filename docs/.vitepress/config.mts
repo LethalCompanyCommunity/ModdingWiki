@@ -28,8 +28,8 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Beginner\'s Guide', link: '/beginners-guide.md' },
-      { text: 'Developer\'s Guide', link: '/modding/initial-setup.md' },
+      { text: 'Beginner\'s Guide', link: '/overview.md' },
+      { text: 'Developer\'s Guide', link: '/modding/overview.md' },
       { text: 'Discord', link: 'https://discord.gg/nYcQFEpXfU' }
     ],
 
@@ -37,7 +37,7 @@ export default defineConfig({
       '/': [
         {
           items: [
-            {text: 'Beginner\'s Guide', link: '/beginners-guide'},
+            {text: 'Beginner\'s Guide', link: '/overview'},
             {
               text: 'Installing Mods',
               items: [
@@ -60,6 +60,9 @@ export default defineConfig({
       '/modding/': [
         {
           items: [
+            {
+              text: 'Developer\'s Guide', link: '/modding/overview'
+            },
             { 
               text: 'Creating Mods', 
               items: [
@@ -98,7 +101,9 @@ export default defineConfig({
             {
               text: 'Other Resources',
               items: [
-                {text: 'About', link: '/modding/extras/about'}
+                /*{text: 'Frequently Asked Questions', link: '/modding/extras/faq'},*/
+                {text: 'Contributing Translations', link: '/translation/translating-the-wiki'},
+                {text: 'About', link: '/extras/about'}
               ]
             }
           ]
