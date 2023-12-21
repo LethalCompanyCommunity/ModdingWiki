@@ -25,13 +25,14 @@ hero:
 
 <Home>
   <HomeGroup title="Installing Mods">
-    <HomeItem name="Beginner's Guide" href="./beginners-guide" />
+    <HomeItem name="Beginner's Guide" href="./overview" />
     <HomeItem name="Using r2modman" href="./installation/installing-r2modman" />
     <HomeItem name="Sharing r2modman Profiles" href="./installation/syncing-mods" />
     <HomeItem name="Configuring Mods" href="./installation/configuration" />
   </HomeGroup>
 
   <HomeGroup title="Creating Mods">
+    <HomeItem name="Developer's Guide" href="./modding/overview" />
     <HomeItem name="Initial Modding Setup" href="./modding/initial-setup" />
     <HomeItem name="Modding APIs Overview" href="./modding/apis/modding-apis" />
     <HomeItem name="Publishing Your Mod" href="./modding/publishing-your-mod" />
