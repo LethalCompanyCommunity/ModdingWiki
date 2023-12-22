@@ -295,7 +295,7 @@ Now that we have the prefab ready to be loaded, it's quite simple to give this t
 NetworkManager.Singleton.AddNetworkPrefab(networkPrefab);
 ```
 
-::: info
+::: warning
 You can only add network prefabs to NetworkManager **before** the player creates or joins a server. You can also do so after the player leaves the server.<br><br>If you try to add a network prefab while the player is connected to a server, it will result in an error and your object <u>will not</u> be loaded.
 :::
 
