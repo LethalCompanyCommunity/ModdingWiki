@@ -10,6 +10,10 @@ Thank you for deciding to contribute articles to this wiki! The only way this wi
 
 This guide will help you write, format, and implement your article into the wiki.
 
+## Adding a Description
+
+
+
 ## Formatting
 
 ### Markdown
@@ -171,6 +175,3 @@ You might also want to display the line numbers of code, which can be done by ad
 //Example Line 2
 //...
 ```
-
-## Adding a Description
-
