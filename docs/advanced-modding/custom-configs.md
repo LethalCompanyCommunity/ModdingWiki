@@ -32,15 +32,19 @@ Then we can start binding our config entries to the fields we just created insid
 ```cs
 public Config(ConfigFile cfg)
 {
-    configGreeting = cfg.Bind("General",          // Config section
-                                 "GreetingText",  // Key of this config
-                                 "Hello, world!", // Default value
-                                 "Greeting text upon game launch"); // Description
+    configGreeting = cfg.Bind(
+            "General",                          // Config section
+            "GreetingText",                     // Key of this config
+            "Hello, world!",                    // Default value
+            "Greeting text upon game launch"    // Description
+    );
     
-    configDisplayGreeting = cfg.Bind("General.Toggles", // Config subsection
-                                        "DisplayGreeting",
-                                        true,
-                                        "To show the greeting text");
+    configDisplayGreeting = cfg.Bind(
+            "General.Toggles",                  // Config subsection
+            "DisplayGreeting",                  // Key of this config
+            true,                               // Default value
+            "To show the greeting text"         // Description
+    );
 }
 ```
 
