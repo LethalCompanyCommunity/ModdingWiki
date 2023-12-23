@@ -1,8 +1,7 @@
-
 ---
 prev: false
-next: false
-description: An intermediate overview of how to impliment custom configs for your Lethal Company mods.
+next: true
+description: An intermediate overview of how to implement custom configs for your Lethal Company mods.
 ---
 
 # Custom Configs
