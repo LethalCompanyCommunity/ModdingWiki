@@ -10,6 +10,14 @@ Thank you for deciding to contribute articles to this wiki! The only way this wi
 
 This guide will help you write, format, and implement your article into the wiki.
 
+## Cloning the Repo
+
+
+
+## Creating the File
+
+
+
 ## Frontmatter
 
 VitePress uses `YAML Frontmatter` for article configs. There are three commonly used settings, `description`, `prev`, and `next`.
@@ -221,3 +229,43 @@ You might also want to display the line numbers of code, which can be done by ad
 //Example Line 2
 //...
 ```
+
+## Adding to Sidebar
+
+In order for people to easily navigate to your article, you must add it to the sidebar. You can do so in `docs/.vitepress/config.mts`.
+
+First, you have to decide which sidebar you want to add your article to. `'/'` is the `Beginner's Guide` sidebar and `'/modding/'` is the `Developer's Guide` sidebar.
+
+Next, insert the following into your article location:
+```ts
+{
+    text: 'Modding APIs',
+        items: [
+        { text: 'Modding APIs Overview', link: '/apis/modding-apis' },
+        { text: 'CustomSounds', link: '/apis/customsounds'},
+        { text: 'Overview', link: '/modding/apis/overview' },
+        {
+            text: 'Asset APIs',
+            collapsed: false,
+            items: [
+                { text: 'CustomSounds', link: '/modding/apis/customsounds'},
+            ]
+        },
+        {
+            text: 'Programming APIs',
+            collapsed: false,
+            items: [
+                { text: 'Example Article', link: '<directory>' }, // [!code focus] // [!code highlight]
+            ]
+        }
+    ]
+},
+``` 
+
+Where `Example Article` is the article name, and `<directory>` is the location and name of the article file. For example, `/modding/apis/example-article` would be a correct directory/link.
+
+::: tip
+Please ensure your article name is in **Title Case** when adding it to the sidebar.
+:::
+
+## Submitting to GitHub
