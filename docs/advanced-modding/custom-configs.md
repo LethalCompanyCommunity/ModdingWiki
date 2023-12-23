@@ -72,8 +72,8 @@ private void MyExamplePatch()
     private void MyExampleMethod()
     {
         // Instead of just Logger.LogInfo("Hello, world!")
-        if(configDisplayGreeting.Value)
-            Logger.LogInfo(configGreeting.Value);
+        if(Config.configDisplayGreeting.Value)
+            Logger.LogInfo(Config.configGreeting.Value);
     }
 }
 ```
