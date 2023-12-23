@@ -1,4 +1,6 @@
 ---
+prev: true
+next: true
 description: Learn how to create a basic project for a Lethal Company mod.
 ---
 

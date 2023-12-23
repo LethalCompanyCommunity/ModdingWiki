@@ -1,4 +1,6 @@
 ---
+prev: true
+next: true
 description: Learn how to install all the necessary prerequisites to get started with creating Lethal Company mods.
 ---
 

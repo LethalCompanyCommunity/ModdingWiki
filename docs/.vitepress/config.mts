@@ -116,6 +116,10 @@ export default defineConfig({
     ],
     editLink: {
       pattern: 'https://github.com/LethalCompany/ModdingWiki/edit/main/docs/:path',
+    },
+    docFooter: {
+      prev: false,
+      next: false,
     }
   },
   lastUpdated: true

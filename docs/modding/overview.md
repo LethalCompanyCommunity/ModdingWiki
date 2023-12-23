@@ -1,5 +1,6 @@
 ---
 prev: false
+next: true
 description: Start creating modifications to Lethal Company to enhance everyone's experience.
 ---
 
