@@ -7,7 +7,7 @@ description: An intermediate overview of how to implement custom configs for you
 # Custom Configs
 
 ::: warning
-**This is an intermediate article. While this introduces some C# concepts, it is recommended to understand C# and the basics of modding this game <i>before</i> reading this article.**
+**This is an advanced article. While this introduces some C# concepts, it is highly recommended to understand C# and the basics of modding this game <i>before</i> reading this article.**
 :::
 
 ::: info
@@ -82,4 +82,4 @@ private void MyExamplePatch()
 Understand that your config file **Will Not Be Created** until your mod is loaded ingame **at least once**. See the [r2modman Configs Page](/installation/configuration) for using your configs.
 :::
 
-Now you have config files for your mods!
+Now you have config files for your mods! If it's extremely important that your mod has a config value that's the same for every player, you may want to consider reading the page on [custom config syncing](/intermediate-modding/custom-config-syncing).

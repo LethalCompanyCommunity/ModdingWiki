@@ -7,7 +7,7 @@ description: An intermediate overview of how to sync custom configs for your Let
 # Custom Config Syncing
 
 ::: warning
-**This is an intermediate article. While this introduces some C# concepts, it is recommended to understand C# and the basics of modding this game <i>before</i> reading this article.**
+**This is an advanced article. While this introduces some C# concepts, it is highly recommended to understand C# and the basics of modding this game <i>before</i> reading this article.**
 :::
 
 ## Preface
@@ -20,7 +20,7 @@ For this approach, we will take advantage of [Custom Messages](https://docs-mult
 They are unbound to any GameObject, meaning **NetcodeWeaver** and **NetworkBehaviour** are **NOT necessary**.
 
 ::: info
-Before you proceed, it is recommended you familiarize yourself with [Custom configs](https://lethal.wiki/intermediate-modding/custom-configs.html).
+Before you proceed, it is recommended you familiarize yourself with [Custom configs](/advanced-modding/custom-configs).
 :::
 
 ### Prerequisites
