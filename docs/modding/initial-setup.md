@@ -15,7 +15,7 @@ This section of the wiki will cover how to get set up for development.
 
 Once you're set up, make sure to check the [Modding APIs](/apis/modding-apis) section to see if there's any libraries that would make creating your mod easier.
 
-## Setting up your development environment
+## Setting up your development environment {#setup-env}
 
 Before you can start modding, you'll need some tools to actually create mods. Luckily, all of these are **available for free**. 
 
@@ -23,7 +23,7 @@ Before you can start modding, you'll need some tools to actually create mods. Lu
 This guide is roughly based on some parts of the [BepInEx setup guide](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/1_setup.html), which is another great resource for learning how to mod
 :::
 
-### .Net SDK
+### .Net SDK {#dotnet-sdk}
 An SDK (=Software Development Kit) is a system that allows you to turn your code into something that your PC can run. It is used by other tools, and you'll generally not interact with it directly.
 
 You'll want to download and install the latest .Net 7 SDK version from [this page](https://dotnet.microsoft.com/en-us/download/dotnet/7.0). It'll look something like this:
@@ -68,7 +68,7 @@ Enabled = false // [!code --]
 Enabled = true // [!code ++]
 ```
 
-### Decompiler (*highly recommended / near essential*)
+### Decompiler (*highly recommended / near essential*) {#decompiler}
 A decompiler allows you to decompile an existing program. This is technical terminology that can roughly be translated to "it allows you to peek behind the curtain and see what the code of a program looks like". Why is this important, you may ask? Well, if we're going to mod a game, we first need to know *what* to mod. Do we want to reduce the price of items? We'll need to know in what part of the code items are displayed and sold to the player. Do we want to add a weather condition? We'll need to know in what parts of the code the game handles and spawns weather.
 
 We recommend one (or all) of three free options:
@@ -80,17 +80,17 @@ We recommend one (or all) of three free options:
 **Note you do not necessarily need this if you have Rider or Visual Studio, since they come with built-in decompilers. Note that different decompilers offer slightly different results, and have different interfaces.**
 :::
 
-### Unity Explorer (optional)
+### Unity Explorer (optional) {#unity-explorer}
 [Unity Explorer](https://github.com/sinai-dev/UnityExplorer) is a tool which adds an in-game UI that allows you to explore, debug, and modify the game while it's running. This tool can be highly useful to get to know the game's technical side better, and his hence strongly recommended.
 
 You will want to download the version compatible with the latest version of BepInEx (5).
 
 [![Unity Explorer download](/images/initial-setup/unityexplorerdownload.png)](https://github.com/sinai-dev/UnityExplorer/releases/latest/download/UnityExplorer.BepInEx5.Mono.zip)
 
-### Additional tools (optional)
+### Additional tools (optional) {#other-tools}
 There are a number of BepInEx plugins and tools that might be useful as you get more experienced with modding. The BepInEx devs have helpfully listed them [here](https://docs.bepinex.dev/articles/dev_guide/dev_tools.html).
 
-## Creating a GitHub account
+## Creating a GitHub account {#create-github-account}
 
 We strongly recommend using git - a "version control system". The most popular website that offers this as a (free) service is [GitHub](https://github.com/).
 
