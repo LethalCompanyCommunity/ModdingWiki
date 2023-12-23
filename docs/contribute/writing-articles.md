@@ -10,9 +10,55 @@ Thank you for deciding to contribute articles to this wiki! The only way this wi
 
 This guide will help you write, format, and implement your article into the wiki.
 
-## Adding a Description
+## Frontmatter
 
+VitePress uses `YAML Frontmatter` for article configs. There are three commonly used settings, `description`, `prev`, and `next`.
 
+### Description
+
+In order to have descriptive info for search engines and embeds, you have to add a description to the front matter. To do so, you need the following code at the start of your article:
+
+```md
+---
+description: Example description
+---
+```
+
+### Previous & Next
+
+You may have seen previous or next article buttons at the bottom of wiki pages. They can be enabled or disabled in the frontmatter section, using `prev` and `next`.
+
+By default, the previous and next buttons are disabled. To enable these buttons, you need to set the options to true:
+
+```md
+---
+prev: true // [!code ++]
+next: true // [!code ++]
+description: Example description
+---
+```
+
+::: danger IMPORTANT
+The frontmatter section **must** be at the beginning of the file, otherwise it will not work. For example, `correct.md` will display a correct markdown file, and `incorrect.md` will display an incorrectly written markdown file.
+
+:::code-group
+```md [correct.md]
+---
+description: Example description
+---
+
+# Example Article
+```
+
+```md [incorrect.md]
+<!-- Extra space causes errors -->
+---
+description: Example description
+---
+
+# Example Article
+```
+:::
 
 ## Formatting
 
@@ -35,7 +81,7 @@ There are a few simple ways to format text.
 - Using `***` on either side of a word/phrase will ***bold and italicize that word/phrase***.
 - Using `~~` on either side of a word/phrase will ~~strike that word/phrase out~~.
 
-::: info Note
+::: warning
 These symbols generally ***must not*** have spaces between them and the word(s) you are formatting.
 :::
 
