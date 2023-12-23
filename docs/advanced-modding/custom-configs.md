@@ -44,7 +44,7 @@ public Config(ConfigFile cfg)
 }
 ```
 
-We then need to run said constructor to bind said configs to proper values and properties for users.<br>
+We then need to run said constructor to bind said configs to proper values and properties for users.<br><br>
 In your main class (usually `Plugin.cs`), implement the constructor with a parameter referencing the file that will be created by BepInEx.
 
 ```cs
