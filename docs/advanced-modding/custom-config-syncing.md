@@ -36,16 +36,38 @@ It also provides some helper methods to prevent repeating ourselves.
 ```cs
 [Serializable]
 public class SyncedInstance<T> {
-    public static T Instance { get; internal set; }
-    public static bool Synced { get; internal set; }
-
     internal static CustomMessagingManager MessageManager => NetworkManager.Singleton.CustomMessagingManager;
-
     internal static bool IsClient => NetworkManager.Singleton.IsClient;
-
     internal static bool IsHost => NetworkManager.Singleton.IsHost;
 
-    internal static byte[] SerializeToBytes(T val) {
+    [NonSerialized]
+    protected static int IntSize = 4;
+
+    public static T Default { get; private set; }
+    public static T Instance { get; private set; }
+
+    public static bool Synced { get; internal set; }
+
+    protected void InitInstance(T instance) {
+        Default = instance;
+        Instance = instance;
+        
+        // Makes sure the size of an integer is correct for the current system.
+        // We use 4 by default as that's the size of an int on 32 and 64 bit systems.
+        IntSize = sizeof(int);
+    }
+
+    internal static void SyncInstance(byte[] data) {
+        Instance = DeserializeFromBytes(data);
+        Synced = true;
+    }
+
+    internal static void RevertSync() {
+        Instance = Default;
+        Synced = false;
+    }
+
+    public static byte[] SerializeToBytes(T val) {
         BinaryFormatter bf = new();
         using MemoryStream stream = new();
 
@@ -59,7 +81,7 @@ public class SyncedInstance<T> {
         }
     }
 
-    internal static T DeserializeFromBytes(byte[] data) {
+    public static T DeserializeFromBytes(byte[] data) {
         BinaryFormatter bf = new();
         using MemoryStream stream = new(data);
 
@@ -69,11 +91,6 @@ public class SyncedInstance<T> {
             Plugin.Logger.LogError($"Error deserializing instance: {e}");
             return default;
         }
-    }
-
-    internal static void UpdateInstance(byte[] data) {
-        Instance = DeserializeFromBytes(data);
-        Synced = true;
     }
 }
 ```
@@ -96,7 +113,7 @@ public class Config : SyncedInstance<Config>
 In addition, we need to make sure 'Instance' is a reference to this class by adding another line in the **constructor**.
 ```cs
 public Config(ConfigFile cfg) {
-    Instance = this;
+    InitInstance(this); // Add this line
 
     // ...
 }
@@ -110,7 +127,7 @@ While these might look intimidating, they will hopefully start to make more sens
 public static void RequestSync() {
     if (!IsClient) return;
 
-    using FastBufferWriter stream = new(4, Allocator.Temp);
+    using FastBufferWriter stream = new(IntSize, Allocator.Temp);
     MessageManager.SendNamedMessage("ModName_OnRequestConfigSync", 0uL, stream);
 }
 ```
@@ -124,7 +141,7 @@ public static void OnRequestSync(ulong clientId, FastBufferReader _) {
     byte[] array = SerializeToBytes(Instance);
     int value = array.Length;
 
-    using FastBufferWriter stream = new(array.Length + 4, Allocator.Temp);
+    using FastBufferWriter stream = new(value + IntSize, Allocator.Temp);
 
     try {
         stream.WriteValueSafe(in value, default);
@@ -139,7 +156,7 @@ public static void OnRequestSync(ulong clientId, FastBufferReader _) {
 
 ```cs
 public static void OnReceiveSync(ulong _, FastBufferReader reader) {
-    if (!reader.TryBeginRead(4)) {
+    if (!reader.TryBeginRead(IntSize)) {
         Plugin.Logger.LogError("Config sync error: Could not begin reading buffer.");
         return;
     }
@@ -153,7 +170,7 @@ public static void OnReceiveSync(ulong _, FastBufferReader reader) {
     byte[] data = new byte[val];
     reader.ReadBytesSafe(ref data, val);
 
-    UpdateInstance(data);
+    SyncInstance(data);
 
     Plugin.Logger.LogInfo("Successfully synced config with host.");
 }
