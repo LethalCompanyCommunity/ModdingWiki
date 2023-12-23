@@ -13,7 +13,7 @@ description: An intermediate overview of how to sync custom configs for your Let
 ## Preface
 A very common case for many mod developers is wanting to synchronize the host's configuration file with all other players.
 
-There are many different ways you could achieve this, but we will only go through the two most straightforward approaches that should work for most cases.
+There are many different ways you could achieve this, but we will only go through the most straightforward approaches that should work for most cases.
 
 ## Manually Syncing Instances
 For this approach, we will take advantage of [Custom Messages](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/custom-messages/#named-messages), specifically Named Messages.

@@ -30,17 +30,17 @@ public class Config
 Then we can start binding our config entries to the fields we just created inside of a class constructor.
 
 ```cs
-public Config()
+public Config(ConfigFile cfg)
 {
-    configGreeting = Config.Bind("General",       // The section under which the option is shown
-                                 "GreetingText",  // The key of the configuration option in the configuration file
-                                 "Hello, world!", // The default value
-                                 "A greeting text to show when the game is launched"); // Description of the option
+    configGreeting = cfg.Bind("General",          // Config section
+                                 "GreetingText",  // Key of this config
+                                 "Hello, world!", // Default value
+                                 "Greeting text upon game launch"); // Description
     
-    configDisplayGreeting = Config.Bind("General.Toggles", 
+    configDisplayGreeting = cfg.Bind("General.Toggles", // Config subsection
                                         "DisplayGreeting",
                                         true,
-                                        "Whether or not to show the greeting text");
+                                        "To show the greeting text");
 }
 ```
 
@@ -82,4 +82,4 @@ private void MyExamplePatch()
 Understand that your config file **Will Not Be Created** until your mod is loaded ingame **at least once**. See the [r2modman Configs Page](/installation/configuration) for using your configs.
 :::
 
-Now you have config files for your mods! If it's extremely important that your mod has a config value that's the same for every player, you may want to consider reading the page on [custom config syncing](/intermediate-modding/custom-config-syncing).
+Now you have config files for your mods! If it's extremely important that your mod has a config value that's the same for every player, you may want to consider reading the page on [custom config syncing](/advanced-modding/custom-config-syncing).
