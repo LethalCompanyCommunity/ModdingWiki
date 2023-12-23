@@ -29,7 +29,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Beginner\'s Guide', link: '/overview.md' },
-      { text: 'Developer\'s Guide', link: '/modding/overview.md' },
+      { text: 'Developer\'s Guide', link: '/dev/overview.md' },
       { text: 'Discord', link: 'https://discord.gg/nYcQFEpXfU' }
     ],
 
@@ -57,36 +57,36 @@ export default defineConfig({
           ]
         }
         ],
-      '/modding/': [
+      '/dev/': [
         {
           items: [
             {
-              text: 'Developer\'s Guide', link: '/modding/overview'
+              text: 'Developer\'s Guide', link: '/dev/overview'
             },
             { 
               text: 'Creating Mods', 
               items: [
-                { text: 'Initial Setup', link: '/modding/initial-setup' },
-                { text: 'Starting a Mod', link: '/modding/starting-a-mod' },
-                { text: 'Open-Source & Ethics', link: '/modding/open-source-and-ethics' },
-                { text: 'Publishing Your Mod', link: '/modding/publishing-your-mod' }
+                { text: 'Initial Setup', link: '/dev/initial-setup' },
+                { text: 'Starting a Mod', link: '/dev/starting-a-mod' },
+                { text: 'Open-Source & Ethics', link: '/dev/open-source-and-ethics' },
+                { text: 'Publishing Your Mod', link: '/dev/publishing-your-mod' }
               ]
             },
             { 
               text: 'Advanced Topics', 
               items: [
-                { text: 'Custom Networking', link: '/modding/advanced/networking' }
+                { text: 'Custom Networking', link: '/dev/advanced/networking' }
               ]
             },
             { 
               text: 'Modding APIs', 
               items: [
-                { text: 'Overview', link: '/modding/apis/overview' },
+                { text: 'Overview', link: '/dev/apis/overview' },
                 {
                   text: 'Asset APIs',
                   collapsed: false,
                   items: [
-                    { text: 'CustomSounds', link: '/modding/apis/customsounds'},
+                    { text: 'CustomSounds', link: '/dev/apis/customsounds'},
                   ]
                 },
                 /*{
@@ -101,7 +101,7 @@ export default defineConfig({
             {
               text: 'Other Resources',
               items: [
-                /*{text: 'Frequently Asked Questions', link: '/modding/extras/faq'},*/
+                /*{text: 'Frequently Asked Questions', link: '/dev/extras/faq'},*/
                 {text: 'Contributing Translations', link: '/translation/translating-the-wiki'},
                 {text: 'About', link: '/extras/about'}
               ]

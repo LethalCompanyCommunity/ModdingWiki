@@ -65,7 +65,7 @@ Essentially, this allows you to create and use RPCs, Network Variables, etc.
 
 ### Other Setup Required
 
-There **must** be a project reference to `Unity.Netcode.Runtime.dll` to utilize Netcode for GameObjects. You can refer to [this section](/modding/starting-a-mod#adding-game-assemblies) of this wiki to add it.
+There **must** be a project reference to `Unity.Netcode.Runtime.dll` to utilize Netcode for GameObjects. You can refer to [this section](/dev/starting-a-mod#adding-game-assemblies) of this wiki to add it.
 
 ## Introduction
 

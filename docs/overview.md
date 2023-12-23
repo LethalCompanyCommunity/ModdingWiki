@@ -22,14 +22,14 @@ Want a quick, easy way to install the same mods as your friends? Check out the [
 ## Creating mods
 
 ::: tip
-If you can't code and want to create a mod that does one common, simple thing (such as adding a suit or sound replacement) make sure to check the [Asset Modding APIs](/modding/apis/overview#asset-apis) section!
+If you can't code and want to create a mod that does one common, simple thing (such as adding a suit or sound replacement) make sure to check the [Asset Modding APIs](/dev/apis/overview#asset-apis) section!
 
 Many common use cases already have APIs that allow you to easily add content without using any code.
 :::
 
-If you're interested in trying to create your own mod for Lethal Company, you can find articles and tutorials in the [Developer's Guide](/modding/overview).
+If you're interested in trying to create your own mod for Lethal Company, you can find articles and tutorials in the [Developer's Guide](/dev/overview).
 
-Once you're set up, make sure to check the [Modding APIs](/modding/apis/overview) section to see if there's any libraries that would make creating your mod easier.
+Once you're set up, make sure to check the [Modding APIs](/dev/apis/overview) section to see if there's any libraries that would make creating your mod easier.
 
 ## Support
 ::: tip

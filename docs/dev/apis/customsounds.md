@@ -150,7 +150,7 @@ The only thing you need to keep in mind when publishing your mod is to keep this
                 - [Insert All Audio Files Here]
 ```
 
-For the rest, check out the section on how to [publish your mod](/modding/publishing-your-mod) here on this wiki. 
+For the rest, check out the section on how to [publish your mod](/dev/publishing-your-mod) here on this wiki. 
 
 ## Credits
 

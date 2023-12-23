@@ -32,10 +32,10 @@ hero:
   </HomeGroup>
 
   <HomeGroup title="Creating Mods">
-    <HomeItem name="Developer's Guide" href="./modding/overview" />
-    <HomeItem name="Initial Modding Setup" href="./modding/initial-setup" />
-    <HomeItem name="Modding APIs Overview" href="./modding/apis/overview" />
-    <HomeItem name="Publishing Your Mod" href="./modding/publishing-your-mod" />
+    <HomeItem name="Developer's Guide" href="./dev/overview" />
+    <HomeItem name="Initial Modding Setup" href="./dev/initial-setup" />
+    <HomeItem name="Modding APIs Overview" href="./dev/apis/overview" />
+    <HomeItem name="Publishing Your Mod" href="./dev/publishing-your-mod" />
   </HomeGroup>
 
   <HomeGroup title="Other Resources">
