@@ -10,9 +10,7 @@ Thank you for deciding to contribute articles to this wiki! The only way this wi
 
 This guide will help you write, format, and implement your article into the wiki.
 
-## Cloning the Repo
-
-
+## Forking the GitHub Repository {#forking-the-repo}
 
 ## Creating the File
 
