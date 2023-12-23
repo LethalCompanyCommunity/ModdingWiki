@@ -8,6 +8,7 @@ export default defineConfig({
     const head: HeadConfig[] = []
 
     // OpenGraph data for embeds
+    head.push(['link', { rel: 'icon', href: "/favicon.ico" }])
     head.push(['meta', { property: 'og:title', content: pageData.title }])
     head.push(['meta', { property: 'og:description', content: pageData.frontmatter.description }])
     head.push(['meta', { property: 'og:site_name', content: "Lethal Company Modding Wiki" }])
@@ -16,6 +17,10 @@ export default defineConfig({
 
     return head
   },
+  sitemap: {
+    hostname: 'https://lethal.wiki/'
+  },
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
@@ -58,6 +63,13 @@ export default defineConfig({
               ]
             },
             { 
+              text: 'Modding APIs', 
+              items: [
+                { text: 'Modding APIs Overview', link: '/apis/modding-apis' },
+                { text: 'CustomSounds', link: '/apis/customsounds'},
+              ]
+            },
+            { 
               text: 'Other Resources', 
               items: [
                 { text: 'Frequently Asked Questions', link: '/extras/faq' },
@@ -76,5 +88,6 @@ export default defineConfig({
     editLink: {
       pattern: 'https://github.com/LethalCompany/ModdingWiki/edit/main/docs/:path',
     }
-  }
+  },
+  lastUpdated: true
 })

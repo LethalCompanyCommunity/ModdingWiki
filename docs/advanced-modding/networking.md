@@ -36,27 +36,27 @@ Into something a bit less legible, but allows networking:
 [ClientRpc]
 public void EventClientRPC(string eventType)
 {
-    NetworkManager networkManager = base.NetworkManager;
-    if (networkManager == null || !networkManager.IsListening)
-    {
-        return;
-    }
-    if (this.__rpc_exec_stage != NetworkBehaviour.__RpcExecStage.Client && (networkManager.IsServer || networkManager.IsHost))
-    {
-        ClientRpcParams clientRpcParams;
-        FastBufferWriter fastBufferWriter = base.__beginSendClientRpc(1302598205U, clientRpcParams, RpcDelivery.Reliable);
-        bool flag = eventType != null;
-        fastBufferWriter.WriteValueSafe<bool>(flag, default(FastBufferWriter.ForPrimitives));
-        if (flag)
-        {
-            fastBufferWriter.WriteValueSafe(eventType, false);
-        }
-        base.__endSendClientRpc(ref fastBufferWriter, 1302598205U, clientRpcParams, RpcDelivery.Reliable);
-    }
-    if (this.__rpc_exec_stage != NetworkBehaviour.__RpcExecStage.Client || (!networkManager.IsClient && !networkManager.IsHost))
-    {
-        return;
-    }
+    NetworkManager networkManager = base.NetworkManager; // [!code ++]
+    if (networkManager == null || !networkManager.IsListening) // [!code ++]
+    { // [!code ++]
+        return; // [!code ++]
+    } // [!code ++]
+    if (this.__rpc_exec_stage != NetworkBehaviour.__RpcExecStage.Client && (networkManager.IsServer || networkManager.IsHost)) // [!code ++]
+    { // [!code ++]
+        ClientRpcParams clientRpcParams; // [!code ++]
+        FastBufferWriter fastBufferWriter = base.__beginSendClientRpc(1302598205U, clientRpcParams, RpcDelivery.Reliable); // [!code ++]
+        bool flag = eventType != null; // [!code ++]
+        fastBufferWriter.WriteValueSafe<bool>(flag, default(FastBufferWriter.ForPrimitives)); // [!code ++]
+        if (flag) // [!code ++]
+        { // [!code ++]
+            fastBufferWriter.WriteValueSafe(eventType, false); // [!code ++]
+        } // [!code ++]
+        base.__endSendClientRpc(ref fastBufferWriter, 1302598205U, clientRpcParams, RpcDelivery.Reliable); // [!code ++]
+    } // [!code ++]
+    if (this.__rpc_exec_stage != NetworkBehaviour.__RpcExecStage.Client || (!networkManager.IsClient && !networkManager.IsHost)) // [!code ++]
+    { // [!code ++]
+        return; // [!code ++]
+    } // [!code ++]
     // code here
 }
 ```
@@ -88,23 +88,24 @@ The `NetworkHandler` houses the RPCs, Network Variables, and any other methods a
 
 When creating the `NetworkHandler`, you must inherit the `NetworkBehaviour` class. This allows the script to utilize the networking methods.
 
-```cs
+```cs:line-numbers {11}
 using System;
 using Unity.Netcode;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace ExampleMod
-{
-    public class ExampleNetworkHandler : NetworkBehaviour
-    {
+namespace ExampleMod;
 
-        public static ExampleNetworkHandler Instance { get; private set; }
-    }
+public class ExampleNetworkHandler : NetworkBehaviour // [!code focus:5]
+{
+
+    public static ExampleNetworkHandler Instance { get; private set; }
 }
 ```
 
-We also add the one line of code to allow scripts to easily access any methods or variables, since in the case of our ExampleMod, there is only one version of this class. While you can just use:
+We also add the one line of code to allow scripts to easily access any methods or variables, since in the case of our ExampleMod, there is only one version of this class.
+
+While you can just use:
 
 ```cs
 public static ExampleNetworkHandler Instance;
@@ -177,9 +178,9 @@ public override void OnNetworkSpawn()
 {
     LevelEvent = null;
 
-    if (NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsServer)
-        Instance?.gameObject.GetComponent<NetworkObject>().Despawn();
-    Instance = this;
+    if (NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsServer) // [!code ++]
+        Instance?.gameObject.GetComponent<NetworkObject>().Despawn(); // [!code ++]
+    Instance = this; // [!code ++]
 
     base.OnNetworkSpawn();
 }
@@ -189,37 +190,36 @@ public override void OnNetworkSpawn()
 
 We finished! All that's left is to throw it all together into one script:
 
-```cs
+```cs:line-numbers
 using System;
 using Unity.Netcode;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace ExampleMod
+namespace ExampleMod;
+
+public class ExampleNetworkHandler : NetworkBehaviour // [!code focus:23]
 {
-    public class ExampleNetworkHandler : NetworkBehaviour
+    public override void OnNetworkSpawn()
     {
-        public override void OnNetworkSpawn()
-        {
-            LevelEvent = null;
+        LevelEvent = null;
 
-            if (NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsServer)
-                Instance?.gameObject.GetComponent<NetworkObject>().Despawn();
-            Instance = this;
+        if (NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsServer)
+            Instance?.gameObject.GetComponent<NetworkObject>().Despawn();
+        Instance = this;
 
-            base.OnNetworkSpawn();
-        }
-
-        [ClientRpc]
-        public void EventClientRpc(string eventName)
-        {
-            LevelEvent?.Invoke(eventName); // If the event has subscribers (does not equal null), invoke the event
-        }
-
-        public static event Action<String> LevelEvent;
-
-        public static ExampleNetworkHandler Instance { get; private set; }
+        base.OnNetworkSpawn();
     }
+
+    [ClientRpc]
+    public void EventClientRpc(string eventName)
+    {
+        LevelEvent?.Invoke(eventName); // If the event has subscribers (does not equal null), invoke the event
+    }
+
+    public static event Action<String> LevelEvent;
+
+    public static ExampleNetworkHandler Instance { get; private set; }
 }
 ```
 
@@ -283,7 +283,7 @@ public static void Init()
         return;
     
     networkPrefab = (GameObject)MainAssetBundle.LoadAsset("ExampleNetworkHandler");
-    networkPrefab.AddComponent<ExampleNetworkHandler>();
+    networkPrefab.AddComponent<ExampleNetworkHandler>(); // [!code ++]
 }
 ```
 
@@ -311,7 +311,7 @@ public static void Init()
     networkPrefab = (GameObject)MainAssetBundle.LoadAsset("ExampleNetworkHandler");
     networkPrefab.AddComponent<ExampleNetworkHandler>();
     
-    NetworkManager.Singleton.AddNetworkPrefab(networkPrefab);
+    NetworkManager.Singleton.AddNetworkPrefab(networkPrefab); // [!code ++]
 }
 ```
 
@@ -324,8 +324,8 @@ var networkHandlerHost = Object.Instantiate(networkPrefab, Vector3.zero, Quatern
 networkHandlerHost.GetComponent<NetworkObject>().Spawn();
 ```
 
-::: info
-While you can put <i>false</i> as a parameter in the Spawn method to prevent the game from auto-deleting the object, you shouldn't in this case! The object stays loaded in `SampleSceneRelay`, which is the main ship scene.<br><br>This scene never gets unloaded until disconnecting from the server - <i>precisely</i> when we want the network object to be destroyed!
+::: tip
+While you can put `destroyWithScene: false` as a parameter in the Spawn method to prevent the game from auto-deleting the object, you shouldn't in this case! The object stays loaded in `SampleSceneRelay`, which is the main ship scene.<br><br>This scene never gets unloaded until disconnecting from the server - <i>precisely</i> when we want the network object to be destroyed!
 :::
 
 But wait, there's a catch: Only the host/server is allowed to spawn the network object! To prevent clients from spawning the object, we can do something simple. We just check whether the game instance is a host or a client:
@@ -334,7 +334,7 @@ But wait, there's a catch: Only the host/server is allowed to spawn the network 
 [HarmonyPostfix, HarmonyPatch(typeof(StartOfRound), nameof(StartOfRound.Awake))]
 static void SpawnNetworkHandler()
 {
-    if(NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsServer)
+    if(NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsServer) // [!code highlight]
     {
         var networkHandlerHost = Object.Instantiate(networkPrefab, Vector3.zero, Quaternion.identity)
         networkHandlerHost.GetComponent<NetworkObject>().Spawn();
@@ -348,12 +348,17 @@ We want to attach this to `StartOfRound.Awake` as this method only runs when a n
 
 Once we throw everything together, we get a class looking like this:
 
-```cs
+```cs:line-numbers
+using HarmonyLib;
+using Unity.Netcode;
+using UnityEngine;
+
+namespace ExampleMod;
+
 [HarmonyPatch]
 public class NetworkObjectManager
 {
-
-    [HarmonyPostfix, HarmonyPatch(typeof(GameNetworkManager), nameof(GameNetworkManager.Start))]
+    [HarmonyPostfix, HarmonyPatch(typeof(GameNetworkManager), nameof(GameNetworkManager.Start))] // [!code focus:23]
     public static void Init()
     {
         if (networkPrefab != null)
@@ -384,7 +389,7 @@ public class NetworkObjectManager
 Finally! The handler is in the game! Now we can utilize it. But how? Easy, we subscribe to the C# event. For example, our mod only needs to subscribe when the round starts and needs to unsubscribe when the round ends.
 
 ```cs
-[HarmonyPostfix, HarmonyPatch(typeof(RoundManager), nameof(RoundManager.GenerateNewLevelClientRpc))]
+[HarmonyPostfix, HarmonyPatch(typeof(RoundManager), nameof(RoundManager.GenerateNewFloor))]
 static void SubscribeToHandler()
 {
     ExampleNetworkHandler.LevelEvent += ReceivedEventFromServer;
@@ -403,7 +408,7 @@ static void ReceivedEventFromServer(string eventName)
 
 static void SendEventToClients(string eventName)
 {
-    if (!(NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsHost))
+    if (!(NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsServer))
         return;
 
     ExampleNetworkHandler.Instance.EventClientRpc(eventName);
@@ -412,8 +417,12 @@ static void SendEventToClients(string eventName)
 
 What does this all do? Well, `NetworkHandler.LevelEvent += ReceivedEventFromServer` simply tells C# that we want `ReceivedEventFromServer(string eventName)` to run when the `LevelEvent` event is invoked. `NetworkHandler.LevelEvent -= Received` tells C# that we no longer want `ReceivedEventFromServer` to run when the event is invoked.
 
-:::info
- When subscribing and unsubscribing to an event, make sure that <i>both</i> the host and the client do so. Both `GenerateNewLevelClientRpc` and `DespawnPropsAtEndOfRound` run on all game instances - even if the latter method immediately attempts to return if the game instance is not the host.<br><br>If you don't ensure both the host and clients subscribe/unsubscribe to an event, it very quickly leads to unwanted behavior. For example, if the client doesn't unsubscribe in our test mod, events will be duplicated on client instances since the event will be subscribed to multiple times.
+:::tip
+When subscribing and unsubscribing to an event, make sure that <i>both</i> the host and the client do so. Both `GenerateNewFloor` and `DespawnPropsAtEndOfRound` run on all game instances - even if the latter method immediately attempts to return if the game instance is not the host.<br><br>If you don't ensure both the host and clients subscribe/unsubscribe to an event, it very quickly leads to unwanted behavior. For example, if the client doesn't unsubscribe in our test mod, events will be duplicated on client instances since the event will be subscribed to multiple times.
+:::
+
+:::warning
+Hooking to a ClientRpc can cause errors with code running multiple times on the host instance. Avoid hooking to any ClientRpcs - and if you must, consider adding a debounce.
 :::
 
 ## Using UnityNetcodeWeaver
@@ -444,7 +453,7 @@ private static void NetcodeWeaver()
 
 static void Awake()
 {
-    NetcodeWeaver(); // ONLY RUN ONCE
+    NetcodeWeaver(); // ONLY RUN ONCE // [!code warning]
 }
 ```
 

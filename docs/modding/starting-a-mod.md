@@ -27,7 +27,7 @@ Next, you'll want to create a new project (sometimes called "solution", in CShar
 
 #### Using an IDE (more control)
 
-Depending on your IDE, this process will look slightly different. You'll want to give the solution the name of your soon-to-be mod. If given the option to use a template (you may want to google for *"how to use template in `insert your IDE name here, for example "Rider" or "Visual Studio"`"*), use the `BepInEx 5 Plugin Template`.
+Depending on your IDE, this process will look slightly different. You'll want to give the solution the name of your soon-to-be mod. If given the option to use a template (you may want to google for *"how to use template in Visual Studio"* or *"how to use template in Rider"*), use the `BepInEx 5 Plugin Template`.
 
 #### Using the console (simpler)
 
@@ -36,6 +36,15 @@ Alternatively, you can open a console and run the following command, assuming yo
 ```cmd
 dotnet new bepinex5plugin -n MyFirstPlugin -T "netstandard2.1" -U "2022.3.9"
 ```
+
+::: warning
+Some people have been [reporting problems](https://github.com/BepInEx/BepInEx.Templates/issues/8) creating new BepInEx plugins from the template when using the .NET 8 SDK:
+
+`Failed to create template.
+Details: Object reference not set to an instance of an object.`
+
+If you get this error, try downgrading to the [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0).
+:::
 
 ### Organising your modding projects
 
@@ -51,13 +60,47 @@ name: BepInEx
 url: https://nuget.bepinex.dev/v3/index.json
 ```
 
-For Rider, you can do this by going to the NuGet window, going to its `Sources` tab, and then clicking on the green "+" icon in the `Feeds` sub-tab. There, add a new entry using the above configuration. See [Rider's docs](https://www.jetbrains.com/help/rider/Using_NuGet.html#sources) for more info.
+::: details Visual Studio
+For Visual Studio, you can do this by going to the NuGet Package Manager window and clicking on the settings/gear icon.
 
-![Show Nuget Sources tab in Rider](/images/starting-a-mod/ridershownugetsources.png)
+![View NuGet Packages in Visual Studio](/images/starting-a-mod/visualstudioviewnugetpackages.png)
 
-![Rider Nuget Sources config with BepInEx added](/images/starting-a-mod/ridernugetfeeds.png)
+![Show NuGet Project Settings in Visual Studio](/images/starting-a-mod/visualstudioshownugetsettings.png)
 
-For Visual Studio, please follow [this documentation](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources).
+This will bring up an options modal; click on the `Package Sources` tab, and then click on the green "+" icon in the top right. From there, you can add a new entry using the above configuration.
+
+![Visual Studio NuGet Sources config with BepInEx added](/images/starting-a-mod/visualstudionugetsources.png)
+
+See [Visual Studios's docs](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources) for more info.
+:::
+::: details Rider
+For Rider, you can do this by going to the NuGet window, going to its `Sources` tab, and then clicking on the green "+" icon in the `Feeds` sub-tab. There, add a new entry using the above configuration.
+
+![Show NuGet Sources tab in Rider](/images/starting-a-mod/ridershownugetsources.png)
+
+![Rider NuGet Sources config with BepInEx added](/images/starting-a-mod/ridernugetfeeds.png)
+
+See [Rider's docs](https://www.jetbrains.com/help/rider/Using_NuGet.html#sources) for more info.
+:::
+::: details VS Code
+For VS Code, there is no built in method for NuGet Packages. The only way to add the BepInEx NuGet source is by modifying the `NuGet.Config` file in your project directory. Add the following code in the `<packageSources>` section:
+
+```xml
+<add key="BepInEx" value="https://nuget.bepinex.dev/v3/index.json" />
+```
+
+This should result in a complete file resembling the following:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <packageSources>
+        <add key="BepInEx" value="https://nuget.bepinex.dev/v3/index.json" /> // [!code ++]
+    </packageSources>
+</configuration>
+```
+
+:::
 
 ### Making sure your mod is set up correctly
 
@@ -71,9 +114,25 @@ Our [template project](https://github.com/LethalCompany/LethalCompanyTemplate) h
 
 Your IDE is capable of turning your code into a file that can be run (in this case by BepInEx as a mod). This process is called "building" or "compiling". In this case, it will turn your code into a `.dll` file. This file *is* your mod.
 
-Depending on your IDE, the build button may be placed differently. For Rider, it is in the top right:
+Depending on your IDE, the build button may be placed differently.
+
+::: details Visual Studio
+For Visual Studio, it is the green arrow button with your project name:
+
+![Visual Studio's Build Project button](/images/starting-a-mod/visualstudiobuild.png)
+:::
+::: details Rider
+For Rider, it is in the top right:
 
 ![Rider's Build Solution button](/images/starting-a-mod/riderbuild.png)
+:::
+::: details VS Code
+VS Code has no built-in way of building a C# project, as VS Code is a lightweight code editor and not a IDE. In order to build a C# project, you instead have to download the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
+
+After installing the extension, you can build by pressing `Ctrl+Shift+P`, typing in `Build` and selecting `.NET: Build`.
+
+![VS Code's C# Dev Kit Build Solution command](https://code.visualstudio.com/assets/docs/csharp/build-tools/net-build-command.gif)
+:::
 
 Once built, you should be able to find the `.dll` file in your project's folder, in the following subfolder path (once again replacing `MyFirstPlugin` with the name you gave your mod/project): `MyFirstPlugin/bin/(Release or Debug)/netstandard2.1/MyFirstPlugin.dll`
 

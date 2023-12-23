@@ -1,6 +1,6 @@
 ---
 prev: false
-next: false
+next: true
 description: Learn how to use r2modman to install Lethal Company mods from Thunderstore. 
 ---
 
@@ -65,25 +65,4 @@ Once you have succesfully installed r2modman, you can finally install mods.
 
 That's it! You have just successfully modded Lethal Company!
 
-## Sharing Profiles with r2modman
-
-### Exporting a Profile
-
-1. Select **"Export profile as code"** in the **profile tab** in settings of your profile.
-
-![Exporting Profile](/images/r2modman-install/exportprofilecode.png)
-
-This will copy a code you can send to friends to your clipboard automatically.
-
-### Importing a Profile
-
-1. Click **"Import/Update"** in the **Profile selection** area after selecting Lethal Company in r2modman.
-
-![Importing Profile](/images/r2modman-install/importprofile.png)
-
-2. Select either **Import or Update** depending on what you are doing.
-3. Choose the **"From code"** option and paste in your code.
-
-![Import code](/images/r2modman-install/importfromcode.png)
-
-Now you have shared your mods! You can start modded and play with friends now!
+If you'd like to sync your mods with friends, navigate to the [sharing r2modman profiles](syncing-mods) page.
