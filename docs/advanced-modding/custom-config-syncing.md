@@ -73,7 +73,7 @@ public class SyncedInstance<T> {
 
     internal static void UpdateInstance(byte[] data) {
         Instance = DeserializeFromBytes(data);
-        synced = true;
+        Synced = true;
     }
 }
 ```
@@ -187,7 +187,15 @@ If you are having issues with this patch, you may want to try **GameNetworkManag
 [HarmonyPatch(typeof(GameNetworkManager), "SteamMatchmaking_OnLobbyMemberJoined")]
 ```
 
-Finally, you have manually synced configs within your mod!
+Finally, we need to make sure the client reverts back to their own config upon leaving.
+
+```cs
+[HarmonyPostfix]
+[HarmonyPatch(typeof(GameNetworkManager), "StartDisconnect")]
+public static void PlayerLeave() {
+    Config.RevertSync();
+}
+```
 
 ## Synced Config Usage
 Every client will now have their config synchronized to the hosts upon joining the game.
@@ -207,3 +215,55 @@ public static void ExamplePatch(PlayerControllerB __instance) {
     }
 }
 ```
+
+To use client-side variables (not the synced instance), we can access `Config.Default`.
+```cs
+public static void ExamplePatch(PlayerControllerB __instance) {
+    if (!__instance) return;
+    
+    // Sets current stamina, regardless of host config.
+    __instance.sprintMeter = Config.Default.STAMINA;
+}
+```
+
+## Troubleshooting
+> Syncing doesnt work when I patch manually.
+
+If you're using `PatchAll()` with type parameters, make sure to patch the `Config` class like other files.<br>
+Example:
+```cs
+harmony.PatchAll(typeof(StartMatchLeverPatch));
+harmony.PatchAll(typeof(GameNetworkManagerPatch));
+harmony.PatchAll(typeof(Config)); // Add this line
+```
+
+> I am not seeing any logs from the request/receiver methods?
+
+Harmony may refuse to patch the `InitializeLocalPlayer` method inside `Config.cs` if you have already have a dedicated patch file for `PlayerControllerB`. You can try placing the method there instead.
+```cs
+[HarmonyPatch(typeof(PlayerControllerB))]
+internal class PlayerControllerBPatch
+{
+    [HarmonyPostfix]
+    [HarmonyPatch("ConnectClientToPlayerObject")]
+    public static void InitializeLocalPlayer() {
+        if (Config.IsHost) {
+            try {
+                Config.MessageManager.RegisterNamedMessageHandler("ModName_OnRequestConfigSync", Config.OnRequestSync);
+                Config.Synced = true;
+            }
+            catch (Exception e) {
+                Plugin.Logger.LogError(e);
+            }
+
+            return;
+        }
+
+        Config.Synced = false;
+        Config.MessageManager.RegisterNamedMessageHandler("ModName_OnReceiveConfigSync", Config.OnReceiveSync);
+        Config.RequestSync();
+    }
+}
+```
+
+<br>If you incounter any other issues with custom configs, please ask on the [community discord](https://discord.gg/nYcQFEpXfU)!
