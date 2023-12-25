@@ -335,7 +335,7 @@ There are three important parts in this:
   - The directory of the image as well as the file name ***and extension***.
 :::
 
-## Adding to Sidebar
+## Adding Your Article to the Sidebar {#adding-article-to-sidebar}
 
 In order for people to easily navigate to your article, you must add it to the sidebar. You can do so in `docs/.vitepress/config.mts`.
 
@@ -374,3 +374,27 @@ Please ensure your article name is in **Title Case** when adding it to the sideb
 :::
 
 ## Submitting to GitHub
+
+Now that you've written your article, you can submit it easily! First, switch to the `Fork` tab in GitHub.
+
+![Pull Request Tab on GitHub](/public/images/writing-articles/pullrequesttab.png)
+
+There, you can create the pull request (PR) via the button in the top right:
+
+![Create a Pull Request](/public/images/writing-articles/createpullrequestbutton.png)
+
+Finally, you can select the branch you used on the right for head/compare, and the `main` branch in `LethalCompany/ModdingWiki` for base. If you can't see your fork as an option, click on `compare across forks`.
+
+![Pull Request Selection Dialog](/public/images/writing-articles/createpullrequestdialog.png)
+
+After selecting your branch to pull from, click `Create pull request`. A dialog with a title and description should show up:
+
+![Pull Request Title and Description Dialog](/public/images/writing-articles/pullrequestdescription.png)
+
+Here, name your PR and give a description of what you added/changed. GitHub uses markdown formatting for the description, so you can use that to better show your changes.
+
+Once you've written up the description, just press `Create pull request` in the bottom right, and your PR will be submitted!
+
+::: tip
+Please give a brief summary of what your PR adds, and a list of changes made.
+:::
