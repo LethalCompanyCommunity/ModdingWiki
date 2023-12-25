@@ -32,7 +32,7 @@ Make sure you make your file name with no spaces or symbols, other than `-` to r
 For example, this article is named `writing-articles.md` and is located in `/docs/extras/`.
 :::
 
-The terminal will then display the following, at which point you can go to the url given in the terminal:
+The terminal will then display the following, at which point you can go to the URL given in the terminal:
 
 ![Displayed Text in Terminal](/public/images/writing-articles/runvitepressterminal.png)
 
@@ -47,7 +47,7 @@ npm run dev
 ```
 
 ::: tip
-This must be ran in your repo folder. You can do so using the terminal in the code editor/IDE that you use. 
+This must run in your repo folder. You can do so using the terminal in the code editor/IDE that you use. 
 :::
 
 ## Frontmatter
@@ -136,9 +136,9 @@ You may want headings in your article. These are places you can link to which wi
 There are several different heading "sizes" you can use.
 
 - Using `#` will create the main heading (h1). For example, [this links to a main heading](#contributing-articles).
-- Using `##` wil create the an h2 heading.
+- Using `##` will create the an h2 heading.
 
-This pattern continues all the way until `######`, which creates an h6 heading.
+This pattern continues until `######`, which creates an h6 heading.
 
 ::: info
 Unless there is an empty line between lines of text, headings, or other line symbols, the lines of text, heading, code, or whatever else will either not work or be separated as intended.
@@ -279,10 +279,10 @@ Directory references start from `/docs/`, so don't add `/docs/` to references wh
 Using [markdown syntax](https://www.markdownguide.org/basic-syntax/#links), a link is as simple as wrapping the text in brackets and adding the link in parenthesis. For example, to link to the Wikipedia article on Lethal Company, one could do the following:
 
 ```md
-Look at [this wikipedia article](https://en.wikipedia.org/wiki/Lethal_Company) for basic info about the game.
+Look at [this Wikipedia article](https://en.wikipedia.org/wiki/Lethal_Company) for basic info about the game.
 ```
 
-To specifically link to another article in this wiki, you should use a `relational link` instead of a `hard link`. A `relational link` is the file directory, whereas a `hard link` is the actual website url.
+To specifically link to another article in this wiki, you should use a `relational link` instead of a `hard link`. A `relational link` is the file directory, whereas a `hard link` is the actual website URL.
 
 To link to another article, say the `Contributing Translations` article, you use the following syntax:
 
@@ -291,10 +291,10 @@ To link to another article, say the `Contributing Translations` article, you use
 ```
 
 ::: warning
-Do not use file extensions in the `relational link` for webpages/articles, doing so can lead to un-clean urls (ex. translating-the-wiki.html)
+Do not use file extensions in the `relational link` for webpages/articles, doing so can lead to un-clean URLs (ex. translating-the-wiki.html)
 :::
 
-To link to a specific heading, you can add `#heading-anchor` to the link, where `heading-anchor` is the specific heading anchor you want to use. To find what anchor to use, click on the heading, and see what anchor is in the url.
+To link to a specific heading, you can add `#heading-anchor` to the link, where `heading-anchor` is the specific heading anchor you want to use. To find what anchor to use, click on the heading, and see what anchor is in the URL.
 
 ```md
 [heading of another article](/installation/syncing-mods#exporting-a-profile)
@@ -322,7 +322,7 @@ For example, all images used in this article are saved within `/docs/public/imag
 The syntax to add an image is like adding a link.
 
 ```md
-![Example Image Alt Text](/public/images/writiing-articles/example-image.png)
+![Example Image Alt Text](/public/images/writing-articles/example-image.png)
 ```
 
 There are three important parts in this:
@@ -339,7 +339,7 @@ There are three important parts in this:
 
 In order for people to easily navigate to your article, you must add it to the sidebar. You can do so in `docs/.vitepress/config.mts`.
 
-First, you have to decide which sidebar you want to add your article to. `'/'` is the `Beginner's Guide` sidebar and `'/modding/'` is the `Developer's Guide` sidebar.
+First, you must decide which sidebar you want to add your article to. `'/'` is the `Beginner's Guide` sidebar and `'/modding/'` is the `Developer's Guide` sidebar.
 
 Next, insert the following into your article location:
 ```ts
@@ -391,10 +391,10 @@ After selecting your branch to pull from, click `Create pull request`. A dialog 
 
 ![Pull Request Title and Description Dialog](/public/images/writing-articles/pullrequestdescription.png)
 
-Here, name your PR and give a description of what you added/changed. GitHub uses markdown formatting for the description, so you can use that to better show your changes.
+Here, name your PR and describe of what you added and/or changed. GitHub uses markdown formatting for the description, so you can use that to better show your changes.
 
 Once you've written up the description, just press `Create pull request` in the bottom right, and your PR will be submitted!
 
 ::: tip
-Please give a brief summary of what your PR adds, and a list of changes made.
+Please give a summary of what your PR adds and a list of changes made.
 :::
