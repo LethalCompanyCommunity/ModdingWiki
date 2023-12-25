@@ -12,9 +12,43 @@ This guide will help you write, format, and implement your article into the wiki
 
 ## Forking the GitHub Repository {#forking-the-repo}
 
+In order to send a Pull Request (PR) to the wiki to request your article to be added, you have to fork the [ModdingWiki repository](https://github.com/LethalCompany/ModdingWiki) (repo). 
+
+To fork the wiki, it's fairly simple. You'll click the `Fork` button on the webpage, then click `Create fork`.
+
+![GitHub Fork Repo Button](/public/images/writing-articles/forkgithubrepobutton.png)
+
+![GitHub Create Fork Dialog](/public/images/writing-articles/forkgithubrepopopup.png)
+
+Now we've created the fork! From there you can make changes to a branch on the fork and create the PR when you're finished.
+
 ## Creating the File
 
+Creating the article file is pretty simple. Add the file to the folder/subsection you are adding to, such as `/docs/dev/api/` for APIs, and create a markdown file (.md).
 
+::: danger IMPORTANT
+Make sure you make your file name with no spaces or symbols, other than `-` to replace spaces!
+
+For example, this article is named `writing-articles.md` and is located in `/docs/extras/`.
+:::
+
+The terminal will then display the following, at which point you can go to the url given in the terminal:
+
+![Displayed Text in Terminal](/public/images/writing-articles/runvitepressterminal.png)
+
+## Viewing Your Article
+
+This website uses VitePress to turn the markdown files into viewable webpages. To view your article in context as a webpage, it's simple.
+
+To run VitePress and view as a local site, run the following command in the terminal:
+
+```shell
+npm run dev
+```
+
+::: tip
+This must be ran in your repo folder. You can do so using the terminal in the code editor/IDE that you use. 
+:::
 
 ## Frontmatter
 
@@ -50,6 +84,8 @@ The frontmatter section **must** be at the beginning of the file, otherwise it w
 :::code-group
 ```md [correct.md]
 ---
+prev: false
+next: false
 description: Example description
 ---
 
@@ -59,6 +95,8 @@ description: Example description
 ```md [incorrect.md]
 <!-- Extra space causes errors -->
 ---
+prev: false
+next: false
 description: Example description
 ---
 
