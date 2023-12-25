@@ -266,6 +266,75 @@ You might also want to display the line numbers of code, which can be done by ad
 //...
 ```
 
+### Links & Images
+
+Adding links and images to your article is simple using Markdown, although the link itself is more special.
+
+::: tip
+Directory references start from `/docs/`, so don't add `/docs/` to references when linking to another article or an image.
+:::
+
+#### Links
+
+Using [markdown syntax](https://www.markdownguide.org/basic-syntax/#links), a link is as simple as wrapping the text in brackets and adding the link in parenthesis. For example, to link to the Wikipedia article on Lethal Company, one could do the following:
+
+```md
+Look at [this wikipedia article](https://en.wikipedia.org/wiki/Lethal_Company) for basic info about the game.
+```
+
+To specifically link to another article in this wiki, you should use a `relational link` instead of a `hard link`. A `relational link` is the file directory, whereas a `hard link` is the actual website url.
+
+To link to another article, say the `Contributing Translations` article, you use the following syntax:
+
+```md
+[text](/contribute/translating-the-wiki)
+```
+
+::: warning
+Do not use file extensions in the `relational link` for webpages/articles, doing so can lead to un-clean urls (ex. translating-the-wiki.html)
+:::
+
+To link to a specific heading, you can add `#heading-anchor` to the link, where `heading-anchor` is the specific heading anchor you want to use. To find what anchor to use, click on the heading, and see what anchor is in the url.
+
+```md
+[heading of another article](/installation/syncing-mods#exporting-a-profile)
+```
+
+::: tip
+If you want to do it to another heading in your article, you can drop the link and only have the anchor, like so:
+
+```md
+[heading](#example-heading-anchor)
+```
+:::
+
+#### Images
+
+To add images to your article, there are two steps:
+
+::: info 1. Save the image in the correct directory
+Images should be saved in a folder within `/docs/public/images`, where the folder is labeled the same as your article file name (minus `.md`).
+
+For example, all images used in this article are saved within `/docs/public/images/writing-articles`.
+:::
+
+::: info 2. Add it with the correct syntax
+The syntax to add an image is like adding a link.
+
+```md
+![Example Image Alt Text](/public/images/writiing-articles/example-image.png)
+```
+
+There are three important parts in this:
+
+- The Exclamation Mark
+  - This marks the link as an image.
+- The Alt Text
+  - This text will show if the image is not loaded.
+- The Image Link
+  - The directory of the image as well as the file name ***and extension***.
+:::
+
 ## Adding to Sidebar
 
 In order for people to easily navigate to your article, you must add it to the sidebar. You can do so in `docs/.vitepress/config.mts`.
