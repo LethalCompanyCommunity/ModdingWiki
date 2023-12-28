@@ -25,7 +25,7 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 
 - [MoreSuits by x753](https://thunderstore.io/c/lethal-company/p/x753/More_Suits/) allows you to create your own custom ingame suits using only a .png file. [The README](https://thunderstore.io/c/lethal-company/p/x753/More_Suits/) has a basic section on how to format your suit mod for upload.
 
-### Items & Scrap
+### Items & Scrap {#asset-items-and-scrap}
 
 - [LethalExpansion by HolographicWings](https://thunderstore.io/c/lethal-company/p/HolographicWings/LethalExpansion/) allows you to create your own scrap using a custom Unity SDK. [The SDK's README](https://github.com/HolographicWings/LethalSDK-Unity-Project) has a basic usage tutorial.
 
@@ -47,7 +47,7 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 
 - [InputUtils by Rune580](https://thunderstore.io/c/lethal-company/p/Rune580/LethalCompany_InputUtils/) allows you to easily initialize input/keybinds with ingame rebinding. [The README](https://thunderstore.io/c/lethal-company/p/Rune580/LethalCompany_InputUtils/) has a developer quickstart.
 
-### Items & Scrap
+### Items & Scrap {#programming-items-and-scrap}
 
 - [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new Scrap & Shop Items.
 
