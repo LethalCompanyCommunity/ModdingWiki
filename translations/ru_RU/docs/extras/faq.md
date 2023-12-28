@@ -8,7 +8,7 @@ description: Frequently asked Lethal Company modding questions.
 
 ***
 
-## Я установил MoreCompany/BiggerLobby но ничего не поменялось.
+## I Installed MoreCompany/BiggerLobby and it doesn't work. {#morecompany-biggerlobby-not-working}
 
 Способы решения:
 
@@ -16,11 +16,11 @@ description: Frequently asked Lethal Company modding questions.
 - Все кто пытается подключиться к вам должны иметь тот же мод(моды).
 - Также у них должна быть та же версия мода, что и у вас.
 
-## Работают ли моды на пиратской версии игры?
+## Работают ли моды на пиратской версии игры? {#pirating}
 
 Моды работают только на последней Steam версии Lethal Company. Купите игру.
 
-## Нужно ли чтобы (Название мода) был установлен у всех на сервере?
+## Нужно ли чтобы (Название мода) был установлен у всех на сервере? {#require-all-to-install}
 
 Это зависит от специфики мода. Одни моды работают полностью на клиенте, а некоторые требуют чтобы они были установлены у всех на сервере.
 
