@@ -16,9 +16,9 @@ In order to send a Pull Request (PR) to the wiki to request your article to be a
 
 To fork the wiki, it's fairly simple. You'll click the `Fork` button on the webpage, then click `Create fork`.
 
-![GitHub Fork Repo Button](/public/images/writing-articles/forkgithubrepobutton.png)
+![GitHub Fork Repo Button](/images/writing-articles/forkgithubrepobutton.png)
 
-![GitHub Create Fork Dialog](/public/images/writing-articles/forkgithubrepopopup.png)
+![GitHub Create Fork Dialog](/images/writing-articles/forkgithubrepopopup.png)
 
 Now we've created the fork! From there you can make changes to a branch on the fork and create the PR when you're finished.
 
@@ -34,7 +34,7 @@ For example, this article is named `writing-articles.md` and is located in `/doc
 
 The terminal will then display the following, at which point you can go to the URL given in the terminal:
 
-![Displayed Text in Terminal](/public/images/writing-articles/runvitepressterminal.png)
+![Displayed Text in Terminal](/images/writing-articles/runvitepressterminal.png)
 
 ## Viewing Your Article
 
@@ -322,7 +322,7 @@ For example, all images used in this article are saved within `/docs/public/imag
 The syntax to add an image is like adding a link.
 
 ```md
-![Example Image Alt Text](/public/images/writing-articles/example-image.png)
+![Example Image Alt Text](/images/writing-articles/example-image.png)
 ```
 
 There are three important parts in this:
@@ -333,6 +333,9 @@ There are three important parts in this:
   - This text will show if the image is not loaded.
 - The Image Link
   - The directory of the image as well as the file name ***and extension***.
+
+::: warning
+When adding the image link, you need to exclude `/public` from the link as VitePress will automatically look into that directory for images.
 :::
 
 ## Adding Your Article to the Sidebar {#adding-article-to-sidebar}
@@ -377,19 +380,19 @@ Please ensure your article name is in **Title Case** when adding it to the sideb
 
 Now that you've written your article, you can submit it easily! First, switch to the `Fork` tab in GitHub.
 
-![Pull Request Tab on GitHub](/public/images/writing-articles/pullrequesttab.png)
+![Pull Request Tab on GitHub](/images/writing-articles/pullrequesttab.png)
 
 There, you can create the pull request (PR) via the button in the top right:
 
-![Create a Pull Request](/public/images/writing-articles/createpullrequestbutton.png)
+![Create a Pull Request](/images/writing-articles/createpullrequestbutton.png)
 
 Finally, you can select the branch you used on the right for head/compare, and the `main` branch in `LethalCompany/ModdingWiki` for base. If you can't see your fork as an option, click on `compare across forks`.
 
-![Pull Request Selection Dialog](/public/images/writing-articles/createpullrequestdialog.png)
+![Pull Request Selection Dialog](/images/writing-articles/createpullrequestdialog.png)
 
 After selecting your branch to pull from, click `Create pull request`. A dialog with a title and description should show up:
 
-![Pull Request Title and Description Dialog](/public/images/writing-articles/pullrequestdescription.png)
+![Pull Request Title and Description Dialog](/images/writing-articles/pullrequestdescription.png)
 
 Here, name your PR and describe of what you added and/or changed. GitHub uses markdown formatting for the description, so you can use that to better show your changes.
 
