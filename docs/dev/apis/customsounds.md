@@ -120,13 +120,13 @@ Here's a little fun demo of how this particular setup looks like:
 
 [![Watch the video](/images/customsounds/Youtube_thumbnail.png)](https://youtu.be/mk8O8qFcMlk)
 
-## Sharing custom sounds with friends
+## Sharing custom sounds with friends {#sharing-custom-sounds}
 
 ### File sharing
 
 This one is by far the most obvious and simple method, you just put the audio files into a `.zip` file, upload it somewhere, tell your friends to download it and put it into the CustomSounds folder, and that's it.
 
-### Customsounds syncing feature
+### CustomSounds syncing feature {#customsounds-syncing}
 
 The second one uses a new experimental feature of CustomSounds, which allows your friends to synchronize their custom sounds with yours. As before, you can type in "customsounds help" to see all the available commands. The command of interest to you is the "customsounds sync" command. Once you type in this command, everyone in your lobby should get this prompt:
 

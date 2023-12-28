@@ -18,7 +18,7 @@ This is not a tutorial on how to use Unity's [Netcode for GameObjects](https://d
 
 This tutorial requires using [@EvaisaDev](https://github.com/EvaisaDev/)'s [UnityNetcodeWeaver](https://github.com/EvaisaDev/UnityNetcodeWeaver) (Thank you very much Evaisa!). This tutorial will only go into the basics of using this tool; if you run into any issues, ask in the [NetcodePatcher Forum Post](https://discord.com/channels/1169792572382773318/1175504315029389343) on the [Unofficial Lethal Company Community Discord](https://discord.gg/nYcQFEpXfU).
 
-### Why use Unity Netcode Weaver?
+### Why use Unity Netcode Weaver? {#why-netcode-weaver}
 
 Unity Netcode Weaver replicates the IL Post Processing Unity performs when compiling code utilizing Netcode for GameObjects package. This turns the C# code before the post processing step:
 
@@ -141,7 +141,7 @@ public void EventServerRPC(/*parameters here*/)
 }
 ```
 
-### C# Events
+### C# Events {#csharp-events}
 
 Now, you may ask, what is `public static event Action<String> LevelEvent`? This uses C#'s event/delegate system to create a readable event. While it may look complex at first, it turns out to be quite simple! A script can subscribe to the event - which will be shown later - then, when the event is invoked, any specified method(s) will run.
 
@@ -156,7 +156,7 @@ if (LevelEvent != null)
 
 All this if statement checks is whether the event is not equal to null and calls the event if so. The event will be null *if there are no subscribers to the event.*
 
-### Preventing Duplication of Events and Instance
+### Preventing Duplication of Events and Instance {#preventing-duplication}
 
 Since we are using `static` when defining our C# event, an edge case can occur. What happens if the event is not unsubscribed from, and the player joins a new server? Any code that unknowingly subscribes to the event a second time will run twice! How do we make sure this does not occur? We set the C# event to equal null. The best time to do so is when the NetworkHandler gets spawned in:
 
@@ -287,7 +287,7 @@ public static void Init()
 }
 ```
 
-### Adding Asset as Network Prefab
+### Adding the Asset as a Network Prefab {#adding-network-prefab}
 
 Now that we have the prefab ready to be loaded, it's quite simple to give this to the NetworkManager as a prefab:
 
@@ -315,7 +315,7 @@ public static void Init()
 }
 ```
 
-### Spawning the GameObject During Runtime
+### Spawning the GameObject During Runtime {#spawning-the-gameobject}
 
 Now that the game knows what to load when we tell it to load the ExampleNetworkHandler, all we have left is to spawn it! To do so, we just must Instantiate the prefab, then spawn it:
 
@@ -425,7 +425,7 @@ When subscribing and unsubscribing to an event, make sure that <i>both</i> the h
 Hooking to a ClientRpc can cause errors with code running multiple times on the host instance. Avoid hooking to any ClientRpcs - and if you must, consider adding a debounce.
 :::
 
-## Using UnityNetcodeWeaver
+## Using Unity Netcode Weaver {#using-netcode-weaver}
 
 Now that we've finished the networking code, all that's left is to patch the compiled mod assembly with Unity Netcode Weaver/Patcher. Before we can do so, we need to prepare the mod for patching. 
 
