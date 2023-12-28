@@ -75,8 +75,8 @@ export default defineConfig({
             { 
               text: 'Advanced Topics', 
               items: [
-                { text: 'Custom Config Syncing', link: '/dev/advanced/custom-config-syncing' },
                 { text: 'Custom Configs', link: '/dev/advanced/custom-configs' },
+                { text: 'Custom Config Syncing', link: '/dev/advanced/custom-config-syncing' },
                 { text: 'Networking', link: '/dev/advanced/networking' }
               ]
             },
