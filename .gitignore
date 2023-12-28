@@ -132,3 +132,4 @@ docs/.vitepress/cache
 
 _site/
 .jekyll-cache/
+.vscode/launch.json

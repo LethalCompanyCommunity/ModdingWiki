@@ -57,6 +57,8 @@ export default defineConfig({
             { 
               text: 'Advanced Modding Topics', 
               items: [
+                { text: 'Custom Configs', link: '/advanced-modding/custom-configs' },
+                { text: 'Custom Config Syncing', link: '/advanced-modding/custom-config-syncing' },
                 { text: 'Custom Networking', link: '/advanced-modding/networking' }
               ]
             },
