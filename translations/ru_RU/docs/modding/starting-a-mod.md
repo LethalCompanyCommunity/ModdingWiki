@@ -4,7 +4,7 @@ description: Learn how to create a basic project for a Lethal Company mod.
 
 # Создаем мод
 
-## Подготовка проекта
+## Setting up your project {#setup-project}
 
 :::warning
 This guide assumes you've completed all the required steps in **[initial setup](initial-setup)**, or that you know what you're doing.
@@ -12,11 +12,11 @@ This guide assumes you've completed all the required steps in **[initial setup](
 
 Это руководство в основном следует [официальному руководству BepInEx](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/2_plugin_start.html).
 
-### Используем шаблон проекта
+### Using the template repository {#using-template-repo}
 
 Мы создали простой [шаблон мода](https://github.com/LethalCompany/LethalCompanyTemplate) на GitHub. If you're remotely familiar with GitHub, or willing to [learn](initial-setup.html#creating-a-github-account), this might serve as a quick start. У шаблона есть некоторые незначительные недостатки, такие как использование "LethalCompanyTemplate" в качестве имени проекта в некоторых файлах, но вы можете изменить эту часть кода в случае чего. Он должен работать «из коробки» без каких-либо изменений; хотя возможно вам может потребоваться добавить BepInEx в качестве источника NuGet (см. [релевантный](#adding-nuget-source) раздел ниже).
 
-### Создаём ваш проект
+### Creating your project {#create-project}
 
 Сначала вам нужно создать ваш проект. Мы рекомендуем запустить следующую команду в консоли, чтобы добавить несколько шаблонов BepInEx:
 
@@ -26,11 +26,11 @@ dotnet new -i BepInEx.Templates --nuget-source https://nuget.bepinex.dev/v3/inde
 
 Далее, вам необходимо сгенерировать новый проект (Иногда называемый "решением" в CSharp). Есть несколько способов это сделать:
 
-#### С помощью IDE (больше возможностей)
+#### Using an IDE (more control) {#using-ide}
 
 В зависимости от IDE процесс будет протекать по-разному. Если у вашей IDE есть возможность использовать шаблоны (вы можете поискать в Google _"как использовать шаблоны в `ваша IDE, например "Rider" или "Visual Studio"`"_), то используйте `BepInEx 5 Plugin Template`. If given the option to use a template (you may want to google for _"how to use template in Visual Studio"_ or _"how to use template in Rider"_), use the `BepInEx 5 Plugin Template`.
 
-#### С помощью консоли (более простой вариант)
+#### Using the console (simpler) {#using-console}
 
 Во втором случае вы можете открыть консоль и выполнить команду из предыдущего раздела и эту вдобавок :
 
@@ -47,11 +47,11 @@ Details: Object reference not set to an instance of an object.`
 If you get this error, try downgrading to the [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0).
 :::
 
-### Храним ваши проекты
+### Organising your modding projects {#organize-project}
 
 Мы советуем вам создать папку где-нибудь в документах, где вы будете хранить все свои проекты. Назвав её при этом чем-то по типу "МодыLC". Перенесите недавно созданную папку мода в эту, чтобы все было более менее организовано.
 
-### Добавляем NuGet
+### Adding NuGet source {#add-nuget}
 
 BepInEx использует NuGet. Так что вам придется добавить BepInEx NuGet в список источников.
 
@@ -103,7 +103,7 @@ This should result in a complete file resembling the following:
 
 :::
 
-### Убедитесь, что ваш мод настроен правильно
+### Making sure your mod is set up correctly {#check-mod-setup}
 
 Модификации разрабатываются под конкретные версий Unity и .NET, которые можно указать в особом конфиге. Файл `.csproj` и является им. В качестве его имени обычно стоит имя вашего мода (например, `MyFirstPlugin.csproj`). Если вы правильно использовали консольные команды сверху то все уже должно быть настроено. Тем не менее, вам следует проверить конфиг, чтобы предотвратить любые проблемы, которые могут возникнуть из-за неправильной настройки. При использовании IDE шаблоны могут использовать не ту версию BepInEx, поэтому вам обязательно придется все проверить.
 
