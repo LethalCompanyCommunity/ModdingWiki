@@ -1,13 +1,13 @@
 ---
 prev: false
 next: false
-description: An advanced overview of how to use UnityNetcodeWeaver to add networking to your Lethal Company mods.
+description: 使用UnityNetcodeWeaver将网络添加到您的致命公司MOD的进阶概述
 ---
 
-# Custom Networking
+# 自定义网络
 
 :::warning
-**This is an advanced article. While this introduces some C# concepts, it is highly recommended to understand C# and the basics of modding this game <i>before</i> reading this article.**
+这是一篇高级文章 While this introduces some C# concepts, it is highly recommended to understand C# and the basics of modding this game <i>before</i> reading this article.\*\*
 :::
 
 :::info
