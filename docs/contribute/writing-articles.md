@@ -32,10 +32,6 @@ Make sure you make your file name with no spaces or symbols, other than `-` to r
 For example, this article is named `writing-articles.md` and is located in `/docs/extras/`.
 :::
 
-The terminal will then display the following, at which point you can go to the URL given in the terminal:
-
-![Displayed Text in Terminal](/images/writing-articles/runvitepressterminal.png)
-
 ## Viewing Your Article
 
 This website uses VitePress to turn the markdown files into viewable webpages. To view your article in context as a webpage, it's simple.
@@ -50,6 +46,10 @@ npm run dev
 This must run in your repo folder. You can do so using the terminal in the code editor/IDE that you use. 
 :::
 
+The terminal will then display the following, at which point you can go to the URL given in the terminal:
+
+![Displayed Text in Terminal](/images/writing-articles/runvitepressterminal.png)
+
 ## Frontmatter
 
 VitePress uses `YAML Frontmatter` for article configs. There are three commonly used settings, `description`, `prev`, and `next`.
@@ -63,6 +63,17 @@ In order to have descriptive info for search engines and embeds, you have to add
 description: Example description
 ---
 ```
+
+::: tip
+The description should be a short and descriptive; it should only be one to two sentences long.
+
+For example, the description for this article is the following:
+```md
+---
+description: How to contribute new articles to the wiki.
+---
+```
+:::
 
 ### Previous & Next
 
