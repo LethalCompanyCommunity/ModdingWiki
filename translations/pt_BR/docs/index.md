@@ -7,8 +7,8 @@ hero:
   tagline: Welcome to the Lethal Company modding guide! Learn how to install, manage, and create mods for Lethal Company!
   actions:
     - theme: brand
-      text: Beginners Guide
-      link: /beginners-guide
+      text: Beginner's Guide
+      link: /overview
     - theme: alt
       text: Edit on GitHub
       link: https://github.com/LethalCompany/ModdingWiki
@@ -23,19 +23,20 @@ hero:
 
 <Home>
   <HomeGroup title="Installing Mods">
-    <HomeItem name="Beginners guide" href="./beginners-guide" />
+    <HomeItem name="Beginner's Guide" href="./overview" />
     <HomeItem name="Using r2modman" href="./installation/installing-r2modman" />
-    <HomeItem name="Sharing r2modman profiles" href="./installation/syncing-mods" />
-    <HomeItem name="Configuring mods" href="./installation/configuration" /></HomeGroup>
+    <HomeItem name="Sharing r2modman Profiles" href="./installation/syncing-mods" />
+    <HomeItem name="Configuring Mods" href="./installation/configuration" /></HomeGroup>
 
   <HomeGroup title="Creating Mods">
-    <HomeItem name="Initial modding setup" href="./modding/initial-setup" />
-    <HomeItem name="Modding APIs overview" href="./apis/modding-apis" />
-    <HomeItem name="Publishing your mod" href="./modding/publishing-your-mod" /></HomeGroup>
+    <HomeItem name="Developer's Guide" href="./dev/overview" />
+    <HomeItem name="Initial Modding Setup" href="./dev/initial-setup" />
+    <HomeItem name="Modding APIs Overview" href="./dev/apis/overview" />
+    <HomeItem name="Publishing Your Mod" href="./dev/publishing-your-mod" /></HomeGroup>
 
   <HomeGroup title="Other Resources">
     <HomeItem name="Frequently Asked Questions" href="./extras/faq" />
-    <HomeItem name="Contributing translations" href="./translation/translating-the-wiki" />
+    <HomeItem name="Contributing Translations" href="./translation/translating-the-wiki" />
     <HomeItem name="About" href="./extras/about" /></HomeGroup>
 
 
