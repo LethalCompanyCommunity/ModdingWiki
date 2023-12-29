@@ -99,7 +99,9 @@ For **r2modman \ Thunderstore** users:
 
 Go to settings>Browse profile folder, and then go into `BepInEx\plugins\Clementinise-CustomSounds\CustomSounds` and either place the audio files directly there or make another folder inside of CustomSounds and put them there.
 
-**Note:** r2modman WILL delete your custom sound files each time you update CustomSounds, so I would recommend to keep your replacement sounds in another folder so you can quickly swap them back in the case an update comes out.
+::: tip NOTE
+r2modman **WILL** delete your custom sound files each time you update CustomSounds, so I would recommend to keep your replacement sounds in another folder so you can quickly swap them back in the case an update comes out.
+:::
 
 ### Additional features
 
@@ -118,13 +120,13 @@ Here's a little fun demo of how this particular setup looks like:
 
 [![Watch the video](/images/customsounds/Youtube_thumbnail.png)](https://youtu.be/mk8O8qFcMlk)
 
-## Sharing custom sounds with friends
+## Sharing custom sounds with friends {#sharing-custom-sounds}
 
 ### File sharing
 
 This one is by far the most obvious and simple method, you just put the audio files into a `.zip` file, upload it somewhere, tell your friends to download it and put it into the CustomSounds folder, and that's it.
 
-### Customsounds syncing feature
+### CustomSounds syncing feature {#customsounds-syncing}
 
 The second one uses a new experimental feature of CustomSounds, which allows your friends to synchronize their custom sounds with yours. As before, you can type in "customsounds help" to see all the available commands. The command of interest to you is the "customsounds sync" command. Once you type in this command, everyone in your lobby should get this prompt:
 
@@ -148,7 +150,7 @@ The only thing you need to keep in mind when publishing your mod is to keep this
                 - [Insert All Audio Files Here]
 ```
 
-For the rest, check out the section on how to [publish your mod](/modding/publishing-your-mod) here on this wiki. 
+For the rest, check out the section on how to [publish your mod](/dev/publishing-your-mod) here on this wiki. 
 
 ## Credits
 

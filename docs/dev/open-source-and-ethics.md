@@ -1,4 +1,6 @@
 ---
+prev: true
+next: true
 description: A basic overview of the Open Source approach used by the Lethal Company modding community.
 ---
 

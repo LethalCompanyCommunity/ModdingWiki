@@ -1,21 +1,23 @@
 ---
+prev: true
+next: true
 description: Learn how to create a basic project for a Lethal Company mod.
 ---
 
 # Starting a mod
 
-## Setting up your project
+## Setting up your project {#setup-project}
 ::: warning
-This guide assumes you've completed all the required steps in **[initial setup](initial-setup)**, or that you know what you're doing.
+This guide assumes you've completed all the required steps in **[initial setup](/dev/initial-setup)**, or that you know what you're doing.
 :::
 
 This guide follows certain parts of the [official BepInEx guide](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/2_plugin_start.html).
 
-### Using the template repository
+### Using the template repository {#using-template-repo}
 
-We have created a [template repository](https://github.com/LethalCompany/LethalCompanyTemplate) on GitHub. If you're remotely familiar with GitHub, or willing to [learn](initial-setup.html#creating-a-github-account), this might serve as a quick start. It does come with some minor drawbacks such as it using "LethalCompanyTemplate" as project name in a number of files, but you can edit this. It should build out-of-the-box with no edits required; though you may need to add BepInEx as a NuGet source (see the [relevant](#adding-nuget-source) section below).
+We have created a [template repository](https://github.com/LethalCompany/LethalCompanyTemplate) on GitHub. If you're remotely familiar with GitHub, or willing to [learn](/dev/initial-setup#creating-a-github-account), this might serve as a quick start. It does come with some minor drawbacks such as it using "LethalCompanyTemplate" as project name in a number of files, but you can edit this. It should build out-of-the-box with no edits required; though you may need to add BepInEx as a NuGet source (see the [relevant](#adding-nuget-source) section below).
 
-### Creating your project
+### Creating your project {#create-project}
 
 First things first, you'll need to create your project. If you've not done so already, we recommend running the following command in a console to add some BepInEx templates for new projects:
 
@@ -25,11 +27,11 @@ dotnet new -i BepInEx.Templates --nuget-source https://nuget.bepinex.dev/v3/inde
 
 Next, you'll want to create a new project (sometimes called "solution", in CSharp). There are two main ways to do this.
 
-#### Using an IDE (more control)
+#### Using an IDE (more control) {#using-ide}
 
 Depending on your IDE, this process will look slightly different. You'll want to give the solution the name of your soon-to-be mod. If given the option to use a template (you may want to google for *"how to use template in Visual Studio"* or *"how to use template in Rider"*), use the `BepInEx 5 Plugin Template`.
 
-#### Using the console (simpler)
+#### Using the console (simpler) {#using-console}
 
 Alternatively, you can open a console and run the following command, assuming you've set up the templates using the command above. Replace `MyFirstPlugin` with your mod's name:
 
@@ -46,11 +48,11 @@ Details: Object reference not set to an instance of an object.`
 If you get this error, try downgrading to the [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0).
 :::
 
-### Organising your modding projects
+### Organising your modding projects {#organize-project}
 
 We recommend creating a folder somewhere easily accessible that will store all of your future modding projects. Something like "LethalCompanyMods". Move the newly created folder for your mod into this folder, to keep things well-organised.
 
-### Adding NuGet source
+### Adding NuGet source {#add-nuget}
 
 BepInEx uses a separate NuGet source. You'll need to add the BepInEx NuGet source to your global source list.
 
@@ -102,7 +104,7 @@ This should result in a complete file resembling the following:
 
 :::
 
-### Making sure your mod is set up correctly
+### Making sure your mod is set up correctly {#check-mod-setup}
 
 Mods are developed for specific versions of Unity and .NET, which can be specified in a configuration file. This file is a `.csproj` file, and has as name the name of your mod (e.g. `MyFirstPlugin.csproj`). If you used the console command correctly, it should work out of the box. However, you'll want to double check this to prevent any easy-to-fix problems that can result from not having it set up correctly. When using an IDE, the template might not use the correct version, so in this case you'll definitely have to check things.
 
@@ -154,6 +156,6 @@ We highly recommend reading through the rest of the [official BepInEx guide](htt
 
 ## Next steps
 
-We recommend reading through our very short guide on [open-source & ethics](open-source-and-ethics), to help foster a healthy modding community.
+We recommend reading through our very short guide on [open-source & ethics](/dev/open-source-and-ethics), to help foster a healthy modding community.
 
-Once you've finished a mod, you can [publish it](publishing-your-mod).
+Once you've finished a mod, you can [publish it](/dev/publishing-your-mod).

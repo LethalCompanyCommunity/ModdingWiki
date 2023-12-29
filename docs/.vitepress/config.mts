@@ -28,7 +28,8 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Beginners Guide', link: '/beginners-guide.md' },
+      { text: 'Beginner\'s Guide', link: '/overview.md' },
+      { text: 'Developer\'s Guide', link: '/dev/overview.md' },
       { text: 'Discord', link: 'https://discord.gg/nYcQFEpXfU' }
     ],
 
@@ -36,46 +37,97 @@ export default defineConfig({
       '/': [
         {
           items: [
-            { text: 'Beginners Guide', link: '/beginners-guide' },
-            { 
-              text: 'Installing Mods', 
+            {text: 'Beginner\'s Guide', link: '/overview'},
+            {
+              text: 'Installing Mods',
               items: [
-                { text: 'Using r2modman', link: '/installation/installing-r2modman' },
-                { text: 'Sharing r2modman profiles', link: '/installation/syncing-mods' },
-                { text: 'Configuring mods', link: '/installation/configuration' }
+                {text: 'Using r2modman', link: '/installation/installing-r2modman'},
+                {text: 'Sharing r2modman Profiles', link: '/installation/syncing-mods'},
+                {text: 'Configuring Mods', link: '/installation/configuration'}
               ]
+            },
+            {
+              text: 'Other Resources',
+              items: [
+                {text: 'Frequently Asked Questions', link: '/extras/faq'},
+                {text: 'Contributing Translations', link: '/translation/translating-the-wiki'},
+                {text: 'About', link: '/extras/about'}
+              ]
+            },
+          ]
+        }
+        ],
+      '/dev/': [
+        {
+          items: [
+            {
+              text: 'Developer\'s Guide', link: '/dev/overview'
             },
             { 
               text: 'Creating Mods', 
               items: [
-                { text: 'Initial modding setup', link: '/modding/initial-setup' },
-                { text: 'Starting a mod', link: '/modding/starting-a-mod' },
-                { text: 'Open-source and ethics', link: '/modding/open-source-and-ethics' },
-                { text: 'Publishing your mod', link: '/modding/publishing-your-mod' }
+                { text: 'Initial Setup', link: '/dev/initial-setup' },
+                { text: 'Starting a Mod', link: '/dev/starting-a-mod' },
+                { text: 'Open-Source & Ethics', link: '/dev/open-source-and-ethics' },
+                { text: 'Publishing Your Mod', link: '/dev/publishing-your-mod' }
               ]
             },
             { 
-              text: 'Advanced Modding Topics', 
+              text: 'Modding Topics', 
               items: [
-                { text: 'Custom Networking', link: '/advanced-modding/networking' }
+                /*{
+                  text: 'Fundamentals',
+                  collapsed: false,
+                  items: [
+                      
+                  ]
+                },*/
+                {
+                  text: 'Intermediate',
+                  collapsed: false,
+                  items: [
+                    { text: 'Custom Configs', link: '/dev/intermediate/custom-configs' },
+                    { text: 'Custom Config Syncing', link: '/dev/intermediate/custom-config-syncing' },
+                  ]
+                },
+                {
+                  text: 'Advanced',
+                  collapsed: false,
+                  items: [
+                    { text: 'Networking', link: '/dev/advanced/networking' },
+                  ]
+                }
               ]
             },
             { 
               text: 'Modding APIs', 
               items: [
-                { text: 'Modding APIs Overview', link: '/apis/modding-apis' },
-                { text: 'CustomSounds', link: '/apis/customsounds'},
+                { text: 'Overview', link: '/dev/apis/overview' },
+                {
+                  text: 'Asset APIs',
+                  collapsed: false,
+                  items: [
+                    { text: 'CustomSounds', link: '/dev/apis/customsounds'},
+                  ]
+                },
+                /*{
+                  text: 'Programming APIs',
+                  collapsed: false,
+                  items: [
+                    
+                  ]
+                }*/
               ]
             },
-            { 
-              text: 'Other Resources', 
+            {
+              text: 'Other Resources',
               items: [
-                { text: 'Frequently Asked Questions', link: '/extras/faq' },
-                { text: 'Contributing translations', link: '/contribute/translating-the-wiki' },
+                /*{ text: 'Frequently Asked Questions', link: '/dev/extras/faq' },*/
+                { text: 'Contributing Translations', link: '/contribute/translating-the-wiki' },
                 { text: 'Contributing Articles', link: '/contribute/writing-articles' },
                 { text: 'About', link: '/extras/about' }
               ]
-            },
+            }
           ]
         }
       ],
@@ -86,6 +138,10 @@ export default defineConfig({
     ],
     editLink: {
       pattern: 'https://github.com/LethalCompany/ModdingWiki/edit/main/docs/:path',
+    },
+    docFooter: {
+      prev: false,
+      next: false,
     }
   },
   lastUpdated: true
