@@ -1,38 +1,38 @@
 ---
 prev: false
 next: false
-description: Additional information regarding the contributors and licensing of the Lethal Company Modding Wiki.
+description: Información adicional sobre los contribuyentes y las licencias de Lethal Company Modding Wiki.
 ---
 
-# About This Guide
+# Acerca de Esta Guía
 
 ***
 
-This guide is mainly written by [Max](https://github.com/MaxWasUnavailable) & [Bobbie](https://twitter.com/VRBobbie), with assistance and advice from various other writers and wikis. The guide was inspired by [bsmg.wiki](https://bsmg.wiki).
+Esta guía está escrita principalmente por [Max](https://github.com/MaxWasUnavailable) y [Bobbie](https://twitter.com/VRBobbie), con ayuda y consejos de otros escritores y wikis. La guía se ha inspirado en [bsmg.wiki](https://bsmg.wiki).
 
-## Credits
+## Créditos
 
-### Writers
+### Escritores
 
-**Bobbie, Max, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (original guide creators)** <!-- TODO: Update with new contributors from lethal.wiki and trombone.wiki -->
+**Bobbie, Max, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (creadores originales de la guía)**
 
-### Developer / Tool Credits
+### Créditos de desarrollador/herramienta
 
-- **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
-- **EvaisaDev** for [UnityNetcodeWeaver](https://github.com/EvaisaDev/UnityNetcodeWeaver).
+- **Colaboradores de BepInEx** para [BepInEx](https://github.com/BepInEx/BepInEx).
+- **EvaisaDev** para [UnityNetcodeWeaver](https://github.com/EvaisaDev/UnityNetcodeWeaver).
 
-Thank you to [everyone else](https://github.com/LethalCompany/ModdingWiki/graphs/contributors) that contributed to the guide on GitHub.
+Gracias a [todos los demás](https://github.com/LethalCompany/ModdingWiki/graphs/contributors) que contribuyeron a la guía en GitHub.
 
-### **Open Source and Privacy**
+### **Código abierto y privacidad**
 
-[This guide is open source on GitHub](https://github.com/LethalCompany/ModdingWiki). It is licensed under the [ISC License](https://github.com/LethalCompany/ModdingWiki/blob/master/LICENSE.md).
+[Esta guía es de código abierto en GitHub](https://github.com/LethalCompany/ModdingWiki). Tiene la licencia [Licencia ISC] (https\://github.com/LethalCompany/ModdingWiki/blob/master/LICENSE.md).
 
-Vitepress wiki build pages are based on [bsmg.wiki](https://bsmg.wiki), which is licensed under the [MIT LICENSE](https://github.com/bsmg/wiki/blob/master/LICENSE).
+Las páginas de compilación de Vitepress wiki se basan en [bsmg.wiki](https://bsmg.wiki), que tiene la licencia [LICENCIA MIT](https://github.com/bsmg/wiki/blob/master/LICENSE).
 
-Some content on the pages `beginners-guide.md` and `index.md` are based on the content of [bsmg.wiki](https://bsmg.wiki), which is licensed under the [Creative Commons BY-NC-SA 4.0 License](https://github.com/bsmg/wiki/blob/master/wiki/LICENSE).
+Parte del contenido de las páginas `beginners-guide.md` e `index.md` se basan en el contenido de [bsmg.wiki](https://bsmg.wiki), que tiene la licencia [Creative Commons BY-NC -Licencia SA 4.0](https://github.com/bsmg/wiki/blob/master/wiki/LICENSE).
 
 ***
 
-:::warning **Disclaimer:**
-This product is an unofficial fanwork, not affiliated with Lethal Company or Zeekerss, and is not endorsed or otherwise sponsored by Zeekerss or any developer/publisher of Lethal Company.
+:::warning **Descargo de responsabilidad:**
+Este producto es una obra de un fan no oficial, no está afiliado a Lethal Company ni a Zeekerss, y no cuenta con el respaldo ni el patrocinio de Zeekerss ni tampoco de ningún desarrollador o editor de Lethal Company.
 :::
