@@ -73,11 +73,30 @@ export default defineConfig({
               ]
             },
             { 
-              text: 'Advanced Topics', 
+              text: 'Modding Topics', 
               items: [
-                { text: 'Custom Configs', link: '/dev/advanced/custom-configs' },
-                { text: 'Custom Config Syncing', link: '/dev/advanced/custom-config-syncing' },
-                { text: 'Networking', link: '/dev/advanced/networking' }
+                /*{
+                  text: 'Fundamentals',
+                  collapsed: false,
+                  items: [
+                      
+                  ]
+                },*/
+                {
+                  text: 'Intermediate',
+                  collapsed: false,
+                  items: [
+                    { text: 'Custom Configs', link: '/dev/intermediate/custom-configs' },
+                    { text: 'Custom Config Syncing', link: '/dev/intermediate/custom-config-syncing' },
+                  ]
+                },
+                {
+                  text: 'Advanced',
+                  collapsed: false,
+                  items: [
+                    { text: 'Networking', link: '/dev/advanced/networking' },
+                  ]
+                }
               ]
             },
             { 
