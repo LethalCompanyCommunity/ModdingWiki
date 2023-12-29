@@ -1,4 +1,6 @@
 ---
+prev: true
+next: true
 description: Learn how to create a basic project for a Lethal Company mod.
 ---
 
@@ -6,14 +8,14 @@ description: Learn how to create a basic project for a Lethal Company mod.
 
 ## Setting up your project {#setup-project}
 ::: warning
-This guide assumes you've completed all the required steps in **[initial setup](initial-setup)**, or that you know what you're doing.
+This guide assumes you've completed all the required steps in **[initial setup](/dev/initial-setup)**, or that you know what you're doing.
 :::
 
 This guide follows certain parts of the [official BepInEx guide](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/2_plugin_start.html).
 
 ### Using the template repository {#using-template-repo}
 
-We have created a [template repository](https://github.com/LethalCompany/LethalCompanyTemplate) on GitHub. If you're remotely familiar with GitHub, or willing to [learn](initial-setup.html#creating-a-github-account), this might serve as a quick start. It does come with some minor drawbacks such as it using "LethalCompanyTemplate" as project name in a number of files, but you can edit this. It should build out-of-the-box with no edits required; though you may need to add BepInEx as a NuGet source (see the [relevant](#adding-nuget-source) section below).
+We have created a [template repository](https://github.com/LethalCompany/LethalCompanyTemplate) on GitHub. If you're remotely familiar with GitHub, or willing to [learn](/dev/initial-setup#creating-a-github-account), this might serve as a quick start. It does come with some minor drawbacks such as it using "LethalCompanyTemplate" as project name in a number of files, but you can edit this. It should build out-of-the-box with no edits required; though you may need to add BepInEx as a NuGet source (see the [relevant](#adding-nuget-source) section below).
 
 ### Creating your project {#create-project}
 
@@ -154,6 +156,6 @@ We highly recommend reading through the rest of the [official BepInEx guide](htt
 
 ## Next steps
 
-We recommend reading through our very short guide on [open-source & ethics](open-source-and-ethics), to help foster a healthy modding community.
+We recommend reading through our very short guide on [open-source & ethics](/dev/open-source-and-ethics), to help foster a healthy modding community.
 
-Once you've finished a mod, you can [publish it](publishing-your-mod).
+Once you've finished a mod, you can [publish it](/dev/publishing-your-mod).

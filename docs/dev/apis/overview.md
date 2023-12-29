@@ -8,14 +8,14 @@ description: A list of specific modding APIs for Lethal Company, and documentati
 
 There are two types of API that will be covered in this overview:
 
-- Non-code API: An API or custom content mod that can be used without writing any code. Good if you want something simple that even non-programmers can create something with.
-- Code API: A user-created modding API that can be intergrated into your C# Lethal Company mod.
+- Asset API: An API or custom content mod that can be used without writing any code. Good if you want something simple that even non-programmers can create something with.
+- Programming API: A user-created modding API that can be intergrated into your C# Lethal Company mod.
 
 There may be multiple APIs for a single concept, each with their own pros and cons.
 
 APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 
-## Non-code APIs
+## Asset APIs
 
 ### Cosmetics
 - [MoreCompany by notnotnotswipez](https://thunderstore.io/c/lethal-company/p/notnotnotswipez/MoreCompany/) has a feature that adds custom cosmetics (hats, badges, etc). You can learn how to create your own through the official [Cosmetic Creation Guide](https://github.com/notnotnotswipez/MoreCompany/wiki/Cosmetic-Creation).
@@ -30,9 +30,9 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 - [LethalPosters by femboytv](https://thunderstore.io/c/lethal-company/p/femboytv/LethalPosters/) allows you to create your own custom posters that appear in the ship. [The README](https://thunderstore.io/c/lethal-company/p/femboytv/LethalPosters/) has a basic section on how to format your poster for upload.
 
 ### Sound Replacement
-- ⭐ [CustomSounds by Clementinise](https://thunderstore.io/c/lethal-company/p/Clementinise/CustomSounds/) allows you to replace ingame sounds using your own .wav file. [The wiki page on CustomSounds](/apis/customsounds) covers the process of creating of swapping out sounds.
+- ⭐ [CustomSounds by Clementinise](https://thunderstore.io/c/lethal-company/p/Clementinise/CustomSounds/) allows you to replace ingame sounds using your own .wav file. [The wiki page on CustomSounds](/dev/apis/customsounds) covers the process of creating of swapping out sounds.
 
-## Code APIs
+## Programming APIs
 
 ### Enemies
 - [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new enemies, although the process is fairly involved and not currently well documented.
@@ -58,6 +58,6 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 If you're an API developer and want to get your API added to this list, feel free to make a [pull request](https://github.com/LethalCompany/ModdingWiki), assuming your API meets the following criteria:
 
 - Open source
-- Fairly well documented - even better if you write a wiki article<sup>1</sup>
+- Fairly well documented - even better if you write a wiki article<sup>[1](#fn-1)</sup>
 
-<sup>1</sup>: Some exceptions may be made if it's an especially groundbreaking API, or it's the only existing solution.
+<a name="fn-1">1</a>: Some exceptions may be made if it's an especially groundbreaking API, or it's the only existing solution.

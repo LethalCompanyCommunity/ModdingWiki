@@ -4,7 +4,7 @@ next: false
 description: An advanced overview of how to use UnityNetcodeWeaver to add networking to your Lethal Company mods.
 ---
 
-# Custom Networking
+# Networking
 
 ::: warning
 **This is an advanced article. While this introduces some C# concepts, it is highly recommended to understand C# and the basics of modding this game <i>before</i> reading this article.**
@@ -65,7 +65,7 @@ Essentially, this allows you to create and use RPCs, Network Variables, etc.
 
 ### Other Setup Required
 
-There **must** be a project reference to `Unity.Netcode.Runtime.dll` to utilize Netcode for GameObjects. You can refer to [this section](/modding/starting-a-mod?id=adding-game-assemblies) of this wiki to add it.
+There **must** be a project reference to `Unity.Netcode.Runtime.dll` to utilize Netcode for GameObjects. You can refer to [this section](/dev/starting-a-mod#adding-game-assemblies) of this wiki to add it.
 
 ## Introduction
 
@@ -295,7 +295,7 @@ Now that we have the prefab ready to be loaded, it's quite simple to give this t
 NetworkManager.Singleton.AddNetworkPrefab(networkPrefab);
 ```
 
-::: info
+::: warning
 You can only add network prefabs to NetworkManager **before** the player creates or joins a server. You can also do so after the player leaves the server.<br><br>If you try to add a network prefab while the player is connected to a server, it will result in an error and your object <u>will not</u> be loaded.
 :::
 

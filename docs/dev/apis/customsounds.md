@@ -99,7 +99,9 @@ For **r2modman \ Thunderstore** users:
 
 Go to settings>Browse profile folder, and then go into `BepInEx\plugins\Clementinise-CustomSounds\CustomSounds` and either place the audio files directly there or make another folder inside of CustomSounds and put them there.
 
-**Note:** r2modman WILL delete your custom sound files each time you update CustomSounds, so I would recommend to keep your replacement sounds in another folder so you can quickly swap them back in the case an update comes out.
+::: tip NOTE
+r2modman **WILL** delete your custom sound files each time you update CustomSounds, so I would recommend to keep your replacement sounds in another folder so you can quickly swap them back in the case an update comes out.
+:::
 
 ### Additional features
 
@@ -148,7 +150,7 @@ The only thing you need to keep in mind when publishing your mod is to keep this
                 - [Insert All Audio Files Here]
 ```
 
-For the rest, check out the section on how to [publish your mod](/modding/publishing-your-mod) here on this wiki. 
+For the rest, check out the section on how to [publish your mod](/dev/publishing-your-mod) here on this wiki. 
 
 ## Credits
 
