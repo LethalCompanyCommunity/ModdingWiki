@@ -16,16 +16,16 @@ Esta guía está escrita principalmente por [Max](https://github.com/MaxWasUnava
 
 **Bobbie, Max, Jdewi, Burrito, Steven, Lauriethefish, Nintendo Homebrew Discord Staff (creadores originales de la guía)**
 
-### Créditos de desarrollador/herramienta
+### Créditos de los desarrolladores/herramientas
 
 - **Colaboradores de BepInEx** para [BepInEx](https://github.com/BepInEx/BepInEx).
 - **EvaisaDev** para [UnityNetcodeWeaver](https://github.com/EvaisaDev/UnityNetcodeWeaver).
 
 Gracias a [todos los demás](https://github.com/LethalCompany/ModdingWiki/graphs/contributors) que contribuyeron a la guía en GitHub.
 
-### **Código abierto y privacidad**
+### **Código Abierto y Privacidad**
 
-[Esta guía es de código abierto en GitHub](https://github.com/LethalCompany/ModdingWiki). Tiene la licencia [Licencia ISC] (https\://github.com/LethalCompany/ModdingWiki/blob/master/LICENSE.md).
+[Esta guía es de código abierto en GitHub](https://github.com/LethalCompany/ModdingWiki). Esta bajo la licencia de [Licencia ISC] (https\://github.com/LethalCompany/ModdingWiki/blob/master/LICENSE.md).
 
 Las páginas de compilación de Vitepress wiki se basan en [bsmg.wiki](https://bsmg.wiki), que tiene la licencia [LICENCIA MIT](https://github.com/bsmg/wiki/blob/master/LICENSE).
 
@@ -34,5 +34,5 @@ Parte del contenido de las páginas `beginners-guide.md` e `index.md` se basan e
 ***
 
 :::warning **Descargo de responsabilidad:**
-Este producto es una obra de un fan no oficial, no está afiliado a Lethal Company ni a Zeekerss, y no cuenta con el respaldo ni el patrocinio de Zeekerss ni tampoco de ningún desarrollador o editor de Lethal Company.
+Este producto es una obra de un fan, no es oficial, no está afiliado a Lethal Company ni a Zeekerss, no cuenta con el respaldo ni el patrocinio de Zeekerss y tampoco forma parte ningún desarrollador o editor de Lethal Company.
 :::
