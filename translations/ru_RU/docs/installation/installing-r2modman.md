@@ -1,5 +1,5 @@
 ---
-prev: false
+prev: true
 next: true
 description: Learn how to use r2modman to install Lethal Company mods from Thunderstore.
 ---
@@ -36,7 +36,9 @@ Once you have succesfully installed r2modman, you can finally install mods.
 
 2. Select **"Lethal Company"**, and click **"Select Game"**.
 
-?> If you do not see it, **use the search bar or scroll down** to find "Lethal Company".
+:::info
+If you do not see it, **use the search bar or scroll down** to find "Lethal Company".
+:::
 
 ![Select Lethal Company](/images/r2modman-install/selectlc.png)
 
@@ -54,7 +56,9 @@ Once you have succesfully installed r2modman, you can finally install mods.
 
 6. From here, you may choose which mods you would like to download and install. Click on a mod you'd like, and then click on Download.
 
-?> If you want to hide modpacks, click `Filter Categories` in the top right, then select the `Mods` category.
+:::tip
+If you want to hide modpacks, click `Filter Categories` in the top right, then select the `Mods` category.
+:::
 
 ![Downloading a mod](/images/r2modman-install/download.png)
 
