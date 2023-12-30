@@ -50,6 +50,6 @@ hero:
 
 - [Join the Discord server!](https://discord.gg/nYcQFEpXfU)
 - [Contribute on GitHub](https://github.com/LethalCompany/ModdingWiki)
-- [Translate the Wiki](./translation/translating-the-wiki.html) - Localize the wiki to your language!
+- [Translate the Wiki](./contribute/translating-the-wiki.html) - Localize the wiki to your language!
 
 </HomeLinks>
