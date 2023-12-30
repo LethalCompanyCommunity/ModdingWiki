@@ -150,6 +150,30 @@ The [template project](https://github.com/LethalCompany/LethalCompanyTemplate) h
 
 The assemblies can be found in the `Lethal Company_Data/Managed` folder, in the game's directory.
 
+::: tip
+To easily access private fields and methods in the game's code, you should publicize it! The process is easy, with just two additions:
+
+1. Add the `BepInEx.AssemblyPublicizer.MSBuild` package in the NuGet Package Manager.
+    - You can instead add `<PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.1" PrivateAssets="all" />` to the `.csproj` file as so:
+
+```xml
+<ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+    <PackageReference Include="UnityEngine.Modules" Version="2022.3.9" IncludeAssets="compile" />
+    <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.1" PrivateAssets="all" /> // [!code ++] // [!code focus]
+</ItemGroup>
+```
+
+2. Add `Publicize="true"` to the assembly reference in the `.csproj` file as so:
+
+```xml
+<Reference Include="Assembly-CSharp" HintPath="...\Assembly-CSharp.dll" /> // [!code --]
+<Reference Include="Assembly-CSharp" HintPath="...\Assembly-CSharp.dll" Publicize="true" /> // [!code ++]
+```
+:::
+
 ### Additional guides
 
 We highly recommend reading through the rest of the [official BepInEx guide](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/2_plugin_start.html) for extra information.
