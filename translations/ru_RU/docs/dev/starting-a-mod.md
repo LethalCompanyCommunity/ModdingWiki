@@ -150,6 +150,31 @@ After installing the extension, you can build by pressing `Ctrl+Shift+P`, typing
 
 Эти два `.dll` можно найти в папке `Lethal Company_Data/Managed` в директории игры.
 
+::: tip
+To easily access private fields and methods in the game's code, you should publicize it! The process is easy, with just two additions:
+
+1. Add the `BepInEx.AssemblyPublicizer.MSBuild` package in the NuGet Package Manager.
+   - You can instead add `<PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.1" PrivateAssets="all" />` to the `.csproj` file as so:
+
+```xml
+<ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+    <PackageReference Include="UnityEngine.Modules" Version="2022.3.9" IncludeAssets="compile" />
+    <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.1" PrivateAssets="all" /> // [!code ++] // [!code focus]
+</ItemGroup>
+```
+
+2. Add `Publicize="true"` to the assembly reference in the `.csproj` file as so:
+
+```xml
+<Reference Include="Assembly-CSharp" HintPath="...\Assembly-CSharp.dll" /> // [!code --]
+<Reference Include="Assembly-CSharp" HintPath="...\Assembly-CSharp.dll" Publicize="true" /> // [!code ++]
+```
+
+:::
+
 ### Дополнительные руководства
 
 Мы крайне рекомендуем прочитать [руководство BepInEx](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/2_plugin_start.html) для большего понимания темы.
