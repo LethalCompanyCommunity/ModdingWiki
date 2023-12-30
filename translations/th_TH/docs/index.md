@@ -36,7 +36,8 @@ hero:
 
   <HomeGroup title="Other Resources">
     <HomeItem name="Frequently Asked Questions" href="./extras/faq" />
-    <HomeItem name="Contributing Translations" href="./translation/translating-the-wiki" />
+    <HomeItem name="Contributing Translations" href="./contribute/translating-the-wiki" />
+    <HomeItem name="Contributing Articles" href="./contribute/writing-articles" />
     <HomeItem name="About" href="./extras/about" /></HomeGroup>
 
 
@@ -44,6 +45,6 @@ hero:
 
 - [Join the Discord server!](https://discord.gg/nYcQFEpXfU)
 - [Contribute on GitHub](https://github.com/LethalCompany/ModdingWiki)
-- [Translate the Wiki](./translation/translating-the-wiki.html) - Localize the wiki to your language!
+- [Translate the Wiki](./contribute/translating-the-wiki.html) - Localize the wiki to your language!
 
 </HomeLinks>
