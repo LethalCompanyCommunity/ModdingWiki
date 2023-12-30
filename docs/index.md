@@ -40,7 +40,8 @@ hero:
 
   <HomeGroup title="Other Resources">
     <HomeItem name="Frequently Asked Questions" href="./extras/faq" />
-    <HomeItem name="Contributing Translations" href="./translation/translating-the-wiki" />
+    <HomeItem name="Contributing Translations" href="./contribute/translating-the-wiki" />
+    <HomeItem name="Contributing Articles" href="./contribute/writing-articles" />
     <HomeItem name="About" href="./extras/about" />
   </HomeGroup>
 </Home>
