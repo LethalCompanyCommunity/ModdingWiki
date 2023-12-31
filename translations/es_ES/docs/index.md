@@ -1,16 +1,16 @@
 ---
 layout: home
 titleTemplate: false
-description: The Lethal Company Modding Wiki. Learn how to install, manage, and create mods for Lethal Company!
+description: Lethal Company Modding Wiki. ¡Aprende a como instalar, manejar y crear mod para Lethal Company!
 hero:
   name: Lethal Company Modding Wiki
-  tagline: Welcome to the Lethal Company modding guide! Learn how to install, manage, and create mods for Lethal Company!
+  tagline: ¡Bienvenido a la guía de mods de Lethal Company! ¡Aprende a como instalar, manejar y crear mod para Lethal Company!
   actions:
     - theme: brand
-      text: Beginner's Guide
+      text: Guía para principiantes
       link: /overview
     - theme: alt
-      text: Edit on GitHub
+      text: Editar en GitHub
       link: https://github.com/LethalCompany/ModdingWiki
 ---
 
@@ -43,8 +43,8 @@ hero:
 
 <HomeLinks>
 
-- [Join the Discord server!](https://discord.gg/nYcQFEpXfU)
-- [Contribute on GitHub](https://github.com/LethalCompany/ModdingWiki)
-- [Translate the Wiki](./contribute/translating-the-wiki.html) - Localize the wiki to your language!
+- [¡Entra al servidor de Discord!](https://discord.gg/nYcQFEpXfU)
+- [Contribuye en GitHub](https://github.com/LethalCompany/ModdingWiki)
+- [Traduce la Wiki](./contribute/translating-the-wiki.html) - ¡Traduce la wiki a tu idioma!
 
 </HomeLinks>
