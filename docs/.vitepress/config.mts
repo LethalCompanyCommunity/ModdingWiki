@@ -50,7 +50,8 @@ export default defineConfig({
               text: 'Other Resources',
               items: [
                 {text: 'Frequently Asked Questions', link: '/extras/faq'},
-                {text: 'Contributing Translations', link: '/translation/translating-the-wiki'},
+                { text: 'Contributing Translations', link: '/contribute/translating-the-wiki' },
+                { text: 'Contributing Articles', link: '/contribute/writing-articles' },
                 {text: 'About', link: '/extras/about'}
               ]
             },
