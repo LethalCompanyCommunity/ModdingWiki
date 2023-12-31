@@ -4,18 +4,19 @@ next: false
 description: Information on how YOU can get started translating the Lethal Company Modding Wiki into another language.
 ---
 
-# Переводим Вики
+# Перевод Вики
 
-Чтобы сделать моддинг как можно более доступным, эта вики переводится с помощью Crowdin: https\://crwd.in/lethal-company-modding-wiki
+Чтобы сделать моддинг более доступным, эта вики переводится с помощью Crowdin: https\://ru.crowdin.com/project/lethal-company-modding-wiki
 
 :::danger
-**Please don't submit automatic translations.** Translations only using ChatGPT, Google Translate, or similar machine translation will be rejected.
+**Просьба не использовать автоматический перевод.**
+Переводы основанные только на ChatGPT, Google Translate, или других машинных переводчиках будут отклонены.
 :::
 
 ## Советы
 
 :::tip
-**We don't recommend using Crowdin's "translate all" feature**, just click a file you want to translate and do that for each file. Так вы сможете получить больше конкретики.
+**Мы не рекомендуем использовать функцию Crowdin "Перевести всё"**, просто нажмите на файл который вы хотите перевести и сделайте так с каждым файлом. Так вы сможете получить больше конкретики.
 :::
 
 В первый запуск вы увидите подсказки Crowdin, пожалуйста прочитайте их!
