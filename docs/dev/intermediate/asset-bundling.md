@@ -71,3 +71,4 @@ You can now access it via plugin code to do whatever you need to, such as spawni
 ```cs
 Item MyTestItem = SCPCBAssets.LoadAsset<Item>("assets/Mods/TestItem");
 ```
+As a final note, make sure you include your asset bundle alongside the .dll of your mod when publishing.

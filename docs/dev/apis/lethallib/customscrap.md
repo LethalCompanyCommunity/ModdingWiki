@@ -84,3 +84,6 @@ LevelTypes is a flag enum which provides some basic pre-defined options for moon
 There is a third optional parameter taking in an array of strings. Each string is compared to the internal moon name of all registered moons and adds the scrap to that moon if they match, allowing you to add scrap to custom moons. The names are mod-dependent; check with the custom moon author or check their source code for the name of the selectable level data asset for that moon. The vanilla moons can also be included through this string, where all vanilla moons' selectable level data follow the naming scheme "MoonnameLevel", like "ExperimentationLevel". It is recommended to follow this naming scheme if you intend on creating a custom moon for consistency.
 
 Scrap can be registered multiple times to have the rarity be different for specific moons, such as being more common on paid moons.
+
+## Conclusion
+If you've done everything right, you should now find your custom scrap on the moons you've assigned it to. If you have any problems, you can reach out on the [Lethal Company Discord](https://discord.gg/lethal-company).
