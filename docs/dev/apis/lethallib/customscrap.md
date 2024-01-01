@@ -44,12 +44,15 @@ The root object should have the following:
 - Mesh Renderer + Mesh Filter for your model
 - Box collider roughly encompassing your model
 - Physics Prop script (see below for configuration)
-- Audio Source with no clip assigned and Output set to diagetic
+- Audio Source with no clip assigned (see below for output setup)
 - Network Object (with default checkbox configuration)
 
 The Physics Prop script component should have:
 - The checkboxes for "Grabbable", "Is In Factory", and *optionally* "Grabbable to Enemies" set to true
 - The "Item Properties" assigned to the Item Data you created
+
+The Audio source should use the "Diagetic" (Yes it's misspelled in the game files) audio mixing. If you're using a decompilation you can use the one already present, otherwise you should create an Audio Mixer use the following screenshots as a guide for how to set up the master controller:
+![Image of the audio mixer for diegetic audio.](/images/lethallib/customscrap/AudioMixMaster.png)
 
 ### ScanNode Object
 On the ScanNode child gameobject, you should have the following:
