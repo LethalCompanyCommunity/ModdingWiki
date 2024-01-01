@@ -1,7 +1,7 @@
 ---
 prev: true
 next: false
-description: An intermediate overview of how to implement custom configs for your Lethal Company mods.
+description: An overview of how to create and load asset bundles in your plugin.
 ---
 
 # Asset Bundling

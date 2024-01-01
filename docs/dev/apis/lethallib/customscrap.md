@@ -30,8 +30,10 @@ This item data lets you configure basically everything about your item. There ar
 - **Spawn Prefab**: The prefab representing the item in the world. Creation of this is detailed later in this guide.
 - **Rotation/Position/Vertical Offset**: The offset values for holding the item in your hand. Mostly needs manual fiddling with until it looks right for a given item.
 - **Grab SFX, Drop SFX, Item Icon**: These must be assigned for the scrap to fully function.
+- **Allow Dropping Ahead of Player**: Whether the item can be dropped in front of the player, as opposed to only dropping directly below their feet.
+- **Is Defensive Weapon**: For scrap that also acts as weapons; requires more special scripting, so for most cases should be left off.
 
-Everything else is optional, has no effect on scrap or shouldn't be modified (e.g. Netcode variables should be left alone).
+Everything else is optional, has no effect on scrap, or shouldn't be modified (e.g. Netcode variables should be left alone).
 
 ## Item Prefab
 An item prefab needs to have a specific setup to work correctly with all the Lethal Company systems. The prefab should have only the root object and a child object called "ScanNode":
