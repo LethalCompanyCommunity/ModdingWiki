@@ -1,12 +1,12 @@
 ---
 prev: false
 next: false
-description: Information on how YOU can get started translating the Lethal Company Modding Wiki into another language.
+description: Информация о том, как ТЫ можешь перевести Wiki по модам Lethal Company на свой язык.
 ---
 
 # Перевод Вики
 
-Чтобы сделать моддинг более доступным, эта вики переводится с помощью Crowdin: https\://ru.crowdin.com/project/lethal-company-modding-wiki
+Чтобы сделать моддинг более доступным, эта вики переводится с помощью Crowdin: https\://crwd.in/lethal-company-modding-wiki
 
 :::danger
 **Просьба не использовать автоматический перевод.**
@@ -26,7 +26,7 @@ description: Information on how YOU can get started translating the Lethal Compa
 - r2modman
 - Thunderstore
 
-If you're not sure if a site/program has native translation, try it yourself or [start a discussion](#questions-and-new-languages)
+Если вы не уверены, есть ли у сайта/программы собственный перевод, попробуйте сами или [начните обсуждение](#questions-and-new-languages)
 
 ### Ссылки и параметры
 
