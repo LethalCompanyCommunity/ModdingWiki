@@ -1,0 +1,84 @@
+---
+prev: false
+next: false
+description: A tutorial on how to add custom scrap items by using LethalLib.
+---
+# Custom scrap with LethalLib
+
+## Preamble
+Make sure you've done everything in the [LethalLib main page](/dev/apis/lethallib) first. This page will run through everything needed to make a new scrap item from scratch in the template project.
+
+At bare minimum, you will need the following added to your template project to create a custom scrap item:
+- A model of your scrap (and materials using the HDRP Lit shader)
+- SFX for picking up and putting down the scrap
+- An icon for the scrap when in the hotbar
+
+## Item Data
+The first thing you should create is the Item Data for your custom scrap, which can be created right-clicking in your asset window and going to create -> ScriptableObject -> Item
+![Image of the context menu in the asset browser of Unity, directing to Create -> ScriptableObjects -> Item](/images/lethallib/customscrap/CreateItem.png)
+
+This item data lets you configure basically everything about your item. There are a lot of options, but the important ones for scrap are:
+- **Item Name**: the name of the item.
+- **Spawn Position Types**: Spawn position types this item can spawn at. If the list is empty, the scrap can spawn anywhere (recommended to just leave this empty except for stuff like special scrap for custom moons).
+- **Two Handed**: Whether the item gives the "Hands Full" message and prevents changing items.
+- **Two Handed Animation**: Whether the item uses the two-handed animation for carrying or not.
+- **Weight**: A somewhat arbitrary number determing how heavy an item is. For reference, the Brush scrap is weight 1.1, the Cash Register is 1.8; pick a number that feels right.
+- **Item Spawns On Ground**: Should be true for scrap.
+- **Highest Sale Percentage**: Unknown; All items have this set to 80. Set it to that for safety.
+- **Is Conductive Metal**: Whether this item attracts lightning.
+- **Max/Min Value**: The value range for the item. Does not directly correlate to the range in game; a scalar is applied based on the moon it spawns on. For reference, the Big Bolt uses the range Max-80, Min-50.
+- **Spawn Prefab**: The prefab representing the item in the world. Creation of this is detailed later in this guide.
+- **Rotation/Position/Vertical Offset**: The offset values for holding the item in your hand. Mostly needs manual fiddling with until it looks right for a given item.
+- **Grab SFX, Drop SFX, Item Icon**: These must be assigned for the scrap to fully function.
+
+Everything else is optional, has no effect on scrap or shouldn't be modified (e.g. Netcode variables should be left alone).
+
+## Item Prefab
+An item prefab needs to have a specific setup to work correctly with all the Lethal Company systems. The prefab should have only the root object and a child object called "ScanNode":
+![Image of the Big Bolt scrap prefab structure.](/images/lethallib/customscrap/ScrapPrefab.png)
+
+### Root Object
+The root object should have the following:
+- Mesh Renderer + Mesh Filter for your model
+- Box collider roughly encompassing your model
+- Physics Prop script (see below for configuration)
+- Audio Source with no clip assigned and Output set to diagetic
+- Network Object (with default checkbox configuration)
+
+The Physics Prop script component should have:
+- The checkboxes for "Grabbable", "Is In Factory", and *optionally* "Grabbable to Enemies" set to true
+- The "Item Properties" assigned to the Item Data you created
+
+### ScanNode Object
+On the ScanNode child gameobject, you should have the following:
+- Box collider tightly encompassing your model
+- Scan Node script
+
+The Scan Node script compontnet should have:
+- Max/Min range set to the max/min distance to have your scrap detectable (13, 1 are typical values)
+- Have require LOS enabled
+- Header text as the name to show when scanned
+- Sub Text set exactly to "Value: " (note the space after the colon)
+- Scrap Value should be 0 (this is modified by the game at runtime)
+- Creature Scan ID set to -1
+- Node Type set to 2
+
+After you've done this, you should go back to your Item Data and assign the Spawn Prefab to be the item prefab.
+
+After this, you should put your item data, prefab, any anything they rely on such as models into an asset bundle (See [Asset Bundling](/dev/intermediate/asset-bundling)). You can add multiple items to the same asset bundle if you're adding a collection of items.
+
+## Loading And Registering
+After creating your asset bundle and loading it in, you need to register your item prefab as a network object and add the scrap item data via LethalLib. This can be done with the following code:
+```cs
+int iRarity = 30;
+Item MyCustomItem = MyAssetBundle.LoadAsset<Item>("directory/to/itemdataasset.asset");
+LethalLib.Modules.NetworkPrefabs.RegisterNetworkPrefab(MyCustomItem.spawnPrefab);
+LethalLib.Modules.Items.RegisterScrap(MyCustomItem, iRarity, LethalLib.Modules.Levels.LevelTypes.All);
+```
+Rarity is a weight value that determines how likely the scrap is to spawn, with higher numbers meaning more likely to spawn. All scrap in the base game varies from 1 to 100 differing per-moon, and the value should be kept in that range.
+
+LevelTypes is a flag enum which provides some basic pre-defined options for moons, such as All, Vanilla, or any of the default moons individually. The enum supports bitwise operations, for example `(LethalLib.Modules.Levels.LevelTypes.March | LethalLib.Modules.Levels.LevelTypes.Dine)` will register the scrap for both March and Dine.
+
+There is a third optional parameter taking in an array of strings. Each string is compared to the internal moon name of all registered moons and adds the scrap to that moon if they match, allowing you to add scrap to custom moons. The names are mod-dependent; check with the custom moon author or check their source code for the name of the selectable level data asset for that moon. The vanilla moons can also be included through this string, where all vanilla moons' selectable level data follow the naming scheme "MoonnameLevel", like "ExperimentationLevel". It is recommended to follow this naming scheme if you intend on creating a custom moon for consistency.
+
+Scrap can be registered multiple times to have the rarity be different for specific moons, such as being more common on paid moons.
