@@ -4,6 +4,7 @@ next: false
 description: An list of entries for LethalLib modding topics and the basis for all LethalLib guides on this wiki.
 ---
 # LethalLib mod creation basics
+This page will go over all the basics needed to start making mods using LethalLib. At the bottom of this page you can branch out to whatever specific part of the game you'd like to mod from there.
 
 ## LethalLib requirements
 To begin with LethalLib development, you will need the following mods:
@@ -23,6 +24,7 @@ You will need to start by creating a plugin (see [Starting a Mod](/dev/starting-
 
 You'll also want to add the LethalLib mod ID as a BepinEx dependency, which can be done by adding the following line after `[BepinPlugin(...)]`:
 `[BepInDependency(LethalLib.Plugin.ModGUID)]`
+This is also a quick way of ensuring you've correctly added the LethalLib .dll as a dependency, as otherwise this will give you an error.
 
 ## Lethal Company Unity project
 In order to make mods for LethalLib, you will almost certainly need to use a decompiled Lethal Company Unity project so you can access the game scripts. You can either do a decompilation yourself with a program like Asset Ripper, or use this [template project](https://github.com/EvaisaDev/LethalCompanyUnityTemplate/tree/main#readme), which provides stub scripts and no assets for a clean modding environment. A decompile is much harder to do but will give you all the games' data and assets to examine and use as a base for anything you make.
