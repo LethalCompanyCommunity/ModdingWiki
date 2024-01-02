@@ -46,6 +46,7 @@ The root object should have the following:
 - Physics Prop script (see below for configuration)
 - Audio Source with no clip assigned (see below for output setup)
 - Network Object (with default checkbox configuration)
+The root object will also need to have the tag "PhysicsProp" and the layer set to "Props".
 
 The Physics Prop script component should have:
 - The checkboxes for "Grabbable", "Is In Factory", and *optionally* "Grabbable to Enemies" set to true
@@ -67,6 +68,7 @@ The Scan Node script compontnet should have:
 - Scrap Value should be 0 (this is modified by the game at runtime)
 - Creature Scan ID set to -1
 - Node Type set to 2
+The ScanNode object will also need to have the layer set to "ScanNode".
 
 After you've done this, you should go back to your Item Data and assign the Spawn Prefab to be the item prefab.
 
