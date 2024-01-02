@@ -68,13 +68,13 @@ Si vous ne le trouvez pas, **utilisez la barre de recherche** et cherchez "Letha
 
 ![Cliquer sur En Ligne](/images/r2modman-install/selectonline.png)
 
-6. From here, you may choose which mods you would like to download and install. Click on a mod you'd like, and then click on Download.
+6. D'ici, vous pouvez choisir quels mods vous voulez télécharger et installer. Cliquez sur le mod que vous voulez puis sur télécharger.
 
-![Downloading a mod](/images/r2modman-install/download.png)
+![Télécharger un mod](/images/r2modman-install/download.png)
 
-7. It will ask you which version to use. Download the latest version, which is already selected for you by default. Click **"Download with dependencies"** or **"Download"**.
+7. Il vous sera demander de choisir la version à utiliser. Téléchargez la dernière version, qui est déjà sélectionné pour vous par défaut. Cliquez sur **Téléchargez avec les dépendances** ou **"Télécharger"**.
 
-![Downloading with dependencies](/images/r2modman-install/downloadlatest.png)
+![Télécharger avec les dépendances](/images/r2modman-install/downloadlatest.png)
 
 8. Once you are done installing your mods, you may click on "Start modded" on the sidebar. This will launch the game with your mods.
 
