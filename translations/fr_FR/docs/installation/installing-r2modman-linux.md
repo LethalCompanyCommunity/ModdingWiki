@@ -4,7 +4,7 @@ next: false
 description: Apprenez à utiliser r2modman pour installer des mods Lethal Compagny depuis Thunderstore sur Linux.
 ---
 
-# En utilisant r2modman sur Linux et Steam Deck
+# Avec r2modman sur Linux et Steam Deck
 
 ***
 
@@ -14,8 +14,8 @@ Ce guide vous guidera dans l'installation et l'utilisation de [r2modman](https:/
 
 Sur Steam Deck vous devrez suivre ces instructions avant de passer à la suite du guide :
 
-- Make sure the game is installed into the internal storage - mods will not load if the game is installed to the MicroSD card.
-- Enter **Desktop Mode** by holding down the power button and selecting Desktop Mode from the menu.
+- Assurez-vous que le jeu soit installé sur le stockage interne - les mods ne pourront pas être chargés si le jeu est installé sur une carte MicroSD.
+- Entez dans le **Mode Bureau** en appuyant sur le bouton marche/arrêt et en sélectionnant "Mode Bureau" dans le menu.
 
 Once you're at the desktop, you're ready to continue!
 
