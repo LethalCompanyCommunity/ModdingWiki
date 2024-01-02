@@ -1,18 +1,18 @@
 ---
 prev: false
 next: false
-description: Learn how to use r2modman to install Lethal Company mods from Thunderstore on Linux.
+description: Apprenez à utiliser r2modman pour installer des mods Lethal Compagny depuis Thunderstore sur Linux.
 ---
 
-# Using r2modman on Linux and Steam Deck
+# En utilisant r2modman sur Linux et Steam Deck
 
 ***
 
-This guide will run you through installing and using [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) to install and play with mods that are available through [Thunderstore](https://thunderstore.io/c/lethal-company/). Using a mod manager like r2modman allows you to update and play with the latest versions of the mods with ease as the manager does all of that for you!
+Ce guide vous guidera dans l'installation et l'utilisation de [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) pour installer et jouer avec des mods disponibles depuis [Thunderstore](https://thunderstore.io/c/lethal-company/). Utiliser un gestionnaire de mod comme r2modman vous permet de facilement mettre à jour et jouer avec les dernières versions des mods puisque le gestionnaire s'en chargera pour vous!
 
-## Steam Deck Specific Preparation
+## Préparation spécifique au Steam Deck
 
-On Steam Deck you will need to do the following before you can follow this guide:
+Sur Steam Deck vous devrez suivre ces instructions avant de passer à la suite du guide :
 
 - Make sure the game is installed into the internal storage - mods will not load if the game is installed to the MicroSD card.
 - Enter **Desktop Mode** by holding down the power button and selecting Desktop Mode from the menu.
