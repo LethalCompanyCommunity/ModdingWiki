@@ -14,71 +14,69 @@ description: An intermediate overview of how to implement custom configs for you
 This tutorial is taken and adapted from the [BepInEx Configuration Documentation](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html). For more resources refer to that.
 :::
 
-## Creating Config Entries
-Create a config class and add entries for any variables that you want to be configurable.
+## 1. Creating the Config
+Begin by creating a `Config` class, then write out all the variables you want to be configurable.
 
 ```cs
 public class Config
 {
-    public static ConfigEntry<string> configGreeting;
-    public static ConfigEntry<bool> configDisplayGreeting;
+    public bool PLUGIN_ENABLED { get; private set; }
+    public float MOVEMENT_SPEED { get; private set; }
 
     // ...
 }
 ```
 
-Then we can start binding our config entries to the fields we just created inside of a class constructor.
+Implement the constructor with a parameter referencing the file that is created by **BepInEx**.<br>
+Then we can start binding our config entries to the properties we just created.
 
 ```cs
 public Config(ConfigFile cfg)
 {
-    configGreeting = cfg.Bind(
-            "General",                          // Config section
-            "GreetingText",                     // Key of this config
-            "Hello, world!",                    // Default value
-            "Greeting text upon game launch"    // Description
-    );
-    
-    configDisplayGreeting = cfg.Bind(
-            "General.Toggles",                  // Config subsection
-            "DisplayGreeting",                  // Key of this config
-            true,                               // Default value
-            "To show the greeting text"         // Description
-    );
+    PLUGIN_ENABLED = cfg.Bind(MyPluginInfo.GUID, "bPluginEnabled", true,
+        "Enable or disable the plugin globally."
+    ).Value;
+
+    MOVEMENT_SPEED = cfg.Bind(MyPluginInfo.GUID, "fMovementSpeed", 6.9f,
+        "The speed at which the local player moves."
+    ).Value;
 }
 ```
 
-We then need to run said constructor to bind said configs to proper values and properties for users.<br><br>
-In your main class (usually `Plugin.cs`), implement the constructor with a parameter referencing the file that will be created by BepInEx.
+## 2.
+In your main class (usually Plugin.cs), define a 'Config' property that will be initialized when the plugin is loaded.<br>
+You should have something similar to the following:
 
 ```cs
-public class MyExampleMod : BaseUnityPlugin
-{
-    public static new Config MyConfig { get; internal set; }
+public class Plugin : BaseUnityPlugin {
+    public static new Config Config { get; private set; }
+    internal static new ManualLogSource Logger { get; private set; }
 
-    // ...
+    private Harmony patcher;
 
-    private void Awake()
-    {
-        MyConfig = new(base.Config);
+    private void Awake() {
+        Logger = base.Logger;
+        Config = new(base.Config);
+
+        try {
+            patcher = new(MyPluginInfo.GUID);
+            patcher.PatchAll();
+
+            Logger.LogInfo("Plugin loaded.");
+        } catch(Exception e) {
+            Logger.LogError(e);
+        }
     }
 }
 ```
 
-
-## Using Config Entries
-
-You can now get the data from the config variables you have made using the `.Value` property.
+## 3. Using config variables
+Now we can use client-side 
 
 ```cs
-private void MyExamplePatch()
+private void ExamplePatch(PlayerControllerB __instance)
 {
-    private void MyExampleMethod()
-    {
-        // Instead of just Logger.LogInfo("Hello, world!")
-        if(Config.configDisplayGreeting.Value)
-            Logger.LogInfo(Config.configGreeting.Value);
-    }
+    __instance.movementSpeed = Plugin.Config.MOVEMENT_SPEED;
 }
 ```
 
