@@ -111,7 +111,7 @@ public class SyncedInstance<T> {
 
 ### 1. Implement serialization
 
-We will now make use of the SyncedInstance class we made earlier.
+We will now make use of the `SyncedInstance` class we made earlier by changing the following line:
 
 ```cs
 public class Config
