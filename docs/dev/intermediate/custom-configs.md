@@ -14,7 +14,7 @@ description: An intermediate overview of how to implement custom configs for you
 This tutorial is taken and adapted from the [BepInEx Configuration Documentation](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html). For more resources refer to that.
 :::
 
-## 1. Creating the Config
+## 1. Create the Config
 Begin by creating a `Config` class, then write out all the variables you want to be configurable.
 
 ```cs
@@ -43,7 +43,7 @@ public Config(ConfigFile cfg)
 }
 ```
 
-## 2.
+## 2. Initialize a new Config instance
 In your main class (usually Plugin.cs), define a 'Config' property that will be initialized when the plugin is loaded.
 You should have something similar to the following:
 
