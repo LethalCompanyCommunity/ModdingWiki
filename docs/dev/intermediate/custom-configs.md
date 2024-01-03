@@ -11,7 +11,8 @@ description: An intermediate overview of how to implement custom configs for you
 :::
 
 ::: info
-This tutorial is taken and adapted from the [BepInEx Configuration Documentation](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html). For more resources refer to that.
+This tutorial is taken and adapted from the [BepInEx Configuration Documentation](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html).<br> 
+For more information refer to those docs.
 :::
 
 ## 1. Create the Config
@@ -81,7 +82,7 @@ private void ExamplePatch(PlayerControllerB __instance) {
 
 ::: danger STOP
 Your config file **Will Not Be Created** until your mod has been loaded by booting the game **at least once**.
-See the [r2modman Configs Page](/installation/configuration) on how to configuration files work.
+See the [r2modman Configs Page](/installation/configuration) on how to to use configuration files.
 :::
 
 Now you have config files for your mods! If it's extremely important that your mod has a config value that's the same for every player, you may want to consider reading the page on [custom config syncing](/dev/intermediate/custom-config-syncing).
