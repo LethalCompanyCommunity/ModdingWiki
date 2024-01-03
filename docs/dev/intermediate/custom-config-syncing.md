@@ -247,10 +247,10 @@ public static void PlayerLeave() {
 ```
 
 ## Using the synced config
-Every client will now have their config synchronized to the hosts upon joining the game.
+Every client will now have their config synchronized to the hosts upon joining the game.<br>
 All that's left to do is use the synced variables where appropriate.
 
-We can do this by referencing `Config.Instance` from any class.
+We can do this by referencing `Config.Instance` from any class.<br>
 Here's an example that sets the local player's movement speed.
 ```cs
 public static void ExamplePatch(PlayerControllerB __instance) {

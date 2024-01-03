@@ -71,17 +71,17 @@ public class Plugin : BaseUnityPlugin {
 ```
 
 ## 3. Using config variables
-Now we can use client-side 
+We can now use these client-side variables from any class by referencing `Plugin.Config`.
 
 ```cs
-private void ExamplePatch(PlayerControllerB __instance)
-{
+private void ExamplePatch(PlayerControllerB __instance) {
     __instance.movementSpeed = Plugin.Config.MOVEMENT_SPEED;
 }
 ```
 
 ::: danger STOP
-Understand that your config file **Will Not Be Created** until your mod is loaded ingame **at least once**. See the [r2modman Configs Page](/installation/configuration) for using your configs.
+Your config file **Will Not Be Created** until your mod has been loaded by booting the game **at least once**.<br>
+See the [r2modman Configs Page](/installation/configuration) for using your configs.
 :::
 
 Now you have config files for your mods! If it's extremely important that your mod has a config value that's the same for every player, you may want to consider reading the page on [custom config syncing](/dev/intermediate/custom-config-syncing).
