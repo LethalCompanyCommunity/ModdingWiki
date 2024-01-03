@@ -41,7 +41,7 @@ public class SyncedInstance<T> {
     internal static bool IsHost => NetworkManager.Singleton.IsHost;
 
     [NonSerialized] 
-    protected static int INT_SIZE = 4;
+    protected static int IntSize = 4;
 
     [NonSerialized] 
     static readonly DataContractSerializer serializer = new(typeof(T));
