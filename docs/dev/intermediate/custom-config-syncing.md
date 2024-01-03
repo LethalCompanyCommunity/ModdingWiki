@@ -77,7 +77,7 @@ public class SyncedInstance<T> {
             return stream.ToArray();
         }
         catch (Exception e) {
-            LogErr($"Error serializing instance: {e}");
+            Plugin.Logger.LogError($"Error serializing instance: {e}");
             return null;
         }
     }
@@ -88,7 +88,7 @@ public class SyncedInstance<T> {
         try {
             return (T) serializer.ReadObject(stream);
         } catch (Exception e) {
-            LogErr($"Error deserializing instance: {e}");
+            Plugin.Logger.LogError($"Error deserializing instance: {e}");
             return default;
         }
     }
