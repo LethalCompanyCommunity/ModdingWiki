@@ -44,7 +44,7 @@ public Config(ConfigFile cfg)
 ```
 
 ## 2.
-In your main class (usually Plugin.cs), define a 'Config' property that will be initialized when the plugin is loaded.<br>
+In your main class (usually Plugin.cs), define a 'Config' property that will be initialized when the plugin is loaded.
 You should have something similar to the following:
 
 ```cs
@@ -80,7 +80,7 @@ private void ExamplePatch(PlayerControllerB __instance) {
 ```
 
 ::: danger STOP
-Your config file **Will Not Be Created** until your mod has been loaded by booting the game **at least once**.<br>
+Your config file **Will Not Be Created** until your mod has been loaded by booting the game **at least once**.
 See the [r2modman Configs Page](/installation/configuration) for using your configs.
 :::
 

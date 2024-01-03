@@ -232,7 +232,6 @@ public static void InitializeLocalPlayer() {
 
 If you are having issues with this patch, you may want to try **GameNetworkManager** instead.
 ```cs
-[HarmonyPostfix]
 [HarmonyPatch(typeof(GameNetworkManager), "JoinLobby")]
 ```
 
