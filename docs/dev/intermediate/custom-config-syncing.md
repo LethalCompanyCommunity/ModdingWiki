@@ -40,7 +40,7 @@ public class SyncedInstance<T> {
     internal static bool IsClient => NetworkManager.Singleton.IsClient;
     internal static bool IsHost => NetworkManager.Singleton.IsHost;
 
-    [NonSerialized] 
+    [NonSerialized]
     protected static int IntSize = 4;
 
     [NonSerialized] 
