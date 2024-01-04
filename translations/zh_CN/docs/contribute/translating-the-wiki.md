@@ -1,21 +1,21 @@
 ---
 prev: false
 next: false
-description: Information on how YOU can get started translating the Lethal Company Modding Wiki into another language.
+description: 有关您如何开始将致命公司模组维基翻译成其他语言的一些信息
 ---
 
-# Translating the wiki
+# 翻译维基
 
-In an effort to make modding as widely accessible as possible, this wiki does translation through crowdin: https\://crwd.in/lethal-company-modding-wiki
+为了让更多人能够为翻译做出贡献，本维基的翻译工作将使用Crowdin（https\://crwd.in/lethal-company-modding-wiki）进行
 
 :::danger
-**Please don't submit automatic translations.** Translations only using ChatGPT, Google Translate, or similar machine translation will be rejected.
+**请不要提交机翻的内容**，仅使用例如ChatGPT，谷歌翻译，或者其他类似的翻译软件的翻译将不会被使用。
 :::
 
-## Tips
+## 建议
 
 :::tip
-**We don't recommend using Crowdin's "translate all" feature**, just click a file you want to translate and do that for each file. You get more context this way.
+**我们不推荐使用Crodwin网站的翻译全部（translate all）功能**，你可以直接点击你想要翻译的文件进行翻译。 You get more context this way.
 :::
 
 The first time you launch the editor you will see Crowdin's own tips, please read them!
