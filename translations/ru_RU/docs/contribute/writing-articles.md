@@ -1,7 +1,7 @@
 ---
 prev: false
 next: false
-description: How to contribute new articles to the wiki.
+description: Как добавлять новые статьи в вики.
 ---
 
 # Contributing Articles
