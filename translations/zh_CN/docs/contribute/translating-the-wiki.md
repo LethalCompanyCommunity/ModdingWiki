@@ -15,10 +15,10 @@ description: 有关您如何开始将致命公司模组维基翻译成其他语�
 ## 建议
 
 :::tip
-**我们不推荐使用Crodwin网站的翻译全部（translate all）功能**，你可以直接点击你想要翻译的文件进行翻译。 You get more context this way.
+**我们不推荐使用Crodwin网站的翻译全部（translate all）功能**，你可以直接点击你想要翻译的文件进行翻译。 以这种方式你能够获得更多的上下文信息。
 :::
 
-The first time you launch the editor you will see Crowdin's own tips, please read them!
+Crowdin编辑器将会在你第一次打开的时候显示一些建议，请阅读它们！
 
 If the site/program does not have native translation support, please _do not translate the names of English buttons/menus_. The following programs/sites are not currently translated:
 
@@ -27,49 +27,49 @@ If the site/program does not have native translation support, please _do not tra
 
 If you're not sure if a site/program has native translation, try it yourself or [start a discussion](#questions-and-new-languages)
 
-### Links and parameters
+### 链接与参数
 
-Anything you see highlighted (or any other weird-looking text) are usually links or parameters.
+你所看见的任何高亮（或者那些看起来很奇怪的文本）一般都是链接或者参数。
 
 Links are usually `<0>`, `<1>`, etc, and there's an opening and closing link. You **must** include anything that's highlighted in your translation. Example:
 
 ![Example of proper translation, with links and formatting the same as the source material](/images/translating-the-wiki/dutchformattingexample.png)
 
-### Previous translations
+### 之前的翻译内容
 
-Because this wiki is partially based on a [previously translated wiki](https://trombone.wiki), sometimes crowdin will show you similar existing translations.
+因为本维基部分内容基于[Trombone Wiki](https://trombone.wiki)，有些时候Conwdin会提供一些已有的相似的翻译结果。
 
-Feel free to use these to your advantage, or start from scratch if you think you could improve upon it.
+你可以直接套用这些翻译。如果你对它们不满意，你也可以自己重新写一个。
 
-![Example of a suggested translation from the Trombone Champ Modding Wiki](/images/translating-the-wiki/suggestions.png)
+![使用来自Trombone Champ模组维基的翻译结果的示例](/images/translating-the-wiki/suggestions.png)
 
-## Page translation order
+## 页面翻译顺序
 
-The pages we recommend prioritizing, in order, are as follows:
+以下是我们推荐的翻译优先级：
 
-- The main landing page (introduction.md)
-- The sidebar (sidebar.md)
-- Windows modding tutorial (installing-r2modman.md)
-- Linux modding tutorial (installing-r2modman-linux.md)
-- Frequently Asked Questions (faq.md)
-- Info about the wiki (about.md)
-- Everything else (mod development tutorials, this translation page, etc)
+- 主页面（introduction.md）
+- 侧栏（sidebar.md）
+- Windows模组使用教程（installing-r2modman.md）
+- Linux模组使用教程（installing-r2modman-linux.md）
+- 常见问题（faq.md）
+- 关于维基（about.md）
+- 其他（模组开发教程，本翻译页面，以及其他）
 
-## Questions and new languages
+## 问题与需要新的语言
 
-If you have any questions about translation or would like a new language added to Crowdin, feel free to:
+如果你对于翻译有任何的问题或者如果你想要在Crowdin上面添加新的语言，请：
 
-- [Create a discussion on Crowdin](https://crowdin.com/project/lethal-company-modding-wiki/discussions)
-- [Make a GitHub issue](https://github.com/LethalCompany/ModdingWiki/issues)
+- [在Crowdin创建讨论](https://crowdin.com/project/lethal-company-modding-wiki/discussions)
+- [在GitHub提交问题](https://github.com/LethalCompany/ModdingWiki/issues)
 
-### Enabling a translation
+### 启用翻译
 
-Once a translation is moderately complete, it needs to actually be added to the wiki so people can use it.
+一旦翻译完成，就需要将其添加到维基中，以便人们使用。
 
-If a translation you're working on is moderately complete, contact the wiki maintainers through the above methods to get it added.
+如果你的翻译工作已经基本完成，请通过上面的方法来联系维基维护员来启用你的翻译。
 
-Not every single page needs to be finished, but you should ideally have translated at least:
+不是每一页都需要完成，但是请至少翻译完：
 
-- introduction.md
-- sidebar.md
-- any pages related to _installing_ mods
+- 主页面（introduction.md）
+- 侧栏（sidebar.md）
+- 有关_安装_模组的任何页面
