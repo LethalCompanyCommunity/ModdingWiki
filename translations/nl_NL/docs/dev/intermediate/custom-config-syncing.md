@@ -19,7 +19,7 @@ There are many different ways you could achieve this, but we will only go throug
 ## Manually Syncing Instances
 
 For this approach, we will take advantage of [Custom Messages](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/custom-messages/#named-messages), specifically Named Messages.
-They are unbound to any GameObject, meaning **NetcodeWeaver** and **NetworkBehaviour** are **NOT necessary**.
+They are unbound to any GameObject, meaning **Unity Netcode Patcher** and **NetworkBehaviours** are **NOT necessary**.
 
 :::info
 Before you proceed, it is recommended you familiarize yourself with [Custom configs](/dev/intermediate/custom-configs).
