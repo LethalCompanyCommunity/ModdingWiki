@@ -19,7 +19,7 @@ Ez az útmutató főképp [Max](https://github.com/MaxWasUnavailable) és [Bobbi
 ### Developer / Tool Credits
 
 - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
-- **EvaisaDev** for [UnityNetcodeWeaver](https://github.com/EvaisaDev/UnityNetcodeWeaver).
+- **EvaisaDev** for [Unity Netcode Patcher](https://github.com/EvaisaDev/UnityNetcodePatcher).
 
 Köszönjük [mindenki másnak](https://github.com/LethalCompany/ModdingWiki/graphs/contributors), akik hozzájárultak az útmutatóhoz GitHub-on.
 
