@@ -19,7 +19,7 @@ Denne guide er primært skrevet af [Max](https://github.com/MaxWasUnavailable) o
 ### Developer / Tool Credits
 
 - **BepInEx Contributors** for [BepInEx](https://github.com/BepInEx/BepInEx).
-- **EvaisaDev** for [UnityNetcodeWeaver](https://github.com/EvaisaDev/UnityNetcodeWeaver).
+- **EvaisaDev** for [Unity Netcode Patcher](https://github.com/EvaisaDev/UnityNetcodePatcher).
 
 Tak til [alle de andre deltagende](https://github.com/LethalCompany/ModdingWiki/graphs/contributors) der har bidraget til guiden på GitHub.
 
