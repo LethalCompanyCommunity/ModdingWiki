@@ -27,7 +27,7 @@ You'll also want to add the LethalLib mod ID as a BepinEx dependency, which can 
 This is also a quick way of ensuring you've correctly added the LethalLib .dll as a dependency, as otherwise this will give you an error.
 
 ## Lethal Company Unity project
-In order to make mods for LethalLib, you will almost certainly need to use a decompiled Lethal Company Unity project so you can access the game scripts. You can either do a decompilation yourself with a program like Asset Ripper, or use this [template project](https://github.com/EvaisaDev/LethalCompanyUnityTemplate/tree/main#readme), which provides stub scripts and no assets for a clean modding environment. A decompile is much harder to do but will give you all the games' data and assets to examine and use as a base for anything you make.
+In order to make mods for LethalLib, you will almost certainly need to use a decompiled Lethal Company Unity project so you can access the game scripts. You can either do a decompilation yourself with a program like [Asset Ripper](https://github.com/AssetRipper/AssetRipper), or use this [template project](https://github.com/EvaisaDev/LethalCompanyUnityTemplate/tree/main#readme), which provides stub scripts and no assets for a clean modding environment. A decompile is much harder to do but will give you all the games' data and assets to examine and use as a base for anything you make.
 
 ## Specific tutorials
 Each page below goes through the full process of creating a mod for the given part of Lethal Company via LethalLib. These will use the template project above as a base.
