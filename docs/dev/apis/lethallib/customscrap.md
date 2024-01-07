@@ -76,6 +76,7 @@ The Scan Node script compontnet should have:
 - Creature Scan ID set to -1
 - Node Type set to 2
 The ScanNode object will also need to have the layer set to "ScanNode".
+![Image of the scan node object setup.](/images/lethallib/customscrap/ScanNode.png)
 
 After you've done this, you should go back to your Item Data and assign the Spawn Prefab to be the item prefab.
 
