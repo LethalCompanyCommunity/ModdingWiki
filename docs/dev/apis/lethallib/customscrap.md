@@ -59,8 +59,7 @@ The Network Object must only have the following options enabled, with everything
 - Spawn With Observers
 - Don't Destroy With Owner
 
-The Audio source should use the "Diagetic" (Yes it's misspelled in the game files) audio mixing. If you're using a decompilation you can use the one already present, otherwise you should create an Audio Mixer use the following screenshots as a guide for how to set up the master controller:
-![Image of the audio mixer for diegetic audio.](/images/lethallib/customscrap/AudioMixMaster.png)
+The Audio source should use the "Diagetic" (Yes it's misspelled in the game files) audio mixing. If you're using a decompilation you can use the one already present, otherwise you can make an empty audio mixer with an *identical* name, and use the utility function FixMixerGroups() to swap the mixer using LethalLib (see Loading and Registering code note below)
 
 ### ScanNode Object
 On the ScanNode child gameobject, you should have the following:
@@ -90,6 +89,16 @@ Item MyCustomItem = MyAssetBundle.LoadAsset<Item>("directory/to/itemdataasset.as
 LethalLib.Modules.NetworkPrefabs.RegisterNetworkPrefab(MyCustomItem.spawnPrefab);
 LethalLib.Modules.Items.RegisterScrap(MyCustomItem, iRarity, LethalLib.Modules.Levels.LevelTypes.All);
 ```
+::: info
+If you're using an empty audio mixer with the name "Diagetic" for the Audio Source, add the following line to fix the mixer:
+```cs
+Item MyCustomItem = MyAssetBundle.LoadAsset<Item>("directory/to/itemdataasset.asset");
+LethalLib.Modules.Utilities.FixMixerGroups(MyCustomItem.spawnPrefab); // [!code ++]
+LethalLib.Modules.NetworkPrefabs.RegisterNetworkPrefab(MyCustomItem.spawnPrefab);
+```
+This may also fix issues with sounds playing twice, if that issue is occuring for you.
+:::
+
 Rarity is a weight value that determines how likely the scrap is to spawn, with higher numbers meaning more likely to spawn. All scrap in the base game varies from 1 to 100 differing per-moon, and the value should be kept in that range.
 
 LevelTypes is a flag enum which provides some basic pre-defined options for moons, such as All, Vanilla, or any of the default moons individually. The enum supports bitwise operations, for example `(LethalLib.Modules.Levels.LevelTypes.March | LethalLib.Modules.Levels.LevelTypes.Dine)` will register the scrap for both March and Dine.
