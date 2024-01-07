@@ -1,49 +1,20 @@
 ---
-prev: true
+prev: false
 next: false
 description: An overview of how to create and load asset bundles in your plugin.
 ---
 
 # Asset Bundling
-In order to add custom assets to your mods, you will need to create an asset bundle and load it with your plugin code. In order to do this, you will need to have a Unity project with your assets contained in it. Using the [Lethal Company template project](https://github.com/EvaisaDev/LethalCompanyUnityTemplate/tree/main#readme) is recommended so you can use scripts from the game in your prefabs.
+In order to add custom assets to your mods, you will need to create an asset bundle and load it with your plugin code. In order to do this, you will need to have a Unity project with your assets contained in it. Using the [Lethal Company Unity template project](https://github.com/EvaisaDev/LethalCompanyUnityTemplate/tree/main#readme) is recommended so you can use scripts from the game in your prefabs.
 
 ## Marking Assets For Bundling
 Once you have the custom assets you want to include in a bundle, you have to mark them to be included in the asset bundle. This can be done by selecting your asset in Unity, and in the inspector window at the bottom either selecting or creating a new bundle name.
 ![Image of the asset bundle name selection at the bottom of the inspector.](/images/asset-bundling/AssetBundleMark.png)
 
-## Asset Bundling Script
-Asset bundling requires the use of a script in order to produce the bundle. The following script can be used to assist in this process:
-```cs
-using UnityEditor;
-using System;
-using UnityEngine;
-using static System.Net.Mime.MediaTypeNames;
-using System.Diagnostics;
-public class CreateAssetBundles
-{
-    [MenuItem("Assets/Create Assets Bundles")]
-    static void BuildAllAssetBundles() {
-        string assetBundleDirectoryPath = UnityEngine.Application.dataPath + "/AssetBundles";
-        UnityEngine.Debug.Log("Creating asset bundles...");
-        try {
-            BuildPipeline.BuildAssetBundles(assetBundleDirectoryPath, BuildAssetBundleOptions.None, EditorUserBuildSettings.activeBuildTarget);
-        } catch (Exception e) {
-            UnityEngine.Debug.LogWarning(e);
-            throw;
-        }
-    }
-}
-```
+## Creating The Asset Bundle
+Asset bundling requires the use of a package. The aforementioned template already includes the package, if you're using a decompiled project you can add it by going to `Window -> Package Manager -> Add package from git URL` and entering the following URL: `https://github.com/Unity-Technologies/AssetBundles-Browser.git`
 
-In order to use this script, create a new script in your Unity project **in a folder called 'Editor' at the root of your project**. The script must be at that location or it will not work.
-![Image of a Unity project, showing the AssetBundle script in the Editor folder.](/images/asset-bundling/AssetBundleScript.png)
-
-After adding this script and restarting the editor, you should get a new option under the asset group on the command bar:
-![Image of the 'Create Asset Bundles' command](/images/asset-bundling/CreateBundleCommand.png)
-
-You will also need to create a folder called "AssetBundles" in the root of your project assets as well, otherwise the script will fail as it has can't place the asset bundles into a nonexistant folder.
-
-After clicking 'Create Assets Bundles' it will generate an asset bundle for each different asset bundle name, containing everything set to be in each bundle, into the AssetBundles folder.
+The asset bundling window can be opened by going to `Window -> Asset Bundle Browser` and clicking the Build tab. Here you can pick an output path for your asset bundle(s), then click Build. This will generate and place all the asset bundles into that folder as an extensionless file.
 
 ::: warning
 **For security reasons, asset bundles cannot contain scripts. To create new scripts, you should write them in your plugin code. If you need to access them in your assets, you can add your mod .dll to the project which will let you use/add scripts such as MonoBehaviours in your mod. Any dependencies will also need to be added to the project.**

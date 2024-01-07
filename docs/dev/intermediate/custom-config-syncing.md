@@ -1,6 +1,6 @@
 ---
 prev: true
-next: true
+next: false
 description: An intermediate overview of how to sync custom configs for your Lethal Company mods.
 ---
 
