@@ -89,6 +89,7 @@ export default defineConfig({
                   items: [
                     { text: 'Custom Configs', link: '/dev/intermediate/custom-configs' },
                     { text: 'Custom Config Syncing', link: '/dev/intermediate/custom-config-syncing' },
+                    { text: 'Asset Bundling', link: '/dev/intermediate/asset-bundling' },
                   ]
                 },
                 {
@@ -111,13 +112,13 @@ export default defineConfig({
                     { text: 'CustomSounds', link: '/dev/apis/customsounds'},
                   ]
                 },
-                /*{
+                {
                   text: 'Programming APIs',
                   collapsed: false,
                   items: [
-                    
+                    { text: 'LethalLib', link: '/dev/apis/lethallib'},
                   ]
-                }*/
+                }
               ]
             },
             {

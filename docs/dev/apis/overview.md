@@ -41,7 +41,10 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 - [InputUtils by Rune580](https://thunderstore.io/c/lethal-company/p/Rune580/LethalCompany_InputUtils/) allows you to easily initialize input/keybinds with ingame rebinding. [The README](https://thunderstore.io/c/lethal-company/p/Rune580/LethalCompany_InputUtils/) has a developer quickstart.
 
 ### Items & Scrap {#programming-items-and-scrap}
-- [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new Scrap & Shop Items.
+- ⭐ [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new Scrap & Shop Items. [The wiki page on LethalLib](/dev/apis/lethallib) links to a full tutorial to build off.
+
+### Dungeons
+- [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new dungeons.
 
 ### Model Replacement
 - [ModelReplacementAPI by BunyaPineTree](https://thunderstore.io/c/lethal-company/p/BunyaPineTree/ModelReplacementAPI/) allows you to create your own custom player models, and swaps them out at runtime. [The mod's official wiki](https://github.com/BunyaPineTree/LethalCompany_ModelReplacementAPI/wiki) explains how to set up a player model.
