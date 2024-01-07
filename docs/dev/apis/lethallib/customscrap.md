@@ -10,7 +10,6 @@ Make sure you've done everything in the [LethalLib main page](/dev/apis/lethalli
 
 At bare minimum, you will need the following added to your template project to create a custom scrap item:
 - A model of your scrap (and materials using the HDRP Lit shader)
-- SFX for picking up and putting down the scrap
 - An icon for the scrap when in the hotbar
 
 ## Item Data
@@ -22,14 +21,16 @@ This item data lets you configure basically everything about your item. There ar
 - **Spawn Position Types**: Spawn position types this item can spawn at. If the list is empty, the scrap can spawn anywhere (recommended to just leave this empty except for stuff like special scrap for custom moons).
 - **Two Handed**: Whether the item gives the "Hands Full" message and prevents changing items.
 - **Two Handed Animation**: Whether the item uses the two-handed animation for carrying or not.
-- **Weight**: A somewhat arbitrary number determing how heavy an item is. For reference, the Brush scrap is weight 1.1, the Cash Register is 1.8; pick a number that feels right.
+- **Weight**: Determines the weight of the scrap. The weight in-game is equal to (this value - 1) * 100 (e.g. 1.18 is 18 lb).
 - **Item Spawns On Ground**: Should be true for scrap.
 - **Highest Sale Percentage**: Unknown; All items have this set to 80. Set it to that for safety.
 - **Is Conductive Metal**: Whether this item attracts lightning.
 - **Max/Min Value**: The value range for the item. Does not directly correlate to the range in game; a scalar is applied based on the moon it spawns on. For reference, the Big Bolt uses the range Max-80, Min-50.
 - **Spawn Prefab**: The prefab representing the item in the world. Creation of this is detailed later in this guide.
+- **Resting Rotation**: How the scrap is rotated when laying on the ground.
 - **Rotation/Position/Vertical Offset**: The offset values for holding the item in your hand. Mostly needs manual fiddling with until it looks right for a given item.
-- **Grab SFX, Drop SFX, Item Icon**: These must be assigned for the scrap to fully function.
+- **Grab SFX/Drop SFX**: The sound effect played when you pick up/drop a scrap item, respectively.
+- **Item Icon**: The icon that appears in the hotbar while in the inventory.
 - **Allow Dropping Ahead of Player**: Whether the item can be dropped in front of the player, as opposed to only dropping directly below their feet.
 - **Is Defensive Weapon**: For scrap that also acts as weapons; requires more special scripting, so for most cases should be left off.
 
@@ -44,13 +45,19 @@ The root object should have the following:
 - Mesh Renderer + Mesh Filter for your model
 - Box collider roughly encompassing your model
 - Physics Prop script (see below for configuration)
-- Audio Source with no clip assigned (see below for output setup)
-- Network Object (with default checkbox configuration)
+- Audio Source with no clip assigned (see below for output setup). This is necessary even if you don't have any SFX.
+- Network Object (see below for configuration)
 The root object will also need to have the tag "PhysicsProp" and the layer set to "Props".
 
 The Physics Prop script component should have:
 - The checkboxes for "Grabbable", "Is In Factory", and *optionally* "Grabbable to Enemies" set to true
 - The "Item Properties" assigned to the Item Data you created
+
+The Network Object must only have the following options enabled, with everything else disabled:
+- Synchronize Transform
+- Scene Migration Synchronization
+- Spawn With Observers
+- Don't Destroy With Owner
 
 The Audio source should use the "Diagetic" (Yes it's misspelled in the game files) audio mixing. If you're using a decompilation you can use the one already present, otherwise you should create an Audio Mixer use the following screenshots as a guide for how to set up the master controller:
 ![Image of the audio mixer for diegetic audio.](/images/lethallib/customscrap/AudioMixMaster.png)
