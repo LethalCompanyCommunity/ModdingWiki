@@ -49,7 +49,11 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 
 ### Items & Scrap {#programming-items-and-scrap}
 
-- [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new Scrap & Shop Items.
+- ⭐ [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new Scrap & Shop Items. [The wiki page on LethalLib](/dev/apis/lethallib) links to a full tutorial to build off.
+
+### Dungeons
+
+- [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new dungeons.
 
 ### Model Replacement
 
