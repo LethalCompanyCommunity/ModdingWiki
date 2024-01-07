@@ -14,7 +14,7 @@ Once you have the custom assets you want to include in a bundle, you have to mar
 ## Creating The Asset Bundle
 Asset bundling requires the use of a package. The aforementioned template already includes the package, if you're using a decompiled project you can add it by going to `Window -> Package Manager -> Add package from git URL` and entering the following URL: `https://github.com/Unity-Technologies/AssetBundles-Browser.git`
 
-The asset bundling window can be opened by going to `Window -> Asset Bundle Browser` and clicking the Build tab. Here you can pick an output path for your asset bundle(s), then click Build. This will generate and place all the asset bundles into that folder as an extensionless file.
+The asset bundling window can be opened by going to `Window -> Asset Bundle Browser` and clicking the Build tab. Here you can pick an output path for your asset bundle(s), then click Build. This will generate and place all the asset bundles into that folder as extensionless files with the name of the bundle (you can ignore the .manifest files).
 
 ::: warning
 **For security reasons, asset bundles cannot contain scripts. To create new scripts, you should write them in your plugin code. If you need to access them in your assets, you can add your mod .dll to the project which will let you use/add scripts such as MonoBehaviours in your mod. Any dependencies will also need to be added to the project.**

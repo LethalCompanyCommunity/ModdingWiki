@@ -22,8 +22,14 @@ You will need to start by creating a plugin (see [Starting a Mod](/dev/starting-
 
 ![Image of r2modman, highlighting the 'Browse profile folder' option](/images/lethallib/ProfileFolderModman.png)
 
-You'll also want to add the LethalLib mod ID as a BepinEx dependency, which can be done by adding the following line after `[BepinPlugin(...)]`:
-`[BepInDependency(LethalLib.Plugin.ModGUID)]`
+You'll also want to add the LethalLib mod ID as a BepinEx dependency, which can be done by adding a `BepInDependency` attribute, like so:
+```cs
+[BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
+[BepInDependency(LethalLib.Plugin.ModGUID)] // [!code ++]
+public class MyPlugin : BaseUnityPlugin
+```
+
+
 This is also a quick way of ensuring you've correctly added the LethalLib .dll as a dependency, as otherwise this will give you an error.
 
 ## Lethal Company Unity project
