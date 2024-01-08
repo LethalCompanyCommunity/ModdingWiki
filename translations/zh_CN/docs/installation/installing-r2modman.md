@@ -1,18 +1,18 @@
 ---
 prev: true
 next: true
-description: Learn how to use r2modman to install Lethal Company mods from Thunderstore.
+description: 学习怎么使用 r2modman 来从 Thunderstore 中安装致命公司的模组
 ---
 
-# Using r2modman
+# 使用 r2modman
 
 ***
 
 :::warning
-For Linux and Steam Deck users, please follow the [Linux instructions](installing-r2modman-linux).
+对于 Linux 和 Steam Deck 的用户，请移步 [Linux instructions](installing-r2modman-linux)。
 :::
 
-This guide will run you through installing and using [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) to install and play with mods that are available through [Thunderstore](https://thunderstore.io/c/lethal-company/). Using a mod manager like r2modman allows you to update and play with the latest versions of the mods with ease as the manager does all of that for you!
+本指南将指导您安装和使用 [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) 来安装、管理和游玩 [Thunderstore](https://thunderstore.io/c/lethal-company/) 提供的模组。 Using a mod manager like r2modman allows you to update and play with the latest versions of the mods with ease as the manager does all of that for you!
 
 ## Installing r2modman
 
