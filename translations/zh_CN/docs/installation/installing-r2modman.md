@@ -9,18 +9,18 @@ description: 学习怎么使用 r2modman 来从 Thunderstore 中安装致命公�
 ***
 
 :::warning
-对于 Linux 和 Steam Deck 的用户，请移步 [Linux instructions](installing-r2modman-linux)。
+对于 Linux 和 Steam Deck 用户，请移步 [Linux instructions](installing-r2modman-linux)。
 :::
 
-本指南将指导您安装和使用 [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) 来安装、管理和游玩 [Thunderstore](https://thunderstore.io/c/lethal-company/) 提供的模组。 Using a mod manager like r2modman allows you to update and play with the latest versions of the mods with ease as the manager does all of that for you!
+本指南将指导您安装和使用 [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) 来管理和游玩 [Thunderstore](https://thunderstore.io/c/lethal-company/) 中提供的模组。 您可以使用模组管理器 r2modman 来轻松地更新和游玩最新版本的模组，管理器会为您解决一切！
 
-## Installing r2modman
+## 安装 r2modman
 
 <!-- f21c391c-0bc5-431d-a233-95323b95e01b -->
 
-First things first, download [**r2modman from its GitHub page**](https://github.com/ebkr/r2modmanPlus/releases/latest/).
+首先，[**从 GitHub 中下载 r2modman**](https://github.com/ebkr/r2modmanPlus/releases/latest/)。
 
-For **Windows**, you would want to get `r2modman-Setup-VERSION.exe` or `r2modman-VERSION.exe`. The former installs the mod manager to your system, while the latter simply runs r2modman without any sort of installation. Simply run the installer or the program in order to open r2modman.
+对于 **Windows** 用户，您应该下载 `r2modman-Setup-VERSION.exe` 或 `r2modman-VERSION.exe`。 前者会在系统中安装 r2modman，而后者无需进行任何安装即可运行 r2modman。 Simply run the installer or the program in order to open r2modman.
 
 In order to download, simply click the links as shown below and run the program you just downloaded.
 
