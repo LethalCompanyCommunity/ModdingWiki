@@ -1,7 +1,7 @@
 ---
 prev: false
 next: false
-description: Additional information regarding the contributors and licensing of the Lethal Company Modding Wiki.
+description: Дополнительная информация об авторах и лицензировании Lethal Company Modding Wiki.
 ---
 
 # О Руководстве
@@ -23,9 +23,9 @@ description: Additional information regarding the contributors and licensing of 
 
 Спасибо [всем остальным](https://github.com/LethalCompany/ModdingWiki/graphs/contributors) кто способствовал написанию руководства на GitHub.
 
-### **Open Source and Privacy**
+### Открытый исходный код и конфиденциальность
 
-[This guide is open source on GitHub](https://github.com/LethalCompany/ModdingWiki). It is licensed under the [ISC License](https://github.com/LethalCompany/ModdingWiki/blob/master/LICENSE.md).
+Это руководство с открытым исходным кодом на GitHub. Она лицензирована в соответствии с ISC License (https\://github.com/LethalCompany/ModdingWiki/blob/master/LICENSE.md).
 
 Vitepress wiki build pages are based on [bsmg.wiki](https://bsmg.wiki), which is licensed under the [MIT LICENSE](https://github.com/bsmg/wiki/blob/master/LICENSE).
 
