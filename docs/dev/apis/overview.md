@@ -30,7 +30,7 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 - [LethalPosters by femboytv](https://thunderstore.io/c/lethal-company/p/femboytv/LethalPosters/) allows you to create your own custom posters that appear in the ship. [The README](https://thunderstore.io/c/lethal-company/p/femboytv/LethalPosters/) has a basic section on how to format your poster for upload.
 
 ### Sound Replacement
-- ⭐ [CustomSounds by Clementinise](https://thunderstore.io/c/lethal-company/p/Clementinise/CustomSounds/) allows you to replace ingame sounds using your own .wav file. [The wiki page on CustomSounds](/dev/apis/customsounds) covers the process of creating of swapping out sounds.
+- ⭐ [CustomSounds by Clementinise](https://thunderstore.io/c/lethal-company/p/Clementinise/CustomSounds/) allows you to replace ingame sounds using your own .wav file. [The wiki page on CustomSounds](/docs/dev/apis/customsounds) covers the process of creating of swapping out sounds.
 
 ## Programming APIs
 
@@ -41,7 +41,7 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 - [InputUtils by Rune580](https://thunderstore.io/c/lethal-company/p/Rune580/LethalCompany_InputUtils/) allows you to easily initialize input/keybinds with ingame rebinding. [The README](https://thunderstore.io/c/lethal-company/p/Rune580/LethalCompany_InputUtils/) has a developer quickstart.
 
 ### Items & Scrap {#programming-items-and-scrap}
-- ⭐ [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new Scrap & Shop Items. [The wiki page on LethalLib](/dev/apis/lethallib) links to a full tutorial to build off.
+- ⭐ [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new Scrap & Shop Items. [The wiki page on LethalLib](/docs/dev/apis/lethallib) links to a full tutorial to build off.
 
 ### Dungeons
 - [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new dungeons.
