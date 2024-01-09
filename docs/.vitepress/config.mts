@@ -116,7 +116,14 @@ export default defineConfig({
                   text: 'Programming APIs',
                   collapsed: false,
                   items: [
-                    { text: 'LethalLib', link: '/dev/apis/lethallib'},
+                    { 
+                      text: 'LethalLib', 
+                      link: '/dev/apis/lethallib',
+                      collapsed: true,
+                      items: [
+                        { text: 'Custom Scrap', link: '/dev/apis/lethallib/customscrap'},
+                      ]
+                    },
                   ]
                 }
               ]
