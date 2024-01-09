@@ -21,7 +21,7 @@ You need to install the following mods to be able to add custom sounds:
 
 If you're using r2modman or the Thunderstore manager, your basic setup should look like this:
 
-![Image of r2modman setup](/images/customsounds/r2modman_setup.png)
+![Image of r2modman setup](/docs/public/images/customsounds/r2modman_setup.png)
 
 ## Finding the audio files 
 If you want to replace an audio file, you need to know which sound you're actually replacing. For the sake of the guide, I'm going to try and find the audio files for the "Icecream Truck" music whenever the delivery ship lands, but you can apply this process to any sound you'd like to replace.
@@ -37,7 +37,7 @@ Afterwards, on the top toolbar go to `File > Open Folder`, and select "Lethal Co
 
 If everything worked correctly, you should be seeing this window:
 
-![Image of Assetripper](/images/customsounds/AssetRipper.png)
+![Image of Assetripper](/docs/public/images/customsounds/AssetRipper.png)
 
 Now, to extract ALL the audio files from the game, you need to find an AudioClip file in one of the sharedassets folders. 
 
@@ -61,7 +61,7 @@ If you can't find the sound you're replacing by just looking at the extracted au
 
 LCSoundTool has a logging function which can be activated / deactivated by pressing F5 when in the game, and it prints the current sound being played to the BepinEx console. For this to actually show up in the console, you need to edit the BepInEx.cfg file, which you can access by going to BepInEx/config/BepInEx.cfg, or if you're using r2modman / Thunderstore, by going into Config Editor and BePinEx.cfg as shown in this image:
 
-![Image of config in r2modman](/images/customsounds/r2modman_config.png)
+![Image of config in r2modman](/docs/public/images/customsounds/r2modman_config.png)
 
 In particular, you need to change 4 settings to the following parameters:
 ```
@@ -80,7 +80,7 @@ If you want to find out the sounds of enemies, I recommend downloading the mod "
 
 Anyways, for the "Ice cream truck" music, I ordered an item through the terminal and spawned into a map, and once it arrives you can clearly see which sounds are responsible for playing the music:
 
-![Image of BepInEx Console](/images/customsounds/BepInEx_console.png)
+![Image of BepInEx Console](/docs/public/images/customsounds/BepInEx_console.png)
 
 So now we know that we need to replace the sound files `IcecreamTruckFar` and `IcecreamTruckV2` to make it play custom music! You can repeat this process for (almost) all sounds, so if you want to know what sounds the Jester enemy makes, then you spawn in a Jester enemy and wait until it plays the sound effect you want to replace.
 
@@ -114,11 +114,11 @@ Additionally, you can now add short descriptions to sounds that show up in the t
 ## Testing the replacement
 If you did everything correctly, you should see the files loading in the BepInEx console. Alternatively, you can just go into your ship and type "customsounds help" in your terminal to see all the available commands. If your replacement sounds have loaded correctly, then you should be able to see them if you type in "customsounds list" like this:
 
-![Image of terminal using the CustomSounds command](/images/customsounds/CustomSounds_console.png)
+![Image of terminal using the CustomSounds command](/docs/public/images/customsounds/CustomSounds_console.png)
 
 Here's a little fun demo of how this particular setup looks like:
 
-[![Watch the video](/images/customsounds/Youtube_thumbnail.png)](https://youtu.be/mk8O8qFcMlk)
+[![Watch the video](/docs/public/images/customsounds/Youtube_thumbnail.png)](https://youtu.be/mk8O8qFcMlk)
 
 ## Sharing custom sounds with friends {#sharing-custom-sounds}
 
@@ -130,7 +130,7 @@ This one is by far the most obvious and simple method, you just put the audio fi
 
 The second one uses a new experimental feature of CustomSounds, which allows your friends to synchronize their custom sounds with yours. As before, you can type in "customsounds help" to see all the available commands. The command of interest to you is the "customsounds sync" command. Once you type in this command, everyone in your lobby should get this prompt:
 
-![Image of Sync request](/images/customsounds/Sync_request_client.png)
+![Image of Sync request](/docs/public/images/customsounds/Sync_request_client.png)
 
 Once the clients press F8, the host will send all the custom sounds to all clients, and they will be immediately loaded by the clients once the download is complete. In the case that someone doesn't want to use your custom sounds, they can use "customsounds revert" to use the original game files instead.
 
