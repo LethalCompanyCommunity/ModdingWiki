@@ -32,7 +32,11 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 ### Sound Replacement
 - ⭐ [CustomSounds by Clementinise](https://thunderstore.io/c/lethal-company/p/Clementinise/CustomSounds/) allows you to replace ingame sounds using your own .wav file. [The wiki page on CustomSounds](/dev/apis/customsounds) covers the process of creating of swapping out sounds.
 
+
 ## Programming APIs
+
+### Dungeons
+- [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new dungeons.
 
 ### Enemies
 - [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new enemies, although the process is fairly involved and not currently well documented.
@@ -43,11 +47,12 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 ### Items & Scrap {#programming-items-and-scrap}
 - ⭐ [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new Scrap & Shop Items. [The wiki page on LethalLib](/dev/apis/lethallib) links to a full tutorial to build off.
 
-### Dungeons
-- [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new dungeons.
-
 ### Model Replacement
 - [ModelReplacementAPI by BunyaPineTree](https://thunderstore.io/c/lethal-company/p/BunyaPineTree/ModelReplacementAPI/) allows you to create your own custom player models, and swaps them out at runtime. [The mod's official wiki](https://github.com/BunyaPineTree/LethalCompany_ModelReplacementAPI/wiki) explains how to set up a player model.
+
+### Networking
+- [LC-API by 2018](https://thunderstore.io/c/lethal-company/p/2018/LC_API/) allows you send and receive messages of any serializable type. [The mod's GitHub wiki](https://github.com/steven4547466/LC-API/wiki/Networking) explains how to use its messaging service.
+- [LethalNetworkAPI by Xilophor](https://thunderstore.io/c/lethal-company/p/xilophor/LethalNetworkAPI/) allows you to create, send, and receive messages, events, and variables over the network. [The mod's official wiki](https://xilophor.github.io/LethalNetworkAPI/) explains how to use them.
 
 ### Sound Replacement 
 - [LCSoundTool by no00ob](https://thunderstore.io/c/lethal-company/p/no00ob/LCSoundTool/wiki/828-audio-logging/) allows you to replace sounds at runtime. [The mod's Thunderstore wiki](https://thunderstore.io/c/lethal-company/p/no00ob/LCSoundTool/wiki/) covers how to use it.
@@ -63,4 +68,4 @@ If you're an API developer and want to get your API added to this list, feel fre
 - Open source
 - Fairly well documented - even better if you write a wiki article<sup>[1](#fn-1)</sup>
 
-<a name="fn-1">1</a>: Some exceptions may be made if it's an especially groundbreaking API, or it's the only existing solution.
+<b id="fn-1" style="color: var(--vp-c-brand-1);">1</b>: Some exceptions may be made if it's an especially groundbreaking API, or it's the only existing solution.
