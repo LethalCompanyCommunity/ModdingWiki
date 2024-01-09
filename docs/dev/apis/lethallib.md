@@ -18,7 +18,7 @@ To begin with LethalLib development, you will need the following mods:
 These can be installed with a mod manager such as r2modman or Thunderstore manager, or installed manually. A mod manager will let you automatically update LethalLib, but a manual install makes it easier to do LAN multiplayer testing. The guides below will assume a manual install for simplicity.
 
 ## Development environment
-You will need to start by creating a plugin (see [Starting a Mod](/docs/dev/starting-a-mod)) and adding the LethalLib .dll as a dependency. You do this in the same way you add the game assembly (see Starting a Mod again). If you manually installed LethalLib, you'd find it somewhere in `...\steamapps\common\Lethal Company\BepInEx\plugins`. If you installed via a mod manager, you can get to the mod profile folder where it will be located in a similar path like so:
+You will need to start by creating a plugin (see [Starting a Mod](/docs/dev/starting-a-mod.md)) and adding the LethalLib .dll as a dependency. You do this in the same way you add the game assembly (see Starting a Mod again). If you manually installed LethalLib, you'd find it somewhere in `...\steamapps\common\Lethal Company\BepInEx\plugins`. If you installed via a mod manager, you can get to the mod profile folder where it will be located in a similar path like so:
 
 ![Image of r2modman, highlighting the 'Browse profile folder' option]((/docs/public/images/lethallib/ProfileFolderModman.png)
 
@@ -38,6 +38,6 @@ In order to make mods for LethalLib, you will almost certainly need to use a dec
 ## Specific tutorials
 Each page below goes through the full process of creating a mod for the given part of Lethal Company via LethalLib. These will use the template project above as a base.
 
-- [Custom Scrap](/docs/dev/apis/lethallib/customscrap)
+- [Custom Scrap](/docs/dev/apis/lethallib/customscrap.md)
 
 - Custom Dungeons [WIP]
