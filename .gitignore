@@ -1,5 +1,5 @@
-#Ignore all
-*
+# Ignore all
+/*
 
 # Mark Folders to Keep
 !.gitignore
@@ -13,3 +13,7 @@
 !CNAME
 !.nojekyll
 !/.github
+
+# Mark Folders to Ignore
+/docs/.vitepress/dist
+/docs/.vitepress/cache
