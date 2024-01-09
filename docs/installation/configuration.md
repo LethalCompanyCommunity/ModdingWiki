@@ -14,10 +14,10 @@ Config files  **will not be generated** until the mod is loaded ingame **at leas
 
 In the **Config editor** in your r2modman profile see all of your mods config files. Select the one you wish and click "Edit Config".
 
-![Edit configs](/images/r2modman-install/editconfigs.png)
+![Edit configs](/docs/public/images/r2modman-install/editconfigs.png)
 
 Once you have changed configs in your mod of choice be sure to press the "Save" button.
 
-![Save configs](/images/r2modman-install/saveconfigs.png)
+![Save configs](/docs/public/images/r2modman-install/saveconfigs.png)
 
 That's it! Now your mod should have the config changes next time you start the game.

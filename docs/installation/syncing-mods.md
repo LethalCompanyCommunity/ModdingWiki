@@ -26,7 +26,7 @@ Profile codes do **NOT** export:
 
 1. Select **"Export profile as code"** in the **profile tab** in settings of your profile.
 
-![Exporting Profile](/images/r2modman-install/exportprofilecode.png)
+![Exporting Profile](/docs/public/images/r2modman-install/exportprofilecode.png)
 
 This will copy a code to your clipboard automatically - you can send this to your friends!
 
@@ -34,12 +34,12 @@ This will copy a code to your clipboard automatically - you can send this to you
 
 1. Click **"Import/Update"** in the **Profile selection** area after selecting Lethal Company in r2modman.
 
-![Importing Profile](/images/r2modman-install/importprofile.png)
+![Importing Profile](/docs/public/images/r2modman-install/importprofile.png)
 
 2. Select either **Import or Update**, depending on if you'd like to create a new profile or update an existing one.
 
 3. Choose the **"From code"** option and paste in your code.
 
-![Import code](/images/r2modman-install/importfromcode.png)
+![Import code](/docs/public/images/r2modman-install/importfromcode.png)
 
 Now you've synced your mods! You can start modded and play with friends now!

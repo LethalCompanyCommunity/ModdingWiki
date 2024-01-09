@@ -20,7 +20,7 @@ For this approach, we will take advantage of [Custom Messages](https://docs-mult
 They are unbound to any GameObject, meaning **Unity Netcode Patcher** and **NetworkBehaviours** are **NOT necessary**.
 
 ::: info
-Before you proceed, it is recommended you familiarize yourself with [Custom configs](/dev/intermediate/custom-configs).
+Before you proceed, it is recommended you familiarize yourself with [Custom configs](/docs/dev/intermediate/custom-configs).
 :::
 
 ### Prerequisites

@@ -40,7 +40,7 @@ Because this wiki is partially based on a [previously translated wiki](https://t
 
 Feel free to use these to your advantage, or start from scratch if you think you could improve upon it.
 
-![Example of a suggested translation from the Trombone Champ Modding Wiki](/images/translating-the-wiki/suggestions.png)
+![Example of a suggested translation from the Trombone Champ Modding Wiki](/docs/public/images/translating-the-wiki/suggestions.png)
 
 ## Page translation order
 

@@ -8,7 +8,7 @@ description: Learn how to create a basic project for a Lethal Company mod.
 
 ## Setting up your project {#setup-project}
 ::: warning
-This guide assumes you've completed all the required steps in **[initial setup](/dev/initial-setup)**, or that you know what you're doing.
+This guide assumes you've completed all the required steps in **[initial setup](/docs/dev/initial-setup)**, or that you know what you're doing.
 :::
 
 This guide follows certain parts of the [official BepInEx guide](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/2_plugin_start.html).
@@ -180,6 +180,6 @@ We highly recommend reading through the rest of the [official BepInEx guide](htt
 
 ## Next steps
 
-We recommend reading through our very short guide on [open-source & ethics](/dev/open-source-and-ethics), to help foster a healthy modding community.
+We recommend reading through our very short guide on [open-source & ethics](/docs/dev/open-source-and-ethics), to help foster a healthy modding community.
 
-Once you've finished a mod, you can [publish it](/dev/publishing-your-mod).
+Once you've finished a mod, you can [publish it](/docs/dev/publishing-your-mod).
