@@ -32,20 +32,20 @@ Upon starting ILSpy you will be met with a window similar to this.
 From then you want to open the `Assembly-CSharp.dll` file present in the game's files. 
 
 To get it you need to do the following:
-### 1. Open game files. On Steam it's done as simple as right clicking the game and pressing 'Browse local files'.
+### 1. Open game files. On Steam it's done as simple as right clicking the game and pressing 'Browse local files'. {#open-game-files}
 ![How to open local files on Steam](/images/reading-game-code/opening-local-files.png)
 
 The game files folder will open
 ![Lethal Company local files](/images/reading-game-code/lc-game-folder.png)
 
-### 2. Go to `Lethal Company_Data/Managed`
+### 2. Go to `Lethal Company_Data/Managed` {#open-managed-folder}
 
 Once you do that you will see many .dll files.
 ![Lethal Company DLLs](/images/reading-game-code/lc-dlls.png)
 
 Copy the path and go back to ILSpy.
 
-### 3. Open the file in ILSpy
+### 3. Open the file in ILSpy {#open-in-ilspy}
 
 In ILSpy click on `File -> Open`.
 ![How to open file in ILSpy](/images/reading-game-code/ilspy-open.png)
