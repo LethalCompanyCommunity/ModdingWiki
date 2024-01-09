@@ -76,13 +76,13 @@ export default defineConfig({
             { 
               text: 'Modding Topics', 
               items: [
-                /*{
+                {
                   text: 'Fundamentals',
                   collapsed: false,
                   items: [
-                      
+                      { text: "Reading Game Code", link: '/dev/fundamentals/reading-game-code'}
                   ]
-                },*/
+                },
                 {
                   text: 'Intermediate',
                   collapsed: false,
