@@ -33,7 +33,7 @@ Visit the [**r2modman GitHub releases page**](https://github.com/ebkr/r2modmanPl
 
 **For Steam Deck users,** download the `.AppImage` file and keep it in a safe location such as your Desktop or your Documents folder. You will also need to mark the file as executable. To do this, right-click the `.AppImage` file and select `Properties`. Switch to the **Permissions** tab and check the box marked `Is Executable` and click OK.
 
-![Steam Deck Permissions Window](/images/r2modman-linux/appimageproperties.png)
+![Steam Deck Permissions Window](/docs/public/images/r2modman-linux/appimageproperties.png)
 
 After marking the file as executable, you can now double-click the `AppImage` to open r2modman.
 
@@ -43,7 +43,7 @@ Once you have succesfully installed r2modman, you can finally install mods.
 
 1. Launch **r2modman**. You will be greeted with the following screen.
 
-![r2modman Game Selection Screen](/images/r2modman-install/gameselection.png)
+![r2modman Game Selection Screen](/docs/public/images/r2modman-install/gameselection.png)
 
 2. Select **"Lethal Company"**, and click **"Select Game"**.
 
@@ -51,31 +51,31 @@ Once you have succesfully installed r2modman, you can finally install mods.
  If you do not see it, **use the search bar or scroll down** to find "Lethal Company".
 :::
 
-![Select Lethal Company](/images/r2modman-install/selectlc.png)
+![Select Lethal Company](/docs/public/images/r2modman-install/selectlc.png)
 
 3. It will ask you to choose which profile to use. For this guide's purposes, we will stick with the Default profile. Click **"Select profile"**.
 
-![Select Default Profile](/images/r2modman-install/profileselect.png)
+![Select Default Profile](/docs/public/images/r2modman-install/profileselect.png)
 
 4. This will lead us to this screen.
 
-![First Time Opening Installed](/images/r2modman-install/firsttimeinstall.png)
+![First Time Opening Installed](/docs/public/images/r2modman-install/firsttimeinstall.png)
 
 5. Click **"Online"** on the sidebar. This will bring up a list of all available to download mods on [Thunderstore](https://thunderstore.io/c/lethal-company/).
 
-![Clicking Online](/images/r2modman-install/selectonline.png)
+![Clicking Online](/docs/public/images/r2modman-install/selectonline.png)
 
 6. From here, you may choose which mods you would like to download and install. Click on a mod you'd like, and then click on Download.
 
-![Downloading a mod](/images/r2modman-install/download.png)
+![Downloading a mod](/docs/public/images/r2modman-install/download.png)
 
 7. It will ask you which version to use. Download the latest version, which is already selected for you by default. Click **"Download with dependencies"** or **"Download"**.
 
-![Downloading with dependencies](/images/r2modman-install/downloadlatest.png)
+![Downloading with dependencies](/docs/public/images/r2modman-install/downloadlatest.png)
 
 8. Once you are done installing your mods, you may click on "Start modded" on the sidebar. This will launch the game with your mods.
 
-![Start Lethal Company Modded](/images/r2modman-install/startmodded.png)
+![Start Lethal Company Modded](/docs/public/images/r2modman-install/startmodded.png)
 
 That's it! You have just successfully modded Lethal Company!
 
@@ -85,7 +85,7 @@ That's it! You have just successfully modded Lethal Company!
 ```
 WINEDLLOVERRIDES="winhttp=n,b" %command% --doorstop-enable true --doorstop-target "/home/deck/.config/r2modmanPlus-local/LethalCompany/profiles/Default/BepInEx/core/BepInEx.Preloader.dll" --r2profile "Default"
 ```
-![Steam Properties](/images/r2modman-linux/steamproperties.png)
+![Steam Properties](/docs/public/images/r2modman-linux/steamproperties.png)
 This will instruct the game to launch with the Default profile we configured in r2modman earlier, so all your mods installed there will be available.
 
 If you'd like to sync your mods with friends, navigate to the [syncing r2modman profiles](syncing-mods) page.
