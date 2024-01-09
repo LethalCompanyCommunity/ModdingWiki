@@ -65,7 +65,7 @@ Essentially, this allows you to create and use RPCs, Network Variables, etc.
 
 ### Other Setup Required
 
-There **must** be a project reference to `Unity.Netcode.Runtime.dll` to utilize Netcode for GameObjects. You can refer to [this section](/dev/starting-a-mod#adding-game-assemblies) of this wiki to add it.
+There **must** be a project reference to `Unity.Netcode.Runtime.dll` to utilize Netcode for GameObjects. You can refer to [this section](/docs/dev/starting-a-mod.md#adding-game-assemblies) of this wiki to add it.
 
 ## Introduction
 
@@ -229,7 +229,7 @@ Before we can spawn the ExampleNetworkHandler, we must load it into the game. To
 
 The Game Object we spawn as an asset requires a network object. We will use this prefab for our Network Handler:
 
-![ExampleNetworkHandler Prefab](/images/custom-networking/ExampleNetworkHandlerPrefab.png)
+![ExampleNetworkHandler Prefab](/docs/public/images/custom-networking/ExampleNetworkHandlerPrefab.png)
 
 We bundle this prefab up, embed the prefab as a resource in our ExampleMod project, and then import it using:
 
