@@ -4,7 +4,7 @@ next: false
 description: Інформація про те, як ВИ самі можете почати перекладати Lethal Company Modding Wiki іншою мовою.
 ---
 
-# Translating the wiki
+# Переклад wiki
 
 Щоб зробити модінг якомога більш доступним, ця вікі перекладається через crowdin: https\://crwd.in/lethal-company-modding-wiki
 
@@ -12,7 +12,7 @@ description: Інформація про те, як ВИ самі можете �
 **Будь ласка, не надсилайте автоматичний переклад.** Переклади лише за допомогою ChatGPT, Google Translate або іншого машинного перекладу будуть відхилені.
 :::
 
-## Tips
+## Поради
 
 :::tip
 **We don't recommend using Crowdin's "translate all" feature**, just click a file you want to translate and do that for each file. You get more context this way.
