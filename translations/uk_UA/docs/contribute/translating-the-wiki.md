@@ -15,10 +15,10 @@ description: Інформація про те, як ВИ самі можете �
 ## Поради
 
 :::tip
-**We don't recommend using Crowdin's "translate all" feature**, just click a file you want to translate and do that for each file. You get more context this way.
+**Ми не рекомендуємо використовувати функцію Crowdin "translate all"**, просто клацніть файл, який ви хочете перекласти, і зробіть так для кожного файлу окремо. Таким чином ви отримаєте більше контексту.
 :::
 
-The first time you launch the editor you will see Crowdin's own tips, please read them!
+Під час першого запуску редактора ви побачите поради від Crowdin, ознайомтесь з ними, будь ласка!
 
 If the site/program does not have native translation support, please _do not translate the names of English buttons/menus_. The following programs/sites are not currently translated:
 
