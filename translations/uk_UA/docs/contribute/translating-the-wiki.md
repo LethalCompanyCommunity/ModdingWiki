@@ -1,15 +1,15 @@
 ---
 prev: false
 next: false
-description: Information on how YOU can get started translating the Lethal Company Modding Wiki into another language.
+description: Інформація про те, як ВИ самі можете почати перекладати Lethal Company Modding Wiki іншою мовою.
 ---
 
 # Translating the wiki
 
-In an effort to make modding as widely accessible as possible, this wiki does translation through crowdin: https\://crwd.in/lethal-company-modding-wiki
+Щоб зробити модінг якомога більш доступним, ця вікі перекладається через crowdin: https\://crwd.in/lethal-company-modding-wiki
 
 :::danger
-**Please don't submit automatic translations.** Translations only using ChatGPT, Google Translate, or similar machine translation will be rejected.
+**Будь ласка, не надсилайте автоматичний переклад.** Переклади лише за допомогою ChatGPT, Google Translate або іншого машинного перекладу будуть відхилені.
 :::
 
 ## Tips
