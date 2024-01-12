@@ -47,6 +47,9 @@ You might wonder why some of these are important (or what some of these even are
 
 For IDE's, we recommend one of the following free options:
 - [Visual Studio](https://visualstudio.microsoft.com/) -- **Recommended** -- An all-in-one package. Has a built-in decompiler, which can save some time.
+
+If you already have Visual Studio installed, you'll want ensure you're on Visual Studio 2022. This is the version that supports .Net 7, and has the correct MSBuild Version to build your project solution
+
 - [Visual Studio Code](https://code.visualstudio.com/) -- A more lightweight package.
 
 If you have access to a Jetbrains License, we recommend the following paid option:
