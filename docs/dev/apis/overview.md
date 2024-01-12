@@ -52,7 +52,7 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 
 ### Networking
 - [LC-API by 2018](https://thunderstore.io/c/lethal-company/p/2018/LC_API/) allows you send and receive messages of any serializable type. [The mod's GitHub wiki](https://github.com/steven4547466/LC-API/wiki/Networking) explains how to use its messaging service.
-- [LethalNetworkAPI by xilophor](https://thunderstore.io/c/lethal-company/p/xilophor/LethalNetworkAPI/) allows you to create, send, and receive messages, events, and variables over the network. [The mod's official wiki](https://xilophor.github.io/LethalNetworkAPI/) explains how to use them.
+- [LethalNetworkAPI by xilophor](https://thunderstore.io/c/lethal-company/p/xilophor/LethalNetworkAPI/) allows you to create, send, and receive messages, events, and variables over the network. [The mod's official wiki](https://xilophor.github.io/lethal-network-api-docs/) explains how to use them.
 
 ### Sound Replacement 
 - [LCSoundTool by no00ob](https://thunderstore.io/c/lethal-company/p/no00ob/LCSoundTool/wiki/828-audio-logging/) allows you to replace sounds at runtime. [The mod's Thunderstore wiki](https://thunderstore.io/c/lethal-company/p/no00ob/LCSoundTool/wiki/) covers how to use it.
