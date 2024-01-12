@@ -30,8 +30,13 @@ Add an **Assembly Reference** to the following files:<br>
 
 These can be found at `.../Lethal Company/Lethal Company_Data/Managed`.
 
-Now create a `SyncedInstance.cs` file which your config will inherit from, this handles the serialization/de-serialization of data.<br>
+Now create a `SyncedInstance.cs` file which your config will inherit from, this handles the serialization/de-serialization of data.
 It also provides some helper methods to prevent repeating ourselves.
+
+::: warning
+**Projects not using `netstandard2.1` may see compile-time errors**.<br>
+**Make sure you include a reference to `System.Runtime.Seralization` to avoid these.**
+:::
 
 ```cs
 [Serializable]
@@ -127,7 +132,7 @@ public class Config : SyncedInstance<Config>
 In addition, we need to make sure 'Instance' is a reference to this class by adding another line in the **constructor**.
 ```cs
 public Config(ConfigFile cfg) {
-    InitInstance(this); // Add this line
+    InitInstance(this); // [!code ++]
 
     // ...
 }
@@ -274,14 +279,13 @@ public static void ExamplePatch(PlayerControllerB __instance) {
 ```
 
 ## Troubleshooting
-> Syncing doesnt work when I patch manually.
+> Syncing doesn't work when I patch manually.
 
-If you're using `PatchAll()` with type parameters, make sure to patch the `Config` class like other files.<br>
-Example:
+If you're using `PatchAll()` with type parameters, make sure to patch the `Config` class like you would for other patches.
 ```cs
 harmony.PatchAll(typeof(StartMatchLeverPatch));
 harmony.PatchAll(typeof(GameNetworkManagerPatch));
-harmony.PatchAll(typeof(Config)); // Add this line
+harmony.PatchAll(typeof(Config)); // [!code ++]
 ```
 
 > I am not seeing any logs from the request/receiver methods?
