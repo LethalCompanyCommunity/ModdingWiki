@@ -66,7 +66,7 @@ On the ScanNode child gameobject, you should have the following:
 - Box collider tightly encompassing your model
 - Scan Node script
 
-The Scan Node script compontnet should have:
+The Scan Node script component should have:
 - Max/Min range set to the max/min distance to have your scrap detectable (13, 1 are typical values)
 - Have require LOS enabled
 - Header text as the name to show when scanned
