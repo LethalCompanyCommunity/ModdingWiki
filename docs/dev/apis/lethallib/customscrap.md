@@ -47,6 +47,7 @@ The root object should have the following:
 - Physics Prop script (see below for configuration)
 - Audio Source with no clip assigned (see below for output setup). This is necessary even if you don't have any SFX.
 - Network Object (see below for configuration)
+
 The root object will also need to have the tag "PhysicsProp" and the layer set to "Props".
 
 The Physics Prop script component should have:
@@ -74,6 +75,7 @@ The Scan Node script compontnet should have:
 - Scrap Value should be 0 (this is modified by the game at runtime)
 - Creature Scan ID set to -1
 - Node Type set to 2
+
 The ScanNode object will also need to have the layer set to "ScanNode".
 ![Image of the scan node object setup.](/images/lethallib/customscrap/ScanNode.png)
 
