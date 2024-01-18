@@ -28,7 +28,7 @@ This item data lets you configure basically everything about your item. There ar
 - **Two Handed Animation**: Whether the item uses the two-handed animation for carrying or not.
 - **Weight**: Determines the weight of the scrap. The weight in-game is equal to (this value - 1) \* 100 (e.g. 1.18 is 18 lb).
 - **Item Spawns On Ground**: Should be true for scrap.
-- **Highest Sale Percentage**: Unknown; All items have this set to 80. Set it to that for safety.
+- **Highest Sale Percentage**: The maximum percentage (0-90) the item can go on sale in the terminals store; All items have this set to 80.
 - **Is Conductive Metal**: Whether this item attracts lightning.
 - **Max/Min Value**: The value range for the item. Does not directly correlate to the range in game; a scalar is applied based on the moon it spawns on. For reference, the Big Bolt uses the range Max-80, Min-50.
 - **Spawn Prefab**: The prefab representing the item in the world. Creation of this is detailed later in this guide.
@@ -55,7 +55,8 @@ The root object should have the following:
 - Physics Prop script (see below for configuration)
 - Audio Source with no clip assigned (see below for output setup). This is necessary even if you don't have any SFX.
 - Network Object (see below for configuration)
-  The root object will also need to have the tag "PhysicsProp" and the layer set to "Props".
+
+The root object will also need to have the tag "PhysicsProp" and the layer set to "Props".
 
 The Physics Prop script component should have:
 
@@ -78,7 +79,7 @@ On the ScanNode child gameobject, you should have the following:
 - Box collider tightly encompassing your model
 - Scan Node script
 
-The Scan Node script compontnet should have:
+The Scan Node script component should have:
 
 - Max/Min range set to the max/min distance to have your scrap detectable (13, 1 are typical values)
 - Have require LOS enabled
@@ -87,8 +88,9 @@ The Scan Node script compontnet should have:
 - Scrap Value should be 0 (this is modified by the game at runtime)
 - Creature Scan ID set to -1
 - Node Type set to 2
-  The ScanNode object will also need to have the layer set to "ScanNode".
-  ![Image of the scan node object setup.](/images/lethallib/customscrap/ScanNode.png)
+
+The ScanNode object will also need to have the layer set to "ScanNode".
+![Image of the scan node object setup.](/images/lethallib/customscrap/ScanNode.png)
 
 After you've done this, you should go back to your Item Data and assign the Spawn Prefab to be the item prefab.
 
