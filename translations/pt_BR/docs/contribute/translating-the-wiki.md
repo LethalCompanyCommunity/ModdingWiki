@@ -1,75 +1,75 @@
 ---
 prev: false
 next: false
-description: Information on how YOU can get started translating the Lethal Company Modding Wiki into another language.
+description: Informações sobre como VOCÊ pode começar a traduzir a Wiki de Modding do Lethal Company em outra língua.
 ---
 
-# Translating the wiki
+# Traduzindo a Wiki
 
-In an effort to make modding as widely accessible as possible, this wiki does translation through crowdin: https\://crwd.in/lethal-company-modding-wiki
+Em uma tentativa de deixar o modding o mais acessível possível, essa wiki faz as traduções pelo crowdin: https\://crwd.in/lethal-company-modding-wiki
 
 :::danger
-**Please don't submit automatic translations.** Translations only using ChatGPT, Google Translate, or similar machine translation will be rejected.
+**Por favor, não envie traduções automáticas.** Traduções apenas utilizando ChatGPT, Google Tradutor, ou ferramenta de tradução similar serão rejeitadas.
 :::
 
-## Tips
+## Dicas
 
 :::tip
-**We don't recommend using Crowdin's "translate all" feature**, just click a file you want to translate and do that for each file. You get more context this way.
+**Nós não recomendamos usar a função do Crowdin de "traduzir tudo"**, apenas clique no arquivo que deseja traduzir e repita isso para cada arquivo. Você consegue mais contextos desta forma.
 :::
 
-The first time you launch the editor you will see Crowdin's own tips, please read them!
+A primeira vez que você abrir o editor, você verá as próprias dicas do Crowdin. Por favor, leia!
 
-If the site/program does not have native translation support, please _do not translate the names of English buttons/menus_. The following programs/sites are not currently translated:
+Se o site/programa não tiver suporte a tradução nativa, por favor _não traduza os nomes de botões e menus em inglês_. Os seguintes sites/programas não são traduzíveis atualmente:
 
 - r2modman
 - Thunderstore
 
-If you're not sure if a site/program has native translation, try it yourself or [start a discussion](#questions-and-new-languages)
+Se não tiver certeza se um site/programa possui tradução nativa, teste você mesmo ou [comece uma discussão](#questions-and-new-languages)
 
-### Links and parameters
+### Links e parâmetros
 
-Anything you see highlighted (or any other weird-looking text) are usually links or parameters.
+Tudo que estiver destacado (ou com texto estranho) geralmente são links ou parâmetros.
 
-Links are usually `<0>`, `<1>`, etc, and there's an opening and closing link. You **must** include anything that's highlighted in your translation. Example:
+Links geralmente são `<0>`, `<1>`, etc, e possuem links de abertura e fechamento. Você **precisa** incluir tudo que estiver destacado na sua tradução. Exemplo:
 
-![Example of proper translation, with links and formatting the same as the source material](/images/translating-the-wiki/dutchformattingexample.png)
+![Exemplo correto de uma tradução, com links e formatação idênticas ao material de origem](/images/translating-the-wiki/dutchformattingexample.png)
 
-### Previous translations
+### Traduções anteriores
 
-Because this wiki is partially based on a [previously translated wiki](https://trombone.wiki), sometimes crowdin will show you similar existing translations.
+Por essa wiki ser parcialmente baseada em uma [wiki traduzida anteriormente](https://trombone.wiki), ocasionalmente o crowdin irá mostrar traduções similares já existentes.
 
-Feel free to use these to your advantage, or start from scratch if you think you could improve upon it.
+Sinta-se a vontade as utilizar, ou, se preferir, começar do zero caso acredite que consegue melhorá-las.
 
-![Example of a suggested translation from the Trombone Champ Modding Wiki](/images/translating-the-wiki/suggestions.png)
+![Exemplo de sugestão de tradução do Trombone Champ Modding Wiki](/images/translating-the-wiki/suggestions.png)
 
-## Page translation order
+## Ordem de tradução de página
 
-The pages we recommend prioritizing, in order, are as follows:
+As páginas que recomendamos priorizar são, em ordem de relevância:
 
-- The main landing page (introduction.md)
-- The sidebar (sidebar.md)
-- Windows modding tutorial (installing-r2modman.md)
-- Linux modding tutorial (installing-r2modman-linux.md)
-- Frequently Asked Questions (faq.md)
-- Info about the wiki (about.md)
-- Everything else (mod development tutorials, this translation page, etc)
+- A página inicial (introducion.md)
+- Os menus laterais (sidebar.md)
+- Tutoriais de modding no Windows (installing-r2modman.md)
+- Tutoriais de modding no Linux (installing-r2modman-linux.md)
+- Perguntas Frequentes (faq.md)
+- Informações sobre a wiki (about.md)
+- O resto (tutoriais de desenvolvimento de mods, essa página de tradução, etc)
 
-## Questions and new languages
+## Perguntas e novas linguas
 
-If you have any questions about translation or would like a new language added to Crowdin, feel free to:
+Se você tiver perguntas sobre a tradução ou gostaria que alguma nova língua fosse adicionada ao Crowin, sinta-se livre para:
 
-- [Create a discussion on Crowdin](https://crowdin.com/project/lethal-company-modding-wiki/discussions)
-- [Make a GitHub issue](https://github.com/LethalCompany/ModdingWiki/issues)
+- [Criar uma discussão no Crowdin](https://crowdin.com/project/lethal-company-modding-wiki/discussions)
+- [Abrir uma Issue no GitHub](https://github.com/LethalCompany/ModdingWiki/issues)
 
-### Enabling a translation
+### Habilitando a tradução
 
-Once a translation is moderately complete, it needs to actually be added to the wiki so people can use it.
+Quando a tradução estiver razoavelmente completa, ela precisa ser adicionada à wiki para que as pessoas consigam ver.
 
-If a translation you're working on is moderately complete, contact the wiki maintainers through the above methods to get it added.
+Se a tradução que você está trabalhando estiver razoavelmente completa, contate os mantedores da wiki através dos métodos acima para ser adicionada.
 
-Not every single page needs to be finished, but you should ideally have translated at least:
+Nem todas as páginas precisam estar completas, mas você deve ter traduzido pelo menos:
 
 - introduction.md
 - sidebar.md
-- any pages related to _installing_ mods
+- quaisquer páginas relacionadas a _instalação_ de mods
