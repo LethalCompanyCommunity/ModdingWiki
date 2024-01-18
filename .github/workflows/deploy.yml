@@ -2,9 +2,8 @@ name: Wiki CD
 on:
   workflow_dispatch:
   push:
-    branches-ignore:
-      - cwdin-backups
-      - 'crowdin/**'
+    branches:
+      - main
 
 env:
   NODE_VERSION: 18.x
