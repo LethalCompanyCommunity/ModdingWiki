@@ -1,26 +1,26 @@
 ---
 prev: false
 next: false
-description: Learn how to use r2modman to install Lethal Company mods from Thunderstore on Linux.
+description: Aprenda a utilizar o r2modman para instalar mods de Lethal Company pela Thunderstore no Linux.
 ---
 
-# Using r2modman on Linux and Steam Deck
+# Usando r2modman no Linux e Steam Deck
 
 ***
 
-This guide will run you through installing and using [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) to install and play with mods that are available through [Thunderstore](https://thunderstore.io/c/lethal-company/). Using a mod manager like r2modman allows you to update and play with the latest versions of the mods with ease as the manager does all of that for you!
+Esse guia vai te ensinar a instalar e usar o [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) para instalar e jogar com mods que estão disponíveis em [Thunderstore](https://thunderstore.io/c/lethal-company/). Usar um gerenciador de mods como o r2modman permite que você atualize e jogue com as últimas versões dos mods de maneira fácil, já que o gerenciador faz tudo para você!
 
-## Steam Deck Specific Preparation
+## Preparação específica do Steam Deck
 
-On Steam Deck you will need to do the following before you can follow this guide:
+No Steam Deck, você precisará fazer o seguinte antes de continuar seguindo o guia:
 
-- Make sure the game is installed into the internal storage - mods will not load if the game is installed to the MicroSD card.
-- Enter **Desktop Mode** by holding down the power button and selecting Desktop Mode from the menu.
+- Garanta que o jogo está instalado no armazenamento interno — mods não carregarão se o jogo estiver instalado em um cartão MicroSD.
+- Entre no **Modo Desktop** segurando o botão de liga/desliga e selecionando o Modo Desktop no menu.
 
-Once you're at the desktop, you're ready to continue!
+Quando estiver no modo Desktop, estará pronto para continuar!
 
 :::danger
-r2modman does **not** work in Game Mode. Please make sure to read the [**Using Mods in Steam Deck's Game Mode**](installing-r2modman-linux?id=using-mods-in-steam-decks-game-mode) section for a workaround once you've finished with the **Installing r2modman** section.
+r2modman **não** funciona no Modo Jogo. Please make sure to read the [**Using Mods in Steam Deck's Game Mode**](installing-r2modman-linux?id=using-mods-in-steam-decks-game-mode) section for a workaround once you've finished with the **Installing r2modman** section.
 :::
 
 ## Installing r2modman
