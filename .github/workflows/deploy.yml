@@ -6,23 +6,17 @@ on:
       - main
 
 env:
-  NODE_VERSION: 18.x
+  NODE_VERSION: 20.x
 
 jobs:
-  deploy:
-    name: Deploy
+  build:
+    name: Build
     runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
@@ -31,11 +25,24 @@ jobs:
       - name: Build
         run: npm run build
       - name: Configure GitHub Pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v4
       - name: Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           path: docs/.vitepress/dist
+  
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy Wiki
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
+        
