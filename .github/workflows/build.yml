@@ -1,8 +1,6 @@
 name: Wiki CI
 on:
   pull_request:
-    branches:
-      - main
 
 env:
   NODE_VERSION: 18.x
