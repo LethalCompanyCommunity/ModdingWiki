@@ -80,7 +80,8 @@ export default defineConfig({
                   text: 'Fundamentals',
                   collapsed: false,
                   items: [
-                      { text: "Reading Game Code", link: '/dev/fundamentals/reading-game-code'}
+                    { text: "Logging", link: '/dev/fundamentals/logging'},
+                    { text: "Reading Game Code", link: '/dev/fundamentals/reading-game-code'}
                   ]
                 },
                 {
