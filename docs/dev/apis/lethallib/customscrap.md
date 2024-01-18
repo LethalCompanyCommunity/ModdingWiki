@@ -23,7 +23,7 @@ This item data lets you configure basically everything about your item. There ar
 - **Two Handed Animation**: Whether the item uses the two-handed animation for carrying or not.
 - **Weight**: Determines the weight of the scrap. The weight in-game is equal to (this value - 1) * 100 (e.g. 1.18 is 18 lb).
 - **Item Spawns On Ground**: Should be true for scrap.
-- **Highest Sale Percentage**: Unknown; All items have this set to 80. Set it to that for safety.
+- **Highest Sale Percentage**: The maximum percentage (0-90) the item can go on sale in the terminals store; All items have this set to 80.
 - **Is Conductive Metal**: Whether this item attracts lightning.
 - **Max/Min Value**: The value range for the item. Does not directly correlate to the range in game; a scalar is applied based on the moon it spawns on. For reference, the Big Bolt uses the range Max-80, Min-50.
 - **Spawn Prefab**: The prefab representing the item in the world. Creation of this is detailed later in this guide.
@@ -66,7 +66,7 @@ On the ScanNode child gameobject, you should have the following:
 - Box collider tightly encompassing your model
 - Scan Node script
 
-The Scan Node script compontnet should have:
+The Scan Node script component should have:
 - Max/Min range set to the max/min distance to have your scrap detectable (13, 1 are typical values)
 - Have require LOS enabled
 - Header text as the name to show when scanned
