@@ -4,7 +4,7 @@ next: false
 description: An advanced overview of how to use Unity Netcode Patcher to add networking to your Lethal Company mods.
 ---
 
-# Networking
+# 网络
 
 :::warning
 这是一篇高级文章 While this introduces some C# concepts, it is highly recommended to understand C# and the basics of modding this game <i>before</i> reading this article.\*\*
