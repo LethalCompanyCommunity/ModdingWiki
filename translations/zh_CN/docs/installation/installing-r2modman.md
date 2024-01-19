@@ -1,7 +1,7 @@
 ---
 prev: true
 next: true
-description: 学习怎么使用 r2modman 来从 Thunderstore 中安装致命公司的模组
+description: 了解如何使用 r2modman 从 Thunderstore 安装致命公司模组。
 ---
 
 # 使用 r2modman
@@ -9,10 +9,10 @@ description: 学习怎么使用 r2modman 来从 Thunderstore 中安装致命公�
 ***
 
 :::warning
-对于 Linux 和 Steam Deck 用户，请移步 [Linux instructions](installing-r2modman-linux)。
+对于 Linux 和 Steam Deck 用户，请按照 [Linux 说明](installing-r2modman-linux) 进行操作。
 :::
 
-本指南将指导您安装和使用 [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) 来管理和游玩 [Thunderstore](https://thunderstore.io/c/lethal-company/) 中提供的模组。 您可以使用模组管理器 r2modman 来轻松地更新和游玩最新版本的模组，管理器会为您解决一切！
+本指南将引导你安装和使用 [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) 来安装和游玩通过 [Thunderstore](https://thunderstore.io/c/lethal-company/) 提供的模组。 使用像 r2modman 这样的模组管理器可以让你轻松更新和使用最新版本的模组，因为管理器会为你完成所有这些工作！
 
 ## 安装 r2modman
 
