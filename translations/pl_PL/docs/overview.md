@@ -4,9 +4,9 @@ next: true
 description: Get up and running with modifications to Lethal Company to enhance your experience.
 ---
 
-# Beginner's Guide
+# Poradnik dla początkujących
 
-Lethal Company is a co-op horror game by Zeekerss, [available on Steam](https://store.steampowered.com/app/1966720/Lethal_Company/).
+Lethal Company to kooperacyjny horror stworzony przez Zeekerss, [dostępny na Steam](https://store.steampowered.com/app/1966720/Lethal_Company/).
 
 This wiki serves as a source of documentation and tutorials for various unofficial mods created to enhance your experience.
 
