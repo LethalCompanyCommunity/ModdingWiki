@@ -1,45 +1,45 @@
 ---
 prev: false
 next: false
-description: 有关您如何开始将致命公司模组维基翻译成其他语言的一些信息
+description: 有关如何开始将致命公司模组 Wiki 翻译成其他语言的信息。
 ---
 
-# 翻译维基
+# 翻译 Wiki
 
-为了让更多人能够为翻译做出贡献，本维基的翻译工作将使用Crowdin（https\://crwd.in/lethal-company-modding-wiki）进行
+为了使模组尽可能广泛地访问，该 Wiki 通过 Crowdin 进行翻译：https\://crwd.in/lethal-company-modding-wiki
 
 :::danger
-**请不要提交机翻的内容**，仅使用例如ChatGPT，谷歌翻译，或者其他类似的翻译软件的翻译将不会被使用。
+**请不要提交自动化译文。** 仅使用 ChatGPT、Google 翻译或类似机器翻译的译文将被拒绝。
 :::
 
-## 建议
+## 提示
 
 :::tip
-**我们不推荐使用Crodwin网站的翻译全部（translate all）功能**，你可以直接点击你想要翻译的文件进行翻译。 以这种方式你能够获得更多的上下文信息。
+**我们不建议使用 Crowdin 的“翻译全部”功能**，只需点击要翻译的文件并对每个文件执行该操作即可。 你可以通过这种方式获得更多语境信息。
 :::
 
-Crowdin编辑器将会在你第一次打开的时候显示一些建议，请阅读它们！
+首次启动编辑器时，你会看到 Crowdin 自己的提示，请阅读它们！
 
-If the site/program does not have native translation support, please _do not translate the names of English buttons/menus_. The following programs/sites are not currently translated:
+如果网站/程序没有本地翻译支持，请_不要翻译英文按钮/菜单的名称_。 以下程序/网站目前尚未翻译：
 
 - r2modman
 - Thunderstore
 
-If you're not sure if a site/program has native translation, try it yourself or [start a discussion](#questions-and-new-languages)
+如果你不确定网站/程序是否有本地翻译，请自行尝试或[开始讨论](#questions-and-new-language)
 
 ### 链接与参数
 
-你所看见的任何高亮（或者那些看起来很奇怪的文本）一般都是链接或者参数。
+你看到的任何突出显示的内容（或任何其他看起来奇怪的文本）通常都是链接或参数。
 
-Links are usually `<0>`, `<1>`, etc, and there's an opening and closing link. You **must** include anything that's highlighted in your translation. Example:
+链接通常是`<0>`、`<1>`等，并且有一个打开和关闭链接。 你**必须**在翻译中包含任何突出显示的内容。 示例：
 
-![Example of proper translation, with links and formatting the same as the source material](/images/translating-the-wiki/dutchformattingexample.png)
+![正确翻译的示例，链接和格式与源素材相同](/images/translating-the-wiki/dutchformattingexample.png)
 
-### 之前的翻译内容
+### 先前的翻译
 
-因为本维基部分内容基于[Trombone Wiki](https://trombone.wiki)，有些时候Conwdin会提供一些已有的相似的翻译结果。
+因为本 Wiki 部分基于[先前翻译过的 Wiki](https://trombone.wiki)，所以有时 Crowdin 会向你展示类似的现有翻译。
 
-你可以直接套用这些翻译。如果你对它们不满意，你也可以自己重新写一个。
+随意利用这些来发挥你的优势，或者如果你认为有改进空间，可以从头开始。
 
 ![使用来自Trombone Champ模组维基的翻译结果的示例](/images/translating-the-wiki/suggestions.png)
 
