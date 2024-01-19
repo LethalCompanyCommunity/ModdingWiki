@@ -231,23 +231,26 @@ The Game Object we spawn as an asset requires a network object. We will use this
 
 ![ExampleNetworkHandler Prefab](/images/custom-networking/ExampleNetworkHandlerPrefab.png)
 
-We bundle this prefab up, embed the prefab as a resource in our ExampleMod project, and then import it using:
+We bundle this prefab up, and then import it using:
 
 ```cs
-MainAssetBundle = AssetBundle.LoadFromStream(Assembly.GetExecutingAssembly().GetManifestResourceStream("ExampleMod.ExampleModAssets"))
+// Info is an instance member field of your `BaseUnityPlugin` class.
+var dllFolderPath = System.IO.Path.GetDirectoryName(Info.Location);
+var assetBundleFilePath = System.IO.Path.Combine(dllFolderPath, "ExampleModAssets");
+MainAssetBundle = AssetBundle.LoadFromFile(assetBundleFilePath);
 ```
 
-We then can begin working on the patch that spawns the NetworkHandler.
+The AssetBundle file has to be added to the plugins folder next to (in the same folder as) the mod's .dll file.
 
-One other method of importing the asset is with:
+We recommend using this method rather than embedding your resources directly in your dll file, for several reasons:
 
-```cs
-MainAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "ExampleModAssets"));
-```
+- Memory used for assets would be duplicated: If your assets are 1GB in size and embedded in the DLL, 1GB is allocated to load your DLL into the process, then another 1GB is used by `Unity` to load the bundle via `AssetBundle.LoadFromMemory`.
 
-The AssetBundle file has to be added to the Plugins folder with the mod's .dll file in this case. It won't work if it's nonexistant or in the Bundles folder of BepInEx.
+- Developing your plugin is easier: you don't have to trigger a recompilation of your DLL every time you modify an asset.
 
-?> While this method works, it's not recommended due to potential issues with the ExampleModAssets file not existing at that location, either from the mod not being installed correctly, or someone accidentally deleting the file.
+- The installation process is managed by a mod manager: as long as you place the asset bundle file correctly next to your dll in the .zip file you upload to thunderstore, the asset will be in the right place and the above code will work.
+
+With this done, we can now begin working on the patch that spawns the NetworkHandler.
 
 ### Loading the Asset
 
