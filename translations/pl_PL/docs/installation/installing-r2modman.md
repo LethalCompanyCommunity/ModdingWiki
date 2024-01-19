@@ -42,32 +42,32 @@ Jeśli nie widzisz, **użyj wyszukiwarki albo zjedź na dół** żeby znaleźć 
 
 ![Select Lethal Company](/images/r2modman-install/selectlc.png)
 
-3. It will ask you to choose which profile to use. For this guide's purposes, we will stick with the Default profile. Click **"Select profile"**.
+3. Zapyta cie którego profilu użyć. Na potrzeby tego przewodnika zostaniemy przy profilu Default. Kliknij **Select profile**.
 
 ![Select Default Profile](/images/r2modman-install/profileselect.png)
 
-4. This will lead us to this screen.
+4. Poprowadzi nas to do tego ekranu.
 
 ![First Time Opening Installed](/images/r2modman-install/firsttimeinstall.png)
 
-5. Click **"Online"** on the sidebar. This will bring up a list of all available to download mods on [Thunderstore](https://thunderstore.io/c/lethal-company/).
+5. Kliknij **"Online"** na pasku bocznym. To pokaże listę wszystkich modów dostępnych do pobrania na [Thunderstore](https://thunderstore.io/c/lethal-company/).
 
 ![Clicking Online](/images/r2modman-install/selectonline.png)
 
-6. From here, you may choose which mods you would like to download and install. Click on a mod you'd like, and then click on Download.
+6. Stąd możesz wybrać, ktore mody chciałbyś pobrać i zainstalować. Kliknij mod, który chcesz, a następnie Download.
 
 :::tip
-If you want to hide modpacks, click `Filter Categories` in the top right, then select the `Mods` category.
+Jeśli chcesz ukryć paczki modów, kliknij `Filter Categories` w prawym górnym rogu, i zaznacz kategorię `Mods`.
 :::
 
 ![Downloading a mod](/images/r2modman-install/download.png)
 
-7. It will ask you which version to use. Download the latest version, which is already selected for you by default. Click **"Download with dependencies"** or **"Download"**.
+7. Zapyta cię której wersji użyć. Pobierz najnowszą wersję, która jest zaznaczona domyślnie. Kliknij **"Download with dependencies"** lub **"Download"**.
 
-8. Once you are done installing your mods, you may click on "Start modded" on the sidebar. This will launch the game with your mods.
+8. Po zakończeniu instalacji modów możesz kliknąć "Start modded" na pasku bocznym. Uruchomi się wtedy gra z twoimi modami.
 
 ![Start Lethal Company Modded](/images/r2modman-install/startmodded.png)
 
-That's it! You have just successfully modded Lethal Company!
+Gotowe! Właśnie udało ci się zmodować Lethal Company!
 
-If you'd like to sync your mods with friends, navigate to the [sharing r2modman profiles](syncing-mods) page.
+Jeśli chcesz zsynchronizować mody ze znajomymi przejdź do [udostępniania profili w r2modman](syncing-mods).
