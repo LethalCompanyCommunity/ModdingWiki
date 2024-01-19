@@ -1,24 +1,24 @@
 ---
 layout: home
 titleTemplate: false
-description: The Lethal Company Modding Wiki. Learn how to install, manage, and create mods for Lethal Company!
+description: 致命公司模组 Wiki。 了解如何安装、管理和创作致命公司模组！
 hero:
-  name: Lethal Company Modding Wiki
-  tagline: Welcome to the Lethal Company modding guide! Learn how to install, manage, and create mods for Lethal Company!
+  name: 致命公司模组 Wiki
+  tagline: 欢迎来到致命公司模组指南！ 了解如何安装、管理和创作致命公司模组！
   actions:
     - theme: brand
-      text: Beginner's Guide
+      text: 新手指南
       link: /overview
     - theme: alt
-      text: Edit on GitHub
+      text: 在 GitHub 上编辑
       link: https://github.com/LethalCompany/ModdingWiki
 ---
 
 <script setup lang="ts">
-  import Home from './.vitepress/components/Home.vue'
-  import HomeGroup from './.vitepress/components/HomeGroup.vue'
-  import HomeItem from './.vitepress/components/HomeItem.vue'
-  import HomeLinks from './.vitepress/components/HomeLinks.vue'
+  导入 Home 来自 './.vitepress/components/Home.vue'
+  导入 HomeGroup 来自 './.vitepress/components/HomeGroup.vue'
+  导入 HomeItem 来自 './.vitepress/components/HomeItem.vue'
+  导入 HomeLinks 来自 './.vitepress/components/HomeLinks.vue'
 </script>
 
 <Home>
@@ -43,8 +43,8 @@ hero:
 
 <HomeLinks>
 
-- [Join the Discord server!](https://discord.gg/nYcQFEpXfU)
-- [Contribute on GitHub](https://github.com/LethalCompany/ModdingWiki)
-- [Translate the Wiki](./contribute/translating-the-wiki.html) - Localize the wiki to your language!
+- [加入 Discord 服务器！](https://discord.gg/nYcQFEpXfU)
+- [在 GitHub 上贡献](https://github.com/LethalCompany/ModdingWiki)
+- [翻译 Wiki](./contribute/translating-the-wiki.html) - 将 Wiki 本地化为你的语言！
 
 </HomeLinks>
