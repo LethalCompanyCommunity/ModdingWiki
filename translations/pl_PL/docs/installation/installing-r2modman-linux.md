@@ -1,96 +1,96 @@
 ---
 prev: false
 next: false
-description: Learn how to use r2modman to install Lethal Company mods from Thunderstore on Linux.
+description: Dowiedz się, jak używać r2modman do instalowania modów Lethal Company z Thunderstore na Linuksie.
 ---
 
-# Using r2modman on Linux and Steam Deck
+# Używanie r2modman na Linuksie i Steam Deck
 
 ***
 
-This guide will run you through installing and using [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) to install and play with mods that are available through [Thunderstore](https://thunderstore.io/c/lethal-company/). Using a mod manager like r2modman allows you to update and play with the latest versions of the mods with ease as the manager does all of that for you!
+Ten przewodnik przeprowadzi cię przez instalację i używanie [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) do instalowania i grania z modami dostępnymi przez [Thunderstore](https://thunderstore.io/c/lethal-company/). Korzystanie z menedżera modów, takiego jak r2modman, pozwala z łatwością aktualizować i grać z najnowszymi wersjami modów, ponieważ menedżer robi to wszystko za ciebie!
 
-## Steam Deck Specific Preparation
+## Przygotowanie specyficzne dla Steam Deck
 
-On Steam Deck you will need to do the following before you can follow this guide:
+Na Steam Deck musisz wykonać następujące czynności, zanim będziesz mógł postępować zgodnie z tym przewodnikiem:
 
-- Make sure the game is installed into the internal storage - mods will not load if the game is installed to the MicroSD card.
-- Enter **Desktop Mode** by holding down the power button and selecting Desktop Mode from the menu.
+- Upewnij się, że gra jest zainstalowana w pamięci wewnętrznej - mody nie będą się ładować, jeśli gra jest zainstalowana na karcie MicroSD.
+- Wejdź w **Tryb pulpitu**, przytrzymując przycisk zasilania i wybierając Tryb pulpitu z menu.
 
-Once you're at the desktop, you're ready to continue!
+Gdy znajdziesz się na pulpicie, możesz kontynuować!
 
 :::danger
-r2modman does **not** work in Game Mode. Please make sure to read the [**Using Mods in Steam Deck's Game Mode**](installing-r2modman-linux?id=using-mods-in-steam-decks-game-mode) section for a workaround once you've finished with the **Installing r2modman** section.
+r2modman **nie** działa w trybie gry. Upewnij się, że przeczytałeś sekcję [**Używanie modów w trybie gry Steam Deck**](installing-r2modman-linux?id=using-mods-in-steam-decks-game-mode), żeby obejść, kiedy skończysz sekcję **Instalacja r2modman**.
 :::
 
-## Installing r2modman
+## Instalowanie r2modman
 
-On Linux, r2modman is available in different package formats depending on your distro:
+Na Linuksie r2modman jest dostępny w różnych formatach pakietów w zależności od dystrybucji:
 
-- `deb` for Debian and Ubuntu-based distros
-- `pacman` for Arch-based disros
-- `rpm` for distros using the RPM Package Manager (RHEL, CentOS, Fedora, openSUSE, etc.)
-- `AppImage`, a single executable file that can run on most distros - **useful for Steam Deck**
+- `deb` dla dystrybucji bazowanych na Debianie i Ubuntu
+- `pacman` dla dystrybucji bazowanych na Archu
+- `rpm` dla dystrybucji używających Menedżera pakietów RPM (RHEL, CentOS, Fedora, openSUSE, itp.)
+- `AppImage`, pojedynczy plik wykonywalny, który można uruchomić na większości dystrybucji - **przydatne dla Steam Deck**
 
-Visit the [**r2modman GitHub releases page**](https://github.com/ebkr/r2modmanPlus/releases/latest/) and download the appropriate package file for your distro and install it according to your package manager's documentation.
+Odwiedź stronę [**z wydaniami r2modman na GitHubie**](https://github.com/ebkr/r2modmanPlus/releases/latest/) i pobierz plik odpowiedni dla twojej dystrybucji i zainstaluj go zgodnie z dokumentacją menedżera pakietów.
 
-**For Steam Deck users,** download the `.AppImage` file and keep it in a safe location such as your Desktop or your Documents folder. You will also need to mark the file as executable. To do this, right-click the `.AppImage` file and select `Properties`. Switch to the **Permissions** tab and check the box marked `Is Executable` and click OK.
+**Dla użytkowników Steam Deck:** Pobierz plik `.AppImage` i trzymaj go w bezpiecznym miejscu takim jak twój folder Pulpit lub Dokumenty. Konieczne będzie również oznaczenie pliku jako wykonywalnego. Aby to zrobić, kliknij prawym przyciskiem myszy plik `.AppImage` i wybierz `Właściwości` lub `Properties`. Przejdź do zakładki **Uprawnienia** lub **Permissions** i zaznacz `Is Executable` i kliknij OK.
 
 ![Steam Deck Permissions Window](/images/r2modman-linux/appimageproperties.png)
 
-After marking the file as executable, you can now double-click the `AppImage` to open r2modman.
+Po oznaczeniu pliku jako wykonywalny możesz teraz kliknąć dwukrotnie `AppImage`, aby otworzyć r2modman.
 
-## Installing Mods on r2modman
+## Instalowanie modów na r2modman
 
-Once you have succesfully installed r2modman, you can finally install mods.
+Po zainstalowaniu r2modman możesz wreszcie instalować mody.
 
-1. Launch **r2modman**. You will be greeted with the following screen.
+1. Uruchom **r2modman**. Zostaniesz przywitany tym widokiem.
 
 ![r2modman Game Selection Screen](/images/r2modman-install/gameselection.png)
 
-2. Select **"Lethal Company"**, and click **"Select Game"**.
+2. Wybierz **"Lethal Company"** i kliknij **"Select Game"**.
 
 :::tip
-If you do not see it, **use the search bar or scroll down** to find "Lethal Company".
+Jeśli nie widzisz, **użyj wyszukiwarki albo zjedź na dół** żeby znaleźć "Lethal Company".
 :::
 
 ![Select Lethal Company](/images/r2modman-install/selectlc.png)
 
-3. It will ask you to choose which profile to use. For this guide's purposes, we will stick with the Default profile. Click **"Select profile"**.
+3. Zapyta cie którego profilu użyć. Na potrzeby tego przewodnika zostaniemy przy profilu Default. Kliknij **Select profile**.
 
 ![Select Default Profile](/images/r2modman-install/profileselect.png)
 
-4. This will lead us to this screen.
+4. Poprowadzi nas to do tego ekranu.
 
 ![First Time Opening Installed](/images/r2modman-install/firsttimeinstall.png)
 
-5. Click **"Online"** on the sidebar. This will bring up a list of all available to download mods on [Thunderstore](https://thunderstore.io/c/lethal-company/).
+5. Kliknij **"Online"** na pasku bocznym. To pokaże listę wszystkich modów dostępnych do pobrania na [Thunderstore](https://thunderstore.io/c/lethal-company/).
 
 ![Clicking Online](/images/r2modman-install/selectonline.png)
 
-6. From here, you may choose which mods you would like to download and install. Click on a mod you'd like, and then click on Download.
+6. Stąd możesz wybrać, ktore mody chciałbyś pobrać i zainstalować. Kliknij mod, który chcesz, a następnie Download.
 
 ![Downloading a mod](/images/r2modman-install/download.png)
 
-7. It will ask you which version to use. Download the latest version, which is already selected for you by default. Click **"Download with dependencies"** or **"Download"**.
+7. Zapyta cię której wersji użyć. Pobierz najnowszą wersję, która jest zaznaczona domyślnie. Kliknij **"Download with dependencies"** lub **"Download"**.
 
 ![Downloading with dependencies](/images/r2modman-install/downloadlatest.png)
 
-8. Once you are done installing your mods, you may click on "Start modded" on the sidebar. This will launch the game with your mods.
+8. Po zakończeniu instalacji modów możesz kliknąć "Start modded" na pasku bocznym. Uruchomi się wtedy gra z twoimi modami.
 
 ![Start Lethal Company Modded](/images/r2modman-install/startmodded.png)
 
-That's it! You have just successfully modded Lethal Company!
+Gotowe! Właśnie udało ci się zmodować Lethal Company!
 
-## Using Mods in Steam Deck's Game Mode
+## Używanie modów w Trybie Gry Steam Deck
 
-**r2modman will not work in Steam Deck's Game mode, and therefore mods will not load by default.** To get around this, right-click the game in Steam and click `Properties`. From there, paste the following into **Launch Options**:
+**r2modman nie będzie działał w trybie gry Steam Deck, a zatem mody nie będą ładowane domyślnie.** Aby to obejść, kliknij prawym przyciskiem myszy grę w Steam i kliknij `Właściwości`. Następnie wklej poniższe do **Opcji uruchamiania**:
 
 ```
 WINEDLLOVERRIDES="winhttp=n,b" %command% --doorstop-enable true --doorstop-target "/home/deck/.config/r2modmanPlus-local/LethalCompany/profiles/Default/BepInEx/core/BepInEx.Preloader.dll" --r2profile "Default"
 ```
 
 ![Steam Properties](/images/r2modman-linux/steamproperties.png)
-This will instruct the game to launch with the Default profile we configured in r2modman earlier, so all your mods installed there will be available.
+Poinstruuje to grę, aby uruchomiła się z domyślnym profilem, który skonfigurowaliśmy wcześniej w r2modman, więc wszystkie zainstalowane tam mody będą dostępne.
 
-If you'd like to sync your mods with friends, navigate to the [syncing r2modman profiles](syncing-mods) page.
+Jeśli chcesz zsynchronizować mody ze znajomymi przejdź do [udostępniania profili w r2modman](syncing-mods).
