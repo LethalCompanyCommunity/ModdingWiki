@@ -1,25 +1,25 @@
 ---
 prev: true
 next: false
-description: Learn how to use r2modman to change the configuration of Lethal Company mods.
+description: Aprenda a usar o r2modman para mudar configurações dos mods de Lethal Company.
 ---
 
-# Configuring mods
+# Configurando mods
 
-Some mods have custom config files that allow you to change how the mod behaves.
+Alguns mods tem arquivos de customização personalizados que permitem mudar o comportamento do mod.
 
 :::warning
-Config files  **will not be generated** until the mod is loaded ingame **at least once**. If you just installed a new mod and need to configure it, start the game modded once!
+Arquivos de configuração **não serão gerados** até que o mod seja carregado no jogo **pela primeira vez**. Se você acabou de instalar um mod e precisa configurá-lo, inicie o jogo com o mod uma vez!
 :::
 
-## Changing Mod Configs with r2modman
+## Mudando as Configurações de Mods com r2modman
 
-In the **Config editor** in your r2modman profile see all of your mods config files. Select the one you wish and click "Edit Config".
+No **Config Editor** do seu profile no r2modman será possível ver todos os arquivos de configurações de mods. Selecione o que deseja e clique em "Edit Config".
 
-![Edit configs](/images/r2modman-install/editconfigs.png)
+![Edite as configurações](/images/r2modman-install/editconfigs.png)
 
-Once you have changed configs in your mod of choice be sure to press the "Save" button.
+Dado que tenha mudado as configurações no mod escolhido, lembre de apertar o botão "Save".
 
-![Save configs](/images/r2modman-install/saveconfigs.png)
+![Salve as configurações](/images/r2modman-install/saveconfigs.png)
 
-That's it! Now your mod should have the config changes next time you start the game.
+Pronto! Agora seu mod deve ter as mudanças de configuração na próxima vez que abrir o jogo.
