@@ -1,43 +1,43 @@
 ---
 prev: true
 next: true
-description: Learn how to use r2modman to install Lethal Company mods from Thunderstore.
+description: Dowiedz się, jak używać r2modman do instalowania modów do Lethal Company z Thunderstore.
 ---
 
-# Using r2modman
+# Używając r2modman
 
 ***
 
 :::warning
-For Linux and Steam Deck users, please follow the [Linux instructions](installing-r2modman-linux).
+Jeśli jesteś użytkownikiem Linuxa lub Steam Decka przejdź do [instrukcji dla Linuxa](installing-r2modman-linux).
 :::
 
-This guide will run you through installing and using [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) to install and play with mods that are available through [Thunderstore](https://thunderstore.io/c/lethal-company/). Using a mod manager like r2modman allows you to update and play with the latest versions of the mods with ease as the manager does all of that for you!
+Ten przewodnik przeprowadzi cię przez instalację i używanie [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) do instalowania i grania z modami dostępnymi przez [Thunderstore](https://thunderstore.io/c/lethal-company/). Korzystanie z menedżera modów, takiego jak r2modman, pozwala z łatwością aktualizować i grać z najnowszymi wersjami modów, ponieważ menedżer robi to wszystko za ciebie!
 
-## Installing r2modman
+## Instalowanie r2modman
 
 <!-- f21c391c-0bc5-431d-a233-95323b95e01b -->
 
-First things first, download [**r2modman from its GitHub page**](https://github.com/ebkr/r2modmanPlus/releases/latest/).
+Po pierwsze, pobierz [**r2modman ze strony na GitHubie**](https://github.com/ebkr/r2modmanPlus/releases/latest/).
 
-For **Windows**, you would want to get `r2modman-Setup-VERSION.exe` or `r2modman-VERSION.exe`. The former installs the mod manager to your system, while the latter simply runs r2modman without any sort of installation. Simply run the installer or the program in order to open r2modman.
+Dla **Windowsa** pobierz `r2modman-Setup-WERSJA.exe` lub `r2modman-WERSJA.exe`. Pierwsza z nich instaluje menedżera modów w systemie, podczas gdy druga po prostu uruchamia r2modman bez jakiejkolwiek instalacji. Wystarczy uruchomić instalator lub program, aby otworzyć r2modman.
 
-In order to download, simply click the links as shown below and run the program you just downloaded.
+Aby pobrać program, wystarczy kliknąć poniższe linki i uruchomić pobrany program.
 
 ![r2modman GitHub Download (v3.1.39)](/images/r2modman-install/r2modmandownload.png)
 
-## Installing Mods with r2modman
+## Instalowanie modów używając r2modman
 
-Once you have succesfully installed r2modman, you can finally install mods.
+Po zainstalowaniu r2modman możesz wreszcie instalować mody.
 
-1. Launch **r2modman**. You will be greeted with the following screen.
+1. Uruchom **r2modman**. Zostaniesz przywitany tym widokiem.
 
 ![r2modman Game Selection Screen](/images/r2modman-install/gameselection.png)
 
-2. Select **"Lethal Company"**, and click **"Select Game"**.
+2. Wybierz **"Lethal Company"** i kliknij **"Select Game"**.
 
 :::info
-If you do not see it, **use the search bar or scroll down** to find "Lethal Company".
+Jeśli nie widzisz, **użyj wyszukiwarki albo zjedź na dół** żeby znaleźć "Lethal Company".
 :::
 
 ![Select Lethal Company](/images/r2modman-install/selectlc.png)
