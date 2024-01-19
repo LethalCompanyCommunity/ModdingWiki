@@ -41,35 +41,35 @@ description: 有关如何开始将致命公司模组 Wiki 翻译成其他语言�
 
 随意利用这些来发挥你的优势，或者如果你认为有改进空间，可以从头开始。
 
-![使用来自Trombone Champ模组维基的翻译结果的示例](/images/translating-the-wiki/suggestions.png)
+![来自 Trombone Champ 模组 Wiki 的已提交译文示例](/images/translated-the-wiki/suggestions.png)
 
 ## 页面翻译顺序
 
-以下是我们推荐的翻译优先级：
+我们建议优先考虑的页面如下：
 
-- 主页面（introduction.md）
-- 侧栏（sidebar.md）
-- Windows模组使用教程（installing-r2modman.md）
-- Linux模组使用教程（installing-r2modman-linux.md）
+- 主登陆页面（introduction.md）
+- 侧边栏（sidebar.md）
+- Windows 模组教程（installing-r2modman.md）
+- Linux 模组教程（installing-r2modman-linux.md）
 - 常见问题（faq.md）
-- 关于维基（about.md）
-- 其他（模组开发教程，本翻译页面，以及其他）
+- 有关 Wiki 的信息（about.md）
+- 其他一切（模组开发教程、此翻译页面等）
 
-## 问题与需要新的语言
+## 问题与新语言
 
-如果你对于翻译有任何的问题或者如果你想要在Crowdin上面添加新的语言，请：
+如果你对翻译有任何疑问或希望在 Crowdin 中添加新语言，请随时：
 
-- [在Crowdin创建讨论](https://crowdin.com/project/lethal-company-modding-wiki/discussions)
-- [在GitHub提交问题](https://github.com/LethalCompany/ModdingWiki/issues)
+- [在 Crowdin 上创建讨论](https://crowdin.com/project/lethal-company-modding-wiki/discussions)
+- [创建 GitHub 问题](https://github.com/LethalCompany/ModdingWiki/issues)
 
-### 启用翻译
+### 启用译文
 
-一旦翻译完成，就需要将其添加到维基中，以便人们使用。
+翻译完成后，就需要将其实际添加到 Wiki 中，以便人们可以使用。
 
-如果你的翻译工作已经基本完成，请通过上面的方法来联系维基维护员来启用你的翻译。
+如果您正在处理的翻译基本完成，请通过上述方法联系 Wiki 维护者以将其添加。
 
-不是每一页都需要完成，但是请至少翻译完：
+并非每一页都需要完成，但理想情况下你至少应该翻译：
 
-- 主页面（introduction.md）
-- 侧栏（sidebar.md）
-- 有关_安装_模组的任何页面
+- introduction.md
+- sidebar.md
+- 与_安装_模组相关的任何页面
