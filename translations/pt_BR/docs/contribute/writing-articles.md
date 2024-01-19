@@ -1,28 +1,28 @@
 ---
 prev: false
 next: false
-description: How to contribute new articles to the wiki.
+description: Como contribuir com artigos para a wiki.
 ---
 
-# Contributing Articles
+# Contribuindo com Artigos
 
-Thank you for deciding to contribute articles to this wiki! The only way this wiki has come this far, and for it to continue to grow is through contributions.
+Obrigado por decidir contribuir com artigos para esta wiki! A graças a contribuições que esta wiki chegou tão longe e continua crescendo.
 
-This guide will help you write, format, and implement your article into the wiki.
+Este guia lhe ajudará a escrever, formatar e implementar seu artigo na wiki.
 
-## Forking the GitHub Repository {#forking-the-repo}
+## Fazendo o Fork de um Repositório do GitHub {#forking-the-repo}
 
-In order to send a Pull Request (PR) to the wiki to request your article to be added, you have to fork the [ModdingWiki repository](https://github.com/LethalCompany/ModdingWiki) (repo).
+Para fazer um Pull Request (PR) para a wiki, pedindo para que seu artigo seja adicionado, você deve fazer o fork do [repositório ModdingWiki](https://github.com/LethalCompany/ModdingWiki)(repo).
 
-To fork the wiki, it's fairly simple. You'll click the `Fork` button on the webpage, then click `Create fork`.
+Para fazer um fork da wiki é bem simples. Clique no botão `Fork` na página, e então em `Create Fork`.
 
-![GitHub Fork Repo Button](/images/writing-articles/forkgithubrepobutton.png)
+![Botão Fork Repo no GitHub](/images/writing-articles/forkgithubrepobutton.png)
 
-![GitHub Create Fork Dialog](/images/writing-articles/forkgithubrepopopup.png)
+![Dialog Fork Repo no GitHub](/images/writing-articles/forkgithubrepopopup.png)
 
-Now we've created the fork! From there you can make changes to a branch on the fork and create the PR when you're finished.
+Criamos um fork! Você pode fazer alterações em um ramo (branch) no fork e criar um PR quando terminar.
 
-## Creating the File
+## Criando o Arquivo
 
 Creating the article file is pretty simple. Add the file to the folder/subsection you are adding to, such as `/docs/dev/api/` for APIs, and create a markdown file (.md).
 
