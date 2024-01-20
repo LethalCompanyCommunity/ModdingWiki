@@ -18,21 +18,21 @@ description: 了解如何使用 r2modman 从 Thunderstore 安装致命公司模�
 
 <!-- f21c391c-0bc5-431d-a233-95323b95e01b -->
 
-首先，[**从 GitHub 中下载 r2modman**](https://github.com/ebkr/r2modmanPlus/releases/latest/)。
+首先，从其 GitHub 页面下载 [**r2modman**](https://github.com/ebkr/r2modmanPlus/releases/latest/)。
 
-对于 **Windows** 用户，您应该下载 `r2modman-Setup-VERSION.exe` 或 `r2modman-VERSION.exe`。 前者会在系统中安装 r2modman，而后者无需进行任何安装即可运行 r2modman。 Simply run the installer or the program in order to open r2modman.
+对于 **Windows**，你需要 `r2modman-Setup-VERSION.exe` 或 `r2modman-VERSION.exe`。 前者将模组管理器安装到你的系统中，而后者只运行 r2modman，无需任何安装。 只需运行安装包或程序即可打开 r2modman。
 
-In order to download, simply click the links as shown below and run the program you just downloaded.
+要下载，只需单击如下所示的链接并运行你刚刚下载的程序。
 
-![r2modman GitHub Download (v3.1.39)](/images/r2modman-install/r2modmandownload.png)
+![r2modman GitHub 下载 (v3.1.39)](/images/r2modman-install/r2modmandownload.png)
 
-## Installing Mods with r2modman
+## 使用 r2modman 安装模组
 
-Once you have succesfully installed r2modman, you can finally install mods.
+成功安装 r2modman 后，你终于可以安装模组了。
 
-1. Launch **r2modman**. You will be greeted with the following screen.
+1. 启动 **r2modman**。 你将看到以下屏幕。
 
-![r2modman Game Selection Screen](/images/r2modman-install/gameselection.png)
+![r2modman 游戏选择屏幕](/images/r2modman-install/gameselection.png)
 
 2. Select **"Lethal Company"**, and click **"Select Game"**.
 
