@@ -1,20 +1,20 @@
 ---
 prev: true
 next: false
-description: Learn how to use r2modman to change the configuration of Lethal Company mods.
+description: 了解如何使用 r2modman 更改致命公司模组的配置。
 ---
 
-# Configuring mods
+# 配置模组
 
-Some mods have custom config files that allow you to change how the mod behaves.
+某些模组具有自定义配置文件，允许您更改模组的行为方式。
 
 :::warning
-Config files  **will not be generated** until the mod is loaded ingame **at least once**. If you just installed a new mod and need to configure it, start the game modded once!
+在游戏中加载模组**至少一次**之前，**不会生成**配置文件。 如果你刚刚安装了新模组并需要对其进行配置，请启动模组游戏一次！
 :::
 
-## Changing Mod Configs with r2modman
+## 使用 r2modman 更改模组配置
 
-In the **Config editor** in your r2modman profile see all of your mods config files. Select the one you wish and click "Edit Config".
+在 r2modman 配置文件的**配置编辑器**中，查看所有模组配置文件。 Select the one you wish and click "Edit Config".
 
 ![Edit configs](/images/r2modman-install/editconfigs.png)
 
