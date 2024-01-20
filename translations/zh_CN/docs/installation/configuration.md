@@ -14,12 +14,12 @@ description: 了解如何使用 r2modman 更改致命公司模组的配置。
 
 ## 使用 r2modman 更改模组配置
 
-在 r2modman 配置文件的**配置编辑器**中，查看所有模组配置文件。 Select the one you wish and click "Edit Config".
+在 r2modman 配置文件的**配置编辑器**中，查看所有模组配置文件。 选择您想要的并单击“Edit Config”。
 
-![Edit configs](/images/r2modman-install/editconfigs.png)
+![编辑配置](/images/r2modman-install/editconfigs.png)
 
-Once you have changed configs in your mod of choice be sure to press the "Save" button.
+更改了所选模组的配置后，请务必按“Save”按钮。
 
-![Save configs](/images/r2modman-install/saveconfigs.png)
+![保存配置](/images/r2modman-install/saveconfigs.png)
 
-That's it! Now your mod should have the config changes next time you start the game.
+大功告成！ 现在，下次启动游戏时，你的模组应该会有变更的配置。
