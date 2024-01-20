@@ -160,7 +160,11 @@ You can't just rename a .mp3 file to a .wav file and expect it to work. Sound fi
 Check for the obvious things, did you name the files correctly? Is it called manifest.json instead of manifest.json.json? Is your folder path for the CustomSounds correct? Is your manifest.json correct?
 
 ### My sound mod isn't working even though the sounds appear on the list!
-Make sure that you have replaced the correct audio file. A lot of people have reported to me that their sound mod "doesn't work", while in reality it works perfectly fine, but it's just not the sound that they expected to replace. A common example is the light switch in the ship, where the actual sound files are called ```FlashlightClickMini``` and ```FlashlightClickMini2```, and NOT ```LightOff``` and ```LightOn```, which are actually responsible for the breaker panel in the dungeon.
+First, make sure that you changed HideManagerGameObject in BepInEx.cfg to True. You can do thing in Thunderstore / r2modman by going into Config Editor > BepInEx.cfg, or just manually changing it in the BepInEx/configs directory.
+
+Second, Make sure that you have replaced the correct audio file. A lot of people have reported to me that their sound mod "doesn't work", while in reality it works perfectly fine, but it's just not the sound that they expected to replace. A common example is the light switch in the ship, where the actual sound files are called ```FlashlightClickMini``` and ```FlashlightClickMini2```, and NOT ```LightOff``` and ```LightOn```, which are actually responsible for the breaker panel in the dungeon.
+
+Other than that, check for anomalies within the sound files themselves. If everything else fails, try converting the audio file again through Audacity, as sometimes .wav files just fail to play due to outdated .wav formats.
 
 ### None of these questions solve my problem! How can I contact you?
 If you have any other questions then feel free to ping me over on the [Lethal Company Discord](https://discord.gg/lethal-company), or just DM me on Discord (nickname: `futuresavior`). I want to clarify that I am not the developer of CustomSounds, that's Clementinise, who you can also contact on the same discord. Please do NOT send me friend requests, just DM me directly, and don't forget to have fun \:)
