@@ -1,4 +1,5 @@
 ---
+prev: true
 next: false
 description: Learn how to prepare your finished Lethal Company mod and upload it to thunderstore.
 ---
