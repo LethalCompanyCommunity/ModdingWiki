@@ -1,22 +1,22 @@
 ---
 prev: true
 next: true
-description: Learn how to use r2modman profile codes to sync your mods with friends.
+description: 了解如何使用 r2modman 配置文件代码与好友同步您的模组。
 ---
 
-# Sharing r2modman profiles
+# 共享 r2modman 配置文件
 
-If you're playing the game with friends, you'll probably want to make sure you have the same mods installed.
+如果你和好友一起玩游戏，你可能要确保你安装了相同的模组。
 
-Thankfully, r2modman makes sharing your mod list easy with profile codes!
+值得庆幸的是，r2modman 可以通过配置文件代码轻松共享你的模组列表！
 
-## r2modman profile codes
+## r2modman 配置文件代码
 
-r2modman has a built-in feature named `Profile Codes` that give you an easy-to-share code to share your installed mods.
+r2modman 有一个名为“`Profile Codes`”的内置功能，可为您提供易于共享的代码来共享已安装的模组。
 
-Profile codes export:
+配置文件代码会导出：
 
-- Your installed mods, including mod versions and which mods are disabled.
+- 你安装的模组，包括模组版本以及哪些模组被禁用。
 - Your config files and any config values you've changed.
 
 Profile codes do **NOT** export:
