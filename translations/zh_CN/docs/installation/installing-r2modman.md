@@ -34,40 +34,40 @@ description: 了解如何使用 r2modman 从 Thunderstore 安装致命公司模�
 
 ![r2modman 游戏选择屏幕](/images/r2modman-install/gameselection.png)
 
-2. Select **"Lethal Company"**, and click **"Select Game"**.
+2. 选择 **“Lethal Company”**，然后点击 **“Select Game”**。
 
 :::info
-If you do not see it, **use the search bar or scroll down** to find "Lethal Company".
+如果你没有看到它，**使用搜索栏或向下滚动**找到“Lethal Company”。
 :::
 
-![Select Lethal Company](/images/r2modman-install/selectlc.png)
+![选择 Lethal Company](/images/r2modman-install/selectlc.png)
 
-3. It will ask you to choose which profile to use. For this guide's purposes, we will stick with the Default profile. Click **"Select profile"**.
+3. 它会要求你选择要使用的配置文件。 出于本指南的目的，我们将坚持使用默认配置文件。 点击 **“Select profile”**。
 
-![Select Default Profile](/images/r2modman-install/profileselect.png)
+![选择默认配置文件](/images/r2modman-install/profileselect.png)
 
-4. This will lead us to this screen.
+4. 这将引导我们进入此屏幕。
 
-![First Time Opening Installed](/images/r2modman-install/firsttimeinstall.png)
+![首次打开安装](/images/r2modman-install/firsttimeinstall.png)
 
-5. Click **"Online"** on the sidebar. This will bring up a list of all available to download mods on [Thunderstore](https://thunderstore.io/c/lethal-company/).
+5. 点击侧边栏上的 **“Online”**。 这将显示 [Thunderstore](https://thunderstore.io/c/lethal-company/) 上所有可下载模组的列表。
 
-![Clicking Online](/images/r2modman-install/selectonline.png)
+![点击 Online](/images/r2modman-install/selectonline.png)
 
-6. From here, you may choose which mods you would like to download and install. Click on a mod you'd like, and then click on Download.
+6. 从这里，你可以选择要下载和安装的模组。 点击您想要的模组，然后单击“Download”。
 
 :::tip
-If you want to hide modpacks, click `Filter Categories` in the top right, then select the `Mods` category.
+如果你想隐藏模组包，请单击右上角的“`Filter Categories`”，然后选择“`Mods`”类别。
 :::
 
-![Downloading a mod](/images/r2modman-install/download.png)
+![下载模组](/images/r2modman-install/download.png)
 
-7. It will ask you which version to use. Download the latest version, which is already selected for you by default. Click **"Download with dependencies"** or **"Download"**.
+7. 它会询问你要使用哪个版本。 下载最新版本，默认情况下已为你选择该版本。 点击 **“Download with dependencies”** 或 **“Download”**。
 
-8. Once you are done installing your mods, you may click on "Start modded" on the sidebar. This will launch the game with your mods.
+8. 安装好模组后，你可以单击侧边栏上的“Start modded”。 这将启动已安装你的模组的游戏。
 
-![Start Lethal Company Modded](/images/r2modman-install/startmodded.png)
+![启动已安装模组的致命公司](/images/r2modman-install/startmodded.png)
 
-That's it! You have just successfully modded Lethal Company!
+大功告成！ 你刚刚成功为致命公司安装了模组！
 
-If you'd like to sync your mods with friends, navigate to the [sharing r2modman profiles](syncing-mods) page.
+如果你想与朋友同步你的模组，请导航至 [共享 r2modman 配置文件](syncing-mods) 页面。
