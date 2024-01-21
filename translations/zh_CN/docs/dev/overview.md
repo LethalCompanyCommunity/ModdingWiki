@@ -6,7 +6,7 @@ description: 开始对致命公司进行修改，以增强每个人的体验。
 
 # 开发者指南 {#guide}
 
-Welcome to the Developer's Guide! This is an overview of everything included in the guide. For more details, head to the specific sections on the sidebar.
+欢迎来到开发者指南！ 这是指南所包含所有内容的概述。 For more details, head to the specific sections on the sidebar.
 
 :::tip
 If you don't know how to code but want to add a custom Asset - whether that be sounds, scrap, suits, and more - there are APIs for that!
