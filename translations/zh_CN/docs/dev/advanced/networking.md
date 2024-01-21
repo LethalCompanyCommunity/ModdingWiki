@@ -115,7 +115,7 @@ public static ExampleNetworkHandler Instance;
 
 ### ClientRpc
 
-我们已经有了基本的组件！ 从此处开始，我们需要添加 RPC 和度量以避免重复信号。 由于事件信息仅由服务器发送，因此我们不必处理 ServerRpc，只需要设置 ClientRpc。 这是我们的示例模组所使用的：
+我们已经有了基本的组件！ 从此处开始，我们需要添加 RPC 和度量以避免重复信号。 由于事件信息仅由服务器发送，因此我们不必处理 ServerRpc，只需要设置 ClientRpc。 这是我们的示例模组使用的：
 
 ```cs
 public static event Action<String> LevelEvent;
@@ -131,7 +131,7 @@ public void EventClientRpc(string eventName)
 
 ### ServerRpc
 
-Although not necessary in our tutorial mod, a server RPC method is similar and easy to set up as well. By default, however, any client that is not the owner of the game object will not be able to call the method. To avoid this and allow any client to call this method, we can add `(RequireOwnership = false)` to the attribute, resulting in the following method:
+虽然在我们的教程模组中不是必需的，但服务器 RPC 方法是类似的且易于设置。 但是，默认情况下，任何不是游戏对象所有者的客户端都无法调用该方法。 为了避免这种情况并允许任何客户端调用此方法，我们可以将 `(RequireOwnership = false)` 添加到属性中，从而产生以下方法：
 
 ```cs
 [ServerRpc(RequireOwnership = false)]
@@ -143,9 +143,9 @@ public void EventServerRPC(/*parameters here*/)
 
 ### C# 事件 {#csharp-events}
 
-Now, you may ask, what is `public static event Action<String> LevelEvent`? This uses C#'s event/delegate system to create a readable event. While it may look complex at first, it turns out to be quite simple! A script can subscribe to the event - which will be shown later - then, when the event is invoked, any specified method(s) will run.
+现在，你可能会问，什么是 `public static event Action<String> LevelEvent`？ 这使用 C# 的事件/委托系统来创建可读事件。 虽然乍一看可能很复杂，但事实证明非常简单！ 脚本可以订阅该事件（稍后将会显示），然后，当调用该事件时，将运行任何指定的方法。
 
-You may also see `LevelEvent?.Invoke(eventName)` and wonder what the heck this mess of letters and symbols does. It's just a simplified version of the following code:
+你可能还会看到 `LevelEvent?.Invoke(eventName)` 并想知道这些字母和符号到底有啥用。 它只是以下代码的简化版本：
 
 ```cs
 if (LevelEvent != null)
@@ -154,7 +154,7 @@ if (LevelEvent != null)
 }
 ```
 
-All this if statement checks is whether the event is not equal to null and calls the event if so. The event will be null _if there are no subscribers to the event._
+所有这些 if 语句检查事件是否不等于 null，如果不等于 null，则调用该事件。 The event will be null _if there are no subscribers to the event._
 
 ### 防止事件和实例重复 {#preventing-duplication}
 
