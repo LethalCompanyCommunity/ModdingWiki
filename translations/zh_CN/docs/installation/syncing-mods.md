@@ -1,14 +1,14 @@
 ---
 prev: true
 next: true
-description: 了解如何使用 r2modman 配置文件代码与好友同步您的模组。
+description: 了解如何使用 r2modman 配置文件代码与好友同步你的模组。
 ---
 
 # 共享 r2modman 配置文件
 
-如果你和好友一起玩游戏，你可能要确保你安装了相同的模组。
+如果你和好友一起玩游戏，你需要确保你们安装了相同的模组。
 
-值得庆幸的是，r2modman 可以通过配置文件代码轻松共享你的模组列表！
+幸好，r2modman 可以通过配置文件代码轻松共享你的模组列表！
 
 ## r2modman 配置文件代码
 
@@ -17,31 +17,31 @@ r2modman 有一个名为“`Profile Codes`”的内置功能，可为您提供�
 配置文件代码会导出：
 
 - 你安装的模组，包括模组版本以及哪些模组被禁用。
-- Your config files and any config values you've changed.
+- 你的配置文件和你更改的任何配置值。
 
-Profile codes do **NOT** export:
+配置文件代码**不会**导出：
 
-- Any user-added files not on thunderstore, such as a custom PNG you added manually from your files.
-- Any changes made to the profile **after you generate the code** - you'll have to send a new code if you make any changes.
+- 任何用户不在 Thunderstore 上添加的文件，例如你从文件中手动添加的自定义 PNG。
+- **生成代码后**对配置文件所做的任何更改 - 如果你进行了任何更改，则必须发送新代码。
 
-### Exporting a Profile
+### 导出配置文件
 
-1. Select **"Export profile as code"** in the **profile tab** in settings of your profile.
+1. 在个人资料设置的 **profile 选项卡** 中选择 **“Export profile as code”**。
 
-![Exporting Profile](/images/r2modman-install/exportprofilecode.png)
+![导出配置文件](/images/r2modman-install/exportprofilecode.png)
 
-This will copy a code to your clipboard automatically - you can send this to your friends!
+这会自动将代码复制到你的剪贴板 - 你可以将其发送给你的好友！
 
-### Importing a Profile
+### 导入配置文件
 
-1. Click **"Import/Update"** in the **Profile selection** area after selecting Lethal Company in r2modman.
+1. 在 r2modman 中选择 Lethal Company 后，单击 **Profile selection** 区域中的 **“Import/Update”**。
 
-![Importing Profile](/images/r2modman-install/importprofile.png)
+![导入配置文件](/images/r2modman-install/importprofile.png)
 
-2. Select either **Import or Update**, depending on if you'd like to create a new profile or update an existing one.
+2. 选择 **Import 还是 Update** 具体取决于你是要创建新配置文件还是更新现有的配置文件。
 
-3. Choose the **"From code"** option and paste in your code.
+3. 选择 **“From code”** 选项并粘贴代码。
 
-![Import code](/images/r2modman-install/importfromcode.png)
+![导入代码](/images/r2modman-install/importfromcode.png)
 
-Now you've synced your mods! You can start modded and play with friends now!
+现在你已经同步了模组！ 你现在就可以开启模组并与好友共同畅玩了！
