@@ -1,36 +1,36 @@
 ---
 prev: false
 next: false
-description: An advanced overview of how to use Unity Netcode Patcher to add networking to your Lethal Company mods.
+description: 有关如何使用 Unity Netcode Patcher 将网络添加到致命公司模组的进阶概述。
 ---
 
 # 网络
 
 :::warning
-这是一篇高级文章 While this introduces some C# concepts, it is highly recommended to understand C# and the basics of modding this game <i>before</i> reading this article.\*\*
+**这是一篇进阶文章。 虽然本文介绍了一些 C# 概念，但强烈建议在阅读本文<i>之前</i>了解 C# 和修改此游戏的基础知识。**
 :::
 
 :::info
-This is not a tutorial on how to use Unity's [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/1.5.2/about/) RPCs and Network Variables. This is only meant to be used to understand <i>how</i> to implement custom networking into the game.
+本文并非关于如何使用 Unity 的 [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/1.5.2/about/) RPC 和网络变量的教程。 本文仅用于了解<i>如何</i>在游戏中实现自定义网络。
 :::
 
-## Preface
+## 前言
 
-This tutorial requires using [@EvaisaDev](https://github.com/EvaisaDev/)'s [Unity Netcode Patcher](https://github.com/EvaisaDev/UnityNetcodePatcher) (Thank you very much Evaisa!). This tutorial will only go into the basics of using this tool; if you run into any issues, ask in the [NetcodePatcher Forum Post](https://discord.com/channels/1169792572382773318/1175504315029389343) on the [Unofficial Lethal Company Community Discord](https://discord.gg/nYcQFEpXfU).
+本教程需要使用 [@EvaisaDev](https://github.com/EvaisaDev/) 的 [Unity Netcode Patcher](https://github.com/EvaisaDev/UnityNetcodePatcher)（非常感谢 Evaisa！）。 本教程仅介绍使用此工具的基础知识；如果你遇到任何问题，请在 [Unofficial Lethal Company Community Discord](https://discord.gg/nYcQFEpXfU) 上的 [NetcodePatcher Forum Post](https://discord.com/channels/1169792572382773318/1175504315029389343) 中提问。
 
-### Why use Unity Netcode Patcher? {#why-netcode-patcher}
+### 为什么使用 Unity Netcode Patcher？ {#why-netcode-patcher}
 
-Unity Netcode Patcher replicates the IL Post Processing Unity performs when compiling code utilizing Netcode for GameObjects package. This turns the C# code before the post processing step:
+Unity Netcode Patcher 复制了 Unity 在使用 Netcode for GameObjects 包编译代码时执行的 IL 后处理。 这将在后处理步骤之前转到 C# 代码：
 
 ```cs
 [ClientRpc]
 public void EventClientRPC(string eventType)
 {
-    // code here
+    // 此处写代码
 }
 ```
 
-Into something a bit less legible, but allows networking:
+变成不太清晰的东西，但允许联网：
 
 ```cs
 [ClientRpc]
@@ -57,36 +57,36 @@ public void EventClientRPC(string eventType)
     { // [!code ++]
         return; // [!code ++]
     } // [!code ++]
-    // code here
+    // 此处写代码
 }
 ```
 
-Essentially, this allows you to create and use RPCs, Network Variables, etc.
+本质上，这允许你创建和使用 RPC、网络变量等。
 
-### Other Setup Required
+### 其他所需设置
 
-There **must** be a project reference to `Unity.Netcode.Runtime.dll` to utilize Netcode for GameObjects. You can refer to [this section](/dev/starting-a-mod#adding-game-assemblies) of this wiki to add it.
+**必须**有一个对 `Unity.Netcode.Runtime.dll` 的项目引用才能将 Netcode 用于 GameObjects。 你可以参考本 Wiki 的[此节](/dev/starting-a-mod#adding-game-assemblies)来添加它。
 
-## Introduction
+## 介绍
 
-There are two parts to making a mod using Netcode for GameObjects (NGO) to allow the transmission of info between the host & clients.
+使用 Netcode for GameObjects (NGO) 制作模组有两个部分，以允许在主机和客户端之间传输信息。
 
-1. Creating the `NetworkHandler` Class
-2. Spawning the `NetworkHandler` Game Object into the game
+1. 创建 `NetworkHandler` 类
+2. 将 `NetworkHandler` 游戏对象生成到游戏中
 
-The first part is simple, it just requires making a script that will be attached to a game object as a component. The second gets more complicated due to requiring loading a GameObject from an AssetBundle - something not explained in this tutorial.
+第一部分比较简单，只需制作一个脚本，并将其作为组件附加到游戏对象上。 第二部分更加复杂，因为需要从 AssetBundle 加载 GameObject - 本教程中未对此进行解释。
 
-This tutorial will not go into detail on how to use this for Custom Objects or Creatures, but the basics generally are the same.
+本教程不会详细介绍如何将其用于自定义对象或生物，但基础内容大体是相同的。
 
-### ExampleMod
+### ExampleMod（示例模组）
 
-As an example, this tutorial will go through the process of adding networking to a mod that adds new-level events into the game. These events are not able to be replicated on each client and must instead receive info from the server/host on what event is to be played. Since we are dealing with events, RPCs are preferable over Network Variables.
+作为示例，本教程会介绍将网络添加到「将新级别事件添加到游戏中的模组」的过程。 这些事件无法在每个客户端上复制，而必须从服务器/主机接收有关要播放的事件的信息。 由于我们处理的是事件，因此 RPC 比网络变量更可取。
 
-## Creating the NetworkHandler
+## 创建 NetworkHandler
 
-The `NetworkHandler` houses the RPCs, Network Variables, and any other methods allowing information to be passed over the network. I recommend separating this script as far as possible from any patches to avoid potential errors through Unity. This can easily be done by not including/using any outside methods and variables in the script.
+`NetworkHandler` 包含 RPC、网络变量以及任何其他允许通过网络传递信息的方法。 我建议尽可能将此脚本与任何补丁分开，以避免 Unity 出现潜在错误。 这可以通过在脚本中不包含/使用任何外部方法和变量来轻松完成。
 
-When creating the `NetworkHandler`, you must inherit the `NetworkBehaviour` class. This allows the script to utilize the networking methods.
+创建 `NetworkHandler` 时，必须继承 `NetworkBehaviour` 类。 这允许脚本利用网络方法。
 
 ```cs:line-numbers {11}
 using System;
