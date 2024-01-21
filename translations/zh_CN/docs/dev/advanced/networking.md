@@ -78,7 +78,7 @@ public void EventClientRPC(string eventType)
 
 本教程不会详细介绍如何将其用于自定义对象或生物，但基础内容大体是相同的。
 
-### ExampleMod（示例模组）
+### ExampleMod
 
 作为示例，本教程会介绍将网络添加到「将新级别事件添加到游戏中的模组」的过程。 这些事件无法在每个客户端上复制，而必须从服务器/主机接收有关要播放的事件的信息。 由于我们处理的是事件，因此 RPC 比网络变量更可取。
 
@@ -103,19 +103,19 @@ public class ExampleNetworkHandler : NetworkBehaviour // [!code focus:5]
 }
 ```
 
-We also add the one line of code to allow scripts to easily access any methods or variables, since in the case of our ExampleMod, there is only one version of this class.
+我们还添加了一行代码，以允许脚本轻松访问任何方法或变量，因为在我们的 ExampleMod 中，该类只有一个版本。
 
-While you can just use:
+此时你可以使用：
 
 ```cs
 public static ExampleNetworkHandler Instance;
 ```
 
-Doing it with the aforementioned method will prevent any classes from overriding the Instance variable, ensuring it can always be referenced as long as the ExampleNetworkHandler exists.
+使用上述方法执行此操作将防止任何类覆写 Instance 变量，确保只要 ExampleNetworkHandler 存在，它就可以始终被引用。
 
 ### ClientRpc
 
-We have our basic component! From here, we need to add the RPCs and a measure to avoid duplicate signals. Since the event info is only sent by the server, we do not have to deal with a ServerRpc and only need to set up the ClientRpc. This is what our example mod uses:
+我们已经有了基本的组件！ 从此处开始，我们需要添加 RPC 和度量以避免重复信号。 Since the event info is only sent by the server, we do not have to deal with a ServerRpc and only need to set up the ClientRpc. This is what our example mod uses:
 
 ```cs
 public static event Action<String> LevelEvent;
@@ -123,11 +123,11 @@ public static event Action<String> LevelEvent;
 [ClientRpc]
 public void EventClientRpc(string eventName)
 {
-    LevelEvent?.Invoke(eventName); // If the event has subscribers (does not equal null), invoke the event
+    LevelEvent?.Invoke(eventName); // 如果事件有订阅者（不等于 null），则调用该事件
 }
 ```
 
-According to the [Unity Docs](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/clientrpc/#declaring-a-clientrpc), there must be an attribute before the RPC, and the RPC method name _**must**_ end with ClientRpc.
+根据 [Unity Docs](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/clientrpc/#declaring-a-clientrpc)，RPC 之前必须有一个属性 ，并且 RPC 方法名称_**必须**_以 ClientRpc 结尾。
 
 ### ServerRpc
 
@@ -137,11 +137,11 @@ Although not necessary in our tutorial mod, a server RPC method is similar and e
 [ServerRpc(RequireOwnership = false)]
 public void EventServerRPC(/*parameters here*/)
 {
-    // code here
+    // 此处写代码
 }
 ```
 
-### C# Events {#csharp-events}
+### C# 事件 {#csharp-events}
 
 Now, you may ask, what is `public static event Action<String> LevelEvent`? This uses C#'s event/delegate system to create a readable event. While it may look complex at first, it turns out to be quite simple! A script can subscribe to the event - which will be shown later - then, when the event is invoked, any specified method(s) will run.
 
@@ -156,7 +156,7 @@ if (LevelEvent != null)
 
 All this if statement checks is whether the event is not equal to null and calls the event if so. The event will be null _if there are no subscribers to the event._
 
-### Preventing Duplication of Events and Instance {#preventing-duplication}
+### 防止事件和实例重复 {#preventing-duplication}
 
 Since we are using `static` when defining our C# event, an edge case can occur. What happens if the event is not unsubscribed from, and the player joins a new server? Any code that unknowingly subscribes to the event a second time will run twice! How do we make sure this does not occur? We set the C# event to equal null. The best time to do so is when the NetworkHandler gets spawned in:
 
@@ -186,9 +186,9 @@ public override void OnNetworkSpawn()
 }
 ```
 
-### Finalized Network Handler
+### 最终确定的网络处理程序
 
-We finished! All that's left is to throw it all together into one script:
+我们完成了！ 剩下的就是将所有内容整合到一个脚本中：
 
 ```cs:line-numbers
 using System;
@@ -214,7 +214,7 @@ public class ExampleNetworkHandler : NetworkBehaviour // [!code focus:23]
     [ClientRpc]
     public void EventClientRpc(string eventName)
     {
-        LevelEvent?.Invoke(eventName); // If the event has subscribers (does not equal null), invoke the event
+        LevelEvent?.Invoke(eventName); // 如果事件有订阅者（不等于 null），则调用该事件
     }
 
     public static event Action<String> LevelEvent;
@@ -223,7 +223,7 @@ public class ExampleNetworkHandler : NetworkBehaviour // [!code focus:23]
 }
 ```
 
-## Spawning the NetworkHandler
+## 生成 NetworkHandler
 
 Before we can spawn the ExampleNetworkHandler, we must load it into the game. To do so, we need to load our handler from an AssetBundle.
 
@@ -234,7 +234,7 @@ The Game Object we spawn as an asset requires a network object. We will use this
 We bundle this prefab up, and then import it using:
 
 ```cs
-// Info is an instance member field of your `BaseUnityPlugin` class.
+// Info 是 `BaseUnityPlugin` 类的实例成员字段。
 var dllFolderPath = System.IO.Path.GetDirectoryName(Info.Location);
 var assetBundleFilePath = System.IO.Path.Combine(dllFolderPath, "ExampleModAssets");
 MainAssetBundle = AssetBundle.LoadFromFile(assetBundleFilePath);
@@ -252,7 +252,7 @@ We recommend using this method rather than embedding your resources directly in 
 
 With this done, we can now begin working on the patch that spawns the NetworkHandler.
 
-### Loading the Asset
+### 加载资源
 
 The asset needs to be loaded and given to the NetworkManager as a NetworkPrefab - before the player starts or joins a server. If this is not done, the host and/or clients will not know what object to spawn, and will result in nothing spawning.
 
@@ -276,7 +276,7 @@ public class NetworkObjectManager
 }
 ```
 
-Wait! Before we can send this to the NetworkManager, don't you think it's missing something? Right, the ExampleNetworkHandler component! While it is possible to add this to the prefab beforehand (you can ask to find out how), it's also simple to add it right here and now. All we must do is add it as a component:
+等一下！ Before we can send this to the NetworkManager, don't you think it's missing something? Right, the ExampleNetworkHandler component! While it is possible to add this to the prefab beforehand (you can ask to find out how), it's also simple to add it right here and now. All we must do is add it as a component:
 
 ```cs
 [HarmonyPostfix, HarmonyPatch(typeof(GameNetworkManager), nameof(GameNetworkManager.Start))]
@@ -290,7 +290,7 @@ public static void Init()
 }
 ```
 
-### Adding the Asset as a Network Prefab {#adding-network-prefab}
+### 将资源添加为网络预制件 {#adding-network-prefab}
 
 Now that we have the prefab ready to be loaded, it's quite simple to give this to the NetworkManager as a prefab:
 
@@ -318,7 +318,7 @@ public static void Init()
 }
 ```
 
-### Spawning the GameObject During Runtime {#spawning-the-gameobject}
+### 在运行时生成 GameObject {#spawning-the-gameobject}
 
 Now that the game knows what to load when we tell it to load the ExampleNetworkHandler, all we have left is to spawn it! To do so, we just must Instantiate the prefab, then spawn it:
 
