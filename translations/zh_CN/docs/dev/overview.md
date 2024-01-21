@@ -1,10 +1,10 @@
 ---
 prev: false
 next: true
-description: Start creating modifications to Lethal Company to enhance everyone's experience.
+description: 开始对致命公司进行修改，以增强每个人的体验。
 ---
 
-# Developer's Guide {#guide}
+# 开发者指南 {#guide}
 
 Welcome to the Developer's Guide! This is an overview of everything included in the guide. For more details, head to the specific sections on the sidebar.
 
