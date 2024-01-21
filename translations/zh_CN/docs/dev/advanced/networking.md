@@ -26,7 +26,7 @@ Unity Netcode Patcher 复制了 Unity 在使用 Netcode for GameObjects 包编�
 [ClientRpc]
 public void EventClientRPC(string eventType)
 {
-    // 此处写代码
+    // 代码在这里
 }
 ```
 
@@ -57,7 +57,7 @@ public void EventClientRPC(string eventType)
     { // [!code ++]
         return; // [!code ++]
     } // [!code ++]
-    // 此处写代码
+    // 代码在这里
 }
 ```
 
@@ -115,7 +115,7 @@ public static ExampleNetworkHandler Instance;
 
 ### ClientRpc
 
-我们已经有了基本的组件！ 从此处开始，我们需要添加 RPC 和度量以避免重复信号。 Since the event info is only sent by the server, we do not have to deal with a ServerRpc and only need to set up the ClientRpc. This is what our example mod uses:
+我们已经有了基本的组件！ 从此处开始，我们需要添加 RPC 和度量以避免重复信号。 由于事件信息仅由服务器发送，因此我们不必处理 ServerRpc，只需要设置 ClientRpc。 这是我们的示例模组所使用的：
 
 ```cs
 public static event Action<String> LevelEvent;
@@ -137,7 +137,7 @@ Although not necessary in our tutorial mod, a server RPC method is similar and e
 [ServerRpc(RequireOwnership = false)]
 public void EventServerRPC(/*parameters here*/)
 {
-    // 此处写代码
+    // 代码在这里
 }
 ```
 
@@ -347,7 +347,7 @@ static void SpawnNetworkHandler()
 
 We want to attach this to `StartOfRound.Awake` as this method only runs when a new server is started by the host or loaded in by the client. Not only that, but it's one of the first methods to run when starting or joining a server.
 
-### Finalized Network Object Manager
+### 最终确定的网络对象管理器
 
 Once we throw everything together, we get a class looking like this:
 
@@ -387,9 +387,9 @@ public class NetworkObjectManager
 }
 ```
 
-## Utilizing the NetworkHandler
+## 利用 NetworkHandler
 
-Finally! The handler is in the game! Now we can utilize it. But how? Easy, we subscribe to the C# event. For example, our mod only needs to subscribe when the round starts and needs to unsubscribe when the round ends.
+终于！ The handler is in the game! Now we can utilize it. But how? Easy, we subscribe to the C# event. For example, our mod only needs to subscribe when the round starts and needs to unsubscribe when the round ends.
 
 ```cs
 [HarmonyPostfix, HarmonyPatch(typeof(RoundManager), nameof(RoundManager.GenerateNewFloor))]
@@ -406,7 +406,7 @@ static void UnsubscribeFromHandler()
 
 static void ReceivedEventFromServer(string eventName)
 {
-    // Event Code Here
+    // 事件代码在这里
 }
 
 static void SendEventToClients(string eventName)
@@ -428,7 +428,7 @@ When subscribing and unsubscribing to an event, make sure that <i>both</i> the h
 Hooking to a ClientRpc can cause errors with code running multiple times on the host instance. Avoid hooking to any ClientRpcs - and if you must, consider adding a debounce.
 :::
 
-## Using Unity Netcode Patcher {#using-netcode-patcher}
+## 使用 Unity Netcode Patcher {#using-netcode-patcher}
 
 Now that we've finished the networking code, all that's left is to patch the compiled mod assembly with Unity Netcode Patcher. Before we can do so, we need to prepare the mod for patching.
 
@@ -456,7 +456,7 @@ private static void NetcodePatcher()
 
 static void Awake()
 {
-    NetcodePatcher(); // ONLY RUN ONCE // [!code warning]
+    NetcodePatcher(); // 仅运行一次 // [!code warning]
 }
 ```
 
@@ -471,6 +471,6 @@ NetcodePatcher.dll $(TargetDir) deps/
 
 If this does not work, you can [follow the instructions on how to use Unity Netcode Patcher from the command line.](https://github.com/EvaisaDev/UnityNetcodePatcher#usage-from-command-line)
 
-## Conclusion
+## 结语
 
-Now that you've finally finished all the code and patched it with Unity Netcode Patcher, you should have networking in your mod! Congrats! Pat yourself on the back! It's not easy getting to this stage, and you will always run into issues as you continue your modding journey. But don't fret! You can always get help in the [Unofficial Lethal Company Community Discord!](https://discord.gg/nYcQFEpXfU)
+现在你终于完成了所有代码并使用 Unity Netcode Patcher 对其进行了修补，你的模组中应该具有网络功能了！ 恭喜！ 拍拍自己的背吧！ 到达这个阶段并不容易，在继续你的模组之旅时总会遇到问题。 但别担心！ 你可以随时在 [Unofficial Lethal Company Community Discord](https://discord.gg/nYcQFEpXfU) 中取得帮助！
