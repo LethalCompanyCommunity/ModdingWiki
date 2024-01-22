@@ -1,37 +1,37 @@
 ---
 prev: false
 next: true
-description: Get up and running with modifications to Lethal Company to enhance your experience.
+description: Comece a trabalhar em modificações no Lethal Company para melhorar sua experiência.
 ---
 
-# Beginner's Guide
+# Guia de Iniciante
 
-Lethal Company is a co-op horror game by Zeekerss, [available on Steam](https://store.steampowered.com/app/1966720/Lethal_Company/).
+Lethal Company é um jogo cooperativo de terror feito por Zeekerss, [disponivel na Steam](https://store.steampowered.com/app/1966720/Lethal_Company/).
 
-This wiki serves as a source of documentation and tutorials for various unofficial mods created to enhance your experience.
+Esta Wiki serve como fonte de documentação e tutoriais para vários mods não oficiais criados para melhorar a sua experiência.
 
-## Modding your game
+## Moddando seu jogo
 
-If you're using Windows, follow the [r2modman installation guide](/installation/installing-r2modman) to learn how to install mods.
+Se estiver no Windows, siga o [guia de instalação do r2modman](/installation/installing-r2modman) para aprender a instalar mods.
 
-If you're on Linux or Steam Deck, you'll want the [linux installation guide](/installation/installing-r2modman-linux).
+Se estiver no Linux ou Steam Deck, vá para o [guia de instalação no linux](/installation/installing-r2modman-linux).
 
-Want a quick, easy way to install the same mods as your friends? Check out the [sharing r2modman profiles](/installation/syncing-mods) page.
+Quer uma forma rápida e fácil de instalar os mesmos mods que seus amigos? Dá uma checada na página [compartilhando perfis do r2modman](/installation/syncing-mods).
 
-## Creating mods
+## Criando mods
 
 ::: tip
 If you can't code and want to create a mod that does one common, simple thing (such as adding a suit or sound replacement) make sure to check the [Asset Modding APIs](/dev/apis/overview#asset-apis) section!
 
-Many common use cases already have APIs that allow you to easily add content without using any code.
+Vários casos de uso comuns já possuem APIs que permitem você facilmente adicionar conteúdo sem ter que escrever código.
 :::
 
-If you're interested in trying to create your own mod for Lethal Company, you can find articles and tutorials in the [Developer's Guide](/dev/overview).
+Se estiver interessado em tentar criar seu próprio mod para Lethal Company, achará os artigos e tutoriais no [Guia de Desenvolvedor](/dev/overview).
 
-Once you're set up, make sure to check the [Modding APIs](/dev/apis/overview) section to see if there's any libraries that would make creating your mod easier.
+Quando terminar as preparações, cheque também a seção [APIs de modding](/dev/apis/overview) para ver se tem alguma biblioteca que poderia ajudar a criar seu mod.
 
-## Support
+## Suporte
 
 :::tip
-For live support with this guide please visit us in **#mod-support** on the [Unofficial Lethal Company Community](https://discord.gg/nYcQFEpXfU) and ask for assistance. Please read our [Frequently Asked Questions](extras/faq) page beforehand to see if your question has already been answered.
+Para ter suporte em tempo real deste guia, nos visite em **#mod-support** na [Comunidade não oficial de Lethal Company](https://discord.gg/nYcQFEpXfU) e peça por ajuda. Por favor, leia a página [Perguntas Frequentes](extras/faq) antes, para ver se sua pergunta já foi respondida.
 :::
