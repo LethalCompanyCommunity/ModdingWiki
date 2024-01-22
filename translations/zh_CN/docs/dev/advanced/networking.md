@@ -244,19 +244,19 @@ MainAssetBundle = AssetBundle.LoadFromFile(assetBundleFilePath);
 
 我们建议使用此方法，而不是将资源直接嵌入到 dll 文件中，原因如下：
 
-- Memory used for assets would be duplicated: If your assets are 1GB in size and embedded in the DLL, 1GB is allocated to load your DLL into the process, then another 1GB is used by `Unity` to load the bundle via `AssetBundle.LoadFromMemory`.
+- 用于资源的内存将重复：如果资源的大小为 1GB 并且嵌入在 DLL 中，则会分配 1GB 以将 DLL 加载到进程中，然后 `Unity` 使用另外 1GB 通过 `AssetBundle.LoadFromMemory` 加载包。
 
-- Developing your plugin is easier: you don't have to trigger a recompilation of your DLL every time you modify an asset.
+- 开发插件更容易：你不必在每次修改资源时都触发 DLL 的重新编译。
 
-- The installation process is managed by a mod manager: as long as you place the asset bundle file correctly next to your dll in the .zip file you upload to thunderstore, the asset will be in the right place and the above code will work.
+- 安装过程由模组管理器管理：只要您将 Asset Bundle 文件正确放置在上传到 Thunderstore 的 .zip 文件中的 dll 旁边，该资源就会在正确的位置，上面的代码就可以工作了。
 
-With this done, we can now begin working on the patch that spawns the NetworkHandler.
+完成此操作后，我们现在可以开始处理生成 NetworkHandler 的补丁了。
 
 ### 加载资源
 
-The asset needs to be loaded and given to the NetworkManager as a NetworkPrefab - before the player starts or joins a server. If this is not done, the host and/or clients will not know what object to spawn, and will result in nothing spawning.
+在玩家启动或加入服务器之前，需要加载资源并将其作为 NetworkPrefab 提供给 NetworkManager。 如果不这样做，主机与客户端将不知道要生成什么对象，并且导致什么也不生成。
 
-First, we need to load the asset, which we will patch into GameNetworkManager's Start method to load it:
+首先，我们需要加载资源，我们将其修补到 GameNetworkManager 的 Start 方法中来加载它：
 
 ```cs
 [HarmonyPatch]
