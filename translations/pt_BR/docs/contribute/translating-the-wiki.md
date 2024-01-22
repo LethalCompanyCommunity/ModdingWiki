@@ -48,7 +48,7 @@ Sinta-se a vontade as utilizar, ou, se preferir, começar do zero caso acredite 
 As páginas que recomendamos priorizar são, em ordem de relevância:
 
 - A página inicial (introducion.md)
-- Os menus laterais (sidebar.md)
+- A barra lateral (sidebar.md)
 - Tutoriais de modding no Windows (installing-r2modman.md)
 - Tutoriais de modding no Linux (installing-r2modman-linux.md)
 - Perguntas Frequentes (faq.md)
