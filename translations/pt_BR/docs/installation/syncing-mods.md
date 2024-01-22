@@ -1,47 +1,47 @@
 ---
 prev: true
 next: true
-description: Learn how to use r2modman profile codes to sync your mods with friends.
+description: Aprenda a usar o código de perfil do r2modman para sincronizar seus mods com os de amigos.
 ---
 
-# Sharing r2modman profiles
+# Compartilhando perfis do r2modman
 
-If you're playing the game with friends, you'll probably want to make sure you have the same mods installed.
+Se estiver jogando com amigos, provavelmente será necessário garantir que possuam os mesmos mods instalados.
 
-Thankfully, r2modman makes sharing your mod list easy with profile codes!
+Felizmente, o r2modman faz com que compartilhar sua lista de mods uma tarefa fácil com os códigos de perfis!
 
-## r2modman profile codes
+## Códigos de perfil do r2modman
 
-r2modman has a built-in feature named `Profile Codes` that give you an easy-to-share code to share your installed mods.
+O r2modman tem um recurso nativo chamado `Profile Codes (Códigos de Perfil)` que possibilita uma forma fácil de compartilhar os mods instalados através de um código de texto.
 
-Profile codes export:
+O código de perfil exporta:
 
-- Your installed mods, including mod versions and which mods are disabled.
-- Your config files and any config values you've changed.
+- Seus mods instalados, incluíndo as versões e quais mods estão desabilitados.
+- Seus arquivos de configuração e quaisquer valores de configuração que você tenha mudado.
 
-Profile codes do **NOT** export:
+Códigos de perfil **NÃO** exportam:
 
-- Any user-added files not on thunderstore, such as a custom PNG you added manually from your files.
-- Any changes made to the profile **after you generate the code** - you'll have to send a new code if you make any changes.
+- Quaisquer arquivos adicionados pelo usuário que não está na Thunderstore, como um PNG personalizado que você adicionou manualmente dos seus arquivos.
+- Quaisquer mudanças feitas no perfil **após você gerar o código**- você terá que enviar um novo código se fizer qualquer alteração.
 
-### Exporting a Profile
+### Exportando um Perfil
 
-1. Select **"Export profile as code"** in the **profile tab** in settings of your profile.
+1. Selecione **"Export profile as code"** em **profile tab** nas configurações do seu perfil.
 
-![Exporting Profile](/images/r2modman-install/exportprofilecode.png)
+![Exportando Perfil](/images/r2modman-install/exportprofilecode.png)
 
-This will copy a code to your clipboard automatically - you can send this to your friends!
+Isso copiará automaticamente um código para a área de transferência que poderá ser enviado aos seus amigos!
 
-### Importing a Profile
+### Importando um Perfil
 
-1. Click **"Import/Update"** in the **Profile selection** area after selecting Lethal Company in r2modman.
+1. Clique em **"Import/Update"** na área **Profile selection** depois de selecionar o Lethal Company no r2modman.
 
-![Importing Profile](/images/r2modman-install/importprofile.png)
+![Importando Perfil](/images/r2modman-install/importprofile.png)
 
-2. Select either **Import or Update**, depending on if you'd like to create a new profile or update an existing one.
+2. Selecione **Import ou Update**, dependendo se você quer criar um perfil ou atualizar um preexistente, respectivamente.
 
-3. Choose the **"From code"** option and paste in your code.
+3. Escolha a opção **"From code"** e cole seu código.
 
-![Import code](/images/r2modman-install/importfromcode.png)
+![Importando um código](/images/r2modman-install/importfromcode.png)
 
-Now you've synced your mods! You can start modded and play with friends now!
+Você sincronizou seus mods! Agora, você pode iniciar o jogo moddado e jogar com amigos!
