@@ -50,7 +50,7 @@ Se não encontrá-lo, **use a barra de pesquisa ou role a tela para baixo** até
 
 ![Primeira Vez Aberto e Instalado](/images/r2modman-install/firsttimeinstall.png)
 
-5. Clique em **"Online"** na barra lateral. Isso irá trazer uma lista de todos os mods para baixar, disponíveis em [Thunderstore](https://thunderstore.io/c/lethal-company/).
+5. Clique em **"Online"** na barra lateral. Isso irá trazer uma lista de todos os mods para baixar disponíveis em [Thunderstore](https://thunderstore.io/c/lethal-company/).
 
 ![Clicando em Online](/images/r2modman-install/selectonline.png)
 
