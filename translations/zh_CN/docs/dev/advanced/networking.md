@@ -154,11 +154,11 @@ if (LevelEvent != null)
 }
 ```
 
-所有这些 if 语句检查事件是否不等于 null，如果不等于 null，则调用该事件。 The event will be null _if there are no subscribers to the event._
+所有这些 if 语句检查事件是否不等于 null，如果不等于 null，则调用该事件。 _如果事件没有订阅者_，则该事件将为 null。
 
 ### 防止事件和实例重复 {#preventing-duplication}
 
-Since we are using `static` when defining our C# event, an edge case can occur. What happens if the event is not unsubscribed from, and the player joins a new server? Any code that unknowingly subscribes to the event a second time will run twice! How do we make sure this does not occur? We set the C# event to equal null. The best time to do so is when the NetworkHandler gets spawned in:
+由于我们在定义 C# 事件时使用 `static`，因此可能会出现边缘情况。 如果事件没有取消订阅，并且玩家加入了新服务器，会发生什么呢？ 任何在不知情的情况下第二次订阅事件的代码都将运行两次！ 我们如何确保这种情况不会发生呢？ 我们将 C# 事件设置为等于 null。 这样做的最佳时间是当 NetworkHandler 生成时：
 
 ```cs
 public override void OnNetworkSpawn()
@@ -169,9 +169,9 @@ public override void OnNetworkSpawn()
 }
 ```
 
-This removes any subscribers and continues to call the base OnNetworkSpawn method to allow any code that runs in that method to still occur.
+这将移除所有订阅者，并继续调用基本 OnNetworkSpawn 方法，以允许在该方法中运行的任何代码仍然发生。
 
-But what about our Instance variable? If we don't set it to anything, any scripts attempting to use this handler won't be able to use .Instance! Here, we can assign the `Instance` variable to be the current object. We also need to remove any previously existing GameObject with our `ExampleNetworkHandler` class, which can only be done via the server.
+但是我们的 Instance 变量呢？ 如果我们不将其设置为任何值，则任何尝试使用此处理程序的脚本将无法使用 .Instance！ 在这里，我们可以将 `Instance` 变量指定为当前对象。 我们还需要使用 `ExampleNetworkHandler` 类来移除任何以前存在的 GameObject，这只能通过服务器完成。
 
 ```cs
 public override void OnNetworkSpawn()
@@ -225,13 +225,13 @@ public class ExampleNetworkHandler : NetworkBehaviour // [!code focus:23]
 
 ## 生成 NetworkHandler
 
-Before we can spawn the ExampleNetworkHandler, we must load it into the game. To do so, we need to load our handler from an AssetBundle.
+在生成 ExampleNetworkHandler 之前，我们必须将其加载到游戏中。 为此，我们需要从 AssetBundle 加载处理程序。
 
-The Game Object we spawn as an asset requires a network object. We will use this prefab for our Network Handler:
+我们作为资源生成的游戏对象需要一个网络对象。 我们将使用这个预制件作为我们的网络处理程序：
 
-![ExampleNetworkHandler Prefab](/images/custom-networking/ExampleNetworkHandlerPrefab.png)
+![ExampleNetworkHandler 预制件](/images/custom-networking/ExampleNetworkHandlerPrefab.png)
 
-We bundle this prefab up, and then import it using:
+我们打包这个预制件，然后使用以下命令导入：
 
 ```cs
 // Info 是 `BaseUnityPlugin` 类的实例成员字段。
@@ -240,9 +240,9 @@ var assetBundleFilePath = System.IO.Path.Combine(dllFolderPath, "ExampleModAsset
 MainAssetBundle = AssetBundle.LoadFromFile(assetBundleFilePath);
 ```
 
-The AssetBundle file has to be added to the plugins folder next to (in the same folder as) the mod's .dll file.
+必须将 AssetBundle 文件添加到模组的 .dll 文件旁边的 plugins 文件夹中（与模组的 .dll 文件位于同一文件夹）。
 
-We recommend using this method rather than embedding your resources directly in your dll file, for several reasons:
+我们建议使用此方法，而不是将资源直接嵌入到 dll 文件中，原因如下：
 
 - Memory used for assets would be duplicated: If your assets are 1GB in size and embedded in the DLL, 1GB is allocated to load your DLL into the process, then another 1GB is used by `Unity` to load the bundle via `AssetBundle.LoadFromMemory`.
 
@@ -389,7 +389,7 @@ public class NetworkObjectManager
 
 ## 利用 NetworkHandler
 
-终于！ The handler is in the game! Now we can utilize it. But how? Easy, we subscribe to the C# event. For example, our mod only needs to subscribe when the round starts and needs to unsubscribe when the round ends.
+终于！ 处理程序已经在游戏里了！ 现在我们可以利用它。 但要怎么做呢？ 很简单，我们订阅 C# 事件。 譬如，我们的模组只需要在回合开始时订阅，在回合结束时需要取消订阅。
 
 ```cs
 [HarmonyPostfix, HarmonyPatch(typeof(RoundManager), nameof(RoundManager.GenerateNewFloor))]
