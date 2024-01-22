@@ -1,29 +1,29 @@
 ---
 prev: false
 next: true
-description: Start creating modifications to Lethal Company to enhance everyone's experience.
+description: Comece a criar modificações para o Lethal Company, melhorando a experiência de todos.
 ---
 
-# Developer's Guide {#guide}
+# Guia de Desenvolvedor {#guide}
 
-Welcome to the Developer's Guide! This is an overview of everything included in the guide. For more details, head to the specific sections on the sidebar.
+Bem vindo ao Guia de Desenvolvedor! Isto é uma visão geral sobre tudo incluso neste guia. Para mais detalhes, vá para a seção específica na barra lateral.
 
 :::tip
-If you don't know how to code but want to add a custom Asset - whether that be sounds, scrap, suits, and more - there are APIs for that!
-The [Asset API list](/dev/apis/overview#asset-apis) has you covered!
+Se você não souber programar, mas quer adicionar recursos personalizados - seja sons, itens, uniformes e etc - há APIs para isso!
+A [Asset API](/dev/apis/overview#asset-apis) cuida disto!
 :::
 
-## Setup, Creation & Publishing {#setup-create-publish}
+## Configurar, Criar e Publicar {#setup-create-publish}
 
-The basics of mod creation. Here, you can see what tools you need, how to create the initial mod, and how to publish it.
+O básico da criação de mods. Aqui você verá quais ferramentas você precisa, como criar um mod inicial, e como publicá-lo.
 
-Do you need to set up your workstation? Head on over to the [initial setup](/dev/initial-setup) article to learn how to do so!
+Precisa configurar sua máquina de trabalho? Vá para o artigo [configuração inicial](/dev/initial-setup) para aprender!
 
-Don't know how to create the initial mod setup? Learn via the [starting a mod](/dev/starting-a-mod) article.
+Não sabe como criar as definições iniciais do mod? Aprenda através do artigo [começando um mod](/dev/starting-a-mod).
 
-Ready to publish your mod? Don't worry, we've [got you set](/dev/publishing-your-mod) with that!
+Pronto para publicar seu mod? Não se preocupe, [cuidamos disso](/dev/publishing-your-mod)!
 
-## Advanced Topics
+## Tópicos Avançados
 
 These are advanced topics relating to the game. They vary from simpler topics, such as creating config files, to more advanced topics, such as networking.
 
