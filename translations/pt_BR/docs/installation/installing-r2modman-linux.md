@@ -20,43 +20,43 @@ No Steam Deck, você precisará fazer o seguinte antes de continuar seguindo o g
 Quando estiver no modo Desktop, estará pronto para continuar!
 
 :::danger
-r2modman **não** funciona no Modo Jogo. Please make sure to read the [**Using Mods in Steam Deck's Game Mode**](installing-r2modman-linux?id=using-mods-in-steam-decks-game-mode) section for a workaround once you've finished with the **Installing r2modman** section.
+r2modman **não** funciona no Modo Jogo. Quando tiver terminado de seguir a sessão **Instalando r2modman**, leia também a sessão [**Usando Mods no Modo Jogo do Steam Deck**](installing-r2modman-linux?id=using-mods-in-steam-decks-game-mode) para uma solução alternativa.
 :::
 
-## Installing r2modman
+## Instalando r2modman
 
-On Linux, r2modman is available in different package formats depending on your distro:
+No Linux o r2modman está disponível em diferentes formatos de pacotes, dependendo da sua distro:
 
-- `deb` for Debian and Ubuntu-based distros
-- `pacman` for Arch-based disros
-- `rpm` for distros using the RPM Package Manager (RHEL, CentOS, Fedora, openSUSE, etc.)
-- `AppImage`, a single executable file that can run on most distros - **useful for Steam Deck**
+- `deb` para distros baseadas em Debian e Ubuntu
+- `pacman` para distros baseadas em Arch
+- `rpm`para distros usando o RPM Package Manager (RHEL, CentOS, Fedora, openSUSE, etc.)
+- `AppImage`, um arquivo executável que funciona na maioria das distros - **útil para o Steam Deck**
 
-Visit the [**r2modman GitHub releases page**](https://github.com/ebkr/r2modmanPlus/releases/latest/) and download the appropriate package file for your distro and install it according to your package manager's documentation.
+Acesse a [**página de publicação do r2modman no GitHub**](https://github.com/ebkr/r2modmanPlus/releases/latest/), baixe o arquivo apropriado para sua distro e instale conforme a documentação do seu gerenciador de pacote.
 
-**For Steam Deck users,** download the `.AppImage` file and keep it in a safe location such as your Desktop or your Documents folder. You will also need to mark the file as executable. To do this, right-click the `.AppImage` file and select `Properties`. Switch to the **Permissions** tab and check the box marked `Is Executable` and click OK.
+**Para usuários do Steam Deck**, baixe o arquivo `.AppImage` e o mantenha em um local seguro, como a Desktop (Área de Trabalho) ou a pasta Documents (Documentos). Você também precisará tornar o arquivo como executável. Para fazer isso, clique com o botão direito no arquivo `.AppImage` e selecione `Properties (Propriedades)`. Vá até a aba **Permissions (Permissões)**, marque a caixa `Is Executable (É Executável)` e clique OK.
 
-![Steam Deck Permissions Window](/images/r2modman-linux/appimageproperties.png)
+![Janela de Permissões do Steam Deck](/images/r2modman-linux/appimageproperties.png)
 
-After marking the file as executable, you can now double-click the `AppImage` to open r2modman.
+Após marcar o arquivo como executável, você poderá clicar duas vezes em `AppImage` para abrir o r2modman.
 
-## Installing Mods on r2modman
+## Instalando Mods no r2modman
 
-Once you have succesfully installed r2modman, you can finally install mods.
+Quando tiver instalado o r2modman, você poderá finalmente instalar mods.
 
-1. Launch **r2modman**. You will be greeted with the following screen.
+1. Inicie o **r2modman**. Você verá a seguinte tela.
 
-![r2modman Game Selection Screen](/images/r2modman-install/gameselection.png)
+![Tela de Seleção de Jogos do r2modman](/images/r2modman-install/gameselection.png)
 
-2. Select **"Lethal Company"**, and click **"Select Game"**.
+2. Selecione **"Lethal Company"**, e clique em **"Select Game"**.
 
 :::tip
-If you do not see it, **use the search bar or scroll down** to find "Lethal Company".
+Se não encontrá-lo, **use a barra de pesquisa ou role a tela para baixo** até achar "Lethal Company".
 :::
 
-![Select Lethal Company](/images/r2modman-install/selectlc.png)
+![Selecione Lethal Company](/images/r2modman-install/selectlc.png)
 
-3. It will ask you to choose which profile to use. For this guide's purposes, we will stick with the Default profile. Click **"Select profile"**.
+3. O programa perguntará qual perfil você quer usar. Para o propósito deste guia, vamos nos manter com o perfil Default. Clique em **"Select profile"**.
 
 ![Select Default Profile](/images/r2modman-install/profileselect.png)
 
