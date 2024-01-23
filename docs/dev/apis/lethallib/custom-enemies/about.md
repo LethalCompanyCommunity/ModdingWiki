@@ -1,7 +1,7 @@
 ---
 prev: false
 next: true
-description: A tutorial on how to add custom enemies by using LethalLib.
+description: A tutorial on implementing custom enemies to Lethal Company.
 ---
 # Custom enemies - Overview
 

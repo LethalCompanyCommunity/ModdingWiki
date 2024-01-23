@@ -1,9 +1,9 @@
 ---
 prev: true
 next: false
-description: A tutorial on how to add custom enemies by using LethalLib.
+description: An introduction to coding your own enemy AI.
 ---
-# Coding our custom AI
+# Coding Our Custom AI
 
 ::: warning IMPORTANT
 You should use a [decompiler](/dev/initial-setup#decompiler) to look how the enemy AI scripts work in the game. All the game code is contained inside `Lethal Company/Lethal Company_Data/Managed/Assembly-CSharp.dll`, so you should open that file in your decompiler!

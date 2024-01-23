@@ -127,9 +127,9 @@ export default defineConfig({
                           link: '/dev/apis/lethallib/custom-enemies/about',
                           collapsed: true,
                           items: [
-                            { text: '3D modeling with Blender', link: '/dev/apis/lethallib/custom-enemies/blender'},
-                            { text: 'Unity project', link: '/dev/apis/lethallib/custom-enemies/unity'},
-                            { text: 'Coding our AI', link: '/dev/apis/lethallib/custom-enemies/coding-ai'},
+                            { text: '3D Modeling With Blender', link: '/dev/apis/lethallib/custom-enemies/blender'},
+                            { text: 'Unity Project', link: '/dev/apis/lethallib/custom-enemies/unity'},
+                            { text: 'Coding Our AI', link: '/dev/apis/lethallib/custom-enemies/coding-ai'},
                           ]
                         },
 

@@ -1,7 +1,7 @@
 ---
 prev: true
 next: true
-description: A tutorial on how to add custom enemies by using LethalLib.
+description: A tutorial on configuring your Unity project for custom enemies.
 ---
 # Unity
 
@@ -132,7 +132,9 @@ For information about Asset Bundles, see [Asset Bundling](/dev/intermediate/asse
 ::: danger DUPLICATE INFORMATION
 This section of the wiki page has duplicate information regarding the creation of Asset Bundles.
 
-**Note:** The existing page on the creation of asset bundles is slightly less in-depth, and does mention how to embed asset bundles in DLL files, which is what we do in this project.
+**Note:** The existing page on the creation of asset bundles is slightly less in-depth, and does mention how to embed asset bundles in DLL files, which is what we do in this project currently.
+
+**I will change the project to not use embedded asset bundles due to the issue of them loading into memory twice, and then I can clean up this section.**
 :::
 
 To add an item to an asset bundle, you first need to select the object you want to add, and then on the asset bundle dropdown, select `New...` and write the name of your asset bundle. Or if you already have an asset bundle, you can select that instead. You don't actually need to assign everything you need to the asset bundle as long as the item you assigned to the asset bundle depends on the rest of the items.  
