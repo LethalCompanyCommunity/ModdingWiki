@@ -124,6 +124,29 @@ export default defineConfig({
                         { text: 'Custom Scrap', link: '/dev/apis/lethallib/customscrap'},
                       ]
                     },
+                    {
+                      text: 'Configurable Company',
+                      link: '/dev/apis/configurable-company',
+                      collapsed: true,
+                      items: [
+                        {
+                          text: 'Developing pages',
+                          link: '/dev/apis/configurable-company/developing-pages'
+                        },
+                        {
+                          text: 'Developing categories',
+                          link: '/dev/apis/configurable-company/developing-categories'
+                        },
+                        {
+                          text: 'Developing configurations',
+                          link: '/dev/apis/configurable-company/developing-configs'
+                        },
+                        {
+                          text: 'Event listening',
+                          link: '/dev/apis/configurable-company/event-listening'
+                        }
+                      ]
+                    }
                   ]
                 }
               ]
