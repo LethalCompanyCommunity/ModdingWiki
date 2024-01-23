@@ -1,60 +1,59 @@
 ---
-description: This article teaches how to use ILSpy in order to read game's code
+description: Esse artigo ensina você a usar o ILSpy para ler o código do jogo
 ---
 
-# Reading Game Code
+# Lendo o Código do Jogo
 
-## Introduction
+## Introdução
 
-Chances are, early on in your modding journey you will be met by quite a conundrum - You want to know how something in the game works, but there is an issue! You cannot just open the game's files to find it _(you silly goose)_.
+Há chances altas de você encontrar desafios consideráveis quando estiver começando na sua jornada de modding. Você irá querer saber como algo no jogo funciona, mas tem um problema... Você não consegue abrir os arquivos do jogo e descobrir por si só _(seu bobinho)_.
 
-You see, the way Unity games work, is that their code gets compiled into a .dll file, which you cannot normally open.
+Veja bem, o jeito que os jogos da Unity funcionam é compilando o código em um arquivo .dll, que você não consegue abrir normalmente.
 
-## Decompilers
+## Descompiladores
 
-Fortunately, there is something called a "decompiler". What it does, is it grabs the game's code and reverses the process, resulting in readable code. While it is not perfect, it gets it's job done.
+Felizmente existe algo chamado "descompilador". Ele pega o código do jogo e reverte o processo de compilação, resultando em código legível. Mesmo não sendo perfeito, ele faz um trabalho bem feito.
 
-Currently there are 3 decompilers that are widely used:
+Atualmente há 3 descompiladores amplamente usados:
 
-[dnSpyEx](https://github.com/dnSpyEx/dnSpy), [ILSpy](https://github.com/icsharpcode/ILSpy) and [dotPeek](https://www.jetbrains.com/decompiler/).
+[dnSpyEx](https://github.com/dnSpyEx/dnSpy), [ILSpy](https://github.com/icsharpcode/ILSpy) e [dotPeek](https://www.jetbrains.com/decompiler/).
 
 :::info
-Picking which decompiler to use is up to personal preference, but for this article ILSpy will be used due to it's balance between simplicity and power.
+Escolher o descompilador vai de preferência pessoal, mas este artigo vai seguir utilizando o ILSpy devido a um equilíbrio entre simplicidade e poder.
 :::
 
 ::: danger
 Please keep in mind that while decompiling and reading the code is _not_ illegal, distributing said decompiled code _is_ illegal. Same applies for sharing the game's files.
 
-What this means is that you **CANNOT** bundle any of the game's files with your mods.
+Isso significa que você **NÃO PODE** agrupar nenhum arquivo do jogo com seus mods.
 :::
 
-## Opening the game DLL
+## Abrindo o DLL do jogo
 
-Upon starting ILSpy you will be met with a window similar to this.
-![Screenshot of empty ILSpy window](/images/reading-game-code/ilspy-window.png)
+Ao abrir o ILSpy, você verá uma janela semelhante a esta.
+![Captura de uma janela do ILSpy vazia](/images/reading-game-code/ilspy-window.png)
 
-From then you want to open the `Assembly-CSharp.dll` file present in the game's files.
+Então você deve abrir o arquivo `Assembly-CSharp.dll` presente nos arquivos do jogo.
 
-To get it you need to do the following:
+Para conseguir ele, faça o seguinte:
 
-### 1. Open game files. On Steam it's done as simple as right clicking the game and pressing 'Browse local files'. {#open-game-files}
+### 1. Abra os arquivos do jogo. Pela Steam, basta clicar com o botão direito no jogo e selecionar 'Abrir Arquivos Locais'. {#open-game-files}
 
-![How to open local files on Steam](/images/reading-game-code/opening-local-files.png)
+![Como abrir arquivos locais pela Steam](/images/reading-game-code/opening-local-files.png)
 
-The game files folder will open
-![Lethal Company local files](/images/reading-game-code/lc-game-folder.png)
+A pasta de arquivos do jogo vai abrir ![arquivos locais do Lethal Company](/images/reading-game-code/lc-game-folder.png)
 
-### 2. Go to `Lethal Company_Data/Managed` {#open-managed-folder}
+### 2. Vá para `Lethal Company_Data/Managed` {#open-managed-folder}
 
-Once you do that you will see many .dll files.
-![Lethal Company DLLs](/images/reading-game-code/lc-dlls.png)
+Assim que fizer isto, vai ver vários arquivos .dll.
+![DLLs do Lethal Company](/images/reading-game-code/lc-dlls.png)
 
-Copy the path and go back to ILSpy.
+Copie o caminho e volte para o ILSpy.
 
-### 3. Open the file in ILSpy {#open-in-ilspy}
+### 3. Abra o arquivo no ILSpy {#open-in-ilspy}
 
-In ILSpy click on `File -> Open`.
-![How to open file in ILSpy](/images/reading-game-code/ilspy-open.png)
+No ILSpy, clique em `File -> Open`.
+![Como abrir arquivos no ILSpy](/images/reading-game-code/ilspy-open.png)
 
 In an opened file browser paste the path you copied earlier for easy access, select `Assembly-CSharp.dll`, and press 'Open'.
 ![File browser window](/images/reading-game-code/opened-folder.png)
