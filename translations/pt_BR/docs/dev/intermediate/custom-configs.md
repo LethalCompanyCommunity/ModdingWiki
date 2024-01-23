@@ -1,22 +1,22 @@
 ---
 prev: false
 next: true
-description: An intermediate overview of how to implement custom configs for your Lethal Company mods.
+description: Uma visão geral de nível intermediário sobre como implementar configurações personalizadas nos seus mods de Lethal Company.
 ---
 
-# Custom Configs
+# Configurações Personalizadas
 
 :::warning
-**This is an advanced article. While this introduces some C# concepts, it is highly recommended to understand C# and the basics of modding this game <i>before</i> reading this article.**
+**Este é um artigo avançado. Mesmo introduzindo alguns conceitos de C#, é altamente recomendado entender C# e os básicos de moddar o game <i>antes</i> de ler este artigo.**
 :::
 
 :::info
-This tutorial is taken and adapted from the [BepInEx Configuration Documentation](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html). For more resources refer to that.
+Este tutorial foi pego e adaptado da [Documentação de configuração do BepInEx](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html). Para mais recursos, consulte ele.
 :::
 
-## Creating Config Entries
+## Criando Registros de Configuração
 
-Create a config class and add entries for any variables that you want to be configurable.
+Crie uma classe de configuração e adicionar registros para qualquer variável que você quer que seja configurável.
 
 ```cs
 public class Config
@@ -28,23 +28,23 @@ public class Config
 }
 ```
 
-Then we can start binding our config entries to the fields we just created inside of a class constructor.
+Então conseguiremos ligar nosso registro de configuração com os campos que acabamos de criar dentro do construtor da classe.
 
 ```cs
 public Config(ConfigFile cfg)
 {
     configGreeting = cfg.Bind(
-            "General",                          // Config section
-            "GreetingText",                     // Key of this config
-            "Hello, world!",                    // Default value
-            "Greeting text upon game launch"    // Description
+            "General",                          // Seção do config
+            "GreetingText",                     // Chave do config
+            "Hello, world!",                    // Valor padrão
+            "Greeting text upon game launch"    // Descrição
     );
     
     configDisplayGreeting = cfg.Bind(
-            "General.Toggles",                  // Config subsection
-            "DisplayGreeting",                  // Key of this config
-            true,                               // Default value
-            "To show the greeting text"         // Description
+            "General.Toggles",                  // Subseção do config
+            "DisplayGreeting",                  // Chave deste config
+            true,                               // Valor padrão
+            "To show the greeting text"         // Descrição
     );
 }
 ```
