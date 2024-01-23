@@ -1,55 +1,39 @@
 ---
 prev: true
 next: true
-description: A basic overview of the Open Source approach used by the Lethal Company modding community.
+description: Uma visão geral da abordagem sobre Código Aberto utilizado pela comunidade de modding do Lethal Company.
 ---
 
-# Open-source and ethics
+# Código Aberto e Ética
 
-## What is open-source?
+## O que é código aberto?
 
-Open-source means that code is publicly available, to be used, edited, and distributed by anyone. It fosters a
-collaborative and public approach to software development. There are a number of important things to take into account
-when developing open-source software, however.
+Código aberto significa que um código está disponível publicamente para ser usado, editado e distribuído por qualquer um. Isso adota uma abordagem colaborativa e pública em desenvolvimento de software. Contudo, há várias coisas a serem consideradas quando se desenvolve um software de código aberto.
 
-### Licenses
+### Licenças
 
-A GitHub repository _without_ a License is **not** open-source:
+Um repositório no GitHub _sem_ licença **não** é um código aberto:
 
-> without a license, the default copyright laws apply, meaning that you retain all rights to your source code and no one
-> may reproduce, distribute, or create derivative works from your work.
+> sem a licença, as leis de direitos autorais padrões se aplicam, o que significa que você terá total direito ao código-fonte, e ninguém pode reproduzir, distribuir ou criar trabalhos derivados baseados no seu.
 >
-> _source: https\://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license_
+> _fonte: https\://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license_
 
-This means, if you actually want to properly open-source your mods, that you'll have to pick an open-source license.
-This might sound scary, but it really doesn't have to be. GitHub created a very simple and nice website to find a
-license that fits your project: https\://choosealicense.com/
+Isso significa que, se você quiser abrir o código dos seus mods de maneira apropriada, você terá que escolher uma licença de código aberto.
+Isso pode parecer intimidador, mas não precisa ser. O GitHub criou um site simples para achar a licença perfeita que se encaixa com seu projeto: https\://choosealicense.com/
 
 :::warning
-**Obligatory "we are not lawyers". Our interpretation of these licenses is primarily based off of the `choosealicense`
-website, as well as personal experience.**
+**Aqui está o obrigatório: "Nós não somos advogados". Nossa interpretação dessas licenças são baseadas no site `choosealicense` (escolha uma licença), bem como experiência pessoal.**
 :::
 
-We recommend going with one of the following two licenses for mods:
+Nós recomendamos seguir com uma das seguintes licenças para seus mods:
 
-- [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/) -- the main benefit of this license is
-  that anyone using your mod's code (be it as a spin-off version, updated version, or in other games) will _have_ to use
-  this license as well. This means your work, and any derivative work, will remain open-source. It means people can't
-  grab your work and create a version which has no public code, and it means the community will forever be able to build
-  upon your work and keep your mod alive, even if you lose interest in it.
-- [MIT License](https://choosealicense.com/licenses/mit/) -- this is a more permissive version of the GNU General Public
-  License. It _also_ allows users to create _closed-source_ versions of your mod. This means a user is not required to
-  share their updated code publicly. They must, however, still retain the original license's copyright notice readily
-  available.
+- [Licença Pública Geral GNU v3.0](https://choosealicense.com/licenses/gpl-3.0/) -- a principal vantagem dessa licença é que qualquer um que usar o código do seu mod (seja como uma versão spin-off, atualizada ou em outros jogos) _terá_ que usar essa licença também. Isso significa que seu trabalho, e qualquer derivado, permanecerá como código aberto. Isso significa que pessoas não podem pegar seu código e criar uma versão que não tem o código público, e que a comunidade sempre poderá trabalhar em cima do seu trabalho e manter seu mod vivo, mesmo se você perder o interesse nele.
+- [Licença MIT](https://choosealicense.com/licenses/mit/) --  essa é uma versão mais permissiva em relação à Licença Pública Geral GNU. Ela _também_ permite que usuários criem versões de _código fechado_ do seu mod. Isso significa que o usuário não precisa compartilhar o código publicamente. No entanto, eles devem manter a notificação de direitos autorais da licença original facilmente disponível.
 
-### Healthy collaboration
+### Colaboração Saudável
 
-A modding community thrives when users help each other out. Keeping your mods open-source means current (and future)
-modders can learn from your current work, and perhaps even keep your mods updated if you ever leave the community.
+Uma comunidade de mods prospera quando os usuários se ajudam. Manter seus códigos abertos significa que modders atuais e futuros podem aprender com seu trabalho, e talvez até manter seu mod atualizado caso venha a sair da comunidade.
 
-It is, however, important to be ethical about this. We understand a modding community can get competitive. Please,
-refrain from taking code and claiming it as your own - always properly give credit where credit is due.
+Mas é importante se manter na ética quanto a isso. Entendemos que a comunidade de mods pode ficar competitiva. Por favor, não pegue um código alheio e diga ser seu - sempre dê os devidos créditos.
 
-Likewise, when other users help you by fixing bugs, and want to submit a pull request, please accept that, rather
-than taking the fix and implementing it yourself - this gives them some credit for the fix, and fosters a community
-where people aren't afraid to help out.
+Da mesma forma, quando outros usuários te ajudar a consertar bugs, e quiserem abrir um Pull Request, por favor, aceite ao invés de copiar as alterações feitas e aplicá-las você mesmo(a). Os Pr (Pull Requests) os dão créditos pelos consertos, e colabora com uma comunidade onde os usuários não tem medo de ser ajudarem.
