@@ -28,7 +28,7 @@ public class Config
 }
 ```
 
-Então conseguiremos ligar nosso registro de configuração com os campos que acabamos de criar dentro do construtor da classe.
+Então conseguiremos conectar nosso registro de configuração com os campos que acabamos de criar dentro do construtor da classe.
 
 ```cs
 public Config(ConfigFile cfg)
