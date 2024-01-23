@@ -9,30 +9,30 @@ description: 开始对致命公司进行修改，以增强每个人的体验。
 欢迎来到开发者指南！ 这是指南所包含所有内容的概述。 有关更多详细信息，请前往侧边栏上的特定部分。
 
 :::tip
-If you don't know how to code but want to add a custom Asset - whether that be sounds, scrap, suits, and more - there are APIs for that!
-The [Asset API list](/dev/apis/overview#asset-apis) has you covered!
+如果你不知道怎么编码，但想添加自定义资源（无论是声音、废料、套装等），都可以使用 API！
+[资源 API 列表](/dev/apis/overview#asset-apis) 可以满足你的需求！
 :::
 
-## Setup, Creation & Publishing {#setup-create-publish}
+## 设置、创建与发布 {#setup-create-publish}
 
-The basics of mod creation. Here, you can see what tools you need, how to create the initial mod, and how to publish it.
+模组创建的基础。 在这里，你可以看到你需要哪些工具，如何创建与发布初始模组。
 
-Do you need to set up your workstation? Head on over to the [initial setup](/dev/initial-setup) article to learn how to do so!
+你需要设置工作站吗？ 请参阅 [初始设置](/dev/initial-setup) 文章了解如何操作！
 
-Don't know how to create the initial mod setup? Learn via the [starting a mod](/dev/starting-a-mod) article.
+不知道如何创建初始模组设置？ 通过 [启动模组](/dev/starting-a-mod) 文章进行学习。
 
-Ready to publish your mod? Don't worry, we've [got you set](/dev/publishing-your-mod) with that!
+准备好发布模组了吗？ 别担心，我们已经[为你准备好](/dev/publishing-your-mod)了！
 
-## Advanced Topics
+## 进阶主题
 
-These are advanced topics relating to the game. They vary from simpler topics, such as creating config files, to more advanced topics, such as networking.
+这些是与游戏相关的进阶主题。 它们从更简单的主题（如创建配置文件）到更进阶的主题（如网络）不等。
 
-Need to add networking to your mod? It's a _doozy_, but we're here to help you! Just head on over to the [custom networking](/dev/advanced/networking) article.
+需要为模组添加网络功能吗？ 这确实 _很困难_，但我们随时为你提供帮助！ 只需前往 [自定义网络](/dev/advanced/networking) 文章即可。
 
-## Asset & Programming APIs {#apis}
+## 资源与编程 API {#apis}
 
-You shouldn't reinvent the wheel! There may be APIs out there that can help you along your mod-making journey.
+你不必重复造轮子！ 也许有一些 API 可以帮助你完成模组制作之旅。
 
-These vary from Asset APIs, which let you add assets to the game without programming knowledge; to Programming APIs, which allow you to more easily interact with the game.
+资源 API 允许你在没有编程知识的情况下将资源添加到游戏中，而编程 API 允许你更轻松地与游戏交互。
 
-For a basic overview of the APIs, look at the [modding API overview](/dev/apis/overview) article. Here, you can view the plethora of APIs available to you!
+有关 API 的基本概述，请参阅 [模组 API 概述](/dev/apis/overview) 文章。 在这里，您可以阅览大量可用的 API！
