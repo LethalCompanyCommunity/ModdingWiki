@@ -76,7 +76,7 @@ To export your model, go to: `File` -> `Export` -> `FBX (.fbx)`
 This will open our FBX exporter window, where we have some options available to us. The most important thing here however is the transform section. Because of the differences in Blender's and Unity's coordinate systems, exporting your model is not quite as straight-forward as you'd think. It's very easy to get your model pointing in the wrong direction, being sideways, or even upside down if you don't have correct values set.
 
 Even I don't understand how any it really works, but our model points in the negative Z direction, and in the transfrom section, we have set `Forward` to `-Z Forward`, and `Up` to `Y Up` and our model appears correctly in Unity.  
-![Screenshot: Export as FBX Settings](./ForTutorial/BlenderExportAsFBX.png)
+![Screenshot: Export as FBX Settings](/images/lethallib/custom-enemies/blender/BlenderExportAsFBX.png)
 
 ## Exporting an Updated Version of Your Model For Unity
 
