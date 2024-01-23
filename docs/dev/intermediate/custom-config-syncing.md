@@ -45,23 +45,26 @@ public class SyncedInstance<T> {
     internal static bool IsClient => NetworkManager.Singleton.IsClient;
     internal static bool IsHost => NetworkManager.Singleton.IsHost;
 
-    [NonSerialized]
-    protected static int IntSize = 4;
-
-    [NonSerialized] 
-    static readonly DataContractSerializer serializer = new(typeof(T));
+    [NonSerialized] static readonly DataContractSerializer Serializer = new(typeof(T));
+    [NonSerialized] protected static int INT_SIZE = 4;
+    [NonSerialized] static int MAX_BUFFER_SIZE;
 
     public static T Default { get; private set; }
     public static T Instance { get; private set; }
 
     internal static bool Synced;
 
-    protected void InitInstance(T instance) {
+    protected void InitInstance(T instance, int maxSize = 1300) {
         Default = instance;
         Instance = instance;
         
         // Ensures the size of an integer is correct for the current system.
         IntSize = sizeof(int);
+
+        // Limit to the size of a single packet upon which fragmenting is required.
+        if (maxSize < 1300) {
+            MAX_BUFFER_SIZE = maxSize;
+        }
     }
 
     internal static void SyncInstance(byte[] data) {
@@ -78,7 +81,7 @@ public class SyncedInstance<T> {
         using MemoryStream stream = new();
 
         try {
-            serializer.WriteObject(stream, val);
+            Serializer.WriteObject(stream, val);
             return stream.ToArray();
         }
         catch (Exception e) {
@@ -91,7 +94,7 @@ public class SyncedInstance<T> {
         using MemoryStream stream = new(data);
 
         try {
-            return (T) serializer.ReadObject(stream);
+            return (T) Serializer.ReadObject(stream);
         } catch (Exception e) {
             Plugin.Logger.LogError($"Error deserializing instance: {e}");
             return default;
@@ -99,23 +102,19 @@ public class SyncedInstance<T> {
     }
 
     internal static void SendMessage(string label, ulong clientId, FastBufferWriter stream) {
-        bool fragment = stream.Capacity > stream.MaxCapacity;
-        NetworkDelivery delivery = fragment ? NetworkDelivery.ReliableFragmentedSequenced : NetworkDelivery.Reliable;
+        bool fragment = stream.Capacity > MAX_BUFFER_SIZE;
+        if (fragment) Plugin.Logger.LogDebug(
+            $"Size of stream ({stream.Capacity}) was past the max buffer size.\n" +
+            "Config instance will be sent in fragments to avoid overflowing the buffer."
+        );
 
-        if (fragment) {
-            Plugin.Logger.LogDebug(
-                $"Size of stream ({stream.Capacity}) was past the max buffer size.\n" +
-                "Config instance will be sent in fragments to avoid overflowing the buffer."
-            );
-        }
-
+        NetworkDelivery delivery = fragment ? NetworkDelivery.ReliableFragmentedSequenced : NetworkDelivery.Reliable
         MessageManager.SendNamedMessage(label, clientId, stream, delivery);
     }
 }
 ```
 
 ### 1. Implement serialization
-
 We will now make use of the `SyncedInstance` class we made earlier by changing the following line:
 
 ```cs
