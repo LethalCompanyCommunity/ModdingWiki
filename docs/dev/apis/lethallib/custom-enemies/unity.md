@@ -26,8 +26,7 @@ The Unity project we have is based off of Evaisa's [Lethal Company Unity Templat
 - Assembly-CSharp-firstpass.dll
 :::
 
-This part needs confirmation, as I have not tested the project without these dll files and I don't know anything about this stuff.
-Anyways, you might also need to add these files from `Lethal Company/BepInEx/core`:
+We also want to add various DLL files our own DLL files might be depend on, so let's add the following DLL files from `Lethal Company/BepInEx/core`:
 ::: details List of BepInEx Core DLLs
 - 0Harmony20.dll
 - 0Harmony.dll
@@ -42,7 +41,7 @@ Anyways, you might also need to add these files from `Lethal Company/BepInEx/cor
 - MonoMod.Utils.dll
 :::
 
-Also, you would probably normally want to add `BepInEx.Harmony.dll` too from the same location, but it causes Unity to crash when building asset bundles, so we don't add it. But we don't seem to need that file anyways for making our asset bundle. If you know why this is, please tell about it!
+It seems that `BepInEx.Harmony.dll` causes Unity to crash, so we don't include it.
 
 We also depend on LethalLib by Evaisa (which is already included in the project), and it depends on MMHOOK, so you need to run the game once with MMHOOK so these dll files are generated:
 ::: details List of MMHOOK DLLs
@@ -54,7 +53,7 @@ We also depend on LethalLib by Evaisa (which is already included in the project)
 >- MMHOOK_Facepunch Transport for Netcode for GameObjects.dll
 :::
 
-The dll file of this mod also needs to be there so we can reference ToiletLeechAI from a component of the Toilet Leech prefab in Unity. It needs to be from the dll file, you cannot just copy and paste the ToiletLeechAI.cs file in the Unity project because asset bundles cannot contain scripts, and it just doesn't get the reference otherwise. You know it doesn't get the reference in the form of a yellow warning text if you launch the game with the mod and you have unity logging enabled in the `BepInEx.cfg` file.
+The dll file of this mod also needs to be there so we can reference ToiletLeechAI from a component of the Toilet Leech prefab in Unity. We need to do this via a dll file, we cannot just copy and paste the ToiletLeechAI.cs file in the Unity project because asset bundles cannot contain scripts, and it just doesn't get the reference otherwise. You know it doesn't get the reference in the form of a yellow warning text if you launch the game with the mod and you have unity logging enabled in the `BepInEx.cfg` file.
 
 ## Our Toilet Leech Assets In Unity
 
