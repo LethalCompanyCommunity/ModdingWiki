@@ -67,7 +67,8 @@ The first thing we did was import our fbx model into Unity. This is as simple as
 
 We have also copied the individual animations into the `Animations` folder, because I don't know how to separate them properly, but we can just ignore the animations embedded in the fbx file and use the copies inside the `Animations` folder anyways.
 
-Anyways, how do we make the game see our assets as an enemy? Well, we create a new ScriptableObject of type EnemyType. This is what the game uses, so we need it too. Do note that these ScriptableObjects come from the Lethal Company Unity Template this is based off of. Do also note that our UnityProject in this repository is already configured properly.
+Anyways, how do we make the game see our assets as an enemy? Well, we create a new ScriptableObject of type EnemyType. This is what the game uses, so we need it too. Do note that these ScriptableObjects come from the Lethal Company Unity Template this is based off of. Do also note that our UnityProject in this repository is already configured properly.  
+
 ![Screenshot: Create object Enemy Type](/images/lethallib/custom-enemies/unity/CreateObjectEnemyType.png)
 
 The EnemyType ScriptableObject has some configuration options, and the most important thing is the "Enemy Prefab" part of it. This is where we tell it what the model and whatever stuff our EnemyType has. Also note the "Enemy Name" thingy, this will be the name of the ToiletLeech enemy in the coding side of things.
@@ -79,6 +80,7 @@ If you don't know what prefabs are, see https://docs.unity3d.com/Manual/Prefabs.
 :::
 
 We have added these components to our prefab for everything to work properly:  
+
 ![Screenshot: Toilet Leech Prefab in inspector](/images/lethallib/custom-enemies/unity/ToiletLeechPrefabInspector.png)
 
 1. Toilet Leech AI (Script)
@@ -122,32 +124,38 @@ The enemy spinning animation on the beastiary entry background is a video file, 
 Unity Editor on Linux has [bad support for video files](https://docs.unity3d.com/Manual/VideoSources-FileCompatibility.html), so if you are using Linux, you might want to [encode your video to VP8 using FFmpeg](https://trac.ffmpeg.org/wiki/Encode/VP8). Unfortunately, Blender does not have an option to encode to VP8.
 :::
 
-## What Are Asset Bundles?
-
-https://docs.unity3d.com/Manual/AssetBundlesIntro.html  
-> An AssetBundle is an archive file that contains platform-specific non-code Assets (such as Models, Textures, Prefabs, Audio clips, and even entire Scenes) that Unity can load at run time. AssetBundles can express dependencies between each other; for example, a Material in one AssetBundle can reference a Texture in another AssetBundle. For efficient delivery over networks, you can compress AssetBundles with a choice of built-in algorithms depending on use case requirements (LZMA and LZ4).
->
-> AssetBundles can be useful for downloadable content (DLC), reducing initial install size, loading assets optimized for the end-user’s platform, and reduce runtime memory pressure.
->
-> Note: An AssetBundle can contain the serialized data of an instance of a code object, such as a ScriptableObject. However, the class definition itself is compiled into one of the Project assemblies. When you load a serialized object in an AssetBundle, Unity finds the matching class definition, creates an instance of it, and sets that instance’s fields using the serialized values. This means that you can introduce new items to your game in an AssetBundle as long as those items do not require any changes to your class definitions.
-
-Asset bundles are a way for us to basically transfer our enemy from our Unity project to Lethal Company.
-
 ### Adding Items To An Asset Bundle
 
+::: tip
+For information about Asset Bundles, see [Asset Bundling](/dev/intermediate/asset-bundling).
+:::
+
+::: danger DUPLICATE INFORMATION
+This section of the wiki page has duplicate information regarding the creation of Asset Bundles.
+
+**Note:** The existing page on the creation of asset bundles is slightly less in-depth, and does mention how to embed asset bundles in DLL files, which is what we do in this project.
+:::
+
 To add an item to an asset bundle, you first need to select the object you want to add, and then on the asset bundle dropdown, select `New...` and write the name of your asset bundle. Or if you already have an asset bundle, you can select that instead. You don't actually need to assign everything you need to the asset bundle as long as the item you assigned to the asset bundle depends on the rest of the items.  
+
 ![Screenshot: assign to asset bundle](/images/lethallib/custom-enemies/unity/AssignToAssetBundle.png)
 
 ### How To Build An Asset Bundle:
 
 1. Open asset bundle browser (this plugin is included in the Lethal Company Unity Template):  
+
 ![Screenshot: open asset bundle browser](/images/lethallib/custom-enemies/unity/OpenAssetBundleBrowser.png)
-2. Here we can see files that are included in our bundle. The ones that have the bundle as "auto" are things that our thing we have assigned to the asset bundle depends on, so they will be included as well. Do note that we need to explicitly inclde the assets we want directly refer to in the code. I don't know what modassets really is, it came with the Lethal Company Unity Template too. Should probably ask Evaisa, but anyways we can ignore it.  
+
+2. Here we can see files that are included in our bundle. The ones that have the bundle as "auto" are things that our thing we have assigned to the asset bundle depends on, so they will be included as well. Do note that we need to explicitly inclde the assets we want directly refer to in the code. I don't know what modassets really is, it came with the Lethal Company Unity Template too. Should probably ask Evaisa, but anyways we can ignore it. 
+
 ![Screenshot: Toilet Leech bundle preview](/images/lethallib/custom-enemies/unity/ToiletLeechBundlePreview.png)
+
 3. This is where we build our asset bundle. The asset bundle will be found where output path specifies, which in this case exists in a directory in the root of the Unity project.  
+
 ![Screenshot: build asset bundle](/images/lethallib/custom-enemies/unity/BuildAssetBundle.png)
-4. Then we copy `toiletleech` to the root of this repository. (Actually, we could probably just reference it without copy pasting as it exist in this repository already. If you try this and it works, and you might have to edit the csproj file for that, please open an issue or a pull request. I don't have time to do that right now.)
+
+4. Then we copy the `toiletleech` Asset Bundle to `Plugins` in the root of our repository. Now we can build our project, and the asset bundle gets embedded into our DLL file due to how we have set up our .csproj file.
 
 ::: info
-If you don't have Windows standalone build support installed in your Unity installation, close unity and install it from Unity Hub. I'm not 100% sure if this is actually needed, but I had no luck getting the materials of the model working in the asset bundle when I had my build target set to Linux, which I didn't realize could affect anything.
+If you don't have Windows standalone build support installed in your Unity installation, close Unity and install it from Unity Hub. I'm not 100% sure if this is actually needed, but I had no luck getting the materials of the model working in the Asset Bundle when I had my build target set to Linux.
 :::
