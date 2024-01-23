@@ -104,30 +104,30 @@ Claro que você também pode procurar por classes(types) e funções(methods) ap
 
 Muitas vezes, assim que achar algo que precisava, você pode querer saber onde está sendo usado. Tem uma ferramenta pra isso também.
 
-By right clicking on any field or method, in a context menu you can select "Analyze".
-![Analyze context menu](/images/reading-game-code/analyze-context.png)
+Clicando com o botão direito em qualquer field ou method no menu contextual, você pode selecionar "Analyze" e analisar o componente.
+![Contexto menu Analyze](/images/reading-game-code/analyze-context.png)
 
-After clicking on it a small window with several dropdowns will open.
-![Analyze window](/images/reading-game-code/analyze-window.png)
+Após clicar nele, uma pequena janela com vários menus contextuais irá abrir.
+![Janela Analyze](/images/reading-game-code/analyze-window.png)
 
-Here is what most used dropdowns stand for in fields and methods:
+Esses são os menus contextuais mais usados para campos e métodos:
 
 ### Fields
 
-`Read By` - Methods which use this field inside of them.
-![Read By in fields](/images/reading-game-code/field-readby.png)
+`Read By` (Lido Por) - Métodos que usam esse campo dentro de si.
+![Read By em campos](/images/reading-game-code/field-readby.png)
 
-`Assigned By` - Methods which assign value to this field.
-![Assigned By in fields](/images/reading-game-code/field-assignedby.png)
+`Assigned By` (Atribuído Por) - Métodos que atribuem valor para esse campo.
+![Assigned By em campos](/images/reading-game-code/field-assignedby.png)
 
 ### Methods
 
-`Uses` - List of fields and methods that this method is using.
-![Uses in methods](/images/reading-game-code/methods-uses.png)
+`Uses` (Usa) - Lista de campos e métodos que esse método está usando.
+![Usos em métodos](/images/reading-game-code/methods-uses.png)
 
-`Used By` - Methods which use this method.
-![Used By in methods](/images/reading-game-code/methods-usedby.png)
+`Used By` (Usado Por) - Métodos que usam este método.
+![Usado Por em métodos](/images/reading-game-code/methods-usedby.png)
 
-## Conclusion
+## Conclusão
 
-Congrats! Now you know how to read game's code and how to find something that you need. Remember that if you cannot find something - There is no shame in asking. So, in case you need any help, you can get some in the [Unofficial Lethal Company Community Discord](https://discord.gg/nYcQFEpXfU).
+Parabéns! Agora você sabe ler o código do jogo e como achar algo que esteja procurando. Lembre-se que se não achar nada, não há vergonha em pedir ajuda. Caso precise de ajuda, você pode conseguir no [Discord da Comunidade de Lethal Company Não Oficial](https://discord.gg/nYcQFEpXfU).
