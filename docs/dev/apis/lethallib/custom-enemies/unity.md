@@ -26,7 +26,7 @@ The Unity project we have is based off of Evaisa's [Lethal Company Unity Templat
 - Assembly-CSharp-firstpass.dll
 :::
 
-We also want to add various DLL files our own DLL files might be depend on, so let's add the following DLL files from `Lethal Company/BepInEx/core`:
+We also want to add various DLL files our own DLL files might depend on, so let's add the following DLL files from `Lethal Company/BepInEx/core`:
 ::: details List of BepInEx Core DLLs
 - 0Harmony20.dll
 - 0Harmony.dll
