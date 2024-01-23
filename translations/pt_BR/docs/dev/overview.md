@@ -25,14 +25,14 @@ Pronto para publicar seu mod? Não se preocupe, [cuidamos disso](/dev/publishing
 
 ## Tópicos Avançados
 
-These are advanced topics relating to the game. They vary from simpler topics, such as creating config files, to more advanced topics, such as networking.
+Esses são tópicos avançados relacionados ao jogo. Eles variam de tópicos simples, como criar arquivos de configuração, até tópicos mais avançados, como conectividade.
 
-Need to add networking to your mod? It's a _doozy_, but we're here to help you! Just head on over to the [custom networking](/dev/advanced/networking) article.
+Precisa adicionar conectividade ao seu mod? É complicadinho, mas estamos aqui para te ajudar! Siga para o artigo [conectividade personalizada](/dev/advanced/networking).
 
-## Asset & Programming APIs {#apis}
+## APIs de Programação e Recursos {#apis}
 
-You shouldn't reinvent the wheel! There may be APIs out there that can help you along your mod-making journey.
+Você não precisa reinventar a roda! Pode ser que haja APIs por aí que podem te ajudar na sua jornada de criador de mods.
 
-These vary from Asset APIs, which let you add assets to the game without programming knowledge; to Programming APIs, which allow you to more easily interact with the game.
+Podem variar de APIs de Assets, Que te deixam adicionar recursos no jogo sem ter conhecimento em programação; até APIs de programação, que permitem que você interaja de maneira fácil com o jogo.
 
-For a basic overview of the APIs, look at the [modding API overview](/dev/apis/overview) article. Here, you can view the plethora of APIs available to you!
+Para uma visão geral sobre APIs, vá para o artigo [visão geral de API de mods](/dev/apis/overview). Aqui você verá uma gama imensa de APIs disponíveis para você!
