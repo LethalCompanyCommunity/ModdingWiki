@@ -52,57 +52,57 @@ Copie o caminho e volte para o ILSpy.
 
 ### 3. Abra o arquivo no ILSpy {#open-in-ilspy}
 
-No ILSpy, clique em `File -> Open`.
+No ILSpy, clique em `File → Open`.
 ![Como abrir arquivos no ILSpy](/images/reading-game-code/ilspy-open.png)
 
-In an opened file browser paste the path you copied earlier for easy access, select `Assembly-CSharp.dll`, and press 'Open'.
-![File browser window](/images/reading-game-code/opened-folder.png)
+No navegador de arquivos, cole o caminho que você copiou anteriormente para um acesso fácil. Selecione `Assembly-CSharp.dll` e pressione 'Open'.
+![Janela de navegador de arquivos](/images/reading-game-code/opened-folder.png)
 
-After you have opened the file you should see that it has been added to the sidebar.
-![Opened Assembly-CSharp.dll](/images/reading-game-code/opened-asc-in-ilspy.png)
+Depois que abrir o arquivo, você deve ver que ele foi adicionado à barra lateral.
+![Assembly-CSharp.dll aberto](/images/reading-game-code/opened-asc-in-ilspy.png)
 
-## Reading the game code
+## Lendo o Código do Jogo
 
-Click on the little `+` left of the file name. You should see a bunch of things pop up in a list.
-![Opened Assembly-CSharp.dll](/images/reading-game-code/namespaces.png)
+´Clique no pequeno '+' a esquerda do nome do arquivo. Você deve ver um monte de coisas aparecerem em uma lista.
+![Assembly-CSharp.dll aberto](/images/reading-game-code/namespaces.png)
 
-Those are called [namespaces](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/namespaces) and are basically just used to organize code into groups. Nearly all of the game's codeis stored under the `{}` (blank) namespace, so open that by clicking on the `+` again.
+Esses são chamados [namespaces](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/namespaces) e servem basicamente para organizar o código em grupos. Quase todo o código do jogo é armazenado abaixo do namespace '{}' (vazio), então abra ele clicando no '+' novamente.
 
 :::tip
-Unlike 99% of the game's code, the actual player controller script (`PlayerMovementB`) is located in the `GameNetcodeStuff` namespace, so keep that in mind in case you cannot find it.
+Diferente de 99% do código do jogo, o real script que controla o jogador (`PlayerMovementB`) está no namespace `GameNetcodeStuff`, então lembre-se disso caso não consiga encontrà-lo.
 :::
 
-You will see a list of files, all containing code used by the game. If you double click any of them you can see the code inside.
-![Opened classes](/images/reading-game-code/so-many-classes.png)
+Você vai ver uma lista de arquivos, todos contendo códigos usados pelo jogo. Se você clicar duas vezes em qualquer um deles, conseguirá ver o código de cada um.
+![Classes abertas](/images/reading-game-code/so-many-classes.png)
 
-## Searching fields and methods
+## Campos de busca e métodos
 
-Obviously, with so many different files it may be difficult to find out a specific function you need. Luckily, ILSpy has a solution - Search tool.
+Com tantos arquivos assim, com certeza vai ser difícil achar uma função específica que você procura. Felizmente, ILSpy tem uma solução - Ferramenta de Busca.
 
-To open the search tool you can either:
+Para abrir a ferramenta de busca, você pode:
 
-Open it by clicking on `Window -> Search`.
-![Opening search through menu](/images/reading-game-code/window-search.png)
+Abrir ela clicando em `Window → Search`.
+![Abrindo a busca através do menu](/images/reading-game-code/window-search.png)
 
-OR
+OU
 
-By clicking on the little magnifying glass icon on the topbar.
-![Opening search through icon](/images/reading-game-code/glass-icon.png)
+Clicando na pequena lupa na barra superior.
+![Abrindo através do ícone de busca](/images/reading-game-code/glass-icon.png)
 
-Either way the Search window will open.
-![Opened search menu](/images/reading-game-code/opened-search.png)
+Independente do método, a janela de busca irá abrir.
+![Menu de busca aberto](/images/reading-game-code/opened-search.png)
 
-Using it is quite simple. You can type something in the search bar, and it will be displayed:
-![Search menu in action](/images/reading-game-code/search-in-action.png)
+Usa-la é bem simples. Você pode digitar algo na ferramenta de busca, e o que digitou será apresentado:
+![Menu de busca em ação](/images/reading-game-code/search-in-action.png)
 
-If you want to limit the search to only variables(fields) you can select so in the dropdown next to the search bar:
-![Search only fields](/images/reading-game-code/only-fields.png)
+Se quiser limitar a busca para apenas variáveis(fields) você pode selecionar essa opção no menu contextual da barra de busca:
+![Buscar apenas por fields](/images/reading-game-code/only-fields.png)
 
-Of course you can also search for types(classes) and methods(functions) by just selecting them.
+Claro que você também pode procurar por classes(types) e funções(methods) apenas os selecionando.
 
-## Finding usage
+## Achando um uso
 
-A lot of the times, once you find something you need, you may want to know where it's being used. There is a tool for that as well.
+Muitas vezes, assim que achar algo que precisava, você pode querer saber onde está sendo usado. Tem uma ferramenta pra isso também.
 
 By right clicking on any field or method, in a context menu you can select "Analyze".
 ![Analyze context menu](/images/reading-game-code/analyze-context.png)
