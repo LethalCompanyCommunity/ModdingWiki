@@ -34,7 +34,7 @@ To find the sound file you want to replace, I personally recommend extracting al
 
 You can do this by using a program called [AssetRipper](https://github.com/AssetRipper/AssetRipper/releases). Make sure to use the latest version (NOT the pre-release one).
 
-First, open up AssetRipper and select the Audio Export Format as "Convert to WAV", as the audio mods we're using can only handle .wav files.
+First, open up AssetRipper. Before update 2.3, you had to set the audio export format to .wav, but you don't need to do that anymore, as CustomSounds now supports `.ogg`, `.mp3` and `.wav` files.
 
 Afterwards, on the top toolbar go to `File > Open Folder`, and select "Lethal Company_Data", which you can find in the directory where Lethal Company is installed (if you don't know where your game is installed, just go to Steam, right click on Lethal Company, and then go to `Manage > Browse Local Files`).
 
@@ -95,7 +95,15 @@ So now we know that we need to replace the sound files `IcecreamTruckFar` and `I
 
 So, now we know that the files we're looking for are `IcecreamTruckFar` and `IcecreamTruckV2`. How do you replace them?
 
-First, you need to rename whatever audio file you're going to use to replace the original one, and (if it isn't already) change the audio format to `.wav`. So if you have a file called `IcecreamMusic.mp3`, then you need to rename it to `IcecreamTruckV2` and convert it to `.wav`.
+First, make sure to change the config in BepInEx.cfg. In particular, set the following parameter to true:
+
+```
+[Chainloader] HideManagerGameObject = true
+```
+
+CustomSounds will NOT work if you don't set this paremeter.
+
+Second, you need to rename whatever audio file you're going to use to replace the original one, and (if it isn't already) convert the audio format. So if you have a file called `IcecreamMusic.mp3`, then you need to rename it to `IcecreamTruckV2` and convert it to `.wav`,`.mp3` or `.ogg`.
 
 Once you're done with that, you need to place the audio files in the folder where CustomSounds is installed.
 
@@ -135,14 +143,6 @@ Here's a little fun demo of how this particular setup looks like:
 
 This one is by far the most obvious and simple method, you just put the audio files into a `.zip` file, upload it somewhere, tell your friends to download it and put it into the CustomSounds folder, and that's it.
 
-### CustomSounds syncing feature {#customsounds-syncing}
-
-The second one uses a new experimental feature of CustomSounds, which allows your friends to synchronize their custom sounds with yours. As before, you can type in "customsounds help" to see all the available commands. The command of interest to you is the "customsounds sync" command. Once you type in this command, everyone in your lobby should get this prompt:
-
-![Image of Sync request](/images/customsounds/Sync_request_client.png)
-
-Once the clients press F8, the host will send all the custom sounds to all clients, and they will be immediately loaded by the clients once the download is complete. In the case that someone doesn't want to use your custom sounds, they can use "customsounds revert" to use the original game files instead.
-
 ### Uploading to Thunderstore
 
 The only thing you need to keep in mind when publishing your mod is to keep this particular folder structure:
@@ -161,8 +161,28 @@ The only thing you need to keep in mind when publishing your mod is to keep this
 
 For the rest, check out the section on how to [publish your mod](/dev/publishing-your-mod) here on this wiki.
 
-## Credits
+## FAQ
 
-If you have any questions then feel free to ping me over on the [Lethal Company Discord](https://discord.gg/lethal-company), or just DM me on Discord (nickname: `futuresavior`). Please do NOT send me friend requests on Discord, just DM me directly, and don't forget to have fun :)
+### I converted the files to .wav, .mp3 or .ogg through the windows file explorer, and it doesn't work. Why?
+
+You can't just rename a .mp3 file to a .wav file and expect it to work. Sound files with different extensions store data differently. Windows does NOT convert the actual data inside of the sound files, it just changes the NAME of the extension, meaning that it's basically just a .mp3 file that appears as a .wav file, but isn't. Use a proper audio file converter instead -- there's a lot of options online. You can use Audacity, ffmpeg, or just any online file converter.
+
+### I can't upload my mod to Thunderstore, why?
+
+Check for the obvious things, did you name the files correctly? Is it called manifest.json instead of manifest.json.json? Is your folder path for the CustomSounds correct? Is your manifest.json correct?
+
+### My sound mod isn't working even though the sounds appear on the list!
+
+First, make sure that you changed HideManagerGameObject in BepInEx.cfg to True. You can do this in Thunderstore / r2modman by going into Config Editor > BepInEx.cfg, or just manually changing it in the BepInEx/configs directory.
+
+Second, Make sure that you have replaced the correct audio file. A lot of people have reported to me that their sound mod "doesn't work", while in reality it works perfectly fine, but it's just not the sound that they expected to replace. A common example is the light switch in the ship, where the actual sound files are called `FlashlightClickMini` and `FlashlightClickMini2`, and NOT `LightOff` and `LightOn`, which are actually responsible for the breaker panel in the dungeon.
+
+Other than that, check for anomalies within the sound files themselves. If everything else fails, try converting the audio file again through Audacity, as sometimes .wav files just fail to play due to outdated .wav formats.
+
+### None of these questions solve my problem! How can I contact you?
+
+If you have any other questions then feel free to ping me over on the [Lethal Company Discord](https://discord.gg/lethal-company), or just DM me on Discord (nickname: `futuresavior`). I want to clarify that I am not the developer of CustomSounds, that's Clementinise, who you can also contact on the same discord. Please do NOT send me friend requests, just DM me directly, and don't forget to have fun :)
+
+## Credits
 
 Thank you to Clementinise for creating CustomSounds and proof-reading my guide, and to no00ob for creating LCSoundTool, both of your mods are amazing and appreciated <3
