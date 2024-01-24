@@ -3,7 +3,15 @@ prev: true
 next: true
 description: Resources on making your own 3D enemy models for Unity.
 ---
-# Blender Basics
+# 3D Modeling With Blender
+
+On this page, we have listed various resources in order to help you get started with making your own 3D models in Blender, including how to get your models into Unity.
+
+::: tip
+You can check the Toilet Leech Blender project included in the example enemy repository for reference. It can be found under `AssetSources/Blender`.
+:::
+
+## Blender Basics
 
 ::: tip  
 Don't press random keys, as Blender has a lot of keyboard shortcuts and you might have no idea what you just did or how to undo it. That said, keyboard shortcuts can speed up your workflow by a lot, and you can use this [Blender Shortcuts Cheat Sheet](https://docs.google.com/document/d/1zPBgZAdftWa6WVa7UIFUqW_7EcqOYE0X743RqFuJL3o/edit?pli=1#heading=h.ftqi9ub1gec3) by Blender Guru, which can be useful.
@@ -36,7 +44,10 @@ If this doesn't fix the problem after importing to Unity, you likely have resize
 Unity does not understand Blender's shader node system. If you use it for anything other than the princibled BSDF, you will have to bake your material as a texture before it will work in Unity. Also make note of the fact that Lethal Company automatically adds its own "style" to everything, so you don't need to worry about that. However, textures are not necessary so you can basically skip this section entirely.
 :::
 
-// TODO: add resources
+- [Blender 4.0 - Texture Painting quick start guide](https://youtu.be/iwWoXMWzC_c) - Jamie Dunbar
+    - Introduction to texturing models.
+- [Blender 4.0: How to UV Unwrap Anything](https://youtu.be/XleO7DBm1Us) - On Mars 3D
+    - Unwrapping and dealing with UV maps.
 
 ## Rigging
 
@@ -64,16 +75,17 @@ We should put our individual animations in the NLA Editor so we can use them sep
 
 ### Animation - Common Issues
 
-**Objects in Model appear in different places as in Blender when exporting to Unity.**
+**Objects in my model appear in different places as in Blender when exporting to Unity.**  
 This might be because you have directly animated an object, instead of an armature. Try parenting your object to an armature and remake your animation with that.
 
-**Animations are broken in Unity.**
+**Animations are broken in Unity.**  
 This might be because you have animations with the same name in your NLA editor. Make sure your animations have unique names.
 
 ## Exporting Assets For Unity
 
 To export your model, go to: `File` -> `Export` -> `FBX (.fbx)`  
-This will open our FBX exporter window, where we have some options available to us:
+This will open our FBX exporter window, where we have some options available to us. If you have put your animations in the NLA editor, you'll want to disable `All Actions` under the `Bake Animation` dropdown.
+
 ![Screenshot: Export as FBX Settings](/images/lethallib/custom-enemies/blender/BlenderExportAsFBX.png)
 
 The most important thing here however is the transform section. Because of the differences in Blender's and Unity's coordinate systems, exporting your model is not quite as straight-forward as you'd think. It's very easy to get your model pointing in the wrong direction, being sideways, or even upside down if you don't have correct values set.
