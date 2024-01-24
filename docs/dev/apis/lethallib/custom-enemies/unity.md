@@ -123,40 +123,12 @@ The enemy spinning animation on the beastiary entry background is a video file, 
 Unity Editor on Linux has [bad support for video files](https://docs.unity3d.com/Manual/VideoSources-FileCompatibility.html), so if you are using Linux, you might want to [encode your video to VP8 using FFmpeg](https://trac.ffmpeg.org/wiki/Encode/VP8). Unfortunately, Blender does not have an option to encode to VP8.
 :::
 
-### Adding Items To An Asset Bundle
+### Asset Bundling
+
+We need to package our assets into an Asset Bundle in order to be able to load them from our plugin. See [Asset Bundling](/dev/intermediate/asset-bundling) to find out how this is done.
 
 ::: tip
-For information about Asset Bundles, see [Asset Bundling](/dev/intermediate/asset-bundling).
-:::
+We have a `SETUP-PROJECT.py` script in our project which genereates a `csproj.user` file. This file will copy your mod DLL and Asset Bundle to the path you specified when running the setup script, each time you build your plugin.
 
-::: danger DUPLICATE INFORMATION
-This section of the wiki page has duplicate information regarding the creation of Asset Bundles.
-
-**Note:** The existing page on the creation of asset bundles is slightly less in-depth, and does mention how to embed asset bundles in DLL files, which is what we do in this project currently.
-
-**I will change the project to not use embedded asset bundles due to the issue of them loading into memory twice, and then I can clean up this section.**
-:::
-
-To add an item to an asset bundle, you first need to select the object you want to add, and then on the asset bundle dropdown, select `New...` and write the name of your asset bundle. Or if you already have an asset bundle, you can select that instead. You don't actually need to assign everything you need to the asset bundle as long as the item you assigned to the asset bundle depends on the rest of the items.  
-
-![Screenshot: assign to asset bundle](/images/lethallib/custom-enemies/unity/AssignToAssetBundle.png)
-
-### How To Build An Asset Bundle:
-
-1. Open asset bundle browser (this plugin is included in the Lethal Company Unity Template):  
-
-![Screenshot: open asset bundle browser](/images/lethallib/custom-enemies/unity/OpenAssetBundleBrowser.png)
-
-2. Here we can see files that are included in our bundle. The ones that have the bundle as "auto" are things that our thing we have assigned to the asset bundle depends on, so they will be included as well. Do note that we need to explicitly inclde the assets we want directly refer to in the code. I don't know what modassets really is, it came with the Lethal Company Unity Template too. Should probably ask Evaisa, but anyways we can ignore it. 
-
-![Screenshot: Toilet Leech bundle preview](/images/lethallib/custom-enemies/unity/ToiletLeechBundlePreview.png)
-
-3. This is where we build our asset bundle. The asset bundle will be found where output path specifies, which in this case exists in a directory in the root of the Unity project.  
-
-![Screenshot: build asset bundle](/images/lethallib/custom-enemies/unity/BuildAssetBundle.png)
-
-4. Then we copy the `toiletleech` Asset Bundle to `Plugins` in the root of our repository. Now we can build our project, and the asset bundle gets embedded into our DLL file due to how we have set up our .csproj file.
-
-::: info
-If you don't have Windows standalone build support installed in your Unity installation, close Unity and install it from Unity Hub. I'm not 100% sure if this is actually needed, but I had no luck getting the materials of the model working in the Asset Bundle when I had my build target set to Linux.
+Just make sure to keep the asset bundle name the default, or you'll have to edit your `csproj.user` file to look for the new name, in which case you may also want to edit our setup script to look for this new name in the file it generates.
 :::
