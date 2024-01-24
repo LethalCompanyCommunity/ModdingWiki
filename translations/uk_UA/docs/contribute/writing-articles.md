@@ -55,7 +55,7 @@ VitePress використовує `YAML Frontmatter` для налаштову�
 
 ### Description
 
-Для того щоб описати певну інформації для пошукового двигона та вкладень, вам потрібно додати опис таким чином. To do so, you need the following code at the start of your article:
+Для того щоб описати певну інформації для пошукового двигуна та вкладень, вам потрібно додати тег `description`. Для цього необхідно додати такий код на початок статті:
 
 ```md
 ---
@@ -66,31 +66,29 @@ description: Example description
 ::: tip
 The description should be a short and descriptive; it should only be one to two sentences long.
 
-For example, the description for this article is the following:
+Наприклад:
 
 ```md
----
-description: How to contribute new articles to the wiki.
----
+Як зробити власний внесок в цю вікі
 ```
 
 :::
 
-### Previous & Next
+### Попередня та Наступна
 
-You may have seen previous or next article buttons at the bottom of wiki pages. They can be enabled or disabled in the frontmatter section, using `prev` and `next`.
+Ви могли помітити попередню та наступну кнопки під кожною статтею. Вони можуть бути додані або вилученні, використовуючі ключові слова `prev` та `next`.
 
-By default, the previous and next buttons are disabled. To enable these buttons, you need to set the options to true:
+За замовчуванням, ці кнопки вимкненні. Для того щоб їх активувати, вам потрібно встановити такі опції:
 
 ```md
 ---
 prev: true // [!code ++]
 next: true // [!code ++]
-description: Example description
+description: Приклад опису
 ---
 ```
 
-:::danger IMPORTANT
+:::danger ВАЖЛИВО
 
 :::code-group
 
@@ -98,43 +96,43 @@ description: Example description
 ---
 prev: false
 next: false
-description: Example description
+description: Приклад опису
 ---
 
-# Example Article
+# Приклад статті
 ```
 
 ```md [incorrect.md]
-<!-- Extra space causes errors -->
+<!-- Зайві пробіли можуть викликати проблеми -->
 ---
 prev: false
 next: false
-description: Example description
+description: Приклад опису
 ---
 
-# Example Article
+# Приклад статті
 ```
 
 :::
 
-## Formatting
+## Форматування
 
 ### Markdown
 
-This wiki uses a modified version of markdown (.md) files for articles, allowing a fairly easy process to write a new article.
-Markdown essentially is a simple text file with "shortcuts" that help with formatting.
-An example of this is in Discord, where you can easily format your messages to be bold, italicized, etc.
+Ця вікі використовує модифіковану верcію markdown (.md) для написання статей, дозволяючи достатньо легко створювати нові статі.
+Markdown по суті це простий текстовий файл з допоміжними функціями, що допомагають форматуванню.
+Наприклад в Діскорді, ви можете легко форматувати свої повідомлення, роблячи їх товстим, курсивом, тощо.
 
 :::tip
-[This Markdown Guide](https://www.markdownguide.org/basic-syntax/) goes into greater detail than the basics given in this article.
+[Ця Markdown інструкція](https://www.markdownguide.org/basic-syntax/) розповідає більш детально, чим описано тут.
 :::
 
-#### Common Usages
+#### Найпоширеніші використання
 
-There are a few simple ways to format text.
+Є декілька простих способів форматувати текст.
 
-- Using `**` on either side of a word/phrase will **bold that word/phrase**.
-- Using `_` on either side of a word/phrase will _italicize that word/phrase_.
+- Використання `**` з обох боків слова/фрази **робить жирним слово/фразу**.
+- Використання `_` з обох боків слова/фрази _робить слово/фразу курсивом_.
 - Using `***` on either side of a word/phrase will _**bold and italicize that word/phrase**_.
 - Using `~~` on either side of a word/phrase will ~~strike that word/phrase out~~.
 
