@@ -171,7 +171,7 @@ public static void RequestSync() {
 public static void OnRequestSync(ulong clientId, FastBufferReader _) {
     if (!IsHost) return;
 
-    Plugin.Logger.LogInfo($"Config sync request received from client: {clientId}");
+    Plugin.Logger.LogDebug($"Config sync request received from client: {clientId}");
 
     byte[] array = SerializeToBytes(Instance);
     int value = array.Length;
@@ -184,7 +184,7 @@ public static void OnRequestSync(ulong clientId, FastBufferReader _) {
 
         SendMessage("ModName_OnReceiveConfigSync", clientId, stream);
     } catch(Exception e) {
-        Plugin.Logger.LogInfo($"Error occurred syncing config with client: {clientId}\n{e}");
+        Plugin.Logger.LogDebug($"Error occurred syncing config with client: {clientId}\n{e}");
     }
 }
 ```
@@ -262,7 +262,7 @@ public static void ExamplePatch(PlayerControllerB __instance) {
     float syncedSpeed = Config.Instance.MOVEMENT_SPEED;
     if (__instance.IsOwner && __instance.isPlayerControlled) {
         __instance.movementSpeed = syncedSpeed;
-        Plugin.Logger.LogInfo("Movement speed synced with host config.");
+        Plugin.Logger.LogInfo($"Movement speed synced with the host. New value: {syncedSpeed}");
     }
 }
 ```
@@ -278,7 +278,7 @@ public static void ExamplePatch(PlayerControllerB __instance) {
 ```
 
 ## Troubleshooting
-> Syncing doesn't work when I patch manually.
+### Syncing doesn't work when I patch manually.
 
 If you're using `PatchAll()` with type parameters, make sure to patch the `Config` class like you would for other patches.
 ```cs
@@ -287,7 +287,7 @@ harmony.PatchAll(typeof(GameNetworkManagerPatch));
 harmony.PatchAll(typeof(Config)); // [!code ++]
 ```
 
-> I am not seeing any logs from the request/receiver methods?
+### I am not seeing any logs from the request/receiver methods?
 
 Harmony may refuse to patch the `InitializeLocalPlayer` method inside `Config.cs` if you have already have a dedicated patch file for `PlayerControllerB`. You can try placing the method there instead.
 ```cs
