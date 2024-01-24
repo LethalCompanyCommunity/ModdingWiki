@@ -6,56 +6,56 @@ description: How to contribute new articles to the wiki.
 
 # Contributing Articles
 
-Thank you for deciding to contribute articles to this wiki! The only way this wiki has come this far, and for it to continue to grow is through contributions.
+Дякую вам що вирішили зробити внесок в написання цієї вікі! Тільки завдяки вам ми зайшли так далеко, і продовжуємо рости з вашою допомогою.
 
-This guide will help you write, format, and implement your article into the wiki.
+Ця інструкція допоможе вам в написанні, форматуванні та створенні статей в цю вікі.
 
-## Forking the GitHub Repository {#forking-the-repo}
+## Форк GitHub Repository {#forking-the-repo}
 
-In order to send a Pull Request (PR) to the wiki to request your article to be added, you have to fork the [ModdingWiki repository](https://github.com/LethalCompany/ModdingWiki) (repo).
+Для того щоб відправити Pull Request (PR) для цієї вікі, вам треба зробити форк [репозиторію](https://github.com/LethalCompany/ModdingWiki) (repo).
 
-To fork the wiki, it's fairly simple. You'll click the `Fork` button on the webpage, then click `Create fork`.
+Форкнути дуже просто. Вам треба натиснути на кнопку `Fork`, після клікнути `Create fork`.
 
 ![GitHub Fork Repo Button](/images/writing-articles/forkgithubrepobutton.png)
 
 ![GitHub Create Fork Dialog](/images/writing-articles/forkgithubrepopopup.png)
 
-Now we've created the fork! From there you can make changes to a branch on the fork and create the PR when you're finished.
+Ви успішно створили форк! Тепер ви можете робити зміни в окрему гілку та створити PR як буде готово.
 
-## Creating the File
+## Створення файлу
 
-Creating the article file is pretty simple. Add the file to the folder/subsection you are adding to, such as `/docs/dev/api/` for APIs, and create a markdown file (.md).
+Створення файлу достатньо просте. Спочатку створіть файл опису директорії, наприклад у теці `/docs/dev/api/` для АПІ додайте маркдун файл (.md).
 
-:::danger IMPORTANT
+:::danger ВАЖЛИВО
 
-For example, this article is named `writing-articles.md` and is located in `/docs/extras/`.
+Для прикладу створіть `writing-articles.md` розташований в `/docs/extras/`.
 :::
 
-## Viewing Your Article
+## Перегляд своєї статті
 
-This website uses VitePress to turn the markdown files into viewable webpages. To view your article in context as a webpage, it's simple.
+Цей вебсайт використовує VitePress для того щоб формувати з markdown файлів читабельні вебсторінки. Для того щоб переглянути свій файл як сторінку, треба зробити наступні дії.
 
-To run VitePress and view as a local site, run the following command in the terminal:
+Щоб запустити VitePress як локальний сайт, виконайте наступну команду в терміналі:
 
 ```shell
 npm run dev
 ```
 
 :::tip
-This must run in your repo folder. You can do so using the terminal in the code editor/IDE that you use.
+Ця команда має виконуватись в теці репозиторію. Ви можете зробити це зі свого улюбленого редактора коду/IDE.
 :::
 
-The terminal will then display the following, at which point you can go to the URL given in the terminal:
+Термінал має вивести наступне посилання, через яке можна відкрити вебсторінку:
 
 ![Displayed Text in Terminal](/images/writing-articles/runvitepressterminal.png)
 
 ## Frontmatter
 
-VitePress uses `YAML Frontmatter` for article configs. There are three commonly used settings, `description`, `prev`, and `next`.
+VitePress використовує `YAML Frontmatter` для налаштовування статтей. Три найчастіші налаштування `description`, `prev`, та `next`.
 
 ### Description
 
-In order to have descriptive info for search engines and embeds, you have to add a description to the front matter. To do so, you need the following code at the start of your article:
+Для того щоб описати певну інформації для пошукового двигона та вкладень, вам потрібно додати опис таким чином. To do so, you need the following code at the start of your article:
 
 ```md
 ---
