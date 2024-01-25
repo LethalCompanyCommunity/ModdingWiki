@@ -3,7 +3,7 @@ prev: false
 next: true
 description: A tutorial on implementing custom enemies to Lethal Company.
 ---
-# Custom enemies - Overview
+# Custom Enemies - Overview
 
 ## Preamble
 

@@ -38,7 +38,7 @@ This is because your normals got inverted in one way or another. Select your mes
 If this doesn't fix the problem after importing to Unity, you likely have resized your object by a negative amount. This looks normal in Blender, but not in Unity. To fix this, go into Object Mode, select your object, press `Ctrl+A`, select apply scale. Now your normals should have flipped in Blender. Now, recalculate normals.
 
 
-## Materials & Texturing, UV Unwrapping
+## Materials, Texturing & UV Unwrapping
 
 ::: info  
 Unity does not understand Blender's shader node system. If you use it for anything other than the princibled BSDF, you will have to bake your material as a texture before it will work in Unity. Also make note of the fact that Lethal Company automatically adds its own "style" to everything, so you don't need to worry about that. However, textures are not necessary so you can basically skip this section entirely.
