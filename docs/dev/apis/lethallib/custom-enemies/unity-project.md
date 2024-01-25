@@ -3,7 +3,7 @@ prev: true
 next: true
 description: A tutorial on configuring your Unity project for custom enemies.
 ---
-# Unity
+# Unity Project
 
 You can open the Unity project included in the repository by choosing to open a project from disk, and selecting the `UnityProject` folder. When Unity has loaded the project, look into the ToiletLeech folder for the assets that make up the asset bundle.
 

@@ -25,7 +25,7 @@ Blender is an amazing free program and it can do everything you want when making
 
 You can install Blender from https://www.blender.org/, and it's also available on Flathub for Linux users.
 
-For getting started with making your 3D models in Blender, see [3D Modeling With Blender](./blender.md).
+For getting started with making your 3D models in Blender, see [3D Modeling With Blender](./blender-resources.md).
 
 ## Unity
 
@@ -36,3 +36,9 @@ On Linux, Unity 2022.3.9f1 has a bug where it might output audio to the wrong au
 
 Alternatively, you could use a patchbay like [qwpgraph](https://flathub.org/apps/org.rncbc.qpwgraph) to always force Unity to output into the audio device of your choosing. Do note that this only works if you are on PipeWire. If you are unsure on whether or not you are running PipeWire, you can see if `$ ps -e | grep pipewire` outputs anything. This command will list active processes that have "pipewire" in their name.
 :::
+
+For information about how our custom enemy is configured in Unity, see [Unity Project](./unity-project.md).
+
+## Enemy AI
+
+Lastly, we will go through some helpful information for coding your own enemy AI. For the article, see [Coding Our AI](./coding-ai.md).
