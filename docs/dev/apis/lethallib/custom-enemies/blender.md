@@ -47,7 +47,7 @@ Unity does not understand Blender's shader node system. If you use it for anythi
 - [Blender 4.0 - Texture Painting quick start guide](https://youtu.be/iwWoXMWzC_c) - Jamie Dunbar
     - Introduction to texturing models.
 - [Blender 4.0: How to UV Unwrap Anything](https://youtu.be/XleO7DBm1Us) - On Mars 3D
-    - Unwrapping and dealing with UV maps.
+    - UV Unwrapping and dealing with UV maps.
 
 ## Rigging
 

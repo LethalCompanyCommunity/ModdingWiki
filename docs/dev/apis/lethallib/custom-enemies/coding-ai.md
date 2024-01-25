@@ -11,9 +11,16 @@ You should use a [decompiler](/dev/initial-setup#decompiler) to look how the ene
 
 ## Tips For Testing Your Mod
 
-You can directly open the game's exe file, and this will allow you to open two instances and test multiplayer in LAN mode. This also opens the game slightly faster than through steam.
+Before we get into coding our custom AI, it's a good idea to optimize our testing setup so we'll waste less time waiting in loading screens and wandering around.
 
-You can also use external mods to spawn the enemy for testing. I don't know one right now that works fine on v49. If you have any suggestions, feel free to open an issue or something. Alternatively, you could implement testing functionality in your mod directly.
+For opening the game faster, you can open the game directly from the exe file. This means the game is not run through Steam and we must use LAN mode. This also allows us to open two instances of the game and test multiplayer in LAN mode.
+
+For entering a game quickly, we can use [DevelopmentStartup](https://thunderstore.io/c/lethal-company/p/CTNOriginals/DevelopmentStartup/). *Do note that it does not necessarly support joining local games on a second instance yet.*
+
+We can also use [LethalDevMode](https://thunderstore.io/c/lethal-company/p/megumin/LethalDevMode/) to get access to the game's internal debug tools. These tools allow you to toggle a testing level from the in-game menu without having to land your ship.
+![Screenshot: Toggle Testing Room](/images/lethallib/custom-enemies/coding-ai/DebugToggleTestRoom.png)
+
+Currently, enemies added with LethalLib don't get added to list for spawnable enemies on the debug menu, so for now we'll have to either add it to the list ourselves, or use an external mod for spawning enemies. You can for example use [GameMaster](https://thunderstore.io/c/lethal-company/p/GameMasterDevs/GameMaster/) for spawning your enemy with the `/spawn [enemy] [amount]` command, but the mod has some compatibility issues with v49. 
 
 ## Overview of EnemyAI
 
