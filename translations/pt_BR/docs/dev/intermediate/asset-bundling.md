@@ -6,14 +6,14 @@ description: Visão geral sobre como criar e carregar conjuntos de assets no seu
 
 # Agrupamento de Assets
 
-In order to add custom assets to your mods, you will need to create an asset bundle and load it with your plugin code. In order to do this, you will need to have a Unity project with your assets contained in it. Using the [Lethal Company Unity template project](https://github.com/EvaisaDev/LethalCompanyUnityTemplate/tree/main#readme) is recommended so you can use scripts from the game in your prefabs.
+Para adicionar Assets personalizados em seus mods, você precisa criar um conjuno de assets e carregar no código do seu plugin. Para isto, você precisa ter um projeto da Unity com seus assets contidos. É recomendado usar o [Projeto de Modelo do Lethal Company na Unity](https://github.com/EvaisaDev/LethalCompanyUnityTemplate/tree/main#readme) para poder usar os scripts do jogo pelos prefabs.
 
-## Marking Assets For Bundling
+## Marcando Assets para Agrupar
 
-Once you have the custom assets you want to include in a bundle, you have to mark them to be included in the asset bundle. This can be done by selecting your asset in Unity, and in the inspector window at the bottom either selecting or creating a new bundle name.
-![Image of the asset bundle name selection at the bottom of the inspector.](/images/asset-bundling/AssetBundleMark.png)
+Assim que tiver os assets personalizados que queira incluir no conjunto, terá que marcar eles para serem incluídos no conjunto de assets. Isso pode ser feito selecionando seu asset na Unity, e na janela do inspetor, na parte inferior, selecione ou crie um novo nome de conjunto (bundle).
+![Imagem da seleção de nome do conjunto de assets na parte inferiro do inspetor.](/images/asset-bundling/AssetBundleMark.png)
 
-## Creating The Asset Bundle
+## Criando o Conjunto de Asset
 
 Asset bundling requires the use of a package. The aforementioned template already includes the package, if you're using a decompiled project you can add it by going to `Window -> Package Manager -> Add package from git URL` and entering the following URL: `https://github.com/Unity-Technologies/AssetBundles-Browser.git`
 
