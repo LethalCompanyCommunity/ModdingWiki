@@ -129,3 +129,14 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/**
+ * Component: Sidebar Category Divider (Non-Clickable)
+ * -------------------------------------------------------------------------- */
+
+.VPSidebarItem:not(.is-link) > .item[role=button] > .text {
+    color: rgba(255, 205, 195, .7);
+}
+
+.VPSidebarItem.has-active:not(.is-link) > .item[role=button] > .text {
+    color: var(--vp-c-text-1) !important;
+}
