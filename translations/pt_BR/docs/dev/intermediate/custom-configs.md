@@ -49,8 +49,7 @@ public Config(ConfigFile cfg)
 }
 ```
 
-We then need to run said constructor to bind said configs to proper values and properties for users.<br><br>
-In your main class (usually `Plugin.cs`), implement the constructor with a parameter referencing the file that will be created by BepInEx.
+Agora precisamos iniciar o construtor para conectar as configurações com valores apropriados e propriedades para os usuários.<br><br>Na sua classe principal (geralmente `Plugin.cs`), implemente o construtor com um parâmetro referenciando o arquivo que será criado pelo BepInEx.
 
 ```cs
 public class MyExampleMod : BaseUnityPlugin
@@ -66,24 +65,24 @@ public class MyExampleMod : BaseUnityPlugin
 }
 ```
 
-## Using Config Entries
+## Usando Registros de Configuração
 
-You can now get the data from the config variables you have made using the `.Value` property.
+Agora você consegue pegar os dados das variáveis de configuração que você criou usando a propriedade `.Value`.
 
 ```cs
 private void MyExamplePatch()
 {
     private void MyExampleMethod()
     {
-        // Instead of just Logger.LogInfo("Hello, world!")
+        // No lugar de: Logger.LogInfo("Hello, world!")
         if(Config.configDisplayGreeting.Value)
             Logger.LogInfo(Config.configGreeting.Value);
     }
 }
 ```
 
-:::danger STOP
-Understand that your config file **Will Not Be Created** until your mod is loaded ingame **at least once**. See the [r2modman Configs Page](/installation/configuration) for using your configs.
+:::danger PARE
+Entenda que seu arquivo de configuração **Não Será Criado** até que o seu mod seja carregado no jogo **pelo menos uma vez**. Veja a [Página de Configurações do r2modman](/installation/configuration) para usar suas configurações.
 :::
 
-Now you have config files for your mods! If it's extremely important that your mod has a config value that's the same for every player, you may want to consider reading the page on [custom config syncing](/dev/intermediate/custom-config-syncing).
+Agora você tem arquivos de configurações para seus mods! Se for de extrema importância que seu mod tem um valor de configuração idêntico para cada jogador, considere ler a página sobre [sincronização de configurações personalizadas](/dev/intermediate/custom-config-syncing).
