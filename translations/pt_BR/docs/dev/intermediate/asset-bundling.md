@@ -1,10 +1,10 @@
 ---
 prev: false
 next: false
-description: An overview of how to create and load asset bundles in your plugin.
+description: Visão geral sobre como criar e carregar conjuntos de assets no seu plugin.
 ---
 
-# Asset Bundling
+# Agrupamento de Assets
 
 In order to add custom assets to your mods, you will need to create an asset bundle and load it with your plugin code. In order to do this, you will need to have a Unity project with your assets contained in it. Using the [Lethal Company Unity template project](https://github.com/EvaisaDev/LethalCompanyUnityTemplate/tree/main#readme) is recommended so you can use scripts from the game in your prefabs.
 
