@@ -8,7 +8,7 @@ description: Resources on making your own 3D enemy models for Unity.
 On this page, we have listed various resources in order to help you get started with making your own 3D models in Blender, including how to get your models into Unity.
 
 ::: tip
-You can check the Toilet Leech Blender project included in the example enemy repository for reference. It can be found under `AssetSources/Blender`.
+You can check the ExampleEnemy Blender project included in the example enemy repository for reference. It can be found under `AssetSources/Blender`.
 :::
 
 ## Blender Basics

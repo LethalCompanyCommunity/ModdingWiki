@@ -5,7 +5,7 @@ description: A tutorial on configuring your Unity project for custom enemies.
 ---
 # Unity Project
 
-You can open the Unity project included in the repository by choosing to open a project from disk, and selecting the `UnityProject` folder. When Unity has loaded the project, look into the ToiletLeech folder for the assets that make up the asset bundle.
+You can open the Unity project included in the repository by choosing to open a project from disk, and selecting the `UnityProject` folder. When Unity has loaded the project, look into the ExampleEnemy folder for the assets that make up the asset bundle.
 
 ## Setting Up Our Unity Project
 
@@ -53,26 +53,24 @@ We also depend on LethalLib by Evaisa (which is already included in the project)
 >- MMHOOK_Facepunch Transport for Netcode for GameObjects.dll
 :::
 
-The dll file of this mod also needs to be there so we can reference ToiletLeechAI from a component of the Toilet Leech prefab in Unity. We need to do this via a dll file, we cannot just copy and paste the ToiletLeechAI.cs file in the Unity project because asset bundles cannot contain scripts, and it just doesn't get the reference otherwise. You know it doesn't get the reference in the form of a yellow warning text if you launch the game with the mod and you have unity logging enabled in the `BepInEx.cfg` file.
+The dll file of this mod also needs to be there so we can reference ExampleEnemyAI from a component of the ExampleEnemy prefab in Unity. We need to do this via a dll file, we cannot just copy and paste the ExampleEnemyAI.cs file in the Unity project because asset bundles cannot contain scripts, and it just doesn't get the reference otherwise. You know it doesn't get the reference in the form of a yellow warning text if you launch the game with the mod and you have unity logging enabled in the `BepInEx.cfg` file.
 
-## Our Toilet Leech Assets in Unity
+## Our ExampleEnemy Assets in Unity
 
 ::: tip
 The way we figure out how enemies are configured in Unity is done by looking at the Asset Ripper's Unity project output of the game files. You can use [AssetRipper Guid Patcher](https://github.com/ChrisFeline/AssetRipperGuidPatcher) to get a Unity project based on the game files!
 :::
 
-We have made a ToiletLeech folder in our Unity project. Everything that goes into our asset bundle is in there.
+We have made an ExampleEnemy folder in our Unity project. Everything that goes into our asset bundle is in there.
 The first thing we did was import our fbx model into Unity. This is as simple as dragging our fbx file into our assets, or right clicking and choosing `Import New Asset...` and choosing our fbx file. The exported fbx model contains all our materials, textures and animations when first imported, but it is good to separate some of that stuff into their own folders. We have extracted our materials into the `Materials` folder.
 
 We have also copied the individual animations into the `Animations` folder, because I don't know how to separate them properly, but we can just ignore the animations embedded in the fbx file and use the copies inside the `Animations` folder anyways.
 
-Anyways, how do we make the game see our assets as an enemy? Well, we create a new ScriptableObject of type EnemyType. This is what the game uses, so we need it too. Do note that these ScriptableObjects come from the Lethal Company Unity Template this is based off of. Do also note that our UnityProject in this repository is already configured properly.  
+Anyways, how do we make the game see our assets as an enemy? Well, we create a new ScriptableObject of type EnemyType. This can be done by right clicking in your asset files, and doing `Create` -> `ScriptableObjects` -> `EnemyType`. This is what the game uses, so we need it too. Do note that these ScriptableObjects come from the Lethal Company Unity Template this is based off of. Do also note that our UnityProject in this repository is already configured properly.  
 
-![Screenshot: Create object Enemy Type](/images/lethallib/custom-enemies/unity/CreateObjectEnemyType.png)
+The EnemyType ScriptableObject has some configuration options, and the most important thing is the "Enemy Prefab" part of it. This is where we tell it what the model and whatever stuff our EnemyType has. Also note the "Enemy Name" thingy, this will be the name of the example enemy in the coding side of things.
 
-The EnemyType ScriptableObject has some configuration options, and the most important thing is the "Enemy Prefab" part of it. This is where we tell it what the model and whatever stuff our EnemyType has. Also note the "Enemy Name" thingy, this will be the name of the ToiletLeech enemy in the coding side of things.
-
-### The Toilet Leech Prefab
+### The ExampleEnemy Prefab
 
 ::: tip
 If you don't know what prefabs are, see https://docs.unity3d.com/Manual/Prefabs.html
@@ -80,10 +78,10 @@ If you don't know what prefabs are, see https://docs.unity3d.com/Manual/Prefabs.
 
 We have added these components to our prefab for everything to work properly:  
 
-![Screenshot: Toilet Leech Prefab in inspector](/images/lethallib/custom-enemies/unity/ToiletLeechPrefabInspector.png)
+![Screenshot: Example Enemy Prefab in inspector](/images/lethallib/custom-enemies/unity/ExampleEnemyInspector.png)
 
-1. Toilet Leech AI (Script)
-    - This script can be found in `Plugin/src/ToiletLeechAI.cs` at the root of this repository, and we have built our mod dll file and placed it inside `Assets/Plugins` in our Unity project so we can add it as a component to our prefab. We must do it that way because Asset Bundles cannot contain scripts, and by doing it this way, our mod's AI script will get recognized as the same script.
+1. Example Enemy AI (Script)
+    - This script can be found in `Plugin/src/ExampleEnemyAI.cs` at the root of this repository, and we have built our mod dll file and placed it inside `Assets/Plugins` in our Unity project so we can add it as a component to our prefab. We must do it that way because Asset Bundles cannot contain scripts, and by doing it this way, our mod's AI script will get recognized as the same script.
 2. Network Object
     - Needs to be added so our enemy's position can sync in multiplayer. After you reference your AI script, Unity will automatically prompt you to add this component.
 3. Nav Mesh Agent
@@ -99,7 +97,7 @@ We also have these as children of the prefab itself:
 3. Collision
     - Has the following components: Enemy AI Collision Detect (Script) & Box Collider with `isTrigger: true`
 4. TurnCompass
-    - Does nothing by itself, but we have a reference to this in the ToiletLeechAI.cs script to make the enemy looking at player a bit easier.
+    - Does nothing by itself, but we have a reference to this in the ExampleEnemyAI.cs script to make the enemy looking at player a bit easier.
 5. AttackArea
     - Does nothing by itself, but we take its position and scale and check if the player exists inside that area for the head swing attack.
 6. CreatureSFX
@@ -107,12 +105,12 @@ We also have these as children of the prefab itself:
 7. CreatureVoice
     - We play the creature's voice through this.
 
-### Toilet Leech Terminal Entry
+### ExampleEnemy Terminal Entry
 
 We need a TerminalNode ScriptableObject for our entry in the bestiary. This contains the bestiary text and displayed enemy name.
 
-::: info
-We have set the name in the bestiary to "TLeech" due to the already existing item "Toilet" causing issues with the game thinking we are trying to buy a toilet and not being able to open the bestiary entry.
+::: warning
+If an existing item in the game starts with the same word as your enemy's name, that can cause the game to think we are trying to buy that item and not being able to open the bestiary entry. As a workaround, you can try changing the name that is shown and used for opening the terminal entry.
 :::
 
 We also have a TerminalKeyword ScriptableObject, which has the word that the user needs to write in the terminal to find the page.

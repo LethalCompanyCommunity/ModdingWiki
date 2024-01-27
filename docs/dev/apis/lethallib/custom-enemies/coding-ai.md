@@ -98,9 +98,9 @@ public override void Start()
 ``` 
 And we can use it for example this: `enemyRandom.Next(0, 5)`. This will choose the next random integer in our range.
 
-We should still be careful about using random, as it is still possible that for example some if statement might have a different outcome due to some small desync, and then our random numbers also get desynced.
+We should still be careful about using random, as it is still possible that for example some `if` statement might have a different outcome due to some small desync, and then our random numbers also get desynced.
 
-One way to ensure we don't get desync is to use ClientRpc methods, as those are networked. To be able to use these methods like in Unity, we can use [Unity Netcode Patcher](https://github.com/EvaisaDev/UnityNetcodePatcher). It is already set up in our example enemy project. See the Unity Docs on [ClientRpcs](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/clientrpc/) for more information.
+One way to ensure we don't get desync is to use ClientRpc methods, as those are networked. See the Unity Docs on [ClientRpcs](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/clientrpc/) for more information. To be able to use these methods like in Unity, we can use [Unity Netcode Patcher](https://github.com/EvaisaDev/UnityNetcodePatcher). It is already set up in our example enemy project.
 
 ## Making More Complex AI
 

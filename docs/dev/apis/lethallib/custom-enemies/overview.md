@@ -14,10 +14,10 @@ In next pages, we will assume you have a copy of the example project repository 
 ## Example Enemy Project Repository
 
 ::: warning IMPORTANT
-Grab yourself a copy of the example enemy project at https://github.com/Hamunii/ToiletLeechIsReal! Every asset used in the project is MIT Licensed, and can be used as a base for your own mod!
+Grab yourself a copy of the example enemy project at https://github.com/Hamunii/LC-ExampleEnemy! Every asset used in the project is MIT Licensed, and can be used as a base for your own mod!
 :::
 
-We have an example enemy project which includes the full source code, Unity project, and Blender project files used for making the enemy. Currently the example enemy is Toilet Leech, but we will continue improving the example project and will likely eventually make a dedicated example enemy.
+We have an example enemy project which includes the full source code, Unity project, and Blender project files used for making the enemy.
 
 ## Blender
 
