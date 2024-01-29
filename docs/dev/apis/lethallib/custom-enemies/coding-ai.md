@@ -17,10 +17,8 @@ For opening the game faster, you can open the game directly from the exe file. T
 
 For entering a game quickly, we can use [DevelopmentStartup](https://thunderstore.io/c/lethal-company/p/CTNOriginals/DevelopmentStartup/). *Do note that it does not necessarly support joining local games on a second instance yet.*
 
-We can also use [LethalDevMode](https://thunderstore.io/c/lethal-company/p/megumin/LethalDevMode/) to get access to the game's internal debug tools. These tools allow you to toggle a testing level from the in-game menu without having to land your ship.
+We can also use [LethalDevMode](https://thunderstore.io/c/lethal-company/p/megumin/LethalDevMode/) to get access to the game's internal debug tools. These tools allow you to toggle a testing level from the in-game menu without having to land your ship, and also spawning your enemy, including toggling invincibility and spawning items.
 ![Screenshot: Toggle Testing Room](/images/lethallib/custom-enemies/coding-ai/DebugToggleTestRoom.png)
-
-Currently, enemies added with LethalLib don't get added to list for spawnable enemies on the debug menu, so for now we'll have to either add it to the list ourselves, or use an external mod for spawning enemies. You can for example use [GameMaster](https://thunderstore.io/c/lethal-company/p/GameMasterDevs/GameMaster/) for spawning your enemy with the `/spawn [enemy] [amount]` command, but the mod has some compatibility issues with v49. 
 
 ## Overview of EnemyAI
 
