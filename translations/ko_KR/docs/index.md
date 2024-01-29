@@ -3,14 +3,14 @@ layout: home
 titleTemplate: false
 description: 리썰 컴퍼니 모딩 위키 리썰 컴퍼니 모드를 다운, 관리, 그리고 만드는지 배우는 곳 입니다!
 hero:
-  name: Lethal Company Modding Wiki
-  tagline: 리썰 컴퍼니 모딩 가이드에 오신 것을 환영합니다! Learn how to install, manage, and create mods for Lethal Company!
+  name: 리썰 컴퍼니 모딩 위키
+  tagline: 리썰 컴퍼니 모딩 가이드에 오신 것을 환영합니다! 리썰 컴퍼니 모드를 다운, 관리, 그리고 만드는지 배우는 곳 입니다!
   actions:
     - theme: brand
-      text: Beginner's Guide
+      text: 입문자 가이드
       link: /overview
     - theme: alt
-      text: Edit on GitHub
+      text: GitHub에서 편집
       link: https://github.com/LethalCompany/ModdingWiki
 ---
 
@@ -43,8 +43,8 @@ hero:
 
 <HomeLinks>
 
-- [Join the Discord server!](https://discord.gg/nYcQFEpXfU)
+- [디스코드 서버에 참여하세요!](https://discord.gg/nYcQFEpXfU)
 - [Contribute on GitHub](https://github.com/LethalCompany/ModdingWiki)
-- [Translate the Wiki](./contribute/translating-the-wiki.html) - Localize the wiki to your language!
+- [위키 변역](./contribute/translating-the-wiki.html) - 위키를 당신의 언어에 맞게 번역하세요!
 
 </HomeLinks>
