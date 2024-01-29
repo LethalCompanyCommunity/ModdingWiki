@@ -1,24 +1,24 @@
 ---
 prev: false
 next: false
-description: Information on how YOU can get started translating the Lethal Company Modding Wiki into another language.
+description: 당신이 리썰 컴퍼니 모딩 위키를 다른 언어로 번역하는 방법에 대한 정보
 ---
 
-# Translating the wiki
+# 위키 번역
 
-In an effort to make modding as widely accessible as possible, this wiki does translation through crowdin: https\://crwd.in/lethal-company-modding-wiki
+이 위키는 가능한 한 널리 접근할 수 있도록 하기 위해 crowdin: https\://crwd.in/lethal-company-modding-wiki 을 통해 번역을 합니다.
 
 :::danger
-**Please don't submit automatic translations.** Translations only using ChatGPT, Google Translate, or similar machine translation will be rejected.
+_자동 번역본을 제출하지 말아주세요._\* ChatGPT, 구글 번역기 또는 이와 유사한 기계번역을 사용하는 번역은 거부 될 것입니다.
 :::
 
-## Tips
+## 팁들
 
 :::tip
-**We don't recommend using Crowdin's "translate all" feature**, just click a file you want to translate and do that for each file. You get more context this way.
+**Crowdin의 "전체 번역" 기능을 사용하는 것은 권장하지 않습니다**, 원하시는 번역파일을 택하신 후 각 파일을 번역해주세요. 이런 식으로 더 많은 맥락을 얻을 수 있습니다.
 :::
 
-The first time you launch the editor you will see Crowdin's own tips, please read them!
+만약 처음으로 편집기를 실행하셨다면 Crowdin's 만의 팁을 읽어주세요!
 
 If the site/program does not have native translation support, please _do not translate the names of English buttons/menus_. The following programs/sites are not currently translated:
 
