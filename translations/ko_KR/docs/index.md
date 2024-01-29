@@ -1,10 +1,10 @@
 ---
 layout: home
 titleTemplate: false
-description: The Lethal Company Modding Wiki. Learn how to install, manage, and create mods for Lethal Company!
+description: 리썰 컴퍼니 모딩 위키 리썰 컴퍼니 모드를 다운, 관리, 그리고 만드는지 배우는 곳 입니다!
 hero:
   name: Lethal Company Modding Wiki
-  tagline: Welcome to the Lethal Company modding guide! Learn how to install, manage, and create mods for Lethal Company!
+  tagline: 리썰 컴퍼니 모딩 가이드에 오신 것을 환영합니다! Learn how to install, manage, and create mods for Lethal Company!
   actions:
     - theme: brand
       text: Beginner's Guide
