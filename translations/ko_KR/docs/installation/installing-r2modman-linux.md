@@ -1,7 +1,7 @@
 ---
 prev: false
 next: false
-description: Learn how to use r2modman to install Lethal Company mods from Thunderstore on Linux.
+description: R2modman을 사용하여 Linux의 Thunderstore 에서 Lethal Company 모드를 설치하는 방법을 배우세요.
 ---
 
 # Using r2modman on Linux and Steam Deck
