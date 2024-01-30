@@ -15,17 +15,18 @@ _자동 번역본을 제출하지 말아주세요._\* ChatGPT, 구글 번역기 
 ## 팁들
 
 :::tip
-**Crowdin의 "전체 번역" 기능을 사용하는 것은 권장하지 않습니다**, 원하시는 번역파일을 택하신 후 각 파일을 번역해주세요. 이런 식으로 더 많은 맥락을 얻을 수 있습니다.
+**Crowdin의 "전체 번역" 기능을 사용하는 것은 권장하지 않습니다**, 원하시는 번역파일을 택하신 후 각 파일을 번역해주세요. 이런 식으로 더 많은 맥락을 파악할 수 있습니다.
 :::
 
 만약 처음으로 편집기를 실행하셨다면 Crowdin's 만의 팁을 읽어주세요!
 
-If the site/program does not have native translation support, please _do not translate the names of English buttons/menus_. The following programs/sites are not currently translated:
+사이트/프로그램이 기본 번역을 지원하지 않는 경우, _영어로 적힌 이름 버튼/메뉴 를 번역하지 마세요_. The following programs/sites are not currently translated:
 
 - r2modman
 - Thunderstore
 
-If you're not sure if a site/program has native translation, try it yourself or [start a discussion](#questions-and-new-languages)
+사이트/프로그램에 기본 번역이 있는지 확실하지 않은 경우 직접 시도해 보거나 [토론 시작]
+(#questions-and-new-languages)
 
 ### Links and parameters
 
