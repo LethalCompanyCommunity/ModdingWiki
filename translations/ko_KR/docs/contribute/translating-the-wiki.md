@@ -20,7 +20,7 @@ _자동 번역본을 제출하지 말아주세요._\* ChatGPT, 구글 번역기 
 
 만약 처음으로 편집기를 실행하셨다면 Crowdin's 만의 팁을 읽어주세요!
 
-사이트/프로그램이 기본 번역을 지원하지 않는 경우, _영어로 적힌 이름 버튼/메뉴 를 번역하지 마세요_. The following programs/sites are not currently translated:
+사이트/프로그램이 기본 번역을 지원하지 않는 경우, _영어로 적힌 이름 버튼/메뉴 를 번역하지 마세요_. 다음 프로그램/사이트는 현재 번역되지 않습니다:
 
 - r2modman
 - Thunderstore
@@ -28,19 +28,20 @@ _자동 번역본을 제출하지 말아주세요._\* ChatGPT, 구글 번역기 
 사이트/프로그램에 기본 번역이 있는지 확실하지 않은 경우 직접 시도해 보거나 [토론 시작]
 (#questions-and-new-languages)
 
-### Links and parameters
+### 링크와 매개변수들
 
 Anything you see highlighted (or any other weird-looking text) are usually links or parameters.
 
-Links are usually `<0>`, `<1>`, etc, and there's an opening and closing link. You **must** include anything that's highlighted in your translation. Example:
+링크는 일반적으로 `<0>`, `<1>` 등이며 열기, 닫기 링크로 사용 됩니다. 번역에서 강조 표시된 모든 내용을 **반드시** 포함해야 합니다. 예시:
 
-![Example of proper translation, with links and formatting the same as the source material](/images/translating-the-wiki/dutchformattingexample.png)
+![원본 자료와 동일한 링크 및 형식을 갖춘 적절한 번역의 예시]
+(/images/translating-the-wiki/dutchformattingexample.png)
 
-### Previous translations
+### 이전 번역
 
-Because this wiki is partially based on a [previously translated wiki](https://trombone.wiki), sometimes crowdin will show you similar existing translations.
+이 위키는 부분적으로 [이전에 번역된 위키](https://trombone.wiki)에 기반을 두고 있기 때문에, 때때로 crowdin이 당신에게 비슷한 기존 번역을 보여줍니다.
 
-Feel free to use these to your advantage, or start from scratch if you think you could improve upon it.
+이것들을 당신에게 유리하게 자유롭게 사용하거나, 당신이 그것을 개선할 수 있다고 생각한다면 처음부터 다시 시작하실 수 있습니다.
 
 ![Example of a suggested translation from the Trombone Champ Modding Wiki](/images/translating-the-wiki/suggestions.png)
 
