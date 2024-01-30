@@ -1,27 +1,27 @@
 ---
 prev: false
 next: false
-description: Frequently asked Lethal Company modding questions.
+description: 자주 묻는 Lethal Company 모딩 질문들.
 ---
 
-# Frequently Asked Questions
+# 자주 묻는 질문
 
 ***
 
-## I Installed MoreCompany/BiggerLobby and it doesn't work. {#morecompany-biggerlobby-not-working}
+## More Company/Bigger Lobby를 설치했는데 작동하지 않습니다. {#morecompany-biggerlobby-not-working}
 
-Ensure that:
+다음 사항을 확인합니다:
 
-- You only have EITHER MoreCompany or BiggerLobby installed. Trying to install both will break your game.
-- Everybody trying to join the server has the mod installed.
-- Everybody trying to join the server has the same mod version installed.
+- More Company 또는 Bigger Lobby만 설치되어 있는지 확인하세요. 만약 두가지 모드를 같이 설치할 경우 게임이 깨질 수 있습니다.
+- 서버에 참여하는 모든 인원이 모드를 깔았는지 확인하세요.
+- 서버에 참여하려는 모든 플레이어들이 동일한 모드 버전을 설치하여야 합니다.
 
-## Do mods work with a pirated version of the game? {#pirating}
+## 게임 모드가 불법 복제 버전에서 작동합니까? {#pirating}
 
-Mods will only work on the latest Steam version of Lethal Company. Buy the game.
+모드는 스팀 버전의 Lethal Company 에서만 작동합니다. 게임을 구매하세요.
 
-## Does (X Mod) require everybody to have it installed? {#require-all-to-install}
+## (X 모드) 는 모든 사람이 설치해야 하나요? {#require-all-to-install}
 
-It depends on the specific mod. Some mods work fully clientside, and some require everybody to have it installed.
+특정 모드에 따라 다릅니다. 일부 모드는 클라이언트 측에서 작동하고, 몇 모드는 모두가 설치를 해야 작동합니다.
 
-When in doubt, assume that a mod will only work if everybody on the server has it installed.
+만약 오류가 난다면, 모두가 모드를 깔았는지 확인하세요.
