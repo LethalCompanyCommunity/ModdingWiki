@@ -134,7 +134,11 @@
  * -------------------------------------------------------------------------- */
 
 .VPSidebarItem:not(.is-link) > .item[role=button] > .text {
-    color: rgba(255, 205, 195, .7);
+    color: rgba(85, 165, 156, 1);
+}
+
+.dark .VPSidebarItem:not(.is-link) > .item[role=button] > .text {
+    color: rgba(185, 255, 245, .7);
 }
 
 .VPSidebarItem.has-active:not(.is-link) > .item[role=button] > .text {
