@@ -9,18 +9,6 @@ description: An introduction to coding your own enemy AI.
 You should use a [decompiler](/dev/initial-setup#decompiler) to look how the enemy AI scripts work in the game. All the game code is contained inside `Lethal Company/Lethal Company_Data/Managed/Assembly-CSharp.dll`, so you should open that file in your decompiler!
 :::
 
-## Tips For Testing Your Mod
-
-Before we get into coding our custom AI, it's a good idea to optimize our testing setup so we'll waste less time waiting in loading screens and wandering around.
-
-For opening the game faster, you can open the game directly from the exe file. This means the game is not run through Steam and we must use LAN mode. This also allows us to open two instances of the game and test multiplayer in LAN mode.
-
-For entering a game quickly, we can use [DevelopmentStartup](https://thunderstore.io/c/lethal-company/p/CTNOriginals/DevelopmentStartup/). *Do note that it does not necessarly support joining local games on a second instance yet.*
-
-We can also use [LethalDevMode](https://thunderstore.io/c/lethal-company/p/megumin/LethalDevMode/) to get access to the game's internal debug tools. These tools allow you to toggle a testing level from the in-game menu without having to land your ship, and also spawning your enemy, including toggling invincibility and spawning items.
-
-![Screenshot: Toggle Testing Room](/images/lethallib/custom-enemies/coding-ai/DebugToggleTestRoom.png)
-
 ## Overview of EnemyAI
 
 Every enemy in Lethal Company inherits from the abstract EnemyAI class, so we do the same. We will now go over some of the relevant methods:
