@@ -91,11 +91,17 @@ We have added these components to our prefab for everything to work properly:
 
 We also have these as children of the prefab itself:
 1. ScanNode
-    - Allows us to scan the enemy. Make sure the following is set: Tag: `DoNotSet`, Layer: `ScanNode`
+    - Allows us to scan the enemy. Make sure the following is set:
+        - Tag: `DoNotSet`
+        - Layer: `ScanNode`
 2. MapDot
-    - Allows us to see the enemy on map. Make sure the following is set: Tag: `DoNotSet`, Layer: `MapRadar`
+    - Allows us to see the enemy on map. Make sure the following is set:
+        - Tag: `DoNotSet`
+        - Layer: `MapRadar`
 3. Collision
-    - Has the following components: Enemy AI Collision Detect (Script) & Box Collider with `isTrigger: true`
+    - Has the following components:
+        - Enemy AI Collision Detect (Script)
+        - Box Collider with `isTrigger: true`
 4. TurnCompass
     - Does nothing by itself, but we have a reference to this in the ExampleEnemyAI.cs script to make the enemy looking at player a bit easier.
 5. AttackArea

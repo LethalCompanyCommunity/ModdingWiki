@@ -18,6 +18,7 @@ For opening the game faster, you can open the game directly from the exe file. T
 For entering a game quickly, we can use [DevelopmentStartup](https://thunderstore.io/c/lethal-company/p/CTNOriginals/DevelopmentStartup/). *Do note that it does not necessarly support joining local games on a second instance yet.*
 
 We can also use [LethalDevMode](https://thunderstore.io/c/lethal-company/p/megumin/LethalDevMode/) to get access to the game's internal debug tools. These tools allow you to toggle a testing level from the in-game menu without having to land your ship, and also spawning your enemy, including toggling invincibility and spawning items.
+
 ![Screenshot: Toggle Testing Room](/images/lethallib/custom-enemies/coding-ai/DebugToggleTestRoom.png)
 
 ## Overview of EnemyAI

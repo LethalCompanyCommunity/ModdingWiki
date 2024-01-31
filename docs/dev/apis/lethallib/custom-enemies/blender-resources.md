@@ -33,9 +33,12 @@ If you have absolutely no experience with Blender, the 5 first parts of this ser
 
 ### Modeling - Common Issues
 
-**My mesh looks inverted in Blender or when imported to Unity.**  
-This is because your normals got inverted in one way or another. Select your mesh in Edit Mode, press A to select everything, press `Shift+N` to recalculate your normals (do not select "Inside", that is the flipped state).  
-If this doesn't fix the problem after importing to Unity, you likely have resized your object by a negative amount. This looks normal in Blender, but not in Unity. To fix this, go into Object Mode, select your object, press `Ctrl+A`, select apply scale. Now your normals should have flipped in Blender. Now, recalculate normals.
+
+**Q: My mesh looks inverted in Blender or when imported to Unity.**  
+
+> This is because your normals got inverted in one way or another. Select your mesh in Edit Mode, press `A` to select everything, press `Shift+N` to recalculate your normals (do not select "Inside", that is the flipped state).  
+> <br>
+> If this doesn't fix the problem after importing to Unity, you likely have resized your object by a negative amount. This looks normal in Blender, but not in Unity. To fix this, go into Object Mode, select your object, press `Ctrl+A`, select apply scale. Now your normals should have flipped in Blender. Now, recalculate normals.
 
 
 ## Materials, Texturing & UV Unwrapping
@@ -75,11 +78,13 @@ We should put our individual animations in the NLA Editor so we can use them sep
 
 ### Animation - Common Issues
 
-**Objects in my model appear in different places as in Blender when exporting to Unity.**  
-This might be because you have directly animated an object, instead of an armature. Try parenting your object to an armature and remake your animation with that.
+**Q: Objects in my model appear in different places as in Blender when exporting to Unity.**  
 
-**Animations are broken in Unity.**  
-This might be because you have animations with the same name in your NLA editor. Make sure your animations have unique names.
+> This might be because you have directly animated an object, instead of an armature. Try parenting your object to an armature and remake your animation with that.
+
+**Q: Some animations do nothing in Unity.**  
+
+> This might be because you have animations with the same name in your NLA editor. Make sure your animations have unique names.
 
 ## Exporting Assets For Unity
 
@@ -90,9 +95,11 @@ This will open our FBX exporter window, where we have some options available to 
 
 The most important thing here however is the transform section. Because of the differences in Blender's and Unity's coordinate systems, exporting your model is not quite as straight-forward as you'd think. It's very easy to get your model pointing in the wrong direction, being sideways, or even upside down if you don't have correct values set.
 
-Blender considers "Forward" to be `-Y`, while in Unity it's `Z`. And "Up" in Blender is `Z`, while in Unity it's `Y`. "Forward" is illustrated with the green arrow in the image below, while the blue arrow is "Up". The left side represents Blender's coordinate space, center represents our export settings in Blender's space, while the right side represents the output in Unity. We set `Forward` (`-Y`) to `-Z Forward`, and `Up` (`Z`) to `Y Up` and our model appears correctly in Unity space. The reason `-Z Forward` becomes positive `Z` might be because technically, `Z` is inverted between Blender and Unity, which we can see in the image.  
+Blender considers "Forward" to be `-Y`, while in Unity it's `Z`. And "Up" in Blender is `Z`, while in Unity it's `Y`. "Forward" is illustrated with the green arrow in the image below, while the blue arrow is "Up". The left side represents Blender's coordinate space, center represents our export settings in Blender's space, while the right side represents the output in Unity's space.
+
 ![Illustration: Blender coordinates to Unity](/images/lethallib/custom-enemies/blender/BlenderToUnityCoordinates.png)
 
+We set `Forward` (`-Y`) to `-Z Forward`, and `Up` (`Z`) to `Y Up` and our model appears correctly in Unity space. The reason `-Z Forward` becomes positive `Z` might be because technically, `Z` is inverted between Blender and Unity, which we can see in the illustration.  
 
 ## Exporting an Updated Version of Your Model For Unity
 
