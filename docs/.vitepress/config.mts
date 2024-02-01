@@ -69,6 +69,7 @@ export default defineConfig({
               items: [
                 { text: 'Initial Setup', link: '/dev/initial-setup' },
                 { text: 'Starting a Mod', link: '/dev/starting-a-mod' },
+                { text: 'Mod Testing Tips', link: '/dev/mod-testing-tips' },
                 { text: 'Open-Source & Ethics', link: '/dev/open-source-and-ethics' },
                 { text: 'Publishing Your Mod', link: '/dev/publishing-your-mod' }
               ]
