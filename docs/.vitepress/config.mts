@@ -123,6 +123,17 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         { text: 'Custom Scrap', link: '/dev/apis/lethallib/customscrap'},
+                        {
+                          text: 'Custom Enemies',
+                          link: '/dev/apis/lethallib/custom-enemies/overview',
+                          collapsed: true,
+                          items: [
+                            { text: '3D Modeling With Blender', link: '/dev/apis/lethallib/custom-enemies/blender-resources'},
+                            { text: 'Unity Project', link: '/dev/apis/lethallib/custom-enemies/unity-project'},
+                            { text: 'Coding Our AI', link: '/dev/apis/lethallib/custom-enemies/coding-ai'},
+                          ]
+                        },
+
                       ]
                     },
                   ]
