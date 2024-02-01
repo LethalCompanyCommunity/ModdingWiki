@@ -181,6 +181,8 @@ To easily access private fields and methods in the game's code, you should publi
 
 ## Что дальше?
 
-We recommend reading through our very short guide on [open-source & ethics](/dev/open-source-and-ethics), to help foster a healthy modding community.
+Check our list of tips for improving your modding workflow on [Mod Testing Tips](/dev/mod-testing-tips.md).
+
+We also recommend reading through our very short guide on [open-source & ethics](/dev/open-source-and-ethics), to help foster a healthy modding community.
 
 Once you've finished a mod, you can [publish it](/dev/publishing-your-mod).
