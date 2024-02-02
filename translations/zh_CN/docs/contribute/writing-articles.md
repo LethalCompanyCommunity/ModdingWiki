@@ -1,12 +1,12 @@
 ---
 prev: false
 next: false
-description: How to contribute new articles to the wiki.
+description: 如何为维基贡献新文章
 ---
 
-# Contributing Articles
+# 贡献文章
 
-Thank you for deciding to contribute articles to this wiki! The only way this wiki has come this far, and for it to continue to grow is through contributions.
+感谢你决定为维基作出贡献！ 维基能走到今天，并继续发展壮大少不了来自所有人的贡献。
 
 This guide will help you write, format, and implement your article into the wiki.
 
