@@ -6,10 +6,6 @@ description: An intermediate overview of how to sync custom configs for your Let
 
 # Custom Config Syncing
 
-::: warning
-**This is an advanced article. While this introduces some C# concepts, it is highly recommended to understand C# and the basics of modding this game <i>before</i> reading this article.**
-:::
-
 ## Preface
 A very common case for many mod developers is wanting to synchronize the host's configuration file with all other players.
 
