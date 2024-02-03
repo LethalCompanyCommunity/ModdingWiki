@@ -50,7 +50,8 @@ export default defineConfig({
               text: 'Other Resources',
               items: [
                 {text: 'Frequently Asked Questions', link: '/extras/faq'},
-                {text: 'Contributing Translations', link: '/translation/translating-the-wiki'},
+                { text: 'Contributing Translations', link: '/contribute/translating-the-wiki' },
+                { text: 'Contributing Articles', link: '/contribute/writing-articles' },
                 {text: 'About', link: '/extras/about'}
               ]
             },
@@ -68,6 +69,7 @@ export default defineConfig({
               items: [
                 { text: 'Initial Setup', link: '/dev/initial-setup' },
                 { text: 'Starting a Mod', link: '/dev/starting-a-mod' },
+                { text: 'Mod Testing Tips', link: '/dev/mod-testing-tips' },
                 { text: 'Open-Source & Ethics', link: '/dev/open-source-and-ethics' },
                 { text: 'Publishing Your Mod', link: '/dev/publishing-your-mod' }
               ]
@@ -75,19 +77,20 @@ export default defineConfig({
             { 
               text: 'Modding Topics', 
               items: [
-                /*{
+                {
                   text: 'Fundamentals',
                   collapsed: false,
                   items: [
-                      
+                      { text: "Reading Game Code", link: '/dev/fundamentals/reading-game-code'}
                   ]
-                },*/
+                },
                 {
                   text: 'Intermediate',
                   collapsed: false,
                   items: [
                     { text: 'Custom Configs', link: '/dev/intermediate/custom-configs' },
                     { text: 'Custom Config Syncing', link: '/dev/intermediate/custom-config-syncing' },
+                    { text: 'Asset Bundling', link: '/dev/intermediate/asset-bundling' },
                   ]
                 },
                 {
@@ -110,13 +113,31 @@ export default defineConfig({
                     { text: 'CustomSounds', link: '/dev/apis/customsounds'},
                   ]
                 },
-                /*{
+                {
                   text: 'Programming APIs',
                   collapsed: false,
                   items: [
-                    
+                    { 
+                      text: 'LethalLib', 
+                      link: '/dev/apis/lethallib',
+                      collapsed: true,
+                      items: [
+                        { text: 'Custom Scrap', link: '/dev/apis/lethallib/customscrap'},
+                        {
+                          text: 'Custom Enemies',
+                          link: '/dev/apis/lethallib/custom-enemies/overview',
+                          collapsed: true,
+                          items: [
+                            { text: '3D Modeling With Blender', link: '/dev/apis/lethallib/custom-enemies/blender-resources'},
+                            { text: 'Unity Project', link: '/dev/apis/lethallib/custom-enemies/unity-project'},
+                            { text: 'Coding Our AI', link: '/dev/apis/lethallib/custom-enemies/coding-ai'},
+                          ]
+                        },
+
+                      ]
+                    },
                   ]
-                }*/
+                }
               ]
             },
             {

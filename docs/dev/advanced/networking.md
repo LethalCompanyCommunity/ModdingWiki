@@ -1,7 +1,7 @@
 ---
 prev: false
 next: false
-description: An advanced overview of how to use UnityNetcodeWeaver to add networking to your Lethal Company mods.
+description: An advanced overview of how to use Unity Netcode Patcher to add networking to your Lethal Company mods.
 ---
 
 # Networking
@@ -16,11 +16,11 @@ This is not a tutorial on how to use Unity's [Netcode for GameObjects](https://d
 
 ## Preface
 
-This tutorial requires using [@EvaisaDev](https://github.com/EvaisaDev/)'s [UnityNetcodeWeaver](https://github.com/EvaisaDev/UnityNetcodeWeaver) (Thank you very much Evaisa!). This tutorial will only go into the basics of using this tool; if you run into any issues, ask in the [NetcodePatcher Forum Post](https://discord.com/channels/1169792572382773318/1175504315029389343) on the [Unofficial Lethal Company Community Discord](https://discord.gg/nYcQFEpXfU).
+This tutorial requires using [@EvaisaDev](https://github.com/EvaisaDev/)'s [Unity Netcode Patcher](https://github.com/EvaisaDev/UnityNetcodePatcher) (Thank you very much Evaisa!). This tutorial will only go into the basics of using this tool; if you run into any issues, ask in the [NetcodePatcher Forum Post](https://discord.com/channels/1169792572382773318/1175504315029389343) on the [Unofficial Lethal Company Community Discord](https://discord.gg/nYcQFEpXfU).
 
-### Why use Unity Netcode Weaver? {#why-netcode-weaver}
+### Why use Unity Netcode Patcher? {#why-netcode-patcher}
 
-Unity Netcode Weaver replicates the IL Post Processing Unity performs when compiling code utilizing Netcode for GameObjects package. This turns the C# code before the post processing step:
+Unity Netcode Patcher replicates the IL Post Processing Unity performs when compiling code utilizing Netcode for GameObjects package. This turns the C# code before the post processing step:
 
 ```cs
 [ClientRpc]
@@ -231,23 +231,26 @@ The Game Object we spawn as an asset requires a network object. We will use this
 
 ![ExampleNetworkHandler Prefab](/images/custom-networking/ExampleNetworkHandlerPrefab.png)
 
-We bundle this prefab up, embed the prefab as a resource in our ExampleMod project, and then import it using:
+We bundle this prefab up, and then import it using:
 
 ```cs
-MainAssetBundle = AssetBundle.LoadFromStream(Assembly.GetExecutingAssembly().GetManifestResourceStream("ExampleMod.ExampleModAssets"))
+// Info is an instance member field of your `BaseUnityPlugin` class.
+var dllFolderPath = System.IO.Path.GetDirectoryName(Info.Location);
+var assetBundleFilePath = System.IO.Path.Combine(dllFolderPath, "ExampleModAssets");
+MainAssetBundle = AssetBundle.LoadFromFile(assetBundleFilePath);
 ```
 
-We then can begin working on the patch that spawns the NetworkHandler.
+The AssetBundle file has to be added to the plugins folder next to (in the same folder as) the mod's .dll file.
 
-One other method of importing the asset is with:
+We recommend using this method rather than embedding your resources directly in your dll file, for several reasons:
 
-```cs
-MainAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "ExampleModAssets"));
-```
+- Memory used for assets would be duplicated: If your assets are 1GB in size and embedded in the DLL, 1GB is allocated to load your DLL into the process, then another 1GB is used by `Unity` to load the bundle via `AssetBundle.LoadFromMemory`.
 
-The AssetBundle file has to be added to the Plugins folder with the mod's .dll file in this case. It won't work if it's nonexistant or in the Bundles folder of BepInEx.
+- Developing your plugin is easier: you don't have to trigger a recompilation of your DLL every time you modify an asset.
 
-?> While this method works, it's not recommended due to potential issues with the ExampleModAssets file not existing at that location, either from the mod not being installed correctly, or someone accidentally deleting the file.
+- The installation process is managed by a mod manager: as long as you place the asset bundle file correctly next to your dll in the .zip file you upload to thunderstore, the asset will be in the right place and the above code will work.
+
+With this done, we can now begin working on the patch that spawns the NetworkHandler.
 
 ### Loading the Asset
 
@@ -425,16 +428,16 @@ When subscribing and unsubscribing to an event, make sure that <i>both</i> the h
 Hooking to a ClientRpc can cause errors with code running multiple times on the host instance. Avoid hooking to any ClientRpcs - and if you must, consider adding a debounce.
 :::
 
-## Using Unity Netcode Weaver {#using-netcode-weaver}
+## Using Unity Netcode Patcher {#using-netcode-patcher}
 
-Now that we've finished the networking code, all that's left is to patch the compiled mod assembly with Unity Netcode Weaver/Patcher. Before we can do so, we need to prepare the mod for patching. 
+Now that we've finished the networking code, all that's left is to patch the compiled mod assembly with Unity Netcode Patcher. Before we can do so, we need to prepare the mod for patching. 
 
 1. Make sure that there is a .pdb file when you build your plugin. If it is not there, make sure that Debug Symbols is set to `Portable` and not embedded.
 
 2. Add the following code to your main Plugin.cs file, and make sure the method only runs **once**:
 
 ```cs
-private static void NetcodeWeaver()
+private static void NetcodePatcher()
 {
     var types = Assembly.GetExecutingAssembly().GetTypes();
     foreach (var type in types)
@@ -453,11 +456,11 @@ private static void NetcodeWeaver()
 
 static void Awake()
 {
-    NetcodeWeaver(); // ONLY RUN ONCE // [!code warning]
+    NetcodePatcher(); // ONLY RUN ONCE // [!code warning]
 }
 ```
 
-Before you can run Unity Netcode Weaver, make sure it's set up - specifically, copy the contents of `Lethal Company/Lethal Company_Data/Managed` into `NetcodePatcher/deps`.
+Before you can run Unity Netcode Patcher, make sure it's set up - specifically, copy the contents of `Lethal Company/Lethal Company_Data/Managed` into `NetcodePatcher/deps`.
 
 Now, you just have to add the following Post-Build Event to your project:
 
@@ -466,9 +469,9 @@ cd <NetcodePatcher Folder Directory Here>
 NetcodePatcher.dll $(TargetDir) deps/
 ```
 
-If this does not work, you can [follow the instructions on how to use UnityNetcodeWeaver from the command line.](https://github.com/EvaisaDev/UnityNetcodeWeaver#usage-from-command-line)
+If this does not work, you can [follow the instructions on how to use Unity Netcode Patcher from the command line.](https://github.com/EvaisaDev/UnityNetcodePatcher#usage-from-command-line)
 
 ## Conclusion
 
-Now that you've finally finished all the code and patched it with UnityNetcodeWeaver, you should have networking in your mod! Congrats! Pat yourself on the back! It's not easy getting to this stage, and you will always run into issues as you continue your modding journey. But don't fret! You can always get help in the [Unofficial Lethal Company Community Discord!](https://discord.gg/nYcQFEpXfU)
+Now that you've finally finished all the code and patched it with Unity Netcode Patcher, you should have networking in your mod! Congrats! Pat yourself on the back! It's not easy getting to this stage, and you will always run into issues as you continue your modding journey. But don't fret! You can always get help in the [Unofficial Lethal Company Community Discord!](https://discord.gg/nYcQFEpXfU)
 
