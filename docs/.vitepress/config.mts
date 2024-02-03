@@ -133,9 +133,18 @@ export default defineConfig({
                             { text: 'Coding Our AI', link: '/dev/apis/lethallib/custom-enemies/coding-ai'},
                           ]
                         },
-
                       ]
                     },
+                    {
+                      text: 'CSync',
+                      link: '/dev/apis/csync',
+                      collapsed: true,
+                      items: [
+                        { text: 'Usage Guide', link: '/dev/apis/csync/usage-guide' },
+                        { text: 'Publishing', link: '/dev/apis/csync/publishing' },
+                        { text: 'Troubleshooting', link: '/dev/apis/csync/troubleshooting' }
+                      ]
+                    }
                   ]
                 }
               ]
