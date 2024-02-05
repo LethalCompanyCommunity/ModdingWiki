@@ -109,7 +109,7 @@ We also have these as children of the prefab itself:
     - It is also worth nothing that this object gets rendered only on the map cameras, and the size and color of the object will be what you set them as in Unity. 
 3. Collision
     - Allows our enemy to collide with the player and other things. Make sure the following is set:
-        - Tag: `Enemy` ( allows certain intercations, such as opening doors)
+        - Tag: `Enemy` ( allows certain interactions, such as opening doors)
         - Layer: `Enemies`
     - Must also have the following components:
         - Enemy AI Collision Detect (Script)
@@ -133,7 +133,7 @@ If an existing item in the game starts with the same word as your enemy's name, 
 
 We also have a TerminalKeyword ScriptableObject, which has the word that the user needs to write in the terminal to find the page.
 
-The enemy spinning animation on the beastiary entry background is a video file, and you can make one yourself in Blender by for example using the decimate (if you have a lot of geometry) and wireframe modifiers.
+The enemy spinning animation on the bestiary entry background is a video file, and you can make one yourself in Blender by for example using the decimate (if you have a lot of geometry) and wireframe modifiers.
 
 ::: warning IMPORTANT
 Unity Editor on Linux has [bad support for video files](https://docs.unity3d.com/Manual/VideoSources-FileCompatibility.html), so if you are using Linux, you might want to [encode your video to VP8 using FFmpeg](https://trac.ffmpeg.org/wiki/Encode/VP8). Unfortunately, Blender does not have an option to encode to VP8.
@@ -144,7 +144,7 @@ Unity Editor on Linux has [bad support for video files](https://docs.unity3d.com
 We need to package our assets into an Asset Bundle in order to be able to load them from our plugin. See [Asset Bundling](/dev/intermediate/asset-bundling) to find out how this is done.
 
 ::: tip
-We have a `SETUP-PROJECT.py` script in our project which genereates a `csproj.user` file. This file will copy your mod DLL and Asset Bundle to the path you specified when running the setup script, each time you build your plugin.
+We have a `SETUP-PROJECT.py` script in our project which generates a `csproj.user` file. This file will copy your mod DLL and Asset Bundle to the path you specified when running the setup script, each time you build your plugin.
 
 Just make sure to keep the asset bundle name the default, or you'll have to edit your `csproj.user` file to look for the new name, in which case you may also want to edit our setup script to look for this new name in the file it generates.
 :::
