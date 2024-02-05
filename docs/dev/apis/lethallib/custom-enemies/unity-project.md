@@ -3,9 +3,13 @@ prev: true
 next: true
 description: A tutorial on configuring your Unity project for custom enemies.
 ---
-# Unity Project
+# ExampleEnemy Unity Project
 
-You can open the Unity project included in the repository by choosing to open a project from disk, and selecting the `UnityProject` folder. When Unity has loaded the project, look into the ExampleEnemy folder for the assets that make up the asset bundle.
+::: warning IMPORTANT
+The Unity project this page references is in the [LC-ExampleEnemy](https://github.com/Hamunii/LC-ExampleEnemy) repository! So if you didn't already download your copy of the project, now is the time to do it!
+:::
+
+You can open the Unity project from Unity Hub by choosing to open a project from disk, and selecting the `UnityProject` folder. When Unity has loaded the project, look into the `ExampleEnemy` folder for the assets that make up our asset bundle.
 
 ## Setting Up Our Unity Project
 
@@ -53,7 +57,7 @@ We also depend on LethalLib by Evaisa (which is already included in the project)
 >- MMHOOK_Facepunch Transport for Netcode for GameObjects.dll
 :::
 
-The dll file of this mod also needs to be there so we can reference ExampleEnemyAI from a component of the ExampleEnemy prefab in Unity. We need to do this via a dll file, we cannot just copy and paste the ExampleEnemyAI.cs file in the Unity project because asset bundles cannot contain scripts, and it just doesn't get the reference otherwise. You know it doesn't get the reference in the form of a yellow warning text if you launch the game with the mod and you have unity logging enabled in the `BepInEx.cfg` file.
+The dll file of our mod also needs to be there so we can reference [ExampleEnemyAI.cs](https://github.com/Hamunii/LC-ExampleEnemy/blob/main/Plugin/src/ExampleEnemyAI.cs) from a component of the ExampleEnemy prefab in Unity. We need to do this via a dll file, we cannot just copy and paste the ExampleEnemyAI.cs file in the Unity project because asset bundles cannot contain scripts, and it just doesn't get the reference otherwise. You know it doesn't get the reference in the form of a yellow warning text if you launch the game with the mod and you have unity logging enabled in the `BepInEx.cfg` file.
 
 ## Our ExampleEnemy Assets in Unity
 
@@ -94,20 +98,28 @@ We also have these as children of the prefab itself:
     - Allows us to scan the enemy. Make sure the following is set:
         - Tag: `DoNotSet`
         - Layer: `ScanNode`
+    - It also should have the following components:
+        - Scan Node Properties (Script)
+            - **Notice:** The `Creature Scan ID` property is overridden by LethalLib, so it does not matter what we set it as. Same goes for the `Creature File ID` on the bestiary Terminal Node.
+        - A collider, such as: `Box Collider`. While not necessary, it's a good idea to set `isTrigger: true` in order to avoid unwanted collisions with this object.
 2. MapDot
     - Allows us to see the enemy on map. Make sure the following is set:
         - Tag: `DoNotSet`
         - Layer: `MapRadar`
+    - It is also worth nothing that this object gets rendered only on the map cameras, and the size and color of the object will be what you set them as in Unity. 
 3. Collision
-    - Has the following components:
+    - Allows our enemy to collide with the player and other things. Make sure the following is set:
+        - Tag: `Enemy` ( allows certain intercations, such as opening doors)
+        - Layer: `Enemies`
+    - Must also have the following components:
         - Enemy AI Collision Detect (Script)
-        - Box Collider with `isTrigger: true`
+        - A collider, such as: `Box Collider` with `isTrigger: true`
 4. TurnCompass
-    - Does nothing by itself, but we have a reference to this in the ExampleEnemyAI.cs script to make the enemy looking at player a bit easier.
+    - Does nothing by itself, but we have a reference to this in the [ExampleEnemyAI.cs](https://github.com/Hamunii/LC-ExampleEnemy/blob/main/Plugin/src/ExampleEnemyAI.cs) script to make the enemy looking at player a bit easier.
 5. AttackArea
     - Does nothing by itself, but we take its position and scale and check if the player exists inside that area for the head swing attack.
 6. CreatureSFX
-    - We play the creature sound effects through this.
+    - We play the creature's sound effects through this.
 7. CreatureVoice
     - We play the creature's voice through this.
 
