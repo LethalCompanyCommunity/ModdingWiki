@@ -40,4 +40,6 @@ Each page below goes through the full process of creating a mod for the given pa
 
 - [Custom Scrap](/dev/apis/lethallib/customscrap)
 
+- [Custom Enemies](/dev/apis/lethallib/custom-enemies/overview)
+
 - Custom Dungeons [WIP]
