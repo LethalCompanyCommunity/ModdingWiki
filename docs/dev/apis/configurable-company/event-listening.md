@@ -1,7 +1,7 @@
 ---
 prev: true
 next: false
-description: How to listen to Configurable company raised events and what events you can listen to.
+description: How to listen to Configurable Company raised events and what events you can listen to.
 ---
 
 # Developing Events with Configurable Company

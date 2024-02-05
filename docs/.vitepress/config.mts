@@ -130,19 +130,19 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         {
-                          text: 'Developing pages',
+                          text: 'Developing Pages',
                           link: '/dev/apis/configurable-company/developing-pages'
                         },
                         {
-                          text: 'Developing categories',
+                          text: 'Developing Categories',
                           link: '/dev/apis/configurable-company/developing-categories'
                         },
                         {
-                          text: 'Developing configurations',
+                          text: 'Developing Configurations',
                           link: '/dev/apis/configurable-company/developing-configs'
                         },
                         {
-                          text: 'Event listening',
+                          text: 'Event Listening',
                           link: '/dev/apis/configurable-company/event-listening'
                         }
                       ]

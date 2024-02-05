@@ -1,7 +1,7 @@
 ---
 prev: true
 next: true
-description: How to create configurations for your plugin and how to use them.
+description: How to create Configurable Company configurations for your plugin and how to use them.
 ---
 
 # Developing Configurations with Configurable Company

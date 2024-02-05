@@ -35,6 +35,9 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 
 ## Programming APIs
 
+### Configuration
+- [ConfigurableCompany by Ansuz/Amrv](https://thunderstore.io/c/lethal-company/p/AMRV/ConfigurableCompany/) implements an in-game menu that allows developers to create file-dependant configurations in a simple way that will automatically synchronize when needed.
+
 ### Dungeons
 - [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new dungeons.
 
@@ -59,10 +62,6 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 
 ### Terminal
 - [TerminalApi by NotAtomicBomb](https://github.com/NotAtomicBomb/TerminalApi) adds a nice and easy way to add and modify terminal keywords. [The mod's GitHub README](https://github.com/NotAtomicBomb/TerminalApi) has documentation and an example plugin to reference.
-
-### Configuration
-- [ConfigurableCompany by Ansuz/Amrv](https://thunderstore.io/c/lethal-company/p/AMRV/ConfigurableCompany/) implements an in-game menu that allows developers to create configurations in a simple way that will automatically synchronize when needed. This API grants the final user the hability to have different settings for each save file.  
-You can check how to implement configurations with this API from [Thunderstore's wiki](https://thunderstore.io/c/lethal-company/p/AMRV/ConfigurableCompany/wiki/), [the repository's wiki](https://github.com/TheAnsuz/Lethal-Company-Configurable-Company-API/wiki) or just navigate to the [wiki section](/dev/apis/configurable-company.md).
 
 ## Adding APIs to the wiki
 

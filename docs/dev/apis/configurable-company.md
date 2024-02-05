@@ -1,6 +1,6 @@
 ---
-prev: false
-next: false
+prev: true
+next: true
 description: Guide on how to add and use Configurable company for your plugin.
 ---
 
@@ -43,7 +43,7 @@ Otherwise you can add the reference by manually editing the `.csproj` file and a
 
 ```xml
 <ItemGroup>
-    <PackageReference Include="Amrv.ConfigurableCompany" Version="2.5.0" />
+    <PackageReference Include="Amrv.ConfigurableCompany" Version="2.5.0" PrivateAssets="all"/>
 </ItemGroup>
 ```
 

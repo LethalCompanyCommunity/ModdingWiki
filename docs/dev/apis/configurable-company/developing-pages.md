@@ -1,7 +1,7 @@
 ---
-prev: false
+prev: true
 next: true
-description: How to create pages for your plugin and how to use them.
+description: How to create Configurable Company pages for your plugin and how to use them.
 ---
 
 # Developing Pages with Configurable Company
