@@ -109,11 +109,12 @@ We also have these as children of the prefab itself:
     - It is also worth nothing that this object gets rendered only on the map cameras, and the size and color of the object will be what you set them as in Unity. 
 3. Collision
     - Allows our enemy to collide with the player and other things. Make sure the following is set:
-        - Tag: `Enemy` ( allows certain interactions, such as opening doors)
+        - Tag: `Enemy` (allows certain interactions, such as opening doors)
         - Layer: `Enemies`
     - Must also have the following components:
         - Enemy AI Collision Detect (Script)
         - A collider, such as: `Box Collider` with `isTrigger: true`
+        - `Rigidbody`, so it can interact with certain colliders. This is also needed for our enemy to be able to open doors.
 4. TurnCompass
     - Does nothing by itself, but we have a reference to this in the [ExampleEnemyAI.cs](https://github.com/Hamunii/LC-ExampleEnemy/blob/main/Plugin/src/ExampleEnemyAI.cs) script to make the enemy looking at player a bit easier.
 5. AttackArea
@@ -122,6 +123,8 @@ We also have these as children of the prefab itself:
     - We play the creature's sound effects through this.
 7. CreatureVoice
     - We play the creature's voice through this.
+8. Eye
+    - The point from which the game checks for line of sight in some methods. Make sure to reference this as the `Eye` in your AI script in Unity.
 
 ### ExampleEnemy Terminal Entry
 
