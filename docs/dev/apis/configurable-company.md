@@ -81,11 +81,10 @@ You can get the dependency string and the mod version from the `LethalConfigurat
 
 ```cs
 [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
-[BepInDependency( // [!code ++]
-    LethalConfiguration.PLUGIN_GUID, // [!code ++]
-    BepInDependency.DependencyFlags.HardDependency)] // [!code ++]
+[BepInDependency(LethalConfiguration.PLUGIN_GUID, BepInDependency.DependencyFlags.HardDependency)] // [!code ++]
     public class YourPlugin : BaseUnityPlugin {
-        // The rest of the class goes here
+        // The rest of the class goes here ...
+    }
 ```
 
 ## How does it work
