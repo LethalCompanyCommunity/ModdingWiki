@@ -60,6 +60,10 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 ### Terminal
 - [TerminalApi by NotAtomicBomb](https://github.com/NotAtomicBomb/TerminalApi) adds a nice and easy way to add and modify terminal keywords. [The mod's GitHub README](https://github.com/NotAtomicBomb/TerminalApi) has documentation and an example plugin to reference.
 
+### Configuration
+- ⭐ [CSync by Owen3H]() is a compact library/API enabling mod authors to synchronize the host's configuration file with all other clients. [The wiki page on CSync]() will guide you through the process of implementing this into your own mod.
+
+- [ConfigurableCompany by Ansuz/Amrv](https://thunderstore.io/c/lethal-company/p/AMRV/ConfigurableCompany/) implements an in-game menu that allows developers to create file-dependant configurations in a simple way that will automatically synchronize when needed.
 
 ## Adding APIs to the wiki
 
