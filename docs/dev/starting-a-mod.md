@@ -14,8 +14,15 @@ This guide assumes you've completed all the required steps in **[initial setup](
 This guide follows certain parts of the [official BepInEx guide](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/2_plugin_start.html).
 
 ### Using the template repository {#using-template-repo}
+::: danger Outdated Template
+The linked GitHub template repository may be **stale**. Refer to the Lethal Company Modding Discord server if you encounter issues using it.
+:::
 
-We have created a [template repository](https://github.com/LethalCompany/LethalCompanyTemplate) on GitHub. If you're remotely familiar with GitHub, or willing to [learn](/dev/initial-setup#creating-a-github-account), this might serve as a quick start. It does come with some minor drawbacks such as it using "LethalCompanyTemplate" as project name in a number of files, but you can edit this. It should build out-of-the-box with no edits required; though you may need to add BepInEx as a NuGet source (see the [relevant](#adding-nuget-source) section below).
+[Distractic's template](https://github.com/Distractic/LethalCompanyTemplate) is the current recommended GitHub template. 
+If you're remotely familiar with GitHub, or willing to [learn](/dev/initial-setup#creating-a-github-account), this might serve as a quick start. 
+It does come with some minor drawbacks such as it using "LethalCompanyTemplate" as project name in a number of files; however, it should build out-of-the-box with no edits required. 
+
+It is important that you remove all unused template code from the project before distributing your mod.
 
 ### Creating your project {#create-project}
 
