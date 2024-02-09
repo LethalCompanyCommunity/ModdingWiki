@@ -39,6 +39,10 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 
 ## Programming APIs
 
+### Configuration
+
+- [ConfigurableCompany by Ansuz/Amrv](https://thunderstore.io/c/lethal-company/p/AMRV/ConfigurableCompany/) implements an in-game menu that allows developers to create file-dependant configurations in a simple way that will automatically synchronize when needed. [Learn how to develop with mod](/dev/apis/configurable-company.md).
+
 ### Dungeons
 
 - [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new dungeons.
