@@ -1,96 +1,96 @@
 ---
 prev: false
 next: false
-description: 如何为维基贡献新文章
+description: 如何向 Wiki 贡献新文章。
 ---
 
 # 贡献文章
 
-感谢你决定为维基作出贡献！ 维基能走到今天，并继续发展壮大少不了来自所有人的贡献。
+感谢您决定向此 Wiki 贡献文章！ 这个 Wiki 能走到这一步并继续发展的唯一途径就是通过贡献。
 
-This guide will help you write, format, and implement your article into the wiki.
+本指南将帮助您编写文章、格式化文章并将其实施到 Wiki 中。
 
-## Forking the GitHub Repository {#forking-the-repo}
+## 分叉 GitHub 存储库 {#forking-the-repo}
 
-In order to send a Pull Request (PR) to the wiki to request your article to be added, you have to fork the [ModdingWiki repository](https://github.com/LethalCompany/ModdingWiki) (repo).
+为了向 Wiki 发送拉取请求（PR）来请求添加您的文章，您必须分叉 [ModdingWiki 存储库](https://github.com/LethalCompany/ModdingWiki)（repo）。
 
-To fork the wiki, it's fairly simple. You'll click the `Fork` button on the webpage, then click `Create fork`.
+要分叉 Wiki，相当简单。 您可单击网页上的“`Fork`”按钮，然后单击“`Create fork`”。
 
-![GitHub Fork Repo Button](/images/writing-articles/forkgithubrepobutton.png)
+![GitHub 分叉存储库按钮](/images/writing-articles/forkgithubrepobutton.png)
 
-![GitHub Create Fork Dialog](/images/writing-articles/forkgithubrepopopup.png)
+![GitHub 创建分叉对话框](/images/writing-articles/forkgithubrepopopup.png)
 
-Now we've created the fork! From there you can make changes to a branch on the fork and create the PR when you're finished.
+现在我们已经创建了分叉！ 从此您可以对分支上的分叉进行更改，并在完成后创建 PR。
 
-## Creating the File
+## 创建文件
 
-Creating the article file is pretty simple. Add the file to the folder/subsection you are adding to, such as `/docs/dev/api/` for APIs, and create a markdown file (.md).
+创建文章文件非常简单。 将文件添加到您要添加的文件夹/子部分，譬如 API 的“`/docs/dev/api/`”，并创建一个 Markdown 文件（.md）。
 
-:::danger IMPORTANT
+:::danger 重要
 
-For example, this article is named `writing-articles.md` and is located in `/docs/extras/`.
+例如，本文章名为“`writing-articles.md`”，位于“`/docs/extras/`”。
 :::
 
-## Viewing Your Article
+## 查看您的文章
 
-This website uses VitePress to turn the markdown files into viewable webpages. To view your article in context as a webpage, it's simple.
+本网站使用 VitePress 将 Markdown 文件转为可查看的网页。 要在网页的上下文中查看您的文章很简单。
 
-To run VitePress and view as a local site, run the following command in the terminal:
+要运行 VitePress 并作为本地站点查看，请在终端中运行以下命令：
 
 ```shell
 npm run dev
 ```
 
 :::tip
-This must run in your repo folder. You can do so using the terminal in the code editor/IDE that you use.
+其必须在您的存储库文件夹中运行。 您也可以使用自己的代码编辑器/IDE 中的终端来执行此操作。
 :::
 
-The terminal will then display the following, at which point you can go to the URL given in the terminal:
+然后，终端将显示以下内容，此时您可以访问终端中给出的 URL：
 
-![Displayed Text in Terminal](/images/writing-articles/runvitepressterminal.png)
+![终端中显示的文本](/images/writing-articles/runvitepressterminal.png)
 
 ## Frontmatter
 
-VitePress uses `YAML Frontmatter` for article configs. There are three commonly used settings, `description`, `prev`, and `next`.
+VitePress 使用“`YAML Frontmatter`”进行文章配置。 常用的设置有 `description`、`prev` 和 `next` 三种。
 
 ### Description
 
-In order to have descriptive info for search engines and embeds, you have to add a description to the front matter. To do so, you need the following code at the start of your article:
+为了获得搜索引擎和嵌入的描述性信息，您必须在 front matter 添加 description。 为此，您需要在文章开头添加以下代码：
 
 ```md
 ---
-description: Example description
+description: 示例描述
 ---
 ```
 
 ::: tip
 The description should be a short and descriptive; it should only be one to two sentences long.
 
-For example, the description for this article is the following:
+例如，本文章的描述如下所示：
 
 ```md
 ---
-description: How to contribute new articles to the wiki.
+description: 如何向 Wiki 贡献新文章。
 ---
 ```
 
 :::
 
-### Previous & Next
+### Previous 与 Next
 
-You may have seen previous or next article buttons at the bottom of wiki pages. They can be enabled or disabled in the frontmatter section, using `prev` and `next`.
+您也许在 Wiki 页面底部见过上一篇或下一篇文章按钮。 可以使用 `prev` 和 `next` 在 frontmatter 部分启用或禁用它们。
 
-By default, the previous and next buttons are disabled. To enable these buttons, you need to set the options to true:
+默认情况下，上一篇和下一篇按钮被禁用。 要启用这些按钮，您需要将这些选项设置为 true：
 
 ```md
 ---
 prev: true // [!code ++]
 next: true // [!code ++]
-description: Example description
+description: 示例描述
 ---
 ```
 
-:::danger IMPORTANT
+:::danger 重要
 
 :::code-group
 
@@ -98,44 +98,44 @@ description: Example description
 ---
 prev: false
 next: false
-description: Example description
+description: 示例描述
 ---
 
-# Example Article
+# 示例文章
 ```
 
 ```md [incorrect.md]
-<!-- Extra space causes errors -->
+<!-- 多余的空格会导致错误 -->
 ---
 prev: false
 next: false
-description: Example description
+description: 示例描述
 ---
 
-# Example Article
+# 示例文章
 ```
 
 :::
 
-## Formatting
+## 格式化
 
 ### Markdown
 
-This wiki uses a modified version of markdown (.md) files for articles, allowing a fairly easy process to write a new article.
-Markdown essentially is a simple text file with "shortcuts" that help with formatting.
-An example of this is in Discord, where you can easily format your messages to be bold, italicized, etc.
+本 Wiki 使用 Markdown（.md）文件的修改版来编写文章，从而可以相当容易地编写新文章。
+Markdown 本质上是一个简单的文本文件，带有助于格式化的“快捷方式”。
+Discord 就是一个例子，您可以轻松地将消息格式设置为粗体、斜体等。
 
 :::tip
-[This Markdown Guide](https://www.markdownguide.org/basic-syntax/) goes into greater detail than the basics given in this article.
+[此 Markdown 指南](https://www.markdownguide.org/basic-syntax/)比本文给出的基础知识更详细。
 :::
 
-#### Common Usages
+#### 常见用法
 
-There are a few simple ways to format text.
+有几种简单的方法可以设置文本格式。
 
-- Using `**` on either side of a word/phrase will **bold that word/phrase**.
-- Using `_` on either side of a word/phrase will _italicize that word/phrase_.
-- Using `***` on either side of a word/phrase will _**bold and italicize that word/phrase**_.
+- 在字词的两侧使用“`**`”会**将该字词加粗**。
+- 在字词的两侧使用“`_`”会 _使该字词斜体化_。
+- 在字词的两侧使用“`***`”会_**将该字词加粗并斜体化**_。
 - Using `~~` on either side of a word/phrase will ~~strike that word/phrase out~~.
 
 :::warning
