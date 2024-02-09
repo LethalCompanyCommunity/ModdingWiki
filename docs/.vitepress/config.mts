@@ -144,6 +144,29 @@ export default defineConfig({
                         { text: 'Publishing', link: '/dev/apis/csync/publishing' },
                         { text: 'Troubleshooting', link: '/dev/apis/csync/troubleshooting' }
                       ]
+                    },
+                    {
+                      text: 'Configurable Company',
+                      link: '/dev/apis/configurable-company',
+                      collapsed: true,
+                      items: [
+                        {
+                          text: 'Developing Pages',
+                          link: '/dev/apis/configurable-company/developing-pages'
+                        },
+                        {
+                          text: 'Developing Categories',
+                          link: '/dev/apis/configurable-company/developing-categories'
+                        },
+                        {
+                          text: 'Developing Configurations',
+                          link: '/dev/apis/configurable-company/developing-configs'
+                        },
+                        {
+                          text: 'Event Listening',
+                          link: '/dev/apis/configurable-company/event-listening'
+                        }
+                      ]
                     }
                   ]
                 }
