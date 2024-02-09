@@ -1,14 +1,14 @@
 ---
 prev: false
 next: false
-description: Frequently asked Lethal Company modding questions.
+description: Häufig gestellte fragen zum Mödling von Letal Company.
 ---
 
 # Häufig gestellte Fragen
 
 ***
 
-## I Installed MoreCompany/BiggerLobby and it doesn't work. {#morecompany-biggerlobby-not-working}
+## Ich habe MoreCompany/BiggerLobby installiert, aber es funktioniert nicht. {#morecompany-biggerlobby-not-working}
 
 Stelle sicher, dass:
 
