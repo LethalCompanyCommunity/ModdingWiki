@@ -29,6 +29,6 @@ Alternatively, you can install it visually via the **NuGet** package manager.
 **3**. In your mod's project, add an **Assembly Reference** to `../BepInEx/plugins/CSync.dll`.
 
 ## Overview
-- [Usage Guide](/dev/csync/usage-guide) - The guide/tutorial to using this library.
-- [Finalizing and Publishing](/dev/csync/publishing) - Important notes for BepInEx and Thunderstore.
-- [Troubleshooting](/dev/csync/troubleshooting) - Reported issues and their solutions.
+- [Usage Guide](/dev/apis/csync/usage-guide) - The guide/tutorial to using this library.
+- [Finalizing and Publishing](/dev/apis/csync/publishing) - Important notes for BepInEx and Thunderstore.
+- [Troubleshooting](/dev/apis/csync/troubleshooting) - Reported issues and their solutions.
