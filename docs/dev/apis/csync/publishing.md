@@ -16,5 +16,8 @@ public class MyPlugin : BaseUnityPlugin
 
 If you plan to upload your mod to **Thunderstore**, make sure you also specify the dependency within your `manifest.json` file by adding its **Thunderstore** ID to the array.
 ```json
-"dependencies": ["BepInEx-BepInExPack-5.4.2100", "Owen3H-CSync-1.0.6"]
+"dependencies": ["BepInEx-BepInExPack-5.4.2100", "Owen3H-CSync-1.0.7"]
 ```
+
+**NOTE**:
+Please ensure your manifest contains the latest version, the one seen above may be outdated!
