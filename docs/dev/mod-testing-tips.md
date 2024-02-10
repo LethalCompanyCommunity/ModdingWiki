@@ -18,7 +18,7 @@ We can open multiple instances of the game when opening it directly from the exe
 
 ### Instantly Load Into a Game
 
-For entering a game as soon as possible, we can use [DevelopmentStartup](https://thunderstore.io/c/lethal-company/p/CTNOriginals/DevelopmentStartup/). This will skip start menus and jump right into a game. *Do note that it does not support automatically joining local games on a second instance yet.*
+For entering a game as soon as possible, we can use [DevelopmentStartup](https://thunderstore.io/c/lethal-company/p/CTNOriginals/DevelopmentStartup/). This will skip start menus and jump right into a game.
 
 ### Accessing The Debug/Test Menu
 
