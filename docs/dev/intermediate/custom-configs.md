@@ -21,8 +21,8 @@ Begin by creating a `Config` class, then write out all the variables you want to
 ```cs
 public class Config
 {
-    public bool PLUGIN_ENABLED { get; private set; }
-    public float MOVEMENT_SPEED { get; private set; }
+    public ConfigEntry<bool> GREETING_TEXT { get; private set; }
+    public ConfigEntry<float> DISPLAY_GREETING { get; private set; }
 
     // ...
 }
@@ -34,13 +34,19 @@ Then we can start binding our config entries to the properties we just created.
 ```cs
 public Config(ConfigFile cfg)
 {
-    PLUGIN_ENABLED = cfg.Bind(MyPluginInfo.GUID, "bPluginEnabled", true,
-        "Enable or disable the plugin globally."
-    ).Value;
+    GREETING_TEXT = cfg.Bind(
+        "General",                              // Config section
+        "sGreetingText",                        // Key of this config
+        "Hello, world!",                        // Default value
+        "Greeting text upon game launch."       // Description
+    );
 
-    MOVEMENT_SPEED = cfg.Bind(MyPluginInfo.GUID, "fMovementSpeed", 6.9f,
-        "The speed at which the local player moves."
-    ).Value;
+    DISPLAY_GREETING = cfg.Bind(
+        "General.Toggles",                      // Config subsection
+        "bDisplayGreeting",                     // Key of this config
+        true,                                   // Default value
+        "Whether to show the greeting text."    // Description
+    );
 }
 ```
 
