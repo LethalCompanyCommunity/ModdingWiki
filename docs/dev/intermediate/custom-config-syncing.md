@@ -8,7 +8,6 @@ description: An intermediate overview of how to sync custom configs for your Let
 
 ## Preface
 A very common case for many mod developers is wanting to synchronize the host's configuration file with all other players.
-
 There are many different ways you could achieve this, but the following two mods will work without using **NetcodeWeaver** or a **NetworkBehaviour**.
 
 ## CSync
