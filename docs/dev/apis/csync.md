@@ -30,5 +30,4 @@ Alternatively, you can install it visually via the **NuGet** package manager.
 
 ## Overview
 - [Usage Guide](/dev/apis/csync/usage-guide) - The guide/tutorial to using this library.
-- [Finalizing and Publishing](/dev/apis/csync/publishing) - Important notes for BepInEx and Thunderstore.
-- [Troubleshooting](/dev/apis/csync/troubleshooting) - Reported issues and their solutions.
+- [Troubleshooting](/dev/apis/csync/troubleshooting) - Common issues and their solutions.

@@ -136,16 +136,6 @@ export default defineConfig({
                       ]
                     },
                     {
-                      text: 'CSync',
-                      link: '/dev/apis/csync',
-                      collapsed: true,
-                      items: [
-                        { text: 'Usage Guide', link: '/dev/apis/csync/usage-guide' },
-                        { text: 'Publishing', link: '/dev/apis/csync/publishing' },
-                        { text: 'Troubleshooting', link: '/dev/apis/csync/troubleshooting' }
-                      ]
-                    },
-                    {
                       text: 'Configurable Company',
                       link: '/dev/apis/configurable-company',
                       collapsed: true,
@@ -167,7 +157,16 @@ export default defineConfig({
                           link: '/dev/apis/configurable-company/event-listening'
                         }
                       ]
-                    }
+                    },
+                    {
+                      text: 'CSync',
+                      link: '/dev/apis/csync',
+                      collapsed: true,
+                      items: [
+                        { text: 'Usage Guide', link: '/dev/apis/csync/usage-guide' },
+                        { text: 'Troubleshooting', link: '/dev/apis/csync/troubleshooting' }
+                      ]
+                    },
                   ]
                 }
               ]
