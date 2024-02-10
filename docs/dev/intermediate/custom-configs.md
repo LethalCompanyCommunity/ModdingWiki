@@ -21,8 +21,8 @@ Begin by creating a `Config` class, then write out all the variables you want to
 ```cs
 public class Config
 {
-    public ConfigEntry<bool> GREETING_TEXT { get; private set; }
-    public ConfigEntry<float> DISPLAY_GREETING { get; private set; }
+    public ConfigEntry<string> GREETING_TEXT { get; private set; }
+    public ConfigEntry<bool> DISPLAY_GREETING { get; private set; }
 
     // ...
 }
