@@ -30,4 +30,4 @@ We can use [DevTools](https://thunderstore.io/c/lethal-company/p/Hamunii/DevTool
 
 ![Screenshot: Toggle Testing Room](/images/mod-testing-tips/DebugToggleTestRoom.png)
 
-[DevTools](https://thunderstore.io/c/lethal-company/p/Hamunii/DevTools/) can also enable the testing level automatically as soon as you load into a game and even teleport you outside of the ship! You can also use it to automate spawning an enemy and giving yourself an item, and more!
+[DevTools](https://thunderstore.io/c/lethal-company/p/Hamunii/DevTools/) can also automatically enable the testing level, teleport you outside of the ship, spawn an enemy, give yourself an item, and activate certain cheats.
