@@ -157,7 +157,7 @@ export default defineConfig({
                           link: '/dev/apis/configurable-company/event-listening'
                         }
                       ]
-                    },
+                    }
                   ]
                 }
               ]
