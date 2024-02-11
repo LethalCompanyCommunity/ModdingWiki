@@ -133,7 +133,7 @@ export default defineConfig({
                             { text: 'Coding Our AI', link: '/dev/apis/lethallib/custom-enemies/coding-ai'},
                           ]
                         },
-                        
+
                       ]
                     },
                     {
