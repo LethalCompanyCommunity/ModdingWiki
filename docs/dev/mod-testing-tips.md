@@ -22,10 +22,12 @@ For entering a game as soon as possible, we can use [DevelopmentStartup](https:/
 
 ### Accessing The Debug/Test Menu
 
-We can use [LethalDevMode](https://thunderstore.io/c/lethal-company/p/megumin/LethalDevMode/) to get access to the game's internal debug tools menu. This allows us to do the following:
+We can use [DevTools](https://thunderstore.io/c/lethal-company/p/Hamunii/DevTools/) or [LethalDevMode](https://thunderstore.io/c/lethal-company/p/megumin/LethalDevMode/) to get access to the game's internal debug tools menu. This allows us to do the following:
 - Toggle a testing level without having to land your ship.
 - Toggle invincibility.
 - Spawning enemies.
 - Spawning items.
 
 ![Screenshot: Toggle Testing Room](/images/mod-testing-tips/DebugToggleTestRoom.png)
+
+[DevTools](https://thunderstore.io/c/lethal-company/p/Hamunii/DevTools/) can also enable the testing level automatically as soon as you load into a game and even teleport you outside of the ship! You can also use it to automate spawning an enemy and giving yourself an item, and more!
