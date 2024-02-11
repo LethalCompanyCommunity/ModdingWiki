@@ -43,6 +43,8 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 
 - [ConfigurableCompany by Ansuz/Amrv](https://thunderstore.io/c/lethal-company/p/AMRV/ConfigurableCompany/) implements an in-game menu that allows developers to create file-dependant configurations in a simple way that will automatically synchronize when needed. [Learn how to develop with mod](/dev/apis/configurable-company.md).
 
+- ⭐ [CSync by Owen3H](https://thunderstore.io/c/lethal-company/p/Owen3H/CSync/) is a compact library/API enabling mod authors to synchronize the host's configuration file with all other clients. [The wiki page on CSync](/dev/apis/csync) will guide you through the process of implementing this into your own mod.
+
 ### Dungeons
 
 - [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new dungeons.
