@@ -39,43 +39,43 @@ Linux 에서 r2modman은 배포판에 따라 다양한 패키지 형식으로 �
 
 ![Steam Deck 권한 창](/images/r2modman-linux/appimageproperties.png)
 
-After marking the file as executable, you can now double-click the `AppImage` to open r2modman.
+파일을 실행 가능한 파일로 표시한 후, 이제 'AppImage' 를 두 번 클릭하여 r2modman을 열 수 있습니다.
 
-## Installing Mods on r2modman
+## R2modman 을 이용한 모드 설치
 
-Once you have succesfully installed r2modman, you can finally install mods.
+r2modman을 성공적으로 설치한 후 최종적으로 모드를 설치할 수 있습니다.
 
-1. Launch **r2modman**. You will be greeted with the following screen.
+1. **r2modman** 을 실행합니다. 다음과 같은 화면이 나타납니다.
 
 ![r2modman Game Selection Screen](/images/r2modman-install/gameselection.png)
 
-2. Select **"Lethal Company"**, and click **"Select Game"**.
+2. \*\*"Lethal Company"\*\*를 선택하고 \*\*"Select Game"\*\*를 클릭합니다.
 
 :::tip
-If you do not see it, **use the search bar or scroll down** to find "Lethal Company".
+표시되지 않으면 **검색창을 사용하거나**를 아래로 스크롤하여 "Lethal Company"를 찾으십시오.
 :::
 
 ![Select Lethal Company](/images/r2modman-install/selectlc.png)
 
-3. It will ask you to choose which profile to use. For this guide's purposes, we will stick with the Default profile. Click **"Select profile"**.
+3. 사용할 프로필을 선택하도록 요청할 것입니다. 이 가이드의 목적을 위해 기본 프로필을 유지합니다. \*\*"Select profile"\*\*을 클릭합니다.
 
 ![Select Default Profile](/images/r2modman-install/profileselect.png)
 
-4. This will lead us to this screen.
+4. 이것은 우리를 이런 화면으로 이끌 것입니다.
 
 ![First Time Opening Installed](/images/r2modman-install/firsttimeinstall.png)
 
-5. Click **"Online"** on the sidebar. This will bring up a list of all available to download mods on [Thunderstore](https://thunderstore.io/c/lethal-company/).
+5. 사이드바에서 \*\*"Online"\*\*를 클릭합니다. 그러면 [Thunderstore](https://thunderstore.io/c/lethal-company/) 에서 모드를 다운로드할 수 있는 모든 사용 가능한 목록이 표시됩니다.
 
 ![Clicking Online](/images/r2modman-install/selectonline.png)
 
-6. From here, you may choose which mods you would like to download and install. Click on a mod you'd like, and then click on Download.
+6. 여기에서 다운로드하고 설치할 모드를 선택할 수 있습니다. 원하는 모드를 클릭한 다음 다운로드를 클릭합니다.
 
 ![Downloading a mod](/images/r2modman-install/download.png)
 
-7. It will ask you which version to use. Download the latest version, which is already selected for you by default. Click **"Download with dependencies"** or **"Download"**.
+7. 어떤 버전을 사용할지 묻습니다, 기본적으로 이미 선택한 최신 버전을 다운로드합니다. **"Download with dependencies"** 또는 **"Download"**"를 클릭합니다.
 
-![Downloading with dependencies](/images/r2modman-install/downloadlatest.png)
+
 
 8. Once you are done installing your mods, you may click on "Start modded" on the sidebar. This will launch the game with your mods.
 
