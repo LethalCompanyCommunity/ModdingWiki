@@ -4,39 +4,40 @@ next: false
 description: R2modman을 사용하여 Linux의 Thunderstore 에서 Lethal Company 모드를 설치하는 방법을 배우세요.
 ---
 
-# Using r2modman on Linux and Steam Deck
+# R2modman 을 Linux 나 Steam deck 으로 사용하는 법
 
 ***
 
-This guide will run you through installing and using [r2modman](https://github.com/ebkr/r2modmanPlus/releases/latest/) to install and play with mods that are available through [Thunderstore](https://thunderstore.io/c/lethal-company/). Using a mod manager like r2modman allows you to update and play with the latest versions of the mods with ease as the manager does all of that for you!
+이 가이드에서는 [r2modman] 설치 및 사용 과정을 강의합니다.
+(https\://github.com/ebkr/r2modmanPlus/releases/latest/) 를 통해 사용할 수 있는 모드를 설치하고 플레이합니다. [Thunderstore](https://thunderstore.io/c/lethal-company/). R2modman과 같은 모드 관리 프로그램을 사용하면 모드 관리 프로그램이 모든 것을 해주므로 최신 버전의 모드를 쉽게 업데이트하고 플레이할 수 있습니다!
 
-## Steam Deck Specific Preparation
+## Steam Deck 설치 방법
 
-On Steam Deck you will need to do the following before you can follow this guide:
+Steam Deck은 이 가이드를 따르기 전에 다음 작업을 수행해야 합니다.
 
-- Make sure the game is installed into the internal storage - mods will not load if the game is installed to the MicroSD card.
-- Enter **Desktop Mode** by holding down the power button and selecting Desktop Mode from the menu.
+- 게임이 내부 저장소에 설치되어 있는지 확인하십시오 - 게임이 MicroSD 카드에 설치되어 있으면 모드가 로드되지 않습니다.
+- 전원 버튼을 누르고 메뉴에서 Desktop Mode(데스크탑 모드) 를 선택하여 **데스크탑 모드** 로 들어갑니다.
 
-Once you're at the desktop, you're ready to continue!
+데스크탑에서 실행을 하셨다면, 당신은 플레이할 준비가 되었습니다!
 
 :::danger
-r2modman does **not** work in Game Mode. Please make sure to read the [**Using Mods in Steam Deck's Game Mode**](installing-r2modman-linux?id=using-mods-in-steam-decks-game-mode) section for a workaround once you've finished with the **Installing r2modman** section.
+r2modman은 게임 모드에서 "작동하지 않습니다." **r2modman** 설치를 마치면 해결 방법에 대한 [**Steam Deck의 게임 모드에서 모드 사용**](installing-r2modman-linux?id=using-mods-in-steam-decks-game-mode) 섹션을 반드시 읽어주세요.
 :::
 
-## Installing r2modman
+## R2modman 을 설치하는 방법
 
-On Linux, r2modman is available in different package formats depending on your distro:
+Linux 에서 r2modman은 배포판에 따라 다양한 패키지 형식으로 사용할 수 있습니다:
 
 - `deb` for Debian and Ubuntu-based distros
 - `pacman` for Arch-based disros
 - `rpm` for distros using the RPM Package Manager (RHEL, CentOS, Fedora, openSUSE, etc.)
 - `AppImage`, a single executable file that can run on most distros - **useful for Steam Deck**
 
-Visit the [**r2modman GitHub releases page**](https://github.com/ebkr/r2modmanPlus/releases/latest/) and download the appropriate package file for your distro and install it according to your package manager's documentation.
+[**r2modman GitHub releases page**](https://github.com/ebkr/r2modmanPlus/releases/latest/) 에 방문하여 배포판에 적합한 패키지 파일을 다운로드하여 패키지 설명서에 따라 설치합니다.
 
-**For Steam Deck users,** download the `.AppImage` file and keep it in a safe location such as your Desktop or your Documents folder. You will also need to mark the file as executable. To do this, right-click the `.AppImage` file and select `Properties`. Switch to the **Permissions** tab and check the box marked `Is Executable` and click OK.
+**SteamDeck 사용자의 경우** '.AppImage' 파일을 다운로드하여 데스크탑이나 Documents 폴더와 같은 안전한 파일 위치에 보관하십시오. 또한 파일을 실행 가능한 파일로 표시해야 합니다. (.exe) 이렇게 하려면 '.AppImage' 파일을 마우스 오른쪽 버튼으로 클릭하고 '속성'을 선택합니다. **Permissions** 탭으로 전환하여 'Is Executable'(실행 가능) 란을 선택한 후 OK(확인) 를 클릭합니다.
 
-![Steam Deck Permissions Window](/images/r2modman-linux/appimageproperties.png)
+![Steam Deck 권한 창](/images/r2modman-linux/appimageproperties.png)
 
 After marking the file as executable, you can now double-click the `AppImage` to open r2modman.
 
