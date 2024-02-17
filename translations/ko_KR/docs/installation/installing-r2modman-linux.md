@@ -77,21 +77,21 @@ r2modman을 성공적으로 설치한 후 최종적으로 모드를 설치할 �
 
 
 
-8. Once you are done installing your mods, you may click on "Start modded" on the sidebar. This will launch the game with your mods.
+8. 모드를 다운받는 것을 끝내셨다면 오른쪽 사이드 바에 있는 "Start modded" 를 클릭해주세요. 이 행동은 모드와 함께 게임을 실행합니다.
 
 ![Start Lethal Company Modded](/images/r2modman-install/startmodded.png)
 
-That's it! You have just successfully modded Lethal Company!
+그게 다입니다! 당신은 성공적으로 모드가 추가된 Lethal Company 를 플레이 하실 수 있습니다!
 
-## Using Mods in Steam Deck's Game Mode
+## Steam Deck의 게임모드에서 모드를 사용하는 방법
 
-**r2modman will not work in Steam Deck's Game mode, and therefore mods will not load by default.** To get around this, right-click the game in Steam and click `Properties`. From there, paste the following into **Launch Options**:
+**r2modman은 Steam Deck의 게임 모드에서 작동하지 않으므로 기본적으로 모드가 로드되지 않습니다.** 이 문제를 해결하려면 Steam에서 게임을 마우스 오른쪽 단추로 클릭하고 'Properties' 를 클릭하세요. 여기서 **Launch Options** 에 다음을 붙여넣습니다:
 
 ```
 WINEDLLOVERRIDES="winhttp=n,b" %command% --doorstop-enable true --doorstop-target "/home/deck/.config/r2modmanPlus-local/LethalCompany/profiles/Default/BepInEx/core/BepInEx.Preloader.dll" --r2profile "Default"
 ```
 
 ![Steam Properties](/images/r2modman-linux/steamproperties.png)
-This will instruct the game to launch with the Default profile we configured in r2modman earlier, so all your mods installed there will be available.
+이것은 게임이 이전에 r2modman에서 구성한 기본 프로필로 시작하도록 지시하므로 설치된 모든 모드를 사용할 수 있습니다
 
-If you'd like to sync your mods with friends, navigate to the [syncing r2modman profiles](syncing-mods) page.
+모드를 친구와 공유하려면 [syncing r2modman profiles](syncing-mods) 페이지로 이동합니다.
