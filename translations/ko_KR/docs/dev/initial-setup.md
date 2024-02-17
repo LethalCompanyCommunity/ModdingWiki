@@ -64,7 +64,7 @@ If you already have Visual Studio installed, you'll want ensure you're on Visual
 
 ### BepInEx
 
-To actually load mods into the game, we need a mod loader. This is where BepInEx comes in! **Be**pis **In**jector **Ex**tensible is a patcher/plug-in framework for Unity games. It'll handle everything related to getting the plugin to actually load into the game, so we can focus on creating the plugin without having to worry about anything else.
+To actually load mods into the game, we need a mod loader. This is where BepInEx comes in! **Be**pis **In**jector **Ex**tensible은 유니티 게임의 패처/플러그인 프레임워크입니다. 플러그인을 실제로 게임에 로드하는 것과 관련된 모든 것을 처리하므로 다른 걱정 없이 플러그인을 만드는 데 집중할 수 있습니다.
 
 You'll first want to install BepInEx to your game. Follow their great [installation guide](https://docs.bepinex.dev/articles/user_guide/installation/index.html) to get this done. You'll want [this](https://github.com/BepInEx/BepInEx/releases/download/v5.4.22/BepInEx_x64_5.4.22.0.zip) version of BepInEx.
 
