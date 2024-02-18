@@ -206,7 +206,7 @@ We've now converted our AI into a state machine by using an enum! This helps you
 ### Networking - Unity Docs
 
 :::warning IMPORTANT
-We are using [Unity Netcode Patcher](https://github.com/EvaisaDev/UnityNetcodePatcher) MSBuild plugin to make our custom Rpc methods work.
+We are using [Unity Netcode Patcher](https://github.com/EvaisaDev/UnityNetcodePatcher) to make our custom Rpc methods work.
 :::
 
 [ClientRpc](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/clientrpc/)\
