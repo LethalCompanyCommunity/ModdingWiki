@@ -12,7 +12,7 @@ This guide will run you through installing and using [r2modman](https://github.c
 ## Steam Deck Specific Preparation
 On Steam Deck you will need to do the following before you can follow this guide:
 
- - If the game is installed to the MicroSD card instead of internal storage, you will need to use a workaround. Open a split view in your file manager, and navigate to /home/deck/.steam/steam/steamapps/compatdata/ and go to where your steamapps folder is located on your MicroSD card. Create a folder named compatdata, then drag the 1966720 folder to your new compatdata folder. Select "Link Here", and you're done.
+ - If the game is installed to the MicroSD card instead of internal storage, you will need to use a workaround. Open a split view in your file manager, and navigate to /home/deck/.steam/steam/steamapps/compatdata/ on one side and go to where your steamapps folder is located on your MicroSD card on the other. Create a folder named compatdata in your MicroSD card's steamapps folder, then drag the 1966720 folder to your new compatdata folder. Select "Link Here", and you're done.
  - Enter **Desktop Mode** by holding down the power button and selecting Desktop Mode from the menu.
 
 Once you're at the desktop, you're ready to continue!
