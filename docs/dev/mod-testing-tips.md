@@ -18,14 +18,16 @@ We can open multiple instances of the game when opening it directly from the exe
 
 ### Instantly Load Into a Game
 
-For entering a game as soon as possible, we can use [DevelopmentStartup](https://thunderstore.io/c/lethal-company/p/CTNOriginals/DevelopmentStartup/). This will skip start menus and jump right into a game. *Do note that it does not support automatically joining local games on a second instance yet.*
+For entering a game as soon as possible, we can use [DevelopmentStartup](https://thunderstore.io/c/lethal-company/p/CTNOriginals/DevelopmentStartup/). This will skip start menus and jump right into a game.
 
 ### Accessing The Debug/Test Menu
 
-We can use [LethalDevMode](https://thunderstore.io/c/lethal-company/p/megumin/LethalDevMode/) to get access to the game's internal debug tools menu. This allows us to do the following:
+We can use [DevTools](https://thunderstore.io/c/lethal-company/p/Hamunii/DevTools/) or [LethalDevMode](https://thunderstore.io/c/lethal-company/p/megumin/LethalDevMode/) to get access to the game's internal debug tools menu. This allows us to do the following:
 - Toggle a testing level without having to land your ship.
 - Toggle invincibility.
 - Spawning enemies.
 - Spawning items.
 
 ![Screenshot: Toggle Testing Room](/images/mod-testing-tips/DebugToggleTestRoom.png)
+
+[DevTools](https://thunderstore.io/c/lethal-company/p/Hamunii/DevTools/) can also automatically enable the testing level, teleport you outside of the ship, spawn an enemy, give yourself an item, and activate certain cheats.
