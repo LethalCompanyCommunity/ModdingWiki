@@ -42,7 +42,7 @@ If you have absolutely no experience with Blender, the 5 first parts of this ser
 ## Materials, Texturing & UV Unwrapping
 
 :::info
-Unity does not understand Blender's shader node system. If you use it for anything other than the princibled BSDF, you will have to bake your material as a texture before it will work in Unity. Also make note of the fact that Lethal Company automatically adds its own "style" to everything, so you don't need to worry about that. However, textures are not necessary so you can basically skip this section entirely.
+Unity does not understand Blender's shader node system. If you use it for anything other than the principled BSDF, you will have to bake your material as a texture before it will work in Unity. Also make note of the fact that Lethal Company automatically adds its own "style" to everything, so you don't need to worry about that. However, textures are not necessary so you can basically skip this section entirely.
 :::
 
 - [Blender 4.0 - Texture Painting quick start guide](https://youtu.be/iwWoXMWzC_c) - Jamie Dunbar
