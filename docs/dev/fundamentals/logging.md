@@ -31,7 +31,7 @@ There's an issue currently present, you can only access the `Logger` from the `P
 To solve that, we have to make a field that can be accessed internally:
 
 ```csharp
-internal static new ManualLogSource Logger; // [!code highlight]
+internal new static ManualLogSource Logger; // [!code highlight]
 
 private void Awake() 
 {
@@ -47,7 +47,7 @@ Two things happen here; first we create the field that can be referenced by our 
 Doing so, we use the `internal` access modifier to only allow our project code to access the field. We also use `static` to allow our other classes to easily access the logger by doing `Plugin.Logger`; and finally we use `new` to tell the compiler that we are intentionally overriding the `Logger` field from the `BaseUnityPlugin` class.
 
 ```csharp
-internal static new ManualLogSource Logger;
+internal new static ManualLogSource Logger;
 ```
 
 Next, we set that field to the Logger given by BepInEx. Since we are overriding it, we use `base.Logger` to reference `Logger` from the `BaseUnityPlugin` we inherit from.
@@ -126,6 +126,8 @@ LogLevels = All // [!code ++]
 LogLevels = Fatal, Error, Warning, Message, Info // [!code --]
 LogLevels = All // [!code ++]
 ```
+
+By default, if a player uses the BepInEx version pinned on Thunderstore, the `[Logging.Disk]` `LogLevels` setting will automatically be set to `All`, more easily allowing you to debug based off "hidden" logs in the log file.
 
 ### Warning Logging
 
