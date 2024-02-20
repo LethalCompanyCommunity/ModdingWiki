@@ -133,14 +133,16 @@
  * Component: Sidebar Category Divider (Non-Clickable)
  * -------------------------------------------------------------------------- */
 
-.VPSidebarItem:not(.is-link) > .item[role=button] > .text {
-    color: rgba(85, 165, 156, 1);
+.VPSidebarItem:not(.is-link.has-active) > .item[role=button] > .text {
+    color: var(--vp-c-text-1);
 }
 
-.dark .VPSidebarItem:not(.is-link) > .item[role=button] > .text {
-    color: rgba(185, 255, 245, .7);
+.VPSidebarItem.has-active:not(.is-active) > .item > .text,
+.VPSidebarItem.has-active:not(.is-active) > .item > .link > .text {
+    color: rgb(0, 141, 125) !important;
 }
 
-.VPSidebarItem.has-active:not(.is-link) > .item[role=button] > .text {
-    color: var(--vp-c-text-1) !important;
+.dark .VPSidebarItem.has-active:not(.is-active) > .item > .text,
+.dark .VPSidebarItem.has-active:not(.is-active) > .item > .link > .text {
+    color: rgba(185, 255, 245, .7) !important;
 }
