@@ -97,7 +97,16 @@ export default defineConfig({
                   text: 'Advanced',
                   collapsed: false,
                   items: [
-                    { text: 'Networking', link: '/dev/advanced/networking' },
+                    {
+                      text: 'Networking',
+                      link: '/dev/advanced/networking/',
+                      collapsed: true,
+                      items: [
+                        { text: 'Dev Tools', link: '/dev/advanced/networking/dev-tools'},
+                        { text: 'Messaging', link: '/dev/advanced/networking/messaging'},
+                        { text: 'Object Behaviour', link: '/dev/advanced/networking/objects'},
+                      ]
+                    },
                   ]
                 }
               ]
