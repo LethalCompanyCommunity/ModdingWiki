@@ -432,7 +432,7 @@ Hooking to a ClientRpc can cause errors with code running multiple times on the 
 
 Now that we've finished the networking code, all that's left is to patch the compiled mod assembly with Unity Netcode Patcher. Before we can do so, we need to prepare the mod for patching.
 
-1. Make sure that there is a .pdb file when you build your plugin. If it is not there, make sure that Debug Symbols is set to `Portable` and not embedded.
+1. Make sure that `DebugSymbols` are set to `portable` (or `pdbonly`) or `embedded`. `Full` debug symbols **will not work** and NetcodePatcher will produce an uninterpretable error message.
 
 2. Add the following code to your main Plugin.cs file, and make sure the method only runs **once**:
 
@@ -460,16 +460,17 @@ static void Awake()
 }
 ```
 
-Before you can run Unity Netcode Patcher, make sure it's set up - specifically, copy the contents of `Lethal Company/Lethal Company_Data/Managed` into `NetcodePatcher/deps`.
+Before you can run Unity Netcode Patcher, make sure it's set up - specifically, run `dotnet tool install -g Evaisa.NetcodePatcher.Cli`.
 
-Now, you just have to add the following Post-Build Event to your project:
+Now, you just have to add the following `Target` element to your `.csproj`:
 
-```cmd
-cd <NetcodePatcher Folder Directory Here>
-NetcodePatcher.dll $(TargetDir) deps/
+```xml
+<Target Name="NetcodePatch" AfterTargets="PostBuildEvent">
+    <Exec Command="netcode-patch &amp;quot;$(TargetPath)&amp;quot; @(ReferencePathWithRefAssemblies->'&amp;quot;%(Identity)&amp;quot;', ' ')"/>
+</Target>
 ```
 
-If this does not work, you can [follow the instructions on how to use Unity Netcode Patcher from the command line.](https://github.com/EvaisaDev/UnityNetcodePatcher#usage-from-command-line)
+If this does not work, you can [follow the instructions on how to use Unity Netcode Patcher.](https://github.com/EvaisaDev/UnityNetcodePatcher#usage-from-command-line)
 
 ## Conclusion
 
