@@ -29,3 +29,33 @@ and thus only need to be implemented in the context of your mod.
 For specific information on the available APIs, you can look at the
 [networking Programing APIs section](/dev/apis/overview#networking)
 of this wiki.
+
+
+## NGO's Custom Messages {#custom-messages}
+
+The hardest method of messaging between the host and clients is using
+NGO's Custom Messages. They do have their advantages, however.
+
+- They support vanilla compatibility as they do not have to register custom
+network objects, unlike RPCs.
+- They do not require the use of Eva's Unity Netcode Patcher. 
+- You can also utilize Network Messages to send longer pieces of information
+as they have the `NetworkDelivery.ReliableFragmentedSequenced` option.
+
+For examples on usage, take a look at [NGO's Custom Messages docs](https://docs-multiplayer.unity3d.com/netcode/1.5.2/advanced-topics/message-system/custom-messages/#named-messages).
+Linked is the named messages heading/section, which is recommended over unnamed messages
+as using named messages will help against conflicting with other mods' messaging systems.
+
+This article will only go into the basic concepts necessary for usage, not
+the actual usage.
+
+### Serialization
+
+To transmit data, you have to manually use the `FastBufferReader` and `FastBufferWriter` to
+serialize the data you want to transmit. You can use the pre-built serialization types Unity
+provides; however, custom classes, structs, and records will likely need custom serialization.
+
+Custom serialization requires that you manually write extensions for `FastBufferReader` and 
+`FastBufferWriter` to serialize the data in the class, struct, or record.
+
+For more information, you can [read this article](https://docs-multiplayer.unity3d.com/netcode/1.5.2/advanced-topics/custom-serialization/).
