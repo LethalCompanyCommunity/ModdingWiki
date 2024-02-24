@@ -66,7 +66,7 @@ Se não encontrá-lo, **use a barra de pesquisa ou role a tela para baixo** até
 
 5. Clique em **"Online"** na barra lateral. Isso irá trazer uma lista de todos os mods para baixar disponíveis em [Thunderstore](https://thunderstore.io/c/lethal-company/).
 
-![Clicking Online](/images/r2modman-install/selectonline.png)
+![Clicando Online](/images/r2modman-install/selectonline.png)
 
 6. Daqui você pode escolher quais mods você quer baixar e instalar. Clique no mod que desejar, e clique em Download.
 
