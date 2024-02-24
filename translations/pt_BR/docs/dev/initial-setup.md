@@ -16,37 +16,37 @@ Esta secção da wiki vai falar de como ficar pronto para desenvolver.
 
 Quanto estiveres pronto, tem a certeza de verificar a secção [APIs de Modding](/dev/apis/overview) para ver se tem alguma "librarie" que faça a criação do seu mod mais fácil.
 
-## Setting up your development environment {#setup-env}
+## Configurando o seu ambiente de desenvolvedor {#setup-env}
 
-Before you can start modding, you'll need some tools to actually create mods. Luckily, all of these are **available for free**.
+Antes de conseguires começar a criar mods, vais precisar de algumas ferramentas para realmente criar mods. Felizmente, todos esses estão **disponíveis de graça**.
 
 :::tip
-This guide is roughly based on some parts of the [BepInEx setup guide](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/1_setup.html), which is another great resource for learning how to mod
+Este guia é baseado em algumas partes do [BepInEx setup guide]
 :::
 
 ### .Net SDK {#dotnet-sdk}
 
-An SDK (=Software Development Kit) is a system that allows you to turn your code into something that your PC can run. It is used by other tools, and you'll generally not interact with it directly.
+Um SDK (=Kit de Desenvolvimento de Software) é um sistema que te permite que tornes o teu código em algo que o teu PC possa rodar. É usado por outras ferramentas, e geralmente não interages diretamente com o ele.
 
-You'll want to download and install the latest .Net 7 SDK version from [this page](https://dotnet.microsoft.com/en-us/download/dotnet/7.0). It'll look something like this:
+Vais precisar baixar e instalar a última versão do .Net 7 SDK através [desta página](https://dotnet.microsoft.com/en-us/download/dotnet/7.0). Irá se parecer algo como isso:
 
 [![.Net SDK download](/images/initial-setup/net7sdkdownload.png)](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 
 :::danger
-The .Net 8 SDK can cause issues with the BepInEx 5 template. Until these issues are resolved, it is recommended to install .Net 7 instead of 8.
+O .Net 9 SDK pode causar problemas com o modelo do BepInEz 5. Até esses problemas serem resolvidos, é recomendado instalar o .Net 7 em vez do 8.
 :::
 
 ### IDE
 
-By far the most important tool in a programmer's toolbox is an IDE (=Integrated Development Environment). For now, the definition of an "overengineered text editor" will suffice. Through an IDE, you can edit code far more efficiently, since it offers features such as:
+De longe a ferramenta mais importante na caixa de ferramentas de um programador é um IDE (=Ambiente de Desenvolvimento Integrado). Por agora, a definição de um "editor de texto muito complicado" será suficiente. Através de um IDE, consegues editar código muito mais eficientemente, pois oferece funcionalidades como:
 
-- Syntax highlighting
-- Compiling
-- Code completion
-- Integrated tools (version control, linting, etc...)
+- Destaque de Sintaxe
+- Compilação
+- Conclusão de Código
+- Ferramentas integras (controle de versão, "linting", etc...)
 - Debugging
 
-You might wonder why some of these are important (or what some of these even are), but that falls outside of the scope of this wiki. Rest assured however that they're essential and will save you a lot of headaches. Do _not_ try and create mods in a simple text editor such as notepad. Technically, you can do this, but there's no reason for it beyond masochism.
+Se calhar irás perguntar-te porque é que alguns destes são importantes (ou o que alguns destes são), as isso está fora tema desta wiki. Rest assured however that they're essential and will save you a lot of headaches. Do _not_ try and create mods in a simple text editor such as notepad. Technically, you can do this, but there's no reason for it beyond masochism.
 
 **For IDE's, we recommend one of the following free options:**
 
