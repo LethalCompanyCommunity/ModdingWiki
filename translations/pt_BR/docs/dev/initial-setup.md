@@ -1,20 +1,20 @@
 ---
 prev: true
 next: true
-description: Learn how to install all the necessary prerequisites to get started with creating Lethal Company mods.
+description: Aprende como instalar todos os pré-requezitos necessários para começar a criar mods para o Lethal Company.
 ---
 
-# Initial Setup
+# Configuração inicial
 
 ::: tip
 If you can't code and want to create a mod that does one common, simple thing (such as adding a suit or sound replacement) make sure to check the [Asset Modding APIs](/dev/apis/overview#asset-apis) section!
 
-Many common use cases already have APIs that allow you to easily add content without using any code.
+Vários casos de uso comuns já possuem APIs que permitem você facilmente adicionar conteúdo sem ter que escrever código.
 :::
 
-This section of the wiki will cover how to get set up for development.
+Esta secção da wiki vai falar de como ficar pronto para desenvolver.
 
-Once you're set up, make sure to check the [Modding APIs](/dev/apis/overview) section to see if there's any libraries that would make creating your mod easier.
+Quanto estiveres pronto, tem a certeza de verificar a secção [APIs de Modding](/dev/apis/overview) para ver se tem alguma "librarie" que faça a criação do seu mod mais fácil.
 
 ## Setting up your development environment {#setup-env}
 
