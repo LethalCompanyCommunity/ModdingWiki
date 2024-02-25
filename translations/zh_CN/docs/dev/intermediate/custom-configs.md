@@ -16,7 +16,7 @@ description: 关于如何为致命公司模组实现自定义配置的中间概�
 
 ## 创建配置条目
 
-创建一个配置类并为您想要配置的任何变量添加条目。
+创建一个配置类并为你想要配置的任何变量添加条目。
 
 ```cs
 public class Config
@@ -68,7 +68,7 @@ public class MyExampleMod : BaseUnityPlugin
 
 ## 使用配置条目
 
-现在，您可以使用 `.Value` 属性从创建的配置变量中获取数据。
+现在，你可以使用 `.Value` 属性从创建的配置变量中获取数据。
 
 ```cs
 private void MyExamplePatch()
@@ -83,7 +83,7 @@ private void MyExamplePatch()
 ```
 
 :::danger 停
-注意您的配置文件**不会被创建**，直到模组在游戏中加载**至少一次**。 请参阅 [r2modman 配置页面](/installation/configuration) 以了解如何使用您的配置。
+注意你的配置文件**不会被创建**，直到模组在游戏中加载**至少一次**。 请参阅 [r2modman 配置页面](/installation/configuration) 以了解如何使用你的配置。
 :::
 
-现在您已经有了模组的配置文件！ If it's extremely important that your mod has a config value that's the same for every player, you may want to consider reading the page on [custom config syncing](/dev/intermediate/custom-config-syncing).
+现在你已经有了模组的配置文件！ 如果你的模组有一个对每个玩家都相同的配置值及其重要，请考虑阅读 [自定义配置同步](/dev/intermediate/custom-config-syncing) 上的页面。
