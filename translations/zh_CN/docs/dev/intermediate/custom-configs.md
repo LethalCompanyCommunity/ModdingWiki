@@ -28,29 +28,29 @@ public class Config
 }
 ```
 
-Then we can start binding our config entries to the fields we just created inside of a class constructor.
+然后我们可以开始将配置条目绑定到我们刚刚在类构造函数中创建的字段。
 
 ```cs
 public Config(ConfigFile cfg)
 {
     configGreeting = cfg.Bind(
-            "General",                          // Config section
-            "GreetingText",                     // Key of this config
-            "Hello, world!",                    // Default value
+            "General",                          // 配置部分
+            "GreetingText",                     // 此配置的键
+            "Hello, world!",                    // 默认值
             "Greeting text upon game launch"    // Description
     );
     
     configDisplayGreeting = cfg.Bind(
-            "General.Toggles",                  // Config subsection
-            "DisplayGreeting",                  // Key of this config
-            true,                               // Default value
-            "To show the greeting text"         // Description
+            "General.Toggles",                  // 配置子部分
+            "DisplayGreeting",                  // 此配置的键
+            true,                               // 默认值
+            "To show the greeting text"         // 描述
     );
 }
 ```
 
-We then need to run said constructor to bind said configs to proper values and properties for users.<br><br>
-In your main class (usually `Plugin.cs`), implement the constructor with a parameter referencing the file that will be created by BepInEx.
+然后，我们需要运行所述构造函数，将所述配置绑定到用户的正确值和属性。<br><br>
+在主类（通常为 `Plugin.cs`）中，使用引用将由 BepInEx 创建的文件的参数来实现构造函数。
 
 ```cs
 public class MyExampleMod : BaseUnityPlugin
@@ -66,24 +66,24 @@ public class MyExampleMod : BaseUnityPlugin
 }
 ```
 
-## Using Config Entries
+## 使用配置条目
 
-You can now get the data from the config variables you have made using the `.Value` property.
+现在，您可以使用 `.Value` 属性从创建的配置变量中获取数据。
 
 ```cs
 private void MyExamplePatch()
 {
     private void MyExampleMethod()
     {
-        // Instead of just Logger.LogInfo("Hello, world!")
+        // 而不仅仅是 Logger.LogInfo("Hello, world!")
         if(Config.configDisplayGreeting.Value)
             Logger.LogInfo(Config.configGreeting.Value);
     }
 }
 ```
 
-:::danger STOP
-Understand that your config file **Will Not Be Created** until your mod is loaded ingame **at least once**. See the [r2modman Configs Page](/installation/configuration) for using your configs.
+:::danger 停
+注意您的配置文件**不会被创建**，直到模组在游戏中加载**至少一次**。 请参阅 [r2modman 配置页面](/installation/configuration) 以了解如何使用您的配置。
 :::
 
-Now you have config files for your mods! If it's extremely important that your mod has a config value that's the same for every player, you may want to consider reading the page on [custom config syncing](/dev/intermediate/custom-config-syncing).
+现在您已经有了模组的配置文件！ If it's extremely important that your mod has a config value that's the same for every player, you may want to consider reading the page on [custom config syncing](/dev/intermediate/custom-config-syncing).
