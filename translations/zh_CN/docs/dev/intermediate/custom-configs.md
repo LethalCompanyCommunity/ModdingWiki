@@ -1,22 +1,22 @@
 ---
 prev: false
 next: true
-description: An intermediate overview of how to implement custom configs for your Lethal Company mods.
+description: 关于如何为致命公司模组实现自定义配置的中间概述。
 ---
 
-# Custom Configs
+# 自定义配置
 
 :::warning
-**This is an advanced article. While this introduces some C# concepts, it is highly recommended to understand C# and the basics of modding this game <i>before</i> reading this article.**
+**这是一篇进阶文章。 虽然本文介绍了一些 C# 概念，但强烈建议在阅读本文<i>之前</i>了解 C# 和修改此游戏的基础知识。**
 :::
 
 :::info
-This tutorial is taken and adapted from the [BepInEx Configuration Documentation](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html). For more resources refer to that.
+本教程摘录并改编自 [BepInEx 配置文档](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html)。 更多资源请参阅。
 :::
 
-## Creating Config Entries
+## 创建配置条目
 
-Create a config class and add entries for any variables that you want to be configurable.
+创建一个配置类并为您想要配置的任何变量添加条目。
 
 ```cs
 public class Config
