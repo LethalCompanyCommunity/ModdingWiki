@@ -50,25 +50,25 @@ Se calhar irás perguntar-te porque é que alguns destes são importantes (ou o 
 
 **Para IDEs, nós recomendamos uma das seguintes opções gratuitas:**
 
-- [Visual Studio](https://visualstudio.microsoft.com/) -- **Recomendado** -- Um pacote completo. Has a built-in decompiler, which can save some time.
+- [Visual Studio](https://visualstudio.microsoft.com/) -- **Recomendado** -- Um pacote completo. Tem um descompilador incluído, que pode economizar algum tempo.
 
 :::info
-If you already have Visual Studio installed, you'll want ensure you're on Visual Studio 2022. This is the version that supports .Net 7, and has the correct MSBuild Version to build your project solution.
+Se já tens o Visual Studio instalado, vais precisar de verificar se estás a usar Visual Studio 2022. Esta é a versão que suporta .Net 7, e tem a Versão do MSBuild correta para criar a solução do seu projeto.
 :::
 
-- [Visual Studio Code](https://code.visualstudio.com/) -- A more lightweight package.
+- [Visual Studio Code](https://code.visualstudio.com/) -- Um pacote mais leve.
 
-**If you have access to a Jetbrains License, we recommend the following paid option:**
+**Se tens acesso a uma licença do Jetbrains, nós recomendamos as seguintes opções pagas:**
 
-- [Rider](https://www.jetbrains.com/rider/) -- **Recommended** (The author of this article uses it himself) -- An all-in-one package. Comparable to Visual Studio. Has a built-in decompiler, which can save some time.
+- [Rider](https://www.jetbrains.com/rider/) -- **Recomendado** (O próprio autor deste artículo usa.) -- Um pacote completo. Comparável ao Visual Studio. Tem um descompilador incluído, que pode economizar algum tempo.
 
 ### BepInEx
 
-To actually load mods into the game, we need a mod loader. This is where BepInEx comes in! **Be**pis **In**jector **Ex**tensible is a patcher/plug-in framework for Unity games. It'll handle everything related to getting the plugin to actually load into the game, so we can focus on creating the plugin without having to worry about anything else.
+Para realmente carregar mods no jogo, vamos precisar de um carregador para mods ("mod loader"). É aí que entra BepInEx! "**Be**pis **In**jector **Ex**tensible" é uma estrutura reparadora/plug-in para jogos da Unity. Ele vai cuidar de tudo relacionado com fazer que o plug-in seja realmente carregado no jogo, para nós conseguirmos focar na criação do plug-in sem ter que se preocupar com mais nada.
 
-You'll first want to install BepInEx to your game. Follow their great [installation guide](https://docs.bepinex.dev/articles/user_guide/installation/index.html) to get this done. You'll want [this](https://github.com/BepInEx/BepInEx/releases/download/v5.4.22/BepInEx_x64_5.4.22.0.zip) version of BepInEx.
+Vais primeiramente ter que instalar o BepInEx no teu jogo. Segue o seu [guia de instalação](https://docs.bepinex.dev/articles/user_guide/installation/index.html) para fazer isso. Vais precisar [desta](https://github.com/BepInEx/BepInEx/releases/download/v5.4.22/BepInEx_x64_5.4.22.0.zip) versão do BepInEx.
 
-Once installation is complete, boot up the game once to have it generate some configuration files. Then, refresh the folder you just installed BepInEx into, and go into the `BepInEx/config` folder. Here, you'll find a file named `BepInEx.cfg`. Open it, and find the `[Logging.Console]` section and make the following changes:
+Quando a instalação estiver completa, entra uma vês no jogo para criar alguns ficheiros de configuração. Depois, refresca o ficheiro onde tu instalaste o BepInEx, e vai para a pasta `BepInEx/config`. Aí, vais encontrar um ficheiro chamado BepInEx.cfg`. Abre-o, e procura a secção `[Logging.Console]\` e faz as seguintes alterações:
 
 ```ini
 [Logging.Console]
@@ -80,33 +80,33 @@ Enabled = false // [!code --]
 Enabled = true // [!code ++]
 ```
 
-### Decompiler (_highly recommended / near essential_) {#decompiler}
+### Descompilador (_muito recomendado / quase essencial_) {#decompiler}
 
-A decompiler allows you to decompile an existing program. This is technical terminology that can roughly be translated to "it allows you to peek behind the curtain and see what the code of a program looks like". Why is this important, you may ask? Well, if we're going to mod a game, we first need to know _what_ to mod. Do we want to reduce the price of items? We'll need to know in what part of the code items are displayed and sold to the player. Do we want to add a weather condition? We'll need to know in what parts of the code the game handles and spawns weather.
+Um descompilador permite que tu descompiles um programa já existente. Isto é um termo técnico que basicamente diz que "permite que você espie por trás da cortina e veja como é o código de um programa". Por que isso é importante, você pode perguntar? Bem, se formos modificar um jogo, precisamos primeiro saber **o que** vamos modificar. Queremos de reduzir o preço de itens? Vamos precisar de saber em que parte do código os itens são mostrados e vendidos ao jogador. Queremos adicionar uma condição do clima? Vamos precisar de saber em que parte do código o jogo controla e gera o clima.
 
-We recommend one (or all) of three free options:
+Nós recomendamos uma (ou todas) as três opções grátis:
 
 - [dnSpyEx](https://github.com/dnSpyEx/dnSpy)
 - [ILSpy](https://github.com/icsharpcode/ILSpy)
 - [dotPeek](https://www.jetbrains.com/decompiler/)
 
 :::tip
-**Note you do not necessarily need this if you have Rider or Visual Studio, since they come with built-in decompilers. Note that different decompilers offer slightly different results, and have different interfaces.**
+**Nota tu não precisas necessariamente isto se tens o "Rider" ou o Visual Studio, pois eles vêm com descompiladores incluídos. Anota que diferentes descompiladores oferecem resultados um pouco diferentes, e têm interfaces diferentes.**
 :::
 
-### Unity Explorer (optional) {#unity-explorer}
+### Unity Explorer (opcional) {#unity-explorer}
 
-[Unity Explorer](https://github.com/sinai-dev/UnityExplorer) is a tool which adds an in-game UI that allows you to explore, debug, and modify the game while it's running. This tool can be highly useful to get to know the game's technical side better, and his hence strongly recommended.
+[Unity Explorer](https://github.com/sinai-dev/UnityExplorer) é uma ferramente que adiciona uma UI no jogo que permite que explores, "debugs", e modifiques o jogo enquanto está aberto. Esta ferramente pode ser muito útil para saberes a parte técnica do jogo melhor, e é fortemente recomendado.
 
-You will want to download the version compatible with the latest version of BepInEx (5).
+Vais precisar de baixar a versão compatível com a última versão do BepInEx (5).
 
 [![Unity Explorer download](/images/initial-setup/unityexplorerdownload.png)](https://github.com/sinai-dev/UnityExplorer/releases/latest/download/UnityExplorer.BepInEx5.Mono.zip)
 
-### Additional tools (optional) {#other-tools}
+### Ferramentes adicionais (opcional) {#other-tools}
 
-There are a number of BepInEx plugins and tools that might be useful as you get more experienced with modding. The BepInEx devs have helpfully listed them [here](https://docs.bepinex.dev/articles/dev_guide/dev_tools.html).
+Há um número de BepInEx plug-ins e ferramentas que podem ser úteis conforme você ganha mais experiência a modificar. Os desenvolvedores do BepInEx de forma útil listaram-nos [aqui](https://docs.bepinex.dev/articles/dev_guide/dev_tools.html).
 
-## Creating a GitHub account {#create-github-account}
+## Criar uma conta no GitHub {#create-github-account}
 
 We strongly recommend using git - a "version control system". The most popular website that offers this as a (free) service is [GitHub](https://github.com/).
 
