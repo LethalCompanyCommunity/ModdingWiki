@@ -46,11 +46,11 @@ De longe a ferramenta mais importante na caixa de ferramentas de um programador 
 - Ferramentas integras (controle de versão, "linting", etc...)
 - Debugging
 
-Se calhar irás perguntar-te porque é que alguns destes são importantes (ou o que alguns destes são), as isso está fora tema desta wiki. Rest assured however that they're essential and will save you a lot of headaches. Do _not_ try and create mods in a simple text editor such as notepad. Technically, you can do this, but there's no reason for it beyond masochism.
+Se calhar irás perguntar-te porque é que alguns destes são importantes (ou o que alguns destes são), as isso está fora tema desta wiki. No entanto, tenha certeza de que eles são essenciais e lhe pouparão muitas dores de cabeça. _Não_ tentes criar mods em um editor de texto simples como o bloco de notas. Tecnicamente, podes fazer isso, mas não há rasão para isso além do masoquismo.
 
-**For IDE's, we recommend one of the following free options:**
+**Para IDEs, nós recomendamos uma das seguintes opções gratuitas:**
 
-- [Visual Studio](https://visualstudio.microsoft.com/) -- **Recommended** -- An all-in-one package. Has a built-in decompiler, which can save some time.
+- [Visual Studio](https://visualstudio.microsoft.com/) -- **Recomendado** -- Um pacote completo. Has a built-in decompiler, which can save some time.
 
 :::info
 If you already have Visual Studio installed, you'll want ensure you're on Visual Studio 2022. This is the version that supports .Net 7, and has the correct MSBuild Version to build your project solution.
