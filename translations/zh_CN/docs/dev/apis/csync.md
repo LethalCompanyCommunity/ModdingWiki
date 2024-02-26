@@ -1,38 +1,38 @@
 ---
 prev: false
 next: false
-description: A guide to synchronizing a BepInEx config file between host and clients using the CSync library.
+description: 使用 CSync 库在主机和客户端之间同步 BepInEx 配置文件的指南。
 ---
 
-# CSync (Config Syncing Library)
+# CSync（配置同步库）
 
-## Setup
+## 设置
 
-There are two ways to depend upon **CSync**, but I recommend using the [NuGet package](https://www.nuget.org/packages/Owen3H.BepInEx.CSync).<br>
-This will automatically include both an assembly reference and documentation as opposed to Thunderstore.
+有两种方法可以依赖 **CSync**，但我推荐使用 [NuGet 包](https://www.nuget.org/packages/Owen3H.BepInEx.CSync)。<br>
+与 Thunderstore 不同的是，这将自动包含程序集引用和文档。
 
-### NuGet (Recommended)
+### NuGet（推荐）
 
-**1**. Open the terminal in Visual Studio.<br>
-**2**. Run the following command.
+**1**. 在 Visual Studio 中打开终端。<br>
+**2**. 运行以下命令。
 
 ```console
 dotnet add package Owen3H.BepInEx.CSync
 ```
 
-Alternatively, you can install it visually via the **NuGet** package manager.
+此外，你也可以通过 **NuGet** 软件包管理器以可视方式安装。
 
-**1**. Head to `Project > Manage NuGet Packages`.<br>
-**2**. Search and select the `Owen3H.BepInEx.CSync` package.<br>
-**3**. Choose the latest version and hit Install.
+**1**. 前往“`项目 > 管理 NuGet 软件包`”。<br>
+**2**. 搜索并选择 `Owen3H.BepInEx.CSync` 软件包。<br>
+**3**. 选择最新版本并点击安装。
 
-### Thunderstore (Manual)
+### Thunderstore（手动）
 
-**1**. Download the latest version of the library on the [Thunderstore page](https://thunderstore.io/c/lethal-company/p/Owen3H/CSync/).<br>
-**2**. Extract the zip into your game directory root.<br>
-**3**. In your mod's project, add an **Assembly Reference** to `../BepInEx/plugins/CSync.dll`.
+**1**. 在 [Thunderstore 页面](https://thunderstore.io/c/lethal-company/p/Owen3H/CSync/)上下载最新版本的库。<br>
+**2**. 将 ZIP 解压到您的游戏目录根目录中。<br>
+**3**. 在你的模组项目中，将**程序集引用**添加到 `../BepInEx/plugins/CSync.dll`。
 
-## Overview
+## 概述
 
-- [Usage Guide](/dev/apis/csync/usage-guide) - The guide/tutorial to using this library.
-- [Troubleshooting](/dev/apis/csync/troubleshooting) - Common issues and their solutions.
+- [使用指南](/dev/apis/csync/usage-guide) - 该库的使用指南/教程。
+- [故障排除](/dev/apis/csync/troubleshooting) - 常见问题及其解决方案。
