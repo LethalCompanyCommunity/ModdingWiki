@@ -1,10 +1,10 @@
 ---
 prev: true
 next: true
-description: How to create Configurable Company configurations for your plugin and how to use them.
+description: 如何为插件创建 Configurable Company 配置，以及如何使用这些配置。
 ---
 
-# Developing Configurations with Configurable Company
+# 使用 Configurable Company 开发配置
 
 Configurations are the core of the API, they allow the developer to define options that the final user can modify to whatever value they want.
 
@@ -16,7 +16,7 @@ You can add a lot of information to configurations and even modify configuration
 As the developer you should avoid setting the value of a configuration manually as that might interfere with the player's choice.
 :::
 
-## Creating a configuration
+## 创建配置
 
 To create a configuration is as simple as calling `LethalConfiguration.CreateConfig`. You can choose to provide an ID right from the start or later, however all configurations must contain an unique ID.
 
@@ -31,24 +31,24 @@ If you don't know what a parameter does, check [parameters](#parameters) section
 LethalConfiguration.CreateConfig()
                 .SetID("developer_some-mod_sample-configuration")
                 .SetName("Sample configuration")
-                .SetTooltip( // Optional but recommended
-                    "This is a custom configuration that does nothing",
-                    "This is a second line for the tooltip",
+                .SetTooltip( // 可选但推荐
+                    "这是一个自定义配置，没有任何作用",
+                    "这是工具提示的第二行",
                     "",
-                    "This is another line")
-                .SetCategory(category) // Optional
+                    "这是另一行")
+                .SetCategory(category) // 可选
                 .SetType(ConfigurationTypes.String)
                 .SetValue("Random value")
-                .SetExperimental(false) // Optional
-                .SetSynchronized(false) // Optional
-                .Build(); // Optional
+                .SetExperimental(false) // 可选
+                .SetSynchronized(false) // 可选
+                .Build(); // 可选
 ```
 
 :::tip
 It's not necesary to call `Build()` if you are assigning the builder to a `Configuration` as it will implicitly call the build method to create the configuration.
 :::
 
-## Parameters
+## 参数
 
 - `SetID(string)`: The unique ID of the configuration.
 - `SetName(string)`: The name that will be displayed on the in-game menu.
@@ -64,7 +64,7 @@ It's not necesary to call `Build()` if you are assigning the builder to a `Confi
 Once the `Build()` is called, you will <u>**not**</u> be able to modify the category any further.
 :::
 
-## Configuration Types
+## 配置类型
 
 You can choose to create a configuration of your own type however it will take you less time to use one of the existing ones (or request a type to be implemented):
 
@@ -80,7 +80,7 @@ You can choose to create a configuration of your own type however it will take y
 - `StringOfLength(length)`: A string that allows you to set a maximum amount of characters that can go from 1 to 48.
 - `Options(Enumeration/object collection or array)`: A choosable option that allows for a specific value in a collection _The provided collection must be of just one type, you **can't** use an heterogeneous array_.
 
-## Using a Configuration
+## 使用配置
 
 There are multiple ways you can get the value of a configuration. Each one might be used according to the situation.
 
@@ -94,9 +94,9 @@ You also have the option to get a configuration from it's ID, allowing you to ev
 ```csharp
 string configurationId = "some-mod_configuration";
 if (LethalConfiguration.TryGetConfig(configurationId, out Configuration category)) {
-    // If the configuration exists you can use it
+    // 如果配置存在，你可以使用它
 } else {
-    // If the configuration does not exists you might need to create it
+    // 如果配置不存在，你可能需要创建它
 }
 ```
 
