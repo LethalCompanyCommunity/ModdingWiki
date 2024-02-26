@@ -6,34 +6,34 @@ description: 如何向 Wiki 贡献新文章。
 
 # 贡献文章
 
-感谢您决定向此 Wiki 贡献文章！ 这个 Wiki 能走到这一步并继续发展的唯一途径就是通过贡献。
+感谢你决定向此 Wiki 贡献文章！ 这个 Wiki 能走到这一步并继续发展的唯一途径就是通过贡献。
 
-本指南将帮助您编写文章、格式化文章并将其实施到 Wiki 中。
+本指南将帮助你编写文章、格式化文章并将其实施到 Wiki 中。
 
-## 分叉 GitHub 存储库 {#forking-the-repo}
+## 分叉 GitHub 仓库 {#forking-the-repo}
 
-为了向 Wiki 发送拉取请求（PR）来请求添加您的文章，您必须分叉 [ModdingWiki 存储库](https://github.com/LethalCompany/ModdingWiki)（repo）。
+为了向 Wiki 发送拉取请求（PR）来请求添加你的文章，你必须分叉 [ModdingWiki 仓库](https://github.com/LethalCompany/ModdingWiki)（repo）。
 
-要分叉 Wiki，相当简单。 您可单击网页上的“`Fork`”按钮，然后单击“`Create fork`”。
+要分叉 Wiki，相当简单。 你可单击网页上的“`Fork`”按钮，然后单击“`Create fork`”。
 
-![GitHub 分叉存储库按钮](/images/writing-articles/forkgithubrepobutton.png)
+![GitHub 分叉仓库按钮](/images/writing-articles/forkgithubrepobutton.png)
 
 ![GitHub 创建分叉对话框](/images/writing-articles/forkgithubrepopopup.png)
 
-现在我们已经创建了分叉！ 从此您可以对分支上的分叉进行更改，并在完成后创建 PR。
+现在我们已经创建了分叉！ 从此你可以对分支上的分叉进行更改，并在完成后创建 PR。
 
 ## 创建文件
 
-创建文章文件非常简单。 将文件添加到您要添加的文件夹/子部分，譬如 API 的“`/docs/dev/api/`”，并创建一个 Markdown 文件（.md）。
+创建文章文件非常简单。 将文件添加到你要添加的文件夹/子部分，譬如 API 的“`/docs/dev/api/`”，并创建一个 Markdown 文件（.md）。
 
 :::danger 重要
 
 例如，本文章名为“`writing-articles.md`”，位于“`/docs/extras/`”。
 :::
 
-## 查看您的文章
+## 查看你的文章
 
-本网站使用 VitePress 将 Markdown 文件转为可查看的网页。 要在网页的上下文中查看您的文章很简单。
+本网站使用 VitePress 将 Markdown 文件转为可查看的网页。 要在网页的上下文中查看你的文章很简单。
 
 要运行 VitePress 并作为本地站点查看，请在终端中运行以下命令：
 
@@ -42,10 +42,10 @@ npm run dev
 ```
 
 :::tip
-其必须在您的存储库文件夹中运行。 您也可以使用自己的代码编辑器/IDE 中的终端来执行此操作。
+其必须在你的仓库文件夹中运行。 你也可以使用自己的代码编辑器/IDE 中的终端来执行此操作。
 :::
 
-然后，终端将显示以下内容，此时您可以访问终端中给出的 URL：
+然后，终端将显示以下内容，此时你可以访问终端中给出的 URL：
 
 ![终端中显示的文本](/images/writing-articles/runvitepressterminal.png)
 
@@ -55,7 +55,7 @@ VitePress 使用“`YAML Frontmatter`”进行文章配置。 常用的设置有
 
 ### Description
 
-为了获得搜索引擎和嵌入的描述性信息，您必须在 front matter 添加 description。 为此，您需要在文章开头添加以下代码：
+为了获得搜索引擎和嵌入的描述性信息，你必须在 front matter 添加 description。 为此，你需要在文章开头添加以下代码：
 
 ```md
 ---
@@ -78,9 +78,9 @@ description: 如何向 Wiki 贡献新文章。
 
 ### Previous 与 Next
 
-您也许在 Wiki 页面底部见过上一篇或下一篇文章按钮。 可以使用 `prev` 和 `next` 在 frontmatter 部分启用或禁用它们。
+你也许在 Wiki 页面底部见过上一篇或下一篇文章按钮。 可以使用 `prev` 和 `next` 在 frontmatter 部分启用或禁用它们。
 
-默认情况下，上一篇和下一篇按钮被禁用。 要启用这些按钮，您需要将这些选项设置为 true：
+默认情况下，上一篇和下一篇按钮被禁用。 要启用这些按钮，你需要将这些选项设置为 true：
 
 ```md
 ---
@@ -123,7 +123,7 @@ description: 示例描述
 
 本 Wiki 使用 Markdown（.md）文件的修改版来编写文章，从而可以相当容易地编写新文章。
 Markdown 本质上是一个简单的文本文件，带有助于格式化的“快捷方式”。
-Discord 就是一个例子，您可以轻松地将消息格式设置为粗体、斜体等。
+Discord 就是一个例子，你可以轻松地将消息格式设置为粗体、斜体等。
 
 :::tip
 [此 Markdown 指南](https://www.markdownguide.org/basic-syntax/)比本文给出的基础知识更详细。
@@ -136,7 +136,7 @@ Discord 就是一个例子，您可以轻松地将消息格式设置为粗体、
 - 在字词的两侧使用“`**`”会**将该字词加粗**。
 - 在字词的两侧使用“`_`”会 _使该字词斜体化_。
 - 在字词的两侧使用“`***`”会_**将该字词加粗并斜体化**_。
-- Using `~~` on either side of a word/phrase will ~~strike that word/phrase out~~.
+- 在字词的两侧使用“`~~`”会~~将该字词添加删除线~~。
 
 :::warning
 These symbols generally _**must not**_ have spaces between them and the word(s) you are formatting.
@@ -181,7 +181,7 @@ This text is incorrectly formatted. Extra sentence.
 
 :::
 
-#### Code
+#### 代码
 
 You likely will want to display code as examples for readers to view. To do this, there are both code and code blocks.
 
@@ -215,7 +215,7 @@ This wiki uses [VitePress](https://vitepress.dev/) to turn markdown files into a
 [This Vitepress Guide](https://vitepress.dev/guide/markdown) goes into greater detail than the basics given in this article
 :::
 
-#### Containers
+#### 容器
 
 Containers hold little snippets of text that can be small asides, or important to pay attention to. The general method of creating a container is the following:
 
@@ -240,10 +240,10 @@ Common containers are:
 These will vary the coloring of the container. `details` specifically creates a hidden container that can hold more information.
 
 :::details Example Details Container
-Hidden info
+隐藏信息
 :::
 
-#### Code
+#### 代码
 
 You may want to highlight a line/section of code to bring attention to it. You can do this by specifying what lines you want highlighted in braces next to the language identifier.
 
@@ -281,7 +281,7 @@ You might also want to display the line numbers of code, which can be done by ad
 //...
 ```
 
-### Links & Images
+### 链接与图像
 
 Adding links and images to your article is simple using Markdown, although the link itself is more special.
 
@@ -289,7 +289,7 @@ Adding links and images to your article is simple using Markdown, although the l
 Directory references start from `/docs/`, so don't add `/docs/` to references when linking to another article or an image.
 :::
 
-#### Links
+#### 链接
 
 Using [markdown syntax](https://www.markdownguide.org/basic-syntax/#links), a link is as simple as wrapping the text in brackets and adding the link in parenthesis. For example, to link to the Wikipedia article on Lethal Company, one could do the following:
 
@@ -324,7 +324,7 @@ If you want to do it to another heading in your article, you can drop the link a
 
 :::
 
-#### Images
+#### 图像
 
 To add images to your article, there are two steps:
 
@@ -352,7 +352,7 @@ There are three important parts in this:
 When adding the image link, you need to exclude `/public` from the link as VitePress will automatically look into that directory for images.
 :::
 
-## Adding Your Article to the Sidebar {#adding-article-to-sidebar}
+## 将文章添加到侧边栏 {#adding-article-to-sidebar}
 
 In order for people to easily navigate to your article, you must add it to the sidebar. You can do so in `docs/.vitepress/config.mts`.
 
@@ -391,7 +391,7 @@ Where `Example Article` is the article name, and `<directory>` is the location a
 Please ensure your article name is in **Title Case** when adding it to the sidebar.
 :::
 
-## Submitting to GitHub
+## 提交至 GitHub
 
 Now that you've written your article, you can submit it easily! First, switch to the `Fork` tab in GitHub.
 
