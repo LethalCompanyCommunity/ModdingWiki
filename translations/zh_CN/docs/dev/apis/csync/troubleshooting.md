@@ -1,15 +1,15 @@
 ---
 prev: true
 next: false
-description: Troubleshooting section for problems using CSync.
+description: 使用 CSync 出现问题时的故障排除部分。
 ---
 
-# Troubleshooting
+# 故障排除
 
-This page is intended to answer common questions and address frequently encountered issues.<br>
-If you encounter an issue that isn't here, please report it within the [CSync forum](https://discord.com/channels/1168655651455639582/1199756974368227439) in the modding discord.
+本页面旨在回答常见问题并解决经常遇到的问题。<br>
+如果您遇到的问题不在这里，请在模组 Discord 中的 [CSync forum](https://discord.com/channels/1168655651455639582/1199756974368227439) 报告。
 
-## Syncing doesn't work when I patch manually.
+## 手动修补时无法同步。
 
 If you're using `PatchAll()` with type parameters, make sure to patch the `Config` class like other files.<br>
 Example:
