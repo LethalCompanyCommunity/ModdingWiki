@@ -1,25 +1,25 @@
 ---
 prev: true
 next: true
-description: How to create Configurable Company pages for your plugin and how to use them.
+description: 如何为插件创建 Configurable Company 页面以及如何使用这些页面。
 ---
 
-# Developing Pages with Configurable Company
+# 使用 Configurable Company 开发页面
 
-Here you will understand what are pages, how to create and use them.
+在这里，你将了解什么是页面、如何创建和使用页面。
 
-## What is a Page
+## 什么是页面
 
-The in-game menu provides an easy way to distribute your configurations and categories into **pages**, allowing the user to see what plugin added some configuration and the developer to have a reserved panel so there are no conflicts with other plugins.
+游戏内菜单提供了一种简便的方法，可将配置和类别分配到**页面**中，这样用户就能看到是哪个插件添加了某些配置，而开发者也能拥有一个保留面板，这样就不会与其他插件发生冲突。
 
-## Creating a Page
+## 创建页面
 
-Creating a page is the simplest of operations you can do. Call `LethalConfiguration.CreatePage()` and it will provide you with the needed builder.
+创建页面是最简单的操作。 调用 `LethalConfiguration.CreatePage()` ，它将为你提供所需的生成器。
 
-Here is an example on how you can create a page:
+下面是一个如何创建页面的示例：
 
 :::info
-If you don't know what a parameter does, check [parameters](#parameters) section.
+如果不知道某个参数的作用，请查看 [参数](#parameters) 部分。
 :::
 
 ```csharp
@@ -29,14 +29,14 @@ ConfigurationPage page = LethalConfiguration.CreatePage()
 ```
 
 :::tip
-It's not necesary to call `Build()` if you are assigning the builder to a `ConfigurationPage` as it will implicitly call the build method to create the page.
+如果将构建器分配给 `ConfigurationPage`，则不必调用 `Build()` ，因为它会隐式调用构建方法来创建页面。
 :::
 
-## Parameters
+## 参数
 
-- `SetName(string)`: The name that will be displayed on the in-game menu.
+- `SetName(string)`：将显示在游戏内菜单上的名称。
 
-## Using a Page
+## 使用页面
 
 To use a page, you need to store the page variable itself and assign [configuration categories](/dev/apis/configurable-company/developing-categories.md) to it.
 
