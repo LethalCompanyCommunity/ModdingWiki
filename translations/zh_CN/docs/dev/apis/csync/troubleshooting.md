@@ -7,12 +7,12 @@ description: 使用 CSync 出现问题时的故障排除部分。
 # 故障排除
 
 本页面旨在回答常见问题并解决经常遇到的问题。<br>
-如果您遇到的问题不在这里，请在模组 Discord 中的 [CSync forum](https://discord.com/channels/1168655651455639582/1199756974368227439) 报告。
+如果你遇到的问题不在这里，请在模组 Discord 中的 [CSync forum](https://discord.com/channels/1168655651455639582/1199756974368227439) 报告。
 
 ## 手动修补时无法同步。
 
-If you're using `PatchAll()` with type parameters, make sure to patch the `Config` class like other files.<br>
-Example:
+如果使用带有类型参数的 `PatchAll()` ，请务必像修补其他文件一样修补 `Config` 类。<br>
+示例：
 
 ```cs
 harmony.PatchAll(typeof(StartMatchLeverPatch));
@@ -20,9 +20,9 @@ harmony.PatchAll(typeof(GameNetworkManagerPatch));
 harmony.PatchAll(typeof(Config)); // [!code ++]
 ```
 
-## I am not seeing any logs from the request/receiver methods?
+## 我没有看到请求/接收器方法的任何日志？
 
-Harmony may refuse to patch the `InitializeLocalPlayer` method inside `Config.cs` if you have already have a dedicated patch file for `PlayerControllerB`. You can try placing the method there instead.
+如果你已经有 `PlayerControllerB` 的专用补丁文件，Harmony 可能会拒绝修补 `Config.cs` 中的 `InitializeLocalPlayer` 方法。 你可以尝试将该方法放在此处。
 
 ```cs
 [HarmonyPatch(typeof(PlayerControllerB))]
