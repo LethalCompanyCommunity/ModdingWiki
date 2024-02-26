@@ -1,16 +1,16 @@
 ---
 prev: true
 next: true
-description: How to create Configurable company categories for your plugin and how to use them.
+description: 如何为插件创建 Configurable Company 类别，以及如何使用这些类别。
 ---
 
-# Developing Categories with Configurable Company
+# 使用 Configurable Company 开发类别
 
-## What is a Category
+## 什么是类别
 
 Categories are another way to organize your configurations, like [configuration pages](/dev/apis/configurable-company/developing-pages.md) they don't modify how configurations work however they will allow players to focus on what configurations they want to change, specially when there are many configurations.
 
-## Creating a Category
+## 创建类别
 
 Categories are used to organize your configuration in a folder-like structure so that the final user can easily navigate the menu. These are symbolic and do not change the behavior of the configurations at all.
 
@@ -28,9 +28,9 @@ If you don't know what a parameter does, check [parameters](#parameters) section
 ConfigurationCategory sampleCategory = LethalConfiguration.CreateCategory()
                 .SetID("developer_some-mod_sample-category")
                 .SetName("Sample category")
-                .SetPage(ConfigurationPage) // Optional
-                .SetColorRGB(255, 0, 0) // Optional
-                .HideIfEmpty(false) // Optional
+                .SetPage(ConfigurationPage) // 可选
+                .SetColorRGB(255, 0, 0) // 可选
+                .HideIfEmpty(false) // 可选
                 .Build();
 ```
 
@@ -38,7 +38,7 @@ ConfigurationCategory sampleCategory = LethalConfiguration.CreateCategory()
 It's not necesary to call `Build()` if you are assigning the builder to a `ConfigurationCategory` as it will implicitly call the build method to create the category.
 :::
 
-## Parameters
+## 参数
 
 - `SetID(string)`: The unique ID of the category.
 - `SetName(string)`: The name that will be displayed on the in-game menu.
@@ -52,7 +52,7 @@ It's not necesary to call `Build()` if you are assigning the builder to a `Confi
 Once the `Build()` is called, you will <u>**not**</u> be able to modify the category any further.
 :::
 
-## Using a Category
+## 使用类别
 
 To use a defined category, you must store the variable with the `ConfigurationCategory` and assign your configurations to it.
 
@@ -61,9 +61,9 @@ You also have the option to get a category from it's ID, allowing you to even ge
 ```csharp
 string categoryId = "some-mod_category";
 if (LethalConfiguration.TryGetCategory(categoryId, out ConfigurationCategory category)) {
-    // If the category exists you can use it
+    // 如果类别存在，你就可以使用它
 } else {
-    // If the category does not exists you might need to create it
+    // 如果该类别不存在，你可能需要创建它
 }
 ```
 
