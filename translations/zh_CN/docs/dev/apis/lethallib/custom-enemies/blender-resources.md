@@ -1,18 +1,18 @@
 ---
 prev: true
 next: true
-description: Resources on making your own 3D enemy models for Unity.
+description: 为 Unity 制作 3D 敌人模型的资源。
 ---
 
-# 3D Modeling With Blender
+# 使用 Blender 进行 3D 建模
 
-On this page, we have listed various resources in order to help you get started with making your own 3D models in Blender, including how to get your models into Unity.
+在本页中，我们列出了各种资源，以帮助你开始在 Blender 中制作自己的 3D 模型，包括如何将模型导入 Unity。
 
 :::tip
 You can check the ExampleEnemy Blender project included in the example enemy repository for reference. It can be found under `AssetSources/Blender`.
 :::
 
-## Blender Basics
+## Blender 基础
 
 :::tip
 Don't press random keys, as Blender has a lot of keyboard shortcuts and you might have no idea what you just did or how to undo it. That said, keyboard shortcuts can speed up your workflow by a lot, and you can use this [Blender Shortcuts Cheat Sheet](https://docs.google.com/document/d/1zPBgZAdftWa6WVa7UIFUqW_7EcqOYE0X743RqFuJL3o/edit?pli=1#heading=h.ftqi9ub1gec3) by Blender Guru, which can be useful.
@@ -27,19 +27,19 @@ If you have absolutely no experience with Blender, the 5 first parts of this ser
 - [Part 4: Sculpting](https://youtu.be/--GVNZnSROc?list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z) - Sculpting can be especially useful when modeling organic things
 - [Part 5: Shading](https://youtu.be/fsLO1F5x7yM?list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z) - Materials, texturing, UV unwrapping
 
-## Modeling
+## 建模
 
 - [Fast Character Modeling with the Skin Modifier in Blender](https://youtu.be/DAAwy_l4jw4) - Joey Carlino
   - Introduces a super cool and easy modeling technique. I recommend this a lot for learning to make basic initial meshes for characters or creatures.
 
-### Modeling - Common Issues
+### 建模 - 常见问题
 
 **Q: My mesh looks inverted in Blender or when imported to Unity.**
 
 > This is because your normals got inverted in one way or another. Select your mesh in Edit Mode, press `A` to select everything, press `Shift+N` to recalculate your normals (do not select "Inside", that is the flipped state).\ <br>
 > If this doesn't fix the problem after importing to Unity, you likely have resized your object by a negative amount. This looks normal in Blender, but not in Unity. To fix this, go into Object Mode, select your object, press `Ctrl+A`, select apply scale. Now your normals should have flipped in Blender. Now, recalculate normals.
 
-## Materials, Texturing & UV Unwrapping
+## 材质、纹理和 UV 展开
 
 :::info
 Unity does not understand Blender's shader node system. If you use it for anything other than the principled BSDF, you will have to bake your material as a texture before it will work in Unity. Also make note of the fact that Lethal Company automatically adds its own "style" to everything, so you don't need to worry about that. However, textures are not necessary so you can basically skip this section entirely.
@@ -50,16 +50,16 @@ Unity does not understand Blender's shader node system. If you use it for anythi
 - [Blender 4.0: How to UV Unwrap Anything](https://youtu.be/XleO7DBm1Us) - On Mars 3D
   - UV Unwrapping and dealing with UV maps.
 
-## Rigging
+## 装配
 
-- [Tutorial: My New Rigging Workflow in Blender](https://youtu.be/BiPoPMnU2VI) - Polyfjord
+- [教程：我在 Blender 中的新装配工作流](https://youtu.be/BiPoPMnU2VI) - Polyfjord
   - Inverse kinematics on a mechanical character. Very useful for rigging legs.
 - [Rigging for impatient people - Blender Tutorial](https://youtu.be/DDeB4tDVCGY) - Joey Carlino
   - Includes a lot of useful information about rigging, but it's a very fast paced video. Can be fairly hard to follow for a complete beginner. Likely a better watch after you've seen the more basic introductory type tutorials first.
 - [How to Rig and Animate in BLENDER!](https://youtu.be/1khSuB6sER0) - ProductionCrate
   - Learn how to make a rig for a humanoid character, fix issues with Blender's automatic weights feature, as well as inverse kinematics.
 
-## Animation & NLA (Nonlinear Animation) Editor
+## 动画与 NLA（非线性动画）编辑
 
 :::info
 We should put our individual animations in the NLA Editor so we can use them separately in Unity. The length of the animation in Unity will be the length that you set in the NLA editor. This is important to know if you set an animation cycle to repeat a certain amount of times in Blender when you want to for example preview it in combination with your other animations.
