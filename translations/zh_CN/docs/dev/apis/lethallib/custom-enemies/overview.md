@@ -1,20 +1,20 @@
 ---
 prev: false
 next: true
-description: A tutorial on implementing custom enemies to Lethal Company.
+description: 为致命公司实现自定义敌人的教程。
 ---
 
-# Custom Enemies - Overview
+# 自定义敌人 - 概述
 
-## Preamble
+## 序言
 
 Make sure you've done everything in the [LethalLib main page](/dev/apis/lethallib) first. This page will briefly run through what needs to be done in order to implement your own custom enemies.
 
 In next pages, we will assume you have a copy of the example project repository on you, and when we are referring to our Unity project, we are talking about the Unity project included in the example project repository.
 
-## Example Enemy Project Repository
+## 敌人项目仓库示例
 
-:::warning IMPORTANT
+:::warning 重要
 Grab yourself a copy of the example enemy project at https\://github.com/Hamunii/LC-ExampleEnemy! Every asset used in the project is MIT Licensed, and can be used as a base for your own mod!
 :::
 
@@ -32,13 +32,13 @@ For getting started with making your 3D models in Blender, see [3D Modeling With
 
 Lethal Company uses Unity version 2022.3.9f1, and therefore we should use it too in order to avoid any issues with version differences when exporting our asset bundles.
 
-:::warning IMPORTANT
+:::warning 重要
 
 Alternatively, you could use a patchbay like [qwpgraph](https://flathub.org/apps/org.rncbc.qpwgraph) to always force Unity to output into the audio device of your choosing. Do note that this only works if you are on PipeWire. If you are unsure on whether or not you are running PipeWire, you can see if `$ ps -e | grep pipewire` outputs anything. This command will list active processes that have "pipewire" in their name.
 :::
 
 For information about how our custom enemy is configured in Unity, see [Unity Project](./unity-project.md).
 
-## Enemy AI
+## 敌人 AI
 
-Lastly, we will go through some helpful information for coding your own enemy AI. For the article, see [Coding Our AI](./coding-ai.md).
+Lastly, we will go through some helpful information for coding your own enemy AI. 文章见 [编写 AI](./coding-ai.md)。
