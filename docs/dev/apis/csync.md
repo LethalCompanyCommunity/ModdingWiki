@@ -30,4 +30,5 @@ Alternatively, you can install it visually via the **NuGet** package manager.
 
 ## Overview
 - [Usage Guide](/dev/apis/csync/usage-guide) - The guide/tutorial to using this library.
-- [Troubleshooting](/dev/apis/csync/troubleshooting) - Common issues and their solutions.
+- [Migrating to v2](/dev/apis/csync/v2-migration) - How to update from v1 to v2.
+- [Troubleshooting](/dev/apis/csync/outdated/troubleshooting) - Common issues and their solutions. (Pre v2)
