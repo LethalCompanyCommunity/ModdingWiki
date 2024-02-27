@@ -31,7 +31,7 @@ void MyMethodListener(object sender, ConfigurationChanged configChangedEvent) {
 The provided event `ConfigurationChanged` contains all the information you might need to use the event properly.
 
 :::info
-Note that all the events have `object sender` as their first argument.
+请注意，所有事件的第一个参数都是 `object sender`。
 :::
 
 ## 事件
@@ -47,5 +47,5 @@ Note that all the events have `object sender` as their first argument.
 | AfterMenuDisplay     | Called every time the in-game configuration menu is displayed.                                                                                            | EventArgs            |
 
 :::tip
-If you want an in-depth guide on how this event pattern works, you can follow [this microsoft guide](https://learn.microsoft.com/en-us/dotnet/standard/events/#event-handlers).
+如果你想深入了解该事件模式的工作原理，可以参考 [这份 Microsoft 指南](https://learn.microsoft.com/zh-cn/dotnet/standard/events/#event-handlers)。
 :::
