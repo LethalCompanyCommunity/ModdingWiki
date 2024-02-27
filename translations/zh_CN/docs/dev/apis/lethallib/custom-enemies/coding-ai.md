@@ -14,7 +14,7 @@ You should use a [decompiler](/dev/initial-setup#decompiler) to look how the ene
 See our tips for optimizing your mod testing workflow on [Mod Testing Tips](/dev/mod-testing-tips.md)! 这些在调整 AI 时会格外实用。
 :::
 
-## EnemyAI 概览
+## EnemyAI 概述
 
 Every enemy in Lethal Company inherits from the abstract EnemyAI class, so we do the same. We will now go over some of the relevant methods:
 
@@ -135,30 +135,30 @@ class MyComplexAI : EnemyAI
     {
         WANDERING,
         CHASING,
-        // ... and many more states
+        // ... 以及更多的状态
     }
     // ...
     public override void DoAIInterval()
     {
-        // Run the original virtual method to sync enemy position
-        // and update the enemy's pathing target.
+        // 运行初始虚拟方法来同步敌人的位置
+        // 并更新敌人的路径目标。
         base.DoAIInterval();
 
-        // The switch is a more advanced if statement that allows us to
-        // more easily define what should happen in each state vs using
-        // just a bunch of ifs.
+        // switch 是一种更高级的 if 语句，可以让
+        // 我们更轻松地定义在每个状态下应该
+        // 发生的事，而不是仅使用一大堆 if。
         switch(currentBehaviourStateIndex)
         { 
             case State.WANDERING:
-                // ... handle logic for looking for a player or
-                // just wandering around.
+                // ... 处理寻找玩家或
+                // 四处游荡的逻辑。
 
-                // This break is VERY IMPORTANT, it means that it won't 
-                // just continue onto our next bit of code for the
-                // different states.
+                // 这个断点非常重要，它意味着
+                // 我们不会继续进行下一段代码
+                // 来处理不同的状态。
                 break; 
             case State.CHASING:
-                // ... other logic to handle when we are chasing a player.
+                // ... 当我们追逐一名玩家时，还有其他逻辑可以处理。
                 break;
         }
     }
@@ -192,9 +192,9 @@ switch(currentBehaviourStateIndex)
 
 We've now converted our AI into a state machine by using an enum! This helps you organize larger AI systems into chunks that can't interfere with each other so you'll encounter less bugs. It's also a lot easier for you to now add more states to your AI without having to use a bunch of `if` checks.
 
-## External Resources
+## 外部资源
 
-### C# Reference
+### C# 参考
 
 [Virtual modifier](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual)\
 [Override modifier](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/override)\
@@ -202,9 +202,9 @@ We've now converted our AI into a state machine by using an enum! This helps you
 [Enums](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum)\
 [Switch statement](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements#the-switch-statement)
 
-### Networking - Unity Docs
+### 联网 - Unity 文档
 
-:::warning IMPORTANT
+:::warning 重要
 We are using [Unity Netcode Patcher](https://github.com/EvaisaDev/UnityNetcodePatcher) to make our custom Rpc methods work.
 :::
 
