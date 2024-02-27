@@ -74,7 +74,7 @@ We should put our individual animations in the NLA Editor so we can use them sep
 - [Character animation for impatient people - Blender Tutorial](https://youtu.be/GAIZkIfXXjQ) - Joey Carlino
   - If you don't want to make and rig your own models.
 
-### Animation - Common Issues
+### 动画 - 常见问题
 
 **Q: Objects in my model appear in different places as in Blender when exporting to Unity.**
 
@@ -84,7 +84,7 @@ We should put our individual animations in the NLA Editor so we can use them sep
 
 > This might be because you have animations with the same name in your NLA editor. Make sure your animations have unique names.
 
-## Exporting Assets For Unity
+## 导出 Unity 资源
 
 To export your model, go to: `File` -> `Export` -> `FBX (.fbx)`\
 This will open our FBX exporter window, where we have some options available to us. If you have put your animations in the NLA editor, you'll want to disable `All Actions` under the `Bake Animation` dropdown.
@@ -99,10 +99,10 @@ Blender considers "Forward" to be `-Y`, while in Unity it's `Z`. And "Up" in Ble
 
 We set `Forward` (`-Y`) to `-Z Forward`, and `Up` (`Z`) to `Y Up` and our model appears correctly in Unity space. The reason `-Z Forward` becomes positive `Z` might be because technically, `Z` is inverted between Blender and Unity, which we can see in the illustration.
 
-## Exporting an Updated Version of Your Model For Unity
+## 导出 Unity 模型的更新版本
 
 :::danger
-Make sure to have a backup of your Unity project before doing this!
+在这样做之前，请务必备份你的 Unity 项目！
 :::
 
 If you have made changes to your model in Blender and want to bring the updated model into Unity, you will want to export your model again, overwriting the previous FBX file. Don't delete the previous version of the model or the accompanying .meta file, and don't overwrite the model inside of Unity. We want to keep all the references intact, and the best way to do that is to overwrite the FBX file from outside of Unity.
