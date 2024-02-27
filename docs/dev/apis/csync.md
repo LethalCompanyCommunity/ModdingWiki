@@ -1,6 +1,6 @@
 ---
 prev: false
-next: false
+next: true
 description: A guide to synchronizing a BepInEx config file between host and clients using the CSync library.
 ---
 
