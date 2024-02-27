@@ -1,20 +1,20 @@
 ---
 prev: true
 next: false
-description: An introduction to coding your own enemy AI.
+description: 介绍如何编写自己的敌人 AI。
 ---
 
-# Coding Our Custom AI
+# 编写自定义 AI
 
-:::warning IMPORTANT
+:::warning 重要
 You should use a [decompiler](/dev/initial-setup#decompiler) to look how the enemy AI scripts work in the game. All the game code is contained inside `Lethal Company/Lethal Company_Data/Managed/Assembly-CSharp.dll`, so you should open that file in your decompiler!
 :::
 
 :::tip
-See our tips for optimizing your mod testing workflow on [Mod Testing Tips](/dev/mod-testing-tips.md)! These will be particularly helpful when tweaking your AI.
+See our tips for optimizing your mod testing workflow on [Mod Testing Tips](/dev/mod-testing-tips.md)! 这些在调整 AI 时会格外实用。
 :::
 
-## Overview of EnemyAI
+## EnemyAI 概览
 
 Every enemy in Lethal Company inherits from the abstract EnemyAI class, so we do the same. We will now go over some of the relevant methods:
 
@@ -37,7 +37,7 @@ This also means that if `syncMovementSpeed` is zero, or a very big number, the e
 
 The `DoAIInterval()` method runs in an interval we've set in Unity on our custom AI script which is attached to our enemy prefab. We have set this to 0.2 seconds, which is also used in the game by for example the BaboonHawk enemy and probably other enemies too.
 
-This is what `base.DoAIInterval()` does:
+这是 `base.DoAIInterval()` 的作用：
 
 ```cs
 // ... in EnemyAI
@@ -47,15 +47,14 @@ public virtual void DoAIInterval()
         // agent is the Nav Mesh Agent attached to our prefab
         agent.SetDestination(destination);
     }
-    // Updates serverPosition to current enemy position on server if
-    // distance from serverPosition to current position is above
-    // updatePositionThreshold, which we set in our custom AI script
-    // in Unity.
+    // 如果从 serverPosition 到当前位置的距离高于我们
+    // 在 Unity 中的自定义 AI 脚本中设置的 updatePositionThreshold，
+    // 则将 serverPosition 更新为服务器上的当前敌人位置。
     SyncPositionToClients();
 }
 ```
 
-As we can see, the enemy updates its destination when `moveTowardsDestination` is True. It is True by default, and also gets set True if you run the `SetDestinationToPosition()` method, returning true, which means the enemy was able to pathfind to the player. Running that method also sets `movingTowardsTargetPlayer` to False, and updates the `destination` variable.
+我们可以看到，当 `moveTowardsDestination` 为 True 时，敌人会更新其目的地。 It is True by default, and also gets set True if you run the `SetDestinationToPosition()` method, returning true, which means the enemy was able to pathfind to the player. Running that method also sets `movingTowardsTargetPlayer` to False, and updates the `destination` variable.
 
 The `OnCollideWithPlayer()` method will run when an object with a trigger collider and the Enemy AI Collision Detect (Script). This is also the collider we can hit with a shovel, and we need to implement `HitEnemy()` for our enemy to be able to take damage and die.
 
@@ -65,22 +64,22 @@ When we want to implement these methods from `EnemyAI` into our AI script, we wi
 ```cs
 public override void DoAIInterval()
 {
-    // Run original virtual method
+    // 运行原始虚拟方法
     base.DoAIInterval();
-    // ... custom logic
+    // ... 自定义逻辑
 }
 ```
 
 :::
 
-## Behavior Examples
+## 行为示例
 
-### Enemy Movement
+### 敌人移动
 
 The `TargetClosestPlayer()` method can be used to make the enemy change its targetPlayer to the closest player.
 Then, we can for example do `SetDestinationToPosition(targetPlayer.transform.position)` to make our enemy pathfind to where targetPlayer stands.
 
-### Using Random Without Desync
+### 使用随机而不同步
 
 We can implement our own random variable which we initialize with a set seed in our `Start()` method, and use it like this:
 
@@ -100,28 +99,28 @@ We should still be careful about using random, as it is still possible that for 
 
 One way to ensure we don't get desync is to use ClientRpc methods, as those are networked. See the Unity Docs on [ClientRpcs](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/clientrpc/) for more information. To be able to use these methods like in Unity, we can use [Unity Netcode Patcher](https://github.com/EvaisaDev/UnityNetcodePatcher). It is already set up in our example enemy project.
 
-## Making More Complex AI
+## 制作更复杂的 AI
 
 In order to properly structure our AI when it gets more complex is to use enums. Enums can be used to more explicitly define the "state" that our AI is in. Do note however that the game uses `currentBehaviourStateIndex` for the state of the enemy's behavior, and this can be changed with `SwitchToBehaviourClientRpc()`. For example:
 
 ```cs
 class MyComplexAI : EnemyAI {
-    // Note: also add your behavior states in your enemy script in Unity,
-    // where you can configure things like a voice/sfx clip or an animation
-    // to play when changing to a specific behavior state.
-    // If we don't do that, we will get an index out of range exception.
+    // 注意：还可以在 Unity 中的敌人脚本中添加行为状态，
+    // 你可以在其中配置语音/特效片段或动画，
+    // 以便在切换到特定行为状态时播放。
+    // 如果不这样做，就会出现索引超出范围的异常。
     enum State
     {
         WANDERING,
         CHASING,
-        // ... and many more states
+        // ... 以及更多的状态
     }
     // ...
     private void SomeExampleMethod()
     {
-        // The owner of the enemy (the host by default) needs to call the 
-        // method below. The method is a ClientRpc, meaning it will run for
-        // all clients. This will update currentBehaviourStateIndex.
+        // 敌人的所有者（默认为主机）需要调用下面的方法。
+        // 该方法是一个 ClientRpc，这意味着它将为所有客户端运行。
+        // 这将更新 currentBehaviourStateIndex。
         SwitchToBehaviourClientRpc((int)State.CHASING);
     }
 }
