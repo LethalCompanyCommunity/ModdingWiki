@@ -1,12 +1,12 @@
 ---
 prev: false
 next: true
-description: The main guide to using CSync.
+description: 使用 CSync 的主要指南。
 ---
 
-# Guide to using CSync
+# CSync 使用指南
 
-## 1. Creating a serializable config class
+## 1. 创建一个可序列化的配置类
 
 To begin, we will create a new class that will inherit from `SyncedInstance`.<br>
 We must then add the `[DataContract]` attribute for this to be synced with clients.
