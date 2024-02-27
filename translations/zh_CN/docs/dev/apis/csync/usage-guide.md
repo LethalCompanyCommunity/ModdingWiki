@@ -8,16 +8,16 @@ description: 使用 CSync 的主要指南。
 
 ## 1. 创建一个可序列化的配置类
 
-To begin, we will create a new class that will inherit from `SyncedInstance`.<br>
-We must then add the `[DataContract]` attribute for this to be synced with clients.
+首先，我们将创建一个继承自 `SyncedInstance` 的新类。<br>
+然后，我们必须添加 `[DataContract]` 属性，以便与客户端同步。
 
 ```cs
 [DataContract]
 public class Config : SyncedInstance<Config>
 ```
 
-Within this class, we can now begin writing out our config entries that we want to sync.<br>
-We must also mark them with the `[DataMember]` attribute for the serializer to recognize them.
+在此类中，我们现在可以开始写出要同步的配置条目。<br>
+我们还必须使用 `[DataMember]` 属性来标记它们，以便序列化器识别它们。
 
 ```cs
 [DataContract]
@@ -33,7 +33,7 @@ public class Config : SyncedInstance<Config> {
 When using client side and synced entries in the same class, any instance of `ConfigEntry` should **NOT** be marked with `[DataMember]` to avoid BepInEx runtime errors.
 :::
 
-## 2. Binding config entries
+## 2. 绑定配置条目
 
 Before binding, we will add the following line at the top of the constructor.
 
@@ -48,16 +48,16 @@ public Config(ConfigFile cfg) {
     InitInstance(this);
 
     MOVEMENT_SPEED = cfg.BindSyncedEntry("Movement", "fMovementSpeed", 4.1f,
-        "The base speed at which the player moves. This is NOT a multiplier."
+        "玩家移动的基本速度。这不是乘数。"
     );
 
     CLIMB_SPEED = cfg.BindSyncedEntry("Movement", "fClimbSpeed", 3.9f,
-        "The base speed at which the player climbs. This is NOT a multiplier."
+        "玩家攀爬的基本速度。这不是乘数。"
     );
 }
 ```
 
-## 3. Adding synchronization methods
+## 3. 添加同步方法
 
 We will now place the following methods within the class, making sure to replace `PluginInfo.PLUGIN_GUID` if it is defined elsewhere.
 
@@ -71,7 +71,7 @@ internal static void RequestSync() {
 
     using FastBufferWriter stream = new(IntSize, Allocator.Temp);
 
-    // Method `OnRequestSync` will then get called on host.
+    // 稍后将在主机上调用方法 `OnRequestSync`。
     stream.SendMessage($"{PluginInfo.PLUGIN_GUID}_OnRequestConfigSync");
 }
 
@@ -89,19 +89,19 @@ internal static void OnRequestSync(ulong clientId, FastBufferReader _) {
 
         stream.SendMessage($"{PluginInfo.PLUGIN_GUID}_OnReceiveConfigSync", clientId);
     } catch(Exception e) {
-        Plugin.Logger.LogError($"Error occurred syncing config with client: {clientId}\n{e}");
+        Plugin.Logger.LogError($"与客户端同步配置时发生错误：{clientId}\n{e}");
     }
 }
 
 internal static void OnReceiveSync(ulong _, FastBufferReader reader) {
     if (!reader.TryBeginRead(IntSize)) {
-        Plugin.Logger.LogError("Config sync error: Could not begin reading buffer.");
+        Plugin.Logger.LogError("配置同步错误：无法开始读取缓冲区。");
         return;
     }
 
     reader.ReadValueSafe(out int val, default);
     if (!reader.TryBeginRead(val)) {
-        Plugin.Logger.LogError("Config sync error: Host could not sync.");
+        Plugin.Logger.LogError("配置同步错误：主机无法同步。");
         return;
     }
 
@@ -111,12 +111,12 @@ internal static void OnReceiveSync(ulong _, FastBufferReader reader) {
     try {
         SyncInstance(data);
     } catch(Exception e) {
-        Plugin.Logger.LogError($"Error syncing config instance!\n{e}");
+        Plugin.Logger.LogError($"同步配置实例时出错！\n{e}");
     }
 }
 ```
 
-## 4. Apply Harmony patches
+## 4. 应用 Harmony 补丁
 
 Add in the following method and make sure the GUID is defined just like the previous step.
 
@@ -147,7 +147,7 @@ public static void PlayerLeave() {
 }
 ```
 
-## Finalizing and Publishing
+## 敲定与发布
 
 It is recommended you inform **BepInEx** that you depend upon **CSync**.<br>
 You can do this by adding a `BepInDependency` attribute and specifying the GUID of this library.
@@ -164,6 +164,6 @@ If you plan to upload your mod to **Thunderstore**, make sure you also specify t
 "dependencies": ["BepInEx-BepInExPack-5.4.2100", "Owen3H-CSync-1.0.8"]
 ```
 
-:::info NOTE
-Please ensure your manifest contains the latest version, the one seen above may be outdated!
+:::info 注意
+请确保您的清单包含最新版本，上面看到的版本可能已过时！
 :::
