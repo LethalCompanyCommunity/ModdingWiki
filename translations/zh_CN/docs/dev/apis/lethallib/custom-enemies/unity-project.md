@@ -1,18 +1,18 @@
 ---
 prev: true
 next: true
-description: A tutorial on configuring your Unity project for custom enemies.
+description: 有关为自定义敌人配置 Unity 项目的教程。
 ---
 
-# ExampleEnemy Unity Project
+# ExampleEnemy Unity 项目
 
-:::warning IMPORTANT
+:::warning 重要
 The Unity project this page references is in the [LC-ExampleEnemy](https://github.com/Hamunii/LC-ExampleEnemy) repository! So if you didn't already download your copy of the project, now is the time to do it!
 :::
 
 You can open the Unity project from Unity Hub by choosing to open a project from disk, and selecting the `UnityProject` folder. When Unity has loaded the project, look into the `ExampleEnemy` folder for the assets that make up our asset bundle.
 
-## Setting Up Our Unity Project
+## 建立 Unity 项目
 
 :::tip
 You must have git installed for the AssetBundle Browser extension.\
@@ -63,7 +63,7 @@ We also depend on LethalLib by Evaisa (which is already included in the project)
 
 The dll file of our mod also needs to be there so we can reference [ExampleEnemyAI.cs](https://github.com/Hamunii/LC-ExampleEnemy/blob/main/Plugin/src/ExampleEnemyAI.cs) from a component of the ExampleEnemy prefab in Unity. We need to do this via a dll file, we cannot just copy and paste the ExampleEnemyAI.cs file in the Unity project because asset bundles cannot contain scripts, and it just doesn't get the reference otherwise. You know it doesn't get the reference in the form of a yellow warning text if you launch the game with the mod and you have unity logging enabled in the `BepInEx.cfg` file.
 
-## Our ExampleEnemy Assets in Unity
+## Unity 中的 ExampleEnemy 资源
 
 :::tip
 The way we figure out how enemies are configured in Unity is done by looking at the Asset Ripper's Unity project output of the game files. You can use [AssetRipper Guid Patcher](https://github.com/ChrisFeline/AssetRipperGuidPatcher) to get a Unity project based on the game files!
@@ -78,7 +78,7 @@ Anyways, how do we make the game see our assets as an enemy? Well, we create a n
 
 The EnemyType ScriptableObject has some configuration options, and the most important thing is the "Enemy Prefab" part of it. This is where we tell it what the model and whatever stuff our EnemyType has. Also note the "Enemy Name" thingy, this will be the name of the example enemy in the coding side of things.
 
-### The ExampleEnemy Prefab
+### ExampleEnemy 预制件
 
 :::tip
 If you don't know what prefabs are, see https\://docs.unity3d.com/Manual/Prefabs.html
@@ -131,7 +131,7 @@ We also have these as children of the prefab itself:
 8. Eye
    - The point from which the game checks for line of sight in some methods. Make sure to reference this as the `Eye` in your AI script in Unity.
 
-### ExampleEnemy Terminal Entry
+### ExampleEnemy 终端条目
 
 We need a TerminalNode ScriptableObject for our entry in the bestiary. This contains the bestiary text and displayed enemy name.
 
@@ -143,11 +143,11 @@ We also have a TerminalKeyword ScriptableObject, which has the word that the use
 
 The enemy spinning animation on the bestiary entry background is a video file, and you can make one yourself in Blender by for example using the decimate (if you have a lot of geometry) and wireframe modifiers.
 
-:::warning IMPORTANT
+:::warning 重要
 Unity Editor on Linux has [bad support for video files](https://docs.unity3d.com/Manual/VideoSources-FileCompatibility.html), so if you are using Linux, you might want to [encode your video to VP8 using FFmpeg](https://trac.ffmpeg.org/wiki/Encode/VP8). Unfortunately, Blender does not have an option to encode to VP8.
 :::
 
-### Asset Bundling
+### 资源打包
 
 We need to package our assets into an Asset Bundle in order to be able to load them from our plugin. See [Asset Bundling](/dev/intermediate/asset-bundling) to find out how this is done.
 
