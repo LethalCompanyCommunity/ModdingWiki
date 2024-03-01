@@ -1,6 +1,6 @@
 ---
 prev: false
-next: false
+next: true
 description: 使用 CSync 库在主机和客户端之间同步 BepInEx 配置文件的指南。
 ---
 
@@ -29,10 +29,11 @@ dotnet add package Owen3H.BepInEx.CSync
 ### Thunderstore（手动）
 
 **1**. 在 [Thunderstore 页面](https://thunderstore.io/c/lethal-company/p/Owen3H/CSync/)上下载最新版本的库。<br>
-**2**. 将 ZIP 解压到您的游戏目录根目录中。<br>
+**2**. 将 ZIP 解压到你的游戏目录根目录中。<br>
 **3**. 在你的模组项目中，将**程序集引用**添加到 `../BepInEx/plugins/CSync.dll`。
 
 ## 概述
 
 - [使用指南](/dev/apis/csync/usage-guide) - 该库的使用指南/教程。
-- [故障排除](/dev/apis/csync/troubleshooting) - 常见问题及其解决方案。
+- [Migrating to v2](/dev/apis/csync/v2-migration) - How to update from v1 to v2.
+- [Troubleshooting](/dev/apis/csync/outdated/troubleshooting) - Common issues and their solutions. (Pre v2)
