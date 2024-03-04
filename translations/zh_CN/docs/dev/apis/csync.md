@@ -35,5 +35,5 @@ dotnet add package Owen3H.BepInEx.CSync
 ## 概述
 
 - [使用指南](/dev/apis/csync/usage-guide) - 该库的使用指南/教程。
-- [Migrating to v2](/dev/apis/csync/v2-migration) - How to update from v1 to v2.
-- [Troubleshooting](/dev/apis/csync/outdated/troubleshooting) - Common issues and their solutions. (Pre v2)
+- [迁移至 v2](/dev/apis/csync/v2-migration) - 如何从 v1 更新到 v2。
+- [故障排除](/dev/apis/csync/outdated/troubleshooting) - 常见问题及其解决方案。 （v2 以前）
