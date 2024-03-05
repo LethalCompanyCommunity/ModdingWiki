@@ -28,7 +28,7 @@ public ExampleConfig(ConfigFile cfg) : base("MyModName") {
 }
 ```
 
-**We are all done!** If you previously had join/leave patches and request/receiver methods, you should remove these to prevent any possible issues.
+**我们大功告成了！** 如果你以前有加入/留下补丁和请求/接收方法，你应该删除它们以防任何可能的问题。
 
 **可选**<br>
 此次更新还提供了 `SyncComplete` 事件，你可以根据需要挂接到该事件。
@@ -37,12 +37,12 @@ public ExampleConfig(ConfigFile cfg) : base("MyModName") {
 public ExampleConfig(ConfigFile cfg) : base("MyModName") {
     ConfigManager.Register(this);
 
-    EXAMPLE_VAR = cfg.BindSyncedEntry("General", "bExampleVar", true, "This is an example variable that will be synced.");
+    EXAMPLE_VAR = cfg.BindSyncedEntry("General", "bExampleVar", true, "这是一个将被同步的变量示例。");
 
     SyncComplete += DoSomethingAfterSync; // [!code ++]
 }
 
 public void DoSomethingAfterSync(object sender, EventArgs args) { // [!code ++]
-    // Run some logic here // [!code ++]
+    // 在此处运行一些逻辑 // [!code ++]
 } // [!code ++]
 ```
