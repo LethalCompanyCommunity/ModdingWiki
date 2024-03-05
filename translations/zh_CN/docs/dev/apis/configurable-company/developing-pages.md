@@ -38,10 +38,10 @@ ConfigurationPage page = LethalConfiguration.CreatePage()
 
 ## 使用页面
 
-To use a page, you need to store the page variable itself and assign [configuration categories](/dev/apis/configurable-company/developing-categories.md) to it.
+要使用页面，需要存储页面变量本身，并为其分配[配置类别](/dev/apis/configurable-company/developing-categories.md)。
 
 `ConfigurationCategoryBuilder.SetPage(page)`
 
 :::tip
-You can declare pages as `internal static readonly` variables to access them anywhere in your project.
+你可以将页面声明为 `internal static readonly` 变量，以便在项目中的任何位置访问它们。
 :::
