@@ -1,10 +1,10 @@
 ---
 prev: false
 next: true
-description: The outdated (pre v2) guide to using CSync.
+description: 过时的 CSync 使用指南（v2 之前）。
 ---
 
-# Outdated Guide (Pre v2.0.0)
+# 过时的指南（v2.0.0 之前）
 
-The following usage guide and troubleshooting sections are outdated.<br>
-If you are a mod dev, consider migrating to v2 using [this](/dev/apis/csync/v2-migration) page.
+以下使用指南和故障排除部分已过时。<br>
+如果你是模组开发者，请考虑使用[此](/dev/apis/csync/v2-migration)页面迁移到 v2。
