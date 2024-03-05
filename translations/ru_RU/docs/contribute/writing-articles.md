@@ -4,9 +4,9 @@ next: false
 description: Как добавлять новые статьи в вики.
 ---
 
-# Contributing Articles
+# Публикация статей
 
-Thank you for deciding to contribute articles to this wiki! The only way this wiki has come this far, and for it to continue to grow is through contributions.
+Спасибо вам за то, что вы решили добавить статьи в эту wiki! The only way this wiki has come this far, and for it to continue to grow is through contributions.
 
 This guide will help you write, format, and implement your article into the wiki.
 
