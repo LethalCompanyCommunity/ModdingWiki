@@ -1,7 +1,7 @@
 ---
 prev: true
 next: true
-description: Guide on how to add and use Configurable company for your plugin.
+description: 关于如何为插件添加和使用 Configurable Company 的指南。
 ---
 
 # Configurable company for your plugin
