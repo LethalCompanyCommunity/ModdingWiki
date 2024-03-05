@@ -1,21 +1,21 @@
 ---
 prev: false
 next: false
-description: A tutorial on how to add custom scrap items by using LethalLib.
+description: 有关如何使用 LethalLib 添加自定义废料物品的教程。
 ---
 
-# Custom scrap with LethalLib
+# 使用 LethalLib 自定义废料
 
-## Preamble
+## 序言
 
-Make sure you've done everything in the [LethalLib main page](/dev/apis/lethallib) first. This page will run through everything needed to make a new scrap item from scratch in the template project.
+确保你已经完成了 [LethalLib 主页](/dev/apis/lethallib) 中的所有操作。 This page will run through everything needed to make a new scrap item from scratch in the template project.
 
 At bare minimum, you will need the following added to your template project to create a custom scrap item:
 
 - A model of your scrap (and materials using the HDRP Lit shader)
 - An icon for the scrap when in the hotbar
 
-## Item Data
+## 物品数据
 
 The first thing you should create is the Item Data for your custom scrap, which can be created right-clicking in your asset window and going to create -> ScriptableObject -> Item
 ![Image of the context menu in the asset browser of Unity, directing to Create -> ScriptableObjects -> Item](/images/lethallib/customscrap/CreateItem.png)
@@ -43,12 +43,12 @@ Everything else is optional, has no effect on scrap, or shouldn't be modified.
 
 Note that you will have to enable some of the netcode variables if you want them to sync properly in multiplayer.
 
-## Item Prefab
+## 物品预制件
 
 An item prefab needs to have a specific setup to work correctly with all the Lethal Company systems. The prefab should have only the root object and a child object called "ScanNode":
 ![Image of the Big Bolt scrap prefab structure.](/images/lethallib/customscrap/ScrapPrefab.png)
 
-### Root Object
+### 根对象
 
 The root object should have the following:
 
@@ -74,7 +74,7 @@ The Network Object must only have the following options enabled, with everything
 
 The Audio source should use the "Diagetic" (Yes it's misspelled in the game files) audio mixing. If you're using a decompilation you can use the one already present, otherwise you can make an empty audio mixer with an _identical_ name, and use the utility function FixMixerGroups() to swap the mixer using LethalLib (see Loading and Registering code note below)
 
-### ScanNode Object
+### ScanNode 对象
 
 On the ScanNode child gameobject, you should have the following:
 
@@ -98,7 +98,7 @@ After you've done this, you should go back to your Item Data and assign the Spaw
 
 After this, you should put your item data, prefab, any anything they rely on such as models into an asset bundle (See [Asset Bundling](/dev/intermediate/asset-bundling)). You can add multiple items to the same asset bundle if you're adding a collection of items.
 
-## Loading And Registering
+## 加载与注册
 
 After creating your asset bundle and loading it in, you need to register your item prefab as a network object and add the scrap item data via LethalLib. This can be done with the following code:
 
@@ -131,6 +131,6 @@ The vanilla moons can also be included through this third parameter, where all v
 
 Scrap can be registered multiple times to have the rarity be different for specific moons, such as being more common on paid moons.
 
-## Conclusion
+## 结语
 
 If you've done everything right, you should now find your custom scrap on the moons you've assigned it to. If you have any problems, you can reach out on the [Lethal Company Discord](https://discord.gg/lethal-company).
