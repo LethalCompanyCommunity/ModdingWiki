@@ -125,10 +125,10 @@ Configuration simpleConfig = LethalConfiguration.CreateConfig("me_my-mod_id")
 ```
 
 :::info
-Note there are more options to build your configurations, a full guide can be found in [Developing configs](/dev/apis/configurable-company/developing-configs.md).
+请注意，还有更多选项可用于构建配置，完整指南请参阅[开发配置](/dev/apis/configurable-company/developing-configs.md)。
 :::
 
-Now that you have your simple configuration you might need to get the value. You can get it in multiple ways but the most common ones are:
+现在你已经有了简单的配置，可能需要获取值。 You can get it in multiple ways but the most common ones are:
 
 ```cs
 float value = simpleConfig.Get<float>();
