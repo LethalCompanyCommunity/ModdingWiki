@@ -24,10 +24,10 @@ To develop with Configurable company, you should have the following mods:
 
 I encourage to use a [mod manager](https://thunderstore.io/c/lethal-company/p/ebkr/r2modman/) to install them and avoid any problems.
 
-## Setting up environment
+## 设置环境
 
 :::warning
-This guide assumes you are using [Visual studio](https://visualstudio.microsoft.com) as IDE.
+本指南假定你使用 [Visual Studio](https://visualstudio.microsoft.com) 作为集成开发环境。
 :::
 
 Before adding the dependency to your project you should have your base plugin created, if you don't know how see [Initial setup](/dev/initial-setup) and [Starting a mod](/dev/starting-a-mod).
@@ -121,7 +121,7 @@ Configuration simpleConfig = LethalConfiguration.CreateConfig("me_my-mod_id")
                                                 .SetType(ConfigurationTypes.RangeFloat(10, 100))
                                                 .SetTooltip("My cool description")
                                                 .SetSynchronized(true)
-                                                .Build(); // Note you can omit this Build call if you are assigning the config to a Configuration variable
+                                                .Build(); // 注意，如果要将配置分配给 Configuration 变量，可省略此 Build 调用
 ```
 
 :::info
