@@ -108,15 +108,15 @@ Há um número de BepInEx plug-ins e ferramentas que podem ser úteis conforme v
 
 ## Criar uma conta no GitHub {#create-github-account}
 
-We strongly recommend using git - a "version control system". The most popular website that offers this as a (free) service is [GitHub](https://github.com/).
+Nós recomendamos fortemente usar o git - um "sistema de controle de versão". O site mais popular que oferece isso como um serviço (grátis) é o [GitHub](https://github.com/).
 
-The following video is a short primer on what git (and a version control systems in general) is: https\://www\.youtube.com/watch?v=2ReR1YJrNOM
+O vídeo seguinte é uma breve introdução sobre o que é o git (e sistemas de controle de versão em geral): https\://www\.youtube.com/watch?v=2ReR1YJrNOM
 
-For additional reading, please see [GitHub's documentation](https://docs.github.com/en/get-started/quickstart/hello-world).
+Para leitura adicional, consulte [GitHub's documentation](https://docs.github.com/en/get-started/quickstart/hello-world).
 
-In short, Git(Hub) allows you to do the following things without hassle:
+Em pequeno, o Git(Hub) permite que você faça as seguintes coisas sem problemas:
 
-- Keep a _complete_ history of your project
+- Manter a história _completa_ do teu projeto
   - Allows you to revert to a previous version if you made a mistake
   - Allows you to retrieve your code if your hard drive fails, or you delete something by accident
   - Allows you to revisit previous updates and patch notes, adding implicit documentation to your project (when done right)
