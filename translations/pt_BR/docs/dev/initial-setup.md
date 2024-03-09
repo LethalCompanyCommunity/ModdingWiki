@@ -117,8 +117,8 @@ Para leitura adicional, consulte [GitHub's documentation](https://docs.github.co
 Em pequeno, o Git(Hub) permite que você faça as seguintes coisas sem problemas:
 
 - Manter a história _completa_ do teu projeto
-  - Allows you to revert to a previous version if you made a mistake
-  - Allows you to retrieve your code if your hard drive fails, or you delete something by accident
+  - Permite que você rever para versões anteriores se fizer algum erro
+  - Permite que você recupere seu código se seu disco duro falhar, ou se apagares algo por acidente
   - Allows you to revisit previous updates and patch notes, adding implicit documentation to your project (when done right)
 - Collaborate with others
   - Others can send _requests_ to update files of your project
