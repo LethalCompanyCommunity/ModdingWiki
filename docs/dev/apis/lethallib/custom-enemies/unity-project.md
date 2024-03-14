@@ -57,12 +57,12 @@ We also depend on LethalLib by Evaisa (which is already included in the project)
 >- MMHOOK_Facepunch Transport for Netcode for GameObjects.dll
 :::
 
-The dll file of our mod also needs to be there so we can reference [`ExampleEnemyAI.cs`](https://github.com/Hamunii/LC-ExampleEnemy/blob/main/Plugin/src/ExampleEnemyAI.cs) from a component of the ExampleEnemy prefab in Unity. We need to do this via a dll file, we cannot just copy and paste the ExampleEnemyAI.cs file in the Unity project because asset bundles cannot contain scripts, and it just doesn't get the reference otherwise. You know it doesn't get the reference in the form of a yellow warning text if you launch the game with the mod and you have unity logging enabled in the `BepInEx.cfg` file.
+The dll file of our mod also needs to be there so we can reference [ExampleEnemyAI.cs](https://github.com/Hamunii/LC-ExampleEnemy/blob/main/Plugin/src/ExampleEnemyAI.cs) from a component of the ExampleEnemy prefab in Unity. We need to do this via a dll file, we cannot just copy and paste the ExampleEnemyAI.cs file in the Unity project because asset bundles cannot contain scripts, and it just doesn't get the reference otherwise. You know it doesn't get the reference in the form of a yellow warning text if you launch the game with the mod and you have unity logging enabled in the `BepInEx.cfg` file.
 
-## Our `ExampleEnemy` Assets in Unity
+## Our Example Enemy Assets in Unity
 
 ::: tip
-The way we figure out how enemies are configured in Unity is done by looking at the Asset Ripper's Unity project output of the game files. You can use [AssetRipper Guid Patcher](https://github.com/ChrisFeline/AssetRipperGuidPatcher) to get a Unity project based on the game files!
+The way we figure out how enemies are configured in Unity is done by looking at the Asset Ripper's Unity project output of the game files. You can use [AssetRipper Guid Patcher](https://github.com/nomnomab/lc-project-patcher/) to get a Unity project based on the game files!
 :::
 
 We have made an `ExampleEnemy` folder in our Unity project. Everything that goes into our asset bundle is in there.
@@ -84,29 +84,29 @@ Enemy Type options:
   - X-axis: Probability from 1 to 0, presumably 100% to 0% of the daytime cycle, e.g. from 8am to 11:59pm ingame.  
     So if you wanted your enemy to be spawning from 3pm to 6pm with 50% spawn weight on 3pm and linearly increasing to 75% onto 6pm, you'd do something like this: (43.15% to 62.5% so 0.4315 to 0.625 on the X-axis, which controls what time of day | 50% to 75% so 0.5 to 0.75 on the Y-axis, which controls the percent of spawn weight used).
 ![Screenshot: PinkGiant EnemyType ProbabilityCurve in inspector](/images/lethallib/custom-enemies/unity/ExampleEnemyTypeProbabilityCurve.png)
-- Spawning Disabled: disables the natural spawn of your enemy
+- Spawning Disabled: disables the natural spawn of your enemy.
 - Number Spawned Falloff: hard to explain mathematically, but the use case is for when you'd want to reduce the probability of your monster spawning for every other monster spawned, this is used for beehive code wherein the more beehives spawned, the lower the chance for the next beehive to spawn.
 ![Screenshot: PinkGiant EnemyType Number spawned Falloff in inspector](/images/lethallib/custom-enemies/unity/ExampleEnemyTypeFalloff.png)
 - Use Number Spawned Falloff: Whether to use just the Probability Curve or to use both the Probability Curve and the Number Spawned Falloff.
 - Enemy Prefab: The prefab
 - Power Level: How much this enemy contributes to the moon's internal max power level
 - Max Count: The max number of this enemy which can naturally spawn
-- Number Spawned: The number of this enemy which spawn at the start of the level
+- Number Spawned: The number of this enemy which spawn at the start of the level // unsure
 - Is Outside Enemy: decides if the enemy is an "outside" creature
 - Is Daytime Enemy: decides of the enemy is a "daytime" creature
-- Normalized Time In Day To Leave: a value in the range [0, 1] showing the percenage of each day for which the enmy is despawned (e.g. at `0.5`, the daytime enemy despawns at 4pm)
+- Normalized Time In Day To Leave: a value in the range [0, 1] showing the percenage of each day for which the enmy is despawned (e.g. at `0.5`, the daytime enemy despawns at 4pm) // unsure
 
 #### Misc. ingame properties
-- Stun Time Multiplier: for how long the enemy can be stunned for (the default value is likely `1` despite saying `0` in inspector)
-- Door Speed Multiplier: for how long the enemy takes to open doors.
-- Stun Game Difficulty Multiplier: for how difficult it is to stun the enemy with a zap gun.
+- Stun Time Multiplier: for how long the enemy can be stunned for (the default value is likely `1` despite saying `0` in inspector) // unsure
+- Door Speed Multiplier: for how long the enemy takes to open doors. 
+- Stun Game Difficulty Multiplier: for how difficult it is to stun the enemy with a zap gun. // pretty sure
 - Can Be Stunned (`bool`)
 - Can Die (`bool`)
 - Destroy On Death: Whether or not the `GameObject` is destroyed upon death.
-- Can See Through Fog: Whether the enemy's line of sight goes through fog. 
+- Can See Through Fog: Whether the enemy's line of sight gets clamped to a range between 0 and 30 near fog/on foggy area.
 
 #### Vent Properties
-- Time To Play Audio: the delay of playing vent audio after the enemy spawns (specific to "inside" enemies only)
+- Time To Play Audio: the delay of playing vent audio after the enemy spawns (specific to "inside" enemies only) //unsure about this whole list tbh
 - Loudness Multiplier: the volume multiplier for the Vent SFX.
 - Override Vent SFX: The audio clip which replaces the vent sound. Leave as `None` to use the default audio sound. (e.g. "kwoosh")
 - Hit Body SFX: for when the enemy's body is hit (e.g. "tushhh")
