@@ -27,7 +27,7 @@ The Unity project we have is based off of Evaisa's [Lethal Company Unity Templat
 - `Facepunch Transport for Netcode for GameObjects.dll`
 - `Facepunch.Steamworks.Win64.dll`
 - `Newtonsoft.Json.dll`
-- `Assembly-CSharp-firstpass.dll`
+- `Assembly-CSharp-firstpass.dll`D
 :::
 
 We also want to add various DLL files our own DLL files might depend on, so let's add the following DLL files from `Lethal Company/BepInEx/core`:
@@ -76,14 +76,18 @@ The `EnemyType` `ScriptableObject` has some configuration options, and the most 
 
 ### The `EnemyType` Scriptable Object
 #### Spawning Logic
+
+![Screenshot: PinkGiant EnemyType in inspector](/images/lethallib/custom-enemies/unity/PinkGiantEnemyTypeInspector.png)
 Enemy Type options:
 - Probability Curve:
   - Y-axis: Probability from 1 to 0, presumably 100% to 0% of the enemy's rarity or spawn weight given when registering the enemy.
   - X-axis: Probability from 1 to 0, presumably 100% to 0% of the daytime cycle, e.g. from 8am to 11:59pm ingame.  
-    So if you wanted your enemy to be spawning from 3pm to 6pm with 50% spawn weight on 3pm and linearly increasing to 75% onto 6pm, you'd do something like this: (43.15% to 62.5% so 0.4315 to 0.625 on the X-axis, which controls what time of day | 50% to 75% so 0.5 to 0.75 on the Y-axis, which controls the percent of spawn weight used)  
+    So if you wanted your enemy to be spawning from 3pm to 6pm with 50% spawn weight on 3pm and linearly increasing to 75% onto 6pm, you'd do something like this: (43.15% to 62.5% so 0.4315 to 0.625 on the X-axis, which controls what time of day | 50% to 75% so 0.5 to 0.75 on the Y-axis, which controls the percent of spawn weight used).
+![Screenshot: PinkGiant EnemyType ProbabilityCurve in inspector](/images/lethallib/custom-enemies/unity/ExampleEnemyTypeProbabilityCurve.png)
 - Spawning Disabled: disables the natural spawn of your enemy
-- Number Spanwed Falloff: hard to explain mathematically, but the use case is for when you'd want to reduce the probability of your monster spawning for every other monster spawned, this is used for beehive code wherein the more beehives spawned, the lower the chance for the next beehive to spawn.
-- Use Number Spawned Falloff: Whether to use just the Probability Curve or to use both the Probability Curve and the Number Spawned Falloff
+- Number Spawned Falloff: hard to explain mathematically, but the use case is for when you'd want to reduce the probability of your monster spawning for every other monster spawned, this is used for beehive code wherein the more beehives spawned, the lower the chance for the next beehive to spawn.
+![Screenshot: PinkGiant EnemyType Number spawned Falloff in inspector](/images/lethallib/custom-enemies/unity/ExampleEnemyTypeFalloff.png)
+- Use Number Spawned Falloff: Whether to use just the Probability Curve or to use both the Probability Curve and the Number Spawned Falloff.
 - Enemy Prefab: The prefab
 - Power Level: How much this enemy contributes to the moon's internal max power level
 - Max Count: The max number of this enemy which can naturally spawn
@@ -93,7 +97,7 @@ Enemy Type options:
 - Normalized Time In Day To Leave: a value in the range [0, 1] showing the percenage of each day for which the enmy is despawned (e.g. at `0.5`, the daytime enemy despawns at 4pm)
 
 #### Misc. ingame properties
-- Stun Time Multiplier: for how long the enemy can be stunned for (the default value is `1`; `0` means unused)
+- Stun Time Multiplier: for how long the enemy can be stunned for (the default value is likely `1` despite saying `0` in inspector)
 - Door Speed Multiplier: for how long the enemy takes to open doors.
 - Stun Game Difficulty Multiplier: for how difficult it is to stun the enemy with a zap gun.
 - Can Be Stunned (`bool`)
@@ -166,24 +170,45 @@ We also have these as children of the prefab itself:
 8. Eye
     - The point from which the game checks for line of sight in some methods. Make sure to reference this as the `Eye` in your AI script in Unity.
 
-### Animator
-To access the animator:
-1. assign the prefab `Animator` component
-1. make a Unity Animator Thing<sup>TM</sup>
-1. access the animator (at the top of the screen there should be an animator button)
-1. create one layer
-1. Add an entry and add an "Animation Thing For Now Because I Don't Know The Name" for every animation you have in the animations folder
-1. I'll do the rest at home
+### `Animator`
+To access and use the `Animator` for a simple walking animation:
+1. Create an `Animator Controller` and assign the prefab the `Animator` component.
+2. Double click the `Animator Conroller` to go into its edit menu and create one layer.
+3. Start off by doing something simple, like having a spawning into walking animation by right-clicking the green Entry button and making a transition to the first animation you want to start it off with (the spawning animation, or idle animation in the below example), then make another empty state by right-clicking nothingness and make a `sub-state` and naming it walkCycle or something similar, make sure to make two transition arrows pointing between eachother if you'd like to go from one animation to another later, it should look something like this now:
+![Screenshot: PinkGiant Animator in inspector](/images/lethallib/custom-enemies/unity/PinkGiantAnimator.png)
+4. Click the `sub-state`'s and make sure that attributes such as `Motion` are filled in with a .anim file, and that speed is set to the default 1.
+5. Now make some animation conditions, to do this, go to the parameters tab, next to the layers tab under Animator, press the "+" sign and add a `trigger`, this is what you'll call on your code to transition between animations, for now, make a couple like "startWalk" and "stopWalk".
+6. Then click the arrows in-between the `sub-state` (e.g. idleCycle into walkCycle, ignoring the arrow from entry), there should be a menu on the side with a lot of options. First, if you would like the walkCycle to loop, then press the `Has Exit Time` attribute, as it'll allow for looping. Second, Work on the transitions between the actual animations such as the idleCycle animation and the walkCycle animation, this will take a bit of fiddling to get the right transition timings. Third, add a condition such as "startWalk" as you're transition from a spawning animation or idle animation, into a walking animation.
+![Screenshot: idleCycle to walkCycle animation in Animator](/images/lethallib/custom-enemies/unity/PinkGiantAnimatorTransition.png)
+That should be good enough to get you started, this tool is very self-intuitive and takes a bit of practise getting used to, to wrap up this section, I'll be explaining how the `Any State` `sub-state` works, and `AnimationEvent`'s.
+#### `Any State`
+- `Any State` simply allows you to set a transition from every state into another `sub-state` without making a lot of disorganising connections, each animation transition is edit-able but requires all transition having either `Has Exit Time` turned on, or a global condition such as "stopWalk" inserted, this makes it ideal for animations such as "startDeath" where the enemy dies and needs to interrupt any animation to start its death animation.
+
+#### `AnimationEvents`
+1. `AnimationEvents` allow you to call functions during animations, using the `Animator` section as reference, during the walking animation, to simulate the sound of footsteps, assuming you have access to an `AudioClip` of the footstep sound, create a function that plays the footstep sound.
+2. Make sure your enemy prefab is selected, then go down to the menu that says "Project Console", right-click "Project", hover over "Add Tab" and press "Animation", This adds an interactable Animation tab to the bottom, now select it.
+3. The tab contains the following:
+- An animation player with record, preview, pause, start, etc.
+- A few buttons to add keyframes for animation and add events, we'll be focusing on "Add Events" option.
+- A drop-down menu that contains all the animations connected to the `Animator` which is connected to the prefab, use that to select the walking animation.
+4. To add an `AnimationEvent`, you'd need to first find the frame in which the foot just barely connects to the ground, and press the "Add Event." button, this creates an `Animation Event` in the inspector.
+5. Press the "Function:" drop-down menu, select your `EnemyAI`, and find the function that you created to play footstep sounds.
+
+::: warning IMPORTANT
+For whatever reason, a function may not be displayed within your `EnemyAI` in `AnimationEvent` if it contains a parameter such as `AudioClip`, I'm not sure what parameters are not accepted, but making a void function seems to work best.
+:::
 
 ### ExampleEnemy Terminal Entry
 
-We need a `TerminalNode` `ScriptableObject` for our entry in the bestiary. This contains the bestiary text and displayed enemy name.
+We need a `TerminalNode` `ScriptableObject` for our entry in the bestiary. This contains the bestiary's `Display Text` field that may contain sigurd's notes and enemy lore, and `Creature Name` field that shows when the user inputs `bestiary` into the terminal.
+
+
+We also have a `TerminalKeyword` `ScriptableObject`, which has the word that the user needs to write in the terminal to find the page.
 
 ::: warning
 If an existing item in the game starts with the same word as your enemy's name, that can cause the game to think we are trying to buy that item and not being able to open the bestiary entry. As a workaround, you can try changing the name that is shown and used for opening the terminal entry.
+Additionally, the `Word` attribute can not have any capital letters in it, they seem to not handle capitals well.
 :::
-
-We also have a `TerminalKeyword` `ScriptableObject`, which has the word that the user needs to write in the terminal to find the page.
 
 The enemy spinning animation on the bestiary entry background is a video file, and you can make one yourself in Blender by for example using the decimate (if you have a lot of geometry) and wireframe modifiers.
 
