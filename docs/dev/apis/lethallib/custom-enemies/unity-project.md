@@ -3,7 +3,7 @@ prev: true
 next: true
 description: A tutorial on configuring your Unity project for custom enemies.
 ---
-# ExampleEnemy Unity Project
+# `ExampleEnemy` Unity Project
 
 ::: warning IMPORTANT
 The Unity project this page references is in the [LC-ExampleEnemy](https://github.com/Hamunii/LC-ExampleEnemy) repository! So if you didn't already download your copy of the project, now is the time to do it!
@@ -21,28 +21,28 @@ Also, the `SETUP-PROJECT.py` script will copy all of the dlls files for you! So 
 The Unity project we have is based off of Evaisa's [Lethal Company Unity Template](https://github.com/EvaisaDev/LethalCompanyUnityTemplate/). However, just like with our dlls in the root directory of our project, we need to add some dll files into our `UnityProject/Assets/Plugins` folder. These are listed in the README of Evaisa's repository, but here's the list so you don't miss it:
 
 ::: details List of game DLLs
-- AmazingAssets.TerrainToMesh.dll
-- ClientNetworkTransform.dll
-- DissonanceVoip.dll
-- Facepunch Transport for Netcode for GameObjects.dll
-- Facepunch.Steamworks.Win64.dll
-- Newtonsoft.Json.dll
-- Assembly-CSharp-firstpass.dll
+- `AmazingAssets.TerrainToMesh.dll`
+- `ClientNetworkTransform.dll`
+- `DissonanceVoip.dll`
+- `Facepunch Transport for Netcode for GameObjects.dll`
+- `Facepunch.Steamworks.Win64.dll`
+- `Newtonsoft.Json.dll`
+- `Assembly-CSharp-firstpass.dll`
 :::
 
 We also want to add various DLL files our own DLL files might depend on, so let's add the following DLL files from `Lethal Company/BepInEx/core`:
 ::: details List of BepInEx Core DLLs
-- 0Harmony20.dll
-- 0Harmony.dll
-- BepInEx.dll
-- BepInEx.Preloader.dll
-- HarmonyXInterop.dll
-- Mono.Cecil.dll
-- Mono.Cecil.Mdb.dll
-- Mono.Cecil.Pdb.dll
-- Mono.Cecil.Rocks.dll
-- MonoMod.RuntimeDetour.dll
-- MonoMod.Utils.dll
+- `0Harmony20.dll`
+- `0Harmony.dll`
+- `BepInEx.dll`
+- `BepInEx.Preloader.dll`
+- `HarmonyXInterop.dll`
+- `Mono.Cecil.dll`
+- `Mono.Cecil.Mdb.dll`
+- `Mono.Cecil.Pdb.dll`
+- `Mono.Cecil.Rocks.dll`
+- `MonoMod.RuntimeDetour.dll`
+- `MonoMod.Utils.dll`
 :::
 
 It seems that `BepInEx.Harmony.dll` causes Unity to crash, so we don't include it.
@@ -57,24 +57,64 @@ We also depend on LethalLib by Evaisa (which is already included in the project)
 >- MMHOOK_Facepunch Transport for Netcode for GameObjects.dll
 :::
 
-The dll file of our mod also needs to be there so we can reference [ExampleEnemyAI.cs](https://github.com/Hamunii/LC-ExampleEnemy/blob/main/Plugin/src/ExampleEnemyAI.cs) from a component of the ExampleEnemy prefab in Unity. We need to do this via a dll file, we cannot just copy and paste the ExampleEnemyAI.cs file in the Unity project because asset bundles cannot contain scripts, and it just doesn't get the reference otherwise. You know it doesn't get the reference in the form of a yellow warning text if you launch the game with the mod and you have unity logging enabled in the `BepInEx.cfg` file.
+The dll file of our mod also needs to be there so we can reference [`ExampleEnemyAI.cs`](https://github.com/Hamunii/LC-ExampleEnemy/blob/main/Plugin/src/ExampleEnemyAI.cs) from a component of the ExampleEnemy prefab in Unity. We need to do this via a dll file, we cannot just copy and paste the ExampleEnemyAI.cs file in the Unity project because asset bundles cannot contain scripts, and it just doesn't get the reference otherwise. You know it doesn't get the reference in the form of a yellow warning text if you launch the game with the mod and you have unity logging enabled in the `BepInEx.cfg` file.
 
-## Our ExampleEnemy Assets in Unity
+## Our `ExampleEnemy` Assets in Unity
 
 ::: tip
 The way we figure out how enemies are configured in Unity is done by looking at the Asset Ripper's Unity project output of the game files. You can use [AssetRipper Guid Patcher](https://github.com/ChrisFeline/AssetRipperGuidPatcher) to get a Unity project based on the game files!
 :::
 
-We have made an ExampleEnemy folder in our Unity project. Everything that goes into our asset bundle is in there.
+We have made an `ExampleEnemy` folder in our Unity project. Everything that goes into our asset bundle is in there.
 The first thing we did was import our fbx model into Unity. This is as simple as dragging our fbx file into our assets, or right clicking and choosing `Import New Asset...` and choosing our fbx file. The exported fbx model contains all our materials, textures and animations when first imported, but it is good to separate some of that stuff into their own folders. We have extracted our materials into the `Materials` folder.
 
 We have also copied the individual animations into the `Animations` folder, because I don't know how to separate them properly, but we can just ignore the animations embedded in the fbx file and use the copies inside the `Animations` folder anyways.
 
-Anyways, how do we make the game see our assets as an enemy? Well, we create a new ScriptableObject of type EnemyType. This can be done by right clicking in your asset files, and doing `Create` -> `ScriptableObjects` -> `EnemyType`. This is what the game uses, so we need it too. Do note that these ScriptableObjects come from the Lethal Company Unity Template this is based off of. Do also note that our UnityProject in this repository is already configured properly.  
+Anyways, how do we make the game see our assets as an enemy? Well, we create a new `ScriptableObject` of type `EnemyType`. This can be done by right clicking in your asset files, and doing `Create` -> `ScriptableObjects` -> `EnemyType`. This is what the game uses, so we need it too. Do note that these `ScriptableObjects` come from the Lethal Company Unity Template this is based off of. Do also note that our UnityProject in this repository is already configured properly.  
 
-The EnemyType ScriptableObject has some configuration options, and the most important thing is the "Enemy Prefab" part of it. This is where we tell it what the model and whatever stuff our EnemyType has. Also note the "Enemy Name" thingy, this will be the name of the example enemy in the coding side of things.
+The `EnemyType` `ScriptableObject` has some configuration options, and the most important thing is the "Enemy Prefab" part of it. This is where we tell it what the model and whatever stuff our `EnemyType` has. Also note the "Enemy Name" thingy, this will be the name of the example enemy in the coding side of things.
 
-### The ExampleEnemy Prefab
+### The `EnemyType` Scriptable Object
+#### Spawning Logic
+Enemy Type options:
+- Probability Curve:
+  - Y-axis: Probability from 1 to 0, presumably 100% to 0% of the enemy's rarity or spawn weight given when registering the enemy.
+  - X-axis: Probability from 1 to 0, presumably 100% to 0% of the daytime cycle, e.g. from 8am to 11:59pm ingame.  
+    So if you wanted your enemy to be spawning from 3pm to 6pm with 50% spawn weight on 3pm and linearly increasing to 75% onto 6pm, you'd do something like this: (43.15% to 62.5% so 0.4315 to 0.625 on the X-axis, which controls what time of day | 50% to 75% so 0.5 to 0.75 on the Y-axis, which controls the percent of spawn weight used)  
+- Spawning Disabled: disables the natural spawn of your enemy
+- Number Spanwed Falloff: hard to explain mathematically, but the use case is for when you'd want to reduce the probability of your monster spawning for every other monster spawned, this is used for beehive code wherein the more beehives spawned, the lower the chance for the next beehive to spawn.
+- Use Number Spawned Falloff: Whether to use just the Probability Curve or to use both the Probability Curve and the Number Spawned Falloff
+- Enemy Prefab: The prefab
+- Power Level: How much this enemy contributes to the moon's internal max power level
+- Max Count: The max number of this enemy which can naturally spawn
+- Number Spawned: The number of this enemy which spawn at the start of the level
+- Is Outside Enemy: decides if the enemy is an "outside" creature
+- Is Daytime Enemy: decides of the enemy is a "daytime" creature
+- Normalized Time In Day To Leave: a value in the range [0, 1] showing the percenage of each day for which the enmy is despawned (e.g. at `0.5`, the daytime enemy despawns at 4pm)
+
+#### Misc. ingame properties
+- Stun Time Multiplier: for how long the enemy can be stunned for (the default value is `1`; `0` means unused)
+- Door Speed Multiplier: for how long the enemy takes to open doors.
+- Stun Game Difficulty Multiplier: for how difficult it is to stun the enemy with a zap gun.
+- Can Be Stunned (`bool`)
+- Can Die (`bool`)
+- Destroy On Death: Whether or not the `GameObject` is destroyed upon death.
+- Can See Through Fog: Whether the enemy's line of sight goes through fog. 
+
+#### Vent Properties
+- Time To Play Audio: the delay of playing vent audio after the enemy spawns (specific to "inside" enemies only)
+- Loudness Multiplier: the volume multiplier for the Vent SFX.
+- Override Vent SFX: The audio clip which replaces the vent sound. Leave as `None` to use the default audio sound. (e.g. "kwoosh")
+- Hit Body SFX: for when the enemy's body is hit (e.g. "tushhh")
+- Hit Enemy Voice SFX: for when the enemy's body is hit (e.g. "aaah")
+- Death SFX: for when the enemy dies (e.g. "Aaaah!")
+- Stun SFX: for when the enemy is stunned (e.g. "Bzzzzt")
+- Misc Animations: Unused
+- Audio Clips: the other audio clips you want to use (e.g. footstep sounds e.g. "badoosh.... badoosh..." (loops<sup>*<sup>1</sup></sup>))
+
+<sup>*<sup>1</sup></sup> Well, technically you would use an `AnimationEvent`, not loops.
+
+### The `ExampleEnemy` Prefab
 
 ::: tip
 If you don't know what prefabs are, see https://docs.unity3d.com/Manual/Prefabs.html
@@ -100,7 +140,7 @@ We also have these as children of the prefab itself:
         - Layer: `ScanNode`
     - It also should have the following components:
         - Scan Node Properties (Script)
-            - **Notice:** The `Creature Scan ID` property is overridden by LethalLib, so it does not matter what we set it as. Same goes for the `Creature File ID` on the bestiary Terminal Node.
+            - **Notice:** The `Creature Scan ID` property is overridden by LethalLib, so it does not matter what we set it as. Same goes for the `Creature File ID` on the bestiary `TerminalNode`.
         - A collider, such as: `Box Collider`. While not necessary, it's a good idea to set `isTrigger: true` in order to avoid unwanted collisions with this object.
 2. MapDot
     - Allows us to see the enemy on map. Make sure the following is set:
@@ -116,7 +156,7 @@ We also have these as children of the prefab itself:
         - A collider, such as: `Box Collider` with `isTrigger: true`
         - `Rigidbody`, so it can interact with certain colliders. This is also needed for our enemy to be able to open doors.
 4. TurnCompass
-    - Does nothing by itself, but we have a reference to this in the [ExampleEnemyAI.cs](https://github.com/Hamunii/LC-ExampleEnemy/blob/main/Plugin/src/ExampleEnemyAI.cs) script to make the enemy looking at player a bit easier.
+    - Does nothing by itself, but we have a reference to this in the [`ExampleEnemyAI.cs`](https://github.com/Hamunii/LC-ExampleEnemy/blob/main/Plugin/src/ExampleEnemyAI.cs) script to make the enemy looking at player a bit easier.
 5. AttackArea
     - Does nothing by itself, but we take its position and scale and check if the player exists inside that area for the head swing attack.
 6. CreatureSFX
@@ -126,15 +166,24 @@ We also have these as children of the prefab itself:
 8. Eye
     - The point from which the game checks for line of sight in some methods. Make sure to reference this as the `Eye` in your AI script in Unity.
 
+### Animator
+To access the animator:
+1. assign the prefab `Animator` component
+1. make a Unity Animator Thing<sup>TM</sup>
+1. access the animator (at the top of the screen there should be an animator button)
+1. create one layer
+1. Add an entry and add an "Animation Thing For Now Because I Don't Know The Name" for every animation you have in the animations folder
+1. I'll do the rest at home
+
 ### ExampleEnemy Terminal Entry
 
-We need a TerminalNode ScriptableObject for our entry in the bestiary. This contains the bestiary text and displayed enemy name.
+We need a `TerminalNode` `ScriptableObject` for our entry in the bestiary. This contains the bestiary text and displayed enemy name.
 
 ::: warning
 If an existing item in the game starts with the same word as your enemy's name, that can cause the game to think we are trying to buy that item and not being able to open the bestiary entry. As a workaround, you can try changing the name that is shown and used for opening the terminal entry.
 :::
 
-We also have a TerminalKeyword ScriptableObject, which has the word that the user needs to write in the terminal to find the page.
+We also have a `TerminalKeyword` `ScriptableObject`, which has the word that the user needs to write in the terminal to find the page.
 
 The enemy spinning animation on the bestiary entry background is a video file, and you can make one yourself in Blender by for example using the decimate (if you have a lot of geometry) and wireframe modifiers.
 
