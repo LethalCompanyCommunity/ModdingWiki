@@ -64,10 +64,10 @@ r2modman 을 성공적으로 설치한 후 최종적으로 모드를 설치할 �
 
 7. 당신에게 어떤 버전을 사용할지 묻습니다. 기본적으로 이미 선택한 최신 버전을 다운로드합니다. **"Download with dependencies"** 또는 **"Download"**"를 클릭합니다.
 
-8. Once you are done installing your mods, you may click on "Start modded" on the sidebar. This will launch the game with your mods.
+8. 모드를 다운받는 것을 끝내셨다면, 오른쪽 사이드 바에 있는 "Start modded" 를 클릭해주세요. 이 행동은 모드와 함께 게임을 실행합니다.
 
 ![Start Lethal Company Modded](/images/r2modman-install/startmodded.png)
 
-That's it! You have just successfully modded Lethal Company!
+그게 다입니다! 당신은 성공적으로 모드가 추가된 Lethal Company 를 플레이 하실 수 있습니다!
 
-If you'd like to sync your mods with friends, navigate to the [sharing r2modman profiles](syncing-mods) page.
+모드를 친구와 공유하려면 [syncing r2modman profiles](syncing-mods) 페이지로 이동합니다.
