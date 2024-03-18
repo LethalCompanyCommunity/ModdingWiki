@@ -4,31 +4,31 @@ next: true
 description: Dicas para tornar seu fluxo de trabalho de criação de mods mais rápida.
 ---
 
-# Dicas Para Teste De Mods
+# Dicas para Teste de Mods
 
-Before we get into making our mods, it's a good idea to optimize our testing setup so we'll waste less time waiting in loading screens and wandering around.
+Antes de começarmos a fazer nossos mods, é uma boa ideia otimizar o nosso ambiente de testes, assim perderemos menos tempo esperando telas carregarem e vagando por aí.
 
-### Opening The Game Faster
+### Abrindo o Jogo Mais Rápido
 
-For opening the game faster, you can open the game directly from the exe file. This means the game is not run through Steam and we must use LAN mode.
+Para abrir o jogo mais rápido, você pode abri-lo diretamente pelo arquivo .exe. Isso significa que o jogo não será executado através da Steam e nós precisamos usar o modo LAN.
 
-### Testing Multiplayer in LAN Mode
+### Testando o Multiplayer no Modo LAN
 
-We can open multiple instances of the game when opening it directly from the exe file, and this allows us to do local testing on LAN mode.
+Nós podemos abrir múltiplas instâncias de um jogo quando abrimos ele diretamente pelo arquivo .exe, e isso nos permite a fazer testes locais no modo LAN.
 
-### Instantly Load Into a Game
+### Carregamento Instantâneo para o Jogo
 
-For entering a game as soon as possible, we can use [DevelopmentStartup](https://thunderstore.io/c/lethal-company/p/CTNOriginals/DevelopmentStartup/). This will skip start menus and jump right into a game.
+Para entrar no jogo o mais rápido possível, nós podemos usar o [DevelopmentStartup](https://thunderstore.io/c/lethal-company/p/CTNOriginals/DevelopmentStartup/). Isso irá pular os menus iniciais e ir direto ao jogo.
 
-### Accessing The Debug/Test Menu
+### Acessando o Menu de Debug/Testes
 
-We can use [DevTools](https://thunderstore.io/c/lethal-company/p/Hamunii/DevTools/) or [LethalDevMode](https://thunderstore.io/c/lethal-company/p/megumin/LethalDevMode/) to get access to the game's internal debug tools menu. This allows us to do the following:
+Nós podemos usar o  [DevTools](https://thunderstore.io/c/lethal-company/p/Hamunii/DevTools/) ou o [LethalDevMode](https://thunderstore.io/c/lethal-company/p/megumin/LethalDevMode/) para conseguir acesso ao menu de ferramentas de depuração interno do jogo. Isso nos permite fazer o seguinte:
 
-- Toggle a testing level without having to land your ship.
-- Toggle invincibility.
-- Spawning enemies.
-- Spawning items.
+- Ativar ou desativar o nível de teste sem ter que pousar sua nave.
+- Ativar ou desativar invencibilidade.
+- Spawnar inimigos.
+- Spawnar itens.
 
-![Screenshot: Toggle Testing Room](/images/mod-testing-tips/DebugToggleTestRoom.png)
+![Screenshot: Ativar/Desativar Sala de Testes..](/images/mod-testing-tips/DebugToggleTestRoom.png)
 
-[DevTools](https://thunderstore.io/c/lethal-company/p/Hamunii/DevTools/) can also automatically enable the testing level, teleport you outside of the ship, spawn an enemy, give yourself an item, and activate certain cheats.
+[DevTools](https://thunderstore.io/c/lethal-company/p/Hamunii/DevTools/) pode também automaticamente ativar o nível de teste, teleportar você para fora da nave, spawnar um inimigo, dar um item para você e ativar certos cheats.
