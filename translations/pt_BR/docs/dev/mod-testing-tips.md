@@ -1,10 +1,10 @@
 ---
 prev: true
 next: true
-description: Tips on making your modding workflow faster.
+description: Dicas para tornar seu fluxo de trabalho de criação de mods mais rápida.
 ---
 
-# Mod Testing Tips
+# Dicas Para Teste De Mods
 
 Before we get into making our mods, it's a good idea to optimize our testing setup so we'll waste less time waiting in loading screens and wandering around.
 
