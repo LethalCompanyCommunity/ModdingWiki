@@ -84,25 +84,25 @@ Enemy Type options:
   - X-axis: Probability from 1 to 0, presumably 100% to 0% of the daytime cycle, e.g. from 8am to 11:59pm ingame.  
     So if you wanted your enemy to be spawning from 3pm to 6pm with 50% spawn weight on 3pm and linearly increasing to 75% onto 6pm, you'd do something like this: (43.15% to 62.5% so 0.4315 to 0.625 on the X-axis, which controls what time of day | 50% to 75% so 0.5 to 0.75 on the Y-axis, which controls the percent of spawn weight used).
 ![Screenshot: PinkGiant EnemyType ProbabilityCurve in inspector](/images/lethallib/custom-enemies/unity/ExampleEnemyTypeProbabilityCurve.png)
-- Spawning Disabled: disables the natural spawn of your enemy.
-- Number Spawned Falloff: hard to explain mathematically, but the use case is for when you'd want to reduce the probability of your monster spawning for every other monster spawned, this is used for beehive code wherein the more beehives spawned, the lower the chance for the next beehive to spawn.
+- Spawning Disabled: disables the natural spawning of your enemy.
+- Number Spawned Falloff: hard to explain mathematically, but the use case is for when you'd want to reduce the probability of your monster spawning for every other of the same monster spawned, this is used for beehive code wherein the more beehives spawned, the lower the chance for the next beehive to spawn.
 ![Screenshot: PinkGiant EnemyType Number spawned Falloff in inspector](/images/lethallib/custom-enemies/unity/ExampleEnemyTypeFalloff.png)
-- Use Number Spawned Falloff: Whether to use just the Probability Curve or to use both the Probability Curve and the Number Spawned Falloff.
-- Enemy Prefab: The prefab
-- Power Level: How much this enemy contributes to the moon's internal max power level
-- Max Count: The max number of this enemy which can naturally spawn
-- Number Spawned: The number of this enemy which spawn at the start of the level // unsure
-- Is Outside Enemy: decides if the enemy is an "outside" creature
-- Is Daytime Enemy: decides of the enemy is a "daytime" creature
-- Normalized Time In Day To Leave: a value in the range [0, 1] showing the percenage of each day for which the enmy is despawned (e.g. at `0.5`, the daytime enemy despawns at 4pm) // unsure
+- Use Number Spawned Falloff: Whether to use just the Probability Curve or to use both the Probability Curve and the Number Spawned Falloff to dynamically affect the enemy's spawn weight mid-round.
+- Enemy Prefab: The prefab.
+- Power Level: How much this enemy contributes to the moon's internal max power level.
+- Max Count: The max number of this enemy which can naturally spawn.
+- Number Spawned: *this should be a private value, ignore*
+- Is Outside Enemy: decides if the enemy is an "outside" creature.
+- Is Daytime Enemy: decides if the enemy is a "daytime" creature.
+- Normalized Time In Day To Leave: a value in the range [0, 1] showing the percenage of each day for which the enemy is calling a method (e.g. at `0.5`, the daytime enemy runs the method at 4pm) // check pls
 
 #### Misc. ingame properties
-- Stun Time Multiplier: for how long the enemy can be stunned for (the default value is likely `1` despite saying `0` in inspector) // unsure
+- Stun Time Multiplier: for how long the enemy can be stunned for. // unsure
 - Door Speed Multiplier: for how long the enemy takes to open doors. 
 - Stun Game Difficulty Multiplier: for how difficult it is to stun the enemy with a zap gun. // pretty sure
 - Can Be Stunned (`bool`)
 - Can Die (`bool`)
-- Destroy On Death: Whether or not the `GameObject` is destroyed upon death.
+- Destroy On Death: Whether or not the `GameObject` is destroyed upon enemy death.
 - Can See Through Fog: Whether the enemy's line of sight gets clamped to a range between 0 and 30 near fog/on foggy area.
 
 #### Vent Properties
