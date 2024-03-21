@@ -1,4 +1,4 @@
----
+![image](https://github.com/XuuXiao/ModdingWiki/assets/126674348/6df4bf5a-8a6a-4f87-ae8f-07ac2840839f)---
 prev: true
 next: true
 description: A tutorial on configuring your Unity project for custom enemies.
@@ -97,24 +97,24 @@ Enemy Type options:
 - Normalized Time In Day To Leave: a value in the range [0, 1] showing the percenage of each day for which the enemy is calling a method (e.g. at `0.5`, the daytime enemy runs the method at 4pm) // check pls
 
 #### Misc. ingame properties
-- Stun Time Multiplier: for how long the enemy can be stunned for. // unsure
-- Door Speed Multiplier: for how long the enemy takes to open doors. 
-- Stun Game Difficulty Multiplier: for how difficult it is to stun the enemy with a zap gun. // pretty sure
+- Stun Time Multiplier: (`float`) Multiplier that changes how long an enemy is stunned for based on the default Stun-grenade stun time of 7.5 seconds.
+- Door Speed Multiplier: (`float`) Multiplier for how fast the enemy opens doors. 
+- Stun Game Difficulty Multiplier: (`float`) Multiplier that exponentially increases the difficulty for Zap Gun minigame against the enemy.
 - Can Be Stunned (`bool`)
 - Can Die (`bool`)
 - Destroy On Death: Whether or not the `GameObject` is destroyed upon enemy death.
-- Can See Through Fog: Whether the enemy's line of sight gets clamped to a range between 0 and 30 near fog/on foggy area.
+- Can See Through Fog: (`bool`) Whether the enemy's line of sight gets clamped to a range between 0 and 30 near fog/on foggy area.
 
 #### Vent Properties
-- Time To Play Audio: the delay of playing vent audio after the enemy spawns (specific to "inside" enemies only) //unsure about this whole list tbh
-- Loudness Multiplier: the volume multiplier for the Vent SFX.
-- Override Vent SFX: The audio clip which replaces the vent sound. Leave as `None` to use the default audio sound. (e.g. "kwoosh")
-- Hit Body SFX: for when the enemy's body is hit (e.g. "tushhh")
-- Hit Enemy Voice SFX: for when the enemy's body is hit (e.g. "aaah")
-- Death SFX: for when the enemy dies (e.g. "Aaaah!")
-- Stun SFX: for when the enemy is stunned (e.g. "Bzzzzt")
+- Time To Play Audio: (`float`) Time it takes to play an audio before/while exiting the vent (specific to `inside` enemies only) //unsure about this one
+- Loudness Multiplier: (`float`) the volume multiplier for the Vent SFX.
+- Override Vent SFX: (`AudioClip`) The audio clip which replaces the vent sound. Leave as `None` to use the default audio sound. (e.g. "kwoosh")
+- Hit Body SFX: (`AudioClip`) For when the enemy's body is hit (e.g. "tushhh")
+- Hit Enemy Voice SFX: (`AudioClip`) For when the enemy hits "something" (e.g. "aaah")
+- Death SFX: (`AudioClip`) For when the enemy dies (e.g. "Aaaah!")
+- Stun SFX: (`AudioClip`) For when the enemy is stunned (e.g. "Bzzzzt")
 - Misc Animations: Unused
-- Audio Clips: the other audio clips you want to use (e.g. footstep sounds e.g. "badoosh.... badoosh..." (loops<sup>*<sup>1</sup></sup>))
+- Audio Clips: (`AudioClip`) The other audio clips you want to use (e.g. footstep sounds e.g. "badoosh.... badoosh..." (loops<sup>*<sup>1</sup></sup>))
 
 <sup>*<sup>1</sup></sup> Well, technically you would use an `AnimationEvent`, not loops.
 
