@@ -1,4 +1,3 @@
-![image](https://github.com/XuuXiao/ModdingWiki/assets/126674348/6df4bf5a-8a6a-4f87-ae8f-07ac2840839f)---
 prev: true
 next: true
 description: A tutorial on configuring your Unity project for custom enemies.
