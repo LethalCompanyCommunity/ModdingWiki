@@ -139,10 +139,10 @@
 
 .VPSidebarItem.has-active:not(.is-active) > .item > .text,
 .VPSidebarItem.has-active:not(.is-active) > .item > .link > .text {
-    color: rgb(0, 141, 125) !important;
+    color: rgb(37, 104, 97) !important;
 }
 
 .dark .VPSidebarItem.has-active:not(.is-active) > .item > .text,
 .dark .VPSidebarItem.has-active:not(.is-active) > .item > .link > .text {
-    color: rgba(185, 255, 245, .7) !important;
+    color: rgba(205, 235, 231, 0.7) !important;
 }
