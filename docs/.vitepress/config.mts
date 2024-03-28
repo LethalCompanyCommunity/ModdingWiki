@@ -189,7 +189,7 @@ export default defineConfig({
                   items: [
                     {
                       text: 'Networking',
-                      link: '/dev/advanced/networking/',
+                      // link: '/dev/advanced/networking/',
                       collapsed: true,
                       items: [
                         { text: 'Dev Tools', link: '/dev/advanced/networking/dev-tools'},
