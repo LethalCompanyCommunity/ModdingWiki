@@ -112,14 +112,14 @@ To make a buy-able **Shop Item**, you must make a custom `TerminalNode` for your
 2. Name the `TerminalKeyword`'s "Confirm" and "Deny" (This is for when you're confirming or denying buying the item).
 3. Name one of the `TerminalNode`'s "CancelPurchase" (This will be reusable for future shop items).
 4. Keep the following `TerminalKeyword`'s and `TerminalNode` to be as close to the screenshots as possible, this is the vanilla standard that's used for everytime (hence can be repeatedly used).
-![Screenshot: Deny TerminalKeyword](/images/lethallib/custom-scrap/DenyTerminalKeyword.png)
-![Screenshot: Confirm TerminalKeyword](/images/lethallib/custom-scrap/ConfirmTerminalKeyword.png)
-![Screenshot: CancelPurchase TerminalNode](/images/lethallib/custom-scrap/CancelPurchaseTerminalNode.png)
+![Screenshot: Deny TerminalKeyword](/images/lethallib/customscrap/DenyTerminalKeyword.png)
+![Screenshot: Confirm TerminalKeyword](/images/lethallib/customscrap/ConfirmTerminalKeyword.png)
+![Screenshot: CancelPurchase TerminalNode](/images/lethallib/customscrap/CancelPurchaseTerminalNode.png)
 5. Name one of the remaining two `TerminalNode`'s "Buy{itemName}" (For whatever your item name is) and name the other an identifying name such as "iTerminalNode", this will be your main `TerminalNode` that you load and use.
 6. Match this "Buy{itemName}" `TerminalNode` as such:
-![Screenshot: Buy{itemName} TerminalNode](/images/lethallib/custom-scrap/BuyTerminalNode.png)
+![Screenshot: Buy{itemName} TerminalNode](/images/lethallib/customscrap/BuyTerminalNode.png)
 7. Finally, match the last `TerminalNode like this:
-![Screenshot: iTerminalNode](/images/lethallib/custom-scrap/iTerminalNode.png)
+![Screenshot: iTerminalNode](/images/lethallib/customscrap/iTerminalNode.png)
 
 ::: display-text-to-copy
 ```
