@@ -277,6 +277,10 @@ export default defineConfig({
                         },
                       ]
                     },
+                    {
+                      text: 'StaticNetcodeLib',
+                      link: '/dev/apis/static-netcode'
+                    }
                   ]
                 }
               ]

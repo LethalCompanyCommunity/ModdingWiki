@@ -8,17 +8,16 @@ description: Learn how to send messages between the host and connected clients.
 
 ::: info DISCLAIMER
 This is not a tutorial on how to use Unity's [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/1.5.2/about/) RPCs and Network Variables.
-This is only meant to be used to understand <i>how</i> to implement custom networking into the game.
+This is only meant to be used to understand *how* to implement custom networking into the game.
 :::
 
 There are several different methods available to you for messaging between the
-host and any connected clients. You can use an API, use Netcode for GameObjects' 
+host and any connected clients. You can use an API, use Netcode for GameObjects'
 (NGO) Network Messages, or use NGO's RPCs.
 
 This article will go through the basics on implementing each method, but will not
 go into how to use it. It will at most be augmentation for the NGO docs.
 For information on how to use NGO-specific classes & methods, look at the [NGO docs](https://docs-multiplayer.unity3d.com/netcode/1.5.2/about/).
-
 
 ## APIs
 
@@ -29,7 +28,6 @@ and thus only need to be implemented in the context of your mod.
 For specific information on the available APIs, you can look at the
 [networking Programing APIs section](/dev/apis/overview#networking)
 of this wiki.
-
 
 ## NGO's Custom Messages {#custom-messages}
 
@@ -61,7 +59,6 @@ Custom serialization requires that you manually write extensions for `FastBuffer
 
 For more information, you can [read this article](https://docs-multiplayer.unity3d.com/netcode/1.5.2/advanced-topics/custom-serialization/).
 
-
 ## NGO's Remote Procedure Calls (RPCs) {#rpcs}
 
 RPCs are the in-between solution. They give you more control than APIs likely will, and they are
@@ -74,6 +71,14 @@ As RPCs can only exist in the context of a `NetworkBehaviour`, much of what you 
 equivalent to the article on Custom Object Behaviours. As such, this article will only go into the
 specifics for messaging. For information on Network Behaviours and what you can use in them, look at
 the [Custom Object Behaviour article](/dev/advanced/networking/objects) or the [NGO Docs](https://docs-multiplayer.unity3d.com/netcode/1.5.2/advanced-topics/ways-synchronize/).
+
+:::tip StaticNetcodeLib
+An alternative to NGO's instanced RPCs are the RPCs provided by StaticNetcodeLib. These RPCs are
+functionally the same as NGO's RPCs, except that they are static in nature, and can be used outside
+of `NetworkBehaviour`s. Thus, they do not need to be attached to a game object that is instantiated.
+
+For more information, look at the [wiki article for StaticNetcodeLib](/dev/apis/static-netcode).
+:::
 
 ### Singleton
 
@@ -139,6 +144,7 @@ To manually create a network prefab programmatically, you must do so after the N
 is instantiated (postfix `GameNetworkManager::Start`) and deal with a few issues. To do so, you can do the following:
 
 :::info
+
 1. Make a new GameObject
 2. Set it's `HideFlags` to `HideAndDontSave`
 3. Parent said object to a disabled "container" that has the `HideAndDontSave` HideFlag
@@ -146,6 +152,7 @@ is instantiated (postfix `GameNetworkManager::Start`) and deal with a few issues
 5. Attach the Custom Network Behaviour component
 6. Change the `GlobalObjectIdHash` to a new uint GUID
 7. Register the GameObject as a Network Prefab
+
 :::
 
 To shorten this article, only step 6 will be discussed due to it's complexity and undocumented nature.
