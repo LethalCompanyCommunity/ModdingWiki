@@ -176,6 +176,10 @@ export default defineConfig({
                         { text: 'Troubleshooting', link: '/dev/apis/csync/troubleshooting' }
                       ]
                     },
+                    {
+                      text: 'StaticNetcodeLib',
+                      link: '/dev/apis/static-netcode'
+                    }
                   ]
                 }
               ]
