@@ -81,7 +81,8 @@ export default defineConfig({
                   text: 'Fundamentals',
                   collapsed: false,
                   items: [
-                      { text: "Reading Game Code", link: '/dev/fundamentals/reading-game-code'}
+                      { text: "Reading Game Code", link: '/dev/fundamentals/reading-game-code'},
+                      { text: "Patching with MonoMod", link: '/dev/fundamentals/patching-with-monomod'}
                   ]
                 },
                 {
