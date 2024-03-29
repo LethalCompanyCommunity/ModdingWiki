@@ -28,14 +28,14 @@ In case events in C# are new to you, we'll go through the basics of how to work 
 
 Our **event handler** goes to the right side of the operator, and is a method that takes in the arguments given by the event we are subscribing to. In our earlier example, we subscribed `MyPatch` to the `On.StartOfRound.Awake` event. This event passes the original method `On.StartOfRound.orig_Awake orig` and an instance of the object `StartOfRound self` as arguments. Thankfully, we can let our IDE generate the method for us *(from e.g. `quick fix` -> `Generate Method 'MyPatch'` in Visual Studio Code)* so we don't need to define it ourselves. This will generate the the following method:
 ```cs
-private void MyPatch(On.StartOfRound.orig_Awake orig, StartOfRound self)
+private static void MyPatch(On.StartOfRound.orig_Awake orig, StartOfRound self)
 {
     throw new NotImplementedException();
 }
 ```
 However, currently this will just throw an exception and the original method will not run. Let's fix that:
 ```cs
-private void MyPatch(On.StartOfRound.orig_Awake orig, StartOfRound self)
+private static void MyPatch(On.StartOfRound.orig_Awake orig, StartOfRound self)
 {
     throw new NotImplementedException(); // [!code --] // [!code focus]
     orig(self); // [!code ++] // [!code focus]
@@ -53,7 +53,7 @@ One of the easiest patches you can do is an infinite sprint patch by setting spr
 // Somewhere in our code we subscribe to the event once:
 On.GameNetcodeStuff.PlayerControllerB.Update += PlayerControllerB_Update;
 // ...
-private void PlayerControllerB_Update(On.GameNetcodeStuff.PlayerControllerB.orig_Update orig, GameNetcodeStuff.PlayerControllerB self)
+private static void PlayerControllerB_Update(On.GameNetcodeStuff.PlayerControllerB.orig_Update orig, GameNetcodeStuff.PlayerControllerB self)
 {
     orig(self);
     self.sprintMeter = 1;
@@ -79,7 +79,7 @@ To do this, we must know that the variable `jumpForce` of `PlayerControllerB` af
 ```cs
 On.GameNetcodeStuff.PlayerControllerB.Update += PlayerControllerB_Update;
 // ...
-private void PlayerControllerB_Update(On.GameNetcodeStuff.PlayerControllerB.orig_Update orig, GameNetcodeStuff.PlayerControllerB self)
+private static void PlayerControllerB_Update(On.GameNetcodeStuff.PlayerControllerB.orig_Update orig, GameNetcodeStuff.PlayerControllerB self)
 {
     orig(self);
     if (self.isSprinting)
@@ -117,9 +117,9 @@ As we can see, if we used a normal Hook, there are many expressions we would hav
 The above method in IL with the place we are wanting to execute our code looks like this:
 ```IL
 // ...
-IL_00a7: ldarg.0    // load argument 0 'this' onto stack
+IL_00a7: ldarg.0        // load argument 0 'this' onto stack
 IL_00a8: ldfld bool GameNetcodeStuff.PlayerControllerB::isCrouching
-// Push the value of 'isCrouching' onto the stack. 
+// Push the value of 'isCrouching' onto stack 
 IL_00ad: brtrue.s IL_011d // Branch to IL_011d if value from stack is non-zero (true)
 
 // <-- We want to execute our code here
@@ -139,7 +139,7 @@ Now we know the place in IL where we want to insert our code inside the original
 ```cs
 IL.GameNetcodeStuff.PlayerControllerB.Jump_performed += PlayerControllerB_Jump_performed;
 // ...
-private void PlayerControllerB_Jump_performed(ILContext il)
+private static void PlayerControllerB_Jump_performed(ILContext il)
 {
     ILCursor c = new(il);
 
@@ -169,8 +169,8 @@ private void PlayerControllerB_Jump_performed(ILContext il)
     // takes an instance of PlayerControllerB as an argument.
     // Because this is IL code, we have to load 'this' (PlayerControllerB) onto
     // stack first, with ldarg.0
-    c.Emit(OpCodes.Ldarg_0); // load argument 0 'this' onto stack
     // Any non-static method has 'this' as the first argument
+    c.Emit(OpCodes.Ldarg_0); // load argument 0 'this' onto stack
     c.EmitDelegate<Action<PlayerControllerB>>((self) =>
     {
         Plugin.Logger.LogInfo("Hello from C# code in IL!");
@@ -192,9 +192,9 @@ The hard part about ILHooking is that it is very easy to emit invalid IL code, w
 ::: info
 The following ILHook example is taken from the [JetpackFallFix](https://thunderstore.io/c/lethal-company/p/Hamunii/JetpackFallFix/) mod.
 :::
-In `PlayerControllerB`, there is an if statement which checks for collision when flying with the jetpack. However, this method call is mistakenly missing an argument which tells the check to ignore trigger colliders, meaning you can take damage with the jetpack when colliding with random trigger colliders, in air.
+In `PlayerControllerB`, there is an if statement which checks for collision when flying with the jetpack. However, this method call is mistakenly missing an argument which tells the check to ignore trigger colliders, meaning you can take damage with the jetpack when colliding with random trigger colliders.
 
-The following ILHook replaces this method call: 
+The following ILHook replaces this method call to fix the bug: 
 ```cs
 Physics.CheckSphere(this.gameplayCamera.transform.position, 3f, StartOfRound.Instance.collidersAndRoomMaskAndDefault) // [!code --]
 Physics.CheckSphere(this.gameplayCamera.transform.position, 3f, StartOfRound.Instance.collidersAndRoomMaskAndDefault, QueryTriggerInteraction.Ignore) // [!code ++]
@@ -229,10 +229,174 @@ private static void PlayerControllerB_Update(ILContext il)
     c.Emit(OpCodes.Ldc_I4_1);   // Push QueryTriggerInteraction.Ignore (1) onto stack
     c.Emit(                     // And call the version of CheckSphere which takes QueryTriggerInteraction as an argument 
         OpCodes.Call, typeof(Physics)
-        .GetMethods()
+        .GetMethods()           // There are multiple variations of the same method
         .Where(x => x.Name == "CheckSphere")
         .FirstOrDefault()       // The first method is the variation we are looking for
     );
     // Plugin.Logger.LogInfo(il.ToString()); // uncomment to print the modified IL code to console
 }
 ```
+
+#### Replacing a Comparison Operator
+::: info
+The following example implements the [SlimeTamingFix](https://thunderstore.io/c/lethal-company/p/EliteMasterEric/SlimeTamingFix/) mod's patch as an ILHook.
+:::
+
+In the `BlobAI` code, there is a **less than** operator (`<`) used for checking whether or not the anger meter is below zero, which determines whether or not the slime should deal damage when the slime is "tamed" (listening to music).
+
+Here is the relevant **decompiled** code in C#:
+```cs
+public override void OnCollideWithPlayer(Collider other)
+{
+    // ...
+    if (this.tamedTimer > 0f && this.angeredTimer < 0f)
+    {
+        return;
+    }
+    // ... deal damage to player
+}
+```
+
+The comparison operator for `this.angeredTimer` should instead be **Less than or equal to** (`<=`), as the slime's anger meter starts at zero, in which case in the base game this method does not return early and instead deals damage to the player.
+
+Here is the comparison between the variable in IL:
+
+```IL
+// ...
+IL_0022: ldarg.0                            // load argument 0 'this' onto stack
+IL_0023: ldfld float32 BlobAI::angeredTimer // push the value of 'angeredTimer' onto stack
+IL_0028: ldc.r4 0.0                         // push 0 onto the stack as float32
+IL_002d: bge.un.s IL_0030   // Branch to IL_0030 if the first value (angeredTimer)
+                            // is greater than or equal to (>=) the second value (0f)
+                            // when comparing unsigned integer values or unordered float values.
+
+IL_002f: ret                                // Returns from the current method
+IL_0030: ldarg.0
+// ... deal damage to player
+```
+From this IL code we can see that the comparison is slightly different, using the **greater than or equal to** operator (`>=`), but the underlying logic is still the same. This is normal, as compiled code is always different from the source code.
+
+Based on the above IL code, we want to do the following modification to the IL logic:
+```cs
+if (angeredTimer >= 0)  // [!code --]
+if (angeredTimer > 0)   // [!code ++]
+{
+    // ... deal damage to player
+}
+```
+The above code is written slightly differently from the original C# code, but follows the logic of the IL code using the comparison operator used in it (`>=`) so we can hopefully understand better what we are trying to do.
+
+By looking at the [Wikipedia page](https://en.wikipedia.org/wiki/List_of_CIL_instructions) on list of IL instructions, we can find that the IL instruction we are looking for is `bgt.un.s`:
+
+Instruction                | Description
+---------------------------|-------------------------
+`bge.un.s <int8 (target)>` | Branch to target if **greater than or equal to** (`>=`) (unsigned or unordered), short form.
+`bgt.un.s <int8 (target)>` | Branch to target if **greater than** (`>`) (unsigned or unordered), short form.
+
+Based on this information, we can simply make an ILHook to replace that instruction. Let's do it:
+
+```cs
+IL.BlobAI.OnCollideWithPlayer += BlobAI_OnCollideWithPlayer;
+// ...
+private void BlobAI_OnCollideWithPlayer(ILContext il)
+{
+    ILCursor c = new(il);
+
+    c.GotoNext(
+        // IL_0022: ldarg.0                 // load argument 0 'this' onto stack
+        // IL_0023: ldfld float32 BlobAI::angeredTimer // push the value of 'angeredTimer' onto stack
+        // IL_0028: ldc.r4 0.0              // push 0 onto the stack as float32
+        // IL_002d: bge.un.s IL_0030   // Branch to IL_0030 if angeredTimer >= 0
+        x => x.MatchLdarg(0),
+        x => x.MatchLdfld<BlobAI>("angeredTimer"),
+        x => x.MatchLdcR4(0.0f),
+        // we can match instructions without specifying the value by using the 'out' keyword
+        x => x.MatchBgeUn(out _)
+    );
+    // Position us before bge.un.s
+    c.Index += 3;
+    // Replace the next instruction (bge.un.s) with our instruction:
+    // bgt.un.s: Branch to IL_0030 if angeredTimer > 0
+    c.Next.OpCode = OpCodes.Bgt_Un_S;
+}
+```
+And that's it! ILHooks are relatively simple once you get familiar with IL code.
+
+#### Logging value from Setter
+::: tip
+If you don't know what a property is, see the documentation on [C# properties](https://learn.microsoft.com/en-us/dotnet/csharp/properties).  
+**TL;DR:** Properties have `get` and `set` accessors.
+:::
+Have you ever wanted to know which method set the value of a property, and what the new value is? Well, in any case you will now hopefully learn how to do that.
+
+The following code will print every time `UnityEngine.Transform.position` is set, which is every time any GameObject's position is set. It doesn't tell us which GameObject's position is set, it would need slightly more advanced logic.
+```cs
+ // While we are using MonoMod, nothing stops us from using AccessTools from HarmonyLib.
+using HarmonyLib;
+// ...
+// MMHOOK assemblies don't have hooks for getters and setters, since the feature
+// would not work very well most of the time. So we are defining our ILHook manually.
+private static ILHook setPositionHook = new ILHook(
+                                            AccessTools.DeclaredPropertySetter(typeof(UnityEngine.Transform), nameof(UnityEngine.Transform.position)),
+                                            Transform_set_position);
+// ...
+private static void Transform_set_position(ILContext il)
+{
+    ILCursor c = new(il);
+    c.GotoNext(
+        // IL_0000: ldarg.0
+        // IL_0001: ldarga.s 'value'
+        // IL_0003: call instance void UnityEngine.Transform::set_position_Injected(valuetype UnityEngine.Vector3&)
+        x => x.MatchLdarg(0),
+        x => x.MatchLdarga(out _),
+        x => x.MatchCall<Transform>("set_position_Injected")
+    );
+    // Position us before the set_position_Injected call
+    c.Index += 2;
+    // get a reference to 'value' on IL_0001
+    var value = c.Previous.Operand;
+    // Emit a call to our own method named PrintPosition in class MyPatches,
+    // which takes a (valuetype UnityEngine.Vector3&) by reference as argument,
+    // because ldarga.s loads the address of 'value' onto stack
+    c.Emit(OpCodes.Call, AccessTools.DeclaredMethod(typeof(MyPatches), nameof(PrintPosition)));
+    // Emit ldarga.s 'value' back onto the stack because previous call popped the value
+    c.Emit(OpCodes.Ldarga_S, value);
+    // The following IL code is after us:
+    // IL_0003: call instance void UnityEngine.Transform::set_position_Injected(valuetype UnityEngine.Vector3&)
+    // IL_0008: ret
+
+    // Plugin.Logger.LogInfo(il.ToString()); // uncomment to print the modified IL code to console
+}
+
+// Notice the ref keyword we have here. This is needed, because
+// ldarga.s loads the address of 'value' onto stack instead of the actual value
+private static void PrintPosition(ref Vector3 newPosition)
+{
+    Plugin.Logger.LogDebug("Position was set!");
+
+    // We now have a reference to the new position with the newPosition parameter!
+    // Let's print information about who set it and what the new value is:
+
+    string currentGameFrame = $"(frame: {Time.frameCount}) ";
+    var leftPaddingWhitespace = new string(' ', currentGameFrame.Length);
+
+    Plugin.Logger.LogDebug(currentGameFrame + "? Position: " + newPosition);
+
+    StackTrace stackTrace = new StackTrace();
+    StackFrame? frame;
+
+    // We are at frame 0, get_position is at 1, so we start at 2.
+    int i = 2;
+    while ((stackFrame = stackTrace.GetFrame(i)) != null)
+    {
+        Plugin.Logger.LogDebug($"{leftPaddingWhitespace}| {i - 2} Caller: {stackFrame.GetMethod().DeclaringType}::{stackFrame.GetMethod().Name}");
+        i++;
+    }
+    // Prints e.g.:
+    // [Debug  :  MyPlugin] Position was set!
+    // [Debug  :  MyPlugin] (frame: 192) ? Position: (10.32, 1.74, -12.27)
+    // [Debug  :  MyPlugin]              | 0 Caller: AutoParentToShip::MoveToOffset
+    // [Debug  :  MyPlugin]              | 1 Caller: AutoParentToShip::LateUpdate
+}
+```
+And there we go! We now have a way to print information about when any GameObject's position is set, with a stack trace and the new value.
