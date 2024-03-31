@@ -10,7 +10,7 @@ For an introduction to using MonoMod's `MMHOOK` assemblies, see [Patching Code -
 :::
 
 ## Hook Examples
-### Infinite Sprint Patch
+### Basic Hook
 ::: info
 This is the same example patch as shown in [Patching Code - Example Patch With MonoMod](../patching-code.md#example-patch-monomod).
 :::
@@ -25,6 +25,27 @@ private static void PlayerControllerB_Update(On.GameNetcodeStuff.PlayerControlle
     self.sprintMeter = 1;
 }
 ```
+
+### Changing Return Value
+In the game's code, there is a method that returns a boolean which determines whether or not the player is able to emote at the moment. Let's say we want to make this method always return `true`, meaning we will be able to emote forever. Let's do that:
+```cs
+// Somewhere in our code we subscribe to the event once:
+On.GameNetcodeStuff.PlayerControllerB.CheckConditionsForEmote += PlayerControllerB_CheckConditionsForEmote;
+// ...
+private bool PlayerControllerB_CheckConditionsForEmote(On.GameNetcodeStuff.PlayerControllerB.orig_CheckConditionsForEmote orig, GameNetcodeStuff.PlayerControllerB self)
+{
+    // Since we are patching a method that returns a boolean,
+    // we can get the return value by calling the original method.
+    bool originalResult = orig(self);
+    Plugin.Logger.LogInfo("Would emoting be normally allowed: " + originalResult);
+
+    // What we return from a patch will override the original return value.
+    // Since we want to be able to emote all the time, we will return true.
+    // We could also return the original return value to do nothing.
+    return true;
+}
+```
+
 ## ILHook Examples
 ### Introduction to ILHooks
 ILHooks are a way to modify the original methods on the **IL** (or **CIL**) level, which is what C# compiles to. This is how we can have full control over what the original method does.
@@ -300,6 +321,7 @@ The following code will print every time `UnityEngine.Transform.position` is set
 ```cs
  // While we are using MonoMod, nothing stops us from using AccessTools from HarmonyLib.
 using HarmonyLib;
+using MonoMod.RuntimeDetour;
 // ...
 // MMHOOK assemblies don't have hooks for getters and setters, since the feature
 // would not work very well most of the time. So we are defining our ILHook manually.
@@ -367,3 +389,41 @@ private static void PrintPosition(ref Vector3 newPosition)
 }
 ```
 And there we go! We now have a way to print information about when any GameObject's position is set, with a stack trace and the new value.
+
+## General
+### Priority
+If you want to use priority while using `MMHOOK` events, you can use `DetourContext`.  
+If you are using a Hook or an ILHook, you can use `HookConfig` or `ILHookConfig`, respectively.
+
+When using `DetourContext`, you will want to wrap it in a `using` statement so it disposes of itself afterwards, like so:
+```cs
+using(new DetourContext(){ Priority = 100 })
+{
+    // The DetourContext is active inside this scope
+    On.StartOfRound.Awake += StartOfRound_Awake;
+}
+```
+::: danger IMPORTANT
+In order to make `DetourContext` *actually* dispose of itself, you must install [DetourContext.Dispose Fix](https://thunderstore.io/c/lethal-company/p/Hamunii/DetourContext_Dispose_Fix/) and add a dependency to it in your mod's **manifest** file!
+
+This can be done like so:
+```json
+"dependencies": [
+    "BepInEx-BepInExPack-5.4.2100",
+    "Hamunii-DetourContext_Dispose_Fix-1.0.0" // [!code ++]
+]
+```
+:::
+
+`HookConfig` or `ILHookConfig` can be passed as an argument like so:
+```cs {5}
+private static Hook myHook = new Hook
+(
+    AccessTools.DeclaredMethod(typeof(StartOfRound), nameof(StartOfRound.Awake)),
+    StartOfRound_Awake,
+    new HookConfig(){ Priority = 100 } // or ILHookConfig for ILHooks
+);
+```
+#### How Priority Works
+
+// TODO: write this

@@ -24,7 +24,7 @@ To use these events, we can for example do the following:
 On.GameNetcodeStuff.PlayerControllerB.Update += MyPatch;
 ```
 ::: info
-`PlayerControllerB` is the script that controls the player in Lethal Company.  
+`PlayerControllerB` is the class/script that controls all player characters in Lethal Company. It is defined under the `GameNetcodeStuff` namespace.  
 `Update` is a method which executes on every frame, which `PlayerControllerB` implements. This is a method provided by the [MonoBehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) class in Unity.
 :::
 ::: tip
@@ -34,8 +34,6 @@ The `On` namespace contains normal **Hooks** which allow running our code before
 
 This will add our method `MyPatch` as an event handler for the `MMHOOK`'s `Update` event of `PlayerControllerB`, which runs when the original `Update` method of `PlayerControllerB` runs. 
 
-`PlayerControllerB` itself is under the `GameNetcodeStuff` namespace, which is why that is there.
-
 ::: warning IMPORTANT
 To make use of `MMHOOK` assemblies, you will need to reference them in your project. This can be simply done by e.g. adding the following to your `csproj` file:
 ```xml
@@ -43,7 +41,7 @@ To make use of `MMHOOK` assemblies, you will need to reference them in your proj
     <Reference Include="MMHOOK_Assembly-CSharp"><HintPath>./my/path/to/MMHOOK_Assembly-CSharp.dll</HintPath></Reference>
 </ItemGroup>
 ```
-You can find the `MMHOOK` files from the `BepInEx/plugins/MMHOOK/` directory if you have [HookGenPatcher](https://thunderstore.io/c/lethal-company/p/Evaisa/HookGenPatcher/) installed.
+You can find the `MMHOOK` files from the `.../BepInEx/plugins/MMHOOK/` directory if you have [HookGenPatcher](https://thunderstore.io/c/lethal-company/p/Evaisa/HookGenPatcher/) installed.
 :::
 
 ### Basics of Using Events in C#
