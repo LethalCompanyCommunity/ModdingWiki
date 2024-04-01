@@ -6,13 +6,13 @@ description: Learn how to use MonoMod for patching methods with Hooks and ILHook
 
 # Using MonoMod For Patching Code
 ::: warning IMPORTANT
-For an introduction to using MonoMod's `MMHOOK` assemblies, see [Patching Code - MonoMod](../patching-code.md#monomod).
+For an introduction to using MonoMod's `MMHOOK` assemblies, see [Patching Code — MonoMod](../patching-code.md#monomod).
 :::
 
 ## Hook Examples
 ### Basic Hook
 ::: info
-This is the same example patch as shown in [Patching Code - Example Patch With MonoMod](../patching-code.md#example-patch-monomod).
+This is the same example patch as shown in [Patching Code — Example Patch With MonoMod](../patching-code.md#example-patch-monomod).
 :::
 One of the easiest patches you can do is an infinite sprint patch by setting sprint meter to full every frame. Here we have hooked `PlayerControllerB`'s `Update` method which runs every frame. In the Hook, we run the original method, and then set `sprintMeter` to `1`. In this case it doesn't really matter if our code runs before or after the original method, because this is such a simple patch.
 ```cs
@@ -32,7 +32,7 @@ In the game's code, there is a method that returns a boolean which determines wh
 // Somewhere in our code we subscribe to the event once:
 On.GameNetcodeStuff.PlayerControllerB.CheckConditionsForEmote += PlayerControllerB_CheckConditionsForEmote;
 // ...
-private bool PlayerControllerB_CheckConditionsForEmote(On.GameNetcodeStuff.PlayerControllerB.orig_CheckConditionsForEmote orig, GameNetcodeStuff.PlayerControllerB self)
+private static bool PlayerControllerB_CheckConditionsForEmote(On.GameNetcodeStuff.PlayerControllerB.orig_CheckConditionsForEmote orig, GameNetcodeStuff.PlayerControllerB self)
 {
     // Since we are patching a method that returns a boolean,
     // we can get the return value by calling the original method.
@@ -46,6 +46,35 @@ private bool PlayerControllerB_CheckConditionsForEmote(On.GameNetcodeStuff.Playe
 }
 ```
 
+### Replacing Property Getter
+Lethal Company has its **internal debug tools menu** that is enabled if the game is running in the Unity editor, and current client is host. If we were to force the game to think it is running in the Unity editor, we would get access to this debug tools menu. The property that is used for the editor check is `Application.isEditor` which comes from the `UnityEngine.CoreModule` assembly.
+
+Since `MMHOOK` assemblies only contain methods, we will need to Hook the property getter manually. This can be done like so:
+```cs
+private static Hook isEditorHook = new Hook
+(
+    AccessTools.DeclaredPropertyGetter(typeof(Application), nameof(Application.isEditor)),
+    Application_isEditor_Getter
+);
+// Note the arguments of this patch method. See explanation below this code block.
+private static bool Application_isEditor_Getter(Func<bool> orig)
+{
+    // Even though the original method does nothing but return false,
+    // we still should call orig so if other mods patch this method
+    // their patches also run.
+    bool originalValue = orig();
+    Plugin.Logger.LogInfo("Original value of isEditor: " + originalValue);
+
+    // What we return from a patch will override the original return value.
+    return true;
+}
+```
+Since `Application.isEditor` is a static property, it doesn't have a `self` argument. Also when defining hooks manually, we define the original method as `Action`, `Action<T>`, `Action<T, T>` etc. or `Func<TResult>`,`Func<T, TResult>`, `Func<T, T, TResult>` etc. depending on the **types of arguments** and the **return type** the original method has. Normally these are defined for us by the `MMHOOK` assemblies.
+
+The `Action` delegate signifies that the method doesn't return anything, while `Func` signifies that the method return a value, and has the return type as its last parameter.
+
+So, since the `Application.isEditor`'s getter method does not have any arguments and returns a *boolean* value, the method must be defined as `Func<bool> orig`.
+
 ## ILHook Examples
 ### Introduction to ILHooks
 ILHooks are a way to modify the original methods on the **IL** (or **CIL**) level, which is what C# compiles to. This is how we can have full control over what the original method does.
@@ -56,7 +85,7 @@ When writing ILHooks, it is **important** to know the **IL instructions** you ar
 
 So, **for a list of IL instructions**, see [the Wikipedia page](https://en.wikipedia.org/wiki/List_of_CIL_instructions) or [Microsoft documentation](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.emit.opcodes?view=net-8.0#fields) on them.
 
-**Other relevant resources:** [IL Hooking - Risk of Rain 2 Modding Wiki](https://risk-of-thunder.github.io/R2Wiki/Mod-Creation/C%23-Programming/IL-Hooking/)
+**Other relevant resources:** [IL Hooking — Risk of Rain 2 Modding Wiki](https://risk-of-thunder.github.io/R2Wiki/Mod-Creation/C%23-Programming/IL-Hooking/)
 
 #### My First ILHook
 Let's say we want to make the following modification to the jumping behavior in the game:  
@@ -310,7 +339,7 @@ private void BlobAI_OnCollideWithPlayer(ILContext il)
 ```
 And that's it! ILHooks are relatively simple once you get familiar with IL code.
 
-### Logging value from Setter
+### Logging Value From Setter
 ::: tip
 If you don't know what a property is, see the documentation on [C# properties](https://learn.microsoft.com/en-us/dotnet/csharp/properties).  
 **TL;DR:** Properties have `get` and `set` accessors.
@@ -325,9 +354,11 @@ using MonoMod.RuntimeDetour;
 // ...
 // MMHOOK assemblies don't have hooks for getters and setters, since the feature
 // would not work very well most of the time. So we are defining our ILHook manually.
-private static ILHook setPositionHook = new ILHook(
-                                            AccessTools.DeclaredPropertySetter(typeof(UnityEngine.Transform), nameof(UnityEngine.Transform.position)),
-                                            Transform_set_position);
+private static ILHook setPositionHook = new ILHook
+(
+    AccessTools.DeclaredPropertySetter(typeof(UnityEngine.Transform), nameof(UnityEngine.Transform.position)),
+    Transform_set_position
+);
 // ...
 private static void Transform_set_position(ILContext il)
 {
