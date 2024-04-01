@@ -68,7 +68,7 @@ Without changing this setting, you will have to manually hook instead of using t
 Example command line usage with a path of `C:\path\to\r2modman\LethalCompany\profiles\test\BepInEx\plugins\MMHOOK\`:
 
 ```shell
-dotnet new lcmonomod -n MyFirstMod -M MyName.MyFirstMod -MM "C:\path\to\r2modman\LethalCompany\profiles\test\BepInEx\plugins\MMHOOK\"
+dotnet new lcmonomod -n MyFirstMod -M MyName.MyFirstMod -MM "C:\path\to\r2modman\LethalCompany\profiles\test\BepInEx\plugins\MMHOOK"
 ```
 
 :::
