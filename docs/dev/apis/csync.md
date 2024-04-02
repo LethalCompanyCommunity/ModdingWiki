@@ -54,5 +54,6 @@ Alternatively, you can install it visually via the **NuGet** package manager.
 
 ## Overview
 - [Usage Guide (latest)](/dev/apis/csync/usage-guide)
-- [Legacy Usage Guide (v3)](/dev/apis/csync/v3-usage-guide) - The guide/tutorial to using CSync v3
-- [Troubleshooting](/dev/apis/csync/troubleshooting) - Common issues and their solutions.
+- [Legacy Usage Guide (v4)](/dev/apis/csync/v4-usage-guide)
+- [Legacy Usage Guide (v3)](/dev/apis/csync/v3-usage-guide)
+- [Troubleshooting](/dev/apis/csync/troubleshooting)
