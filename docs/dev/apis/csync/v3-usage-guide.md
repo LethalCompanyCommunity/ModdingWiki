@@ -1,7 +1,7 @@
 ---
 prev: true
 next: true
-description: The legacy guide to using CSync (v3).
+description: The legacy guide to using CSync (v3, Owen3H).
 ---
 
 # Guide to using CSync
