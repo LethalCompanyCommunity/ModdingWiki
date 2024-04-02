@@ -304,11 +304,10 @@ if (angeredTimer > 0)   // [!code ++]
 The above code is written slightly differently from the original C# code, but follows the logic of the IL code using the comparison operator used in it (`>=`) so we can hopefully understand better what we are trying to do.
 
 By looking at the [Wikipedia page](https://en.wikipedia.org/wiki/List_of_CIL_instructions) on list of IL instructions, we can find that the IL instruction we are looking for is `bgt.un.s`:
-
-Instruction                | Description
+<div style="width:175px">Instruction</div> | Description
 ---------------------------|-------------------------
-`bge.un.s <int8 (target)>` | Branch to target if **greater than or equal to** (`>=`) (unsigned or unordered), short form.
-`bgt.un.s <int8 (target)>` | Branch to target if **greater than** (`>`) (unsigned or unordered), short form.
+`bge.un.s <int8 (target)>` | Branch to target if first value is **greater than or equal to** (`>=`) second value (unsigned or unordered), short form.
+`bgt.un.s <int8 (target)>` | Branch to target if first value is **greater than** (`>`) second value (unsigned or unordered), short form.
 
 Based on this information, we can simply make an ILHook to replace that instruction. Let's do it:
 
@@ -423,6 +422,8 @@ And there we go! We now have a way to print information about when any GameObjec
 
 ## General
 ### Priority
+Priority in MonoMod is an `int32`, meaning the value range is from `int.MinValue` to `int.MaxValue`, with a higher value meaning the Hook should run earlier from all hooks that target the same method. The default value is `0`.
+
 If you want to use priority while using `MMHOOK` events, you can use `DetourContext`.  
 If you are using a Hook or an ILHook, you can use `HookConfig` or `ILHookConfig`, respectively.
 
@@ -455,6 +456,3 @@ private static Hook myHook = new Hook
     new HookConfig(){ Priority = 100 } // or ILHookConfig for ILHooks
 );
 ```
-#### How Priority Works
-
-// TODO: write this
