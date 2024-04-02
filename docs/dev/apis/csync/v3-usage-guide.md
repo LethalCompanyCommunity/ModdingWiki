@@ -1,5 +1,5 @@
 ---
-prev: false
+prev: true
 next: true
 description: The legacy guide to using CSync (v3).
 ---
