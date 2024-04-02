@@ -164,6 +164,8 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         { text: 'Usage Guide', link: '/dev/apis/csync/usage-guide' },
+                        { text: 'Usage Guide (v4)', link: '/dev/apis/csync/v4-usage-guide' },
+                        { text: 'Usage Guide (v3)', link: '/dev/apis/csync/v3-usage-guide' },
                         { text: 'Troubleshooting', link: '/dev/apis/csync/troubleshooting' }
                       ]
                     },
