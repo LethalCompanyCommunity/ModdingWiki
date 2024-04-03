@@ -26,10 +26,10 @@ It is important that you remove all unused template code from the project before
 
 ### Creating your project {#create-project}
 
-First things first, you'll need to create your project. If you've not done so already, we recommend running the following command in a console to add some Lethal Company templates for new projects:
+First things first, you'll need to create your project. If you've not done so already, we recommend running the following command in a console to add some BepInEx templates for new projects:
 
 ```cmd
-dotnet new -i Xilophor.LCModTemplates
+dotnet new -i BepInEx.Templates --nuget-source https://nuget.bepinex.dev/v3/index.json
 ```
 
 Next, you'll want to create a new project (sometimes called "solution", in CSharp). There are two main ways to do this.
@@ -40,11 +40,20 @@ Depending on your IDE, this process will look slightly different. You'll want to
 
 #### Using the console (simpler) {#using-console}
 
-Alternatively, you can open a console and run the following command, assuming you've set up the templates using the command above. Replace `MyFirstPlugin` with your mod's name, and `MyName` with your username:
+Alternatively, you can open a console and run the following command, assuming you've set up the templates using the command above. Replace `MyFirstPlugin` with your mod's name:
 
 ```cmd
-dotnet new lchmod -n MyFirstPlugin -M MyName.MyFirstMod
+dotnet new bepinex5plugin -n MyFirstPlugin -T "netstandard2.1" -U "2022.3.9"
 ```
+
+::: warning
+Some people have been [reporting problems](https://github.com/BepInEx/BepInEx.Templates/issues/8) creating new BepInEx plugins from the template when using the .NET 8 SDK:
+
+`Failed to create template.
+Details: Object reference not set to an instance of an object.`
+
+If you get this error, try downgrading to the [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0).
+:::
 
 ### Organising your modding projects {#organize-project}
 
