@@ -139,7 +139,7 @@ SetMovementSpeed(MyPlugin.Config.MovementSpeed.Value);
 ```
 
 Try not to cache any entries' values in a variable; doing so means it is possible
-that you are using the most up-to-date value.
+that you are not using the most up-to-date value.
 
 You can get (or set) the local value of a `SyncedEntry`:
 
