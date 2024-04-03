@@ -94,7 +94,7 @@ specifies CSync's plugin GUID.
 
 ```csharp
 [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
-[BepInDependency("com.sigurd.csync", "3.1.1")] // [!code ++]
+[BepInDependency("com.sigurd.csync", "4.1.0")] // [!code ++]
 public class MyPlugin : BaseUnityPlugin
 ```
 
@@ -102,7 +102,7 @@ If we plan to upload our mod to **Thunderstore**, we must ensure we specify the 
 `manifest.json` file by adding CSync's **Thunderstore** package ID to the dependency array.
 ```json
 {
-  "dependencies": ["BepInEx-BepInExPack-5.4.2100", "Sigurd-CSync-3.1.1"] // [!code focus]
+  "dependencies": ["BepInEx-BepInExPack-5.4.2100", "Sigurd-CSync-4.1.0"] // [!code focus]
 }
 ```
 
