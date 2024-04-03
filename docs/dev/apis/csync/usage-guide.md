@@ -4,7 +4,6 @@ next: true
 description: The main guide to using CSync (v5).
 ---
 
-
 # Guide to using CSync
 
 ## 1. Creating your config class
