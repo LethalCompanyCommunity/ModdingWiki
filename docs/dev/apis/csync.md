@@ -1,6 +1,6 @@
 ---
 prev: false
-next: false
+next: true
 description: A guide to synchronizing a BepInEx config file between host and clients using the CSync library.
 ---
 
@@ -53,7 +53,5 @@ Alternatively, you can install it visually via the **NuGet** package manager.
 3. In your mod's project, add an **Assembly Reference** to `../BepInEx/plugins/CSync/com.sigurd.csync.dll`.
 
 ## Overview
-- [Usage Guide (latest)](/dev/apis/csync/usage-guide)
-- [Legacy Usage Guide (v4)](/dev/apis/csync/v4-usage-guide)
-- [Legacy Usage Guide (v3)](/dev/apis/csync/v3-usage-guide)
-- [Troubleshooting](/dev/apis/csync/troubleshooting)
+- [Usage Guide (pre-release)](/dev/apis/csync/usage-guide)
+- [Usage Guide (v4)](/dev/apis/csync/v4-usage-guide)

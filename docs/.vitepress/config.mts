@@ -81,7 +81,8 @@ export default defineConfig({
                   text: 'Fundamentals',
                   collapsed: false,
                   items: [
-                      { text: "Reading Game Code", link: '/dev/fundamentals/reading-game-code'}
+                    { text: "Logging", link: '/dev/fundamentals/logging'},
+                    { text: "Reading Game Code", link: '/dev/fundamentals/reading-game-code'}
                   ]
                 },
                 {
@@ -165,8 +166,16 @@ export default defineConfig({
                       items: [
                         { text: 'Usage Guide', link: '/dev/apis/csync/usage-guide' },
                         { text: 'Usage Guide (v4)', link: '/dev/apis/csync/v4-usage-guide' },
-                        { text: 'Usage Guide (v3)', link: '/dev/apis/csync/v3-usage-guide' },
-                        { text: 'Troubleshooting', link: '/dev/apis/csync/troubleshooting' }
+                        {
+                          text: 'Outdated',
+                          link: '/dev/apis/csync/outdated',
+                          collapsed: true,
+                          items: [
+                            { text: 'Usage Guide (v3)', link: '/dev/apis/csync/v3-usage-guide' }, 
+                            { text: 'Migrating from v1', link: '/dev/apis/csync/migration-from-v1' },
+                            { text: 'Troubleshooting', link: '/dev/apis/csync/outdated/troubleshooting' }
+                          ]
+                        },
                       ]
                     },
                   ]

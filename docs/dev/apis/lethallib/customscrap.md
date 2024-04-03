@@ -34,7 +34,9 @@ This item data lets you configure basically everything about your item. There ar
 - **Allow Dropping Ahead of Player**: Whether the item can be dropped in front of the player, as opposed to only dropping directly below their feet.
 - **Is Defensive Weapon**: For scrap that also acts as weapons; requires more special scripting, so for most cases should be left off.
 
-Everything else is optional, has no effect on scrap, or shouldn't be modified (e.g. Netcode variables should be left alone).
+Everything else is optional, has no effect on scrap, or shouldn't be modified.
+
+Note that you will have to enable some of the netcode variables if you want them to sync properly in multiplayer.
 
 ## Item Prefab
 An item prefab needs to have a specific setup to work correctly with all the Lethal Company systems. The prefab should have only the root object and a child object called "ScanNode":
