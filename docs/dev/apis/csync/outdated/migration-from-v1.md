@@ -1,7 +1,7 @@
 ---
-prev: false
-next: false
-description: Guide to migrating from CSync v1 to v2.
+prev: true
+next: true
+description: Guide to migrating from CSync v1.
 ---
 
 # v2.0.0 Migration Guide
