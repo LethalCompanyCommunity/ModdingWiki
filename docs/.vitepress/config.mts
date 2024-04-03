@@ -171,8 +171,8 @@ export default defineConfig({
                           link: '/dev/apis/csync/outdated',
                           collapsed: true,
                           items: [
-                            { text: 'Usage Guide (v3)', link: '/dev/apis/csync/v3-usage-guide' }, 
-                            { text: 'Migrating from v1', link: '/dev/apis/csync/migration-from-v1' },
+                            { text: 'Usage Guide (v3)', link: '/dev/apis/csync/outdated/v3-usage-guide' }, 
+                            { text: 'Migrating from v1', link: '/dev/apis/csync/outdated/migration-from-v1' },
                             { text: 'Troubleshooting', link: '/dev/apis/csync/outdated/troubleshooting' }
                           ]
                         },
