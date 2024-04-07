@@ -87,7 +87,7 @@ private static void PlayerControllerB_Update(On.GameNetcodeStuff.PlayerControlle
 }
 ```
 ::: tip
-See [Using MonoMod](./patching-code/using-monomod.md) for more examples and information about MonoMod usage!
+See [Patching Code With MonoMod — Examples](./patching-code/monomod-examples.md) for more examples and information about MonoMod usage!
 :::
 
 ## Harmony

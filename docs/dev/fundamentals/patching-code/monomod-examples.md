@@ -1,12 +1,16 @@
 ---
 prev: true
-next: false
+next: true
 description: Learn how to use MonoMod for patching methods with Hooks and ILHooks.
 ---
 
-# Using MonoMod For Patching Code
+# Patching Code With MonoMod — Examples
 ::: warning IMPORTANT
 For an introduction to using MonoMod's `MMHOOK` assemblies, see [Patching Code — MonoMod](../patching-code.md#monomod).
+:::
+
+::: tip
+See [MonoMod Documentation](./monomod-documentation.md) for more in-depth details!
 :::
 
 ## Hook Examples
@@ -75,6 +79,23 @@ The `Action` delegate signifies that the method doesn't return anything, while `
 
 So, since the `Application.isEditor`'s getter method does not have any arguments and returns a *boolean* value, the method must be defined as `Func<bool> orig`.
 
+### Patching IEnumerators
+Patching `IEnumerator` methods is different from patching "normal" methods. See the [HarmonyX](https://github.com/BepInEx/HarmonyX/wiki/Enumerator-patches) wiki on patching IEnumerator methods, as it explains well why IEnumerators need to be patched like so:
+```cs
+private static IEnumerator PlayerControllerB_PlayerJump(On.GameNetcodeStuff.PlayerControllerB.orig_PlayerJump orig, PlayerControllerB self)
+{
+    // code here runs before the original method
+
+    // Get the IEnumerator returned by the original method
+    var origIEnumerator = orig(self);
+    // Repeat until MoveNext of origIEnumerator is false
+    while (origIEnumerator.MoveNext())
+    {
+        yield return origIEnumerator.Current;
+    }
+    // code here runs after the original method
+}
+```
 ## ILHook Examples
 ### Introduction to ILHooks
 ILHooks are a way to modify the original methods on the **IL** (or **CIL**) level, which is what C# compiles to. This is how we can have full control over what the original method does.
@@ -94,6 +115,7 @@ Let's say we want to make the following modification to the jumping behavior in 
 To do this, we must know that the variable `jumpForce` of `PlayerControllerB` affects how strong jumps are, so let's try making a normal Hook to change it depending on whether or not we are sprinting:
 
 ```cs
+// Somewhere in our code we subscribe to the event once:
 On.GameNetcodeStuff.PlayerControllerB.Update += PlayerControllerB_Update;
 // ...
 private static void PlayerControllerB_Update(On.GameNetcodeStuff.PlayerControllerB.orig_Update orig, GameNetcodeStuff.PlayerControllerB self)
@@ -154,6 +176,7 @@ IL_00bc: stfld bool GameNetcodeStuff.PlayerControllerB::isJumping
 ```
 Now we know the place in IL where we want to insert our code inside the original method, so let's write our ILHook:
 ```cs
+// Somewhere in our code we subscribe to the event once:
 IL.GameNetcodeStuff.PlayerControllerB.Jump_performed += PlayerControllerB_Jump_performed;
 // ...
 private static void PlayerControllerB_Jump_performed(ILContext il)
@@ -217,6 +240,7 @@ Physics.CheckSphere(this.gameplayCamera.transform.position, 3f, StartOfRound.Ins
 Physics.CheckSphere(this.gameplayCamera.transform.position, 3f, StartOfRound.Instance.collidersAndRoomMaskAndDefault, QueryTriggerInteraction.Ignore) // [!code ++]
 ```
 ```cs
+// Somewhere in our code we subscribe to the event once:
 IL.GameNetcodeStuff.PlayerControllerB.Update += PlayerControllerB_Update;
 // ...
 private static void PlayerControllerB_Update(ILContext il)
@@ -232,6 +256,7 @@ private static void PlayerControllerB_Update(ILContext il)
 
     ILCursor c = new(il);
     c.GotoNext(
+        MoveType.After, // position our cursor after the last match
         x => x.MatchLdarg(0),
         x => x.MatchLdfld<PlayerControllerB>("gameplayCamera"),
         x => x.MatchCallvirt<Component>("get_transform"),
@@ -241,12 +266,17 @@ private static void PlayerControllerB_Update(ILContext il)
         x => x.MatchLdfld<StartOfRound>("collidersAndRoomMaskAndDefault"),
         x => x.MatchCall<Physics>("CheckSphere")
     );
-    c.Index += 7;               // Position us before CheckSphere
+    c.Index -= 1;               // Position us before CheckSphere
     c.Remove();                 // Remove original call to CheckSphere
     c.Emit(OpCodes.Ldc_I4_1);   // Push QueryTriggerInteraction.Ignore (1) onto stack
-    c.Emit(                     // And call the version of CheckSphere which takes QueryTriggerInteraction as an argument 
+
+    // And call the version of CheckSphere which takes QueryTriggerInteraction as an argument.
+    // We must use GetMethods because CheckSphere has multiple variations of itself,
+    // otherwise we could just get the method like normal, e.g.:
+    // c.Emit(OpCodes.Call, AccessTools.DeclaredMethod(typeof(Physics), nameof(Physics.CheckSphere)));
+    c.Emit(
         OpCodes.Call, typeof(Physics)
-        .GetMethods()           // There are multiple variations of the same method
+        .GetMethods()           // There are multiple variations of the method 'CheckSphere'
         .Where(x => x.Name == "CheckSphere")
         .FirstOrDefault()       // The first method is the variation we are looking for
     );
@@ -312,16 +342,18 @@ By looking at the [Wikipedia page](https://en.wikipedia.org/wiki/List_of_CIL_ins
 Based on this information, we can simply make an ILHook to replace that instruction. Let's do it:
 
 ```cs
+// Somewhere in our code we subscribe to the event once:
 IL.BlobAI.OnCollideWithPlayer += BlobAI_OnCollideWithPlayer;
 // ...
-private void BlobAI_OnCollideWithPlayer(ILContext il)
+private static void BlobAI_OnCollideWithPlayer(ILContext il)
 {
     ILCursor c = new(il);
 
     c.GotoNext(
-        // IL_0022: ldarg.0                 // load argument 0 'this' onto stack
+        MoveType.After, // position our cursor after the last match
+        // IL_0022: ldarg.0            // load argument 0 'this' onto stack
         // IL_0023: ldfld float32 BlobAI::angeredTimer // push the value of 'angeredTimer' onto stack
-        // IL_0028: ldc.r4 0.0              // push 0 onto the stack as float32
+        // IL_0028: ldc.r4 0.0         // push 0 onto the stack as float32
         // IL_002d: bge.un.s IL_0030   // Branch to IL_0030 if angeredTimer >= 0
         x => x.MatchLdarg(0),
         x => x.MatchLdfld<BlobAI>("angeredTimer"),
@@ -329,11 +361,11 @@ private void BlobAI_OnCollideWithPlayer(ILContext il)
         // we can match instructions without specifying the value by using the 'out' keyword
         x => x.MatchBgeUn(out _)
     );
-    // Position us before bge.un.s
-    c.Index += 3;
-    // Replace the next instruction (bge.un.s) with our instruction:
+    // Replace the previous instruction (bge.un.s) with our instruction:
     // bgt.un.s: Branch to IL_0030 if angeredTimer > 0
-    c.Next.OpCode = OpCodes.Bgt_Un_S;
+    c.Previous.OpCode = OpCodes.Bgt_Un_S;
+
+    // Plugin.Logger.LogInfo(il.ToString()); // uncomment to print the modified IL code to console
 }
 ```
 And that's it! ILHooks are relatively simple once you get familiar with IL code.
@@ -346,6 +378,11 @@ If you don't know what a property is, see the documentation on [C# properties](h
 Have you ever wanted to know which method set the value of a property, and what the new value is? Well, in any case you will now hopefully learn how to do that.
 
 The following code will print every time `UnityEngine.Transform.position` is set, which is every time any GameObject's position is set. It doesn't tell us which GameObject's position is set, it would need slightly more advanced logic.
+
+This code works with the following logic:
+- `ldarga.s` fetches the *address* of the new `Vector3` argument and pushes it to stack
+- We inject our method to take in the `Vector3` by *reference*
+- Because method calls pop their arguments from the stack, we duplicate the value from `ldarga.s` so that the original `set_position_Injected` still runs properly
 ```cs
  // While we are using MonoMod, nothing stops us from using AccessTools from HarmonyLib.
 using HarmonyLib;
@@ -363,6 +400,7 @@ private static void Transform_set_position(ILContext il)
 {
     ILCursor c = new(il);
     c.GotoNext(
+        MoveType.After, // position our cursor after the last match
         // IL_0000: ldarg.0
         // IL_0001: ldarga.s 'value'
         // IL_0003: call instance void UnityEngine.Transform::set_position_Injected(valuetype UnityEngine.Vector3&)
@@ -371,15 +409,19 @@ private static void Transform_set_position(ILContext il)
         x => x.MatchCall<Transform>("set_position_Injected")
     );
     // Position us before the set_position_Injected call
-    c.Index += 2;
-    // get a reference to 'value' on IL_0001
-    var value = c.Previous.Operand;
+    c.Index -= 1;
+
+    // When we call a method which takes an argument, it will pop the value from the stack.
+    // To preserve the value from ldarga.s for the method set_position_Injected, we duplicate it.
+    // This is fine because our method 'PrintPosition' doesn't have a return a value,
+    // so the value from ldarga.s stays as the topmost value on the stack.
+    c.Emit(OpCodes.Dup);
+    
     // Emit a call to our own method named PrintPosition in class MyPatches,
     // which takes a (valuetype UnityEngine.Vector3&) by reference as argument,
     // because ldarga.s loads the address of 'value' onto stack
-    c.Emit(OpCodes.Call, AccessTools.DeclaredMethod(typeof(MyPatches), nameof(PrintPosition)));
-    // Emit ldarga.s 'value' back onto the stack because previous call popped the value
-    c.Emit(OpCodes.Ldarga_S, value);
+    c.Emit(OpCodes.Call, AccessTools.DeclaredMethod(typeof(LogPlayerPosition), nameof(PrintPosition)));
+
     // The following IL code is after us:
     // IL_0003: call instance void UnityEngine.Transform::set_position_Injected(valuetype UnityEngine.Vector3&)
     // IL_0008: ret

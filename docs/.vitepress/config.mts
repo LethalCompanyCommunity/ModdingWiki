@@ -88,7 +88,8 @@ export default defineConfig({
                         link: '/dev/fundamentals/patching-code',
                         collapsed: true,
                         items: [
-                          { text: "Using MonoMod", link: '/dev/fundamentals/patching-code/using-monomod'},
+                          { text: "MonoMod Examples", link: '/dev/fundamentals/patching-code/monomod-examples'},
+                          { text: "MonoMod Docs", link: '/dev/fundamentals/patching-code/monomod-documentation'},
                         ]
                       }
                   ]
