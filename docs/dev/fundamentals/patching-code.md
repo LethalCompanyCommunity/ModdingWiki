@@ -122,7 +122,7 @@ We have now briefly gone through using MonoMod and Harmony for Patching code. Le
 
 **Why MonoMod**
 - **MonoMod.RuntimeDetour.HookGen's** `MMHOOK` assemblies make patching **easy**:
-    - Applying patches is **clean** and **explicit** (e.g. `On.Namespace.Class.Method += MyPatch;`)
+    - Applying patches is **clean** and **explicit** (e.g. `On.Namespace.Type.Method += MyPatch;`)
     - We can simply **autocomplete** our patch method's definition
 - A single patch method can contain code that runs **before** and **after** the original method
 
