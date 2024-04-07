@@ -1,7 +1,7 @@
 ---
 prev: true
 next: false
-description: Learn how to use MonoMod for patching methods with Hooks and ILHooks.
+description: Unofficial MonoMod documentation for modders, with links to the official documentation.
 ---
 
 # MonoMod Documentation {#monomod-documentation}
