@@ -16,9 +16,9 @@ instances from host to clients.
 CSync was originally authored by [@Owen3H](https://github.com/Owen3H). Sadly, Owen fell out of favour
 with the Lethal Company Modding discord and removed CSync from the Thunderstore.
 
-This led to the creation of a fork, under the [@lc-sigurd](https://github.com/lc-sigurd) organisation. As of
-April 2024, the fork has undergone extensive changes, resolving many issues that remain unfixed in Owen's
-distribution of CSync.
+This led to the creation of a [fork](https://github.com/lc-sigurd/CSync), under the [@lc-sigurd](https://github.com/lc-sigurd) 
+organisation. As ofApril 2024, the fork has undergone extensive changes, resolving many issues that 
+remain unfixed in Owen's distribution of CSync.
 
 Shortly after removing CSync from the Thunderstore in March, Owen reinstated the mod. It is nonetheless
 recommended to use Sigurd's distribution of CSync.
@@ -29,7 +29,7 @@ For unknown reasons, Owen has transferred ownership of the [original CSync repos
 :::
 
 ## Setup
-There are two ways to depend upon **CSync**, but using the [NuGet package](https://www.nuget.org/packages/Owen3H.BepInEx.CSync)
+There are two ways to depend upon **CSync**, but using the [NuGet package](https://www.nuget.org/packages/Sigurd.BepInEx.CSync)
 is recommended.
 This will automatically include both an assembly reference and XML documentation.
 Depending via the Thunderstore method will not include XML documentation.
@@ -48,7 +48,7 @@ Alternatively, you can install it visually via the **NuGet** package manager.
 3. Choose the latest version and hit Install.
 
 ### Thunderstore (Manual)
-1. Download the latest version of the library on the [Thunderstore page](https://thunderstore.io/c/lethal-company/p/Owen3H/CSync/).
+1. Download the latest version of the library on the [Thunderstore page](https://thunderstore.io/c/lethal-company/p/Sigurd/CSync/).
 2. Extract the zip into your game directory root.
 3. In your mod's project, add an **Assembly Reference** to `../BepInEx/plugins/CSync/com.sigurd.csync.dll`.
 
