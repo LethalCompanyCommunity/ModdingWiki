@@ -205,7 +205,10 @@ private static void PlayerControllerB_Jump_performed(ILContext il)
         // IL_00b5: stfld float32 GameNetcodeStuff.PlayerControllerB::playerSlidingTimer // replace the value of 'playerSlidingTimer' with value from stack
         x => x.MatchLdarg(0),
         x => x.MatchLdcR4(0.0f),
-        x => x.MatchStfld<PlayerControllerB>("playerSlidingTimer")
+        // Note that nameof gives the name of a variable, type, or member as a string constant
+        // so this is the same as "playerSlidingTimer" but we can more easily change this
+        // if the game changes the name of that variable/type/member.
+        x => x.MatchStfld<PlayerControllerB>(nameof(PlayerControllerB.playerSlidingTimer))
         // The reason we have multiple things to match is to make sure
         // that even if the original IL code changes, we will find the
         // exact place if it still exists. If GotoNext doesn't match everything,
@@ -269,15 +272,23 @@ private static void PlayerControllerB_Update(ILContext il)
     ILCursor c = new(il);
     c.GotoNext(
         MoveType.After, // position our cursor after the last match
+        // IL_12db: ldarg.0     // load argument 0 'this' onto stack
+        // IL_12dc: ldfld class [UnityEngine.CoreModule]UnityEngine.Camera GameNetcodeStuff.PlayerControllerB::gameplayCamera   // push the value of 'gameplayCamera' onto stack
+        // IL_12e1: callvirt instance class [UnityEngine.CoreModule]UnityEngine.Transform [UnityEngine.CoreModule]UnityEngine.Component::get_transform()
+        // IL_12e6: callvirt instance valuetype [UnityEngine.CoreModule]UnityEngine.Vector3 [UnityEngine.CoreModule]UnityEngine.Transform::get_position()
         x => x.MatchLdarg(0),
-        x => x.MatchLdfld<PlayerControllerB>("gameplayCamera"),
-        x => x.MatchCallvirt<Component>("get_transform"),
-        x => x.MatchCallvirt<Transform>("get_position"),
+        x => x.MatchLdfld<PlayerControllerB>(nameof(PlayerControllerB.gameplayCamera)),
+        x => x.MatchCallvirt<Component>("get_" + nameof(Component.transform)), // Getter methods begin their name with 'get_' and nameof gives the name of transform, which is 'transform'
+        x => x.MatchCallvirt<Transform>("get_" + nameof(Transform.position)),
+        // IL_12eb: ldc.r4 3    // push 3 onto the stack as float32
+        // IL_12f0: call class StartOfRound StartOfRound::get_Instance()
+        // IL_12f5: ldfld int32 StartOfRound::collidersAndRoomMaskAndDefault    // push the value of 'collidersAndRoomMaskAndDefault' onto stack
+        // IL_12fa: call bool [UnityEngine.PhysicsModule]UnityEngine.Physics::CheckSphere(valuetype [UnityEngine.CoreModule]UnityEngine.Vector3, float32, int32)
         x => x.MatchLdcR4(3),
-        x => x.MatchCall<StartOfRound>("get_Instance"),
-        x => x.MatchLdfld<StartOfRound>("collidersAndRoomMaskAndDefault"),
-        x => x.MatchCall<Physics>("CheckSphere")
-    );
+        x => x.MatchCall<StartOfRound>("get_" + nameof(StartOfRound.Instance)),
+        x => x.MatchLdfld<StartOfRound>(nameof(StartOfRound.collidersAndRoomMaskAndDefault)),
+        x => x.MatchCall<Physics>(nameof(Physics.CheckSphere))
+        );
     c.Index -= 1;               // Position us before CheckSphere
     c.Remove();                 // Remove original call to CheckSphere
     c.Emit(OpCodes.Ldc_I4_1);   // Push QueryTriggerInteraction.Ignore (1) onto stack
@@ -287,11 +298,13 @@ private static void PlayerControllerB_Update(ILContext il)
     // otherwise we could just get the method like normal, e.g.:
     // c.Emit(OpCodes.Call, AccessTools.DeclaredMethod(typeof(Physics), nameof(Physics.CheckSphere)));
     c.Emit(
-        OpCodes.Call, typeof(Physics)
-        .GetMethods()           // There are multiple variations of the method 'CheckSphere'
-        .Where(x => x.Name == "CheckSphere")
-        .FirstOrDefault()       // The first method is the variation we are looking for
+        OpCodes.Call,
+        typeof(Physics)
+        .GetMethods()        // There are multiple variations of the method 'CheckSphere'
+        .First(x => x.Name.Equals(nameof(Physics.CheckSphere))
+            && x.GetParameters().Length == 4) // We want the variation which takes 4 arguments
     );
+    
     // Plugin.Logger.LogInfo(il.ToString()); // uncomment to print the modified IL code to console
 }
 ```
@@ -368,7 +381,7 @@ private static void BlobAI_OnCollideWithPlayer(ILContext il)
         // IL_0028: ldc.r4 0.0         // push 0 onto the stack as float32
         // IL_002d: bge.un.s IL_0030   // Branch to IL_0030 if angeredTimer >= 0
         x => x.MatchLdarg(0),
-        x => x.MatchLdfld<BlobAI>("angeredTimer"),
+        x => x.MatchLdfld<BlobAI>(nameof(BlobAI.angeredTimer)),
         x => x.MatchLdcR4(0.0f),
         // we can match instructions without specifying the value by using the 'out' keyword
         x => x.MatchBgeUn(out _)
@@ -418,7 +431,7 @@ private static void Transform_set_position(ILContext il)
         // IL_0003: call instance void UnityEngine.Transform::set_position_Injected(valuetype UnityEngine.Vector3&)
         x => x.MatchLdarg(0),
         x => x.MatchLdarga(out _),
-        x => x.MatchCall<Transform>("set_position_Injected")
+        x => x.MatchCall<Transform>("set_position_Injected") // we could also use nameof here if we publicized UnityEngine.CoreModule.dll
     );
     // Position us before the set_position_Injected call
     c.Index -= 1;
