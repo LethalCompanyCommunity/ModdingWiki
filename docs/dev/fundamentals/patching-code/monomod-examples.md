@@ -10,7 +10,7 @@ For an introduction to using MonoMod's `MMHOOK` assemblies, see [Patching Code â
 :::
 
 ::: tip
-See [MonoMod Documentation](./monomod-documentation.md) for more in-depth details!
+See our unofficial [MonoMod Documentation](./monomod-documentation.md) for more in-depth details!
 :::
 
 ## Hook Examples
@@ -82,12 +82,15 @@ So, since the `Application.isEditor`'s getter method does not have any arguments
 ### Patching IEnumerators
 Patching `IEnumerator` methods is different from patching "normal" methods. See the [HarmonyX](https://github.com/BepInEx/HarmonyX/wiki/Enumerator-patches) wiki on patching IEnumerator methods, as it explains well why IEnumerators need to be patched like so:
 ```cs
+// Somewhere in our code we subscribe to the event once:
+On.GameNetcodeStuff.PlayerControllerB.PlayerJump += PlayerControllerB_PlayerJump;
+// ...
 private static IEnumerator PlayerControllerB_PlayerJump(On.GameNetcodeStuff.PlayerControllerB.orig_PlayerJump orig, PlayerControllerB self)
 {
     // code here runs before the original method
 
     // Get the IEnumerator returned by the original method
-    var origIEnumerator = orig(self);
+    IEnumerator origIEnumerator = orig(self);
     // Repeat until MoveNext of origIEnumerator is false
     while (origIEnumerator.MoveNext())
     {
@@ -96,6 +99,8 @@ private static IEnumerator PlayerControllerB_PlayerJump(On.GameNetcodeStuff.Play
     // code here runs after the original method
 }
 ```
+This example `IEnumerator` patch doesn't change the original behavior, it only demonstrates how to write a patch without breaking the original method.
+
 ## ILHook Examples
 ### Introduction to ILHooks
 ILHooks are a way to modify the original methods on the **IL** (or **CIL**) level, which is what C# compiles to. This is how we can have full control over what the original method does.
@@ -107,6 +112,10 @@ When writing ILHooks, it is **important** to know the **IL instructions** you ar
 So, **for a list of IL instructions**, see [the Wikipedia page](https://en.wikipedia.org/wiki/List_of_CIL_instructions) or [Microsoft documentation](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.emit.opcodes?view=net-8.0#fields) on them.
 
 **Other relevant resources:** [IL Hooking â€” Risk of Rain 2 Modding Wiki](https://risk-of-thunder.github.io/R2Wiki/Mod-Creation/C%23-Programming/IL-Hooking/)
+
+:::tip
+See our unofficial [MonoMod Documentation](./monomod-documentation.md) for more in-depth details on e.g. [ILCursor](./monomod-documentation.md#ilcursor)!
+:::
 
 #### My First ILHook
 Let's say we want to make the following modification to the jumping behavior in the game:  
@@ -151,7 +160,9 @@ private void Jump_performed(InputAction.CallbackContext context)
     }
 }
 ```
-As we can see, if we used a normal Hook, there are many expressions we would have to copy from the if statement into our code for it to work as intended. And if another mod modifies these expressions, our mod will not get these changes because we would have just reimplemented the code instead. Alternatively we could try hooking the `PlayerJump` method, but it is a coroutine, which need special treatment to be hooked "properly".
+As we can see, if we used a normal Hook, there are many expressions we would have to copy from the if statement into our code for it to work as intended. And if another mod modifies these expressions, our mod will not get these changes because we would have just reimplemented the code instead.
+
+Alternatively we could try hooking the `PlayerJump` method, but it is a coroutine, which need special treatment to be hooked "properly". See [Patching IEnumerators](#patching-ienumerators) to find out how to do it. However for the sake of this example, we will not do that.
 
 The above method in IL with the place we are wanting to execute our code looks like this:
 ```IL
@@ -181,6 +192,7 @@ IL.GameNetcodeStuff.PlayerControllerB.Jump_performed += PlayerControllerB_Jump_p
 // ...
 private static void PlayerControllerB_Jump_performed(ILContext il)
 {
+    // We use ILCursor to make modifications to the il code
     ILCursor c = new(il);
 
     // Find a place inside the if statement which makes us jump.
@@ -471,12 +483,13 @@ If you are using a Hook or an ILHook, you can use `HookConfig` or `ILHookConfig`
 
 When using `DetourContext`, you will want to wrap it in a `using` statement so it disposes of itself afterwards, like so:
 ```cs
-using(new DetourContext(){ Priority = 100 })
+using(new DetourContext(priority: 100))
 {
     // The DetourContext is active inside this scope
     On.StartOfRound.Awake += StartOfRound_Awake;
 }
 ```
+For more details about `DetourContext`, [see our documentation on it](./monomod-documentation.md#detourcontext).
 ::: danger IMPORTANT
 In order to make `DetourContext` *actually* dispose of itself, you must install [DetourContext.Dispose Fix](https://thunderstore.io/c/lethal-company/p/Hamunii/DetourContext_Dispose_Fix/) and add a dependency to it in your mod's **manifest** file!
 
@@ -498,3 +511,4 @@ private static Hook myHook = new Hook
     new HookConfig(){ Priority = 100 } // or ILHookConfig for ILHooks
 );
 ```
+For more details about `HookConfig` and `ILHookConfig`, [see our documentation on them](./monomod-documentation.md#hookconfigs).

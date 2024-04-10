@@ -21,7 +21,7 @@ Hooks are used to **detour** from the original method to run your method instead
 
 You will probably most often use the following constructors:  
 `Hook(Delegate from, Delegate to)`  
-`Hook(Delegate from, Delegate to, HookConfig config)` -  
+`Hook(Delegate from, Delegate to, HookConfig config)`  
 For the full list, see the official documentation.
 
 #### Hook Example {#hook-example}
@@ -46,9 +46,11 @@ private static bool Hook_Application_get_isEditor(Func<bool> orig)
 #### Methods {#hook-methods}
 **For all methods, see the Official Documentation:** [MonoMod.RuntimeDetour.Hook - Methods](https://monomod.dev/api/MonoMod.RuntimeDetour.Hook.html#methods)
 
+##### Apply {#hook-apply}
 `void Apply()`  
 Applies the patch. This is normally done automatically.
 
+##### Undo {#hook-undo}
 `void Undo()`  
 Unapplies the patch.
 ___
@@ -100,9 +102,11 @@ private static void ILHook_BlobAI_OnCollideWithPlayer(ILContext il)
 #### Methods {#ilhook-methods}
 **For all methods, see the Official Documentation:** [MonoMod.RuntimeDetour.ILHook - Methods](https://monomod.dev/api/MonoMod.RuntimeDetour.ILHook.html#methods)
 
+##### Apply {#ilhook-apply}
 `void Apply()`  
 Applies the patch. This is normally done automatically.
 
+##### Undo {#ilhook-undo}
 `void Undo()`  
 Unapplies the patch.
 ___
@@ -117,13 +121,21 @@ A configuration object for Hooks/ILHooks. Can be fed as the final argument when 
 `HookConfig()` / `ILHookConfig()`
 
 #### Fields {#hookconfigs-fields}
+The fields of `HookConfig` / `ILHookConfig`.
+##### After {#hookconfigs-after}
 `IEnumerable<string> After`  
+
+##### Before {#hookconfigs-before}
 `IEnumerable<string> Before`  
+
+##### ID {#hookconfigs-id}
 `string ID`  
 
+##### ManualApply {#hookconfigs-manualapply}
 `bool ManualApply`  
 Determines whether or not the Hook/ILHook should be applied manually or not. Default: `false`.
 
+##### Priority {#hookconfigs-priority}
 `int Priority`  
 The priority for this hook. Range: `int.MinValue` to `int.MaxValue`. Default value: `0`. Hooks/ILHooks with a higher priority will run earlier than other Hooks/ILHooks for the same method they are patching.
 ___
@@ -141,7 +153,7 @@ using(new DetourContext(priority: 100))
     On.StartOfRound.Awake += StartOfRound_Awake;
 }
 ```
-::: warning IMPORTANT
+::: danger IMPORTANT
 You will need to install [DetourContext.Dispose Fix](https://thunderstore.io/c/plasma/p/Hamunii/DetourContext_Dispose_Fix/) to fix a bug which causes the **DetourContext** to never dispose of itself. This is because the version of **MonoMod.RuntimeDetour** shipped by **BepInEx** is too old to have that bug fix included.
 :::
 
@@ -152,15 +164,25 @@ You will need to install [DetourContext.Dispose Fix](https://thunderstore.io/c/p
 `DetourContext(string id)`
 
 #### Fields {#detourcontext-fields}
+The fields of `DetourContext`.
+
+##### After {#detourcontext-after}
 `List<string> After`  
+
+##### Before {#detourcontext-before}
 `List<string> Before`  
-`int Priority`
+
+##### Priority {#detourcontext-priority}
+`int Priority`  
+The priority for this hook. Range: `int.MinValue` to `int.MaxValue`. Default value: `0`. Hooks/ILHooks with a higher priority will run earlier than other Hooks/ILHooks for the same method they are patching.
 
 ## MonoMod.Cil {#monomod-cil}
 **Official Documentation:** [MonoMod.Cil](https://monomod.dev/api/MonoMod.Cil.html)
 ___
 ### ILContext {#ilcontext}
 **Official Documentation:** [MonoMod.Cil.ILContext](https://monomod.dev/api/MonoMod.Cil.ILContext.html)
+
+An IL manipulation "context" with various helpers and direct access to the MethodBody. Passed as an argument to [ILHook](#ilhook) patch methods.
 
 #### Properties {#ilcontext-properties}
 
@@ -239,7 +261,7 @@ Emit a new instruction at this cursor's current position.
 
 ##### EmitDelegate {#ilcursor-emitdelegate}
 `int EmitDelegate<T>(T cb) where T : Delegate`  
-Emit the IL to invoke a delegate as if it were a method. Stack behaviour matches `OpCodes.Call`
+Emit the IL to invoke a delegate as if it were a method. Stack behaviour matches `OpCodes.Call`.
 
 ##### GotoNext {#ilcursor-gotonext}
 `ILCursor GotoNext(params Func<Instruction, bool>[] predicates)`  

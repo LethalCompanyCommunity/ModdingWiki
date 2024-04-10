@@ -21,7 +21,10 @@ If you've ever wondered what [HookGenPatcher](https://thunderstore.io/c/lethal-c
 
 To use these events, we can for example do the following:
 ```cs
+// Subscribe to event, applying our patch
 On.GameNetcodeStuff.PlayerControllerB.Update += MyPatch;
+// Unsubscribe from event, undoing the patch
+On.GameNetcodeStuff.PlayerControllerB.Update -= MyPatch;
 ```
 ::: info
 `PlayerControllerB` is the class/script that controls all player characters in Lethal Company. It is defined under the `GameNetcodeStuff` namespace.  
@@ -87,10 +90,14 @@ private static void PlayerControllerB_Update(On.GameNetcodeStuff.PlayerControlle
 }
 ```
 ::: tip
-See [Patching Code With MonoMod — Examples](./patching-code/monomod-examples.md) for more examples and information about MonoMod usage!
+See [Patching Code With MonoMod — Examples](./patching-code/monomod-examples.md) for more examples and information about MonoMod usage, and see our unofficial [MonoMod Documentation](./patching-code/monomod-documentation.md) for more in-depth details on how things work!
 :::
 
 ## Harmony
+::: info NOTICE
+Unlike with MonoMod, **we don't have dedicated pages for Harmony on this wiki.**  
+If you wish to contribute to this wiki, see [Contributing Articles](/contribute/writing-articles).
+:::
 With Harmony, you need to follow certain rules to write your patches. You must specify the arguments you need in your patch methods, and they must be named correctly for them to be recognized as the correct ones. For example, the argument for the instance of an object must be named `__instance`.
 
 For more information about Harmony, see the [Harmony](https://harmony.pardeike.net/articles/intro.html) or [HarmonyX](https://github.com/BepInEx/HarmonyX/wiki/Basic-usage) documentation.
@@ -121,13 +128,15 @@ class MyPatches
 We have now briefly gone through using MonoMod and Harmony for Patching code. Let's now quickly go through the reasons why one might prefer either tool:
 
 **Why MonoMod**
-- **MonoMod.RuntimeDetour.HookGen's** `MMHOOK` assemblies make patching **easy**:
+- **MonoMod.RuntimeDetour.HookGen's** `MMHOOK` assemblies make patching easy:
     - Applying patches is **clean** and **explicit** (e.g. `On.Namespace.Type.Method += MyPatch;`)
     - We can simply **autocomplete** our patch method's definition
-- A single patch method can contain code that runs **before** and **after** the original method
+- A **single patch method** can contain code that runs **before and after** the original method
+- MonoMod patching works with predictable rules, meanwhile Harmony has its own specific rules you have to follow (e.g. special argument names)
+- We have dedicated pages for MonoMod on this wiki
 
 **Why Harmony**
-- You automatically register all your patches in a **single line**
+- You can register all your patches in a **single line**
 - Makes using the same patch method for multiple methods slightly easier
     - This is due to how you can specify the arguments you want; you don't need to include every argument in the definition of a patch like with MonoMod's **Hooks**
         - With **MonoMod**, you would need to make an **ILHook** for this
