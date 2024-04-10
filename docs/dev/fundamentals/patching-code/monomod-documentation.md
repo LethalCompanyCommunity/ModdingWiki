@@ -174,7 +174,7 @@ The fields of `DetourContext`.
 
 ##### Priority {#detourcontext-priority}
 `int Priority`  
-The priority for this hook. Range: `int.MinValue` to `int.MaxValue`. Default value: `0`. Hooks/ILHooks with a higher priority will run earlier than other Hooks/ILHooks for the same method they are patching.
+The priority for hooks set when the DetourContext is active. Range: `int.MinValue` to `int.MaxValue`. Default value: `0`. Hooks/ILHooks with a higher priority will run earlier than other Hooks/ILHooks for the same method they are patching.
 
 ## MonoMod.Cil {#monomod-cil}
 **Official Documentation:** [MonoMod.Cil](https://monomod.dev/api/MonoMod.Cil.html)
