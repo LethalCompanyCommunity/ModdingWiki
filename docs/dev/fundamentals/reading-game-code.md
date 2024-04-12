@@ -1,4 +1,6 @@
 ---
+prev: true
+next: true
 description: This article teaches how to use ILSpy in order to read game's code
 ---
 

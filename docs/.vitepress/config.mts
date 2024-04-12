@@ -82,7 +82,16 @@ export default defineConfig({
                   collapsed: false,
                   items: [
                     { text: "Logging", link: '/dev/fundamentals/logging'},
-                    { text: "Reading Game Code", link: '/dev/fundamentals/reading-game-code'}
+                    { text: "Reading Game Code", link: '/dev/fundamentals/reading-game-code'},
+                      { 
+                        text: "Patching Code",
+                        link: '/dev/fundamentals/patching-code',
+                        collapsed: true,
+                        items: [
+                          { text: "MonoMod Examples", link: '/dev/fundamentals/patching-code/monomod-examples'},
+                          { text: "MonoMod Docs", link: '/dev/fundamentals/patching-code/monomod-documentation'},
+                        ]
+                      }
                   ]
                 },
                 {
@@ -165,16 +174,18 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         { text: 'Usage Guide', link: '/dev/apis/csync/usage-guide' },
-                        { text: 'Migrating to v2', link: '/dev/apis/csync/v2-migration' },
+                        { text: 'Usage Guide (v4)', link: '/dev/apis/csync/v4-usage-guide' },
                         {
-                          text: 'Outdated', 
+                          text: 'Outdated',
                           link: '/dev/apis/csync/outdated',
                           collapsed: true,
                           items: [
-                            { text: 'Usage Guide', link: '/dev/apis/csync/outdated/usage-guide-outdated' },
+                            { text: 'Usage Guide (v3)', link: '/dev/apis/csync/outdated/v3-usage-guide' }, 
+                            { text: 'Migrating from v1', link: '/dev/apis/csync/outdated/migration-from-v1' },
+                            { text: 'Usage Guide (v1)', link: '/dev/apis/csync/outdated/v1-usage-guide'},
                             { text: 'Troubleshooting', link: '/dev/apis/csync/outdated/troubleshooting' }
                           ]
-                        }
+                        },
                       ]
                     },
                   ]
