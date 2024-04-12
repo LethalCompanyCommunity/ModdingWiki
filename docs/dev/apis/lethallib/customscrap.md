@@ -23,7 +23,7 @@ This item data lets you configure basically everything about your item. There ar
 - **Two Handed**: (`bool`) Whether the item gives the "Hands Full" message and prevents changing items.
 - **Two Handed Animation**: (`bool`) Whether the item uses the two-handed animation for carrying or not.
 - **Can Be Grabbed Before Game Start**: (`bool`) Usually recommended true.
-- **Weight**: (`float`) Determines the weight of the scrap. The weight in-game is equal to (this value - 1) * 100 (e.g. 1.18 is 18 lb).
+- **Weight**: (`float`) Determines the weight of the scrap. The weight in-game is equal to (this value - 1) * 105 (e.g. 1.18 is 18.9 lbs (ingame doesn't show decimals)).
 - **Item Spawns On Ground**: (`bool`) Should be true for scrap.
 
 - **Is Conductive Metal**: (`bool`) Whether this item attracts lightning.
