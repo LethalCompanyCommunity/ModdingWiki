@@ -445,7 +445,7 @@ private static void Transform_set_position(ILContext il)
     // Emit a call to our own method named PrintPosition in class MyPatches,
     // which takes a (valuetype UnityEngine.Vector3&) by reference as argument,
     // because ldarga.s loads the address of 'value' onto stack
-    c.Emit(OpCodes.Call, AccessTools.DeclaredMethod(typeof(LogPlayerPosition), nameof(PrintPosition)));
+    c.Emit(OpCodes.Call, AccessTools.DeclaredMethod(typeof(MyPatches), nameof(PrintPosition)));
 
     // The following IL code is after us:
     // IL_0003: call instance void UnityEngine.Transform::set_position_Injected(valuetype UnityEngine.Vector3&)
