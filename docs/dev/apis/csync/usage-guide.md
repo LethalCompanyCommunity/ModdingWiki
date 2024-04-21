@@ -72,9 +72,6 @@ public MyConfig(ConfigFile cfg) : base("My.Plugin.Guid") {
 ```
 
 After binding, we add the following line at the end of the constructor.
-```csharp
-ConfigManager.Register(this);
-```
 
 ```csharp
 public MyConfig(ConfigFile cfg) : base("My.Plugin.Guid") { 
