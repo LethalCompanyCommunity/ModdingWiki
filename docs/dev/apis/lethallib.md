@@ -9,20 +9,24 @@ This page will go over all the basics needed to start making mods using LethalLi
 ## LethalLib requirements
 To begin with LethalLib development, you will need the following mods:
 
-- [BepinExPack by BepInEx](https://thunderstore.io/c/lethal-company/p/BepInEx/BepInExPack/)
+- [BepInExPack by BepInEx](https://thunderstore.io/c/lethal-company/p/BepInEx/BepInExPack/)
 
-- [HookGenPatcher by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/HookGenPatcher/)
+- [HookGenPatcher by HarbingerOfMe (uploaded by Evaisa)](https://thunderstore.io/c/lethal-company/p/Evaisa/HookGenPatcher/)
 
 - [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/)
 
 These can be installed with a mod manager such as r2modman or Thunderstore manager, or installed manually. A mod manager will let you automatically update LethalLib, but a manual install makes it easier to do LAN multiplayer testing. The guides below will assume a manual install for simplicity.
 
 ## Development environment
-You will need to start by creating a plugin (see [Starting a Mod](/dev/starting-a-mod)) and adding the LethalLib .dll as a dependency. You do this in the same way you add the game assembly (see Starting a Mod again). If you manually installed LethalLib, you'd find it somewhere in `...\steamapps\common\Lethal Company\BepInEx\plugins`. If you installed via a mod manager, you can get to the mod profile folder where it will be located in a similar path like so:
+You will need to start by creating a plugin (see [Starting a Mod](/dev/starting-a-mod)) and adding the LethalLib's NuGet package as a package reference. This can be done by adding the following in your `csproj` file:
 
-![Image of r2modman, highlighting the 'Browse profile folder' option](/images/lethallib/ProfileFolderModman.png)
+```xml
+<ItemGroup>
+    <PackageReference Include="Evaisa.LethalLib" Version="0.*" /> // [!code ++]
+</ItemGroup>
+```
 
-You'll also want to add the LethalLib mod ID as a BepinEx dependency, which can be done by adding a `BepInDependency` attribute, like so:
+You'll also want to add the LethalLib mod ID as a BepInEx dependency, which can be done by adding a `BepInDependency` attribute, like so:
 ```cs
 [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
 [BepInDependency(LethalLib.Plugin.ModGUID)] // [!code ++]
@@ -30,16 +34,21 @@ public class MyPlugin : BaseUnityPlugin
 ```
 
 
-This is also a quick way of ensuring you've correctly added the LethalLib .dll as a dependency, as otherwise this will give you an error.
+This is also a quick way of ensuring you've correctly added the LethalLib as a package reference, as otherwise this will give you an error.
 
 ## Lethal Company Unity project
-In order to make mods for LethalLib, you will almost certainly need to use a decompiled Lethal Company Unity project so you can access the game scripts. You can either do a decompilation yourself with a program like [Asset Ripper](https://github.com/AssetRipper/AssetRipper), or use this [template project](https://github.com/EvaisaDev/LethalCompanyUnityTemplate/tree/main#readme), which provides stub scripts and no assets for a clean modding environment. A decompile is much harder to do but will give you all the games' data and assets to examine and use as a base for anything you make.
+In order to make mods for LethalLib, you will almost certainly need to use a decompiled Lethal Company Unity project so you can access the game scripts. For this you should use NomNom's [Lethal Company Project Patcher](https://github.com/nomnomab/lc-project-patcher#readme), which can output a working Lethal Company Unity project.
+
+:::tip
+If you are making an enemy mod, the [LC-ExampleEnemy](https://github.com/Hamunii/LC-ExampleEnemy) project provides a template Unity project made with the **Lethal Company Project Patcher**. [See the custom enemies tutorial here](/dev/apis/lethallib/custom-enemies/overview).
+:::
+
+:::danger
+You could also use Evaisa's [Lethal Company Unity Template](https://github.com/EvaisaDev/LethalCompanyUnityTemplate/tree/main#readme), **but we don't recommend using it since it is outdated**.
+:::
 
 ## Specific tutorials
 Each page below goes through the full process of creating a mod for the given part of Lethal Company via LethalLib. These will use the template project above as a base.
 
 - [Custom Scrap](/dev/apis/lethallib/customscrap)
-
 - [Custom Enemies](/dev/apis/lethallib/custom-enemies/overview)
-
-- Custom Dungeons [WIP]
