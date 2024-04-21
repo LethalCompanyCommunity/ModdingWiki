@@ -11,7 +11,7 @@ description: The main guide to using CSync (v4).
 Create a new class extending `SyncedConfig`.
 
 ```csharp
-public class MyConfig : SyncedConfig<Config>
+public class MyConfig : SyncedConfig<MyConfig>
 ```
 
 Within this class, we declare fields for each config entry we would like to sync.
@@ -19,7 +19,7 @@ Optionally, you can also declare non-synced config entries too.
 Each `SyncedEntry` must be annotated with the `[DataMember]` attribute.
 
 ```csharp
-public class MyConfig : SyncedConfig<Config> {
+public class MyConfig : SyncedConfig<MyConfig> {
     public ConfigEntry<float> DebugLevel { get; private set; }
     
     [DataMember] public SyncedEntry<float> MovementSpeed; // fields may be annotated directly
@@ -36,7 +36,7 @@ When using client side and synced entries in the same class, any instance of `Co
 We add a constructor to our config class that calls the base constructor.
 
 ```csharp
-public class MyConfig : SyncedConfig<Config> {
+public class MyConfig : SyncedConfig<MyConfig> {
     public MyConfig(ConfigFile configFile) : base("My.Plugin.Guid") { } // [!code focus]
 }
 ```
