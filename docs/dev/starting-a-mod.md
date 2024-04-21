@@ -7,13 +7,15 @@ description: Learn how to create a basic project for a Lethal Company mod.
 # Starting a mod
 
 ## Setting up your project {#setup-project}
+
 ::: warning
 This guide assumes you've completed all the required steps in **[initial setup](/dev/initial-setup)**, or that you know what you're doing.
 :::
 
 This guide follows certain parts of the [official BepInEx guide](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/2_plugin_start.html).
 
-### Using the template repository {#using-template-repo}
+### Using the template repository (Harmony Only) {#using-template-repo}
+
 ::: danger Outdated Template
 The linked GitHub template repository may be **stale**. Refer to the Lethal Company Modding Discord server if you encounter issues using it.
 :::
@@ -24,35 +26,51 @@ It does come with some minor drawbacks such as it using "LethalCompanyTemplate" 
 
 It is important that you remove all unused template code from the project before distributing your mod.
 
-### Creating your project {#create-project}
+### Using the dotnet template {#using-dotnet-template}
 
-First things first, you'll need to create your project. If you've not done so already, we recommend running the following command in a console to add some BepInEx templates for new projects:
+First things first, you'll need to create your project. If you've not done so already, we recommend running the following command in a console to add some Lethal Company templates for new projects:
 
-```cmd
-dotnet new -i BepInEx.Templates --nuget-source https://nuget.bepinex.dev/v3/index.json
+```shell
+dotnet new -i Xilophor.LCModTemplates
 ```
 
 Next, you'll want to create a new project (sometimes called "solution", in CSharp). There are two main ways to do this.
 
-#### Using an IDE (more control) {#using-ide}
+#### Using an IDE (easier) {#using-ide}
 
-Depending on your IDE, this process will look slightly different. You'll want to give the solution the name of your soon-to-be mod. If given the option to use a template (you may want to google for *"how to use template in Visual Studio"* or *"how to use template in Rider"*), use the `BepInEx 5 Plugin Template`.
+Depending on your IDE, this process will look slightly different. You'll want to give the solution the name of your soon-to-be mod. If given the option to use a template (you may want to google for *"how to use template in Visual Studio"* or *"how to use template in Rider"*), use the `Lethal Company Harmony Mod Template`.
 
-#### Using the console (simpler) {#using-console}
+#### Using the console (recommended for control) {#using-console}
 
-Alternatively, you can open a console and run the following command, assuming you've set up the templates using the command above. Replace `MyFirstPlugin` with your mod's name:
+Alternatively, you can open a console and run the following command, assuming you've set up the templates using the command above.
+Replace `MyFirstMod` with your mod's name, and `MyName` with your username:
 
-```cmd
-dotnet new bepinex5plugin -n MyFirstPlugin -T "netstandard2.1" -U "2022.3.9"
+```shell
+dotnet new lcharmony -n MyFirstMod -M MyName.MyFirstMod
 ```
 
-::: warning
-Some people have been [reporting problems](https://github.com/BepInEx/BepInEx.Templates/issues/8) creating new BepInEx plugins from the template when using the .NET 8 SDK:
+To see the other options provided in the mod template, you can use the following command:
 
-`Failed to create template.
-Details: Object reference not set to an instance of an object.`
+```shell
+dotnet new lcharmony --help
+```
 
-If you get this error, try downgrading to the [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0).
+#### Note for MonoMod users {#monomod-template}
+
+:::details MonoMod Template
+If you want to use MonoMod, you can instead use the `Lethal Company MonoMod Mod Template` in your IDE or use `lcmonomod` instead of `lcharmony` in the console.
+
+This template has an additional argument/setting for MonoMod specifically. In VS, it can be seen under MMHOOKLocation, and in the console, it's set with the `-MM` argument.
+This argument/setting is to set the MMHOOK directory to use for hooking (i.e. the HookGen "plugin").
+
+Without changing this setting, you will have to manually hook instead of using the `On.Class.Method += CustomMethod;` style provided by HookGen.
+
+Example command line usage with a path of `C:\path\to\r2modman\LethalCompany\profiles\test\BepInEx\plugins\MMHOOK\`:
+
+```shell
+dotnet new lcmonomod -n MyFirstMod -M MyName.MyFirstMod -MM "C:\path\to\r2modman\LethalCompany\profiles\test\BepInEx\plugins\MMHOOK"
+```
+
 :::
 
 ### Organising your modding projects {#organize-project}

@@ -1,6 +1,6 @@
 ---
 prev: false
-next: false
+next: true
 description: Learn the best practices in logging!
 ---
 
