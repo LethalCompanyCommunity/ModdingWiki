@@ -17,7 +17,7 @@ CSync was originally authored by [@Owen3H](https://github.com/Owen3H). Sadly, Ow
 with the Lethal Company Modding discord and removed CSync from the Thunderstore.
 
 This led to the creation of a [fork](https://github.com/lc-sigurd/CSync), under the [@lc-sigurd](https://github.com/lc-sigurd) 
-organisation. As ofApril 2024, the fork has undergone extensive changes, resolving many issues that 
+organisation. As of April 2024, the fork has undergone extensive changes, resolving many issues that 
 remain unfixed in Owen's distribution of CSync.
 
 Shortly after removing CSync from the Thunderstore in March, Owen reinstated the mod. It is nonetheless
