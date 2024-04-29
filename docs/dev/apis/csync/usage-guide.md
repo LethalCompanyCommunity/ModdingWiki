@@ -6,13 +6,6 @@ description: The main guide to using CSync (v5).
 
 # Guide to using CSync
 
-::: warning
-
-## CSync 5 is unreleased.
-Please use the [CSync 4 usage guide](/dev/apis/csync/v4-usage-guide) for the time being.
-
-:::
-
 ## 1. Creating your config class
 
 Create a new class extending `SyncedConfig2`.
