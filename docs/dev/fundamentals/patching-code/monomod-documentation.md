@@ -154,7 +154,7 @@ using(new DetourContext(priority: 100))
 }
 ```
 ::: danger IMPORTANT
-You will need to install [DetourContext.Dispose Fix](https://thunderstore.io/c/plasma/p/Hamunii/DetourContext_Dispose_Fix/) to fix a bug which causes the **DetourContext** to never dispose of itself. This is because the version of **MonoMod.RuntimeDetour** shipped by **BepInEx** is too old to have that bug fix included.
+You will need to install [DetourContext.Dispose Fix](https://thunderstore.io/c/lethal-company/p/Hamunii/DetourContext_Dispose_Fix/) to fix a bug which causes the **DetourContext** to never dispose of itself. This is because the version of **MonoMod.RuntimeDetour** shipped by **BepInEx** is too old to have that bug fix included.
 :::
 
 #### Constructors {#detourcontext-constructors}
