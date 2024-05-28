@@ -192,4 +192,4 @@ class MyModConfig
 
 Now you have config files for your mods! If it's extremely important that your mod has a config value that's the same for every player, you may want to consider reading the page on [custom config syncing](/dev/intermediate/custom-config-syncing).
 
-Alternatively, you might want to use an easy-to-use library for syncing configs, like [CSync](/docs/dev/apis/csync.md).
+Alternatively, you might want to use an easy-to-use library for syncing configs, like [CSync](/dev/apis/csync).
