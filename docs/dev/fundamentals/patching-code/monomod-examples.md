@@ -10,7 +10,7 @@ For an introduction to using MonoMod's `MMHOOK` assemblies, see [Patching Code â
 :::
 
 ::: tip
-See our unofficial [MonoMod Documentation](./monomod-documentation.md) for more in-depth details!
+See our unofficial [Legacy MonoMod Documentation](./monomod-documentation.md) for more in-depth details! The version of **MonoMod** we use with BepInEx is considered **legacy**, so we look for legacy documentation.
 :::
 
 ## Hook Examples

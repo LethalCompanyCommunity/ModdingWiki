@@ -1,21 +1,25 @@
 ---
 prev: true
 next: false
-description: Unofficial MonoMod documentation for modders, with links to the official documentation.
+description: Unofficial legacy MonoMod documentation for modders, with links to the official legacy documentation.
 ---
 
-# MonoMod Documentation {#monomod-documentation}
+# Legacy MonoMod - Documentation {#monomod-documentation}
 ## Official Documentation {#official-documentation}
-MonoMod has official documentation here: https://monomod.dev/api/index.html  
+::: danger
+This page is about **legacy MonoMod**—the version shipped by **BepInEx**, which is what we use.  
+The documentation on https://monomod.dev/ is for **“reorganize”**—the next version of MonoMod, *with breaking changes,* which this page doesn't touch.
+:::
+Legacy MonoMod has official documentation here: https://monomod.github.io/api/index.html  
 
 And while it contains useful information, not everything is well documented. This is where this page comes in; we have documented and linked some of the most relevant pieces of information for modders.
 
 ## MonoMod.RuntimeDetour {#monomod-runtimedetour}
-**Official Documentation:** [MonoMod.RuntimeDetour](https://monomod.dev/api/MonoMod.RuntimeDetour.html)  
-**Official Usage Example:** [RuntimeDetour Usage](https://github.com/MonoMod/MonoMod/blob/reorganize/docs/RuntimeDetour/Usage.md)
+**Official Documentation:** [MonoMod.RuntimeDetour](https://monomod.github.io/api/MonoMod.RuntimeDetour.html)  
+**Official Usage Example:** [RuntimeDetour Usage](https://github.com/MonoMod/MonoMod/blob/master/README-RuntimeDetour.md)
 ___
 ### Hook {#hook}
-**Official Documentation:** [MonoMod.RuntimeDetour.Hook](https://monomod.dev/api/MonoMod.RuntimeDetour.Hook.html)
+**Official Documentation:** [MonoMod.RuntimeDetour.Hook](https://monomod.github.io/api/MonoMod.RuntimeDetour.Hook.html)
 
 Hooks are used to **detour** from the original method to run your method instead. They allow receiving a **trampoline** as the first parameter, which when called will call the previous detour in the chain if it exists, or the **original method** if none exist.
 
@@ -44,7 +48,7 @@ private static bool Hook_Application_get_isEditor(Func<bool> orig)
 ```
 
 #### Methods {#hook-methods}
-**For all methods, see the Official Documentation:** [MonoMod.RuntimeDetour.Hook - Methods](https://monomod.dev/api/MonoMod.RuntimeDetour.Hook.html#methods)
+**For all methods, see the Official Documentation:** [MonoMod.RuntimeDetour.Hook - Methods](https://monomod.github.io/api/MonoMod.RuntimeDetour.Hook.html#methods)
 
 ##### Apply {#hook-apply}
 `void Apply()`  
@@ -55,7 +59,7 @@ Applies the patch. This is normally done automatically.
 Unapplies the patch.
 ___
 ### ILHook {#ilhook}
-**Official Documentation:** [MonoMod.RuntimeDetour.ILHook](https://monomod.dev/api/MonoMod.RuntimeDetour.ILHook.html)
+**Official Documentation:** [MonoMod.RuntimeDetour.ILHook](https://monomod.github.io/api/MonoMod.RuntimeDetour.ILHook.html)
 
 ILHooks are a different type of detour. Instead of detouring from the original code to your method and calling the trampoline, your method runs once to do the modifications to the IL code, when applied.
 
@@ -100,7 +104,7 @@ private static void ILHook_BlobAI_OnCollideWithPlayer(ILContext il)
 ```
 
 #### Methods {#ilhook-methods}
-**For all methods, see the Official Documentation:** [MonoMod.RuntimeDetour.ILHook - Methods](https://monomod.dev/api/MonoMod.RuntimeDetour.ILHook.html#methods)
+**For all methods, see the Official Documentation:** [MonoMod.RuntimeDetour.ILHook - Methods](https://monomod.github.io/api/MonoMod.RuntimeDetour.ILHook.html#methods)
 
 ##### Apply {#ilhook-apply}
 `void Apply()`  
@@ -112,8 +116,8 @@ Unapplies the patch.
 ___
 ### HookConfig / ILHookConfig {#hookconfigs}
 **Official Documentation:**  
-[MonoMod.RuntimeDetour.HookConfig](https://monomod.dev/api/MonoMod.RuntimeDetour.HookConfig.html)  
-[MonoMod.RuntimeDetour.ILHookConfig](https://monomod.dev/api/MonoMod.RuntimeDetour.ILHookConfig.html)
+[MonoMod.RuntimeDetour.HookConfig](https://monomod.github.io/api/MonoMod.RuntimeDetour.HookConfig.html)  
+[MonoMod.RuntimeDetour.ILHookConfig](https://monomod.github.io/api/MonoMod.RuntimeDetour.ILHookConfig.html)
 
 A configuration object for Hooks/ILHooks. Can be fed as the final argument when creating a Hook/ILHook.
 
@@ -140,7 +144,7 @@ Determines whether or not the Hook/ILHook should be applied manually or not. Def
 The priority for this hook. Range: `int.MinValue` to `int.MaxValue`. Default value: `0`. Hooks/ILHooks with a higher priority will run earlier than other Hooks/ILHooks for the same method they are patching.
 ___
 ### DetourContext {#detourcontext}
-**Official Documentation:** [MonoMod.RuntimeDetour.DetourContext](https://monomod.dev/api/MonoMod.RuntimeDetour.DetourContext.html)
+**Official Documentation:** [MonoMod.RuntimeDetour.DetourContext](https://monomod.github.io/api/MonoMod.RuntimeDetour.DetourContext.html)
 
 **DetourContext** is used for ambiently setting a **DetourConfig**, which is basically the same thing as HookConfig/ILHookConfig. This allows us to use things like priority while using **MonoMod.RuntimeDetour.HookGen**'s `MMHOOK` helper assemblies.
 
@@ -177,19 +181,19 @@ The fields of `DetourContext`.
 The priority for hooks set when the DetourContext is active. Range: `int.MinValue` to `int.MaxValue`. Default value: `0`. Hooks/ILHooks with a higher priority will run earlier than other Hooks/ILHooks for the same method they are patching.
 
 ## MonoMod.Cil {#monomod-cil}
-**Official Documentation:** [MonoMod.Cil](https://monomod.dev/api/MonoMod.Cil.html)
+**Official Documentation:** [MonoMod.Cil](https://monomod.github.io/api/MonoMod.Cil.html)
 ___
 ### ILContext {#ilcontext}
-**Official Documentation:** [MonoMod.Cil.ILContext](https://monomod.dev/api/MonoMod.Cil.ILContext.html)
+**Official Documentation:** [MonoMod.Cil.ILContext](https://monomod.github.io/api/MonoMod.Cil.ILContext.html)
 
 An IL manipulation "context" with various helpers and direct access to the MethodBody. Passed as an argument to [ILHook](#ilhook) patch methods.
 
 #### Properties {#ilcontext-properties}
 
-**See:** [MonoMod.Cil.ILContext - Properties](https://monomod.dev/api/MonoMod.Cil.ILContext.html#properties)
+**See:** [MonoMod.Cil.ILContext - Properties](https://monomod.github.io/api/MonoMod.Cil.ILContext.html#properties)
 
 #### Methods {#ilcontext-methods}
-**For all methods, see the Official Documentation:** [MonoMod.Cil.ILCursor - Methods](https://monomod.dev/api/MonoMod.Cil.ILContext.html#methods)
+**For all methods, see the Official Documentation:** [MonoMod.Cil.ILCursor - Methods](https://monomod.github.io/api/MonoMod.Cil.ILContext.html#methods)
 
 The most relevant methods ILContext provides are listed here.
 
@@ -201,7 +205,7 @@ Create a new label without target, to be marked with a cursor. See: [ILCursor::M
 Define a new label pointing at a given instruction.
 ___
 ### ILCursor {#ilcursor}
-**Official Documentation:** [MonoMod.Cil.ILCursor](https://monomod.dev/api/MonoMod.Cil.ILCursor.html)
+**Official Documentation:** [MonoMod.Cil.ILCursor](https://monomod.github.io/api/MonoMod.Cil.ILCursor.html)
 
 A cursor used to manipulate a method body in an [ILContext](#ilcontext). Similar to a text cursor, the **ILCursor** is *between instructions*. ILCursors are used by making an instance of one from an **ILContext**, and using methods such as [Emit](#ilcursor-emit), [EmitDelegate](#ilcursor-emitdelegate) and [Remove](#ilcursor-remove) to modify the ILContext directly.
 
@@ -211,7 +215,7 @@ A cursor used to manipulate a method body in an [ILContext](#ilcontext). Similar
 `ILCursor(ILCursor c)`
 
 #### Properties {#ilcursor-properties}
-**For all properties, see the Official Documentation:** [MonoMod.Cil.ILCursor - Properties](https://monomod.dev/api/MonoMod.Cil.ILCursor.html#properties)
+**For all properties, see the Official Documentation:** [MonoMod.Cil.ILCursor - Properties](https://monomod.github.io/api/MonoMod.Cil.ILCursor.html#properties)
 
 ##### Index {#ilcursor-index}
 `int Index { get; set; }`  
@@ -227,7 +231,7 @@ The instruction immediately following the cursor position or null if the cursor 
 The instruction immediately preceding the cursor position or null if the cursor is at the start of the instruction list.
 
 #### Methods {#ilcursor-methods}
-**For all methods, see the Official Documentation:** [MonoMod.Cil.ILCursor - Methods](https://monomod.dev/api/MonoMod.Cil.ILCursor.html#methods)
+**For all methods, see the Official Documentation:** [MonoMod.Cil.ILCursor - Methods](https://monomod.github.io/api/MonoMod.Cil.ILCursor.html#methods)
 
 The most relevant methods ILCursor provides are listed here.
 
@@ -256,7 +260,7 @@ Remove several instructions.
 `ILCursor Emit(OpCode opcode, FieldReference field)`  
 `ILCursor Emit(OpCode opcode, MethodBase method)`  
 `ILCursor Emit(OpCode opcode, ParameterDefinition parameter)`  
-[... And more](https://monomod.dev/api/MonoMod.Cil.ILCursor.html#MonoMod_Cil_ILCursor_Emit_Mono_Cecil_Cil_OpCode_)  
+[... And more](https://monomod.github.io/api/MonoMod.Cil.ILCursor.html#MonoMod_Cil_ILCursor_Emit_Mono_Cecil_Cil_OpCode_)  
 Emit a new instruction at this cursor's current position.  
 
 ##### EmitDelegate {#ilcursor-emitdelegate}
