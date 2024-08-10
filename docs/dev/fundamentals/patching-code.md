@@ -85,7 +85,7 @@ private static void MyPatch(On.GameNetcodeStuff.PlayerControllerB.orig_Update or
 ```
 What we just did is call the original method `orig` with the arguments it takes, which is just `self`. If it had more arguments, we would also pass them in the `orig` call, e.g. `orig(self, arg2, arg3);`. The reason why `self` is an argument is because the method we are patching is not static meaning it has an instance, which is what `self` is.
 
-With `self`, we can access and manipulate the variables of the GameObject, which in this case would be an instance of `PlayerControllerB`. Now we have gone through the basics, and we will move on to examples.
+With `self`, we can access and manipulate the variables of the class (script), which in this case would be an instance of `PlayerControllerB`. Now we have gone through the basics, and can move on to examples.
 
 ### Example Patch With MonoMod {#example-patch-monomod}
 One of the easiest patches you can do is an infinite sprint patch by setting sprint meter to full every frame. Here we have hooked `PlayerControllerB`'s `Update` method which runs every frame. In the Hook, we run the original method, and then set `sprintMeter` to `1`. In this case it doesn't really matter if our code runs before or after the original method, because this is such a simple patch.
