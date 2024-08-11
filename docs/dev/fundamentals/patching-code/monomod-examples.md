@@ -18,7 +18,7 @@ See our unofficial [Legacy MonoMod Documentation](./monomod-documentation.md) fo
 ::: info
 This is the same example patch as shown in [Patching Code — Example Patch With MonoMod](../patching-code.md#example-patch-monomod).
 :::
-One of the easiest patches you can do is an infinite sprint patch by setting sprint meter to full every frame. Here we have hooked `PlayerControllerB`'s `Update` method which runs every frame. In the Hook, we run the original method, and then set `sprintMeter` to `1`. In this case it doesn't really matter if our code runs before or after the original method, because this is such a simple patch.
+A simple patch we can do is killing the player if they get exhausted (run out of stamina). Here we have hooked `PlayerControllerB`'s `Update` method which runs every frame. In the Hook, we run the original method, and then get the value of `isExhausted` and check if it's true in an if statement. If it's true, we call `KillPlayer` on the `PlayerControllerB` instance.
 ```cs
 // Somewhere in our code we subscribe to the event once:
 On.GameNetcodeStuff.PlayerControllerB.Update += PlayerControllerB_Update;
@@ -26,7 +26,9 @@ On.GameNetcodeStuff.PlayerControllerB.Update += PlayerControllerB_Update;
 private static void PlayerControllerB_Update(On.GameNetcodeStuff.PlayerControllerB.orig_Update orig, GameNetcodeStuff.PlayerControllerB self)
 {
     orig(self);
-    self.sprintMeter = 1;
+
+    if (self.isExhausted)
+        self.KillPlayer(Vector3.zero);
 }
 ```
 

@@ -88,7 +88,7 @@ What we just did is call the original method `orig` with the arguments it takes,
 With `self`, we can access and manipulate the variables of the class (script), which in this case would be an instance of `PlayerControllerB`. Now we have gone through the basics, and can move on to examples.
 
 ### Example Patch With MonoMod {#example-patch-monomod}
-One of the easiest patches you can do is an infinite sprint patch by setting sprint meter to full every frame. Here we have hooked `PlayerControllerB`'s `Update` method which runs every frame. In the Hook, we run the original method, and then set `sprintMeter` to `1`. In this case it doesn't really matter if our code runs before or after the original method, because this is such a simple patch.
+A simple patch we can do is killing the player if they get exhausted (run out of stamina). Here we have hooked `PlayerControllerB`'s `Update` method which runs every frame. In the Hook, we run the original method, and then get the value of `isExhausted` and check if it's true in an if statement. If it's true, we call `KillPlayer` on the `PlayerControllerB` instance.
 ```cs
 // Somewhere in our code we subscribe to the event once:
 On.GameNetcodeStuff.PlayerControllerB.Update += PlayerControllerB_Update;
@@ -99,10 +99,21 @@ private static void PlayerControllerB_Update(On.GameNetcodeStuff.PlayerControlle
     orig(self); // Call the original method with its arguments
     // Code here runs after the original method
 
-    // Set the sprintMeter variable of this instance of PlayerControllerB to 1
-    self.sprintMeter = 1; 
+    // isExhausted is a boolean field of PlayerControllerB which
+    // is set to true after running out of stamina. 
+    if (self.isExhausted)
+    {
+        // KillPlayer is a method of PlayerControllerB which
+        // kills the player instance.
+        // This method takes in multiple arguments, but the only
+        // required argument is the velocity as a Vector3 for the
+        // spawned dead body object, which we'll specify as zero.
+        self.KillPlayer(Vector3.zero);
+    }
 }
 ```
+Notice that patches will always apply for every instance of a class, so this code runs for every other player instance in your game. However, this patch will not kill other players running out of stamina even if you have this patch applied, since `KillPlayer` makes sure that it only runs if a client calls it on themselves.
+
 ::: tip
 See [Patching Code With MonoMod — Examples](./patching-code/monomod-examples.md) for more examples and information about MonoMod usage, and see our unofficial [MonoMod Documentation](./patching-code/monomod-documentation.md) for more in-depth details on how things work!
 :::
@@ -117,7 +128,7 @@ With Harmony, you need to follow certain rules to write your patches. You must s
 For more information about Harmony, see the [Harmony](https://harmony.pardeike.net/articles/intro.html) or [HarmonyX](https://github.com/BepInEx/HarmonyX/wiki/Basic-usage) documentation.
 
 ### Example Patch With Harmony {#example-patch-harmony}
-We will now do the same patch for infinite sprint as we did with MonoMod:
+We will now do the same patch for dying from exhaustion as we did with MonoMod:
 
 ```cs
 using HarmonyLib;
@@ -132,8 +143,10 @@ class MyPatches
     [HarmonyPostfix]
     private static void PlayerControllerB_Update(PlayerControllerB __instance)
     {
-        // Set the sprintMeter variable of this instance of PlayerControllerB to 1
-        __instance.sprintMeter = 1;
+        if (__instance.isExhausted)
+        {
+            __instance.KillPlayer(Vector3.zero);
+        }
     }
 }
 ```
