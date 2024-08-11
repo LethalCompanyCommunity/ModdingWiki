@@ -18,7 +18,7 @@ See our unofficial [Legacy MonoMod Documentation](./monomod-documentation.md) fo
 ::: info
 This is the same example patch as shown in [Patching Code — Example Patch With MonoMod](../patching-code.md#example-patch-monomod).
 :::
-One of the easiest patches you can do is an infinite sprint patch by setting sprint meter to full every frame. Here we have hooked `PlayerControllerB`'s `Update` method which runs every frame. In the Hook, we run the original method, and then set `sprintMeter` to `1`. In this case it doesn't really matter if our code runs before or after the original method, because this is such a simple patch.
+A simple patch we can do is killing the player if they get exhausted (run out of stamina). Here we have hooked `PlayerControllerB`'s `Update` method which runs every frame. In the Hook, we run the original method, and then get the value of `isExhausted` and check if it's true in an if statement. If it's true, we call `KillPlayer` on the `PlayerControllerB` instance.
 ```cs
 // Somewhere in our code we subscribe to the event once:
 On.GameNetcodeStuff.PlayerControllerB.Update += PlayerControllerB_Update;
@@ -26,7 +26,9 @@ On.GameNetcodeStuff.PlayerControllerB.Update += PlayerControllerB_Update;
 private static void PlayerControllerB_Update(On.GameNetcodeStuff.PlayerControllerB.orig_Update orig, GameNetcodeStuff.PlayerControllerB self)
 {
     orig(self);
-    self.sprintMeter = 1;
+
+    if (self.isExhausted)
+        self.KillPlayer(Vector3.zero);
 }
 ```
 
@@ -121,6 +123,13 @@ See our unofficial [MonoMod Documentation](./monomod-documentation.md) for more 
 Let's say we want to make the following modification to the jumping behavior in the game:  
 *When running, the character should perform much bigger jumps.*
 
+::: danger WARNING
+On Thunderstore's Lethal Company Community, even a new game mechanic like this **will be considered as cheating and is not allowed on the site** if it provides an unfair advantage on other players *and* your mod can run for non-host clients without the host being able to opt-out of this feature.
+
+In a case like this, you could register a new dummy network object which will automatically prevent players without that network object from joining your lobby, by showing an error message instead.
+
+:::
+
 To do this, we must know that the variable `jumpForce` of `PlayerControllerB` affects how strong jumps are, so let's try making a normal Hook to change it depending on whether or not we are sprinting:
 
 ```cs
@@ -142,6 +151,9 @@ This is because `jumpForce` is used when calculating fall speed, and changing it
 There are many ways to work around this, and one way to make sure it is only changed when jumping is to use an ILHook. We will move the above logic to only run when the `Jump_performed` method is run and the player is allowed to jump.
 
 The decompiled `Jump_performed` method will look something like this:
+::: info
+The latest versions have new method calls in this method that we could hook to, and *even an event that can be subscribed to when the player jumps,* but for the sake of this example we'll ignore those and show the older decompiled version of the method which doesn't have those.
+:::
 ```cs
 private void Jump_performed(InputAction.CallbackContext context)
 {
@@ -244,6 +256,9 @@ The hard part about ILHooking is that it is very easy to emit invalid IL code, w
 
 ### Replacing a Method Call
 
+::: warning
+This patch example is for an older version of the game, and isn't valid for the latest versions.
+:::
 ::: info
 The following ILHook example is taken from the [JetpackFallFix](https://thunderstore.io/c/lethal-company/p/Hamunii/JetpackFallFix/) mod.
 :::
