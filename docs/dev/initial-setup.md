@@ -42,16 +42,14 @@ By far the most important tool in a programmer's toolbox is an IDE (=Integrated 
 You might wonder why some of these are important (or what some of these even are), but that falls outside of the scope of this wiki. Rest assured however that they're essential and will save you a lot of headaches. Do *not* try and create mods in a simple text editor such as notepad. Technically, you can do this, but there's no reason for it beyond masochism.
 
 **For IDE's, we recommend one of the following free options:**
-- [Visual Studio](https://visualstudio.microsoft.com/) -- **Recommended** -- An all-in-one package. Has a built-in decompiler, which can save some time.
+- [Visual Studio](https://visualstudio.microsoft.com/) -- An all-in-one package. Has a built-in decompiler, which can save some time.
+- [Rider](https://www.jetbrains.com/rider/) -- **Recommended** (The author of this article uses it himself) -- An all-in-one package. Comparable to Visual Studio. Has a built-in decompiler, which can save some time.
 
 :::info
 If you already have Visual Studio installed, you'll want ensure you're on Visual Studio 2022. This is the version that supports .Net 7, and has the correct MSBuild Version to build your project solution.
 :::
 
 - [Visual Studio Code](https://code.visualstudio.com/) -- A more lightweight package.
-
-**If you have access to a Jetbrains License, we recommend the following paid option:**
-- [Rider](https://www.jetbrains.com/rider/) -- **Recommended** (The author of this article uses it himself) -- An all-in-one package. Comparable to Visual Studio. Has a built-in decompiler, which can save some time.
 
 ### BepInEx
 To actually load mods into the game, we need a mod loader. This is where BepInEx comes in! **Be**pis **In**jector **Ex**tensible is a patcher/plug-in framework for Unity games. It'll handle everything related to getting the plugin to actually load into the game, so we can focus on creating the plugin without having to worry about anything else.
