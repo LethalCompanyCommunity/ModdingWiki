@@ -41,10 +41,10 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 - ⭐ [CSync](https://thunderstore.io/c/lethal-company/p/Sigurd/CSync/) is a compact library/API enabling mod authors to synchronize the host's configuration file with all other clients. [The wiki page on CSync](/dev/apis/csync) will guide you through the process of implementing this into your own mod.
 
 ### Dungeons
-- [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new dungeons.
+- ⭐ [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new dungeons.
 
 ### Enemies
-- [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new enemies, although the process is fairly involved and not currently well documented.
+- ⭐ [LethalLib by Evaisa](https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/) allows you to add new enemies, although the process is fairly involved and not currently well documented.
 
 ### Input
 - [InputUtils by Rune580](https://thunderstore.io/c/lethal-company/p/Rune580/LethalCompany_InputUtils/) allows you to easily initialize input/keybinds with ingame rebinding. [The README](https://thunderstore.io/c/lethal-company/p/Rune580/LethalCompany_InputUtils/) has a developer quickstart.
