@@ -91,7 +91,8 @@ export default defineConfig({
                           { text: "MonoMod Examples", link: '/dev/fundamentals/patching-code/monomod-examples'},
                           { text: "MonoMod Docs", link: '/dev/fundamentals/patching-code/monomod-documentation'},
                         ]
-                      }
+                      },
+                    { text: "Reading Game Assets", link: '/dev/fundamentals/reading-game-assets'},
                   ]
                 },
                 {
