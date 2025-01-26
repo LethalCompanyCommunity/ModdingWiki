@@ -28,7 +28,7 @@ Add an **Assembly Reference** to the following files:<br>
 `Unity.Netcode.Runtime.dll`<br>
 `Unity.Collections.dll`
 
-These can be found at `.../Lethal Company/Lethal Company_Data/Managed`.
+These can be found at `.../Lethal Company/LethalCompany_Data/Managed`.
 
 Now create a `SyncedInstance.cs` file which your config will inherit from, this handles the serialization/de-serialization of data.<br>
 It also provides some helper methods to prevent repeating ourselves.
@@ -138,14 +138,15 @@ public static void OnRequestSync(ulong clientId, FastBufferReader _) {
 
     Plugin.Logger.LogInfo($"Config sync request received from client: {clientId}");
 
-    byte[] array = SerializeToBytes(Instance);
-    int value = array.Length;
+    byte[] data = SerializeToBytes(Instance);
+    int trueLength = array.Length;
+    int fbwLength = FastBufferWriter.GetWriteSize(data) + IntSize;  // The FastBufferWriter needs an input length that is not the "real" length when it serializes a byte array.
 
-    using FastBufferWriter stream = new(value + IntSize, Allocator.Temp);
+    using FastBufferWriter stream = new(fbwLength, Allocator.Temp);
 
     try {
-        stream.WriteValueSafe(in value, default);
-        stream.WriteBytesSafe(array);
+        stream.WriteValueSafe(in trueLength, default);
+        stream.WriteBytesSafe(data);
 
         MessageManager.SendNamedMessage("ModName_OnReceiveConfigSync", clientId, stream);
     } catch(Exception e) {
@@ -161,14 +162,14 @@ public static void OnReceiveSync(ulong _, FastBufferReader reader) {
         return;
     }
 
-    reader.ReadValueSafe(out int val, default);
+    reader.ReadValueSafe(out int length, default);
     if (!reader.TryBeginRead(val)) {
         Plugin.Logger.LogError("Config sync error: Host could not sync.");
         return;
     }
 
-    byte[] data = new byte[val];
-    reader.ReadBytesSafe(ref data, val);
+    byte[] data = new byte[length];
+    reader.ReadBytesSafe(ref data, length);
 
     SyncInstance(data);
 
