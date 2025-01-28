@@ -28,7 +28,7 @@ Add an **Assembly Reference** to the following files:<br>
 `Unity.Netcode.Runtime.dll`<br>
 `Unity.Collections.dll`
 
-These can be found at `.../Lethal Company/LethalCompany_Data/Managed`.
+These can be found at `.../Lethal Company/Lethal Company_Data/Managed`.
 
 Now create a `SyncedInstance.cs` file which your config will inherit from, this handles the serialization/de-serialization of data.<br>
 It also provides some helper methods to prevent repeating ourselves.
