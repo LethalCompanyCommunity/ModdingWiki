@@ -65,6 +65,9 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 ### Terminal
 - [TerminalApi by NotAtomicBomb](https://github.com/NotAtomicBomb/TerminalApi) adds a nice and easy way to add and modify terminal keywords. [The mod's GitHub README](https://github.com/NotAtomicBomb/TerminalApi) has documentation and an example plugin to reference.
 
+### Analytics
+- ⭐ [LethalAnalytics by RoosterBooster007](https://thunderstore.io/c/lethal-company/p/RB007/LethalAnalytics/) allows mod creators to see how their mods are used, easily catch errors, and learn about their audience. [The mod's GitHub README](https://github.com/RoosterBooster007/LethalAnalytics/) has documentation and examples to reference.
+
 ## Adding APIs to the wiki
 
 If you're an API developer and want to get your API added to this list, feel free to make a [pull request](https://github.com/LethalCompany/ModdingWiki), assuming your API meets the following criteria:
