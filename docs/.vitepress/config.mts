@@ -91,7 +91,17 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Beginner\'s Guide', link: '/overview.md' },
       { text: 'Developer\'s Guide', link: '/dev/overview.md' },
-      { text: 'Discord', link: 'https://discord.gg/nYcQFEpXfU' }
+      {
+        text: 'Discord',
+        items: [
+          {
+            items: [
+              { text: 'Community Discord', link: 'https://discord.gg/nYcQFEpXfU' },
+              { text: 'Modding Discord', link: 'https://discord.gg/XeyYqRdRGC' },
+            ]
+          }
+        ]
+      }
     ],
 
     sidebar: {
@@ -266,6 +276,7 @@ export default defineConfig({
         }
       ],
     },
+    externalLinkIcon: true,
     outline: 'deep',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/LethalCompany/ModdingWiki' }

@@ -14,42 +14,24 @@ hero:
     - theme: alt
       text: Edit on GitHub
       link: https://github.com/LethalCompany/ModdingWiki
+
+features:
+  - title: Installing Mods
+    details: Find out how to install mods for Lethal Company!
+    link: ./overview
+    linkText: Beginner's Guide
+  - title: Developing Mods
+    details: Start your development journey here! We have cookies!
+    link: ./dev/overview
+    linkText: Developer's Guide
+  - title: FAQ
+    details: Running into issues? See if you can find your answer here!
+    link: ./extras/faq
+    linkText: Frequently Asked Questions
 ---
 
-<script setup lang="ts">
-  import Home from './.vitepress/components/Home.vue'
-  import HomeGroup from './.vitepress/components/HomeGroup.vue'
-  import HomeItem from './.vitepress/components/HomeItem.vue'
-  import HomeLinks from './.vitepress/components/HomeLinks.vue'
-</script>
+## External Links
 
-<Home>
-  <HomeGroup title="Installing Mods">
-    <HomeItem name="Beginner's Guide" href="./overview" />
-    <HomeItem name="Using r2modman" href="./installation/installing-r2modman" />
-    <HomeItem name="Sharing r2modman Profiles" href="./installation/syncing-mods" />
-    <HomeItem name="Configuring Mods" href="./installation/configuration" />
-  </HomeGroup>
-
-  <HomeGroup title="Creating Mods">
-    <HomeItem name="Developer's Guide" href="./dev/overview" />
-    <HomeItem name="Initial Modding Setup" href="./dev/initial-setup" />
-    <HomeItem name="Modding APIs Overview" href="./dev/apis/overview" />
-    <HomeItem name="Publishing Your Mod" href="./dev/publishing-your-mod" />
-  </HomeGroup>
-
-  <HomeGroup title="Other Resources">
-    <HomeItem name="Frequently Asked Questions" href="./extras/faq" />
-    <HomeItem name="Contributing Translations" href="./contribute/translating-the-wiki" />
-    <HomeItem name="Contributing Articles" href="./contribute/writing-articles" />
-    <HomeItem name="About" href="./extras/about" />
-  </HomeGroup>
-</Home>
-
-<HomeLinks>
-
-- [Join the Discord server!](https://discord.gg/nYcQFEpXfU)
+- [Join the Unofficial Community Discord server!](https://discord.gg/nYcQFEpXfU)
 - [Contribute on GitHub](https://github.com/LethalCompany/ModdingWiki)
 - [Translate the Wiki](./contribute/translating-the-wiki.html) - Localize the wiki to your language!
-
-</HomeLinks>
