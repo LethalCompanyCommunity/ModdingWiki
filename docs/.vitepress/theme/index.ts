@@ -12,23 +12,10 @@ import {
   NolebaseHighlightTargetedHeading,
 } from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
 
-import {
-  NolebaseEnhancedReadabilitiesMenu,
-  NolebaseEnhancedReadabilitiesScreenMenu,
-} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
-
-import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
-import { InjectionKey
-} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
-
-import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
-
-export const Theme: ThemeConfig = {
+export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
-      'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
       'layout-top': () => [
         h(NolebaseHighlightTargetedHeading),
       ],
@@ -48,14 +35,5 @@ export const Theme: ThemeConfig = {
       () => route.path,
       () => nextTick(() => initZoom()),
     )
-  },
-  enhanceApp({ app }) {
-    app.provide(InjectionKey, {
-      layoutSwitch: {
-        disableAnimation: true
-      }
-    } as Options)
   }
-}
-
-export default Theme
+} satisfies ThemeConfig
