@@ -2,16 +2,36 @@
 import mediumZoom from 'medium-zoom'
 import { h, nextTick, onMounted, watch } from 'vue'
 import { useRoute } from 'vitepress'
-import type { Theme } from 'vitepress'
+import type { Theme as ThemeConfig } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import './style.css'
-import './custom.css'
 
-export default {
+import './styles/main.css'
+import './styles/custom.css'
+
+import {
+  NolebaseHighlightTargetedHeading,
+} from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
+
+import {
+  NolebaseEnhancedReadabilitiesMenu,
+  NolebaseEnhancedReadabilitiesScreenMenu,
+} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+
+import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import { InjectionKey
+} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+
+import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
+
+export const Theme: ThemeConfig = {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
+      'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
+      'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
+      'layout-top': () => [
+        h(NolebaseHighlightTargetedHeading),
+      ],
     })
   },
   setup() {
@@ -29,7 +49,13 @@ export default {
       () => nextTick(() => initZoom()),
     )
   },
-  enhanceApp({ app, router, siteData }) {
-    // ...
+  enhanceApp({ app }) {
+    app.provide(InjectionKey, {
+      layoutSwitch: {
+        disableAnimation: true
+      }
+    } as Options)
   }
-} satisfies Theme
+}
+
+export default Theme

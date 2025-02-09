@@ -1,24 +1,85 @@
-import { defineConfig, HeadConfig } from 'vitepress'
+import { defineConfig } from 'vitepress'
+import { createTitle, normalize } from "vitepress/dist/client/shared.js";
+
+const HOSTNAME = "https://lethal.wiki";
+
+function href(path = "") {
+  return new URL(normalize(path), HOSTNAME).href;
+}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Lethal Company Modding Wiki",
   description: "A modding wiki for lethal company",
-  transformHead: ({ pageData }) => {
-    const head: HeadConfig[] = []
+  head: [
+    ['link', { rel:'icon', href: "/favicon.ico" }],
+    ['meta', { property: 'og:site_name', content: "Lethal Company Modding Wiki" }],
+    ['meta', { property: 'og:image', content: "https://lethal.wiki/logo.png" }],
+    ['meta', { name: 'theme-color', content: "#ff3600" }]
+  ],
+  transformPageData(pageData, ctx) {
+    let pageDescription = pageData.frontmatter?.description;
+    const pageHref = href(pageData.relativePath);
+    const pageTitle = createTitle(ctx.siteConfig.site, pageData);
 
-    // OpenGraph data for embeds
-    head.push(['link', { rel: 'icon', href: "/favicon.ico" }])
-    head.push(['meta', { property: 'og:title', content: pageData.title }])
-    head.push(['meta', { property: 'og:description', content: pageData.frontmatter.description }])
-    head.push(['meta', { property: 'og:site_name', content: "Lethal Company Modding Wiki" }])
-    head.push(['meta', { property: 'og:image', content: "https://lethal.wiki/logo.png" }])
-    head.push(['meta', { name: 'theme-color', content: "#ff3600" }])
+    if (!pageDescription) {
+      pageDescription = ctx.siteConfig.site?.description;
 
-    return head
+      // If no page-specific description and not homepage, prepend the site title to the description
+      if (pageDescription && pageHref !== href()) {
+        pageDescription = [ctx.siteConfig.site?.title, pageDescription]
+            .filter((v) => Boolean(v))
+            .join(": ");
+      }
+    }
+
+    pageData.frontmatter.head ??= [];
+
+    pageData.frontmatter.head.push(
+        [
+          "meta",
+          {
+            name: "og:title",
+            content: pageTitle,
+          },
+        ],
+        [
+          "meta",
+          {
+            property: "og:url",
+            content: pageHref,
+          },
+        ],
+        [
+          "meta",
+          {
+            name: "twitter:title",
+            content: pageTitle,
+          },
+        ],
+    );
+
+    if (pageDescription) {
+      pageData.frontmatter.head.push(
+          [
+            "meta",
+            {
+              name: "og:description",
+              content: pageDescription,
+            },
+          ],
+          [
+            "meta",
+            {
+              name: "twitter:description",
+              content: pageDescription,
+            },
+          ],
+      );
+    }
   },
   sitemap: {
-    hostname: 'https://lethal.wiki/'
+    hostname: HOSTNAME
   },
   cleanUrls: true,
   themeConfig: {
@@ -30,7 +91,17 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Beginner\'s Guide', link: '/overview.md' },
       { text: 'Developer\'s Guide', link: '/dev/overview.md' },
-      { text: 'Discord', link: 'https://discord.gg/nYcQFEpXfU' }
+      {
+        text: 'Discord',
+        items: [
+          {
+            items: [
+              { text: 'Community Discord', link: 'https://discord.gg/nYcQFEpXfU' },
+              { text: 'Modding Discord', link: 'https://discord.gg/XeyYqRdRGC' },
+            ]
+          }
+        ]
+      }
     ],
 
     sidebar: {
@@ -205,6 +276,7 @@ export default defineConfig({
         }
       ],
     },
+    externalLinkIcon: true,
     outline: 'deep',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/LethalCompany/ModdingWiki' }
@@ -217,5 +289,24 @@ export default defineConfig({
       next: false,
     }
   },
-  lastUpdated: true
+  lastUpdated: true,
+  vite: {
+    optimizeDeps: {
+      exclude: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities/client',
+        'vitepress',
+        '@nolebase/ui',
+      ],
+    },
+    ssr: {
+      noExternal: [
+        '@nolebase/vitepress-plugin-highlight-targeted-heading',
+        '@nolebase/vitepress-plugin-enhanced-readabilities',
+        '@nolebase/ui',
+      ],
+    },
+  },
+  markdown: {
+    languageAlias: { 'il': 'shellscript' }
+  }
 })

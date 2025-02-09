@@ -10,7 +10,7 @@ This guide is a fork of [trombone.wiki](https://trombone.wiki).
 
 To install dependencies:
 ```shell
-npm i
+npm ci
 ```
 
 Run a preview of the wiki locally:

@@ -178,24 +178,24 @@ Alternatively we could try hooking the `PlayerJump` method, but it is a coroutin
 
 The above method in IL with the place we are wanting to execute our code looks like this:
 ```IL
-// ...
-IL_00a7: ldarg.0        // load argument 0 'this' onto stack
+# ...
+IL_00a7: ldarg.0            # load argument 0 'this' onto stack
 IL_00a8: ldfld bool GameNetcodeStuff.PlayerControllerB::isCrouching
-// Push the value of 'isCrouching' onto stack 
-IL_00ad: brtrue.s IL_011d // Branch to IL_011d if value from stack is non-zero (true)
+                            # Push the value of 'isCrouching' onto stack 
+IL_00ad: brtrue.s IL_011d   # Branch to IL_011d if value from stack is non-zero (true)
 
-// <-- We want to execute our code here
+# <-- We want to execute our code here
 
-IL_00af: ldarg.0        // load argument 0 'this' onto stack
-IL_00b0: ldc.r4 0.0     // push 0 onto the stack as float32
+IL_00af: ldarg.0            # load argument 0 'this' onto stack
+IL_00b0: ldc.r4 0.0         # push 0 onto the stack as float32
 IL_00b5: stfld float32 GameNetcodeStuff.PlayerControllerB::playerSlidingTimer
-// replace the value of 'playerSlidingTimer' with value from stack
+                            # replace the value of 'playerSlidingTimer' with value from stack
 
-IL_00ba: ldarg.0        // load argument 0 'this' onto stack
-IL_00bb: ldc.i4.1       // Push 1 onto the stack as int32
+IL_00ba: ldarg.0            # load argument 0 'this' onto stack
+IL_00bb: ldc.i4.1           # Push 1 onto the stack as int32
 IL_00bc: stfld bool GameNetcodeStuff.PlayerControllerB::isJumping
-// replace the value of 'isJumping' with value from stack
-// ...
+                            # replace the value of 'isJumping' with value from stack
+# ...
 ```
 Now we know the place in IL where we want to insert our code inside the original method, so let's write our ILHook:
 ```cs
@@ -349,17 +349,17 @@ The comparison operator for `this.angeredTimer` should instead be **Less than or
 Here is the comparison between the variable in IL:
 
 ```IL
-// ...
-IL_0022: ldarg.0                            // load argument 0 'this' onto stack
-IL_0023: ldfld float32 BlobAI::angeredTimer // push the value of 'angeredTimer' onto stack
-IL_0028: ldc.r4 0.0                         // push 0 onto the stack as float32
-IL_002d: bge.un.s IL_0030   // Branch to IL_0030 if the first value (angeredTimer)
-                            // is greater than or equal to (>=) the second value (0f)
-                            // when comparing unsigned integer values or unordered float values.
+# ...
+IL_0022: ldarg.0                            # load argument 0 'this' onto stack
+IL_0023: ldfld float32 BlobAI::angeredTimer # push the value of 'angeredTimer' onto stack
+IL_0028: ldc.r4 0.0                         # push 0 onto the stack as float32
+IL_002d: bge.un.s IL_0030   # Branch to IL_0030 if the first value (angeredTimer)
+                            # is greater than or equal to (>=) the second value (0f)
+                            # when comparing unsigned integer values or unordered float values.
 
-IL_002f: ret                                // Returns from the current method
+IL_002f: ret                                # Returns from the current method
 IL_0030: ldarg.0
-// ... deal damage to player
+# ... deal damage to player
 ```
 From this IL code we can see that the comparison is slightly different, using the **greater than or equal to** operator (`>=`), but the underlying logic is still the same. This is normal, as compiled code is always different from the source code.
 

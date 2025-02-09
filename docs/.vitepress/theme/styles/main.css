@@ -146,3 +146,11 @@
 .dark .VPSidebarItem.has-active:not(.is-active) > .item > .link > .text {
     color: rgba(205, 235, 231, 0.7) !important;
 }
+
+/**
+ * Component: Navbar
+ * -------------------------------------------------------------------------- */
+
+.VPSocialLinks.VPNavBarSocialLinks.social-links {
+    margin-right: 0;
+}

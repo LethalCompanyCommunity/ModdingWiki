@@ -13,6 +13,7 @@
 !CNAME
 !.nojekyll
 !/.github
+!tsconfig.json
 
 # Mark Folders to Ignore
 /docs/.vitepress/dist
