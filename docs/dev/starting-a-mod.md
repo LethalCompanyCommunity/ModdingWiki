@@ -197,6 +197,15 @@ To easily access private fields and methods in the game's code, you should publi
 <Reference Include="Assembly-CSharp" HintPath="...\Assembly-CSharp.dll" /> // [!code --]
 <Reference Include="Assembly-CSharp" HintPath="...\Assembly-CSharp.dll" Publicize="true" /> // [!code ++]
 ```
+
+Or:
+
+```xml
+<Reference Include="Assembly-CSharp">
+    <HintPath>...\Assembly-CSharp.dll</HintPath>
+    <Publicize>"true"</Publicize> // [!code ++]
+</Reference>
+```
 :::
 
 ### Additional guides
