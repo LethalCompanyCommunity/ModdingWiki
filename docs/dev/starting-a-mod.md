@@ -191,14 +191,14 @@ To easily access private fields and methods in the game's code, you should publi
 </ItemGroup>
 ```
 
-2. Add `Publicize="true"` to the assembly reference in the `.csproj` file as so:
+2. (a) Add `Publicize="true"` to the assembly reference in the `.csproj` file as so:
 
 ```xml
 <Reference Include="Assembly-CSharp" HintPath="...\Assembly-CSharp.dll" /> // [!code --]
 <Reference Include="Assembly-CSharp" HintPath="...\Assembly-CSharp.dll" Publicize="true" /> // [!code ++]
 ```
 
-Or:
+&emsp; (b) Or add `<Publicize>"true"</Publicize>` like so:
 
 ```xml
 <Reference Include="Assembly-CSharp">
