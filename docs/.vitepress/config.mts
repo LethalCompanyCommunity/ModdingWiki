@@ -1,11 +1,20 @@
 import { defineConfig } from 'vitepress'
 import { createTitle, normalize } from "vitepress/dist/client/shared.js";
+import { transformerNotationMap } from '@shikijs/transformers';
 
 const HOSTNAME = "https://lethal.wiki";
 
 function href(path = "") {
   return new URL(normalize(path), HOSTNAME).href;
 }
+
+const xmlRemoveDiffTransformer = transformerNotationMap({
+  classMap: { 
+    'rm': 'diff remove'
+  },
+  classActivePre: 'has-diff',
+  matchAlgorithm: 'v3',
+});
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -298,6 +307,9 @@ export default defineConfig({
     },
   },
   markdown: {
-    languageAlias: { 'il': 'shellscript' }
+    languageAlias: { 'il': 'shellscript' },
+    codeTransformers: [
+      xmlRemoveDiffTransformer
+    ]
   }
 })
