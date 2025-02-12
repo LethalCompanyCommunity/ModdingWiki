@@ -122,7 +122,7 @@ This should result in a complete file resembling the following:
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
     <packageSources>
-        <add key="BepInEx" value="https://nuget.bepinex.dev/v3/index.json" /> // [!code ++]
+        <add key="BepInEx" value="https://nuget.bepinex.dev/v3/index.json" /> <!-- [!code ++] -->
     </packageSources>
 </configuration>
 ```
@@ -187,15 +187,15 @@ To easily access private fields and methods in the game's code, you should publi
     <PackageReference Include="BepInEx.Core" Version="5.*" />
     <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
     <PackageReference Include="UnityEngine.Modules" Version="2022.3.9" IncludeAssets="compile" />
-    <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.1" PrivateAssets="all" /> // [!code ++] // [!code focus]
+    <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.1" PrivateAssets="all" /> <!-- [!code ++] [!code focus] -->
 </ItemGroup>
 ```
 
 2. (a) Add `Publicize="true"` to the assembly reference in the `.csproj` file as so:
 
 ```xml
-<Reference Include="Assembly-CSharp" HintPath="...\Assembly-CSharp.dll" /> // [!code --]
-<Reference Include="Assembly-CSharp" HintPath="...\Assembly-CSharp.dll" Publicize="true" /> // [!code ++]
+<Reference Include="Assembly-CSharp" HintPath="...\Assembly-CSharp.dll" /> <!-- [!code --] -->
+<Reference Include="Assembly-CSharp" HintPath="...\Assembly-CSharp.dll" Publicize="true" /> <!-- [!code ++] -->
 ```
 
 &emsp; (b) Or add `<Publicize>"true"</Publicize>` like so:
@@ -203,7 +203,7 @@ To easily access private fields and methods in the game's code, you should publi
 ```xml
 <Reference Include="Assembly-CSharp">
     <HintPath>...\Assembly-CSharp.dll</HintPath>
-    <Publicize>"true"</Publicize> // [!code ++]
+    <Publicize>"true"</Publicize> <!-- [!code ++] -->
 </Reference>
 ```
 :::
