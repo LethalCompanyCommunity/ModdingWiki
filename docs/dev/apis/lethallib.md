@@ -22,7 +22,7 @@ You will need to start by creating a plugin (see [Starting a Mod](/dev/starting-
 
 ```xml
 <ItemGroup>
-    <PackageReference Include="Evaisa.LethalLib" Version="0.*" /> // [!code ++]
+    <PackageReference Include="Evaisa.LethalLib" Version="0.*" /> <!-- [!code ++] -->
 </ItemGroup>
 ```
 
