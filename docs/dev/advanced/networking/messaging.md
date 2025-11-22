@@ -7,7 +7,7 @@ description: Learn how to send messages between the host and connected clients.
 # Messaging
 
 ::: info DISCLAIMER
-This is not a tutorial on how to use Unity's [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/1.5.2/about/) RPCs and Network Variables.
+This is not a tutorial on how to use Unity's [Netcode for GameObjects](https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.13/manual/index.html) RPCs and Network Variables.
 This is only meant to be used to understand *how* to implement custom networking into the game.
 :::
 
@@ -17,7 +17,7 @@ host and any connected clients. You can use an API, use Netcode for GameObjects'
 
 This article will go through the basics on implementing each method, but will not
 go into how to use it. It will at most be augmentation for the NGO docs.
-For information on how to use NGO-specific classes & methods, look at the [NGO docs](https://docs-multiplayer.unity3d.com/netcode/1.5.2/about/).
+For information on how to use NGO-specific classes & methods, look at the [NGO docs](https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.13/manual/index.html).
 
 ## APIs
 
@@ -28,36 +28,6 @@ and thus only need to be implemented in the context of your mod.
 For specific information on the available APIs, you can look at the
 [networking Programing APIs section](/dev/apis/overview#networking)
 of this wiki.
-
-## NGO's Custom Messages {#custom-messages}
-
-The hardest method of messaging between the host and clients is using
-NGO's Custom Messages. They do have their advantages, however.
-
-- They support vanilla compatibility as they do not have to register custom
-network objects, unlike RPCs.
-- They do not require the use of Eva's Unity Netcode Patcher. 
-- You can also utilize Network Messages to send longer pieces of information
-as they have the `NetworkDelivery.ReliableFragmentedSequenced` option.
-
-For examples on usage, take a look at [NGO's Custom Messages docs](https://docs-multiplayer.unity3d.com/netcode/1.5.2/advanced-topics/message-system/custom-messages/#named-messages).
-Linked is the named messages heading/section, which is recommended over unnamed messages
-as using named messages is easier and will help against conflicting with other mods'
-messaging systems.
-
-This article will only go into the basic concepts necessary for usage, not
-the actual usage.
-
-### Serialization
-
-To transmit data, you have to manually use the `FastBufferReader` and `FastBufferWriter` to
-serialize the data you want to transmit. You can use the pre-built serialization types Unity
-provides; however, custom classes, structs, and records will likely need custom serialization.
-
-Custom serialization requires that you manually write extensions for `FastBufferReader` and 
-`FastBufferWriter` to serialize the data in the class, struct, or record.
-
-For more information, you can [read this article](https://docs-multiplayer.unity3d.com/netcode/1.5.2/advanced-topics/custom-serialization/).
 
 ## NGO's Remote Procedure Calls (RPCs) {#rpcs}
 
@@ -70,7 +40,7 @@ in order to use them at runtime.
 As RPCs can only exist in the context of a `NetworkBehaviour`, much of what you will have to do is
 equivalent to the article on Custom Object Behaviours. As such, this article will only go into the
 specifics for messaging. For information on Network Behaviours and what you can use in them, look at
-the [Custom Object Behaviour article](/dev/advanced/networking/objects) or the [NGO Docs](https://docs-multiplayer.unity3d.com/netcode/1.5.2/advanced-topics/ways-synchronize/).
+the [Custom Object Behaviour article](/dev/advanced/networking/objects) or the [NGO Docs](https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.13/manual/advanced-topics/ways-to-synchronize.html).
 
 :::tip StaticNetcodeLib
 An alternative to NGO's instanced RPCs are the RPCs provided by StaticNetcodeLib. These RPCs are
@@ -174,3 +144,33 @@ Using this method **requires** publicizing `Unity.Netcode.Runtime.dll`! The `Glo
 field and thus can only be modified either through reflection or the publicized assembly, the latter of which
 is much easier to do.
 :::
+
+## NGO's Custom Messages {#custom-messages}
+
+The hardest method of messaging between the host and clients is using
+NGO's Custom Messages. They do have their advantages, however.
+
+- They support vanilla compatibility as they do not have to register custom
+network objects, unlike RPCs.
+- They do not require the use of Eva's Unity Netcode Patcher. 
+- You can also utilize Network Messages to send longer pieces of information
+as they have the `NetworkDelivery.ReliableFragmentedSequenced` option.
+
+For examples on usage, take a look at [NGO's Custom Messages docs](https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.13/manual/advanced-topics/message-system/custom-messages.html#named-messages).
+Linked is the named messages heading/section, which is recommended over unnamed messages
+as using named messages is easier and will help against conflicting with other mods'
+messaging systems.
+
+This article will only go into the basic concepts necessary for usage, not
+the actual usage.
+
+### Serialization
+
+To transmit data, you have to manually use the `FastBufferReader` and `FastBufferWriter` to
+serialize the data you want to transmit. You can use the pre-built serialization types Unity
+provides; however, custom classes, structs, and records will likely need custom serialization.
+
+Custom serialization requires that you manually write extensions for `FastBufferReader` and 
+`FastBufferWriter` to serialize the data in the class, struct, or record.
+
+For more information, you can [read this article](https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.13/manual/advanced-topics/custom-serialization.html).
