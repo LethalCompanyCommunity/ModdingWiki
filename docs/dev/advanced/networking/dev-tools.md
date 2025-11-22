@@ -11,8 +11,8 @@ while others are APIs to help ease networking.
 
 ## Patchers
 
-There are three main patchers available to use. Two of which require a runtime mod
-dependency, whereas another is strictly developer-side.
+There are two main patchers available to use. The first and preferred is performed during/shortly after 
+compilation of the mod. The second runs alongside and patches your mod during runtime.
 
 ### UnityNetcodePatcher
 
@@ -39,19 +39,9 @@ work almost exactly like NGO.
 
 To install and use StaticNetcodeLib, look at the [corresponding wiki article](/dev/apis/static-netcode).
 
-### RuntimeNetcodeValidator
+## APIs / Libraries
 
-Finally, there is [RuntimeNetcodeValidator](https://github.com/wwwDayDream/RuntimeNetcodeRPCValidator).
-This is similar to UnityNetcodePatcher, except that it patches your NGO methods at runtime.
-It also provides helper methods to more easily add your netcode into the game.
-
-::: warning
-This patcher is not currently maintained, and thus has the least support.
-:::
-
-## APIs
-
-There are two main APIs available, LethalNetworkAPI and LC-API.
+There is currently only one networking-specific library available, shown below.
 
 ### LethalNetworkAPI
 
@@ -60,14 +50,3 @@ methods of networking, particularly in a more static-like nature. Instanced netw
 is also supported. This API also supports NetworkVariables, if you intend on using them.
 
 For documentation, look at [LethalNetworkAPI's wiki](https://github.com/Xilophor/LethalNetworkAPI).
-
-### LC-API
-
-[LC-API](https://thunderstore.io/c/lethal-company/p/2018/LC_API/) also provides methods for networking,
-however these are strictly static messages.
-
-For documentation, look at the [LC-API GitHub wiki](https://github.com/u-2018/LC-API/wiki/Networking).
-
-::: warning
-This API is not currently maintained, and thus has little support available.
-:::
