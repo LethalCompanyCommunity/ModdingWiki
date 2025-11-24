@@ -39,7 +39,7 @@ work almost exactly like NGO.
 
 To install and use StaticNetcodeLib, look at the [corresponding wiki article](/dev/apis/static-netcode).
 
-## APIs / Libraries
+## APIs / Libraries {#apis}
 
 There is currently only one networking-specific library available, shown below.
 

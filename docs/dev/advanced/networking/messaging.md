@@ -13,34 +13,51 @@ This is only meant to be used to understand *how* to implement custom networking
 
 There are several different methods available to you for messaging between the
 host and any connected clients. You can use an API, use Netcode for GameObjects'
-(NGO) Network Messages, or use NGO's RPCs.
+(NGO) Remote Procedure Calls, or use NGO's Network Messages.
 
-This article will go through the basics on implementing each method, but will not
-go into how to use it. It will at most be augmentation for the NGO docs.
-For information on how to use NGO-specific classes & methods, look at the [NGO docs](https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.13/manual/index.html).
+::: tip NOTE
+This article only takes a look at how these methods are used in a static or singleton nature, 
+where you may want to set game settings, log changes on all clients, or set off events 
+that impact the entire game/lobby.
+
+For information on networking for instanced objects, like enemys, items, or traps,
+look at the [Object Behaviour article](/dev/advanced/networking/objects).
+:::
 
 ## APIs
 
-This is the easiest method of messaging between the host and clients.
+::: info
+For specific information on the available APIs, you can look at the [networking APIs section](/dev/advanced/networking/dev-tools#apis)
+of this wiki.
+:::
+
+This is an easy method of messaging between the host and clients.
 The available APIs already implement NGO in the context of the game,
 and thus only need to be implemented in the context of your mod.
 
-For specific information on the available APIs, you can look at the
-[networking Programing APIs section](/dev/apis/overview#networking)
-of this wiki.
+These APIs generally are able to work outside of the context of a `NetworkBehaviour` class,
+unlike that of an RPC. This allows you to access it anywhere in your code,
+but may cause additional runtime errors if using while not connected to
+a lobby/game instance.
+
+<!--That is not to say it cannot be used for multiple instances of an object,
+like an enemy or item, but you will have to go out of your way to differentiate
+between instances of the object - usually done by appending the object id.-->
 
 ## NGO's Remote Procedure Calls (RPCs) {#rpcs}
 
-RPCs are the in-between solution. They give you more control than APIs likely will, and they are
-significantly easier to use than Custom Messages.
+RPCs are the standard and recommended solution. They give you more control than APIs likely will, 
+and they are significantly easier to use than Custom Messages.
 
-However, they only exist in the context of `NetworkBehaviour`s, and you ***must*** use a [Netcode Patcher](/dev/advanced/networking/dev-tools#netcode-patchers)
+However, they only exist in the context of `NetworkBehaviour`s, and you ***must*** use a [Netcode Patcher](/dev/advanced/networking/dev-tools#patchers)
 in order to use them at runtime.
+
+<!--@include: @./parts/netcode-patcher-installation.md-->
 
 As RPCs can only exist in the context of a `NetworkBehaviour`, much of what you will have to do is
 equivalent to the article on Custom Object Behaviours. As such, this article will only go into the
-specifics for messaging. For information on Network Behaviours and what you can use in them, look at
-the [Custom Object Behaviour article](/dev/advanced/networking/objects) or the [NGO Docs](https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.13/manual/advanced-topics/ways-to-synchronize.html).
+specifics for global messaging. For information on Network Behaviours and what you can use in them, 
+look at the [Custom Object Behaviour article](/dev/advanced/networking/objects) or the [NGO Docs](https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.13/manual/advanced-topics/ways-to-synchronize.html).
 
 :::tip StaticNetcodeLib
 An alternative to NGO's instanced RPCs are the RPCs provided by StaticNetcodeLib. These RPCs are
@@ -139,7 +156,7 @@ var objectIdHash = MD5.Create().ComputeHash(Encoding.UTF8.GetBytes($"{ExampleMod
 myNetworkPrefab.GetComponent<NetworkObject>()!.GlobalObjectIdHash = BitConverter.ToUInt32(objectIdHash);
 ```
 
-:::warning
+::: danger
 Using this method **requires** publicizing `Unity.Netcode.Runtime.dll`! The `GlobalObjectIdHash` is an internal
 field and thus can only be modified either through reflection or the publicized assembly, the latter of which
 is much easier to do.
