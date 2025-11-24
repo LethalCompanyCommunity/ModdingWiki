@@ -49,6 +49,7 @@ public class ExampleObjectBehaviour : NetworkBehaviour
     [ServerRpc]
     public void ChangeColorServerRpc()
     {
+        /* Method for the server to run */
         var color = new Color(UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255));
         EnableLightClientRpc(color);
     }
@@ -56,6 +57,7 @@ public class ExampleObjectBehaviour : NetworkBehaviour
     [ClientRpc]
     public void SetColorClientRpc(Color lightColor)
     {
+        /* Method for all clients to run */
         lightComponent.color = lightColor;
     }
 }
@@ -102,14 +104,28 @@ docs. It also helps make it a bit clearer on how the RPCs are sent over the netw
 The requirements for RPC are essentially the same as with server and client RPCs. You need to have the `Rpc` attribute,
 "Rpc" appended to the method name, and a return type of `void`.
 
-To send a command over to the server or client, it is a bit more clear:
+To send a command over to the server or client, it is a bit more clear with the `SendTo` enum:
 
 ```cs
-[Rpc(SendTo.Server)]
-public void ExampleRpc() { /* Method for the server to run */ }
+public class ExampleObjectBehaviour : NetworkBehaviour
+{
+    Light lightComponent;
 
-[Rpc(SendTo.NotServer)]
-public void OtherExampleRpc() { /* Method for all clients to run */ }
+    [Rpc(SendTo.Server)]
+    public void ChangeColorRpc()
+    {
+        /* Method for the server to run */
+        var color = new Color(UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255));
+        EnableLightClientRpc(color);
+    }
+
+    [Rpc(SendTo.ClientsAndHost)]
+    public void SetColorRpc(Color lightColor)
+    {
+        /* Method for all clients to run */
+        lightComponent.color = lightColor;
+    }
+}
 ```
 
 ::: tip
