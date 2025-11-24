@@ -65,7 +65,7 @@ APIs marked with a `Gold Star ⭐` have a tutorial on this wiki.
 ### Networking
 
 - [LethalNetworkAPI by xilophor](https://thunderstore.io/c/lethal-company/p/xilophor/LethalNetworkAPI/) allows you to create, send, and receive messages, events, and variables over the network. [The mod's official wiki](https://xilophor.github.io/lethal-network-api-docs/) explains how to use them.
-- [StaticNetcodeLib by xilophor](https://thunderstore.io/c/lethal-company/p/xilophor/StaticNetcodeLib/) patches your static
+- ⭐ [StaticNetcodeLib by xilophor](https://thunderstore.io/c/lethal-company/p/xilophor/StaticNetcodeLib/) patches your static
 RPCs to allow you to network in a static context. For more information, view the [applicable wiki article](/dev/apis/static-netcode).
 
 ### Sound Replacement

@@ -10,6 +10,11 @@ This lib/patcher is a small patcher that will modify how your static rpcs run, t
 them to be networked. Using this patcher is simple, and requires very little changes to how
 you typically use RPCs.
 
+::: warning
+Currently, only RPC formatting from before NGO version 1.8 are supported (i.e. `ServerRpc` and `ClientRpc`).
+The newer version of RPCs - that driven by attribute paramters - is not (yet) supported by this patcher.
+:::
+
 ## Installation
 
 To intsall this lib, reference the package through NuGet. This can be done in several ways:
@@ -19,7 +24,7 @@ To intsall this lib, reference the package through NuGet. This can be done in se
    - This can be done with the following command:
 
 ```sh
-dotnet add package Xilophor.StaticNetcodeLib
+$ dotnet add package Xilophor.StaticNetcodeLib
 ```
 
 3. Modifying your `.csproj` file.

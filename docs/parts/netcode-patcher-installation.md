@@ -3,16 +3,19 @@
 1. Add the following code to your `Plugin::Awake` method:
 
 ```cs
-var types = Assembly.GetExecutingAssembly().GetTypes();
-foreach (var type in types)
+private void Awake()
 {
-    var methods = type.GetMethods(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static);
-    foreach (var method in methods)
+    var types = Assembly.GetExecutingAssembly().GetTypes(); // [!code focus:13]
+    foreach (var type in types)
     {
-        var attributes = method.GetCustomAttributes(typeof(RuntimeInitializeOnLoadMethodAttribute), false);
-        if (attributes.Length > 0)
+        var methods = type.GetMethods(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static);
+        foreach (var method in methods)
         {
-            method.Invoke(null, null);
+            var attributes = method.GetCustomAttributes(typeof(RuntimeInitializeOnLoadMethodAttribute), false);
+            if (attributes.Length > 0)
+            {
+                method.Invoke(null, null);
+            }
         }
     }
 }
@@ -21,7 +24,7 @@ foreach (var type in types)
 2. Install the tool with:
 
 ```sh
-dotnet tool install -g Evaisa.NetcodePatcher.Cli
+$ dotnet tool install -g Evaisa.NetcodePatcher.Cli
 ```
 
 3. Add the following code to your `.csproj`:
