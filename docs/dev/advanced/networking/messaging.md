@@ -1,18 +1,18 @@
 ---
 prev: true
-next: true
+next: false
 description: Learn how to send messages between the host and connected clients.
 ---
 
-# Messaging
+# Global Messaging
 
 ::: info DISCLAIMER
 This is not a tutorial on how to use Unity's [Netcode for GameObjects](https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.13/manual/index.html) RPCs and Network Variables.
 This is only meant to be used to understand *how* to implement custom networking into the game.
 :::
 
-There are several different methods available to you for messaging between the
-host and any connected clients. You can use an API, use Netcode for GameObjects'
+There are several different methods available to you for messaging between the host and any connected
+clients in a global fashion. You can use an API, use Netcode for GameObjects' 
 (NGO) Remote Procedure Calls, or use NGO's Network Messages.
 
 ::: tip NOTE

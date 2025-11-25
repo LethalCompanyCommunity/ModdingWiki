@@ -1,6 +1,6 @@
 ---
 prev: true
-next: false
+next: true
 description: Learn how to use networking for items & other game objects.
 ---
 
