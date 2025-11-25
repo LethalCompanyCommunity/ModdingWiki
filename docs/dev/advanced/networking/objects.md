@@ -22,7 +22,7 @@ or text to set the screen of an item to.
 There are two "versions" of RPCs. The most common is `ServerRpc` (Client-to-Server) and `ClientRpc` (Server-to-Client), 
 which are those used by the game and every mod developed before v73. This is because before v73, they were 
 the only option available in the version of NGO the game used. Since then, there is a second way of using RPCs - a 
-generic version that encompasses both Client-to-Server and Server-to-Client RPCs, as well as a new Client-to-Client RPC.
+generic `Rpc` that encompasses both Client-to-Server and Server-to-Client RPCs, as well as allowing Client-to-Client RPCs.
 
 ### ServerRPCs and ClientRPCs
 
@@ -44,7 +44,7 @@ run the method. Shown below is a demonstation of valid usage:
 ```cs
 public class ExampleObjectBehaviour : NetworkBehaviour
 {
-    Light lightComponent;
+    public Light lightComponent;
 
     [ServerRpc]
     public void ChangeColorServerRpc()
@@ -90,9 +90,9 @@ private void ExampleClientRpc()
 ```
 
 This code may look complex, but it follows a simple process.
-1. Check if server is running/client is connected
-2. Send the method call over the network if meeting the sending requirements and not executing
-3. Return out of the function if not meeting the execution requirements
+>1. Check if server is running/client is connected
+>2. Send the method call over the network if meeting the sending requirements and not executing
+>3. Return out of the function if not meeting the execution requirements
 
 ### RPC
 
@@ -109,7 +109,7 @@ To send a command over to the server or client, it is a bit more clear with the 
 ```cs
 public class ExampleObjectBehaviour : NetworkBehaviour
 {
-    Light lightComponent;
+    public Light lightComponent;
 
     [Rpc(SendTo.Server)]
     public void ChangeColorRpc()
@@ -134,3 +134,51 @@ For more information on how to use RPCs in this way, visit the [NGO docs on RPCs
 
 ## Network Variables
 
+RPCs aren't the only way to communicate data between clients. Network Variables exist to simplify some of that for you; 
+instead of needing to send commands back and forth with the new data values, NGO can handle that for you. It will
+automatically send updates over the network as the variable is updated.
+
+### NetworkVariable
+
+#### Usage {#networkvariable-usage}
+
+```cs
+public class ExampleObjectBehaviour : NetworkBehaviour
+{
+    public Light lightComponent;
+    public NetworkVariable<Color> lightColor = new NetworkVariable<Color>();
+
+    [Rpc(SendTo.Server)]
+    public void ChangeColorRpc()
+    {
+        lightColor = new Color(UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255));
+    }
+}
+```
+
+### NetworkList
+
+#### Usage {#networklist-usage}
+
+```cs
+public class ExampleObjectBehaviour : NetworkBehaviour
+{
+    public List<Light> lightComponents;
+    public NetworkList<Color> lightColors;
+
+    private void Awake()
+    {
+        lightColors = new NetworkList<Color>();
+
+        for (var i = 0; i < 5; i++)
+            lightColors.Add(new Color(UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255)));
+    }
+
+    [Rpc(SendTo.Server)]
+    public void ChangeColorsRpc()
+    {
+        var index = UnityEngine.Random.Range(0,lightColors.Count);
+        lightColors[index] = new Color(UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255));
+    }
+}
+```
