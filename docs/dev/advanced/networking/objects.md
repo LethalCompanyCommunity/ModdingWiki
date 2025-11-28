@@ -7,11 +7,21 @@ description: Learn how to use networking for items & other game objects.
 # Custom Object Behaviour
 
 ::: info DISCLAIMER
-This is not a detailed tutorial on how to use Unity's [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/1.5.2/about/) 
+This is not a detailed tutorial on how to use Unity's [Netcode for GameObjects](https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.13/manual/index.html) 
 RPCs and Network Variables. This is only meant to be used to understand *how* to implement custom networking into the game.
 :::
 
+When developing mods, you may want to create an instanced object that can synchronize across clients. In order to do so,
+there are two main steps to create the object in the Unity Editor. 
 
+First, you need to attach a `NetworkObject` component to the `GameObject` in question. Once you've done so, you will need
+to make a class inheriting the `NetworkBehaviour` class (like a `MonoBehaviour`), and add that as a component either to
+the `GameObject` with the `NetworkObject` component, or a child of the `GameObject`.
+
+Make sure you use the Unity Netcode Patcher (UNP) after compiling your mod, as during game development, Netcode for Game Objects
+(NGO) runs post processing on the code, which UNP replicates.
+
+<!--@include: @./parts/netcode-patcher-installation.md-->
 
 ## Remote Procedure Calls (RPCs) {#rpcs}
 
@@ -23,6 +33,12 @@ There are two "versions" of RPCs. The most common is `ServerRpc` (Client-to-Serv
 which are those used by the game and every mod developed before v73. This is because before v73, they were 
 the only option available in the version of NGO the game used. Since then, there is a second way of using RPCs - a 
 generic `Rpc` that encompasses both Client-to-Server and Server-to-Client RPCs, as well as allowing Client-to-Client RPCs.
+
+::: tip
+When transmitting `NetworkBehaviour`s or `NetworkObject`s across the network, you must use `NetworkBehaviourReference` or
+`NetworkObjectReference`. These can be implicitly cast to and from their corresponding types, but are a much smaller form
+factor to be transmitted over the network. 
+:::
 
 ### ServerRPCs and ClientRPCs
 
@@ -50,7 +66,7 @@ public class ExampleObjectBehaviour : NetworkBehaviour
     public void ChangeColorServerRpc()
     {
         /* Method for the server to run */
-        var color = new Color(UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255));
+        var color = UnityEngine.Random.ColorHSV();
         EnableLightClientRpc(color);
     }
 
@@ -94,7 +110,7 @@ This code may look complex, but it follows a simple process.
 >2. Send the method call over the network if meeting the sending requirements and not executing
 >3. Return out of the function if not meeting the execution requirements
 
-### RPC
+### RPC {#rpc-method}
 
 NGO has created a new and more broad way of creating RPCs. This is the preferred and widely documented way in the NGO 
 docs. It also helps make it a bit clearer on how the RPCs are sent over the network.
@@ -115,7 +131,7 @@ public class ExampleObjectBehaviour : NetworkBehaviour
     public void ChangeColorRpc()
     {
         /* Method for the server to run */
-        var color = new Color(UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255));
+        var color = UnityEngine.Random.ColorHSV();
         EnableLightClientRpc(color);
     }
 
@@ -140,45 +156,100 @@ automatically send updates over the network as the variable is updated.
 
 ### NetworkVariable
 
+This type is the standard variable type. It can synchronize many types, including C# primitive types (`int`, `long`, 
+`char`, `bool`, etc.), some of Unity's built-in types (`Vector2`, `Vector3`, `Color`, `Ray`, etc.), and any type
+implementing `INetworkSerialized`, such as `NetworkObjectReference` and `NetworkBehaviourReference`.
+
+::: danger
+These types do not include strings. In order to use strings, you must either create a custom implementation, or use
+Unity's fixed strings in the `Unity.Collections.FixedString` namespace.
+:::
+
 #### Usage {#networkvariable-usage}
+
+By default, only the server can write to the variable, and everything can read the variable. You can read and write the 
+value by looking at the `Value` property, or listen to value changes by subscribing to the `OnValueChanged` event.
 
 ```cs
 public class ExampleObjectBehaviour : NetworkBehaviour
 {
-    public Light lightComponent;
-    public NetworkVariable<Color> lightColor = new NetworkVariable<Color>();
+    public Light LightComponent;
+    public NetworkVariable<Color> LightColor = new NetworkVariable<Color>();
+
+    public override void OnNetworkSpawn()
+    {
+        if (IsClient)
+            LightColor.OnValueChanged += UpdateLight;
+    }
 
     [Rpc(SendTo.Server)]
     public void ChangeColorRpc()
     {
-        lightColor = new Color(UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255));
+        LightColor = UnityEngine.Random.ColorHSV();
+    }
+
+    private void UpdateLight(Color oldColor, Color newColor)
+    {
+        LightComponent.color = newColor;
     }
 }
 ```
 
+::: tip
+For more inforamtion on `NetworkVariable`s and their permissions, visit the [NGO docs](https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.13/manual/basics/networkvariable.html).
+:::
+
 ### NetworkList
 
+`NetworkList`s allow you to store lists that can be synchronized across clients in an optimized way that reduces 
+bandwidth. They have similar type restrictions as `NetworkVariable`s, and overall work in the same way.
+
 #### Usage {#networklist-usage}
+
+Network Lists are similar to `NetworkVariable`s, but work more in a `List<T>` fashion. You can index the list, add, and
+remove from the list. Instead of a `OnValueChanged` event, there is a `OnListChanged` event.
+
+One difference is that `NetworkList`s cannot be initialized outside of an Awake function - they will break otherwise.
 
 ```cs
 public class ExampleObjectBehaviour : NetworkBehaviour
 {
-    public List<Light> lightComponents;
-    public NetworkList<Color> lightColors;
+    public List<Light> LightComponents;
+    public NetworkList<Color> LightColors;
 
     private void Awake()
     {
-        lightColors = new NetworkList<Color>();
+        LightColors = new NetworkList<Color>();
 
-        for (var i = 0; i < 5; i++)
-            lightColors.Add(new Color(UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255)));
+        if (IsServer)
+            for (var i = 0; i < LightComponents.Count; i++)
+                LightColors.Add(UnityEngine.Random.ColorHSV());
+    }
+
+    public override void OnNetworkSpawn()
+    {
+        if (IsClient)
+        {
+            LightComponents.OnListChanged += UpdateLights;
+            for (var i = 0; i < LightComponents.Count; i++)
+                LightComponents[i].color = LightColors[i];
+        }
     }
 
     [Rpc(SendTo.Server)]
     public void ChangeColorsRpc()
     {
-        var index = UnityEngine.Random.Range(0,lightColors.Count);
-        lightColors[index] = new Color(UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255), UnityEngine.Random.Range(0,255));
+        var index = UnityEngine.Random.Range(0,LightColors.Count);
+        LightColors[index] = UnityEngine.Random.ColorHSV();
+    }
+
+    private void UpdateLights(NetworkListEvent<Color> changeEvent)
+    {
+        LightComponents[changeEvent.Index].color = changeEvent.Value;
     }
 }
 ```
+
+::: tip
+For more inforamtion on `NetworkList`s, visit the [NGO API docs](https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.13/api/Unity.Netcode.NetworkList-1.html).
+:::
