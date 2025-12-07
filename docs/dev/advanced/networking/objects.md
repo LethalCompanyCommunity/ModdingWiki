@@ -175,6 +175,7 @@ public class ExampleObjectBehaviour : NetworkBehaviour
 {
     public Light LightComponent;
     public NetworkVariable<Color> LightColor = new NetworkVariable<Color>();
+    public NetworkVariable<int> LightHP = new NetworkVariable<int>(10);
 
     public override void OnNetworkSpawn()
     {
@@ -182,10 +183,19 @@ public class ExampleObjectBehaviour : NetworkBehaviour
             LightColor.OnValueChanged += UpdateLight;
     }
 
+    public void DamageLight(int amount)
+    {
+        if (!IsServer) return;
+        LightHP.Value -= amount;
+    }
+
     [Rpc(SendTo.Server)]
     public void ChangeColorRpc()
     {
-        LightColor = UnityEngine.Random.ColorHSV();
+        if (LightHP.Value >= 5)
+            LightColor = UnityEngine.Random.ColorHSV();
+        else
+            LightColor = Color.orange;
     }
 
     private void UpdateLight(Color oldColor, Color newColor)
@@ -209,21 +219,28 @@ bandwidth. They have similar type restrictions as `NetworkVariable`s, and overal
 Network Lists are similar to `NetworkVariable`s, but work more in a `List<T>` fashion. You can index the list, add, and
 remove from the list. Instead of a `OnValueChanged` event, there is a `OnListChanged` event.
 
-One difference is that `NetworkList`s cannot be initialized outside of an Awake function - they will break otherwise.
+One difference is that `NetworkList`s ***must*** be initialized inside an Awake function; otherwise, they will break.
 
 ```cs
 public class ExampleObjectBehaviour : NetworkBehaviour
 {
     public List<Light> LightComponents;
     public NetworkList<Color> LightColors;
+    public NetworkList<int> LightHPs;
 
     private void Awake()
     {
         LightColors = new NetworkList<Color>();
+        LightHPs = new NetworkList<int>();
 
         if (IsServer)
+        {
             for (var i = 0; i < LightComponents.Count; i++)
                 LightColors.Add(UnityEngine.Random.ColorHSV());
+
+            for (var i = 0; i < LightComponents.Count; i++)
+                LightHPs.Add(10);
+        }
     }
 
     public override void OnNetworkSpawn()
@@ -236,11 +253,20 @@ public class ExampleObjectBehaviour : NetworkBehaviour
         }
     }
 
+    public void DamageLight(int index, int amount)
+    {
+        if (!IsServer) return;
+        LightHPs[index] -= amount;
+    }
+
     [Rpc(SendTo.Server)]
     public void ChangeColorsRpc()
     {
         var index = UnityEngine.Random.Range(0,LightColors.Count);
-        LightColors[index] = UnityEngine.Random.ColorHSV();
+        if (LightHPs[index] >= 5)
+            LightColors[index] = UnityEngine.Random.ColorHSV();
+        else
+            LightColors[index] = Color.orange;
     }
 
     private void UpdateLights(NetworkListEvent<Color> changeEvent)
@@ -252,4 +278,77 @@ public class ExampleObjectBehaviour : NetworkBehaviour
 
 ::: tip
 For more inforamtion on `NetworkList`s, visit the [NGO API docs](https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.13/api/Unity.Netcode.NetworkList-1.html).
+:::
+
+## Registering the Prefab
+
+Once you've created the prefab in Unity and bundled it for use in the mod, you will need to register the prefab during
+runtime. There are two ways of going about this - you can either use LethalLib at `Plugin::Awake`, which has a helper method to perform
+this operation for you, or you can register the prefab with the `NetworkManager` yourself after the `NetworkManager`
+exists.
+
+### LethalLib {#lethallib-register}
+
+```cs
+internal class Plugin : BaseUnityPlugin
+{
+    private AssetBundle MainAssetBundle;
+    
+    private void Awake()
+    {
+        MainAssetBundle = AssetBundle.LoadFromFile(Path.Combine(
+                Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!, 
+                "exampleBundle"));
+
+        var exampleObjectPrefab = MainAssetBundle.LoadAsset<GameObject>("Assets/ExampleObject.asset");
+        LethalLib.Modules.NetworkPrefabs.RegisterNetworkPrefab(exampleObjectPrefab);
+    }
+}
+```
+
+::: tip
+There are additonal methods available via LethalLib for registering scrap items and enemies. See the [LethalLib docs](/dev/apis/lethallib)
+for more information.
+:::
+
+### Manual {#manual-register}
+
+::: code-group
+
+```cs [Harmony]
+[HarmonyPatch]
+public class NetworkManagerPatches
+{
+    private static GameObject? _exampleObjectPrefab = null;
+
+    [HarmonyPostfix, HarmonyPatch(typeof(GameNetworkManager), nameof(GameNetworkManager.Start))] 
+    public static void Start_PostfixPatch()
+    {
+        if (_exampleObjectPrefab != null)
+            return;
+        
+        _exampleObjectPrefab = Plugin.MainAssetBundle.LoadAsset<GameObject>("Assets/ExampleObject.asset");
+        NetworkManager.Singleton.AddNetworkPrefab(_exampleObjectPrefab);
+    }
+}
+```
+
+```cs [MonoMod]
+public class NetworkManagerPatches
+{
+    private static GameObject? _exampleObjectPrefab = null;
+
+    private static void GameNetworkManager_Start(On.GameNetworkManager.orig_Start orig, GameNetworkManager self)
+    {
+        orig(self);
+
+        if (_exampleObjectPrefab != null)
+            return;
+        
+        _exampleObjectPrefab = (GameObject)Plugin.MainAssetBundle.LoadAsset("Assets/ExampleObject.prefab");
+        NetworkManager.Singleton.AddNetworkPrefab(_exampleObjectPrefab);
+    }
+}
+```
+
 :::
