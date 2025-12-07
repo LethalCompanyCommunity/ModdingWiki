@@ -41,3 +41,28 @@ the file in a text editor - such as Notepad++. You can also modify the file in y
 by either pressing `F4` when the project is selected in the solution explorer, or by right-clicking the
 project in the solution explorer and selecting Edit Project.
 :::
+
+:::details Updating UnityNetcodePatcher from before v73
+If you previously used Unity Netcode Patcher or have it installed, before patching for v73 and later, ensure you have the latest version of UNP.
+
+The maintainer of that project recommends uninstalling and reinstalling the package globally to ensure there's not conflicting files and is up-to-date:
+
+```sh
+$ dotnet tool uninstall -g Evaisa.NetcodePatcher.Cli
+$ dotnet tool install -g Evaisa.NetcodePatcher.Cli
+```
+
+Additionally, ensure you are using the CLI/post-build event correctly with the new parameters:
+
+::: code-group
+
+```sh [CLI]
+$ netcode-patch -uv 2022.3.62 -nv 1.12.0 -tv 1.0.0 ...
+```
+
+```xml [Post-Build Event]
+<Target Name="NetcodePatch" AfterTargets="PostBuildEvent">
+    <Exec Command="netcode-patch -uv 2022.3.62 -nv 1.12.0 -tv 1.0.0 &quot;$(TargetPath)&quot; @(ReferencePathWithRefAssemblies->'&quot;%(Identity)&quot;', ' ')"/>
+</Target>
+```
+:::
